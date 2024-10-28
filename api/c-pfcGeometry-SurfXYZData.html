@@ -1,0 +1,332 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcGeometry.SurfXYZData"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      718
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcGeometry.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcGeometry-SurfXYZData.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;SurfXYZData</h2>
+<tt>
+     package 
+     <b><a href="p-pfcGeometry.html">com.ptc.pfc.pfcGeometry</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>SurfXYZData</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Stores the results of a surface evaluation.
+<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#Derivative1">GetDerivative1</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Derivative1"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The first partial derivatives of X, Y, and Z, with respect to <i>u</i> and <i>v</i> </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#Derivative2">GetDerivative2</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Derivative2"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The first partial derivatives of X, Y, and Z, with respect to <i>u</i> and <i>v</i></td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#Normal">GetNormal</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Normal"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A unit vector in the direction of the <i>outward</i> normal to the surface at that point</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcBase-UVParams.html">UVParams</a></tt></td><td class="method-summary"><tt><a class="method" href="#Params">GetParams</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Params"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The <i>u</i> and <i>v</i> parameters </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcBase-Point3D.html">Point3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#Point">GetPoint</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Point"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The X, Y, and Z coordinates of the point, with respect to the model coordinates</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Derivative1">SetDerivative1</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Derivative1"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The first partial derivatives of X, Y, and Z, with respect to <i>u</i> and <i>v</i> </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Derivative2">SetDerivative2</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Derivative2"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The first partial derivatives of X, Y, and Z, with respect to <i>u</i> and <i>v</i></td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Normal">SetNormal</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Normal"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A unit vector in the direction of the <i>outward</i> normal to the surface at that point</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Params">SetParams</a>
+ (<a class="type" href="c-pfcBase-UVParams.html">UVParams</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Params"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The <i>u</i> and <i>v</i> parameters </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Point">SetPoint</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Point"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The X, Y, and Z coordinates of the point, with respect to the model coordinates</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Params">GetParams/SetParams</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcBase-UVParams.html">UVParams</a></tt></td><td class="method-name"><tt>GetParams</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetParams</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-UVParams.html">UVParams</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The <i>u</i> and <i>v</i> parameters <br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Point">GetPoint/SetPoint</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcBase-Point3D.html">Point3D</a></tt></td><td class="method-name"><tt>GetPoint</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPoint</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The X, Y, and Z coordinates of the point, with respect to the model coordinates<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Derivative1">GetDerivative1/SetDerivative1</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a></tt></td><td class="method-name"><tt>GetDerivative1</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetDerivative1</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The first partial derivatives of X, Y, and Z, with respect to <i>u</i> and <i>v</i> 
+<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Derivative2">GetDerivative2/SetDerivative2</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a></tt></td><td class="method-name"><tt>GetDerivative2</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetDerivative2</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The first partial derivatives of X, Y, and Z, with respect to <i>u</i> and <i>v</i>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Normal">GetNormal/SetNormal</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a></tt></td><td class="method-name"><tt>GetNormal</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetNormal</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>A unit vector in the direction of the <i>outward</i> normal to the surface at that point<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

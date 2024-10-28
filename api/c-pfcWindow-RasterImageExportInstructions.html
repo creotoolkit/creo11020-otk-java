@@ -1,0 +1,325 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcWindow.RasterImageExportInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      572
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcWindow.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcWindow-RasterImageExportInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;RasterImageExportInstructions</h2>
+<tt>
+     package 
+     <b><a href="p-pfcWindow.html">com.ptc.pfc.pfcWindow</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>RasterImageExportInstructions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Base class to all the raster-image-export-instructions classes that deal with
+exporting of Creo Parametric RasterImage.
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-pfcWindow-BitmapImageExportInstructions.html">BitmapImageExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcWindow-TIFFImageExportInstructions.html">TIFFImageExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcWindow-EPSImageExportInstructions.html">EPSImageExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcWindow-JPEGImageExportInstructions.html">JPEGImageExportInstructions</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcWindow-DotsPerInch.html">DotsPerInch</a></tt></td><td class="method-summary"><tt><a class="method" href="#DotsPerInch">GetDotsPerInch</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "DotsPerInch"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The dots per inch of the output image.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcWindow-RasterDepth.html">RasterDepth</a></tt></td><td class="method-summary"><tt><a class="method" href="#ImageDepth">GetImageDepth</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ImageDepth"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The depth of the output image.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#ImageHeight">GetImageHeight</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ImageHeight"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The height of the output image in inches.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#ImageWidth">GetImageWidth</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ImageWidth"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The width of the output image in inches.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcWindow-RasterType.html">RasterType</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetRasterType">GetRasterType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns a RasterType instance that indicates the type of the raster image export instructions.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DotsPerInch">SetDotsPerInch</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcWindow-DotsPerInch.html">DotsPerInch</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "DotsPerInch"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The dots per inch of the output image.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ImageDepth">SetImageDepth</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcWindow-RasterDepth.html">RasterDepth</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ImageDepth"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The depth of the output image.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ImageHeight">SetImageHeight</a>
+ (double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ImageHeight"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The height of the output image in inches.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ImageWidth">SetImageWidth</a>
+ (double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ImageWidth"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The width of the output image in inches.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetRasterType">GetRasterType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcWindow-RasterType.html">RasterType</a></tt></td><td class="method-name"><tt>GetRasterType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns a RasterType instance that indicates the type of the raster image export instructions.
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>One of the static instances of RasterType (e.g., RASTER_BMP)</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ImageWidth">GetImageWidth/SetImageWidth</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetImageWidth</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetImageWidth</tt></td><td class="method-params"><tt>
+ (double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The width of the output image in inches.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ImageHeight">GetImageHeight/SetImageHeight</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetImageHeight</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetImageHeight</tt></td><td class="method-params"><tt>
+ (double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The height of the output image in inches.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ImageDepth">GetImageDepth/SetImageDepth</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcWindow-RasterDepth.html">RasterDepth</a></tt></td><td class="method-name"><tt>GetImageDepth</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetImageDepth</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcWindow-RasterDepth.html">RasterDepth</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The depth of the output image.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DotsPerInch">GetDotsPerInch/SetDotsPerInch</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcWindow-DotsPerInch.html">DotsPerInch</a></tt></td><td class="method-name"><tt>GetDotsPerInch</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetDotsPerInch</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcWindow-DotsPerInch.html">DotsPerInch</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The dots per inch of the output image.<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

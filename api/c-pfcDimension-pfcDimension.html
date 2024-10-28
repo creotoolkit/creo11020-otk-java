@@ -1,0 +1,817 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcDimension.pfcDimension"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      578
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcDimension.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcDimension-pfcDimension.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcDimension</h2>
+<tt>
+     package <b><a href="p-pfcDimension.html">com.ptc.pfc.pfcDimension</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>pfcDimension</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "pfcDimension"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-AngularDimOptions.html">AngularDimOptions</a></tt></td><td class="method-summary"><tt><a class="method" href="#AngularDimOptions::Create">AngularDimOptions_Create</a>
+ (
+   /*optional*/
+   Boolean&nbsp;IsFirst, 
+   /*optional*/
+   Boolean&nbsp;ShouldFlip)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-AngularDimSense.html">AngularDimSense</a></tt></td><td class="method-summary"><tt><a class="method" href="#AngularDimSense::Create">AngularDimSense_Create</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDimension-AngularDimOptions.html">AngularDimOptions</a>&nbsp;Options)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-DimTolISODIN.html">DimTolISODIN</a></tt></td><td class="method-summary"><tt><a class="method" href="#DimTolISODIN::Create">DimTolISODIN_Create</a>
+ (<a class="type" href="c-pfcDimension-ToleranceTableType.html">ToleranceTableType</a>&nbsp;inTolTableType, String&nbsp;inTableName, int&nbsp;inTableColumn)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a DimTolISODIN object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-DimTolLimits.html">DimTolLimits</a></tt></td><td class="method-summary"><tt><a class="method" href="#DimTolLimits::Create">DimTolLimits_Create</a>
+ (
+   /*optional*/
+   Double&nbsp;inUpperLimit, 
+   /*optional*/
+   Double&nbsp;inLowerLimit)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns an object containing a limits-type tolerance for a dimension.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-DimTolPlusMinus.html">DimTolPlusMinus</a></tt></td><td class="method-summary"><tt><a class="method" href="#DimTolPlusMinus::Create">DimTolPlusMinus_Create</a>
+ (
+   /*optional*/
+   Double&nbsp;inPlus, 
+   /*optional*/
+   Double&nbsp;inMinus)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new <i>DimTolPlusMinus</i> object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-DimTolSymmetric.html">DimTolSymmetric</a></tt></td><td class="method-summary"><tt><a class="method" href="#DimTolSymmetric::Create">DimTolSymmetric_Create</a>
+ (
+   /*optional*/
+   Double&nbsp;inValue)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a symmetric tolerance.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-DimTolSymSuperscript.html">DimTolSymSuperscript</a></tt></td><td class="method-summary"><tt><a class="method" href="#DimTolSymSuperscript::Create">DimTolSymSuperscript_Create</a>
+ (
+   /*optional*/
+   Double&nbsp;inValue)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a symmetric tolerance in superscript format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-EmptyDimSense.html">EmptyDimSense</a></tt></td><td class="method-summary"><tt><a class="method" href="#EmptyDimSense::Create">EmptyDimSense_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-LineAOCTangentDimSense.html">LineAOCTangentDimSense</a></tt></td><td class="method-summary"><tt><a class="method" href="#LineAOCTangentDimSense::Create">LineAOCTangentDimSense_Create</a>
+ (<a class="type" href="c-pfcDimension-DimLineAOCTangentType.html">DimLineAOCTangentType</a>&nbsp;TangentType)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-PointDimSense.html">PointDimSense</a></tt></td><td class="method-summary"><tt><a class="method" href="#PointDimSense::Create">PointDimSense_Create</a>
+ (<a class="type" href="c-pfcDimension-DimPointType.html">DimPointType</a>&nbsp;PointType)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-PointToAngleDimSense.html">PointToAngleDimSense</a></tt></td><td class="method-summary"><tt><a class="method" href="#PointToAngleDimSense::Create">PointToAngleDimSense_Create</a>
+ (<a class="type" href="c-pfcDimension-DimPointType.html">DimPointType</a>&nbsp;PointType, 
+   /*optional*/
+   <a class="type" href="c-pfcDimension-AngularDimOptions.html">AngularDimOptions</a>&nbsp;Options)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-SplinePointDimSense.html">SplinePointDimSense</a></tt></td><td class="method-summary"><tt><a class="method" href="#SplinePointDimSense::Create">SplinePointDimSense_Create</a>
+ (int&nbsp;SplinePointIndex)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-TangentIndexDimSense.html">TangentIndexDimSense</a></tt></td><td class="method-summary"><tt><a class="method" href="#TangentIndexDimSense::Create">TangentIndexDimSense_Create</a>
+ (int&nbsp;TangentIndex)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DimTolPlusMinus::Create">DimTolPlusMinus_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-DimTolPlusMinus.html">DimTolPlusMinus</a></tt></td><td class="method-name"><tt>DimTolPlusMinus_Create</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;inPlus, 
+   /*optional*/
+   Double&nbsp;inMinus)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new <i>DimTolPlusMinus</i> object.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#153">Dimensions and Parameters: Dimension Tolerances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inPlus</b></tt>
+</dt>
+<dd>The tolerance amount above the nominal value </dd>
+<dt>
+<tt><b>inMinus</b></tt>
+</dt>
+<dd>The tolerance amount below the nominal value </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A pointer to the new tolerance object </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DimTolSymmetric::Create">DimTolSymmetric_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-DimTolSymmetric.html">DimTolSymmetric</a></tt></td><td class="method-name"><tt>DimTolSymmetric_Create</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;inValue)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a symmetric tolerance.
+<br>
+<br>The return value can be passed to 
+   <tt><a class="method" href="c-pfcDimension-Dimension.html#Tolerance">Dimension.GetTolerance(/*optional*/ DimTolerance)</a></tt> to change the 
+   tolerance or a dimension.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#154">Dimensions and Parameters: Dimension Tolerances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inValue</b></tt>
+</dt>
+<dd>The tolerance value</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new tolerance object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DimTolSymSuperscript::Create">DimTolSymSuperscript_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-DimTolSymSuperscript.html">DimTolSymSuperscript</a></tt></td><td class="method-name"><tt>DimTolSymSuperscript_Create</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;inValue)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a symmetric tolerance in superscript format.
+<br>
+<br>The return value can be passed to 
+   <tt><a class="method" href="c-pfcDimension-Dimension.html#Tolerance">Dimension.GetTolerance(/*optional*/ DimTolerance)</a></tt> to change the 
+   tolerance or a dimension.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#156">Dimensions and Parameters: Dimension Tolerances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inValue</b></tt>
+</dt>
+<dd>The tolerance value</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new tolerance object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DimTolLimits::Create">DimTolLimits_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-DimTolLimits.html">DimTolLimits</a></tt></td><td class="method-name"><tt>DimTolLimits_Create</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;inUpperLimit, 
+   /*optional*/
+   Double&nbsp;inLowerLimit)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns an object containing a limits-type tolerance for a dimension.
+<br>
+<br>The return value can be passed to <tt><a class="method" href="c-pfcDimension-Dimension.html#Tolerance">Dimension.GetTolerance(/*optional*/ DimTolerance)</a></tt> to change the tolerance or a dimension.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#155">Dimensions and Parameters: Dimension Tolerances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inUpperLimit</b></tt>
+</dt>
+<dd>The upper limit for the tolerance</dd>
+<dt>
+<tt><b>inLowerLimit</b></tt>
+</dt>
+<dd>The lower limit for the tolerance</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new tolerance object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DimTolISODIN::Create">DimTolISODIN_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-DimTolISODIN.html">DimTolISODIN</a></tt></td><td class="method-name"><tt>DimTolISODIN_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDimension-ToleranceTableType.html">ToleranceTableType</a>&nbsp;inTolTableType, String&nbsp;inTableName, int&nbsp;inTableColumn)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a DimTolISODIN object.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#157">Dimensions and Parameters: Dimension Tolerances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inTolTableType</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>inTableName</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>inTableColumn</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new tolerance object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AngularDimOptions::Create">AngularDimOptions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-AngularDimOptions.html">AngularDimOptions</a></tt></td><td class="method-name"><tt>AngularDimOptions_Create</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;IsFirst, 
+   /*optional*/
+   Boolean&nbsp;ShouldFlip)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>IsFirst</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>ShouldFlip</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="EmptyDimSense::Create">EmptyDimSense_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-EmptyDimSense.html">EmptyDimSense</a></tt></td><td class="method-name"><tt>EmptyDimSense_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PointDimSense::Create">PointDimSense_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-PointDimSense.html">PointDimSense</a></tt></td><td class="method-name"><tt>PointDimSense_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDimension-DimPointType.html">DimPointType</a>&nbsp;PointType)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PointType</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SplinePointDimSense::Create">SplinePointDimSense_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-SplinePointDimSense.html">SplinePointDimSense</a></tt></td><td class="method-name"><tt>SplinePointDimSense_Create</tt></td><td class="method-params"><tt>
+ (int&nbsp;SplinePointIndex)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SplinePointIndex</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TangentIndexDimSense::Create">TangentIndexDimSense_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-TangentIndexDimSense.html">TangentIndexDimSense</a></tt></td><td class="method-name"><tt>TangentIndexDimSense_Create</tt></td><td class="method-params"><tt>
+ (int&nbsp;TangentIndex)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TangentIndex</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="LineAOCTangentDimSense::Create">LineAOCTangentDimSense_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-LineAOCTangentDimSense.html">LineAOCTangentDimSense</a></tt></td><td class="method-name"><tt>LineAOCTangentDimSense_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDimension-DimLineAOCTangentType.html">DimLineAOCTangentType</a>&nbsp;TangentType)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TangentType</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AngularDimSense::Create">AngularDimSense_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-AngularDimSense.html">AngularDimSense</a></tt></td><td class="method-name"><tt>AngularDimSense_Create</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDimension-AngularDimOptions.html">AngularDimOptions</a>&nbsp;Options)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Options</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PointToAngleDimSense::Create">PointToAngleDimSense_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDimension-PointToAngleDimSense.html">PointToAngleDimSense</a></tt></td><td class="method-name"><tt>PointToAngleDimSense_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDimension-DimPointType.html">DimPointType</a>&nbsp;PointType, 
+   /*optional*/
+   <a class="type" href="c-pfcDimension-AngularDimOptions.html">AngularDimOptions</a>&nbsp;Options)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PointType</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Options</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

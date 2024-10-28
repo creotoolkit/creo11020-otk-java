@@ -1,0 +1,327 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcGeometry.NURBSSurfaceDescriptor"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      489
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcGeometry.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcGeometry-NURBSSurfaceDescriptor.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;NURBSSurfaceDescriptor</h2>
+<tt>
+     package 
+     <b><a href="p-pfcGeometry.html">com.ptc.pfc.pfcGeometry</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>NURBSSurfaceDescriptor</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcGeometry-SurfaceDescriptor.html">com.ptc.pfc.pfcGeometry.SurfaceDescriptor</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>A data object representing the geometry of a Non-Uniform Rational B-Spline surface.
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-wfcGeometry-WNURBSSurfaceDescriptor.html">WNURBSSurfaceDescriptor</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcGeometry-BSplinePoints.html">BSplinePoints</a></tt></td><td class="method-summary"><tt><a class="method" href="#Points">GetPoints</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Points"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Array of control points and weights</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>int</tt></td><td class="method-summary"><tt><a class="method" href="#UDegree">GetUDegree</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "UDegree"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Degree of the basis function in U</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-stdcols-realseq.html">realseq</a></tt></td><td class="method-summary"><tt><a class="method" href="#UKnots">GetUKnots</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "UKnots"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Array of knots on the parameter line U</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>int</tt></td><td class="method-summary"><tt><a class="method" href="#VDegree">GetVDegree</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "VDegree"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Degree of the basis function in V</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-stdcols-realseq.html">realseq</a></tt></td><td class="method-summary"><tt><a class="method" href="#VKnots">GetVKnots</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "VKnots"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Array of knots on the parameter line V</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Points">SetPoints</a>
+ (<a class="type" href="c-pfcGeometry-BSplinePoints.html">BSplinePoints</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Points"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Array of control points and weights</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#UDegree">SetUDegree</a>
+ (int&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "UDegree"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Degree of the basis function in U</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#UKnots">SetUKnots</a>
+ (<a class="type" href="c-stdcols-realseq.html">realseq</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "UKnots"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Array of knots on the parameter line U</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#VDegree">SetVDegree</a>
+ (int&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "VDegree"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Degree of the basis function in V</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#VKnots">SetVKnots</a>
+ (<a class="type" href="c-stdcols-realseq.html">realseq</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "VKnots"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Array of knots on the parameter line V</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcGeometry-SurfaceDescriptor.html"><tt>com.ptc.pfc.pfcGeometry.SurfaceDescriptor</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcGeometry-SurfaceDescriptor.html#GetSurfaceType"><tt>GetSurfaceType</tt></a>,
+      <a class="method" href="c-pfcGeometry-SurfaceDescriptor.html#Extents"><tt>GetExtents</tt></a>,
+      <a class="method" href="c-pfcGeometry-SurfaceDescriptor.html#Extents"><tt>SetExtents</tt></a>,
+      <a class="method" href="c-pfcGeometry-SurfaceDescriptor.html#Orientation"><tt>GetOrientation</tt></a>,
+      <a class="method" href="c-pfcGeometry-SurfaceDescriptor.html#Orientation"><tt>SetOrientation</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UDegree">GetUDegree/SetUDegree</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>int</tt></td><td class="method-name"><tt>GetUDegree</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetUDegree</tt></td><td class="method-params"><tt>
+ (int&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Degree of the basis function in U<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="VDegree">GetVDegree/SetVDegree</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>int</tt></td><td class="method-name"><tt>GetVDegree</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetVDegree</tt></td><td class="method-params"><tt>
+ (int&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Degree of the basis function in V<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UKnots">GetUKnots/SetUKnots</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-stdcols-realseq.html">realseq</a></tt></td><td class="method-name"><tt>GetUKnots</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetUKnots</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-stdcols-realseq.html">realseq</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Array of knots on the parameter line U<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="VKnots">GetVKnots/SetVKnots</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-stdcols-realseq.html">realseq</a></tt></td><td class="method-name"><tt>GetVKnots</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetVKnots</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-stdcols-realseq.html">realseq</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Array of knots on the parameter line V<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Points">GetPoints/SetPoints</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcGeometry-BSplinePoints.html">BSplinePoints</a></tt></td><td class="method-name"><tt>GetPoints</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPoints</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-BSplinePoints.html">BSplinePoints</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Array of control points and weights<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

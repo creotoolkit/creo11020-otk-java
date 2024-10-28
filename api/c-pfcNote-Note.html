@@ -1,0 +1,594 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcNote.Note"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      496
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcNote.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcNote-Note.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;Note</h2>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html">DetailNoteItem</a></tt>
+<p></p>
+<tt>
+     package 
+     <b><a href="p-pfcNote.html">com.ptc.pfc.pfcNote</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>Note</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcModelItem-ModelItem.html">com.ptc.pfc.pfcModelItem.ModelItem</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Specifies the information for a solid model note.
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-wfcNote-WNote.html">WNote</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Delete">Delete</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailItem.html#Delete">DetailItem.Delete</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Deletes the solid model note.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Display">Display</a>
+ (<a class="type" href="c-pfcDisplay-GraphicsMode.html">GraphicsMode</a>&nbsp;Mode)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#Remove">DetailNoteItem.Remove</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#Erase">DetailNoteItem.Erase</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#Show">DetailNoteItem.Show</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#Draw">DetailNoteItem.Draw</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Displays the solid model note.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-stdcols-stringseq.html">stringseq</a></tt></td><td class="method-summary"><tt><a class="method" href="#Lines">GetLines</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#SetTextLines">DetailNoteItem.SetTextLines</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#GetTextLines">DetailNoteItem.GetTextLines</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Lines"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The text of the note.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ModelItem.html">ModelItem</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetOwner">GetOwner</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetOwner">DetailNoteItem.GetOwner</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns the model item that owns the note.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-stdcols-stringseq.html">stringseq</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetText">GetText</a>
+ (boolean&nbsp;GiveParametersAsNames)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetTextLines">DetailNoteItem.GetTextLines</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns the text of the solid model note.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#URL">GetURL</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#SetURL">DetailNoteItem.SetURL</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#GetURL">DetailNoteItem.GetURL</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "URL"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The URL pointed to by the note.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Lines">SetLines</a>
+ (<a class="type" href="c-stdcols-stringseq.html">stringseq</a>&nbsp;value)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#SetTextLines">DetailNoteItem.SetTextLines</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#GetTextLines">DetailNoteItem.GetTextLines</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Lines"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The text of the note.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#URL">SetURL</a>
+ (String&nbsp;value)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#SetURL">DetailNoteItem.SetURL</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#GetURL">DetailNoteItem.GetURL</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "URL"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The URL pointed to by the note.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Child.html"><tt>com.ptc.pfc.pfcObject.Child</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+      <a class="method" href="c-pfcObject-Child.html#OId"><tt>GetOId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcBase-ActionSource.html"><tt>com.ptc.pfc.pfcBase.ActionSource</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-RelationOwner.html"><tt>com.ptc.pfc.pfcModelItem.RelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Parent.html"><tt>com.ptc.pfc.pfcObject.Parent</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ParameterOwner.html"><tt>com.ptc.pfc.pfcModelItem.ParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ModelItem.html"><tt>com.ptc.pfc.pfcModelItem.ModelItem</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Lines">GetLines/SetLines</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-stdcols-stringseq.html">stringseq</a></tt></td><td class="method-name"><tt>GetLines</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetLines</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-stdcols-stringseq.html">stringseq</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#SetTextLines">DetailNoteItem.SetTextLines</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#GetTextLines">DetailNoteItem.GetTextLines</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The text of the note.<br>
+<br>Using this to read the text of the note will always get the text in 
+	numeric form (parameter callouts will not be identified).  To get the
+	text with the parameter callouts, use <tt><a class="method" href="c-pfcNote-Note.html#GetText">Note.GetText(boolean)</a></tt>
+  
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - The note text cannot be varied.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#167">Solid: Annotations</a>, <a href="../manual0/JSolid.html#175">Solid: Annotations</a>, <a href="../manual0/JSolid.html#168">Solid: Annotations</a>, <a href="../manual0/JSolid.html#175">Solid: Annotations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetText">GetText</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-stdcols-stringseq.html">stringseq</a></tt></td><td class="method-name"><tt>GetText</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;GiveParametersAsNames)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetTextLines">DetailNoteItem.GetTextLines</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns the text of the solid model note.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#169">Solid: Annotations</a>, <a href="../manual0/JSolid.html#175">Solid: Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>GiveParametersAsNames</b></tt>
+</dt>
+<dd>If <tt>true</tt>, the text will indicate parameter callouts with ampersands ('&amp;').  If <tt>false</tt>, the text will show the parameter values with no callout information.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="URL">GetURL/SetURL</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetURL</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetURL</tt></td><td class="method-params"><tt>
+ (String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#SetURL">DetailNoteItem.SetURL</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#GetURL">DetailNoteItem.GetURL</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The URL pointed to by the note.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantWrite.html">XToolkitCantWrite</a></tt></tt> - Could not modify the given item because it has read-only access. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#170">Solid: Annotations</a>, <a href="../manual0/JSolid.html#175">Solid: Annotations</a>, <a href="../manual0/JSolid.html#171">Solid: Annotations</a>, <a href="../manual0/JSolid.html#175">Solid: Annotations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Display">Display</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>Display</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDisplay-GraphicsMode.html">GraphicsMode</a>&nbsp;Mode)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#Remove">DetailNoteItem.Remove</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#Erase">DetailNoteItem.Erase</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#Show">DetailNoteItem.Show</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#Draw">DetailNoteItem.Draw</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Displays the solid model note.
+<br>
+<br>The model must be present in a window.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#172">Solid: Annotations</a>, <a href="../manual0/JSolid.html#175">Solid: Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Mode</b></tt>
+</dt>
+<dd>The mode in which to display the note.  If the mode is DRAW_GRAPHICS_COMPLEMENT, the note will be erased if it was previous displayed.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Delete">Delete</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>Delete</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailItem.html#Delete">DetailItem.Delete</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Deletes the solid model note.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantWrite.html">XToolkitCantWrite</a></tt></tt> - Could not delete the given item because it has read-only access. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#173">Solid: Annotations</a>, <a href="../manual0/JSolid.html#175">Solid: Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetOwner">GetOwner</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ModelItem.html">ModelItem</a></tt></td><td class="method-name"><tt>GetOwner</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetOwner">DetailNoteItem.GetOwner</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns the model item that owns the note.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#174">Solid: Annotations</a>, <a href="../manual0/JSolid.html#175">Solid: Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The owner, or <tt>null</tt>, if the note is not associated with a particular model item.</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

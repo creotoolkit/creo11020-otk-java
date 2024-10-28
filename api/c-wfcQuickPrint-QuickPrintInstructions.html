@@ -1,0 +1,586 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcQuickPrint.QuickPrintInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      564
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcQuickPrint.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcQuickPrint-QuickPrintInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;QuickPrintInstructions</h2>
+<tt>
+     package 
+     <b><a href="p-wfcQuickPrint.html">com.ptc.wfc.wfcQuickPrint</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>QuickPrintInstructions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>The quick print instructions..<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-summary"><tt><a class="method" href="#DrawingTemplate">GetDrawingTemplate</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "DrawingTemplate"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Path to the drawing template file to use for the quick print operation. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintGeneralViewInsructions.html">QuickPrintGeneralViewInsructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#GeneralViewInstructions">GetGeneralViewInstructions</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "GeneralViewInstructions"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The general view instructions </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintLayoutType.html">QuickPrintLayoutType</a></tt></td><td class="method-summary"><tt><a class="method" href="#LayoutType">GetLayoutType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "LayoutType"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The quick print layout type</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintManual3View.html">QuickPrintManual3View</a></tt></td><td class="method-summary"><tt><a class="method" href="#ManualLayoutType">GetManualLayoutType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ManualLayoutType"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Assigns the layout type to use, when three views are being used in a manual layout </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintOrientation.html">QuickPrintOrientation</a></tt></td><td class="method-summary"><tt><a class="method" href="#Orientation">GetOrientation</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Orientation"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The orientation</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcExport-PrintSize.html">PrintSize</a></tt></td><td class="method-summary"><tt><a class="method" href="#PaperSize">GetPaperSize</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PaperSize"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> The size of the print for the quick print operation </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#PrintFlatToScreen">GetPrintFlatToScreen</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PrintFlatToScreen"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The print flat_to_screen annotations flag</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintProjectionViewLocations.html">QuickPrintProjectionViewLocations</a></tt></td><td class="method-summary"><tt><a class="method" href="#ProjectionViewLocations">GetProjectionViewLocations</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ProjectionViewLocations"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Array of the projections to include </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DrawingTemplate">SetDrawingTemplate</a>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "DrawingTemplate"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Path to the drawing template file to use for the quick print operation. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#GeneralViewInstructions">SetGeneralViewInstructions</a>
+ (
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintGeneralViewInsructions.html">QuickPrintGeneralViewInsructions</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "GeneralViewInstructions"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The general view instructions </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#LayoutType">SetLayoutType</a>
+ (
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintLayoutType.html">QuickPrintLayoutType</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "LayoutType"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The quick print layout type</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ManualLayoutType">SetManualLayoutType</a>
+ (
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintManual3View.html">QuickPrintManual3View</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ManualLayoutType"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Assigns the layout type to use, when three views are being used in a manual layout </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Orientation">SetOrientation</a>
+ (
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintOrientation.html">QuickPrintOrientation</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Orientation"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The orientation</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PaperSize">SetPaperSize</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcExport-PrintSize.html">PrintSize</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PaperSize"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> The size of the print for the quick print operation </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PrintFlatToScreen">SetPrintFlatToScreen</a>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PrintFlatToScreen"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The print flat_to_screen annotations flag</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ProjectionViewLocations">SetProjectionViewLocations</a>
+ (
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintProjectionViewLocations.html">QuickPrintProjectionViewLocations</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ProjectionViewLocations"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Array of the projections to include </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="LayoutType">GetLayoutType/SetLayoutType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintLayoutType.html">QuickPrintLayoutType</a></tt></td><td class="method-name"><tt>GetLayoutType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetLayoutType</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintLayoutType.html">QuickPrintLayoutType</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The quick print layout type<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#327">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#338">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#328">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#338">Interface: Automatic Printing of 3D Models</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Orientation">GetOrientation/SetOrientation</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintOrientation.html">QuickPrintOrientation</a></tt></td><td class="method-name"><tt>GetOrientation</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetOrientation</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintOrientation.html">QuickPrintOrientation</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The orientation<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#331">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#338">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#332">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#338">Interface: Automatic Printing of 3D Models</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PrintFlatToScreen">GetPrintFlatToScreen/SetPrintFlatToScreen</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>GetPrintFlatToScreen</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPrintFlatToScreen</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The print flat_to_screen annotations flag<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#335">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#336">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#338">Interface: Automatic Printing of 3D Models</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ProjectionViewLocations">GetProjectionViewLocations/SetProjectionViewLocations</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintProjectionViewLocations.html">QuickPrintProjectionViewLocations</a></tt></td><td class="method-name"><tt>GetProjectionViewLocations</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetProjectionViewLocations</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintProjectionViewLocations.html">QuickPrintProjectionViewLocations</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Array of the projections to include <br>
+<br>
+        This is applicable only if the layout type is QPRINT_LAYOUT_PROJ.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#337">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#338">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#338">Interface: Automatic Printing of 3D Models</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PaperSize">GetPaperSize/SetPaperSize</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcExport-PrintSize.html">PrintSize</a></tt></td><td class="method-name"><tt>GetPaperSize</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPaperSize</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcExport-PrintSize.html">PrintSize</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> The size of the print for the quick print operation <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#333">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#338">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#334">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#338">Interface: Automatic Printing of 3D Models</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DrawingTemplate">GetDrawingTemplate/SetDrawingTemplate</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-name"><tt>GetDrawingTemplate</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetDrawingTemplate</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Path to the drawing template file to use for the quick print operation. <br>
+<br>
+        This is applicable only if layout type is QPRINT_LAYOUT_TEMPLATE.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#323">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#338">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#324">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#338">Interface: Automatic Printing of 3D Models</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ManualLayoutType">GetManualLayoutType/SetManualLayoutType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintManual3View.html">QuickPrintManual3View</a></tt></td><td class="method-name"><tt>GetManualLayoutType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetManualLayoutType</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintManual3View.html">QuickPrintManual3View</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Assigns the layout type to use, when three views are being used in a manual layout <br>
+<br>
+        This is applicable only if the layout type is QPRINT_LAYOUT_MANUAL.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#329">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#338">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#330">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#338">Interface: Automatic Printing of 3D Models</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GeneralViewInstructions">GetGeneralViewInstructions/SetGeneralViewInstructions</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintGeneralViewInsructions.html">QuickPrintGeneralViewInsructions</a></tt></td><td class="method-name"><tt>GetGeneralViewInstructions</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetGeneralViewInstructions</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-wfcQuickPrint-QuickPrintGeneralViewInsructions.html">QuickPrintGeneralViewInsructions</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The general view instructions <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#325">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#338">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#326">Interface: Automatic Printing of 3D Models</a>, <a href="../manual0/Jinterface.html#338">Interface: Automatic Printing of 3D Models</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

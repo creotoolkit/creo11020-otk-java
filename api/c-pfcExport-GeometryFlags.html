@@ -1,0 +1,268 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcExport.GeometryFlags"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      353
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcExport.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcExport-GeometryFlags.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;GeometryFlags</h2>
+<tt>
+     package 
+     <b><a href="p-pfcExport.html">com.ptc.pfc.pfcExport</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>GeometryFlags</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface contains flags indicating the format of an export file.
+<br>
+<br>Not all geometry types are supported by all export formats.  Use the method <tt><a class="method" href="c-pfcSession-BaseSession.html#IsGeometryRepSupported">BaseSession.IsGeometryRepSupported(ExportType, GeometryFlags)</a></tt> to determine if a set of flags is valid for a particular export type.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsGeometryRepSupported">BaseSession.IsGeometryRepSupported(ExportType, GeometryFlags)</a></tt>, <tt><tt><a class="class" href="c-pfcExport-Export3DInstructions.html">Export3DInstructions</a></tt></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#AsQuilts">GetAsQuilts</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "AsQuilts"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Whether or not to export as a set of quilts.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#AsSolids">GetAsSolids</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "AsSolids"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Whether or not to export as solid objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#AsSurfaces">GetAsSurfaces</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "AsSurfaces"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Whether or not to export as a set of surfaces.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#AsWireframe">GetAsWireframe</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "AsWireframe"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Whether or not export as wireframe entities.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AsQuilts">SetAsQuilts</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "AsQuilts"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Whether or not to export as a set of quilts.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AsSolids">SetAsSolids</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "AsSolids"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Whether or not to export as solid objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AsSurfaces">SetAsSurfaces</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "AsSurfaces"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Whether or not to export as a set of surfaces.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AsWireframe">SetAsWireframe</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "AsWireframe"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Whether or not export as wireframe entities.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AsWireframe">GetAsWireframe/SetAsWireframe</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetAsWireframe</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetAsWireframe</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Whether or not export as wireframe entities.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AsSolids">GetAsSolids/SetAsSolids</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetAsSolids</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetAsSolids</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Whether or not to export as solid objects.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AsSurfaces">GetAsSurfaces/SetAsSurfaces</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetAsSurfaces</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetAsSurfaces</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Whether or not to export as a set of surfaces.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AsQuilts">GetAsQuilts/SetAsQuilts</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetAsQuilts</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetAsQuilts</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Whether or not to export as a set of quilts.<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

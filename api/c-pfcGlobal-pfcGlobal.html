@@ -1,0 +1,271 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcGlobal.pfcGlobal"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      583
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcGlobal.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcGlobal-pfcGlobal.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcGlobal</h2>
+<tt>
+     package <b><a href="p-pfcGlobal.html">com.ptc.pfc.pfcGlobal</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>pfcGlobal</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "pfcGlobal"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-stdcols-stringseq.html">stringseq</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetProEArguments">GetProEArguments</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>For non-C++ toolkit bindings (Java, VB, javascript) this method returns the command line arguments passed by Creo Parametric to the 
+ the application. 
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;String</tt></td><td class="method-summary"><tt><a class="method" href="#GetProEBuildCode">GetProEBuildCode</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>For non-C++ toolkit bindings (Java, VB, javascript) this method returns the Creo Parametric build code (for example, "2000010") of the invoking application.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcSession-Session.html">Session</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetProESession">GetProESession</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcSession-pfcSession.html#GetCurrentSession">GetCurrentSession</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Retrieves an object representing the application session, with the application information set to defaults.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;String</tt></td><td class="method-summary"><tt><a class="method" href="#GetProEVersion">GetProEVersion</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>For non-C++ toolkit bindings (Java, VB, javascript) this method returns the Creo Parametric version of Creo Parametric.
+  </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetProESession">GetProESession</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcSession-Session.html">Session</a></tt></td><td class="method-name"><tt>GetProESession</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcSession-pfcSession.html#GetCurrentSession">GetCurrentSession</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Retrieves an object representing the application session, with the application information set to defaults.
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#5">Session Objects: Getting the Session Object</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The session object, which is the top level object used to access information in Creo Parametric.  </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetProEArguments">GetProEArguments</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-stdcols-stringseq.html">stringseq</a></tt></td><td class="method-name"><tt>GetProEArguments</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>For non-C++ toolkit bindings (Java, VB, javascript) this method returns the command line arguments passed by Creo Parametric to the 
+ the application. 
+  <br>
+<br>The arguments are the ones starting with +*, where * is any alphabetic character (A-Z, a-z), or -#, where # is any capital alphabetic character (A-Z).
+  The arguments may only be accessed in synchronous mode.
+  <p></p>For the C++ bindling, this method should not be used. Use instead the arguments passed to user_initialize.
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#7">Session Objects: Getting Session Information</a>, <a href="../manual0/JSession.html#9">Session Objects: Getting Session Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The array of command-line arguments.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetProEBuildCode">GetProEBuildCode</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;String</tt></td><td class="method-name"><tt>GetProEBuildCode</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>For non-C++ toolkit bindings (Java, VB, javascript) this method returns the Creo Parametric build code (for example, "2000010") of the invoking application.
+  <br>
+<br>This data may only be accessed in synchronous mode.
+  <p></p>For the C++ bindling, this method should not be used. Use instead the arguments passed to user_initialize.
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#9">Session Objects: Getting Session Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The build code</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetProEVersion">GetProEVersion</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;String</tt></td><td class="method-name"><tt>GetProEVersion</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>For non-C++ toolkit bindings (Java, VB, javascript) this method returns the Creo Parametric version of Creo Parametric.
+  <br>
+<br>This data is only accessible in synchronous mode.
+  <p></p>For the C++ bindling, this method should not be used. Use instead the arguments passed to user_initialize.
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#8">Session Objects: Getting Session Information</a>, <a href="../manual0/JSession.html#9">Session Objects: Getting Session Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The Creo Parametric version</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

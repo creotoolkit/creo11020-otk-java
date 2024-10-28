@@ -1,0 +1,604 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcModelItem.Parameter"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      515
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcModelItem.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcModelItem-Parameter.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;Parameter</h2>
+<tt>
+     package 
+     <b><a href="p-pfcModelItem.html">com.ptc.pfc.pfcModelItem</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>Parameter</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcModelItem-BaseParameter.html">com.ptc.pfc.pfcModelItem.BaseParameter</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="bold" href="c-pfcModelItem-NamedModelItem.html">com.ptc.pfc.pfcModelItem.NamedModelItem</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class defines a parameter object.
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-wfcModelItem-WParameter.html">WParameter</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Delete">Delete</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Deletes a parameter.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-summary"><tt><a class="method" href="#Description">GetDescription</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Description"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Parameter description string.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ParameterDriverType.html">ParameterDriverType</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetDriverType">GetDriverType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Obtains the type of driver for a material parameter.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ParameterRestriction.html">ParameterRestriction</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetRestriction">GetRestriction</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Identifies if a parameter's value is restricted to a certain range or enumerated.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetScaledValue">GetScaledValue</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Gets the parameter value in the units of the parameter, instead of the units of the owner model.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcUnits-Unit.html">Unit</a></tt></td><td class="method-summary"><tt><a class="method" href="#Units">GetUnits</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Units"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Units assigned to the parameter.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Reorder">Reorder</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-Parameter.html">Parameter</a>&nbsp;ParamBefore)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Reorders the given parameter to come just after the indicated parameter.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Description">SetDescription</a>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Description"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Parameter description string.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetScaledValue">SetScaledValue</a>
+ (<a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a>&nbsp;value, 
+   /*optional*/
+   <a class="type" href="c-pfcUnits-Unit.html">Unit</a>&nbsp;Units)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sets the parameter value in terms of the units provided, instead of using the units of the owner model.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-BaseParameter.html"><tt>com.ptc.pfc.pfcModelItem.BaseParameter</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-BaseParameter.html#Value"><tt>GetValue</tt></a>,
+      <a class="method" href="c-pfcModelItem-BaseParameter.html#Value"><tt>SetValue</tt></a>,
+      <a class="method" href="c-pfcModelItem-BaseParameter.html#IsDesignated"><tt>GetIsDesignated</tt></a>,
+      <a class="method" href="c-pfcModelItem-BaseParameter.html#IsDesignated"><tt>SetIsDesignated</tt></a>,
+      <a class="method" href="c-pfcModelItem-BaseParameter.html#IsRelationDriven"><tt>GetIsRelationDriven</tt></a>,
+      <a class="method" href="c-pfcModelItem-BaseParameter.html#IsModified"><tt>GetIsModified</tt></a>,
+      <a class="method" href="c-pfcModelItem-BaseParameter.html#ResetFromBackup"><tt>ResetFromBackup</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Child.html"><tt>com.ptc.pfc.pfcObject.Child</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+      <a class="method" href="c-pfcObject-Child.html#OId"><tt>GetOId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-NamedModelItem.html"><tt>com.ptc.pfc.pfcModelItem.NamedModelItem</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-NamedModelItem.html#Name"><tt>GetName</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Delete">Delete</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>Delete</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Deletes a parameter.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The owner was not found.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#58">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Units">GetUnits</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcUnits-Unit.html">Unit</a></tt></td><td class="method-name"><tt>GetUnits</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Units assigned to the parameter.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The parameter is unitless.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#48">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetScaledValue">GetScaledValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a></tt></td><td class="method-name"><tt>GetScaledValue</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Gets the parameter value in the units of the parameter, instead of the units of the owner model.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The owner was not found.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#46">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The parameter scaled value.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetScaledValue">SetScaledValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetScaledValue</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a>&nbsp;value, 
+   /*optional*/
+   <a class="type" href="c-pfcUnits-Unit.html">Unit</a>&nbsp;Units)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Sets the parameter value in terms of the units provided, instead of using the units of the owner model.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The owner was not found.</p>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidType.html">XToolkitInvalidType</a></tt></tt> - The unit type provided does not match the units of the parameter. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#47">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>value</b></tt>
+</dt>
+<dd>
+   The value of the parameter to be set.
+  </dd>
+<dt>
+<tt><b>Units</b></tt>
+</dt>
+<dd>
+   The units in which the value is expressed. The value can be <i>null</i>.
+  </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Description">GetDescription/SetDescription</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-name"><tt>GetDescription</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetDescription</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Parameter description string.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The parameter's description is not set.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#53">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#54">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Reorder">Reorder</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>Reorder</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-Parameter.html">Parameter</a>&nbsp;ParamBefore)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Reorders the given parameter to come just after the indicated parameter.
+   <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - Parameter 'param_before' does not have the same owner as the parameter to be reordered. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoLicense.html">XToolkitNoLicense</a></tt></tt> - No license is available for this functionality.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#57">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ParamBefore</b></tt>
+</dt>
+<dd>
+   The parameter to be just before the reordered parameter. If NULL, the reordered parameter is moved to the first position in the parameter list.
+  </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetDriverType">GetDriverType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ParameterDriverType.html">ParameterDriverType</a></tt></td><td class="method-name"><tt>GetDriverType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Obtains the type of driver for a material parameter.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#56">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The parameter driver type.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetRestriction">GetRestriction</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ParameterRestriction.html">ParameterRestriction</a></tt></td><td class="method-name"><tt>GetRestriction</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Identifies if a parameter's value is restricted to a certain range or enumerated.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#55">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The parameter restriction.</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

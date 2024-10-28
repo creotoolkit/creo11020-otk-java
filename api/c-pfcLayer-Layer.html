@@ -1,0 +1,594 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcLayer.Layer"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      423
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcLayer.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcLayer-Layer.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;Layer</h2>
+<tt>
+     package 
+     <b><a href="p-pfcLayer.html">com.ptc.pfc.pfcLayer</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>Layer</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcModelItem-ModelItem.html">com.ptc.pfc.pfcModelItem.ModelItem</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class describes a layer.
+<br>
+<br>The possible values for the display status are as follows:
+<ul type="disc">
+
+
+<li>
+LAYER_NORMAL
+</li>
+
+<li>
+LAYER_DISPLAY
+</li>
+
+<li>
+LAYER_BLANK
+</li>
+
+<li>
+LAYER_HIDDEN
+</li>
+
+</ul>
+
+
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-wfcLayerState-WLayer.html">WLayer</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AddItem">AddItem</a>
+ (<a class="type" href="c-pfcModelItem-ModelItem.html">ModelItem</a>&nbsp;Item)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Adds the specified item to the layer.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>int</tt></td><td class="method-summary"><tt><a class="method" href="#CountUnsupportedItems">CountUnsupportedItems</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Delete">Delete</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Deletes the layer.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcLayer-DisplayStatus.html">DisplayStatus</a></tt></td><td class="method-summary"><tt><a class="method" href="#Status">GetStatus</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Status"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The display status</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#HasUnsupportedItems">HasUnsupportedItems</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns <tt>true</tt> if the layer contains one or more item types 
+  not supported as <tt><tt><a class="class" href="c-pfcModelItem-ModelItem.html">ModelItem</a></tt></tt> objects in 
+  PFC.  Returns <tt>false</tt> otherwise. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcModelItem-ModelItems.html">ModelItems</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListItems">ListItems</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method returns only items which are supported as 
+   <tt><tt><a class="class" href="c-pfcModelItem-ModelItem.html">ModelItem</a></tt></tt> objects in PFC. To identify
+    if the layer has any items not supported in PFC, use 
+   <tt><a class="method" href="c-pfcLayer-Layer.html#HasUnsupportedItems">Layer.HasUnsupportedItems()</a></tt>.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#RemoveItem">RemoveItem</a>
+ (<a class="type" href="c-pfcModelItem-ModelItem.html">ModelItem</a>&nbsp;Item)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Removes the specified item from the layer.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Status">SetStatus</a>
+ (<a class="type" href="c-pfcLayer-DisplayStatus.html">DisplayStatus</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Status"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The display status</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Child.html"><tt>com.ptc.pfc.pfcObject.Child</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+      <a class="method" href="c-pfcObject-Child.html#OId"><tt>GetOId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcBase-ActionSource.html"><tt>com.ptc.pfc.pfcBase.ActionSource</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-RelationOwner.html"><tt>com.ptc.pfc.pfcModelItem.RelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Parent.html"><tt>com.ptc.pfc.pfcObject.Parent</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ParameterOwner.html"><tt>com.ptc.pfc.pfcModelItem.ParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ModelItem.html"><tt>com.ptc.pfc.pfcModelItem.ModelItem</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListItems">ListItems</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcModelItem-ModelItems.html">ModelItems</a></tt></td><td class="method-name"><tt>ListItems</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method returns only items which are supported as 
+   <tt><tt><a class="class" href="c-pfcModelItem-ModelItem.html">ModelItem</a></tt></tt> objects in PFC. To identify
+    if the layer has any items not supported in PFC, use 
+   <tt><a class="method" href="c-pfcLayer-Layer.html#HasUnsupportedItems">Layer.HasUnsupportedItems()</a></tt>.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - A layer with the specified name was not found.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfMemory.html">XToolkitOutOfMemory</a></tt></tt> - The layer has too many items to report. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModelitem.html#12">ModelItem: Getting ModelItem Objects</a>, <a href="../manual0/JModelitem.html#17">ModelItem: Getting ModelItem Objects</a>, <a href="../manual0/JModelitem.html#51">ModelItem: Layer Operations</a>, <a href="../manual0/JModelitem.html#62">ModelItem: Layer Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>An array of the items on the layer </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Status">GetStatus/SetStatus</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcLayer-DisplayStatus.html">DisplayStatus</a></tt></td><td class="method-name"><tt>GetStatus</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetStatus</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcLayer-DisplayStatus.html">DisplayStatus</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The display status<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The specified layer was not found.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidName.html">XToolkitInvalidName</a></tt></tt> - You specified an invalid layer name. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantModify.html">XToolkitCantModify</a></tt></tt> - display status of the layer cannot be changed </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModelitem.html#49">ModelItem: Layer Operations</a>, <a href="../manual0/JModelitem.html#62">ModelItem: Layer Operations</a>, <a href="../manual0/JModelitem.html#50">ModelItem: Layer Operations</a>, <a href="../manual0/JModelitem.html#62">ModelItem: Layer Operations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AddItem">AddItem</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>AddItem</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModelItem-ModelItem.html">ModelItem</a>&nbsp;Item)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Adds the specified item to the layer.
+<br>
+<br>
+ The following items cannot be added to a layer: <tt>ITEM_SURFACE, ITEM_EDGE,
+  ITEM_COORD_SYS, ITEM_AXIS, ITEM_SIMPREP, ITEM_DTL_SYM_DEFINITION,
+  ITEM_DTL_OLE_OBJECT, ITEM_EXPLODED_STATE</tt>.
+ For these items the method will throw  
+ <tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidType.html">XToolkitInvalidType</a></tt></tt> exception.<p>
+<b>Exceptions thrown(but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidName.html">XToolkitInvalidName</a></tt></tt> - You specified an invalid layer name.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidType.html">XToolkitInvalidType</a></tt></tt> - You specified an invalid layer item type.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModelitem.html#52">ModelItem: Layer Operations</a>, <a href="../manual0/JModelitem.html#62">ModelItem: Layer Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Item</b></tt>
+</dt>
+<dd>The item to add</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RemoveItem">RemoveItem</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>RemoveItem</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModelItem-ModelItem.html">ModelItem</a>&nbsp;Item)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Removes the specified item from the layer.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The specified layer was not found.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidName.html">XToolkitInvalidName</a></tt></tt> - You specified an invalid layer name.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidType.html">XToolkitInvalidType</a></tt></tt> - You specified an invalid layer item type.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModelitem.html#53">ModelItem: Layer Operations</a>, <a href="../manual0/JModelitem.html#62">ModelItem: Layer Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Item</b></tt>
+</dt>
+<dd>The layer item to remove</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Delete">Delete</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>Delete</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Deletes the layer.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidName.html">XToolkitInvalidName</a></tt></tt> - You specified an invalid layer name.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The system could not find a layer with the specified name. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModelitem.html#54">ModelItem: Layer Operations</a>, <a href="../manual0/JModelitem.html#62">ModelItem: Layer Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="HasUnsupportedItems">HasUnsupportedItems</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>HasUnsupportedItems</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns <tt>true</tt> if the layer contains one or more item types 
+  not supported as <tt><tt><a class="class" href="c-pfcModelItem-ModelItem.html">ModelItem</a></tt></tt> objects in 
+  PFC.  Returns <tt>false</tt> otherwise. <br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CountUnsupportedItems">CountUnsupportedItems</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>int</tt></td><td class="method-name"><tt>CountUnsupportedItems</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModelitem.html#55">ModelItem: Layer Operations</a>, <a href="../manual0/JModelitem.html#62">ModelItem: Layer Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

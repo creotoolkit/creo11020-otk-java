@@ -1,0 +1,580 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcDisplay.WDisplay"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      860
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcDisplay.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcDisplay-WDisplay.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;WDisplay</h2>
+<tt>
+     package 
+     <b><a href="p-wfcDisplay.html">com.ptc.wfc.wfcDisplay</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>WDisplay</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcDisplay-Display.html">com.ptc.pfc.pfcDisplay.Display</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br> Display and Grapchis related methods <br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-wfcSession-WBaseSession.html">WBaseSession</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DrawPolylines">DrawPolylines</a>
+ (<a class="type" href="c-wfcDisplay-Polylines.html">Polylines</a>&nbsp;SetofPolyline)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Draws a set of polylines on the screen </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcBase-StdColor.html">StdColor</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetColorByObjectType">GetColorByObjectType</a>
+ (<a class="type" href="c-wfcDisplay-DisplayedType.html">DisplayedType</a>&nbsp;DispType)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Retrieves the standard color used for the specified object type </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcDisplay-ColorRGBAlternateScheme.html">ColorRGBAlternateScheme</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetColorRGBAlternateScheme">GetColorRGBAlternateScheme</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Sets color scheme of Creo Parametric session </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcDisplay-ColorRGBVersion.html">ColorRGBVersion</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetColorRGBVersion">GetColorRGBVersion</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Gets version of ColorRGB </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a></tt></td><td class="method-summary"><tt><a class="method" href="#ModifyGraphicsColor">ModifyGraphicsColor</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;Color)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Changes the color used to draw any subsequent graphics </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a></tt></td><td class="method-summary"><tt><a class="method" href="#ModifyTextColor">ModifyTextColor</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;Color)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Changes the color used to draw any subsequent graphics window text color </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetColorRGBAlternateScheme">SetColorRGBAlternateScheme</a>
+ (<a class="type" href="c-wfcDisplay-ColorRGBAlternateScheme.html">ColorRGBAlternateScheme</a>&nbsp;Scheme)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Sets color scheme of Creo Parametric session </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetColorRGBVersion">SetColorRGBVersion</a>
+ (<a class="type" href="c-wfcDisplay-ColorRGBVersion.html">ColorRGBVersion</a>&nbsp;Version)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Sets version of ColorRGB </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Parent.html"><tt>com.ptc.pfc.pfcObject.Parent</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcDisplay-Display.html"><tt>com.ptc.pfc.pfcDisplay.Display</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcDisplay-Display.html#CreateDisplayList2D"><tt>CreateDisplayList2D</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#Invalidate"><tt>Invalidate</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DrawArc2D"><tt>DrawArc2D</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DrawPolygon2D"><tt>DrawPolygon2D</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DrawText2D"><tt>DrawText2D</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CreateDisplayList3D"><tt>CreateDisplayList3D</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DrawCircle"><tt>DrawCircle</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DrawLine"><tt>DrawLine</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#SetPenPosition"><tt>SetPenPosition</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DrawPolyline"><tt>DrawPolyline</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DefaultFont"><tt>GetDefaultFont</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CurrentFont"><tt>GetCurrentFont</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CurrentFont"><tt>SetCurrentFont</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#GetFontById"><tt>GetFontById</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#GetFontByName"><tt>GetFontByName</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#TextHeight"><tt>GetTextHeight</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#TextHeight"><tt>SetTextHeight</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#RotationAngle"><tt>GetRotationAngle</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#RotationAngle"><tt>SetRotationAngle</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#SlantAngle"><tt>GetSlantAngle</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#SlantAngle"><tt>SetSlantAngle</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#WidthFactor"><tt>GetWidthFactor</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#WidthFactor"><tt>SetWidthFactor</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#ResetTextAttributes"><tt>ResetTextAttributes</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CurrentGraphicsMode"><tt>GetCurrentGraphicsMode</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CurrentGraphicsMode"><tt>SetCurrentGraphicsMode</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CurrentGraphicsColor"><tt>GetCurrentGraphicsColor</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CurrentGraphicsColor"><tt>SetCurrentGraphicsColor</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetColorByObjectType">GetColorByObjectType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcBase-StdColor.html">StdColor</a></tt></td><td class="method-name"><tt>GetColorByObjectType</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcDisplay-DisplayedType.html">DisplayedType</a>&nbsp;DispType)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Retrieves the standard color used for the specified object type <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - No default color entry exists for this entity type. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#98">Graphics: Setting Colors to Match Existing Entities</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DispType</b></tt>
+</dt>
+<dd> Type of object </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> The color typically used by Creo to render the object </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetColorRGBAlternateScheme">SetColorRGBAlternateScheme</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetColorRGBAlternateScheme</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcDisplay-ColorRGBAlternateScheme.html">ColorRGBAlternateScheme</a>&nbsp;Scheme)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Sets color scheme of Creo Parametric session <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#106">Graphics: Color Schemes</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Scheme</b></tt>
+</dt>
+<dd> A Scheme </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetColorRGBAlternateScheme">GetColorRGBAlternateScheme</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcDisplay-ColorRGBAlternateScheme.html">ColorRGBAlternateScheme</a></tt></td><td class="method-name"><tt>GetColorRGBAlternateScheme</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Sets color scheme of Creo Parametric session <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#105">Graphics: Color Schemes</a>, <a href="../manual0/JGraphics.html#106">Graphics: Color Schemes</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> A Scheme </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetColorRGBVersion">SetColorRGBVersion</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetColorRGBVersion</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcDisplay-ColorRGBVersion.html">ColorRGBVersion</a>&nbsp;Version)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Sets version of ColorRGB <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#102">Graphics: Version of Color Map</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Version</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetColorRGBVersion">GetColorRGBVersion</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcDisplay-ColorRGBVersion.html">ColorRGBVersion</a></tt></td><td class="method-name"><tt>GetColorRGBVersion</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Gets version of ColorRGB <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#101">Graphics: Version of Color Map</a>, <a href="../manual0/JGraphics.html#102">Graphics: Version of Color Map</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ModifyGraphicsColor">ModifyGraphicsColor</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a></tt></td><td class="method-name"><tt>ModifyGraphicsColor</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;Color)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Changes the color used to draw any subsequent graphics <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoChange.html">XToolkitNoChange</a></tt></tt> - The current color is the same as the new color.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Color</b></tt>
+</dt>
+<dd> The new color to use when drawing a graphics entity. If this is <t>null</t> method returns existing color </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> Modfified color </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ModifyTextColor">ModifyTextColor</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a></tt></td><td class="method-name"><tt>ModifyTextColor</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;Color)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Changes the color used to draw any subsequent graphics window text color <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoChange.html">XToolkitNoChange</a></tt></tt> - The current color is the same as the new color.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Color</b></tt>
+</dt>
+<dd>The new color to use to display text. If this is <t>null</t> method returns existing color </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> Modified color </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DrawPolylines">DrawPolylines</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>DrawPolylines</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcDisplay-Polylines.html">Polylines</a>&nbsp;SetofPolyline)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Draws a set of polylines on the screen <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#123">Graphics: Displaying Graphics</a>, <a href="../manual0/JGraphics.html#126">Graphics: Displaying Graphics</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SetofPolyline</b></tt>
+</dt>
+<dd>A sequence of polyline </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

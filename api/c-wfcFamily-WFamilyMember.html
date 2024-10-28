@@ -1,0 +1,431 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcFamily.WFamilyMember"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      867
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcFamily.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcFamily-WFamilyMember.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;WFamilyMember</h2>
+<tt>
+     package 
+     <b><a href="p-wfcFamily.html">com.ptc.wfc.wfcFamily</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>WFamilyMember</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcFamily-FamilyMember.html">com.ptc.pfc.pfcFamily.FamilyMember</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Interface <tt><tt><a class="class" href="c-wfcFamily-WFamilyMember.html">WFamilyMember</a></tt></tt> adds more functionality to <tt><tt><a class="class" href="c-pfcFamily-FamilyMember.html">FamilyMember</a></tt></tt>.<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-wfcSolid-WSolid.html">WSolid</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#EditFamilyTable">EditFamilyTable</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Edits the family table using Pro/TABLE
+    or another text editor. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#EraseFamilyTable">EraseFamilyTable</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Clears the specified family table.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcFamily-FamilyTableStatus.html">FamilyTableStatus</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetFamilyTableStatus">GetFamilyTableStatus</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Determine whether the family table is valid and/or empty.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsModifiable">IsModifiable</a>
+ (boolean&nbsp;ShowUI)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Check if a given family table is modifiable.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcFamily-WFamilyTableRows.html">WFamilyTableRows</a></tt></td><td class="method-summary"><tt><a class="method" href="#SelectRows">SelectRows</a>
+ (boolean&nbsp;AllowMultiSelect)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Enables the user to select one or more instances in the specified family table.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ShowFamilyTable">ShowFamilyTable</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Displays the family table using Pro/TABLE
+    or another text editor.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcFamily-FamilyMember.html"><tt>com.ptc.pfc.pfcFamily.FamilyMember</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcFamily-FamilyMember.html#Parent"><tt>GetParent</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#GetImmediateGenericInfo"><tt>GetImmediateGenericInfo</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#GetTopGenericInfo"><tt>GetTopGenericInfo</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#ListColumns"><tt>ListColumns</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#ListRows"><tt>ListRows</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#GetCell"><tt>GetCell</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#SetCell"><tt>SetCell</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#GetCellIsDefault"><tt>GetCellIsDefault</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#AddRow"><tt>AddRow</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#GetRow"><tt>GetRow</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#RemoveRow"><tt>RemoveRow</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn"><tt>AddColumn</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#RemoveColumn"><tt>RemoveColumn</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#GetColumn"><tt>GetColumn</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#CreateColumn"><tt>CreateColumn</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#CreateParamColumn"><tt>CreateParamColumn</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#CreateDimensionColumn"><tt>CreateDimensionColumn</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#CreateFeatureColumn"><tt>CreateFeatureColumn</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#CreateComponentColumn"><tt>CreateComponentColumn</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#CreateCompModelColumn"><tt>CreateCompModelColumn</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#CreateGroupColumn"><tt>CreateGroupColumn</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#CreateMergePartColumn"><tt>CreateMergePartColumn</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#CreateTolPlusColumn"><tt>CreateTolPlusColumn</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#CreateTolMinusColumn"><tt>CreateTolMinusColumn</tt></a>,
+      <a class="method" href="c-pfcFamily-FamilyMember.html#CreateTolPlusMinusColumn"><tt>CreateTolPlusMinusColumn</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SelectRows">SelectRows</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcFamily-WFamilyTableRows.html">WFamilyTableRows</a></tt></td><td class="method-name"><tt>SelectRows</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;AllowMultiSelect)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Enables the user to select one or more instances in the specified family table.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#63">Family Tables: Operations on Family Table Instances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AllowMultiSelect</b></tt>
+</dt>
+<dd>User can select more than one instance if this is <tt>true</tt>. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The list of selected instances.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetFamilyTableStatus">GetFamilyTableStatus</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcFamily-FamilyTableStatus.html">FamilyTableStatus</a></tt></td><td class="method-name"><tt>GetFamilyTableStatus</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Determine whether the family table is valid and/or empty.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The family table was not found for the specified owner. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitEmpty.html">XToolkitEmpty</a></tt></tt> - The family table is found and is empty.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#67">Family Tables: Family Table Utilities</a>, <a href="../manual0/JFamily.html#69">Family Tables: Family Table Utilities</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The family table validity status.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsModifiable">IsModifiable</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>IsModifiable</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;ShowUI)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Check if a given family table is modifiable.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#68">Family Tables: Family Table Utilities</a>, <a href="../manual0/JFamily.html#69">Family Tables: Family Table Utilities</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ShowUI</b></tt>
+</dt>
+<dd>Indicates whether the Conflicts dialog should be shown to
+    user to resolve conflicts (if they are detected); when set
+    to <tt>false</tt> no UI is enabled and the Family table is
+    considered as modifiable if there are no conflicts that
+    could not be overridden or resolved by default resolution
+    actions. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+<tt>true</tt> if modifiable and <tt>false</tt> if not.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="EditFamilyTable">EditFamilyTable</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>EditFamilyTable</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Edits the family table using Pro/TABLE
+    or another text editor. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#65">Family Tables: Family Table Utilities</a>, <a href="../manual0/JFamily.html#69">Family Tables: Family Table Utilities</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="EraseFamilyTable">EraseFamilyTable</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>EraseFamilyTable</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Clears the specified family table.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The family table was not found.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#66">Family Tables: Family Table Utilities</a>, <a href="../manual0/JFamily.html#69">Family Tables: Family Table Utilities</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ShowFamilyTable">ShowFamilyTable</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>ShowFamilyTable</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Displays the family table using Pro/TABLE
+    or another text editor.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#69">Family Tables: Family Table Utilities</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcCollection.CollectSurfacesFilter"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      88
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcCollection.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcCollection-CollectSurfacesFilter.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;CollectSurfacesFilter</h2>
+<tt>
+     package 
+     <b><a href="p-wfcCollection.html">com.ptc.wfc.wfcCollection</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>CollectSurfacesFilter</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcBase-ApplicationCallback.html">com.ptc.pfc.pfcBase.ApplicationCallback</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>
+            Base class for classes to filter selections collected using <tt><a class="method" href="c-wfcSolid-WSolid.html#CollectSurfaces">WSolid.CollectSurfaces(SurfaceCollectionInstrTypes, /*optional*/ CollectSurfacesFilter, /*optional*/ SurfaceCollection)</a></tt>
+        
+<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#FilterSelections">FilterSelections</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcSelect-Selections.html">Selections</a>&nbsp;PreSelected, <a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;CurrentSel)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FilterSelections">FilterSelections</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>FilterSelections</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcSelect-Selections.html">Selections</a>&nbsp;PreSelected, <a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;CurrentSel)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/otk_Collection.html#6">Curve and Surface Collection: Interactive Collection</a>, <a href="../manual0/otk_Collection.html#53">Curve and Surface Collection: Surface Collection</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PreSelected</b></tt>
+</dt>
+<dd>Previously selected items.</dd>
+<dt>
+<tt><b>CurrentSel</b></tt>
+</dt>
+<dd>Current Selection.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+                Accept selection if this method returns <tt>true</tt> otherwise reject the selection
+            </dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,858 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9">
+      <meta name="ch:resourceid" content="JAsync" scheme="atiChunkerMeta">
+      
+      
+      
+      
+      
+      
+      <link href="css/styler.css" rel="stylesheet" type="text/css">
+      <title>Running J-Link Applications in Asynchronous Mode</title>
+   
+<SCRIPT LANGUAGE="JAVASCRIPT">
+  function findProperNode() { top.frames[0].document.apiwizard.manual("MANJASYNC0", location.hash); }
+</SCRIPT>
+
+</head>
+   <body onLoad="findProperNode()">
+      
+         
+         <a name="0"> </a><div class=" x-title-65-0 x-title-65-1" combinedFontName="off" id="styler-id1.1.1.39.1" class="ChapterTitle">Running J-Link Applications in Asynchronous Mode </div>
+         <div class=" x-body-2-0">
+            <div class=" x-p-7-0">This <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> explains how to use <span class=" x-ph-2-0">J-Link</span> in Asynchronous Mode.
+            </div>
+            <div class=" x-note-2-0 x-note-2-3">
+               <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+               <div class=" x-p-7-0"><span class=" x-ph-2-0" id="JAsync_RunningJ-LinkApplicationsInAsynchro-28972A6D_PTCC_41_10">Creo Object TOOLKIT Java</span> is not supported in Asynchronous Mode.
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-4-0 x-topic-4-1 x-topic-4-2" combinedFontName="off" id="JAsync_Overview-BCB42554_41_11">
+            
+            <a name="1"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.39.3.1" class="Heading1">Overview</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Asynchronous mode is a multiprocess mode in which the <span class=" x-ph-2-0">J-Link</span> application and <span class=" x-ph-2-0" id="JAsync_Overview-BCB42554_PTCCreoParametric-E96269BB_41_16"><span xmlns="" profilecode="1">Creo Parametric</span></span> can perform concurrent operations. Unlike the synchronous modes, asynchronous mode uses JNI (Java Native Interface) and RPC
+                  (remote procedure calls) as the means of communication between the application and <span class=" x-ph-2-0" id="JAsync_Overview-BCB42554_PTCCreoParametric-E96269BB_41_16"><span xmlns="" profilecode="1">Creo Parametric</span></span>.
+               </div>
+               <div class=" x-p-7-0">Another important difference between synchronous and asynchronous modes is in the startup of the <span class=" x-ph-2-0">J-Link</span> application. In synchronous mode, the application is started by <span class=" x-ph-2-0" id="JAsync_Overview-BCB42554_PTCCreoParametric-E96269BB_41_16"><span xmlns="" profilecode="1">Creo Parametric</span></span>, based on information contained in the registry file. In asynchronous mode, the application (containing its own main() method)
+                  is started independently of <span class=" x-ph-2-0" id="JAsync_Overview-BCB42554_PTCCreoParametric-E96269BB_41_16"><span xmlns="" profilecode="1">Creo Parametric</span></span> and subsequently either starts or connects to a <span class=" x-ph-2-0" id="JAsync_Overview-BCB42554_PTCCreoParametric-E96269BB_41_16"><span xmlns="" profilecode="1">Creo Parametric</span></span> process. 
+               </div>
+               <div class=" x-note-2-0 x-note-2-3">
+                  <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                  <div class=" x-p-7-0">An asynchronous application that starts <span class=" x-ph-2-0" id="JAsync_Overview-BCB42554_PTCCreoParametric-E96269BB_41_16"><span xmlns="" profilecode="1">Creo Parametric</span></span> will not appear in the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Auxiliary Applications</span></span> dialog box.
+                  </div>
+               </div>
+               <div class=" x-p-7-0">The use of RPC causes asynchronous mode to perform more slowly than synchronous mode. For this reason, apply asynchronous
+                  mode only when it is needed.
+               </div>
+               <div class=" x-p-7-0">An asynchronous mode is not the only mode in which your application has explicit control over <span class=" x-ph-2-0" id="JAsync_Overview-BCB42554_PTCCreoParametric-E96269BB_41_16"><span xmlns="" profilecode="1">Creo Parametric</span></span>. Because <span class=" x-ph-2-0" id="JAsync_Overview-BCB42554_PTCCreoParametric-E96269BB_41_16"><span xmlns="" profilecode="1">Creo Parametric</span></span> calls a Java start method when an application starts, your synchronous application can take control by initiating all operations
+                  in Java start method (thus interrupting any user interaction). This technique is important when you want to run <span class=" x-ph-2-0" id="JAsync_Overview-BCB42554_PTCCreoParametric-E96269BB_41_16"><span xmlns="" profilecode="1">Creo Parametric</span></span> in batch mode.
+               </div>
+               <div class=" x-p-7-0">Depending on how your asynchronous application handles messages from <span class=" x-ph-2-0" id="JAsync_Overview-BCB42554_PTCCreoParametric-E96269BB_41_16"><span xmlns="" profilecode="1">Creo Parametric</span></span>, your application can be classified as either <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">simple</span></span> or <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">full</span></span>. The following sections describe simple and full asynchronous mode.
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JAsync_SettingUpAnAsynchronousJ-LinkApplic-BCB421B8_41_46">
+               
+               <a name="2"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.39.3.3.1" class="Heading2">Setting up an Asynchronous J-Link Application</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">For your asynchronous application to communicate with <span class=" x-ph-2-0" id="JAsync_SettingUpAnAsynchronousJ-LinkApplic-BCB421B8_PTCC_41_50"><span xmlns="" profilecode="1">Creo Parametric</span></span>, you must set the environment variable <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PRO_COMM_MSG_EXE</span></span> to the full path of the executable <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pro_comm_msg</span></span>. 
+                  </div>
+                  <div class=" x-p-7-0">On Windows systems, set <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PRO_COMM_MSG_EXE</span></span> in the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Environment</span></span> section of the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">System</span></span> window that you access from the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Control Panel</span></span>.
+                  </div>
+                  <div class=" x-p-7-0">To support the asynchronous mode, use the jar file <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcasync.jar</span></span> in your CLASSPATH. This file is available at <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_loadpoint&gt;\&lt;version&gt;\Common Files\text\java</span></span>. This file contains all required classes for running with asynchronous <span class=" x-ph-2-0">J-Link</span>.
+                  </div>
+                  <div class=" x-note-2-0 x-note-2-3">
+                     <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                     <div class=" x-p-7-0">Asynchronous applications are incompatible with the classes in the synchronous <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">.jar</span></span> files. You must build and run your application classes specifically to run in asynchronous mode.
+                     </div>
+                  </div>
+                  <div class=" x-p-7-0">You must add the asynchronous library, <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcasyncmt</span></span>, to your environment that launches the <span class=" x-ph-2-0">J-Link</span> application. This library is stored in <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_loadpoint&gt;\&lt;version&gt;\Common Files\&lt;machine type&gt;\&lt;lib&gt;</span></span>.
+                  </div>
+                  <div class=" x-note-2-0 x-note-2-3">
+                     <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                     <div class=" x-p-7-0">The library has prefix and extension specifiers for a dynamically loaded library for the platform being used.</div>
+                  </div>
+                  <div class=" x-table-2-0 x-table-2-3" id="styler-id1.1.1.39.3.3.2.7">
+                     <table xmlns="" cellpadding="6.666666666666667" class=" x-tgroup-1-0" frame="box" rules="none" style="border-collapse: collapse; border-width: 1pt; " width="100%">
+                        <colgroup>
+                           <col width="160">
+                           <col width="160">
+                           <col width="160">
+                        </colgroup>
+                        <thead align="left" class=" x-thead-1-0" style="font-weight: bold" valign="top">
+                           <tr class=" x-row-2-0">
+                              <th class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; " valign="top">
+                                 <div class=" x-p-3-0">System</div>
+                              </th>
+                              <th class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; " valign="top">
+                                 <div class=" x-p-3-0">Library</div>
+                              </th>
+                              <th class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; " valign="top">
+                                 <div class=" x-p-3-0">Path</div>
+                              </th>
+                           </tr>
+                        </thead>
+                        <tbody class=" x-tbody-1-0" valign="top">
+                           <tr class=" x-row-2-0">
+                              <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                                 <div class=" x-p-3-0"><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">i486_nt, x86e_win64</span></span></div>
+                              </td>
+                              <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                                 <div class=" x-p-3-0"><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcasyncmt.dll</span></span></div>
+                              </td>
+                              <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                                 <div class=" x-p-3-0"><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">set PATH=&lt;creo_loadpoint&gt;</span><br xmlns="" class="empty"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">\&lt;version&gt;\Common Files\&lt;machine Type&gt;\lib;%PATH%</span></span></div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">Asynchronous <span class=" x-ph-2-0">J-Link</span> applications must load the  library prior to calls made to the asynchronous methods. This can be accomplished by adding the
+                     following line to your application.
+                  </div>
+                  <div class=" x-p-7-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">System.loadLibrary</span></span> (&#8220;<span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcasyncmt</span></span>&#8221;)
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JAsync_SimpleAsynchronousMode-BCB46F8C_41_101">
+            
+            <a name="3"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.39.4.1" class="Heading1">Simple Asynchronous Mode</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">A <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">simple</span></span> asynchronous application does not implement a way to handle requests from <span class=" x-ph-2-0" id="JAsync_SimpleAsynchronousMode-BCB46F8C_PTCCreoParametric_41_106"><span xmlns="" profilecode="1">Creo Parametric</span></span>. Therefore, <span class=" x-ph-2-0">J-Link</span> cannot plant listeners to be notified when events happen in <span class=" x-ph-2-0" id="JAsync_SimpleAsynchronousMode-BCB46F8C_PTCCreoParametric_41_106"><span xmlns="" profilecode="1">Creo Parametric</span></span>. Consequently, <span class=" x-ph-2-0" id="JAsync_SimpleAsynchronousMode-BCB46F8C_PTCCreoParametric_41_106"><span xmlns="" profilecode="1">Creo Parametric</span></span> cannot invoke the methods that must be supplied when you add, for example, menu buttons to <span class=" x-ph-2-0" id="JAsync_SimpleAsynchronousMode-BCB46F8C_PTCCreoParametric_41_106"><span xmlns="" profilecode="1">Creo Parametric</span></span>.
+               </div>
+               <div class=" x-p-7-0">Despite this limitation, a simple asynchronous mode application can be used to automate processes in <span class=" x-ph-2-0" id="JAsync_SimpleAsynchronousMode-BCB46F8C_PTCCreoParametric_41_106"><span xmlns="" profilecode="1">Creo Parametric</span></span>. The application may either start or connect to an existing <span class=" x-ph-2-0" id="JAsync_SimpleAsynchronousMode-BCB46F8C_PTCCreoParametric_41_106"><span xmlns="" profilecode="1">Creo Parametric</span></span> session, and may access <span class=" x-ph-2-0" id="JAsync_SimpleAsynchronousMode-BCB46F8C_PTCCreoParametric_41_106"><span xmlns="" profilecode="1">Creo Parametric</span></span> in interactive or in a non graphical, non interactive mode. When <span class=" x-ph-2-0" id="JAsync_SimpleAsynchronousMode-BCB46F8C_PTCCreoParametric_41_106"><span xmlns="" profilecode="1">Creo Parametric</span></span> is running with graphics, it is an interactive process available to the user.
+               </div>
+               <div class=" x-p-7-0">When you design a <span class=" x-ph-2-0">J-Link</span> application to run in simple asynchronous mode, keep the following points in mind: 
+               </div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">The <span class=" x-ph-2-0" id="JAsync_SimpleAsynchronousMode-BCB46F8C_PTCCreoParametric_41_106"><span xmlns="" profilecode="1">Creo Parametric</span></span> process and the application perform operations concurrently.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">None of the application&#8217;s listener methods can be invoked by <span class=" x-ph-2-0" id="JAsync_SimpleAsynchronousMode-BCB46F8C_PTCCreoParametric_41_106"><span xmlns="" profilecode="1">Creo Parametric</span></span>.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">Simple asynchronous mode supports normal <span class=" x-ph-2-0">J-Link</span> methods but does not support ActionListeners. These considerations imply that the <span class=" x-ph-2-0">J-Link</span> application does not know the state (the current mode, for example) of the <span class=" x-ph-2-0" id="JAsync_SimpleAsynchronousMode-BCB46F8C_PTCCreoParametric_41_106"><span xmlns="" profilecode="1">Creo Parametric</span></span> process at any moment.
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JAsync_StartingAndStoppingProENGINEER-BCB5F33E_41_140">
+            
+            <a name="4"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.39.5.1" class="Heading1">Starting and Stopping <span class=" x-ph-2-0"><span xmlns="" profilecode="1">Creo Parametric</span></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">The following methods are used to start and stop <span class=" x-ph-2-0" id="JAsync_StartingAndStoppingProENGINEER-BCB5F33E_PTCCreoPa_41_146"><span xmlns="" profilecode="1">Creo Parametric</span></span> when using <span class=" x-ph-2-0">J-Link</span> applications.
+               </div>
+               <div class=" x-p-7-0">Methods Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="5"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"> <A HREF="../api/c-pfcAsyncConnection-pfcAsyncConnection.html#AsyncConnection::Start">pfcAsyncConnection.pfcAsyncConnection.AsyncConnection_Start</A> </li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="6"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"> <A HREF="../api/c-pfcAsyncConnection-AsyncConnection.html#End">pfcAsyncConnection.AsyncConnection.End</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">A simple asynchronous application can spawn and connect to a <span class=" x-ph-2-0" id="JAsync_StartingAndStoppingProENGINEER-BCB5F33E_PTCCreoPa_41_146"><span xmlns="" profilecode="1">Creo Parametric</span></span> process with the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnection.pfcAsyncConnection.AsyncConnection_Start</span></span>. The <span class=" x-ph-2-0" id="JAsync_StartingAndStoppingProENGINEER-BCB5F33E_PTCCreoPa_41_146"><span xmlns="" profilecode="1">Creo Parametric</span></span> process listens for requests from the application and acts on the requests at suitable breakpoints, usually between commands.
+               </div>
+               <div class=" x-p-7-0">Unlike applications running in synchronous mode, asynchronous applications are not terminated when <span class=" x-ph-2-0" id="JAsync_StartingAndStoppingProENGINEER-BCB5F33E_PTCCreoPa_41_146"><span xmlns="" profilecode="1">Creo Parametric</span></span> terminates. This is useful when the application needs to perform <span class=" x-ph-2-0" id="JAsync_StartingAndStoppingProENGINEER-BCB5F33E_PTCCreoPa_41_146"><span xmlns="" profilecode="1">Creo Parametric</span></span> operations intermittently, and therefore, must start and stop <span class=" x-ph-2-0" id="JAsync_StartingAndStoppingProENGINEER-BCB5F33E_PTCCreoPa_41_146"><span xmlns="" profilecode="1">Creo Parametric</span></span> more than once during a session.
+               </div>
+               <div class=" x-p-7-0">The application can connect to or start only one <span class=" x-ph-2-0" id="JAsync_StartingAndStoppingProENGINEER-BCB5F33E_PTCCreoPa_41_146"><span xmlns="" profilecode="1">Creo Parametric</span></span> session at any time. If the <span class=" x-ph-2-0">J-Link</span> application spawns a second session, connection to the first session is lost.
+               </div>
+               <div class=" x-p-7-0">To end any <span class=" x-ph-2-0" id="JAsync_StartingAndStoppingProENGINEER-BCB5F33E_PTCCreoPa_41_146"><span xmlns="" profilecode="1">Creo Parametric</span></span> process that the application is connected to, call the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnection.AsyncConnection.End</span></span>.
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JAsync_SettingUpANoninteractiveSession-BCB5048F_41_178">
+               
+               <a name="7"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.39.5.3.1" class="Heading2">Setting Up a Noninteractive Session</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">You can spawn a <span class=" x-ph-2-0" id="JAsync_SettingUpANoninteractiveSession-BCB5048F_PTCCreoP_41_182"><span xmlns="" profilecode="1">Creo Parametric</span></span> session that is both noninteractive and nongraphical. In asynchronous mode, include the following strings in the <span class=" x-ph-2-0" id="JAsync_SettingUpANoninteractiveSession-BCB5048F_PTCCreoP_41_182"><span xmlns="" profilecode="1">Creo Parametric</span></span> start or connect call to <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnection.pfcAsyncConnection.AsyncConnection_Start</span></span>: 
+                  </div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">-g:no_graphics</span></span>&#8212;Turn off the graphics display.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">-i:rpc_input</span></span>&#8212;Causes <span class=" x-ph-2-0" id="JAsync_SettingUpANoninteractiveSession-BCB5048F_PTCCreoP_41_182"><span xmlns="" profilecode="1">Creo Parametric</span></span> to expect input from your asynchronous application only.</span><div class=" x-note-2-0 x-note-2-3">
+                                    <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                                    <div class=" x-p-7-0">Both of these arguments are required, but the order is not important.</div>
+                                 </div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">The syntax of the call for a noninteractive, nongraphical session is as follows: </div><pre class=" x-codeblock-3-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnection.pfcAsyncConnection.AsyncConnection_Start
+("pro -g:no_graphics -i:rpc_input",&lt;text_dir&gt;); </span></pre><div class=" x-p-7-0">where <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pro</span></span> is the command to start <span class=" x-ph-2-0" id="JAsync_SettingUpANoninteractiveSession-BCB5048F_PTCCreoP_41_182"><span xmlns="" profilecode="1">Creo Parametric</span></span>.
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JAsync_ExampleCodeForVisualBasic.NET-BCB57C15_41_204">
+               
+               <a name="8"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.39.5.4.1" class="Heading2">Example Code</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">The sample code in the file <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncStartExample.java</span></span> located at <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_jlink_loadpoint&gt;/jlink_appls/jlinkasyncexamples</span></span> demonstrates how to use <span class=" x-ph-2-0">J-Link</span> in asynchronous mode. The method starts <span class=" x-ph-2-0" id="JAsync_ExampleCodeForVisualBasic.NET-BCB57C15_PTCCreoPar_41_211"><span xmlns="" profilecode="1">Creo Parametric</span></span> asynchronously, retrieves a Session, and opens a model in <span class=" x-ph-2-0" id="JAsync_ExampleCodeForVisualBasic.NET-BCB57C15_PTCCreoPar_41_211"><span xmlns="" profilecode="1">Creo Parametric</span></span>.
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JAsync_ConnectingToAProENGINEERProcess-BCB6C5D0_41_215">
+            
+            <div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.39.6.1" mcad="Heading1">Connecting to a <span class=" x-ph-2-0"><span xmlns="" profilecode="1">Creo Parametric</span></span>  Process
+            </div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Methods Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="9"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcAsyncConnection-pfcAsyncConnection.html#AsyncConnection::Connect">pfcAsyncConnection.pfcAsyncConnection.AsyncConnection_Connect</A> </li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="10"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcAsyncConnection-pfcAsyncConnection.html#AsyncConnection::GetActiveConnection">pfcAsyncConnection.pfcAsyncConnection.AsyncConnection_GetActiveConnection</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="11"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcAsyncConnection-AsyncConnection.html#Disconnect">pfcAsyncConnection.AsyncConnection.Disconnect</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">A simple asynchronous application can also connect to a <span class=" x-ph-2-0" id="JAsync_ConnectingToAProENGINEERProcess-BCB6C5D0_PTCCreoP_41_232"><span xmlns="" profilecode="1">Creo Parametric</span></span> process that is already running on a local computer. The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnection.pfcAsyncConnection.AsyncConnection_Connect</span></span> performs this connection. This method fails to connect if multiple <span class=" x-ph-2-0" id="JAsync_ConnectingToAProENGINEERProcess-BCB6C5D0_PTCCreoP_41_232"><span xmlns="" profilecode="1">Creo Parametric</span></span> sessions are running. If several versions of <span class=" x-ph-2-0" id="JAsync_ConnectingToAProENGINEERProcess-BCB6C5D0_PTCCreoP_41_232"><span xmlns="" profilecode="1">Creo Parametric</span></span> are running on the same computer, try to connect by specifying user and display parameters. However, if several versions
+                  of <span class=" x-ph-2-0" id="JAsync_ConnectingToAProENGINEERProcess-BCB6C5D0_PTCCreoP_41_232"><span xmlns="" profilecode="1">Creo Parametric</span></span> are running in the same user and display parameters, the connection may not be possible.
+               </div>
+               <div class=" x-p-7-0"><span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnection.pfcAsyncConnection.AsyncConnection</span><br xmlns="" class="empty"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">_GetActiveConnection</span></span> returns the current connection to a <span class=" x-ph-2-0" id="JAsync_ConnectingToAProENGINEERProcess-BCB6C5D0_PTCCreoP_41_232"><span xmlns="" profilecode="1">Creo Parametric</span></span> session.
+               </div>
+               <div class=" x-p-7-0">To disconnect from a <span class=" x-ph-2-0" id="JAsync_ConnectingToAProENGINEERProcess-BCB6C5D0_PTCCreoP_41_232"><span xmlns="" profilecode="1">Creo Parametric</span></span> process, call the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnection.AsyncConnection.Disconnect</span></span>. This method can be called only if you used the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnection.pfcAsyncConnection.AsyncConnection_Connect</span></span> to get the connection.
+               </div>
+               <div class=" x-p-7-0">The connection to a <span class=" x-ph-2-0" id="JAsync_ConnectingToAProENGINEERProcess-BCB6C5D0_PTCCreoP_41_232"><span xmlns="" profilecode="1">Creo Parametric</span></span> process uses information provided by the name service daemon. The name service daemon accepts and supplies information about
+                  the processes running on the specified hosts. The application manager, for example, uses the name service when it starts up
+                  <span class=" x-ph-2-0" id="JAsync_ConnectingToAProENGINEERProcess-BCB6C5D0_PTCCreoP_41_232"><span xmlns="" profilecode="1">Creo Parametric</span></span> and other processes. The name service daemon is set up as part of the <span class=" x-ph-2-0" id="JAsync_ConnectingToAProENGINEERProcess-BCB6C5D0_PTCCreoP_41_232"><span xmlns="" profilecode="1">Creo Parametric</span></span> installation.
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JAsync_ConnectingViaConnectionID-BCB69033_41_257">
+               
+               <a name="12"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.39.6.3.1" class="Heading2">Connecting Via Connection ID</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Methods Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="13"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcAsyncConnection-AsyncConnection.html#GetConnectionId">pfcAsyncConnection.AsyncConnection.GetConnectionId</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="14"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcAsyncConnection-ConnectionId.html#ExternalRep">pfcAsyncConnection.ConnectionId.GetExternalRep</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="15"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcSession-BaseSession.html#ConnectionId">pfcSession.BaseSession.GetConnectionId</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="16"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcAsyncConnection-pfcAsyncConnection.html#ConnectionId::Create">pfcAsyncConnection.pfcAsyncConnection.ConnectionId_Create</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="17"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcAsyncConnection-pfcAsyncConnection.html#AsyncConnection::ConnectById">pfcAsyncConnection.pfcAsyncConnection.AsyncConnection_ConnectById</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">Each <span class=" x-ph-2-0" id="JAsync_ConnectingViaConnectionID-BCB69033_PTCCreoParamet_41_278"><span xmlns="" profilecode="1">Creo Parametric</span></span> process maintains a unique identity for communications purposes. Use this ID to reconnect to a <span class=" x-ph-2-0" id="JAsync_ConnectingViaConnectionID-BCB69033_PTCCreoParamet_41_278"><span xmlns="" profilecode="1">Creo Parametric</span></span> process.
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnection.AsyncConnection.GetConnectionId</span></span> returns a data structure containing the connection ID.
+                  </div>
+                  <div class=" x-p-7-0">If the connection id must be passed to some other application the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnection.ConnectionId.GetExternalRep</span></span> provides the string external representation for the connection ID.
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSession.BaseSession.GetConnectionId</span></span> provides access to the asynchronous connection ID for the current <span class=" x-ph-2-0" id="JAsync_ConnectingViaConnectionID-BCB69033_PTCCreoParamet_41_278"><span xmlns="" profilecode="1">Creo Parametric</span></span> session. This ID can be passed to any asynchronous mode application that needs to connect to the current session of <span class=" x-ph-2-0" id="JAsync_ConnectingViaConnectionID-BCB69033_PTCCreoParamet_41_278"><span xmlns="" profilecode="1">Creo Parametric</span></span>.
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnection.pfcAsyncConnection.ConnectionId_Create</span></span> takes a string representation and creates a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">ConnectionId</span></span> data object. The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnection.pfcAsyncConnection.</span><br xmlns="" class="empty"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">AsyncConnection_ConnectById</span></span> connects to <span class=" x-ph-2-0" id="JAsync_ConnectingViaConnectionID-BCB69033_PTCCreoParamet_41_278"><span xmlns="" profilecode="1">Creo Parametric</span></span> at the specified connection ID.
+                  </div>
+                  <div class=" x-note-2-0 x-note-2-3">
+                     <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                     <div class=" x-p-7-0">Connection IDs are unique for each <span class=" x-ph-2-0" id="JAsync_ConnectingViaConnectionID-BCB69033_PTCCreoParamet_41_278"><span xmlns="" profilecode="1">Creo Parametric</span></span> process and are not maintained after you quit <span class=" x-ph-2-0" id="JAsync_ConnectingViaConnectionID-BCB69033_PTCCreoParamet_41_278"><span xmlns="" profilecode="1">Creo Parametric</span></span>.
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JAsync_StatusOfAProENGINEERProcess-BCB69849_41_304">
+               
+               <div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.39.6.4.1" mcad="Heading2">Status of a <span class=" x-ph-2-0"><span xmlns="" profilecode="1">Creo Parametric</span></span>  Process
+               </div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Method Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="18"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcAsyncConnection-AsyncConnection.html#IsRunning">pfcAsyncConnection.AsyncConnection.IsRunning</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">To find out whether a <span class=" x-ph-2-0" id="JAsync_StatusOfAProENGINEERProcess-BCB69849_PTCCreoParam_41_315"><span xmlns="" profilecode="1">Creo Parametric</span></span> process is running, use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnectionAsyncConnection.IsRunning</span></span>.
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JAsync_GettingTheSessionObject-BCB6BC36_41_318">
+               
+               <a name="19"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.39.6.5.1" class="Heading2">Getting the Session Object</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Method Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="20"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcAsyncConnection-AsyncConnection.html#Session">pfcAsyncConnection.AsyncConnection.GetSession</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnection.AsyncConnection.GetSession</span></span> returns the session object representing the <span class=" x-ph-2-0" id="JAsync_GettingTheSessionObject-BCB6BC36_PTCCreoParametri_41_328"><span xmlns="" profilecode="1">Creo Parametric</span></span> session. Use this object to access the contents of the <span class=" x-ph-2-0" id="JAsync_GettingTheSessionObject-BCB6BC36_PTCCreoParametri_41_328"><span xmlns="" profilecode="1">Creo Parametric</span></span> session. See the <a href="JSession.html" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Session Objects</a> <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> for additional information.
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JAsync_FullAsynchronousMode-BCB74169_41_335">
+            
+            <a name="21"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.39.7.1" class="Heading1">Full Asynchronous Mode</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Full asynchronous mode is identical to the simple asynchronous mode except in the way the <span class=" x-ph-2-0">J-Link</span> application handles requests from <span class=" x-ph-2-0" id="JAsync_FullAsynchronousMode-BCB74169_PTCCreoParametric-E_41_340"><span xmlns="" profilecode="1">Creo Parametric</span></span>. In simple asynchronous mode, it is not possible to process these requests. In full asynchronous mode, the application implements
+                  a control loop that &#8216;&#8216;listens&#8217;&#8217; for messages from <span class=" x-ph-2-0" id="JAsync_FullAsynchronousMode-BCB74169_PTCCreoParametric-E_41_340"><span xmlns="" profilecode="1">Creo Parametric</span></span>. As a result, <span class=" x-ph-2-0" id="JAsync_FullAsynchronousMode-BCB74169_PTCCreoParametric-E_41_340"><span xmlns="" profilecode="1">Creo Parametric</span></span> can call functions in the application, including callback functions for menu buttons and notifications.
+               </div>
+               <div class=" x-note-2-0 x-note-2-3">
+                  <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                  <div class=" x-p-7-0">Using full asynchronous mode requires starting or connecting to <span class=" x-ph-2-0" id="JAsync_FullAsynchronousMode-BCB74169_PTCCreoParametric-E_41_340"><span xmlns="" profilecode="1">Creo Parametric</span></span> using the methods described in the previous sections. The difference is that the application must provide an event loop to
+                     process calls from menu buttons and listeners.
+                  </div>
+               </div>
+               <div class=" x-p-7-0"> Methods Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="22"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcAsyncConnection-AsyncConnection.html#EventProcess">pfcAsyncConnection.AsyncConnection.EventProcess</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="23"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcAsyncConnection-AsyncConnection.html#WaitForEvents">pfcAsyncConnection.AsyncConnection.WaitForEvents</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="24"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcAsyncConnection-AsyncConnection.html#InterruptEventProcessing">pfcAsyncConnection.AsyncConnection.InterruptEventProcessing</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="25"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcAsyncConnection-AsyncActionListener.html#OnTerminate">pfcAsyncConnection.AsyncActionListener.OnTerminate</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The control loop of an application running in full asynchronous mode must contain a call to the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnection.AsyncConnection.EventProcess</span></span>, which takes no arguments. This method allows the application to respond to messages sent from <span class=" x-ph-2-0" id="JAsync_FullAsynchronousMode-BCB74169_PTCCreoParametric-E_41_340"><span xmlns="" profilecode="1">Creo Parametric</span></span>. For example, if the user selects a menu button that is added by your application, <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnection.AsyncConnection.EventProcess</span></span> processes the call to your listener and returns when the call completes. For more information on listeners and adding menu
+                  buttons, see the <a href="JSession.html" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Session Objects</a> <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span>.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnection.AsyncConnection.WaitForEvents</span></span> provides an alternative to the development of an event processing loop in a full asynchronous mode application. Call this
+                  function to have the application wait in a loop for events to be passed from <span class=" x-ph-2-0" id="JAsync_FullAsynchronousMode-BCB74169_PTCCreoParametric-E_41_340"><span xmlns="" profilecode="1">Creo Parametric</span></span>. No other processing takes place while the application is waiting. The loop continues until <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnection.AsyncConnection.InterruptEventProcessing</span></span> is called from a <span class=" x-ph-2-0">J-Link</span> callback action, or until the application detects the termination of <span class=" x-ph-2-0" id="JAsync_FullAsynchronousMode-BCB74169_PTCCreoParametric-E_41_340"><span xmlns="" profilecode="1">Creo Parametric</span></span>.
+               </div>
+               <div class=" x-p-7-0">It is often necessary for your full asynchronous application to be notified of the termination of the <span class=" x-ph-2-0" id="JAsync_FullAsynchronousMode-BCB74169_PTCCreoParametric-E_41_340"><span xmlns="" profilecode="1">Creo Parametric</span></span> process. In particular, your control loop need not continue to listen for <span class=" x-ph-2-0" id="JAsync_FullAsynchronousMode-BCB74169_PTCCreoParametric-E_41_340"><span xmlns="" profilecode="1">Creo Parametric</span></span> messages if <span class=" x-ph-2-0" id="JAsync_FullAsynchronousMode-BCB74169_PTCCreoParametric-E_41_340"><span xmlns="" profilecode="1">Creo Parametric</span></span> is no longer running.
+               </div>
+               <div class=" x-p-7-0">An <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">AsyncConnection</span></span> object can be assigned an Action Listener to bind a termination action that is executed upon the termination of <span class=" x-ph-2-0" id="JAsync_FullAsynchronousMode-BCB74169_PTCCreoParametric-E_41_340"><span xmlns="" profilecode="1">Creo Parametric</span></span>. The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncConnection.AsyncActionListener.OnTerminate</span></span> handles the termination that you must override. It sends a member of the class <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfc</span></span><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">AsyncConnection.</span></span><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">TerminationStatus</span></span>, which is one of the following:
+               </div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">TERM_EXIT</span></span>&#8212;Normal exit (the user clicks <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Exit</span></span> on the menu).</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">TERM_ABNORMAL</span></span>&#8212;Quit with error status.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">TERM_SIGNAL</span></span>&#8212;Fatal signal raised.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">Your application can interpret the termination type and take appropriate action. For more information on Action Listeners,
+                  see the <a href="JAction.html" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Action Listeners</a> <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span>.
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JAsync_ExampleCode-BCB73FB9_41_410">
+               
+               <a name="26"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.39.7.3.1" class="Heading2">Example Code</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">The sample code in the file <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAsyncFullExample.java</span></span> located at <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_jlink_loadpoint&gt;/jlink_appls/jlinkasyncexamples</span></span> is a fully asynchronous application. It follows the procedure for a full asynchronous application:
+                  </div>
+                  <div class=" x-ol-6-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-11-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">1.</td>
+                              <td><span class=" x-p-4-0">The application establishes listeners for <span class=" x-ph-2-0" id="JAsync_ExampleCode-BCB73FB9_PTCCreoParametric-E96269BB_41_419"><span xmlns="" profilecode="1">Creo Parametric</span></span> events, in this case, the menu button and the termination listener.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-12-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">2.</td>
+                              <td><span class=" x-p-4-0">The application goes into a control loop calling <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">EventProcess</span></span> which allows the application to respond to the <span class=" x-ph-2-0" id="JAsync_ExampleCode-BCB73FB9_PTCCreoParametric-E96269BB_41_419"><span xmlns="" profilecode="1">Creo Parametric</span></span> events.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-section-1-0" id="styler-id1.1.1.39.7.3.2.3">
+                     <div class=" x-title-58-0" combinedFontName="off" id="styler-id1.1.1.39.7.3.2.3.1">Message and Menu File</div><pre class=" x-codeblock-3-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">J-Link
+J-Link
+#
+#
+AsyncApp
+Hit me!
+#
+#
+AsyncAppHelp
+Launch async application callback
+#
+#</span></pre></div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JAsync_TroubleshootingAsynchronousJ-Link-BCBA5505_41_429">
+            
+            <a name="27"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.39.8.1" class="Heading1">Troubleshooting Asynchronous J-Link</div>
+            <div class=" x-body-3-0"></div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JAsync_GeneralProblems-BCBA28A4_41_432">
+               
+               <a name="28"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.39.8.3.1" class="Heading2">General Problems</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-section-1-0" id="styler-id1.1.1.39.8.3.2.1">
+                     <div class=" x-title-58-0" combinedFontName="off" id="styler-id1.1.1.39.8.3.2.1.1">UnsatisfiedLinkError in System.loadLibrary ("pfcasyncmt")</div>
+                     <div class=" x-p-7-0">Add <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">$PRO_DIRECTORY/$PRO_MACHINE_TYPE/lib</span></span> to your library path:
+                     </div>
+                     <div class=" x-p-7-0">Windows and Windows XP 64bit:$PATH (separated with semicolon)</div>
+                     <div class=" x-p-7-0">Java gives this exception when it has any trouble loading the library, not just when the library is not in the library path.
+                        If you are working in a  non-standard configuration make sure that all of these libraries are in your library path (subject
+                        to your OS naming, for example <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">cipstdmtz.dll</span></span> on Windows): 
+                     </div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcasyncmt</span></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">jnicipjavamtz</span></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">jniadaptsmtz</span></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">cipstdmtz</span></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">ctoolsmtz</span></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">baselibmtz</span></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">i18nmtz</span></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">Look at what is printed on <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">stdout/stderr</span></span>. There can be unresolved symbols. Windows usually reports unresolved symbols in a pop-up dialog so you will see it immediately.
+                        If that does not help, then enable the debug output from the operating system's dynamic loader, start with reading the main
+                        page.
+                     </div>
+                  </div>
+                  <div class=" x-section-1-0" id="styler-id1.1.1.39.8.3.2.2">
+                     <div class=" x-title-58-0" combinedFontName="off" id="styler-id1.1.1.39.8.3.2.2.1">UnsatisfiedLinkError on first call to a JLink method</div>
+                     <div class=" x-p-7-0">Ensure that you executed the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">System.loadLibrary ("pfcasyncmt")</span></span>. Put a debug printout right after it to ensure it gets loaded.
+                     </div>
+                     <div class=" x-p-7-0">In most cases the <span class=" x-ph-2-0">J-Link</span> jar files (<span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcasync.jar</span></span>) are loaded using a non-system class loader. Java lets you load native libraries from classes loaded with either the system
+                        class loader (<span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcasync.jar</span></span>must be in the default CLASSPATH), or a signed class loader. Java will not throw an exception on <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">System.loadLibrary</span></span>. For this reason everything will appear to be fine until the first call to a native method. At this point you will get an
+                        <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">UnsatisfiedLinkError</span></span>. Add <span class=" x-ph-2-0">J-Link</span> jar files to the default CLASSPATH, usually to the CLASSPATH environment or an appropriate place in your servlet engine's
+                        configuration.
+                     </div>
+                  </div>
+                  <div class=" x-section-1-0" id="styler-id1.1.1.39.8.3.2.3">
+                     <div class=" x-title-58-0" combinedFontName="off" id="styler-id1.1.1.39.8.3.2.3.1">NullPointerException from a JLink method early in program execution</div>
+                     <div class=" x-p-7-0">Make sure that you have jar files from only one version of <span class=" x-ph-2-0">J-Link</span> in your CLASSPATH. If you have both async and sync jar files, the VM will pick up incorrect classes.
+                     </div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0">Sync <span class=" x-ph-2-0">J-Link</span> jars: </span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0">Async <span class=" x-ph-2-0">J-Link</span> jars: </span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class=" x-section-1-0" id="styler-id1.1.1.39.8.3.2.4">
+                     <div class=" x-title-58-0" combinedFontName="off" id="styler-id1.1.1.39.8.3.2.4.1">pfcExceptions.XToolkitNotFound exception on the first call to pfcAsyncConnection.pfcAsyncConnection.AsyncConnection_Start
+
+                        on Windows
+                     </div>
+                     <div class=" x-p-7-0">Make sure your <span class=" x-ph-2-0" id="JAsync_GeneralProblems-BCBA28A4_PTCCreoParametric-E96269_41_491"><span xmlns="" profilecode="1">Creo Parametric</span></span> command is correct. If it's not a full path to a script/executable, make sure <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">$PATH</span></span> is set correctly. Try full path in the command: if it works, then your <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">$PATH</span></span>is incorrect.
+                     </div>
+                  </div>
+                  <div class=" x-section-1-0" id="styler-id1.1.1.39.8.3.2.5">
+                     <div class=" x-title-58-0" combinedFontName="off" id="styler-id1.1.1.39.8.3.2.5.1">pfcExceptions.XToolkitGeneralError or pfcExceptions.CommError on the first call to pfcAsyncConnection.pfcAsyncConnection.AsyncConnection_Start
+                        or pfcAsyncConnection.pfcAsyncConnection.AsyncConnection_Connect
+
+                     </div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0">Make sure the environment variable <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PRO_COMM_MSG_EXE</span></span> is set to full path to <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pro_comm_msg</span></span>, including file name, including <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">.exe</span></span> on Windows.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0">Make sure the environment variable <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PRO_DIRECTORY</span></span> is set to <span class=" x-ph-2-0" id="JAsync_GeneralProblems-BCBA28A4_PTCCreoParametric-E96269_41_491"><span xmlns="" profilecode="1">Creo Parametric</span></span> installation directory.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0">Make sure name service () is running.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class=" x-section-1-0" id="styler-id1.1.1.39.8.3.2.6">
+                     <div class=" x-title-58-0" combinedFontName="off" id="styler-id1.1.1.39.8.3.2.6.1">pfcAsyncConnection.pfcAsyncConnection.AsyncConnection_Start hangs, even though <span class=" x-ph-2-0"><span xmlns="" profilecode="1">Creo Parametric</span></span>  already started
+                     </div>
+                     <div class=" x-p-7-0">Make sure name service () is also started with <span class=" x-ph-2-0" id="JAsync_GeneralProblems-BCBA28A4_PTCCreoParametric-E96269_41_491"><span xmlns="" profilecode="1">Creo Parametric</span></span>. Open <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Task Manager</span></span> and look for <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">nmsd.exe</span></span> in the process listing.
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JAsync_ProblemsSpecificToServletsAndJSP-BCBA527B_41_519">
+               
+               <a name="29"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.39.8.4.1" class="Heading2">Problems Specific to Servlets and JSP</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-section-1-0" id="styler-id1.1.1.39.8.4.2.1">
+                     <div class=" x-title-58-0" combinedFontName="off" id="styler-id1.1.1.39.8.4.2.1.1">pfcExceptions.XToolkitGeneralError or pfcExceptions.CommError on the first call to pfcAsyncConnection.pfcAsyncConnection.AsyncConnection_Start
+
+                        or pfcAsyncConnection.pfcAsyncConnection.AsyncConnection_Connect
+
+                     </div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0">Make sure you have <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PRO_COMM_MSG_EXE</span></span> and <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PRO_DIRECTORY</span></span> set correctly.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0">On Windows, servlet engine deployments typically belong to the SYSTEM account and not a local user account. So, you must set
+                                       <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PRO_COMM_MSG_EXE</span></span> and <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PRO_DIRECTORY</span></span> in your system environment and restart Windows to cause this change to take effect.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

@@ -1,0 +1,580 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.cipjava.longdict"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-stdcols.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-stdcols-longdict.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;longdict</h2>
+<tt>
+     package 
+     <b><a href="p-cipjava.html">com.ptc.cipjava</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       class&nbsp;<b>longdict</b>
+<br>&nbsp;
+       implements&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Map of string keys to values of a certain type.<br>
+<br>A dictionary cannot contain duplicate keys, each key can map to at most one value. Dictionary provides methods for accessing a value by its key, for inserting and removing values as well as for iterating through the dictionary elements.<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#contains">contains</a>
+ (String&nbsp;key)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-stdcols-longdict.html">longdict</a></tt></td><td class="method-summary"><tt><a class="method" href="#create">create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new empty dictionary.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>long</tt></td><td class="method-summary"><tt><a class="method" href="#find">find</a>
+ (String&nbsp;key)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Finds an element with the specified key in the dictionary. If an element is found, returns <tt>xtrue</tt> and sets the value pointer to point to the found value, otherwise returns <tt>xfalse</tt>. If the value pointer is 0, this method only verifies if an element with the specified key exists in the dictionary without returning its value.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>long</tt></td><td class="method-summary"><tt><a class="method" href="#getbyindex">getbyindex</a>
+ (int&nbsp;idx)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Gets the value of an element with the specified index from a dictionary. If an element is found, returns <tt>yxtrue</tt> and sets the value pointer to point to the found value, otherwise returns <tt>xfalse</tt>. If the value pointer is 0, this method only verifies if an element with the specified index exists in the dictionary without returning its value. Use this method together with methods <tt>getmapsize</tt> and <tt>getkeybyindex</tt> to iterate through the dictionary.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>int</tt></td><td class="method-summary"><tt><a class="method" href="#getcount">getcount</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#getkeybyindex">getkeybyindex</a>
+ (int&nbsp;idx)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Gets the key of an element with the specified index from a dictionary. If an element is found, returns <tt>xtrue</tt> and sets the key pointer to point to the found string value, otherwise returns <tt>xfalse</tt>. If the key pointer is 0, this method only verifies if an element with the specified index exists in the dictionary without returning its key. Use this method together with methods <tt>getmapsize</tt> and <tt>getbyindex</tt> to iterate through the dictionary.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>int</tt></td><td class="method-summary"><tt><a class="method" href="#getmapsize">getmapsize</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns the dictionary size. This size can be greater than the current number of elements in the dictionary, in fact this is a size of the dictionary hashtable.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#remove">remove</a>
+ (String&nbsp;key)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Removes an element with the specified key from a dictionary.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#removebyindex">removebyindex</a>
+ (int&nbsp;idx)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Removes an element with the specified index from a dictionary. If an element with this index does not exist in the dictionary, throws exception <tt>cipXInvalidDictIndex</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#set">set</a>
+ (String&nbsp;key, long&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Assigns a new value to the dictionary element with the specified key, if such an element exists, otherwise adds a new element with the given key and value to the dictionary.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#setbyindex">setbyindex</a>
+ (int&nbsp;idx, long&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Changes the value of a dictionary element with the specified index to the specified value. If an element with the specified index does not exist in the dictionary, throws exception <tt>cipXInvalidDictIndex</tt>.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="getmapsize">getmapsize</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>int</tt></td><td class="method-name"><tt>getmapsize</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns the dictionary size. This size can be greater than the current number of elements in the dictionary, in fact this is a size of the dictionary hashtable.<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Size of the dictionary.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="getcount">getcount</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>int</tt></td><td class="method-name"><tt>getcount</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="contains">contains</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>contains</tt></td><td class="method-params"><tt>
+ (String&nbsp;key)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>key</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="find">find</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>long</tt></td><td class="method-name"><tt>find</tt></td><td class="method-params"><tt>
+ (String&nbsp;key)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Finds an element with the specified key in the dictionary. If an element is found, returns <tt>xtrue</tt> and sets the value pointer to point to the found value, otherwise returns <tt>xfalse</tt>. If the value pointer is 0, this method only verifies if an element with the specified key exists in the dictionary without returning its value.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>key</b></tt>
+</dt>
+<dd>Key to be found.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Specifies if the value is found.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="set">set</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>set</tt></td><td class="method-params"><tt>
+ (String&nbsp;key, long&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Assigns a new value to the dictionary element with the specified key, if such an element exists, otherwise adds a new element with the given key and value to the dictionary.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>key</b></tt>
+</dt>
+<dd>Key of an element.</dd>
+<dt>
+<tt><b>value</b></tt>
+</dt>
+<dd>New value of an element.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="setbyindex">setbyindex</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>setbyindex</tt></td><td class="method-params"><tt>
+ (int&nbsp;idx, long&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Changes the value of a dictionary element with the specified index to the specified value. If an element with the specified index does not exist in the dictionary, throws exception <tt>cipXInvalidDictIndex</tt>.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx</b></tt>
+</dt>
+<dd>Element index.</dd>
+<dt>
+<tt><b>value</b></tt>
+</dt>
+<dd>New element value.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="remove">remove</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>remove</tt></td><td class="method-params"><tt>
+ (String&nbsp;key)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Removes an element with the specified key from a dictionary.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>key</b></tt>
+</dt>
+<dd>Key of an element to remove.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="removebyindex">removebyindex</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>removebyindex</tt></td><td class="method-params"><tt>
+ (int&nbsp;idx)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Removes an element with the specified index from a dictionary. If an element with this index does not exist in the dictionary, throws exception <tt>cipXInvalidDictIndex</tt>.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx</b></tt>
+</dt>
+<dd>Index of an element to remove.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="getbyindex">getbyindex</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>long</tt></td><td class="method-name"><tt>getbyindex</tt></td><td class="method-params"><tt>
+ (int&nbsp;idx)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Gets the value of an element with the specified index from a dictionary. If an element is found, returns <tt>yxtrue</tt> and sets the value pointer to point to the found value, otherwise returns <tt>xfalse</tt>. If the value pointer is 0, this method only verifies if an element with the specified index exists in the dictionary without returning its value. Use this method together with methods <tt>getmapsize</tt> and <tt>getkeybyindex</tt> to iterate through the dictionary.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx</b></tt>
+</dt>
+<dd>Element index.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Specifies if the index is found.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="getkeybyindex">getkeybyindex</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>getkeybyindex</tt></td><td class="method-params"><tt>
+ (int&nbsp;idx)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Gets the key of an element with the specified index from a dictionary. If an element is found, returns <tt>xtrue</tt> and sets the key pointer to point to the found string value, otherwise returns <tt>xfalse</tt>. If the key pointer is 0, this method only verifies if an element with the specified index exists in the dictionary without returning its key. Use this method together with methods <tt>getmapsize</tt> and <tt>getbyindex</tt> to iterate through the dictionary.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx</b></tt>
+</dt>
+<dd>Element index.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Specifies if the index is found.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="create">create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-stdcols-longdict.html">longdict</a></tt></td><td class="method-name"><tt>create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new empty dictionary.<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Created dictionary.</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

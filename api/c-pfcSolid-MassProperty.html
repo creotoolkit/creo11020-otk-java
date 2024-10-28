@@ -1,0 +1,570 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcSolid.MassProperty"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      452
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcSolid.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcSolid-MassProperty.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;MassProperty</h2>
+<tt>
+     package 
+     <b><a href="p-pfcSolid.html">com.ptc.pfc.pfcSolid</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>MassProperty</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class represents solid model mass property data.
+<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcSolid-Inertia.html">Inertia</a></tt></td><td class="method-summary"><tt><a class="method" href="#CenterGravityInertiaTensor">GetCenterGravityInertiaTensor</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "CenterGravityInertiaTensor"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The inertia tensor translated to center of gravity</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcSolid-Inertia.html">Inertia</a></tt></td><td class="method-summary"><tt><a class="method" href="#CoordSysInertia">GetCoordSysInertia</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "CoordSysInertia"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The inertia matrix with respect to coordinate frame:(element ij is the integral of x_i x_j over the object)</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcSolid-Inertia.html">Inertia</a></tt></td><td class="method-summary"><tt><a class="method" href="#CoordSysInertiaTensor">GetCoordSysInertiaTensor</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "CoordSysInertiaTensor"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The inertia tensor with respect to coordinate frame:CoordSysInertiaTensor = trace(CoordSysInertia) * identity - CoordSysInertia</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#Density">GetDensity</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Density"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The density of the model.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcBase-Point3D.html">Point3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#GravityCenter">GetGravityCenter</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "GravityCenter"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The center of gravity with respect to coordinate frame</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#Mass">GetMass</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Mass"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The model mass.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcSolid-PrincipalAxes.html">PrincipalAxes</a></tt></td><td class="method-summary"><tt><a class="method" href="#PrincipalAxes">GetPrincipalAxes</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PrincipalAxes"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The principal axes (the eigenvectors of CenterGravityInertiaTensor);The vectors are stored in columns.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#PrincipalMoments">GetPrincipalMoments</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PrincipalMoments"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The principal moments of inertia (eigenvalues of CenterGravityInertiaTensor)</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#SurfaceArea">GetSurfaceArea</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "SurfaceArea"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The model's surface area.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#Volume">GetVolume</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Volume"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The model's volume.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#CenterGravityInertiaTensor">SetCenterGravityInertiaTensor</a>
+ (<a class="type" href="c-pfcSolid-Inertia.html">Inertia</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "CenterGravityInertiaTensor"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The inertia tensor translated to center of gravity</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#CoordSysInertia">SetCoordSysInertia</a>
+ (<a class="type" href="c-pfcSolid-Inertia.html">Inertia</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "CoordSysInertia"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The inertia matrix with respect to coordinate frame:(element ij is the integral of x_i x_j over the object)</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#CoordSysInertiaTensor">SetCoordSysInertiaTensor</a>
+ (<a class="type" href="c-pfcSolid-Inertia.html">Inertia</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "CoordSysInertiaTensor"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The inertia tensor with respect to coordinate frame:CoordSysInertiaTensor = trace(CoordSysInertia) * identity - CoordSysInertia</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Density">SetDensity</a>
+ (double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Density"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The density of the model.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#GravityCenter">SetGravityCenter</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "GravityCenter"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The center of gravity with respect to coordinate frame</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Mass">SetMass</a>
+ (double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Mass"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The model mass.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PrincipalAxes">SetPrincipalAxes</a>
+ (<a class="type" href="c-pfcSolid-PrincipalAxes.html">PrincipalAxes</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PrincipalAxes"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The principal axes (the eigenvectors of CenterGravityInertiaTensor);The vectors are stored in columns.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PrincipalMoments">SetPrincipalMoments</a>
+ (<a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PrincipalMoments"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The principal moments of inertia (eigenvalues of CenterGravityInertiaTensor)</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SurfaceArea">SetSurfaceArea</a>
+ (double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "SurfaceArea"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The model's surface area.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Volume">SetVolume</a>
+ (double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Volume"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The model's volume.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Volume">GetVolume/SetVolume</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetVolume</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetVolume</tt></td><td class="method-params"><tt>
+ (double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The model's volume.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SurfaceArea">GetSurfaceArea/SetSurfaceArea</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetSurfaceArea</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetSurfaceArea</tt></td><td class="method-params"><tt>
+ (double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The model's surface area.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#66">Cross Sections: Mass Properties of Cross Sections</a>, <a href="../manual0/OTK_Cross_section.html#66">Cross Sections: Mass Properties of Cross Sections</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Density">GetDensity/SetDensity</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetDensity</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetDensity</tt></td><td class="method-params"><tt>
+ (double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The density of the model.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Mass">GetMass/SetMass</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetMass</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetMass</tt></td><td class="method-params"><tt>
+ (double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The model mass.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GravityCenter">GetGravityCenter/SetGravityCenter</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcBase-Point3D.html">Point3D</a></tt></td><td class="method-name"><tt>GetGravityCenter</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetGravityCenter</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The center of gravity with respect to coordinate frame<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#66">Cross Sections: Mass Properties of Cross Sections</a>, <a href="../manual0/OTK_Cross_section.html#66">Cross Sections: Mass Properties of Cross Sections</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CoordSysInertia">GetCoordSysInertia/SetCoordSysInertia</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcSolid-Inertia.html">Inertia</a></tt></td><td class="method-name"><tt>GetCoordSysInertia</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetCoordSysInertia</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSolid-Inertia.html">Inertia</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The inertia matrix with respect to coordinate frame:(element ij is the integral of x_i x_j over the object)<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#66">Cross Sections: Mass Properties of Cross Sections</a>, <a href="../manual0/OTK_Cross_section.html#66">Cross Sections: Mass Properties of Cross Sections</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CoordSysInertiaTensor">GetCoordSysInertiaTensor/SetCoordSysInertiaTensor</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcSolid-Inertia.html">Inertia</a></tt></td><td class="method-name"><tt>GetCoordSysInertiaTensor</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetCoordSysInertiaTensor</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSolid-Inertia.html">Inertia</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The inertia tensor with respect to coordinate frame:CoordSysInertiaTensor = trace(CoordSysInertia) * identity - CoordSysInertia<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CenterGravityInertiaTensor">GetCenterGravityInertiaTensor/SetCenterGravityInertiaTensor</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcSolid-Inertia.html">Inertia</a></tt></td><td class="method-name"><tt>GetCenterGravityInertiaTensor</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetCenterGravityInertiaTensor</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSolid-Inertia.html">Inertia</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The inertia tensor translated to center of gravity<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PrincipalMoments">GetPrincipalMoments/SetPrincipalMoments</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a></tt></td><td class="method-name"><tt>GetPrincipalMoments</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPrincipalMoments</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The principal moments of inertia (eigenvalues of CenterGravityInertiaTensor)<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PrincipalAxes">GetPrincipalAxes/SetPrincipalAxes</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcSolid-PrincipalAxes.html">PrincipalAxes</a></tt></td><td class="method-name"><tt>GetPrincipalAxes</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPrincipalAxes</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSolid-PrincipalAxes.html">PrincipalAxes</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The principal axes (the eigenvectors of CenterGravityInertiaTensor);The vectors are stored in columns.<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

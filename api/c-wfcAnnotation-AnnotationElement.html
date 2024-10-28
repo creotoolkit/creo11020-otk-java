@@ -1,0 +1,1019 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcAnnotation.AnnotationElement"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      9
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcAnnotation.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcAnnotation-AnnotationElement.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;AnnotationElement</h2>
+<tt>
+     package 
+     <b><a href="p-wfcAnnotation.html">com.ptc.wfc.wfcAnnotation</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>AnnotationElement</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-wfcLayerState-LayerItem.html">com.ptc.wfc.wfcLayerState.LayerItem</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="bold" href="c-wfcModelItem-WModelItem.html">com.ptc.wfc.wfcModelItem.WModelItem</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>&nbsp; <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcAnnotation-AnnotationReferences.html">AnnotationReferences</a></tt></td><td class="method-summary"><tt><a class="method" href="#CollectAnnotationReferences">CollectAnnotationReferences</a>
+ (<a class="type" href="c-wfcAnnotation-AnnotationRefFilter.html">AnnotationRefFilter</a>&nbsp;RefStrength, <a class="type" href="c-wfcAnnotation-AnnotationRefFromType.html">AnnotationRefFromType</a>&nbsp;RefSource)
+</tt>
+<br>
+<tt><b>LICENSE: </b>222</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcSelect-Selections.html">Selections</a></tt></td><td class="method-summary"><tt><a class="method" href="#CollectQuiltReferenceSurfaces">CollectQuiltReferenceSurfaces</a>
+ (<a class="type" href="c-wfcAnnotation-AnnotationReference.html">AnnotationReference</a>&nbsp;QuiltReference)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcAnnotation-Annotation.html">Annotation</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetAnnotation">GetAnnotation</a>
+ ()
+</tt>
+<br>
+<tt><b>LICENSE: </b>222</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFeature-Feature.html">Feature</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetAnnotationFeature">GetAnnotationFeature</a>
+ ()
+</tt>
+<br>
+<tt><b>LICENSE: </b>222</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-summary"><tt><a class="method" href="#GetAnnotationReferenceDescription">GetAnnotationReferenceDescription</a>
+ (<a class="type" href="c-wfcAnnotation-AnnotationReference.html">AnnotationReference</a>&nbsp;Reference)
+</tt>
+<br>
+<tt><b>LICENSE: </b>222</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcAnnotation-AnnotationType.html">AnnotationType</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetAnnotationType">GetAnnotationType</a>
+ ()
+</tt>
+<br>
+<tt><b>LICENSE: </b>222</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#GetCopyFlag">GetCopyFlag</a>
+ ()
+</tt>
+<br>
+<tt><b>LICENSE: </b>222</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#HasMissingReferences">HasMissingReferences</a>
+ (<a class="type" href="c-wfcAnnotation-AnnotationRefFilter.html">AnnotationRefFilter</a>&nbsp;ReferenceType, <a class="type" href="c-wfcAnnotation-AnnotationRefFromType.html">AnnotationRefFromType</a>&nbsp;ReferenceSource, boolean&nbsp;AtLeastOneMissingRef)
+</tt>
+<br>
+<tt><b>LICENSE: </b>222</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsDependent">IsDependent</a>
+ ()
+</tt>
+<br>
+<tt><b>LICENSE: </b>222</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsIncomplete">IsIncomplete</a>
+ ()
+</tt>
+<br>
+<tt><b>LICENSE: </b>222</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsReadOnly">IsReadOnly</a>
+ ()
+</tt>
+<br>
+<tt><b>LICENSE: </b>222</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsReferenceStrong">IsReferenceStrong</a>
+ (<a class="type" href="c-wfcAnnotation-AnnotationReference.html">AnnotationReference</a>&nbsp;Reference)
+</tt>
+<br>
+<tt><b>LICENSE: </b>222</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetAnnotationReferenceDescription">SetAnnotationReferenceDescription</a>
+ (<a class="type" href="c-wfcAnnotation-AnnotationReference.html">AnnotationReference</a>&nbsp;Reference, String&nbsp;Description)
+</tt>
+<br>
+<tt><b>LICENSE: </b>222</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcLayerState-LayerItem.html"><tt>com.ptc.wfc.wfcLayerState.LayerItem</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcLayerState-LayerItem.html#IsLayerItemVisible"><tt>IsLayerItemVisible</tt></a>,
+      <a class="method" href="c-wfcLayerState-LayerItem.html#RemoveNoUpdate"><tt>RemoveNoUpdate</tt></a>,
+      <a class="method" href="c-wfcLayerState-LayerItem.html#GetLayers"><tt>GetLayers</tt></a>,
+      <a class="method" href="c-wfcLayerState-LayerItem.html#AddNoUpdate"><tt>AddNoUpdate</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcBase-ActionSource.html"><tt>com.ptc.pfc.pfcBase.ActionSource</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Parent.html"><tt>com.ptc.pfc.pfcObject.Parent</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ParameterOwner.html"><tt>com.ptc.pfc.pfcModelItem.ParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcModelItem-WParameterOwner.html"><tt>com.ptc.wfc.wfcModelItem.WParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcModelItem-WParameterOwner.html#ExportParameterTable"><tt>ExportParameterTable</tt></a>,
+      <a class="method" href="c-wfcModelItem-WParameterOwner.html#ApplyParameterTableset"><tt>ApplyParameterTableset</tt></a>,
+      <a class="method" href="c-wfcModelItem-WParameterOwner.html#MathcadParametersSet"><tt>MathcadParametersSet</tt></a>,
+      <a class="method" href="c-wfcModelItem-WParameterOwner.html#MathcadInputParametersGet"><tt>MathcadInputParametersGet</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-RelationOwner.html"><tt>com.ptc.pfc.pfcModelItem.RelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcModelItem-WRelationOwner.html"><tt>com.ptc.wfc.wfcModelItem.WRelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcModelItem-WRelationOwner.html#GetRelationConstraints"><tt>GetRelationConstraints</tt></a>,
+      <a class="method" href="c-wfcModelItem-WRelationOwner.html#UnitsUsed"><tt>UnitsUsed</tt></a>,
+      <a class="method" href="c-wfcModelItem-WRelationOwner.html#UseUnits"><tt>UseUnits</tt></a>,
+      <a class="method" href="c-wfcModelItem-WRelationOwner.html#EvaluateExpressionWithUnits"><tt>EvaluateExpressionWithUnits</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Child.html"><tt>com.ptc.pfc.pfcObject.Child</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+      <a class="method" href="c-pfcObject-Child.html#OId"><tt>GetOId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ModelItem.html"><tt>com.ptc.pfc.pfcModelItem.ModelItem</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcModelItem-WModelItem.html"><tt>com.ptc.wfc.wfcModelItem.WModelItem</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcModelItem-WModelItem.html#DeleteUserDefinedName"><tt>DeleteUserDefinedName</tt></a>,
+      <a class="method" href="c-wfcModelItem-WModelItem.html#Unhide"><tt>Unhide</tt></a>,
+      <a class="method" href="c-wfcModelItem-WModelItem.html#Hide"><tt>Hide</tt></a>,
+      <a class="method" href="c-wfcModelItem-WModelItem.html#IsHidden"><tt>IsHidden</tt></a>,
+      <a class="method" href="c-wfcModelItem-WModelItem.html#IsNameReadOnly"><tt>IsNameReadOnly</tt></a>,
+      <a class="method" href="c-wfcModelItem-WModelItem.html#IsZoneFeature"><tt>IsZoneFeature</tt></a>,
+      <a class="method" href="c-wfcModelItem-WModelItem.html#GetDefaultName"><tt>GetDefaultName</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetAnnotationType">GetAnnotationType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcAnnotation-AnnotationType.html">AnnotationType</a></tt></td><td class="method-name"><tt>GetAnnotationType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>LICENSE: </b>222</tt>
+<br>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#29">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/jannot.html#70">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsReadOnly">IsReadOnly</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>IsReadOnly</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>LICENSE: </b>222</tt>
+<br>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#30">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/jannot.html#70">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="HasMissingReferences">HasMissingReferences</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>HasMissingReferences</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcAnnotation-AnnotationRefFilter.html">AnnotationRefFilter</a>&nbsp;ReferenceType, <a class="type" href="c-wfcAnnotation-AnnotationRefFromType.html">AnnotationRefFromType</a>&nbsp;ReferenceSource, boolean&nbsp;AtLeastOneMissingRef)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>LICENSE: </b>222</tt>
+<br>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The element has no references of the given type and source. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#31">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/jannot.html#70">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ReferenceType</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>ReferenceSource</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>AtLeastOneMissingRef</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsIncomplete">IsIncomplete</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>IsIncomplete</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>LICENSE: </b>222</tt>
+<br>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#32">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/jannot.html#70">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetCopyFlag">GetCopyFlag</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetCopyFlag</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>LICENSE: </b>222</tt>
+<br>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#33">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/jannot.html#70">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsDependent">IsDependent</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>IsDependent</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>LICENSE: </b>222</tt>
+<br>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantAccess.html">XToolkitCantAccess</a></tt></tt> - The element is not owned by a data sharing feature.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#34">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/jannot.html#70">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetAnnotation">GetAnnotation</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcAnnotation-Annotation.html">Annotation</a></tt></td><td class="method-name"><tt>GetAnnotation</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>LICENSE: </b>222</tt>
+<br>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The annotation element does not contain an annotation.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#35">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/jannot.html#70">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetAnnotationFeature">GetAnnotationFeature</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFeature-Feature.html">Feature</a></tt></td><td class="method-name"><tt>GetAnnotationFeature</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>LICENSE: </b>222</tt>
+<br>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#36">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/jannot.html#70">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsReferenceStrong">IsReferenceStrong</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>IsReferenceStrong</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcAnnotation-AnnotationReference.html">AnnotationReference</a>&nbsp;Reference)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>LICENSE: </b>222</tt>
+<br>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The annotation element doesn't contain this reference. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#37">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/jannot.html#70">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Reference</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetAnnotationReferenceDescription">GetAnnotationReferenceDescription</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-name"><tt>GetAnnotationReferenceDescription</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcAnnotation-AnnotationReference.html">AnnotationReference</a>&nbsp;Reference)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>LICENSE: </b>222</tt>
+<br>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The annotation element doesn't contain this reference. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#40">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/jannot.html#70">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Reference</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetAnnotationReferenceDescription">SetAnnotationReferenceDescription</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetAnnotationReferenceDescription</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcAnnotation-AnnotationReference.html">AnnotationReference</a>&nbsp;Reference, String&nbsp;Description)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>LICENSE: </b>222</tt>
+<br>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The annotation element doesn't contain this reference. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#41">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/jannot.html#70">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Reference</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Description</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CollectAnnotationReferences">CollectAnnotationReferences</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcAnnotation-AnnotationReferences.html">AnnotationReferences</a></tt></td><td class="method-name"><tt>CollectAnnotationReferences</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcAnnotation-AnnotationRefFilter.html">AnnotationRefFilter</a>&nbsp;RefStrength, <a class="type" href="c-wfcAnnotation-AnnotationRefFromType.html">AnnotationRefFromType</a>&nbsp;RefSource)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>LICENSE: </b>222</tt>
+<br>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The annotation element does not contain any references of the indicated type. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidType.html">XToolkitInvalidType</a></tt></tt> - References from driving dimension annotation elements cannot be accessed. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#38">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/jannot.html#70">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>RefStrength</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>RefSource</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CollectQuiltReferenceSurfaces">CollectQuiltReferenceSurfaces</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcSelect-Selections.html">Selections</a></tt></td><td class="method-name"><tt>CollectQuiltReferenceSurfaces</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcAnnotation-AnnotationReference.html">AnnotationReference</a>&nbsp;QuiltReference)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidType.html">XToolkitInvalidType</a></tt></tt> - The input reference type was not valid.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#39">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>, <a href="../manual0/jannot.html#70">Annotations: Annotation Features and Annotations: Accessing and Modifying Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>QuiltReference</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

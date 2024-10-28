@@ -1,0 +1,1856 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcGeometry.wfcGeometry"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      651
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcGeometry.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcGeometry-wfcGeometry.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcGeometry</h2>
+<tt>
+     package <b><a href="p-wfcGeometry.html">com.ptc.wfc.wfcGeometry</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>wfcGeometry</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "wfcGeometry"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-ContourDescriptor.html">ContourDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#ContourDescriptor::Create">ContourDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-ContourTraversal.html">ContourTraversal</a>&nbsp;ContourTraversal, <a class="type" href="c-stdcols-intseq.html">intseq</a>&nbsp;EdgeIds)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-CsysDatumObject.html">CsysDatumObject</a></tt></td><td class="method-summary"><tt><a class="method" href="#CsysDatumObject::Create">CsysDatumObject_Create</a>
+ (<a class="type" href="c-wfcGeometry-WCsysData.html">WCsysData</a>&nbsp;CsysData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates CsysDatumObject.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-CurveDatumObject.html">CurveDatumObject</a></tt></td><td class="method-summary"><tt><a class="method" href="#CurveDatumObject::Create">CurveDatumObject_Create</a>
+ (<a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;Curve)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates CurveDatumObject.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-DatumData.html">DatumData</a></tt></td><td class="method-summary"><tt><a class="method" href="#DatumData::Create">DatumData_Create</a>
+ (int&nbsp;Id, String&nbsp;Name, <a class="type" href="c-wfcGeometry-DatumObject.html">DatumObject</a>&nbsp;DatumObject)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates DatumData object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-EdgeDescriptor.html">EdgeDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#EdgeDescriptor::Create">EdgeDescriptor_Create</a>
+ (int&nbsp;Id, <a class="type" href="c-wfcGeometry-EdgeSurfaceData.html">EdgeSurfaceData</a>&nbsp;EdgeSurface1, <a class="type" href="c-wfcGeometry-EdgeSurfaceData.html">EdgeSurfaceData</a>&nbsp;EdgeSurface2, 
+   /*optional*/
+   <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;XYZCurveData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates EdgeDescriptor object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-EdgeDisplay.html">EdgeDisplay</a></tt></td><td class="method-summary"><tt><a class="method" href="#EdgeDisplay::Create">EdgeDisplay_Create</a>
+ (<a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;Color)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-EdgeSurfaceData.html">EdgeSurfaceData</a></tt></td><td class="method-summary"><tt><a class="method" href="#EdgeSurfaceData::Create">EdgeSurfaceData_Create</a>
+ (int&nbsp;EdgeSurfaceId, <a class="type" href="c-wfcGeometry-EdgeDirection.html">EdgeDirection</a>&nbsp;Direction, 
+   /*optional*/
+   <a class="type" href="c-pfcBase-UVParamsSequence.html">UVParamsSequence</a>&nbsp;UVParamsSequence, 
+   /*optional*/
+   <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;UVCurveData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates EdgeSurfaceData object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-PlaneDatumObject.html">PlaneDatumObject</a></tt></td><td class="method-summary"><tt><a class="method" href="#PlaneDatumObject::Create">PlaneDatumObject_Create</a>
+ (<a class="type" href="c-wfcGeometry-WPlaneData.html">WPlaneData</a>&nbsp;PlaneData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates PlaneDatumObject.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-QuiltData.html">QuiltData</a></tt></td><td class="method-summary"><tt><a class="method" href="#QuiltData::Create">QuiltData_Create</a>
+ (<a class="type" href="c-wfcGeometry-WSurfaceDescriptors.html">WSurfaceDescriptors</a>&nbsp;SurfaceDescriptors, int&nbsp;QuiltId)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-SurfaceTessellationInput.html">SurfaceTessellationInput</a></tt></td><td class="method-summary"><tt><a class="method" href="#SurfaceTessellationInput::Create">SurfaceTessellationInput_Create</a>
+ (double&nbsp;AngleControl, double&nbsp;StepSize, <a class="type" href="c-wfcGeometry-SurfaceTessellationProjection.html">SurfaceTessellationProjection</a>&nbsp;Projection, 
+   /*optional*/
+   <a class="type" href="c-pfcGeometry-CoordSystem.html">CoordSystem</a>&nbsp;CsysData, 
+   /*optional*/
+   Double&nbsp;ChordHeight)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates surface tessellation input</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WCompositeCurveDescriptor.html">WCompositeCurveDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#WCompositeCurveDescriptor::Create">WCompositeCurveDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-CurveDescriptors.html">CurveDescriptors</a>&nbsp;Elements)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates composite curve descriptor object </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WConeDescriptor.html">WConeDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#WConeDescriptor::Create">WConeDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;CoordSys, double&nbsp;Alpha, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates ConeDescriptor object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WCoonsPatchDescriptor.html">WCoonsPatchDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#WCoonsPatchDescriptor::Create">WCoonsPatchDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;U0Profile, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;U1Profile, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;V0Profile, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;V1Profile, <a class="type" href="c-pfcGeometry-CoonsCornerPoints.html">CoonsCornerPoints</a>&nbsp;CornerPoints, <a class="type" href="c-pfcGeometry-CoonsUVDerivatives.html">CoonsUVDerivatives</a>&nbsp;UVDerivatives, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates WCoonsPatchDescriptor object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WCsysData.html">WCsysData</a></tt></td><td class="method-summary"><tt><a class="method" href="#WCsysData::Create">WCsysData_Create</a>
+ (<a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;XAxis, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;YAxis, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;ZAxis, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;Origin)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates WCsysData object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WCylinderDescriptor.html">WCylinderDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#WCylinderDescriptor::Create">WCylinderDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;CoordSys, double&nbsp;Radius, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates CylinderDescriptor object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WCylindricalSplineSurfaceDescriptor.html">WCylindricalSplineSurfaceDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#WCylindricalSplineSurfaceDescriptor::Create">WCylindricalSplineSurfaceDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;CoordSys, <a class="type" href="c-pfcGeometry-SplineSurfaceDescriptor.html">SplineSurfaceDescriptor</a>&nbsp;SplineSurfaceData, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates WCylindricalSplineSurfaceDescriptor object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WFilletSurfaceDescriptor.html">WFilletSurfaceDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#WFilletSurfaceDescriptor::Create">WFilletSurfaceDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcGeometry-SplineDescriptor.html">SplineDescriptor</a>&nbsp;U0Profile, <a class="type" href="c-pfcGeometry-SplineDescriptor.html">SplineDescriptor</a>&nbsp;CenterProfile, <a class="type" href="c-pfcGeometry-SplineDescriptor.html">SplineDescriptor</a>&nbsp;TangentProfile, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates WFilletSurfaceDescriptor object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WForeignSurfaceDescriptor.html">WForeignSurfaceDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#WForeignSurfaceDescriptor::Create">WForeignSurfaceDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;CoordSys, int&nbsp;ForeignId, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates WForeignSurfaceDescriptor object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WNURBSSurfaceDescriptor.html">WNURBSSurfaceDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#WNURBSSurfaceDescriptor::Create">WNURBSSurfaceDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, int&nbsp;UDegree, int&nbsp;VDegree, <a class="type" href="c-stdcols-realseq.html">realseq</a>&nbsp;UKnots, <a class="type" href="c-stdcols-realseq.html">realseq</a>&nbsp;VKnots, <a class="type" href="c-pfcGeometry-BSplinePoints.html">BSplinePoints</a>&nbsp;Points, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates WNURBSSurfaceDescriptor object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WPlaneData.html">WPlaneData</a></tt></td><td class="method-summary"><tt><a class="method" href="#WPlaneData::Create">WPlaneData_Create</a>
+ (<a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;XAxis, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;YAxis, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;ZAxis, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Origin)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates WPlaneData object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WPlaneDescriptor.html">WPlaneDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#WPlaneDescriptor::Create">WPlaneDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;CoordSys, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates PlaneDescriptor object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WRevolvedSurfaceDescriptor.html">WRevolvedSurfaceDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#WRevolvedSurfaceDescriptor::Create">WRevolvedSurfaceDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;CoordSys, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;Profile, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates RevolvedSurfaceDescriptor object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WRuledSurfaceDescriptor.html">WRuledSurfaceDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#WRuledSurfaceDescriptor::Create">WRuledSurfaceDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;CoordSys, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;Profile1, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;Profile2, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates RuledSurfaceDescriptor object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WSplineSurfaceDescriptor.html">WSplineSurfaceDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#WSplineSurfaceDescriptor::Create">WSplineSurfaceDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcGeometry-SplineSurfacePoints.html">SplineSurfacePoints</a>&nbsp;Points, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates WSplineSurfaceDescriptor object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WTabulatedCylinderDescriptor.html">WTabulatedCylinderDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#WTabulatedCylinderDescriptor::Create">WTabulatedCylinderDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;CoordSys, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;Profile, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates TabulatedCylinderDescriptor object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WTorusDescriptor.html">WTorusDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#WTorusDescriptor::Create">WTorusDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;CoordSys, double&nbsp;Radius1, double&nbsp;Radius2, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates TorusDescriptor object.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SurfaceTessellationInput::Create">SurfaceTessellationInput_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-SurfaceTessellationInput.html">SurfaceTessellationInput</a></tt></td><td class="method-name"><tt>SurfaceTessellationInput_Create</tt></td><td class="method-params"><tt>
+ (double&nbsp;AngleControl, double&nbsp;StepSize, <a class="type" href="c-wfcGeometry-SurfaceTessellationProjection.html">SurfaceTessellationProjection</a>&nbsp;Projection, 
+   /*optional*/
+   <a class="type" href="c-pfcGeometry-CoordSystem.html">CoordSystem</a>&nbsp;CsysData, 
+   /*optional*/
+   Double&nbsp;ChordHeight)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates surface tessellation input<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#180">Geometry Evaluation: Surface Tessellation</a>, <a href="../manual0/JGeom.html#195">Geometry Evaluation: Surface Tessellation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AngleControl</b></tt>
+</dt>
+<dd>Angle control value used for the tessellation</dd>
+<dt>
+<tt><b>StepSize</b></tt>
+</dt>
+<dd>Maximum step size value used for the tessellation</dd>
+<dt>
+<tt><b>Projection</b></tt>
+</dt>
+<dd>The type of projection to use for the UV calculations</dd>
+<dt>
+<tt><b>CsysData</b></tt>
+</dt>
+<dd>Csys data to use for the projection if applicable. Pass NULL for default projection</dd>
+<dt>
+<tt><b>ChordHeight</b></tt>
+</dt>
+<dd>Chord height used for the surface tessellation</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+      Handle to <tt><tt><a class="class" href="c-wfcGeometry-SurfaceTessellationInput.html">SurfaceTessellationInput</a></tt></tt>
+    
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ContourDescriptor::Create">ContourDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-ContourDescriptor.html">ContourDescriptor</a></tt></td><td class="method-name"><tt>ContourDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-ContourTraversal.html">ContourTraversal</a>&nbsp;ContourTraversal, <a class="type" href="c-stdcols-intseq.html">intseq</a>&nbsp;EdgeIds)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#84">Geometry Evaluation: Contours</a>, <a href="../manual0/JGeom.html#88">Geometry Evaluation: Contours</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ContourTraversal</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>EdgeIds</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="QuiltData::Create">QuiltData_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-QuiltData.html">QuiltData</a></tt></td><td class="method-name"><tt>QuiltData_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcGeometry-WSurfaceDescriptors.html">WSurfaceDescriptors</a>&nbsp;SurfaceDescriptors, int&nbsp;QuiltId)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#251">Geometry Evaluation: Geometry of Quilts</a>, <a href="../manual0/JGeom.html#255">Geometry Evaluation: Geometry of Quilts</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SurfaceDescriptors</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>QuiltId</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="EdgeSurfaceData::Create">EdgeSurfaceData_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-EdgeSurfaceData.html">EdgeSurfaceData</a></tt></td><td class="method-name"><tt>EdgeSurfaceData_Create</tt></td><td class="method-params"><tt>
+ (int&nbsp;EdgeSurfaceId, <a class="type" href="c-wfcGeometry-EdgeDirection.html">EdgeDirection</a>&nbsp;Direction, 
+   /*optional*/
+   <a class="type" href="c-pfcBase-UVParamsSequence.html">UVParamsSequence</a>&nbsp;UVParamsSequence, 
+   /*optional*/
+   <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;UVCurveData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates EdgeSurfaceData object.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#236">Geometry Evaluation: Geometry of Solid Edges</a>, <a href="../manual0/JGeom.html#246">Geometry Evaluation: Geometry of Solid Edges</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>EdgeSurfaceId</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Direction</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>UVParamsSequence</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>UVCurveData</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="EdgeDescriptor::Create">EdgeDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-EdgeDescriptor.html">EdgeDescriptor</a></tt></td><td class="method-name"><tt>EdgeDescriptor_Create</tt></td><td class="method-params"><tt>
+ (int&nbsp;Id, <a class="type" href="c-wfcGeometry-EdgeSurfaceData.html">EdgeSurfaceData</a>&nbsp;EdgeSurface1, <a class="type" href="c-wfcGeometry-EdgeSurfaceData.html">EdgeSurfaceData</a>&nbsp;EdgeSurface2, 
+   /*optional*/
+   <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;XYZCurveData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates EdgeDescriptor object.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#229">Geometry Evaluation: Geometry of Solid Edges</a>, <a href="../manual0/JGeom.html#246">Geometry Evaluation: Geometry of Solid Edges</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Id</b></tt>
+</dt>
+<dd>The Edge Id.</dd>
+<dt>
+<tt><b>EdgeSurface1</b></tt>
+</dt>
+<dd>The Edge surface 1.</dd>
+<dt>
+<tt><b>EdgeSurface2</b></tt>
+</dt>
+<dd>The Edge syrface 2.</dd>
+<dt>
+<tt><b>XYZCurveData</b></tt>
+</dt>
+<dd>The XYZ curve.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WPlaneDescriptor::Create">WPlaneDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WPlaneDescriptor.html">WPlaneDescriptor</a></tt></td><td class="method-name"><tt>WPlaneDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;CoordSys, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates PlaneDescriptor object.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The plane extents.</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The plane orientation.</dd>
+<dt>
+<tt><b>CoordSys</b></tt>
+</dt>
+<dd>The plane co-ordinate system.</dd>
+<dt>
+<tt><b>SurfaceId</b></tt>
+</dt>
+<dd>The surface id.</dd>
+<dt>
+<tt><b>ContourData</b></tt>
+</dt>
+<dd>The plane contour.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WCylinderDescriptor::Create">WCylinderDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WCylinderDescriptor.html">WCylinderDescriptor</a></tt></td><td class="method-name"><tt>WCylinderDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;CoordSys, double&nbsp;Radius, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates CylinderDescriptor object.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The cylinder extents.</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The orientation.</dd>
+<dt>
+<tt><b>CoordSys</b></tt>
+</dt>
+<dd>The co-ordinate system.</dd>
+<dt>
+<tt><b>Radius</b></tt>
+</dt>
+<dd>The cylinder radius.</dd>
+<dt>
+<tt><b>SurfaceId</b></tt>
+</dt>
+<dd>The surface id.</dd>
+<dt>
+<tt><b>ContourData</b></tt>
+</dt>
+<dd>The contour.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WConeDescriptor::Create">WConeDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WConeDescriptor.html">WConeDescriptor</a></tt></td><td class="method-name"><tt>WConeDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;CoordSys, double&nbsp;Alpha, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates ConeDescriptor object.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The cone extents.</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The orientation.</dd>
+<dt>
+<tt><b>CoordSys</b></tt>
+</dt>
+<dd>The co-ordinate system.</dd>
+<dt>
+<tt><b>Alpha</b></tt>
+</dt>
+<dd>The Alpha angle.</dd>
+<dt>
+<tt><b>SurfaceId</b></tt>
+</dt>
+<dd>The surface id.</dd>
+<dt>
+<tt><b>ContourData</b></tt>
+</dt>
+<dd>The contour.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WTorusDescriptor::Create">WTorusDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WTorusDescriptor.html">WTorusDescriptor</a></tt></td><td class="method-name"><tt>WTorusDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;CoordSys, double&nbsp;Radius1, double&nbsp;Radius2, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates TorusDescriptor object.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The Torus extents.</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The orientation.</dd>
+<dt>
+<tt><b>CoordSys</b></tt>
+</dt>
+<dd>The co-ordinate system.</dd>
+<dt>
+<tt><b>Radius1</b></tt>
+</dt>
+<dd>The 1st radius of torus.</dd>
+<dt>
+<tt><b>Radius2</b></tt>
+</dt>
+<dd>The 2nd radius of torus.</dd>
+<dt>
+<tt><b>SurfaceId</b></tt>
+</dt>
+<dd>The surface id.</dd>
+<dt>
+<tt><b>ContourData</b></tt>
+</dt>
+<dd>The contour.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WRevolvedSurfaceDescriptor::Create">WRevolvedSurfaceDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WRevolvedSurfaceDescriptor.html">WRevolvedSurfaceDescriptor</a></tt></td><td class="method-name"><tt>WRevolvedSurfaceDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;CoordSys, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;Profile, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates RevolvedSurfaceDescriptor object.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The RevolvedSurface extents.</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The orientation.</dd>
+<dt>
+<tt><b>CoordSys</b></tt>
+</dt>
+<dd>The co-ordinate system.</dd>
+<dt>
+<tt><b>Profile</b></tt>
+</dt>
+<dd>The profile.</dd>
+<dt>
+<tt><b>SurfaceId</b></tt>
+</dt>
+<dd>The surface id.</dd>
+<dt>
+<tt><b>ContourData</b></tt>
+</dt>
+<dd>The contour.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WRuledSurfaceDescriptor::Create">WRuledSurfaceDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WRuledSurfaceDescriptor.html">WRuledSurfaceDescriptor</a></tt></td><td class="method-name"><tt>WRuledSurfaceDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;CoordSys, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;Profile1, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;Profile2, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates RuledSurfaceDescriptor object.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The RuledSurface extents.</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The orientation.</dd>
+<dt>
+<tt><b>CoordSys</b></tt>
+</dt>
+<dd>The co-ordinate system.</dd>
+<dt>
+<tt><b>Profile1</b></tt>
+</dt>
+<dd>The 1st profile.</dd>
+<dt>
+<tt><b>Profile2</b></tt>
+</dt>
+<dd>The 2nd profile.</dd>
+<dt>
+<tt><b>SurfaceId</b></tt>
+</dt>
+<dd>The surface id.</dd>
+<dt>
+<tt><b>ContourData</b></tt>
+</dt>
+<dd>The contour.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WTabulatedCylinderDescriptor::Create">WTabulatedCylinderDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WTabulatedCylinderDescriptor.html">WTabulatedCylinderDescriptor</a></tt></td><td class="method-name"><tt>WTabulatedCylinderDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;CoordSys, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;Profile, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates TabulatedCylinderDescriptor object.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The tabulated cylinder extents.</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The orientation.</dd>
+<dt>
+<tt><b>CoordSys</b></tt>
+</dt>
+<dd>The co-ordinate system.</dd>
+<dt>
+<tt><b>Profile</b></tt>
+</dt>
+<dd>The profile.</dd>
+<dt>
+<tt><b>SurfaceId</b></tt>
+</dt>
+<dd>The surface id.</dd>
+<dt>
+<tt><b>ContourData</b></tt>
+</dt>
+<dd>The contour.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WCoonsPatchDescriptor::Create">WCoonsPatchDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WCoonsPatchDescriptor.html">WCoonsPatchDescriptor</a></tt></td><td class="method-name"><tt>WCoonsPatchDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;U0Profile, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;U1Profile, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;V0Profile, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;V1Profile, <a class="type" href="c-pfcGeometry-CoonsCornerPoints.html">CoonsCornerPoints</a>&nbsp;CornerPoints, <a class="type" href="c-pfcGeometry-CoonsUVDerivatives.html">CoonsUVDerivatives</a>&nbsp;UVDerivatives, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates WCoonsPatchDescriptor object.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The coons patch extents.</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The orientation.</dd>
+<dt>
+<tt><b>U0Profile</b></tt>
+</dt>
+<dd>The U0 profile. </dd>
+<dt>
+<tt><b>U1Profile</b></tt>
+</dt>
+<dd>The U1 profile.</dd>
+<dt>
+<tt><b>V0Profile</b></tt>
+</dt>
+<dd>The V0 profile.</dd>
+<dt>
+<tt><b>V1Profile</b></tt>
+</dt>
+<dd>The V1 profile.</dd>
+<dt>
+<tt><b>CornerPoints</b></tt>
+</dt>
+<dd>The corner points.</dd>
+<dt>
+<tt><b>UVDerivatives</b></tt>
+</dt>
+<dd>The UV derivatives.</dd>
+<dt>
+<tt><b>SurfaceId</b></tt>
+</dt>
+<dd>The surface id.</dd>
+<dt>
+<tt><b>ContourData</b></tt>
+</dt>
+<dd>The contour.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WFilletSurfaceDescriptor::Create">WFilletSurfaceDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WFilletSurfaceDescriptor.html">WFilletSurfaceDescriptor</a></tt></td><td class="method-name"><tt>WFilletSurfaceDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcGeometry-SplineDescriptor.html">SplineDescriptor</a>&nbsp;U0Profile, <a class="type" href="c-pfcGeometry-SplineDescriptor.html">SplineDescriptor</a>&nbsp;CenterProfile, <a class="type" href="c-pfcGeometry-SplineDescriptor.html">SplineDescriptor</a>&nbsp;TangentProfile, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates WFilletSurfaceDescriptor object.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The FilletSurfaceDescriptor extents.</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The orientation.</dd>
+<dt>
+<tt><b>U0Profile</b></tt>
+</dt>
+<dd>The U0 profile.</dd>
+<dt>
+<tt><b>CenterProfile</b></tt>
+</dt>
+<dd>The Center profile.</dd>
+<dt>
+<tt><b>TangentProfile</b></tt>
+</dt>
+<dd>The tangent profile.</dd>
+<dt>
+<tt><b>SurfaceId</b></tt>
+</dt>
+<dd>The surface id.</dd>
+<dt>
+<tt><b>ContourData</b></tt>
+</dt>
+<dd>The contour.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WSplineSurfaceDescriptor::Create">WSplineSurfaceDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WSplineSurfaceDescriptor.html">WSplineSurfaceDescriptor</a></tt></td><td class="method-name"><tt>WSplineSurfaceDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcGeometry-SplineSurfacePoints.html">SplineSurfacePoints</a>&nbsp;Points, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates WSplineSurfaceDescriptor object.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The splinr surface extents.</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The orientation.</dd>
+<dt>
+<tt><b>Points</b></tt>
+</dt>
+<dd>The points.</dd>
+<dt>
+<tt><b>SurfaceId</b></tt>
+</dt>
+<dd>The surface id.</dd>
+<dt>
+<tt><b>ContourData</b></tt>
+</dt>
+<dd>The contour.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WNURBSSurfaceDescriptor::Create">WNURBSSurfaceDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WNURBSSurfaceDescriptor.html">WNURBSSurfaceDescriptor</a></tt></td><td class="method-name"><tt>WNURBSSurfaceDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, int&nbsp;UDegree, int&nbsp;VDegree, <a class="type" href="c-stdcols-realseq.html">realseq</a>&nbsp;UKnots, <a class="type" href="c-stdcols-realseq.html">realseq</a>&nbsp;VKnots, <a class="type" href="c-pfcGeometry-BSplinePoints.html">BSplinePoints</a>&nbsp;Points, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates WNURBSSurfaceDescriptor object.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The NURB surface extents.</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The orientation.</dd>
+<dt>
+<tt><b>UDegree</b></tt>
+</dt>
+<dd>The U param degree.</dd>
+<dt>
+<tt><b>VDegree</b></tt>
+</dt>
+<dd>The V param degree.</dd>
+<dt>
+<tt><b>UKnots</b></tt>
+</dt>
+<dd>The U param knots.</dd>
+<dt>
+<tt><b>VKnots</b></tt>
+</dt>
+<dd>The V param knots.</dd>
+<dt>
+<tt><b>Points</b></tt>
+</dt>
+<dd>The points.</dd>
+<dt>
+<tt><b>SurfaceId</b></tt>
+</dt>
+<dd>The surface id.</dd>
+<dt>
+<tt><b>ContourData</b></tt>
+</dt>
+<dd>The contour.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WCylindricalSplineSurfaceDescriptor::Create">WCylindricalSplineSurfaceDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WCylindricalSplineSurfaceDescriptor.html">WCylindricalSplineSurfaceDescriptor</a></tt></td><td class="method-name"><tt>WCylindricalSplineSurfaceDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;CoordSys, <a class="type" href="c-pfcGeometry-SplineSurfaceDescriptor.html">SplineSurfaceDescriptor</a>&nbsp;SplineSurfaceData, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates WCylindricalSplineSurfaceDescriptor object.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The cylindrical splineSurface extents.</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The orientation.</dd>
+<dt>
+<tt><b>CoordSys</b></tt>
+</dt>
+<dd>The coordinate system.</dd>
+<dt>
+<tt><b>SplineSurfaceData</b></tt>
+</dt>
+<dd>The spline surface data.</dd>
+<dt>
+<tt><b>SurfaceId</b></tt>
+</dt>
+<dd>The surface id.</dd>
+<dt>
+<tt><b>ContourData</b></tt>
+</dt>
+<dd>The contour.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WForeignSurfaceDescriptor::Create">WForeignSurfaceDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WForeignSurfaceDescriptor.html">WForeignSurfaceDescriptor</a></tt></td><td class="method-name"><tt>WForeignSurfaceDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;CoordSys, int&nbsp;ForeignId, int&nbsp;SurfaceId, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-ContourDescriptors.html">ContourDescriptors</a>&nbsp;ContourData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates WForeignSurfaceDescriptor object.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The  foreign surface extents.</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The orientation.</dd>
+<dt>
+<tt><b>CoordSys</b></tt>
+</dt>
+<dd>The coordinate system.</dd>
+<dt>
+<tt><b>ForeignId</b></tt>
+</dt>
+<dd>The foreign id.</dd>
+<dt>
+<tt><b>SurfaceId</b></tt>
+</dt>
+<dd>The surface id.</dd>
+<dt>
+<tt><b>ContourData</b></tt>
+</dt>
+<dd>The contour.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WPlaneData::Create">WPlaneData_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WPlaneData.html">WPlaneData</a></tt></td><td class="method-name"><tt>WPlaneData_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;XAxis, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;YAxis, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;ZAxis, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Origin)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates WPlaneData object.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>XAxis</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>YAxis</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>ZAxis</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Origin</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WCsysData::Create">WCsysData_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WCsysData.html">WCsysData</a></tt></td><td class="method-name"><tt>WCsysData_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;XAxis, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;YAxis, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;ZAxis, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;Origin)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates WCsysData object.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>XAxis</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>YAxis</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>ZAxis</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Origin</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CurveDatumObject::Create">CurveDatumObject_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-CurveDatumObject.html">CurveDatumObject</a></tt></td><td class="method-name"><tt>CurveDatumObject_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;Curve)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates CurveDatumObject.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Curve</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PlaneDatumObject::Create">PlaneDatumObject_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-PlaneDatumObject.html">PlaneDatumObject</a></tt></td><td class="method-name"><tt>PlaneDatumObject_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcGeometry-WPlaneData.html">WPlaneData</a>&nbsp;PlaneData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates PlaneDatumObject.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PlaneData</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CsysDatumObject::Create">CsysDatumObject_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-CsysDatumObject.html">CsysDatumObject</a></tt></td><td class="method-name"><tt>CsysDatumObject_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcGeometry-WCsysData.html">WCsysData</a>&nbsp;CsysData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates CsysDatumObject.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CsysData</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DatumData::Create">DatumData_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-DatumData.html">DatumData</a></tt></td><td class="method-name"><tt>DatumData_Create</tt></td><td class="method-params"><tt>
+ (int&nbsp;Id, String&nbsp;Name, <a class="type" href="c-wfcGeometry-DatumObject.html">DatumObject</a>&nbsp;DatumObject)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates DatumData object.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Id</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>DatumObject</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WCompositeCurveDescriptor::Create">WCompositeCurveDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-WCompositeCurveDescriptor.html">WCompositeCurveDescriptor</a></tt></td><td class="method-name"><tt>WCompositeCurveDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-CurveDescriptors.html">CurveDescriptors</a>&nbsp;Elements)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates composite curve descriptor object <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Elements</b></tt>
+</dt>
+<dd>Components in composite curve </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+        Returns <tt><tt><a class="class" href="c-wfcGeometry-WCompositeCurveDescriptor.html">WCompositeCurveDescriptor</a></tt></tt>
+      
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="EdgeDisplay::Create">EdgeDisplay_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcGeometry-EdgeDisplay.html">EdgeDisplay</a></tt></td><td class="method-name"><tt>EdgeDisplay_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;Color)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#401">Drawings: Drawing Edges</a>, <a href="../manual0/jdrawfns.html#409">Drawings: Drawing Edges</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Color</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

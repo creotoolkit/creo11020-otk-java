@@ -1,0 +1,909 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcExport.PrintPrinterOption"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      547
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcExport.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcExport-PrintPrinterOption.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;PrintPrinterOption</h2>
+<tt>
+     package 
+     <b><a href="p-pfcExport.html">com.ptc.pfc.pfcExport</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>PrintPrinterOption</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface is used to define the printer settings for printing a file.
+  <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#DeleteAfter">GetDeleteAfter</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "DeleteAfter"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to delete file after printing; <tt>false</tt> to not delete file.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#FileName">GetFileName</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "FileName"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Name of a file where the print should go.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcExport-PrintSize.html">PrintSize</a></tt></td><td class="method-summary"><tt><a class="method" href="#PaperSize">GetPaperSize</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PaperSize"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Size of paper to be printed.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#PenTable">GetPenTable</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PenTable"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>File containing pen table</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#PrintCommand">GetPrintCommand</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PrintCommand"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Print command.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#PrinterType">GetPrinterType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PrinterType"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Type of printer.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>int</tt></td><td class="method-summary"><tt><a class="method" href="#Quantity">GetQuantity</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Quantity"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Number of papers to be printed.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#RollMedia">GetRollMedia</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "RollMedia"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to use roll media for printing; <tt>false</tt> to not use roll media.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#RotatePlot">GetRotatePlot</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "RotatePlot"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to rotate the plot; <tt>false</tt> to skip rotating plot.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcExport-PrintSaveMethod.html">PrintSaveMethod</a></tt></td><td class="method-summary"><tt><a class="method" href="#SaveMethod">GetSaveMethod</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "SaveMethod"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Save method.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#SaveToFile">GetSaveToFile</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "SaveToFile"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to save file after print; <tt>false</tt> to skip file saving.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#SendToPrinter">GetSendToPrinter</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "SendToPrinter"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to send file to printer; <tt>false</tt> to not send file to printer.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#Slew">GetSlew</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Slew"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Slew value</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#SwHandshake">GetSwHandshake</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "SwHandshake"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to use handshake method for printing; <tt>false</tt> to not use handshake method.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#UseTtf">GetUseTtf</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "UseTtf"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to use TTF support for printing; <tt>false</tt> to stroke all text.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DeleteAfter">SetDeleteAfter</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "DeleteAfter"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to delete file after printing; <tt>false</tt> to not delete file.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#FileName">SetFileName</a>
+ (String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "FileName"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Name of a file where the print should go.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PaperSize">SetPaperSize</a>
+ (<a class="type" href="c-pfcExport-PrintSize.html">PrintSize</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PaperSize"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Size of paper to be printed.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PenTable">SetPenTable</a>
+ (String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PenTable"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>File containing pen table</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PrintCommand">SetPrintCommand</a>
+ (String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PrintCommand"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Print command.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PrinterType">SetPrinterType</a>
+ (String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PrinterType"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Type of printer.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Quantity">SetQuantity</a>
+ (int&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Quantity"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Number of papers to be printed.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#RollMedia">SetRollMedia</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "RollMedia"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to use roll media for printing; <tt>false</tt> to not use roll media.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#RotatePlot">SetRotatePlot</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "RotatePlot"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to rotate the plot; <tt>false</tt> to skip rotating plot.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SaveMethod">SetSaveMethod</a>
+ (<a class="type" href="c-pfcExport-PrintSaveMethod.html">PrintSaveMethod</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "SaveMethod"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Save method.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SaveToFile">SetSaveToFile</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "SaveToFile"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to save file after print; <tt>false</tt> to skip file saving.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SendToPrinter">SetSendToPrinter</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "SendToPrinter"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to send file to printer; <tt>false</tt> to not send file to printer.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Slew">SetSlew</a>
+ (double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Slew"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Slew value</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SwHandshake">SetSwHandshake</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "SwHandshake"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to use handshake method for printing; <tt>false</tt> to not use handshake method.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#UseTtf">SetUseTtf</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "UseTtf"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to use TTF support for printing; <tt>false</tt> to stroke all text.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PrinterType">GetPrinterType/SetPrinterType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetPrinterType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPrinterType</tt></td><td class="method-params"><tt>
+ (String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Type of printer.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#267">Interface: Printer Options</a>, <a href="../manual0/Jinterface.html#276">Interface: Printer Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SaveToFile">GetSaveToFile/SetSaveToFile</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetSaveToFile</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetSaveToFile</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> to save file after print; <tt>false</tt> to skip file saving.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#272">Interface: Printer Options</a>, <a href="../manual0/Jinterface.html#276">Interface: Printer Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SaveMethod">GetSaveMethod/SetSaveMethod</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcExport-PrintSaveMethod.html">PrintSaveMethod</a></tt></td><td class="method-name"><tt>GetSaveMethod</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetSaveMethod</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExport-PrintSaveMethod.html">PrintSaveMethod</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Save method.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#271">Interface: Printer Options</a>, <a href="../manual0/Jinterface.html#276">Interface: Printer Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FileName">GetFileName/SetFileName</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetFileName</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetFileName</tt></td><td class="method-params"><tt>
+ (String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Name of a file where the print should go.<br>
+<br>Attention: if <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> is called for <tt><tt><a class="class" href="c-pfcModel-ExportType.html">ExportType</a></tt></tt> EXPORT_PRINT, 
+          the argument FileName is ignored (and can be passed as null). Instead, the output filename should be set through this API.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#259">Interface: Printer Options</a>, <a href="../manual0/Jinterface.html#276">Interface: Printer Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DeleteAfter">GetDeleteAfter/SetDeleteAfter</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetDeleteAfter</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetDeleteAfter</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> to delete file after printing; <tt>false</tt> to not delete file.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#258">Interface: Printer Options</a>, <a href="../manual0/Jinterface.html#276">Interface: Printer Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SendToPrinter">GetSendToPrinter/SetSendToPrinter</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetSendToPrinter</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetSendToPrinter</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> to send file to printer; <tt>false</tt> to not send file to printer.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#273">Interface: Printer Options</a>, <a href="../manual0/Jinterface.html#276">Interface: Printer Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PrintCommand">GetPrintCommand/SetPrintCommand</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetPrintCommand</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPrintCommand</tt></td><td class="method-params"><tt>
+ (String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Print command.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#266">Interface: Printer Options</a>, <a href="../manual0/Jinterface.html#276">Interface: Printer Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PenTable">GetPenTable/SetPenTable</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetPenTable</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPenTable</tt></td><td class="method-params"><tt>
+ (String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>File containing pen table<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#265">Interface: Printer Options</a>, <a href="../manual0/Jinterface.html#276">Interface: Printer Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PaperSize">GetPaperSize/SetPaperSize</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcExport-PrintSize.html">PrintSize</a></tt></td><td class="method-name"><tt>GetPaperSize</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPaperSize</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExport-PrintSize.html">PrintSize</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Size of paper to be printed.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#260">Interface: Printer Options</a>, <a href="../manual0/Jinterface.html#276">Interface: Printer Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Quantity">GetQuantity/SetQuantity</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>int</tt></td><td class="method-name"><tt>GetQuantity</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetQuantity</tt></td><td class="method-params"><tt>
+ (int&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Number of papers to be printed.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#268">Interface: Printer Options</a>, <a href="../manual0/Jinterface.html#276">Interface: Printer Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SwHandshake">GetSwHandshake/SetSwHandshake</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetSwHandshake</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetSwHandshake</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> to use handshake method for printing; <tt>false</tt> to not use handshake method.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#275">Interface: Printer Options</a>, <a href="../manual0/Jinterface.html#276">Interface: Printer Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RollMedia">GetRollMedia/SetRollMedia</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetRollMedia</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetRollMedia</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> to use roll media for printing; <tt>false</tt> to not use roll media.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#269">Interface: Printer Options</a>, <a href="../manual0/Jinterface.html#276">Interface: Printer Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Slew">GetSlew/SetSlew</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetSlew</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetSlew</tt></td><td class="method-params"><tt>
+ (double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Slew value<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#274">Interface: Printer Options</a>, <a href="../manual0/Jinterface.html#276">Interface: Printer Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RotatePlot">GetRotatePlot/SetRotatePlot</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetRotatePlot</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetRotatePlot</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> to rotate the plot; <tt>false</tt> to skip rotating plot.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#270">Interface: Printer Options</a>, <a href="../manual0/Jinterface.html#276">Interface: Printer Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UseTtf">GetUseTtf/SetUseTtf</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetUseTtf</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetUseTtf</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> to use TTF support for printing; <tt>false</tt> to stroke all text.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#276">Interface: Printer Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

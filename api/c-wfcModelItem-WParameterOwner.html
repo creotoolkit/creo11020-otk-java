@@ -1,0 +1,411 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcModelItem.WParameterOwner"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      890
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcModelItem.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcModelItem-WParameterOwner.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;WParameterOwner</h2>
+<tt>
+     package 
+     <b><a href="p-wfcModelItem.html">com.ptc.wfc.wfcModelItem</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>WParameterOwner</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcModelItem-ParameterOwner.html">com.ptc.pfc.pfcModelItem.ParameterOwner</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Extends the functionality of <tt><tt><a class="class" href="c-pfcModelItem-ParameterOwner.html">ParameterOwner</a></tt></tt>
+  
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-wfcModelItem-WModelItem.html">WModelItem</a></tt>, 
+        <tt><a class="class" href="c-wfcModel-WModel.html">WModel</a></tt>, 
+        <tt><a class="class" href="c-wfcPart-WMaterial.html">WMaterial</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ApplyParameterTableset">ApplyParameterTableset</a>
+ (<a class="type" href="c-wfcModelItem-ParamTableset.html">ParamTableset</a>&nbsp;ParamTableset)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+           Assigns this parameter set to the given parameter owner.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ExportParameterTable">ExportParameterTable</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;TopMdl, <a class="type" href="c-pfcModelItem-ParameterSelectionContexts.html">ParameterSelectionContexts</a>&nbsp;Contexts, <a class="type" href="c-wfcModelItem-ParamTableExportType.html">ParamTableExportType</a>&nbsp;ExportType, String&nbsp;Path, <a class="type" href="c-wfcModelItem-ParamColumns.html">ParamColumns</a>&nbsp;Columns, 
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ParameterOwner.html">ParameterOwner</a>&nbsp;Owner)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+   Exports a file containing information from the parameter 
+   table in Creo Parametric in the CSV or TXT format.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcModelItem-ParameterDatas.html">ParameterDatas</a></tt></td><td class="method-summary"><tt><a class="method" href="#MathcadInputParametersGet">MathcadInputParametersGet</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#MathcadParametersSet">MathcadParametersSet</a>
+ (<a class="type" href="c-wfcModelItem-MathcadParametersSetData.html">MathcadParametersSetData</a>&nbsp;ParameterSetData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcBase-ActionSource.html"><tt>com.ptc.pfc.pfcBase.ActionSource</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Parent.html"><tt>com.ptc.pfc.pfcObject.Parent</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ParameterOwner.html"><tt>com.ptc.pfc.pfcModelItem.ParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ExportParameterTable">ExportParameterTable</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>ExportParameterTable</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;TopMdl, <a class="type" href="c-pfcModelItem-ParameterSelectionContexts.html">ParameterSelectionContexts</a>&nbsp;Contexts, <a class="type" href="c-wfcModelItem-ParamTableExportType.html">ParamTableExportType</a>&nbsp;ExportType, String&nbsp;Path, <a class="type" href="c-wfcModelItem-ParamColumns.html">ParamColumns</a>&nbsp;Columns, 
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ParameterOwner.html">ParameterOwner</a>&nbsp;Owner)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+   Exports a file containing information from the parameter 
+   table in Creo Parametric in the CSV or TXT format.
+   <br>
+<br>
+  
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - The owner is invalid or not found and/or Design Test Mode is active - the function is not available in this mode </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The owner does not contain parameters.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantWrite.html">XToolkitCantWrite</a></tt></tt> - Creo Parametric could not write to the file path specified. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidType.html">XToolkitInvalidType</a></tt></tt> - Invalid context for top_model argument. </p>
+   
+</p>
+  
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#35">Dimensions and Parameters: Creating and Accessing Parameters</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TopMdl</b></tt>
+</dt>
+<dd>The top level model from which parameters will be exported. </dd>
+<dt>
+<tt><b>Contexts</b></tt>
+</dt>
+<dd>A list containing the context of parameters to list in the export.
+                            (Members of pfcParameterSelectionContext).
+                            Used only if "owner" is NULL.
+                            The following options are supported:
+                            <UL>
+                            
+<LI>pfcPARAMSELECT_ALLOW_SUBITEM_SELECTION alone,
+                            all parameters of all subitems of top_model will be
+                            exported.</LI>
+                            
+<LI>pfcPARAMSELECT_ALLOW_SUBITEM_SELECTION and
+                            other contexts, only the indicated contexts'
+                            parameters will be exported.</LI>
+                            
+<LI>pfcPARAMSELECT_MODEL, pfcPARAMSELECT_PART or
+                            pfcPARAMSELECT_ASM: all model level parameters in
+                            top model will be exported.</LI>
+                            
+</UL>
+                            No other combination is permitted.
+   </dd>
+<dt>
+<tt><b>ExportType</b></tt>
+</dt>
+<dd>The type of export file to create.</dd>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd>Full path to the file to export (including name and extension).</dd>
+<dt>
+<tt><b>Columns</b></tt>
+</dt>
+<dd>A list containing one or more columns to include in the exported file. 
+                            This applies only
+                            when the file is being exported in the CSV format,
+                            and not when the file is being exported in the TXT
+                            format (where the columns exported will match the
+                            columns and options set by the user in the active
+                            session, in accordance with the behavior of
+                            File-&gt;Export in the Parameter dialog box).
+  </dd>
+<dt>
+<tt><b>Owner</b></tt>
+</dt>
+<dd>
+   The owner of the parameters to be exported. May be NULL if the parameter should be selected by context.
+   </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ApplyParameterTableset">ApplyParameterTableset</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>ApplyParameterTableset</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcModelItem-ParamTableset.html">ParamTableset</a>&nbsp;ParamTableset)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+           Assigns this parameter set to the given parameter owner.
+   <br>
+<br>Parameters called by the set will be created or modified, as
+          appropriate. The parameter values will be set to the default
+          values. This function does not perform a regeneration.<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The parameter owner already has one or more required parameters defined and they are not driven by this table. </p>
+  
+</p>
+   
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#34">Dimensions and Parameters: Creating and Accessing Parameters</a>, <a href="../manual0/JDims.html#35">Dimensions and Parameters: Creating and Accessing Parameters</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ParamTableset</b></tt>
+</dt>
+<dd>The parameter table set. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="MathcadParametersSet">MathcadParametersSet</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>MathcadParametersSet</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcModelItem-MathcadParametersSetData.html">MathcadParametersSetData</a>&nbsp;ParameterSetData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ParameterSetData</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="MathcadInputParametersGet">MathcadInputParametersGet</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcModelItem-ParameterDatas.html">ParameterDatas</a></tt></td><td class="method-name"><tt>MathcadInputParametersGet</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,312 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcAssembly.AssemblySizeRule"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      35
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcAssembly.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcAssembly-AssemblySizeRule.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;AssemblySizeRule</h2>
+<tt>
+     package 
+     <b><a href="p-wfcAssembly.html">com.ptc.wfc.wfcAssembly</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>AssemblySizeRule</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-wfcAssembly-AssemblyRule.html">com.ptc.wfc.wfcAssembly.AssemblyRule</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>The rule for gathering components by their size.<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#Absolute">GetAbsolute</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Absolute"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>To compare absolute size of the model
+    and <tt>false</tt> to compare relative size (0.0 - 1.0)
+    with respect to the assembly </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#GreaterThan">GetGreaterThan</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "GreaterThan"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set to <tt>true</tt> to collect models that are larger 
+    than the specified size, and <tt>false</tt> to collect the smaller
+    ones.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IncludeDatums">GetIncludeDatums</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IncludeDatums"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If <tt>true</tt> use bounding box, if <tt>false</tt> use regeneration outline.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#Value">GetValue</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Value"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Size to compare against.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Absolute">SetAbsolute</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Absolute"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>To compare absolute size of the model
+    and <tt>false</tt> to compare relative size (0.0 - 1.0)
+    with respect to the assembly </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#GreaterThan">SetGreaterThan</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "GreaterThan"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set to <tt>true</tt> to collect models that are larger 
+    than the specified size, and <tt>false</tt> to collect the smaller
+    ones.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#IncludeDatums">SetIncludeDatums</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "IncludeDatums"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If <tt>true</tt> use bounding box, if <tt>false</tt> use regeneration outline.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Value">SetValue</a>
+ (double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Value"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Size to compare against.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcAssembly-AssemblyRule.html"><tt>com.ptc.wfc.wfcAssembly.AssemblyRule</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcAssembly-AssemblyRule.html#RuleType"><tt>GetRuleType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Absolute">GetAbsolute/SetAbsolute</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetAbsolute</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetAbsolute</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>To compare absolute size of the model
+    and <tt>false</tt> to compare relative size (0.0 - 1.0)
+    with respect to the assembly <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#170">Assemblies and Components: Gathering Components by Size</a>, <a href="../manual0/jassembly.html#176">Assemblies and Components: Gathering Components by Size</a>, <a href="../manual0/jassembly.html#169">Assemblies and Components: Gathering Components by Size</a>, <a href="../manual0/jassembly.html#176">Assemblies and Components: Gathering Components by Size</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GreaterThan">GetGreaterThan/SetGreaterThan</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetGreaterThan</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetGreaterThan</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Set to <tt>true</tt> to collect models that are larger 
+    than the specified size, and <tt>false</tt> to collect the smaller
+    ones.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#172">Assemblies and Components: Gathering Components by Size</a>, <a href="../manual0/jassembly.html#176">Assemblies and Components: Gathering Components by Size</a>, <a href="../manual0/jassembly.html#171">Assemblies and Components: Gathering Components by Size</a>, <a href="../manual0/jassembly.html#176">Assemblies and Components: Gathering Components by Size</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IncludeDatums">GetIncludeDatums/SetIncludeDatums</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetIncludeDatums</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetIncludeDatums</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>If <tt>true</tt> use bounding box, if <tt>false</tt> use regeneration outline.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#174">Assemblies and Components: Gathering Components by Size</a>, <a href="../manual0/jassembly.html#176">Assemblies and Components: Gathering Components by Size</a>, <a href="../manual0/jassembly.html#173">Assemblies and Components: Gathering Components by Size</a>, <a href="../manual0/jassembly.html#176">Assemblies and Components: Gathering Components by Size</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Value">GetValue/SetValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetValue</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetValue</tt></td><td class="method-params"><tt>
+ (double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Size to compare against.<br>
+<br>Valid range is 0.0 to 1.0 if 'Absolute' attribute 
+   is set to <tt>false</tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#176">Assemblies and Components: Gathering Components by Size</a>, <a href="../manual0/jassembly.html#175">Assemblies and Components: Gathering Components by Size</a>, <a href="../manual0/jassembly.html#176">Assemblies and Components: Gathering Components by Size</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

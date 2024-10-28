@@ -1,0 +1,123 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcModel.ImportInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      375
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcModel.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcModel-ImportInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;ImportInstructions</h2>
+<tt>
+     package 
+     <b><a href="p-pfcModel.html">com.ptc.pfc.pfcModel</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>ImportInstructions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Base class to all the import-instructions classes that govern the importing (reading) of Creo Parametric related data with <tt><a class="method" href="c-pfcModel-Model.html#Import">Model.Import(String, ImportInstructions)</a></tt> .
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-pfcModel-Import2DInstructions.html">Import2DInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-RelationImportInstructions.html">RelationImportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-IGESSectionImportInstructions.html">IGESSectionImportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-ProgramImportInstructions.html">ProgramImportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-ConfigImportInstructions.html">ConfigImportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-DWGSetupImportInstructions.html">DWGSetupImportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-SpoolImportInstructions.html">SpoolImportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-ConnectorParamsImportInstructions.html">ConnectorParamsImportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-CableParamsImportInstructions.html">CableParamsImportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-ASSEMTreeCFGImportInstructions.html">ASSEMTreeCFGImportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-WireListImportInstructions.html">WireListImportInstructions</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcModel-ImportType.html">ImportType</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetFileType">GetFileType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns a <tt><tt><a class="class" href="c-pfcModel-ImportType.html">ImportType</a></tt></tt> instance that indicates the type of data the object imports when passed as an argument to the <tt><a class="method" href="c-pfcModel-Model.html#Import">Model.Import(String, ImportInstructions)</a></tt> method.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetFileType">GetFileType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcModel-ImportType.html">ImportType</a></tt></td><td class="method-name"><tt>GetFileType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns a <tt><tt><a class="class" href="c-pfcModel-ImportType.html">ImportType</a></tt></tt> instance that indicates the type of data the object imports when passed as an argument to the <tt><a class="method" href="c-pfcModel-Model.html#Import">Model.Import(String, ImportInstructions)</a></tt> method.
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>One of the static instances of <tt><tt><a class="class" href="c-pfcModel-ImportType.html">ImportType</a></tt></tt> (e.g. IMPORT_RELATION)</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

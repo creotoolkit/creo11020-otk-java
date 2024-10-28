@@ -1,0 +1,246 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcAssembly.AssemblyDistanceRule"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      28
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcAssembly.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcAssembly-AssemblyDistanceRule.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;AssemblyDistanceRule</h2>
+<tt>
+     package 
+     <b><a href="p-wfcAssembly.html">com.ptc.wfc.wfcAssembly</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>AssemblyDistanceRule</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-wfcAssembly-AssemblyRule.html">com.ptc.wfc.wfcAssembly.AssemblyRule</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>The rule for gathering components within specified distance from a point.<br>
+<br>Gathers all the components within the specified spherical region.<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#Center">GetCenter</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Center"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Center point from which to measure the distance (in the coordinates of the top 
+    assembly).</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#Distance">GetDistance</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Distance"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Distance value to compare against.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IncludeDatums">GetIncludeDatums</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IncludeDatums"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If <tt>true</tt> use bounding box, if <tt>false</tt> use regeneration outline.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Center">SetCenter</a>
+ (<a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Center"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Center point from which to measure the distance (in the coordinates of the top 
+    assembly).</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Distance">SetDistance</a>
+ (double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Distance"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Distance value to compare against.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#IncludeDatums">SetIncludeDatums</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "IncludeDatums"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If <tt>true</tt> use bounding box, if <tt>false</tt> use regeneration outline.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcAssembly-AssemblyRule.html"><tt>com.ptc.wfc.wfcAssembly.AssemblyRule</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcAssembly-AssemblyRule.html#RuleType"><tt>GetRuleType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Center">GetCenter/SetCenter</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a></tt></td><td class="method-name"><tt>GetCenter</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetCenter</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Center point from which to measure the distance (in the coordinates of the top 
+    assembly).<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#191">Assemblies and Components: Gathering Components by Distance from a Point</a>, <a href="../manual0/jassembly.html#196">Assemblies and Components: Gathering Components by Distance from a Point</a>, <a href="../manual0/jassembly.html#192">Assemblies and Components: Gathering Components by Distance from a Point</a>, <a href="../manual0/jassembly.html#196">Assemblies and Components: Gathering Components by Distance from a Point</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Distance">GetDistance/SetDistance</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetDistance</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetDistance</tt></td><td class="method-params"><tt>
+ (double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Distance value to compare against.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#193">Assemblies and Components: Gathering Components by Distance from a Point</a>, <a href="../manual0/jassembly.html#196">Assemblies and Components: Gathering Components by Distance from a Point</a>, <a href="../manual0/jassembly.html#194">Assemblies and Components: Gathering Components by Distance from a Point</a>, <a href="../manual0/jassembly.html#196">Assemblies and Components: Gathering Components by Distance from a Point</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IncludeDatums">GetIncludeDatums/SetIncludeDatums</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetIncludeDatums</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetIncludeDatums</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>If <tt>true</tt> use bounding box, if <tt>false</tt> use regeneration outline.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#195">Assemblies and Components: Gathering Components by Distance from a Point</a>, <a href="../manual0/jassembly.html#196">Assemblies and Components: Gathering Components by Distance from a Point</a>, <a href="../manual0/jassembly.html#196">Assemblies and Components: Gathering Components by Distance from a Point</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

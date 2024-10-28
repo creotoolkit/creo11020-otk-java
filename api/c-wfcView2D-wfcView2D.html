@@ -1,0 +1,637 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcView2D.wfcView2D"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      662
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcView2D.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcView2D-wfcView2D.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcView2D</h2>
+<tt>
+     package <b><a href="p-wfcView2D.html">com.ptc.wfc.wfcView2D</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>wfcView2D</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "wfcView2D"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-AuxiliaryViewInstructions.html">AuxiliaryViewInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#AuxiliaryViewInstructions::Create">AuxiliaryViewInstructions_Create</a>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;Reference, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Location)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-BreakAreaInstruction.html">BreakAreaInstruction</a></tt></td><td class="method-summary"><tt><a class="method" href="#BreakAreaInstruction::Create">BreakAreaInstruction_Create</a>
+ (<a class="type" href="c-wfcView2D-ViewBrokenDir.html">ViewBrokenDir</a>&nbsp;ViewBrokenDir, <a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;FirstBreakLine, <a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;SecondBreakLine, <a class="type" href="c-wfcView2D-ViewBrokenLineStyle.html">ViewBrokenLineStyle</a>&nbsp;ViewBrokenLineStyle)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-BrokenAreaVisibility.html">BrokenAreaVisibility</a></tt></td><td class="method-summary"><tt><a class="method" href="#BrokenAreaVisibility::Create">BrokenAreaVisibility_Create</a>
+ (<a class="type" href="c-wfcView2D-BreakAreaInstructions.html">BreakAreaInstructions</a>&nbsp;Instructions)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-DetailViewInstructions.html">DetailViewInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#DetailViewInstructions::Create">DetailViewInstructions_Create</a>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;Reference, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;CurveData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-FullAreaVisibility.html">FullAreaVisibility</a></tt></td><td class="method-summary"><tt><a class="method" href="#FullAreaVisibility::Create">FullAreaVisibility_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-HalfAreaVisibility.html">HalfAreaVisibility</a></tt></td><td class="method-summary"><tt><a class="method" href="#HalfAreaVisibility::Create">HalfAreaVisibility_Create</a>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;Reference, boolean&nbsp;DisplayLeftSide, <a class="type" href="c-wfcView2D-DrawingLineStandardType.html">DrawingLineStandardType</a>&nbsp;LineType)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-PartialAreaVisibility.html">PartialAreaVisibility</a></tt></td><td class="method-summary"><tt><a class="method" href="#PartialAreaVisibility::Create">PartialAreaVisibility_Create</a>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;ReferencePoint, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;CurveData, boolean&nbsp;Show)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-RevolveViewInstructions.html">RevolveViewInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#RevolveViewInstructions::Create">RevolveViewInstructions_Create</a>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;Reference, <a class="type" href="c-pfcXSection-XSection.html">XSection</a>&nbsp;XSec, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Location)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-Section2DInstructions.html">Section2DInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#Section2DInstructions::Create">Section2DInstructions_Create</a>
+ (<a class="type" href="c-wfcView2D-DrawingViewSectionAreaType.html">DrawingViewSectionAreaType</a>&nbsp;SectionAreaType, String&nbsp;SectionName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-ViewAlignmentInstructions.html">ViewAlignmentInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#ViewAlignmentInstructions::Create">ViewAlignmentInstructions_Create</a>
+ (<a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;ReferenceView, <a class="type" href="c-wfcView2D-DrawingViewAlignStyle.html">DrawingViewAlignStyle</a>&nbsp;AlignmentStyle)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="HalfAreaVisibility::Create">HalfAreaVisibility_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-HalfAreaVisibility.html">HalfAreaVisibility</a></tt></td><td class="method-name"><tt>HalfAreaVisibility_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;Reference, boolean&nbsp;DisplayLeftSide, <a class="type" href="c-wfcView2D-DrawingLineStandardType.html">DrawingLineStandardType</a>&nbsp;LineType)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Reference</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>DisplayLeftSide</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>LineType</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FullAreaVisibility::Create">FullAreaVisibility_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-FullAreaVisibility.html">FullAreaVisibility</a></tt></td><td class="method-name"><tt>FullAreaVisibility_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="BreakAreaInstruction::Create">BreakAreaInstruction_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-BreakAreaInstruction.html">BreakAreaInstruction</a></tt></td><td class="method-name"><tt>BreakAreaInstruction_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcView2D-ViewBrokenDir.html">ViewBrokenDir</a>&nbsp;ViewBrokenDir, <a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;FirstBreakLine, <a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;SecondBreakLine, <a class="type" href="c-wfcView2D-ViewBrokenLineStyle.html">ViewBrokenLineStyle</a>&nbsp;ViewBrokenLineStyle)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ViewBrokenDir</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>FirstBreakLine</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>SecondBreakLine</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>ViewBrokenLineStyle</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="BrokenAreaVisibility::Create">BrokenAreaVisibility_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-BrokenAreaVisibility.html">BrokenAreaVisibility</a></tt></td><td class="method-name"><tt>BrokenAreaVisibility_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcView2D-BreakAreaInstructions.html">BreakAreaInstructions</a>&nbsp;Instructions)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Instructions</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PartialAreaVisibility::Create">PartialAreaVisibility_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-PartialAreaVisibility.html">PartialAreaVisibility</a></tt></td><td class="method-name"><tt>PartialAreaVisibility_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;ReferencePoint, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;CurveData, boolean&nbsp;Show)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ReferencePoint</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>CurveData</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Show</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ViewAlignmentInstructions::Create">ViewAlignmentInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-ViewAlignmentInstructions.html">ViewAlignmentInstructions</a></tt></td><td class="method-name"><tt>ViewAlignmentInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;ReferenceView, <a class="type" href="c-wfcView2D-DrawingViewAlignStyle.html">DrawingViewAlignStyle</a>&nbsp;AlignmentStyle)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#278">Drawings: Listing Drawing Views</a>, <a href="../manual0/jdrawfns.html#294">Drawings: Listing Drawing Views</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ReferenceView</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>AlignmentStyle</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DetailViewInstructions::Create">DetailViewInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-DetailViewInstructions.html">DetailViewInstructions</a></tt></td><td class="method-name"><tt>DetailViewInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;Reference, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;CurveData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#307">Drawings: Detailed Views</a>, <a href="../manual0/jdrawfns.html#315">Drawings: Detailed Views</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Reference</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>CurveData</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RevolveViewInstructions::Create">RevolveViewInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-RevolveViewInstructions.html">RevolveViewInstructions</a></tt></td><td class="method-name"><tt>RevolveViewInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;Reference, <a class="type" href="c-pfcXSection-XSection.html">XSection</a>&nbsp;XSec, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Location)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#328">Drawings: Revolved Views</a>, <a href="../manual0/jdrawfns.html#334">Drawings: Revolved Views</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Reference</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>XSec</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Location</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AuxiliaryViewInstructions::Create">AuxiliaryViewInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-AuxiliaryViewInstructions.html">AuxiliaryViewInstructions</a></tt></td><td class="method-name"><tt>AuxiliaryViewInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;Reference, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Location)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#319">Drawings: Auxiliary Views</a>, <a href="../manual0/jdrawfns.html#324">Drawings: Auxiliary Views</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Reference</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Location</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Section2DInstructions::Create">Section2DInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcView2D-Section2DInstructions.html">Section2DInstructions</a></tt></td><td class="method-name"><tt>Section2DInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcView2D-DrawingViewSectionAreaType.html">DrawingViewSectionAreaType</a>&nbsp;SectionAreaType, String&nbsp;SectionName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#343">Drawings: Sections of a View</a>, <a href="../manual0/jdrawfns.html#358">Drawings: Sections of a View</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SectionAreaType</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>SectionName</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

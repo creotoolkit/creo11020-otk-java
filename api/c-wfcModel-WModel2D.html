@@ -1,0 +1,1328 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcModel.WModel2D"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      884
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcModel.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcModel-WModel2D.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;WModel2D</h2>
+<tt>
+     package 
+     <b><a href="p-wfcModel.html">com.ptc.wfc.wfcModel</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>WModel2D</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-wfcModel-WModel.html">com.ptc.wfc.wfcModel.WModel</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="bold" href="c-pfcModel2D-Model2D.html">com.ptc.pfc.pfcModel2D.Model2D</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>&nbsp; <br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-wfcModel-WReport.html">WReport</a></tt>, 
+        <tt><a class="class" href="c-wfcModel-WLayout.html">WLayout</a></tt>, 
+        <tt><a class="class" href="c-wfcDrawing-WDrawing.html">WDrawing</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#CollapseTree">CollapseTree</a>
+ (int&nbsp;WindowId)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Collapse the tree for the drawing. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>int</tt></td><td class="method-summary"><tt><a class="method" href="#CopyDrawingSheet">CopyDrawingSheet</a>
+ (int&nbsp;Sheet)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Create a copy of a drawing sheet. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDetail-DetailNoteItem.html">DetailNoteItem</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateLeaderWithArrowTypeNote">CreateLeaderWithArrowTypeNote</a>
+ (<a class="type" href="c-pfcDetail-DetailTextLines.html">DetailTextLines</a>&nbsp;TextLines, <a class="type" href="c-pfcDetail-Attachment.html">Attachment</a>&nbsp;NoteAttach, <a class="type" href="c-pfcDetail-DetailLeaderAttachments.html">DetailLeaderAttachments</a>&nbsp;LeaderAttachs, <a class="type" href="c-wfcAnnotation-LeaderArrowTypes.html">LeaderArrowTypes</a>&nbsp;Types)
+</tt>
+<br>
+<tt><b>LICENSE: </b>222</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ExpandTree">ExpandTree</a>
+ (int&nbsp;WindowId)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Expand the tree for the drawing. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcModel-FormatSizeData.html">FormatSizeData</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetFormatSize">GetFormatSize</a>
+ (int&nbsp;Sheet)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#GetLocationGridColumnFromPosition">GetLocationGridColumnFromPosition</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Position, int&nbsp;Sheet)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Outputs the location grid column for a specified location in screen coordinates. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#GetLocationGridRowFromPosition">GetLocationGridRowFromPosition</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Position, int&nbsp;Sheet)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Outputs the location grid row for a specified location in screen coordinates. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcModel-IndustryStandard.html">IndustryStandard</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetToleranceStandard">GetToleranceStandard</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get the assigned tolerance standard of a drawing. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsSheetFormatBlanked">IsSheetFormatBlanked</a>
+ (int&nbsp;Sheet)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Checks if the sheet format is blanked. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsSheetFormatShown">IsSheetFormatShown</a>
+ (int&nbsp;Sheet)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#RefreshTree">RefreshTree</a>
+ (int&nbsp;WindowId)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Refresh the tree for the drawing. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetFormatSize">SetFormatSize</a>
+ (<a class="type" href="c-wfcModel-FormatSizeData.html">FormatSizeData</a>&nbsp;Data, int&nbsp;Sheet)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetToleranceStandard">SetToleranceStandard</a>
+ (<a class="type" href="c-wfcModel-IndustryStandard.html">IndustryStandard</a>&nbsp;Standard)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set the assigned tolerance standard of a drawing. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ShowSheetFormat">ShowSheetFormat</a>
+ (boolean&nbsp;Show, int&nbsp;Sheet)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcBase-ActionSource.html"><tt>com.ptc.pfc.pfcBase.ActionSource</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Parent.html"><tt>com.ptc.pfc.pfcObject.Parent</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ParameterOwner.html"><tt>com.ptc.pfc.pfcModelItem.ParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcModelItem-WParameterOwner.html"><tt>com.ptc.wfc.wfcModelItem.WParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcModelItem-WParameterOwner.html#ExportParameterTable"><tt>ExportParameterTable</tt></a>,
+      <a class="method" href="c-wfcModelItem-WParameterOwner.html#ApplyParameterTableset"><tt>ApplyParameterTableset</tt></a>,
+      <a class="method" href="c-wfcModelItem-WParameterOwner.html#MathcadParametersSet"><tt>MathcadParametersSet</tt></a>,
+      <a class="method" href="c-wfcModelItem-WParameterOwner.html#MathcadInputParametersGet"><tt>MathcadInputParametersGet</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-RelationOwner.html"><tt>com.ptc.pfc.pfcModelItem.RelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcModelItem-WRelationOwner.html"><tt>com.ptc.wfc.wfcModelItem.WRelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcModelItem-WRelationOwner.html#GetRelationConstraints"><tt>GetRelationConstraints</tt></a>,
+      <a class="method" href="c-wfcModelItem-WRelationOwner.html#UnitsUsed"><tt>UnitsUsed</tt></a>,
+      <a class="method" href="c-wfcModelItem-WRelationOwner.html#UseUnits"><tt>UseUnits</tt></a>,
+      <a class="method" href="c-wfcModelItem-WRelationOwner.html#EvaluateExpressionWithUnits"><tt>EvaluateExpressionWithUnits</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ModelItemOwner.html"><tt>com.ptc.pfc.pfcModelItem.ModelItemOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ModelItemOwner.html#GetItemByName"><tt>GetItemByName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItemOwner.html#GetItemById"><tt>GetItemById</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItemOwner.html#ListItems"><tt>ListItems</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcView-ViewOwner.html"><tt>com.ptc.pfc.pfcView.ViewOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcView-ViewOwner.html#RetrieveView"><tt>RetrieveView</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#GetView"><tt>GetView</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#SaveView"><tt>SaveView</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#GetCurrentViewTransform"><tt>GetCurrentViewTransform</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#SetCurrentViewTransform"><tt>SetCurrentViewTransform</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#CurrentViewRotate"><tt>CurrentViewRotate</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#ListViews"><tt>ListViews</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#GetCurrentView"><tt>GetCurrentView</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Child.html"><tt>com.ptc.pfc.pfcObject.Child</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+      <a class="method" href="c-pfcObject-Child.html#OId"><tt>GetOId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModel-Model.html"><tt>com.ptc.pfc.pfcModel.Model</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModel-Model.html#Descr"><tt>GetDescr</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#RelationId"><tt>GetRelationId</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsModified"><tt>GetIsModified</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#VersionStamp"><tt>GetVersionStamp</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Revision"><tt>GetRevision</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Version"><tt>GetVersion</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Branch"><tt>GetBranch</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ReleaseLevel"><tt>GetReleaseLevel</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CommonName"><tt>GetCommonName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CommonName"><tt>SetCommonName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsCommonNameModifiable"><tt>IsCommonNameModifiable</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#FullName"><tt>GetFullName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#InstanceName"><tt>GetInstanceName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#GenericName"><tt>GetGenericName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Type"><tt>GetType</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#FileName"><tt>GetFileName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Backup"><tt>Backup</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Copy"><tt>Copy</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CopyAndRetrieve"><tt>CopyAndRetrieve</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Rename"><tt>Rename</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Save"><tt>Save</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Erase"><tt>Erase</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#EraseWithDependencies"><tt>EraseWithDependencies</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Delete"><tt>Delete</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Display"><tt>Display</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#DisplayInNewWindow"><tt>DisplayInNewWindow</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ListDependencies"><tt>ListDependencies</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ListDeclaredModels"><tt>ListDeclaredModels</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CreateLayer"><tt>CreateLayer</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Export"><tt>Export</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Import"><tt>Import</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#AccessExternalData"><tt>AccessExternalData</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#TerminateExternalData"><tt>TerminateExternalData</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CheckIsSaveAllowed"><tt>CheckIsSaveAllowed</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CheckIsModifiable"><tt>CheckIsModifiable</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Origin"><tt>GetOrigin</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#PostRegenerationRelations"><tt>GetPostRegenerationRelations</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#PostRegenerationRelations"><tt>SetPostRegenerationRelations</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#RegeneratePostRegenerationRelations"><tt>RegeneratePostRegenerationRelations</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#DeletePostRegenerationRelations"><tt>DeletePostRegenerationRelations</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CleanupDependencies"><tt>CleanupDependencies</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsNativeModel"><tt>IsNativeModel</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ExportIntf3D"><tt>ExportIntf3D</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#SetIntf3DLayerSetupFile"><tt>SetIntf3DLayerSetupFile</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsIntf3DLayerSetupFileIgnored"><tt>IsIntf3DLayerSetupFileIgnored</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsIntf3DCsysIgnored"><tt>IsIntf3DCsysIgnored</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ClearIntf3DModelData"><tt>ClearIntf3DModelData</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcModel-WModel.html"><tt>com.ptc.wfc.wfcModel.WModel</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcModel-WModel.html#VerifyATB"><tt>VerifyATB</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#MarkATBModelAsOutOfDate"><tt>MarkATBModelAsOutOfDate</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#UpdateATB"><tt>UpdateATB</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#RelinkATB"><tt>RelinkATB</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GetAnnotationPlanesFromGallery"><tt>GetAnnotationPlanesFromGallery</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GetAnnotationPlanes"><tt>GetAnnotationPlanes</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GetAnnotationPlaneByName"><tt>GetAnnotationPlaneByName</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#AddAnnotationPlaneToGallery"><tt>AddAnnotationPlaneToGallery</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#RemoveAnnotationPlaneFromGallery"><tt>RemoveAnnotationPlaneFromGallery</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GetActiveAnnotationPlane"><tt>GetActiveAnnotationPlane</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GetTIMInfo"><tt>GetTIMInfo</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#ConvertOldXSectionsToNew"><tt>ConvertOldXSectionsToNew</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#CanCreateSectionFeature"><tt>CanCreateSectionFeature</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#ListLayers"><tt>ListLayers</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#SaveLayerDisplayStatus"><tt>SaveLayerDisplayStatus</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GetLayerItem"><tt>GetLayerItem</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GetSubType"><tt>GetSubType</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GetDefaultName"><tt>GetDefaultName</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#IsVariantFeatModel"><tt>IsVariantFeatModel</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#CreateUnitByExpression"><tt>CreateUnitByExpression</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#ComputeRayIntersections"><tt>ComputeRayIntersections</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#CollectParamTablesets"><tt>CollectParamTablesets</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GenerateSelectionsFromCollection"><tt>GenerateSelectionsFromCollection</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#MarkForSaving"><tt>MarkForSaving</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#RefreshMdlTree"><tt>RefreshMdlTree</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GetMdlfileDescriptor"><tt>GetMdlfileDescriptor</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#IsStandardLocation"><tt>IsStandardLocation</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#DesignateSymbol"><tt>DesignateSymbol</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#UndesignateSymbol"><tt>UndesignateSymbol</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#IsDesignatedSymbol"><tt>IsDesignatedSymbol</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#VisitItems"><tt>VisitItems</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#VisitDetailItems"><tt>VisitDetailItems</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#CreateSurfaceFinish"><tt>CreateSurfaceFinish</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#CreateGTol"><tt>CreateGTol</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#CreateSetDatumTag"><tt>CreateSetDatumTag</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#MatchLayerRules"><tt>MatchLayerRules</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#CopyLayerRules"><tt>CopyLayerRules</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#ExecuteLayerRules"><tt>ExecuteLayerRules</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcSheet-SheetOwner.html"><tt>com.ptc.pfc.pfcSheet.SheetOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcSheet-SheetOwner.html#NumberOfSheets"><tt>GetNumberOfSheets</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#CurrentSheetNumber"><tt>GetCurrentSheetNumber</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#CurrentSheetNumber"><tt>SetCurrentSheetNumber</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#AddSheet"><tt>AddSheet</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#ReorderSheet"><tt>ReorderSheet</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetData"><tt>GetSheetData</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetInfo"><tt>GetSheetInfo</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetTransform"><tt>GetSheetTransform</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#RegenerateSheet"><tt>RegenerateSheet</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#DeleteSheet"><tt>DeleteSheet</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetScale"><tt>GetSheetScale</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#SetSheetScale"><tt>SetSheetScale</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetFormat"><tt>GetSheetFormat</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#SetSheetFormat"><tt>SetSheetFormat</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetBackgroundView"><tt>GetSheetBackgroundView</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetUnits"><tt>GetSheetUnits</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetFormatDescr"><tt>GetSheetFormatDescr</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcDetail-DetailItemOwner.html"><tt>com.ptc.pfc.pfcDetail.DetailItemOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcDetail-DetailItemOwner.html#ListDetailItems"><tt>ListDetailItems</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItemOwner.html#GetDetailItem"><tt>GetDetailItem</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateDetailItem"><tt>CreateDetailItem</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateFreeNote"><tt>CreateFreeNote</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateOffsetNote"><tt>CreateOffsetNote</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateOnItemNote"><tt>CreateOnItemNote</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateLeaderNote"><tt>CreateLeaderNote</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItemOwner.html#RetrieveSymbolDefinition"><tt>RetrieveSymbolDefinition</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItemOwner.html#RetrieveSymbolDefItem"><tt>RetrieveSymbolDefItem</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItemOwner.html#AllowReadonlyNoteSelection"><tt>AllowReadonlyNoteSelection</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcTable-TableOwner.html"><tt>com.ptc.pfc.pfcTable.TableOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcTable-TableOwner.html#ListTables"><tt>ListTables</tt></a>,
+      <a class="method" href="c-pfcTable-TableOwner.html#GetTable"><tt>GetTable</tt></a>,
+      <a class="method" href="c-pfcTable-TableOwner.html#CreateTable"><tt>CreateTable</tt></a>,
+      <a class="method" href="c-pfcTable-TableOwner.html#RetrieveTable"><tt>RetrieveTable</tt></a>,
+      <a class="method" href="c-pfcTable-TableOwner.html#RetrieveTableByOrigin"><tt>RetrieveTableByOrigin</tt></a>,
+      <a class="method" href="c-pfcTable-TableOwner.html#UpdateTables"><tt>UpdateTables</tt></a>,
+      <a class="method" href="c-pfcTable-TableOwner.html#DeleteTable"><tt>DeleteTable</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModel2D-Model2D.html"><tt>com.ptc.pfc.pfcModel2D.Model2D</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModel2D-Model2D.html#TextHeight"><tt>GetTextHeight</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#TextHeight"><tt>SetTextHeight</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#List2DViews"><tt>List2DViews</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#GetViewByName"><tt>GetViewByName</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#GetViewDisplaying"><tt>GetViewDisplaying</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#CreateView"><tt>CreateView</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#SetViewDisplaying"><tt>SetViewDisplaying</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#GetCurrentSolid"><tt>GetCurrentSolid</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#SetCurrentSolid"><tt>SetCurrentSolid</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#ListModels"><tt>ListModels</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#AddModel"><tt>AddModel</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#DeleteModel"><tt>DeleteModel</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#Regenerate"><tt>Regenerate</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#ReplaceModel"><tt>ReplaceModel</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#CreateDrawingDimension"><tt>CreateDrawingDimension</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#ListShownDimensions"><tt>ListShownDimensions</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#CreateDimension"><tt>CreateDimension</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#CreateRefDimension"><tt>CreateRefDimension</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#CollectShownDimensions"><tt>CollectShownDimensions</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#CollectShownRefDimensions"><tt>CollectShownRefDimensions</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#ListSimplifiedReps"><tt>ListSimplifiedReps</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#AddSimplifiedRep"><tt>AddSimplifiedRep</tt></a>,
+      <a class="method" href="c-pfcModel2D-Model2D.html#DeleteSimplifiedRep"><tt>DeleteSimplifiedRep</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetFormatSize">SetFormatSize</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetFormatSize</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcModel-FormatSizeData.html">FormatSizeData</a>&nbsp;Data, int&nbsp;Sheet)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#78">Drawings: Drawing Format Files</a>, <a href="../manual0/jdrawfns.html#85">Drawings: Drawing Format Files</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Data</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Sheet</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetFormatSize">GetFormatSize</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcModel-FormatSizeData.html">FormatSizeData</a></tt></td><td class="method-name"><tt>GetFormatSize</tt></td><td class="method-params"><tt>
+ (int&nbsp;Sheet)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#77">Drawings: Drawing Format Files</a>, <a href="../manual0/jdrawfns.html#85">Drawings: Drawing Format Files</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sheet</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ShowSheetFormat">ShowSheetFormat</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>ShowSheetFormat</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;Show, int&nbsp;Sheet)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#70">Drawings: Drawing Sheet Operations</a>, <a href="../manual0/jdrawfns.html#75">Drawings: Drawing Sheet Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Show</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Sheet</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsSheetFormatShown">IsSheetFormatShown</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>IsSheetFormatShown</tt></td><td class="method-params"><tt>
+ (int&nbsp;Sheet)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#74">Drawings: Drawing Sheet Operations</a>, <a href="../manual0/jdrawfns.html#75">Drawings: Drawing Sheet Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sheet</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsSheetFormatBlanked">IsSheetFormatBlanked</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>IsSheetFormatBlanked</tt></td><td class="method-params"><tt>
+ (int&nbsp;Sheet)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Checks if the sheet format is blanked. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#73">Drawings: Drawing Sheet Operations</a>, <a href="../manual0/jdrawfns.html#75">Drawings: Drawing Sheet Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sheet</b></tt>
+</dt>
+<dd>The sheet number. Set this to a value less than 1 for the current sheet. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Boolean indicating whether the sheet is blanked or not. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetToleranceStandard">SetToleranceStandard</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetToleranceStandard</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcModel-IndustryStandard.html">IndustryStandard</a>&nbsp;Standard)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Set the assigned tolerance standard of a drawing. <br>
+<br>
+        
+<p>in the regular UI, this operation asks whether to regenerate the drawing.  This function will not itself perform regeneration.</p>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#72">Drawings: Drawing Sheet Operations</a>, <a href="../manual0/jdrawfns.html#75">Drawings: Drawing Sheet Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Standard</b></tt>
+</dt>
+<dd>The tolerance standard to set. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetToleranceStandard">GetToleranceStandard</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcModel-IndustryStandard.html">IndustryStandard</a></tt></td><td class="method-name"><tt>GetToleranceStandard</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Get the assigned tolerance standard of a drawing. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#71">Drawings: Drawing Sheet Operations</a>, <a href="../manual0/jdrawfns.html#75">Drawings: Drawing Sheet Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The tolerance standard. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ExpandTree">ExpandTree</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>ExpandTree</tt></td><td class="method-params"><tt>
+ (int&nbsp;WindowId)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Expand the tree for the drawing. <br>
+<br>
+<p></p>
+      
+<p>
+        
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoChange.html">XToolkitNoChange</a></tt></tt> - There is no change in the drawing tree
+        </p>
+      
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#30">Drawings: Drawing Tree</a>, <a href="../manual0/jdrawfns.html#31">Drawings: Drawing Tree</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>WindowId</b></tt>
+</dt>
+<dd>Id of the window which contains the drawing. Use -1 to expand the drawing tree in the active window. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CollapseTree">CollapseTree</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>CollapseTree</tt></td><td class="method-params"><tt>
+ (int&nbsp;WindowId)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Collapse the tree for the drawing. <br>
+<br>
+<p></p>
+      
+<p>
+        
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoChange.html">XToolkitNoChange</a></tt></tt> - There is no change in the drawing tree.
+        </p>
+      
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#29">Drawings: Drawing Tree</a>, <a href="../manual0/jdrawfns.html#31">Drawings: Drawing Tree</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>WindowId</b></tt>
+</dt>
+<dd>Id of the window which contains the drawing. Use -1 to collapse the drawing tree in the active window. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RefreshTree">RefreshTree</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>RefreshTree</tt></td><td class="method-params"><tt>
+ (int&nbsp;WindowId)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Refresh the tree for the drawing. <br>
+<br>
+<p></p>
+      
+<p>
+        
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoChange.html">XToolkitNoChange</a></tt></tt> - There is no change in the drawing tree
+        </p>
+      
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#31">Drawings: Drawing Tree</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>WindowId</b></tt>
+</dt>
+<dd>Id of the window which contains the drawing. Use -1 to refresh the drawing tree in the active window. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CopyDrawingSheet">CopyDrawingSheet</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>int</tt></td><td class="method-name"><tt>CopyDrawingSheet</tt></td><td class="method-params"><tt>
+ (int&nbsp;Sheet)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Create a copy of a drawing sheet. <br>
+<br>
+<p></p>
+      
+<p>
+        
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidType.html">XToolkitInvalidType</a></tt></tt> - Invalid model type specified.
+        </p>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantModify.html">XToolkitCantModify</a></tt></tt> - Drawing can't be modified.
+        </p>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantWrite.html">XToolkitCantWrite</a></tt></tt> - Drawing sheet copy attempt failed.
+        </p>
+      
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#69">Drawings: Drawing Sheet Operations</a>, <a href="../manual0/jdrawfns.html#75">Drawings: Drawing Sheet Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sheet</b></tt>
+</dt>
+<dd>The sheet number of the sheet to create a copy of. Set this to a value less than 1 for the current sheet. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The sheet number of the copy. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetLocationGridColumnFromPosition">GetLocationGridColumnFromPosition</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetLocationGridColumnFromPosition</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Position, int&nbsp;Sheet)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Outputs the location grid column for a specified location in screen coordinates. <br>
+<br>
+<p></p>
+      
+<p>
+        
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotExist.html">XToolkitNotExist</a></tt></tt> - No location grid is defined on the specified sheet
+        </p>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfRange.html">XToolkitOutOfRange</a></tt></tt> - 'Position' is outside of the location grid
+        </p>
+      
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#26">Drawings: Access Drawing Location in Grid</a>, <a href="../manual0/jdrawfns.html#27">Drawings: Access Drawing Location in Grid</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Position</b></tt>
+</dt>
+<dd>The location in screen coordinates. </dd>
+<dt>
+<tt><b>Sheet</b></tt>
+</dt>
+<dd>The sheet number. If not provided, the current sheet will be used. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The label on the corresponding location grid column. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetLocationGridRowFromPosition">GetLocationGridRowFromPosition</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetLocationGridRowFromPosition</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Position, int&nbsp;Sheet)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Outputs the location grid row for a specified location in screen coordinates. <br>
+<br>
+<p></p>
+      
+<p>
+        
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotExist.html">XToolkitNotExist</a></tt></tt> - No location grid is defined on the specified sheet
+        </p>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfRange.html">XToolkitOutOfRange</a></tt></tt> - 'Position' is outside of the location grid
+        </p>
+      
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#27">Drawings: Access Drawing Location in Grid</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Position</b></tt>
+</dt>
+<dd>The location in screen coordinates. </dd>
+<dt>
+<tt><b>Sheet</b></tt>
+</dt>
+<dd>The sheet number. If not provided, the current sheet will be used.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The label on the corresponding location grid row. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateLeaderWithArrowTypeNote">CreateLeaderWithArrowTypeNote</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDetail-DetailNoteItem.html">DetailNoteItem</a></tt></td><td class="method-name"><tt>CreateLeaderWithArrowTypeNote</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailTextLines.html">DetailTextLines</a>&nbsp;TextLines, <a class="type" href="c-pfcDetail-Attachment.html">Attachment</a>&nbsp;NoteAttach, <a class="type" href="c-pfcDetail-DetailLeaderAttachments.html">DetailLeaderAttachments</a>&nbsp;LeaderAttachs, <a class="type" href="c-wfcAnnotation-LeaderArrowTypes.html">LeaderArrowTypes</a>&nbsp;Types)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>LICENSE: </b>222</tt>
+<br>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+<p></p>
+      
+<p>
+        
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfMemory.html">XToolkitOutOfMemory</a></tt></tt> - Not enough memory.
+        </p>
+      
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#75">Drawings: Drawing Sheet Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TextLines</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>NoteAttach</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>LeaderAttachs</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Types</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

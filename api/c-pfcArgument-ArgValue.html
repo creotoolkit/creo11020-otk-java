@@ -1,0 +1,556 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcArgument.ArgValue"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      26
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcArgument.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcArgument-ArgValue.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;ArgValue</h2>
+<tt>
+     package 
+     <b><a href="p-pfcArgument.html">com.ptc.pfc.pfcArgument</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       class&nbsp;<b>ArgValue</b>
+<br>&nbsp;
+       implements&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface represents an argument value, which may be one of several different types.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><tt><a class="method" href="c-pfcArgument-pfcArgument.html#CreateASCIIStringArgValue">pfcArgument.CreateASCIIStringArgValue(String)</a></tt></tt>, <tt><tt><a class="method" href="c-pfcArgument-pfcArgument.html#CreateBoolArgValue">pfcArgument.CreateBoolArgValue(boolean)</a></tt></tt>, <tt><tt><a class="method" href="c-pfcArgument-pfcArgument.html#CreateDoubleArgValue">pfcArgument.CreateDoubleArgValue(double)</a></tt></tt>, <tt><tt><a class="method" href="c-pfcArgument-pfcArgument.html#CreateIntArgValue">pfcArgument.CreateIntArgValue(int)</a></tt></tt>, <tt><tt><a class="method" href="c-pfcArgument-pfcArgument.html#CreateSelectionArgValue">pfcArgument.CreateSelectionArgValue(Selection)</a></tt></tt>, <tt><tt><a class="method" href="c-pfcArgument-pfcArgument.html#CreateStringArgValue">pfcArgument.CreateStringArgValue(String)</a></tt></tt>, <tt><tt><a class="method" href="c-pfcArgument-pfcArgument.html#CreateTransformArgValue">pfcArgument.CreateTransformArgValue(Transform3D)</a></tt></tt>, <tt><a class="method" href="c-pfcArgument-pfcArgument.html#Argument::Create">pfcArgument.Argument_Create(String, ArgValue)</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#ASCIIStringValue">GetASCIIStringValue</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ASCIIStringValue"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Used if the argument value contains a character string.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#BoolValue">GetBoolValue</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "BoolValue"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Used if the argument value contains a boolean.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcArgument-ArgValueType.html">ArgValueType</a></tt></td><td class="method-summary"><tt><a class="method" href="#discr">Getdiscr</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns the union discriminant value.<br>
+<br>
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#DoubleValue">GetDoubleValue</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "DoubleValue"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Used if the argument value contains a double.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>int</tt></td><td class="method-summary"><tt><a class="method" href="#IntValue">GetIntValue</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IntValue"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Used if the argument value contains an integer.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcSelect-Selection.html">Selection</a></tt></td><td class="method-summary"><tt><a class="method" href="#SelectionValue">GetSelectionValue</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "SelectionValue"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Used if the argument value contains a Creo Parametric selection.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#StringValue">GetStringValue</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "StringValue"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Used if the argument value contains a string.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#TransformValue">GetTransformValue</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "TransformValue"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Used if the argument value contains a coordinate transformation.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ASCIIStringValue">SetASCIIStringValue</a>
+ (String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ASCIIStringValue"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Used if the argument value contains a character string.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#BoolValue">SetBoolValue</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "BoolValue"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Used if the argument value contains a boolean.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DoubleValue">SetDoubleValue</a>
+ (double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "DoubleValue"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Used if the argument value contains a double.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#IntValue">SetIntValue</a>
+ (int&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "IntValue"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Used if the argument value contains an integer.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SelectionValue">SetSelectionValue</a>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "SelectionValue"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Used if the argument value contains a Creo Parametric selection.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#StringValue">SetStringValue</a>
+ (String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "StringValue"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Used if the argument value contains a string.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#TransformValue">SetTransformValue</a>
+ (<a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "TransformValue"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Used if the argument value contains a coordinate transformation.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="discr">Getdiscr</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcArgument-ArgValueType.html">ArgValueType</a></tt></td><td class="method-name"><tt>Getdiscr</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns the union discriminant value.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntValue">GetIntValue/SetIntValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>int</tt></td><td class="method-name"><tt>GetIntValue</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetIntValue</tt></td><td class="method-params"><tt>
+ (int&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Used if the argument value contains an integer.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p> 
+<tt><tt><a class="class" href="c-pfcExceptions-XBadGetArgValue.html">XBadGetArgValue</a></tt></tt> - Argument value does not contain an integer</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/japplib.html#10">Task Based Application Libraries: Managing Application Arguments</a>, <a href="../manual0/japplib.html#11">Task Based Application Libraries: Managing Application Arguments</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DoubleValue">GetDoubleValue/SetDoubleValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetDoubleValue</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetDoubleValue</tt></td><td class="method-params"><tt>
+ (double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Used if the argument value contains a double.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p> 
+<tt><tt><a class="class" href="c-pfcExceptions-XBadGetArgValue.html">XBadGetArgValue</a></tt></tt> - Argument value does not contain a double</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/japplib.html#12">Task Based Application Libraries: Managing Application Arguments</a>, <a href="../manual0/japplib.html#13">Task Based Application Libraries: Managing Application Arguments</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="BoolValue">GetBoolValue/SetBoolValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetBoolValue</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetBoolValue</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Used if the argument value contains a boolean.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XBadGetArgValue.html">XBadGetArgValue</a></tt></tt> - Argument value does not contain a boolean</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/japplib.html#14">Task Based Application Libraries: Managing Application Arguments</a>, <a href="../manual0/japplib.html#15">Task Based Application Libraries: Managing Application Arguments</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ASCIIStringValue">GetASCIIStringValue/SetASCIIStringValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetASCIIStringValue</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetASCIIStringValue</tt></td><td class="method-params"><tt>
+ (String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Used if the argument value contains a character string.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XBadGetArgValue.html">XBadGetArgValue</a></tt></tt> - Argument value does not contain a character string</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/japplib.html#16">Task Based Application Libraries: Managing Application Arguments</a>, <a href="../manual0/japplib.html#17">Task Based Application Libraries: Managing Application Arguments</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="StringValue">GetStringValue/SetStringValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetStringValue</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetStringValue</tt></td><td class="method-params"><tt>
+ (String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Used if the argument value contains a string.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XBadGetArgValue.html">XBadGetArgValue</a></tt></tt> - Argument value does not contain a string</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/japplib.html#18">Task Based Application Libraries: Managing Application Arguments</a>, <a href="../manual0/japplib.html#19">Task Based Application Libraries: Managing Application Arguments</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SelectionValue">GetSelectionValue/SetSelectionValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcSelect-Selection.html">Selection</a></tt></td><td class="method-name"><tt>GetSelectionValue</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetSelectionValue</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Used if the argument value contains a Creo Parametric selection.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XBadGetArgValue.html">XBadGetArgValue</a></tt></tt> - Argument value does not contain a Creo Parametric selection</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/japplib.html#20">Task Based Application Libraries: Managing Application Arguments</a>, <a href="../manual0/japplib.html#21">Task Based Application Libraries: Managing Application Arguments</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TransformValue">GetTransformValue/SetTransformValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a></tt></td><td class="method-name"><tt>GetTransformValue</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetTransformValue</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Used if the argument value contains a coordinate transformation.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XBadGetArgValue.html">XBadGetArgValue</a></tt></tt> - Argument value does not contain a coordinate transformation</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/japplib.html#22">Task Based Application Libraries: Managing Application Arguments</a>, <a href="../manual0/japplib.html#23">Task Based Application Libraries: Managing Application Arguments</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

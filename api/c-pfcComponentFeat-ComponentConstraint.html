@@ -1,0 +1,570 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcComponentFeat.ComponentConstraint"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      100
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcComponentFeat.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcComponentFeat-ComponentConstraint.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;ComponentConstraint</h2>
+<tt>
+     package 
+     <b><a href="p-pfcComponentFeat.html">com.ptc.pfc.pfcComponentFeat</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>ComponentConstraint</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface represents a component constraint.
+<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-DatumSide.html">DatumSide</a></tt></td><td class="method-summary"><tt><a class="method" href="#AssemblyDatumSide">GetAssemblyDatumSide</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "AssemblyDatumSide"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The datum plane side, if the AssemblyReference is a datum plane.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcSelect-Selection.html">Selection</a></tt></td><td class="method-summary"><tt><a class="method" href="#AssemblyReference">GetAssemblyReference</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "AssemblyReference"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The geometric reference from the assembly.  This reference must be created using an assembly component path. Use <tt>null</tt> for constraint types not requiring a component reference.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcComponentFeat-ConstraintAttributes.html">ConstraintAttributes</a></tt></td><td class="method-summary"><tt><a class="method" href="#Attributes">GetAttributes</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Attributes"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Constraint related attributed. Use <tt>null</tt> for the default settings.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-DatumSide.html">DatumSide</a></tt></td><td class="method-summary"><tt><a class="method" href="#ComponentDatumSide">GetComponentDatumSide</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ComponentDatumSide"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The datum plane side, if the ComponentReference is a datum plane.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcSelect-Selection.html">Selection</a></tt></td><td class="method-summary"><tt><a class="method" href="#ComponentReference">GetComponentReference</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ComponentReference"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The geometric reference on the component.  Use <tt>null</tt> for constraint types not requiring a component reference.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-summary"><tt><a class="method" href="#Offset">GetOffset</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Offset"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The offset value, if appropriate to the constraint type.  Use <tt>null</tt> to represent a 0.0 value, or for constraint types not requiring an offset.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcComponentFeat-ComponentConstraintType.html">ComponentConstraintType</a></tt></td><td class="method-summary"><tt><a class="method" href="#Type">GetType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Type"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The type of constraint.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-summary"><tt><a class="method" href="#UserDefinedData">GetUserDefinedData</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "UserDefinedData"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A user created string stored with the constraint.  Typically <tt>null</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AssemblyDatumSide">SetAssemblyDatumSide</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-DatumSide.html">DatumSide</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "AssemblyDatumSide"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The datum plane side, if the AssemblyReference is a datum plane.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AssemblyReference">SetAssemblyReference</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "AssemblyReference"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The geometric reference from the assembly.  This reference must be created using an assembly component path. Use <tt>null</tt> for constraint types not requiring a component reference.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Attributes">SetAttributes</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcComponentFeat-ConstraintAttributes.html">ConstraintAttributes</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Attributes"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Constraint related attributed. Use <tt>null</tt> for the default settings.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ComponentDatumSide">SetComponentDatumSide</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-DatumSide.html">DatumSide</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ComponentDatumSide"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The datum plane side, if the ComponentReference is a datum plane.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ComponentReference">SetComponentReference</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ComponentReference"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The geometric reference on the component.  Use <tt>null</tt> for constraint types not requiring a component reference.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Offset">SetOffset</a>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Offset"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The offset value, if appropriate to the constraint type.  Use <tt>null</tt> to represent a 0.0 value, or for constraint types not requiring an offset.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Type">SetType</a>
+ (<a class="type" href="c-pfcComponentFeat-ComponentConstraintType.html">ComponentConstraintType</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Type"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The type of constraint.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#UserDefinedData">SetUserDefinedData</a>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "UserDefinedData"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A user created string stored with the constraint.  Typically <tt>null</tt>.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Type">GetType/SetType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcComponentFeat-ComponentConstraintType.html">ComponentConstraintType</a></tt></td><td class="method-name"><tt>GetType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetType</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcComponentFeat-ComponentConstraintType.html">ComponentConstraintType</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The type of constraint.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#74">Assemblies and Components: Assembling a Component Parametrically</a>, <a href="../manual0/jassembly.html#75">Assemblies and Components: Assembling a Component Parametrically</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AssemblyReference">GetAssemblyReference/SetAssemblyReference</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcSelect-Selection.html">Selection</a></tt></td><td class="method-name"><tt>GetAssemblyReference</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetAssemblyReference</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The geometric reference from the assembly.  This reference must be created using an assembly component path. Use <tt>null</tt> for constraint types not requiring a component reference.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#77">Assemblies and Components: Assembling a Component Parametrically</a>, <a href="../manual0/jassembly.html#76">Assemblies and Components: Assembling a Component Parametrically</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AssemblyDatumSide">GetAssemblyDatumSide/SetAssemblyDatumSide</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-DatumSide.html">DatumSide</a></tt></td><td class="method-name"><tt>GetAssemblyDatumSide</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetAssemblyDatumSide</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-DatumSide.html">DatumSide</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The datum plane side, if the AssemblyReference is a datum plane.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#79">Assemblies and Components: Assembling a Component Parametrically</a>, <a href="../manual0/jassembly.html#78">Assemblies and Components: Assembling a Component Parametrically</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ComponentReference">GetComponentReference/SetComponentReference</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcSelect-Selection.html">Selection</a></tt></td><td class="method-name"><tt>GetComponentReference</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetComponentReference</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The geometric reference on the component.  Use <tt>null</tt> for constraint types not requiring a component reference.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#81">Assemblies and Components: Assembling a Component Parametrically</a>, <a href="../manual0/jassembly.html#80">Assemblies and Components: Assembling a Component Parametrically</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ComponentDatumSide">GetComponentDatumSide/SetComponentDatumSide</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-DatumSide.html">DatumSide</a></tt></td><td class="method-name"><tt>GetComponentDatumSide</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetComponentDatumSide</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-DatumSide.html">DatumSide</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The datum plane side, if the ComponentReference is a datum plane.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#83">Assemblies and Components: Assembling a Component Parametrically</a>, <a href="../manual0/jassembly.html#82">Assemblies and Components: Assembling a Component Parametrically</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Offset">GetOffset/SetOffset</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-name"><tt>GetOffset</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetOffset</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The offset value, if appropriate to the constraint type.  Use <tt>null</tt> to represent a 0.0 value, or for constraint types not requiring an offset.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#85">Assemblies and Components: Assembling a Component Parametrically</a>, <a href="../manual0/jassembly.html#84">Assemblies and Components: Assembling a Component Parametrically</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Attributes">GetAttributes/SetAttributes</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcComponentFeat-ConstraintAttributes.html">ConstraintAttributes</a></tt></td><td class="method-name"><tt>GetAttributes</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetAttributes</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcComponentFeat-ConstraintAttributes.html">ConstraintAttributes</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Constraint related attributed. Use <tt>null</tt> for the default settings.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#87">Assemblies and Components: Assembling a Component Parametrically</a>, <a href="../manual0/jassembly.html#86">Assemblies and Components: Assembling a Component Parametrically</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UserDefinedData">GetUserDefinedData/SetUserDefinedData</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-name"><tt>GetUserDefinedData</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetUserDefinedData</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>A user created string stored with the constraint.  Typically <tt>null</tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#89">Assemblies and Components: Assembling a Component Parametrically</a>, <a href="../manual0/jassembly.html#88">Assemblies and Components: Assembling a Component Parametrically</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

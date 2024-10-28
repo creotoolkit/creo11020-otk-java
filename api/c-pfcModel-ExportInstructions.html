@@ -1,0 +1,136 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcModel.ExportInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      266
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcModel.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcModel-ExportInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;ExportInstructions</h2>
+<tt>
+     package 
+     <b><a href="p-pfcModel.html">com.ptc.pfc.pfcModel</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>ExportInstructions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Base class to all the export-instructions classes that govern the exporting of Creo Parametric data with <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> .
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-pfcModel-RelationExportInstructions.html">RelationExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-IGESFileExportInstructions.html">IGESFileExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-ModelInfoExportInstructions.html">ModelInfoExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-ProgramExportInstructions.html">ProgramExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-DXFExportInstructions.html">DXFExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-DWGSetupExportInstructions.html">DWGSetupExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-FeatIdExportInstructions.html">FeatIdExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-CoordSysExportInstructions.html">CoordSysExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-GeomExportInstructions.html">GeomExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-BOMExportInstructions.html">BOMExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-MaterialExportInstructions.html">MaterialExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-ConnectorParamExportInstructions.html">ConnectorParamExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-CGMFILEExportInstructions.html">CGMFILEExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-VRMLExportInstructions.html">VRMLExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-PlotInstructions.html">PlotInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-STEP2DExportInstructions.html">STEP2DExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-MedusaExportInstructions.html">MedusaExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-CableParamsFileInstructions.html">CableParamsFileInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcExport-Export3DInstructions.html">Export3DInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcExport-CADDSExportInstructions.html">CADDSExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcExport-NEUTRALFileExportInstructions.html">NEUTRALFileExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcExport-ProductViewExportInstructions.html">ProductViewExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcExport-PDFExportInstructions.html">PDFExportInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcExport-PrinterInstructions.html">PrinterInstructions</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetFileType">GetFileType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns a <tt><tt><a class="class" href="c-pfcModel-ExportType.html">ExportType</a></tt></tt> instance that indicates the type of data the object exports when passed as an argument to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> .
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetFileType">GetFileType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="method-name"><tt>GetFileType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns a <tt><tt><a class="class" href="c-pfcModel-ExportType.html">ExportType</a></tt></tt> instance that indicates the type of data the object exports when passed as an argument to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> .
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>One of the static instances of <tt><tt><a class="class" href="c-pfcModel-ExportType.html">ExportType</a></tt></tt> , such as IGES or CATIA.</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

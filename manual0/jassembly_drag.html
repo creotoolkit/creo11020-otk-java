@@ -1,0 +1,457 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9">
+      <meta name="ch:resourceid" content="jassembly_drag" scheme="atiChunkerMeta">
+      
+      
+      
+      
+      
+      
+      <link href="css/styler.css" rel="stylesheet" type="text/css">
+      <title>Assembly: Kinematic Dragging and Creating Snapshots</title>
+   
+<SCRIPT LANGUAGE="JAVASCRIPT">
+  function findProperNode() { top.frames[0].document.apiwizard.manual("MANJASSEMBLY_DRAG0", location.hash); }
+</SCRIPT>
+
+</head>
+   <body onLoad="findProperNode()">
+      
+         
+         <a name="0"> </a><div class=" x-title-65-0 x-title-65-1" combinedFontName="off" id="styler-id1.1.1.34.1" class="ChapterTitle">Assembly: Kinematic Dragging and Creating Snapshots</div>
+         <div class=" x-body-2-0">
+            <div class=" x-p-7-0">This section describes the <span class=" x-ph-2-0" id="jassembly_drag_AssemblyKinematicDraggingAndCreati-033F2D_36_7">Creo Object TOOLKIT Java</span> methods for dragging assembly entities through an allowable range to see how your assembly works in a specific configuration.
+               These methods provide the same result as obtained by using the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Drag</span></span> dialog box in the <span class=" x-ph-2-0" id="jassembly_drag_AssemblyKinematicDraggingAndCreati-033F2D_36_9"><span xmlns="" profilecode="1">Creo Parametric</span></span> user interface.
+            </div>
+            <div class=" x-p-7-0">This chapter also describes the methods to create snapshots of the assembly in different positions and orientations.</div>
+         </div>
+         <div class=" x-topic-4-0 x-topic-4-1 x-topic-4-2" combinedFontName="off" id="jassembly_drag_ConnectingToAKinematicDragSession-033F489_36_11">
+            
+            <a name="1"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.34.3.1" class="Heading1">Connecting to a Kinematic Drag Session</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Methods Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="2"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcSession-WSession.html#StartKinDrag">wfcSession.WSession.StartKinDrag</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="3"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcSession-WSession.html#StopKinDrag">wfcSession.WSession.StopKinDrag</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="4"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcSession-WSession.html#SetKinDragEnvironment">wfcSession.WSession.SetKinDragEnvironment</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSession.WSession.StartKinDrag</span></span> starts a drag session. This method should be called before any other method for Kinematic drag or snapshots. All subsequent
+                  methods work with the snapshots of the top-level assembly. This method can be called for design assemblies in the Standard
+                  Assembly and Mechanism modes only. It cannot be used in the following cases:
+               </div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">If the assembly is in the exploded state</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">If the Sketcher mode is active</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">When component placement is active</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">When the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Drag</span></span> dialog box is active</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSession.WSession.StopKinDrag</span></span> stops the drag session. Use <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcWindow.Window.Refresh</span></span> to view the change in the graphic window scale according to the updated outline.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSession.WSession.SetKinDragEnvironment</span></span> sets the environment for dragging and reconnect operations. It requires the following input arguments:
+               </div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">Type</span>&#8212;Specifies the type of drag to be performed. It is given by the enumerated type <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSession.KinDragType</span></span> that takes the following values:</span><div class=" x-ul-2-0">
+                                 <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                    <col style="width: 0em">
+                                    <col style="width: 18pt">
+                                    <col>
+                                    <tbody>
+                                       <tr valign="baseline">
+                                          <td align="right"></td>
+                                          <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                          </td>
+                                          <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">KIN_POINT_DRAG</span></span>&#8212; Select a point to drag in a part within the top-level assembly. During the dragging operation, the point you selected follows
+                                                the pointer&#8217;s movement while maintaining connections.</span></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                                 <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                    <col style="width: 0em">
+                                    <col style="width: 18pt">
+                                    <col>
+                                    <tbody>
+                                       <tr valign="baseline">
+                                          <td align="right"></td>
+                                          <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                          </td>
+                                          <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">KIN_BODY_DRAG</span></span>&#8212;Select a part from the top-level assembly to drag. When you drag a part, its position in the graphics window changes, but
+                                                its orientation remains fixed. If the assembly requires a part to be reoriented in conjunction with a change in position,
+                                                the part does not move at all, as the assembly cannot reassemble in the new position.</span></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                                 <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                    <col style="width: 0em">
+                                    <col style="width: 18pt">
+                                    <col>
+                                    <tbody>
+                                       <tr valign="baseline">
+                                          <td align="right"></td>
+                                          <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                          </td>
+                                          <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">KIN_ADVANCED_TRANS_X</span></span>&#8212;Specifies the translation in the X direction of the selected coordinate system. This type is applicable only in case of an
+                                                advanced drag operation. You can select a coordinate system by selecting the part to be dragged.</span></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                                 <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                    <col style="width: 0em">
+                                    <col style="width: 18pt">
+                                    <col>
+                                    <tbody>
+                                       <tr valign="baseline">
+                                          <td align="right"></td>
+                                          <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                          </td>
+                                          <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">KIN_ADVANCED_TRANS_Y</span></span>&#8212;Specifies the translation in the Y direction of the selected coordinate system. This type is applicable only in case of an
+                                                advanced drag operation.</span></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                                 <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                    <col style="width: 0em">
+                                    <col style="width: 18pt">
+                                    <col>
+                                    <tbody>
+                                       <tr valign="baseline">
+                                          <td align="right"></td>
+                                          <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                          </td>
+                                          <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">KIN_ADVANCED_TRANS_Z</span></span>&#8212;Specifies the translation in the Z direction of the selected coordinate system. This type is applicable only in case of an
+                                                advanced drag operation.</span></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                                 <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                    <col style="width: 0em">
+                                    <col style="width: 18pt">
+                                    <col>
+                                    <tbody>
+                                       <tr valign="baseline">
+                                          <td align="right"></td>
+                                          <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                          </td>
+                                          <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">KIN_ADVANCED_ROT_X</span></span>&#8212;Specifies the rotation around the X axis of the selected coordinate system. This type is applicable only in case of an advanced
+                                                drag operation. You can select a coordinate system by selecting the part to be dragged.</span></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                                 <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                    <col style="width: 0em">
+                                    <col style="width: 18pt">
+                                    <col>
+                                    <tbody>
+                                       <tr valign="baseline">
+                                          <td align="right"></td>
+                                          <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                          </td>
+                                          <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">KIN_ADVANCED_ROT_Y</span></span>&#8212;Specifies the rotation around the Y axis of the selected coordinate system. This type is applicable only in case of an advanced
+                                                drag operation.</span></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                                 <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                    <col style="width: 0em">
+                                    <col style="width: 18pt">
+                                    <col>
+                                    <tbody>
+                                       <tr valign="baseline">
+                                          <td align="right"></td>
+                                          <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                          </td>
+                                          <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">KIN_ADVANCED_ROT_Z</span></span>&#8212;Specifies the rotation around the Z axis of the selected coordinate system. This type is applicable only in case of an advanced
+                                                drag operation.</span></td>
+                                       </tr>
+                                    </tbody>
+                                 </table>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">Name</span>&#8212;Specifies the name of the active snapshot whose constraints are used for the drag operation. The snapshot is checked for
+                                 statuses such as <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">good</span></span>, <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">outdated</span></span>, or <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">incomplete</span></span>. Pass <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NULL</span></span> if not required.</span><div class=" x-p-5-0">The <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">outdated</span></span> status means some parts from the body have a relative transformation that is different from the current transformation. The
+                                 <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">incomplete</span></span> status means that some parts from the body are missing in the active snapshot.
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">path</span>&#8212;Specifies the path in terms of the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcAssembly.ComponentPath</span></span> object to the active snapshot of a subassembly contained within the top-level assembly. Pass <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NULL</span></span> for a top-level assembly snapshot.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">Reference</span>&#8212;Specifies the selection reference in the form a coordinate system , part, or mechanism body for an advanced drag operation.
+                                 This argument is relevant only for advanced drag types. For all other drag types, it is ignored and <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NULL</span></span> should be passed.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="jassembly_drag_PerformingKinematicDrag-033F63F5_36_91">
+            
+            <a name="5"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.34.4.1" class="Heading1">Performing Kinematic Drag</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Methods Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="6"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcSession-WSession.html#MoveKinDrag">wfcSession.WSession.MoveKinDrag</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="7"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcSession-WSession.html#MoveKinDragForModel">wfcSession.WSession.MoveKinDragForModel</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSession.WSession.MoveKinDrag</span></span> drags the selected geometric object to the specified X and Y screen coordinates given by array of <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcPoint2Ds</span></span> object. A hook point is displayed on the object selected for drag, which is removed at the end of the drag operation. The
+                  dragging is performed according to the environment set by the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSession.WSession.SetKinDragEnvironment</span></span>. Use the constraints set for the active snapshot while dragging.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSession.WSession.MoveKinDragForModel</span></span> brings to drag the selected object. Performs a drag according to the environment set in <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSession.WSession.SetKinDragEnvironment</span></span> For dragging use constraints from the current snapshot, if it is set. The input arguments are as follows:
+                  <div class=" x-ul-1-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">DragPoint</span>&#8212;A geometrical object point, surface, axis or component to be dragged. Set the selected-point using <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSelect.Selection.GetPoint</span></span>, otherwise the hook point will be wrong and movement result will be wrong as well.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">Moves</span>&#8212;Sequence of 3d points in model coordinates.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">Matrix</span>&#8212;The view transformation matrix for the drag operation and the value can be <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NULL</span></span>. If <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NULL</span></span>, the method will take currently active model and view matrix.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="jassembly_drag_CreatingAndModifyingSnapshots-033F8335_36_122">
+            
+            <a name="8"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.34.5.1" class="Heading1">Creating and Modifying Snapshots</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Methods Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="9"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcSession-WSession.html#CreateSnapshot">wfcSession.WSession.CreateSnapshot</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="10"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcSession-WSession.html#UpdateSnapshot">wfcSession.WSession.UpdateSnapshot</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="11"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcSession-WSession.html#DeleteSnapshot">wfcSession.WSession.DeleteSnapshot</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSession.WSession.CreateSnapshot</span></span> creates a new snapshot for the top-level assembly as per its current position in the <span class=" x-ph-2-0" id="jassembly_drag_CreatingAndModifyingSnapshots-033F8335_PT_36_138"><span xmlns="" profilecode="1">Creo Parametric</span></span> window. Constraints are copied from the active snapshot. The newly created snapshot becomes active.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSession.WSession.UpdateSnapshot</span></span> updates the snapshot for the top-level assembly as per its current position in the <span class=" x-ph-2-0" id="jassembly_drag_CreatingAndModifyingSnapshots-033F8335_PT_36_138"><span xmlns="" profilecode="1">Creo Parametric</span></span> window. Constraints are copied from the active snapshot. The newly updated snapshot becomes active.
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSession.WSession.DeleteSnapshot</span></span> deletes a specified snapshot. The snapshot can be of the top-level assembly or any of its subassemblies. Pass <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">NULL</span></span> for the argument <span class=" x-parmname-3-0">path</span> to specify the top-level assembly.
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="jassembly_drag_SnapshotTransforms-033FC1B5_36_148">
+            
+            <a name="12"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.34.6.1" class="Heading1">Snapshot Transforms</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Methods Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="13"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcSession-WSession.html#GetKinSnapshotTransformations">wfcSession.WSession.GetKinSnapshotTransformations</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSession.WSession.GetKinSnapshotTransformations</span></span> retrieves the transformation paths and transformation matrices saved in the snapshots for the subassemblies and their components
+                  with respect to the top-level assembly snapshot.
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

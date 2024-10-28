@@ -1,0 +1,448 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcAssembly.WComponentPath"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      830
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcAssembly.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcAssembly-WComponentPath.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;WComponentPath</h2>
+<tt>
+     package 
+     <b><a href="p-wfcAssembly.html">com.ptc.wfc.wfcAssembly</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>WComponentPath</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcAssembly-ComponentPath.html">com.ptc.pfc.pfcAssembly.ComponentPath</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>
+      Adds more functionality to
+      <tt><tt><a class="class" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a></tt></tt>.
+    <br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-wfcAssembly-Connector.html">Connector</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcAssembly-SubstituteComponent.html">SubstituteComponent</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetSubstituteComponent">GetSubstituteComponent</a>
+ (<a class="type" href="c-pfcSimpRep-SimpRep.html">SimpRep</a>&nbsp;InRep)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        If a component is substituted with a given simplified representation,
+        then get the component path and the handle of the substituted component.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcAssembly-SubstitutionType.html">SubstitutionType</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetSubstitutionType">GetSubstitutionType</a>
+ (<a class="type" href="c-pfcSimpRep-SimpRep.html">SimpRep</a>&nbsp;InRep)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        If a component is substituted with a given simplified representation,
+        then get the type of substitution.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcGeometry-WCsyses.html">WCsyses</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListDisplayedCsyses">ListDisplayedCsyses</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>List all displayed datum coordinate systems in the Solid.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcGeometry-WCurves.html">WCurves</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListDisplayedCurves">ListDisplayedCurves</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>List all displayed datum curves in the Solid.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcGeometry-WPoints.html">WPoints</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListDisplayedPoints">ListDisplayedPoints</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>List all displayed datum points in the Solid.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcGeometry-WQuilts.html">WQuilts</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListDisplayedQuilts">ListDisplayedQuilts</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>List all displayed datum quilts in the Solid.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcAssembly-ComponentPath.html"><tt>com.ptc.pfc.pfcAssembly.ComponentPath</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcAssembly-ComponentPath.html#Root"><tt>GetRoot</tt></a>,
+      <a class="method" href="c-pfcAssembly-ComponentPath.html#Root"><tt>SetRoot</tt></a>,
+      <a class="method" href="c-pfcAssembly-ComponentPath.html#ComponentIds"><tt>GetComponentIds</tt></a>,
+      <a class="method" href="c-pfcAssembly-ComponentPath.html#ComponentIds"><tt>SetComponentIds</tt></a>,
+      <a class="method" href="c-pfcAssembly-ComponentPath.html#Leaf"><tt>GetLeaf</tt></a>,
+      <a class="method" href="c-pfcAssembly-ComponentPath.html#GetTransform"><tt>GetTransform</tt></a>,
+      <a class="method" href="c-pfcAssembly-ComponentPath.html#SetTransform"><tt>SetTransform</tt></a>,
+      <a class="method" href="c-pfcAssembly-ComponentPath.html#GetIsVisible"><tt>GetIsVisible</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetSubstituteComponent">GetSubstituteComponent</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcAssembly-SubstituteComponent.html">SubstituteComponent</a></tt></td><td class="method-name"><tt>GetSubstituteComponent</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSimpRep-SimpRep.html">SimpRep</a>&nbsp;InRep)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        If a component is substituted with a given simplified representation,
+        then get the component path and the handle of the substituted component.
+      <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The component is not a substitute.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#36">Assemblies and Components: Component Path Information</a>, <a href="../manual0/jassembly.html#37">Assemblies and Components: Component Path Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>InRep</b></tt>
+</dt>
+<dd>The simplified representation.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The substitute component.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetSubstitutionType">GetSubstitutionType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcAssembly-SubstitutionType.html">SubstitutionType</a></tt></td><td class="method-name"><tt>GetSubstitutionType</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSimpRep-SimpRep.html">SimpRep</a>&nbsp;InRep)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        If a component is substituted with a given simplified representation,
+        then get the type of substitution.
+      <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The component is not a substitute.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#37">Assemblies and Components: Component Path Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>InRep</b></tt>
+</dt>
+<dd>The simplified representation.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The substitution type.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListDisplayedQuilts">ListDisplayedQuilts</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcGeometry-WQuilts.html">WQuilts</a></tt></td><td class="method-name"><tt>ListDisplayedQuilts</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>List all displayed datum quilts in the Solid.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - Either no displayed datum quilt exist, or they were all filtered out by the filter function. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#41">Assemblies and Components: Component Path Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The datum quilts.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListDisplayedCsyses">ListDisplayedCsyses</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcGeometry-WCsyses.html">WCsyses</a></tt></td><td class="method-name"><tt>ListDisplayedCsyses</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>List all displayed datum coordinate systems in the Solid.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - Either no displayed coordinate systems exist, or they were all filtered out by the filter function. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#39">Assemblies and Components: Component Path Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The datum coordinate systems.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListDisplayedCurves">ListDisplayedCurves</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcGeometry-WCurves.html">WCurves</a></tt></td><td class="method-name"><tt>ListDisplayedCurves</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>List all displayed datum curves in the Solid.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - Either no displayed datum curves exist, or they were all filtered out by the filter function. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#40">Assemblies and Components: Component Path Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The datum curves.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListDisplayedPoints">ListDisplayedPoints</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcGeometry-WPoints.html">WPoints</a></tt></td><td class="method-name"><tt>ListDisplayedPoints</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>List all displayed datum points in the Solid.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - Either no displayed datum points exist, or they were all filtered out by the filter function. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#38">Assemblies and Components: Component Path Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The datum points.</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

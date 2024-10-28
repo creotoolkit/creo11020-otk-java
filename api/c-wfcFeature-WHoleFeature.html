@@ -1,0 +1,380 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcFeature.WHoleFeature"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      875
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcFeature.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcFeature-WHoleFeature.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;WHoleFeature</h2>
+<tt>
+     package 
+     <b><a href="p-wfcFeature.html">com.ptc.wfc.wfcFeature</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>WHoleFeature</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-wfcFeature-WFeature.html">com.ptc.wfc.wfcFeature.WFeature</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Provides the hole feature information.<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcFeature-HoleProperties.html">HoleProperties</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetHoleProperties">GetHoleProperties</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a>&nbsp;Path)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Retrieve the properties of the hole feature.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcFeature-WHoleFeature.html">WHoleFeature</a></tt></td><td class="method-summary"><tt><a class="method" href="#SetHoleProperties">SetHoleProperties</a>
+ (<a class="type" href="c-wfcFeature-HoleProperties.html">HoleProperties</a>&nbsp;HoleProperties, 
+   /*optional*/
+   <a class="type" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a>&nbsp;Path)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set the properties to the hole feature.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcBase-ActionSource.html"><tt>com.ptc.pfc.pfcBase.ActionSource</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Parent.html"><tt>com.ptc.pfc.pfcObject.Parent</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ParameterOwner.html"><tt>com.ptc.pfc.pfcModelItem.ParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcModelItem-WParameterOwner.html"><tt>com.ptc.wfc.wfcModelItem.WParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcModelItem-WParameterOwner.html#ExportParameterTable"><tt>ExportParameterTable</tt></a>,
+      <a class="method" href="c-wfcModelItem-WParameterOwner.html#ApplyParameterTableset"><tt>ApplyParameterTableset</tt></a>,
+      <a class="method" href="c-wfcModelItem-WParameterOwner.html#MathcadParametersSet"><tt>MathcadParametersSet</tt></a>,
+      <a class="method" href="c-wfcModelItem-WParameterOwner.html#MathcadInputParametersGet"><tt>MathcadInputParametersGet</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-RelationOwner.html"><tt>com.ptc.pfc.pfcModelItem.RelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcModelItem-WRelationOwner.html"><tt>com.ptc.wfc.wfcModelItem.WRelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcModelItem-WRelationOwner.html#GetRelationConstraints"><tt>GetRelationConstraints</tt></a>,
+      <a class="method" href="c-wfcModelItem-WRelationOwner.html#UnitsUsed"><tt>UnitsUsed</tt></a>,
+      <a class="method" href="c-wfcModelItem-WRelationOwner.html#UseUnits"><tt>UseUnits</tt></a>,
+      <a class="method" href="c-wfcModelItem-WRelationOwner.html#EvaluateExpressionWithUnits"><tt>EvaluateExpressionWithUnits</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Child.html"><tt>com.ptc.pfc.pfcObject.Child</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+      <a class="method" href="c-pfcObject-Child.html#OId"><tt>GetOId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ModelItem.html"><tt>com.ptc.pfc.pfcModelItem.ModelItem</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcModelItem-WModelItem.html"><tt>com.ptc.wfc.wfcModelItem.WModelItem</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcModelItem-WModelItem.html#DeleteUserDefinedName"><tt>DeleteUserDefinedName</tt></a>,
+      <a class="method" href="c-wfcModelItem-WModelItem.html#Unhide"><tt>Unhide</tt></a>,
+      <a class="method" href="c-wfcModelItem-WModelItem.html#Hide"><tt>Hide</tt></a>,
+      <a class="method" href="c-wfcModelItem-WModelItem.html#IsHidden"><tt>IsHidden</tt></a>,
+      <a class="method" href="c-wfcModelItem-WModelItem.html#IsNameReadOnly"><tt>IsNameReadOnly</tt></a>,
+      <a class="method" href="c-wfcModelItem-WModelItem.html#IsZoneFeature"><tt>IsZoneFeature</tt></a>,
+      <a class="method" href="c-wfcModelItem-WModelItem.html#GetDefaultName"><tt>GetDefaultName</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcLayerState-LayerItem.html"><tt>com.ptc.wfc.wfcLayerState.LayerItem</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcLayerState-LayerItem.html#IsLayerItemVisible"><tt>IsLayerItemVisible</tt></a>,
+      <a class="method" href="c-wfcLayerState-LayerItem.html#RemoveNoUpdate"><tt>RemoveNoUpdate</tt></a>,
+      <a class="method" href="c-wfcLayerState-LayerItem.html#GetLayers"><tt>GetLayers</tt></a>,
+      <a class="method" href="c-wfcLayerState-LayerItem.html#AddNoUpdate"><tt>AddNoUpdate</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcFeature-Feature.html"><tt>com.ptc.pfc.pfcFeature.Feature</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcFeature-Feature.html#FeatType"><tt>GetFeatType</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#FeatTypeName"><tt>GetFeatTypeName</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#FeatSubType"><tt>GetFeatSubType</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#Status"><tt>GetStatus</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#Group"><tt>GetGroup</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#Pattern"><tt>GetPattern</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#GroupPattern"><tt>GetGroupPattern</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#GetPatternByType"><tt>GetPatternByType</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#PatternStatus"><tt>GetPatternStatus</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#GroupStatus"><tt>GetGroupStatus</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#GroupPatternStatus"><tt>GetGroupPatternStatus</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#IsVisible"><tt>GetIsVisible</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#IsReadonly"><tt>GetIsReadonly</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#Number"><tt>GetNumber</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#VersionStamp"><tt>GetVersionStamp</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#IsGroupMember"><tt>GetIsGroupMember</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#IsEmbedded"><tt>GetIsEmbedded</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#CreateSuppressOp"><tt>CreateSuppressOp</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#CreateResumeOp"><tt>CreateResumeOp</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#CreateDeleteOp"><tt>CreateDeleteOp</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#CreateReorderBeforeOp"><tt>CreateReorderBeforeOp</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#CreateReorderAfterOp"><tt>CreateReorderAfterOp</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#ListChildren"><tt>ListChildren</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#ListParents"><tt>ListParents</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#ListSubItems"><tt>ListSubItems</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#GroupDirectHeader"><tt>GetGroupDirectHeader</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcFeature-WFeature.html"><tt>com.ptc.wfc.wfcFeature.WFeature</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcFeature-WFeature.html#GetElementTree"><tt>GetElementTree</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#IsElementVisible"><tt>IsElementVisible</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#IsElementIncomplete"><tt>IsElementIncomplete</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#GetStatusFlag"><tt>GetStatusFlag</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#RedefineFeature"><tt>RedefineFeature</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#CreatePattern"><tt>CreatePattern</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#GetDimensionId"><tt>GetDimensionId</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#GetSections"><tt>GetSections</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#GetImportFeatureData"><tt>GetImportFeatureData</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#GetIdMap"><tt>GetIdMap</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#GetItemIds"><tt>GetItemIds</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#GetUserIds"><tt>GetUserIds</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#RedefineImportFeature"><tt>RedefineImportFeature</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#GetZoneFeatureReferences"><tt>GetZoneFeatureReferences</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#GetZoneXSectionGeometry"><tt>GetZoneXSectionGeometry</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#GetZoneFeaturePlaneData"><tt>GetZoneFeaturePlaneData</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#GetSolid"><tt>GetSolid</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#IsCableCosmetic"><tt>IsCableCosmetic</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#GetExternalParents"><tt>GetExternalParents</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#VisitItems"><tt>VisitItems</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#IsInFooter"><tt>IsInFooter</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#MoveToFooter"><tt>MoveToFooter</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#MoveFromFooter"><tt>MoveFromFooter</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#ListVariedItems"><tt>ListVariedItems</tt></a>,
+      <a class="method" href="c-wfcFeature-WFeature.html#ListVariedParameters"><tt>ListVariedParameters</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetHoleProperties">GetHoleProperties</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcFeature-HoleProperties.html">HoleProperties</a></tt></td><td class="method-name"><tt>GetHoleProperties</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a>&nbsp;Path)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Retrieve the properties of the hole feature.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_hole.html#2">Holes: Accessing Threaded Hole Properties</a>, <a href="../manual0/OTK_hole.html#8">Holes: Accessing Threaded Hole Properties</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetHoleProperties">SetHoleProperties</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcFeature-WHoleFeature.html">WHoleFeature</a></tt></td><td class="method-name"><tt>SetHoleProperties</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcFeature-HoleProperties.html">HoleProperties</a>&nbsp;HoleProperties, 
+   /*optional*/
+   <a class="type" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a>&nbsp;Path)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Set the properties to the hole feature.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_hole.html#3">Holes: Accessing Threaded Hole Properties</a>, <a href="../manual0/OTK_hole.html#8">Holes: Accessing Threaded Hole Properties</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>HoleProperties</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

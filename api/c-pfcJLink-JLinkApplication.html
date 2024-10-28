@@ -1,0 +1,252 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcJLink.JLinkApplication"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      415
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcJLink.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcJLink-JLinkApplication.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;JLinkApplication</h2>
+<tt>
+     package 
+     <b><a href="p-pfcJLink.html">com.ptc.pfc.pfcJLink</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>JLinkApplication</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcObject-Object.html">com.ptc.pfc.pfcObject.Object</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>&nbsp; <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcArgument-Arguments.html">Arguments</a></tt></td><td class="method-summary"><tt><a class="method" href="#ExecuteTask">ExecuteTask</a>
+ (String&nbsp;TaskId, <a class="type" href="c-pfcArgument-Arguments.html">Arguments</a>&nbsp;InputArguments)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Call a method in a J-Link application, with user-specified arguments.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsActive">IsActive</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Identifies if the application is currently running.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Stop">Stop</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Stop a previously loaded J-Link application. The application's stop method will be called.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ExecuteTask">ExecuteTask</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcArgument-Arguments.html">Arguments</a></tt></td><td class="method-name"><tt>ExecuteTask</tt></td><td class="method-params"><tt>
+ (String&nbsp;TaskId, <a class="type" href="c-pfcArgument-Arguments.html">Arguments</a>&nbsp;InputArguments)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Call a method in a J-Link application, with user-specified arguments.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitUserAbort.html">XToolkitUserAbort</a></tt></tt> - The application threw an exception. See the exception output argument for more details. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The task could not be found.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - The handle is valid but the application is not active.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XJLinkApplicationInactive.html">XJLinkApplicationInactive</a></tt></tt> - The application is not active.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/japplib.html#44">Task Based Application Libraries: Creating Creo Object TOOLKIT Java Task Libraries</a>, <a href="../manual0/japplib.html#46">Task Based Application Libraries: Creating Creo Object TOOLKIT Java Task Libraries</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TaskId</b></tt>
+</dt>
+<dd>The string identifier for the task.</dd>
+<dt>
+<tt><b>InputArguments</b></tt>
+</dt>
+<dd>The input arguments for the method.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The output arguments from the method.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Stop">Stop</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>Stop</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Stop a previously loaded J-Link application. The application's stop method will be called.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitUserAbort.html">XToolkitUserAbort</a></tt></tt> - The application failed to shutdown properly. See the output exception for more details. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBusy.html">XToolkitBusy</a></tt></tt> - The application has menus or UI components active in the UI. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - The handle is valid but the application is not active. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XJLinkApplicationInactive.html">XJLinkApplicationInactive</a></tt></tt> - The application is not active.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/japplib.html#46">Task Based Application Libraries: Creating Creo Object TOOLKIT Java Task Libraries</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsActive">IsActive</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>IsActive</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Identifies if the application is currently running.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/japplib.html#45">Task Based Application Libraries: Creating Creo Object TOOLKIT Java Task Libraries</a>, <a href="../manual0/japplib.html#46">Task Based Application Libraries: Creating Creo Object TOOLKIT Java Task Libraries</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+<tt>true</tt> if its running, <tt>false</tt> otherwise.</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

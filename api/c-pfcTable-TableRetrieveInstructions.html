@@ -1,0 +1,442 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcTable.TableRetrieveInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      746
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcTable.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcTable-TableRetrieveInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;TableRetrieveInstructions</h2>
+<tt>
+     package 
+     <b><a href="p-pfcTable.html">com.ptc.pfc.pfcTable</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>TableRetrieveInstructions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface contains information needed to retrieve a table from disk.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcTable-TableOwner.html#RetrieveTable">TableOwner.RetrieveTable(TableRetrieveInstructions)</a></tt>, <tt><a class="method" href="c-pfcTable-TableOwner.html#RetrieveTableByOrigin">TableOwner.RetrieveTableByOrigin(TableRetrieveInstructions)</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#FileName">GetFileName</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "FileName"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Name, excluding the extension.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-summary"><tt><a class="method" href="#Path">GetPath</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Path"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Path to the table file, or <tt>null</tt>, if the file is in the working directory.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcBase-Point3D.html">Point3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#Position">GetPosition</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Position"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The position for the retrieved table.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcSimpRep-SimpRep.html">SimpRep</a></tt></td><td class="method-summary"><tt><a class="method" href="#ReferenceRep">GetReferenceRep</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ReferenceRep"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The simplified representation to use when copying data in the table.  If <tt>null</tt>, the master representation of the reference solid will be used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcSolid-Solid.html">Solid</a></tt></td><td class="method-summary"><tt><a class="method" href="#ReferenceSolid">GetReferenceSolid</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ReferenceSolid"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The solid model from which to copy data into the table.  If <tt>null</tt>, the table will not use any solid model data.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Integer</tt></td><td class="method-summary"><tt><a class="method" href="#Version">GetVersion</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Version"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The file version, or <tt>null</tt>, for the latest file.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#FileName">SetFileName</a>
+ (String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "FileName"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Name, excluding the extension.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Path">SetPath</a>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Path"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Path to the table file, or <tt>null</tt>, if the file is in the working directory.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Position">SetPosition</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Position"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The position for the retrieved table.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ReferenceRep">SetReferenceRep</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcSimpRep-SimpRep.html">SimpRep</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ReferenceRep"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The simplified representation to use when copying data in the table.  If <tt>null</tt>, the master representation of the reference solid will be used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ReferenceSolid">SetReferenceSolid</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ReferenceSolid"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The solid model from which to copy data into the table.  If <tt>null</tt>, the table will not use any solid model data.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Version">SetVersion</a>
+ (
+   /*optional*/
+   Integer&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Version"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The file version, or <tt>null</tt>, for the latest file.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FileName">GetFileName/SetFileName</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetFileName</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetFileName</tt></td><td class="method-params"><tt>
+ (String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Name, excluding the extension.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#208">Drawings: Retrieving Drawing Tables</a>, <a href="../manual0/jdrawfns.html#215">Drawings: Retrieving Drawing Tables</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Path">GetPath/SetPath</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-name"><tt>GetPath</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPath</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Path to the table file, or <tt>null</tt>, if the file is in the working directory.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#209">Drawings: Retrieving Drawing Tables</a>, <a href="../manual0/jdrawfns.html#215">Drawings: Retrieving Drawing Tables</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Version">GetVersion/SetVersion</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Integer</tt></td><td class="method-name"><tt>GetVersion</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetVersion</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Integer&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The file version, or <tt>null</tt>, for the latest file.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#210">Drawings: Retrieving Drawing Tables</a>, <a href="../manual0/jdrawfns.html#215">Drawings: Retrieving Drawing Tables</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Position">GetPosition/SetPosition</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcBase-Point3D.html">Point3D</a></tt></td><td class="method-name"><tt>GetPosition</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPosition</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The position for the retrieved table.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#211">Drawings: Retrieving Drawing Tables</a>, <a href="../manual0/jdrawfns.html#215">Drawings: Retrieving Drawing Tables</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ReferenceSolid">GetReferenceSolid/SetReferenceSolid</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcSolid-Solid.html">Solid</a></tt></td><td class="method-name"><tt>GetReferenceSolid</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetReferenceSolid</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The solid model from which to copy data into the table.  If <tt>null</tt>, the table will not use any solid model data.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#212">Drawings: Retrieving Drawing Tables</a>, <a href="../manual0/jdrawfns.html#215">Drawings: Retrieving Drawing Tables</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ReferenceRep">GetReferenceRep/SetReferenceRep</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcSimpRep-SimpRep.html">SimpRep</a></tt></td><td class="method-name"><tt>GetReferenceRep</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetReferenceRep</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcSimpRep-SimpRep.html">SimpRep</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The simplified representation to use when copying data in the table.  If <tt>null</tt>, the master representation of the reference solid will be used.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#213">Drawings: Retrieving Drawing Tables</a>, <a href="../manual0/jdrawfns.html#215">Drawings: Retrieving Drawing Tables</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

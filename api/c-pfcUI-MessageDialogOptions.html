@@ -1,0 +1,334 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcUI.MessageDialogOptions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      468
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcUI.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcUI-MessageDialogOptions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;MessageDialogOptions</h2>
+<tt>
+     package 
+     <b><a href="p-pfcUI.html">com.ptc.pfc.pfcUI</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>MessageDialogOptions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class specifies the options for a message dialog.
+  <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcUI-MessageButtons.html">MessageButtons</a></tt></td><td class="method-summary"><tt><a class="method" href="#Buttons">GetButtons</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Buttons"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>An array of possible button identifiers to show in the dialog. If <i>null</i>, the dialog will include only an OK button.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcUI-MessageButton.html">MessageButton</a></tt></td><td class="method-summary"><tt><a class="method" href="#DefaultButton">GetDefaultButton</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "DefaultButton"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The identifier of the default button. If <i>null</i>, the default button will be the OK button.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-summary"><tt><a class="method" href="#DialogLabel">GetDialogLabel</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "DialogLabel"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The text to display as the dialog title. If <i>null</i>, the dialog title will be "Info" regardless of the language used by Creo Parametric.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcUI-MessageDialogType.html">MessageDialogType</a></tt></td><td class="method-summary"><tt><a class="method" href="#MessageDialogType">GetMessageDialogType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "MessageDialogType"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;The type of icon to show with the message dialog. If <i>null</i>, the dialog will show the Info icon. 
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Buttons">SetButtons</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcUI-MessageButtons.html">MessageButtons</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Buttons"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>An array of possible button identifiers to show in the dialog. If <i>null</i>, the dialog will include only an OK button.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DefaultButton">SetDefaultButton</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcUI-MessageButton.html">MessageButton</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "DefaultButton"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The identifier of the default button. If <i>null</i>, the default button will be the OK button.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DialogLabel">SetDialogLabel</a>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "DialogLabel"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The text to display as the dialog title. If <i>null</i>, the dialog title will be "Info" regardless of the language used by Creo Parametric.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#MessageDialogType">SetMessageDialogType</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcUI-MessageDialogType.html">MessageDialogType</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "MessageDialogType"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;The type of icon to show with the message dialog. If <i>null</i>, the dialog will show the Info icon. 
+    </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="MessageDialogType">GetMessageDialogType/SetMessageDialogType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcUI-MessageDialogType.html">MessageDialogType</a></tt></td><td class="method-name"><tt>GetMessageDialogType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetMessageDialogType</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcUI-MessageDialogType.html">MessageDialogType</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;The type of icon to show with the message dialog. If <i>null</i>, the dialog will show the Info icon. 
+    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#69">Session Objects: Writing a Message Using a Message Pop-up Dialog Box</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DialogLabel">GetDialogLabel/SetDialogLabel</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-name"><tt>GetDialogLabel</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetDialogLabel</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The text to display as the dialog title. If <i>null</i>, the dialog title will be "Info" regardless of the language used by Creo Parametric.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#69">Session Objects: Writing a Message Using a Message Pop-up Dialog Box</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Buttons">GetButtons/SetButtons</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcUI-MessageButtons.html">MessageButtons</a></tt></td><td class="method-name"><tt>GetButtons</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetButtons</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcUI-MessageButtons.html">MessageButtons</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>An array of possible button identifiers to show in the dialog. If <i>null</i>, the dialog will include only an OK button.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#69">Session Objects: Writing a Message Using a Message Pop-up Dialog Box</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DefaultButton">GetDefaultButton/SetDefaultButton</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcUI-MessageButton.html">MessageButton</a></tt></td><td class="method-name"><tt>GetDefaultButton</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetDefaultButton</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcUI-MessageButton.html">MessageButton</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The identifier of the default button. If <i>null</i>, the default button will be the OK button.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#69">Session Objects: Writing a Message Using a Message Pop-up Dialog Box</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

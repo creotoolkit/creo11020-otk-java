@@ -1,0 +1,356 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcXSection.XSectionCutComponentItem"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      946
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcXSection.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcXSection-XSectionCutComponentItem.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;XSectionCutComponentItem</h2>
+<tt>
+     package 
+     <b><a href="p-wfcXSection.html">com.ptc.wfc.wfcXSection</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>XSectionCutComponentItem</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcObject-Object.html">com.ptc.pfc.pfcObject.Object</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>The cross section cut component item (body/quilt) of the part or component.<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcGeometry-Surface.html">Surface</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetGeometry">GetGeometry</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Obtain surface geometry created by cross section by cutting specific body or quilt.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>int</tt></td><td class="method-summary"><tt><a class="method" href="#GetId">GetId</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+	The Id of the body or the quilt being cut.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcModelItem-ModelItemType.html">ModelItemType</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetType">GetType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+	Obtains the type of item - body or quilt.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionHatchStyle.html">XSectionHatchStyle</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetXHatchStyle">GetXHatchStyle</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;DrawingView)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Obtains the cross-section xhatch style of body.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetXHatchStyle">SetXHatchStyle</a>
+ (<a class="type" href="c-wfcXSection-XSectionHatchStyle.html">XSectionHatchStyle</a>&nbsp;Style, 
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;DrawingView)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+	Sets cross-section xhatch style on body. If the xhatch style exists in the session, it will be set.
+   </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetType">GetType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcModelItem-ModelItemType.html">ModelItemType</a></tt></td><td class="method-name"><tt>GetType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+	Obtains the type of item - body or quilt.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#17">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#49">Cross Sections: Extracting Cross-Sectional Geometry</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The type value.
+   </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetId">GetId</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>int</tt></td><td class="method-name"><tt>GetId</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+	The Id of the body or the quilt being cut.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#18">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#49">Cross Sections: Extracting Cross-Sectional Geometry</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The Id value.
+   </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetGeometry">GetGeometry</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcGeometry-Surface.html">Surface</a></tt></td><td class="method-name"><tt>GetGeometry</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Obtain surface geometry created by cross section by cutting specific body or quilt.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#19">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#49">Cross Sections: Extracting Cross-Sectional Geometry</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The surface geometry object.
+   </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetXHatchStyle">SetXHatchStyle</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetXHatchStyle</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcXSection-XSectionHatchStyle.html">XSectionHatchStyle</a>&nbsp;Style, 
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;DrawingView)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+	Sets cross-section xhatch style on body. If the xhatch style exists in the session, it will be set.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#20">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#49">Cross Sections: Extracting Cross-Sectional Geometry</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Style</b></tt>
+</dt>
+<dd>The xhatch style to set</dd>
+<dt>
+<tt><b>DrawingView</b></tt>
+</dt>
+<dd>The view handle. <t>null</t> if not drawing.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetXHatchStyle">GetXHatchStyle</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionHatchStyle.html">XSectionHatchStyle</a></tt></td><td class="method-name"><tt>GetXHatchStyle</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;DrawingView)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Obtains the cross-section xhatch style of body.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#21">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#49">Cross Sections: Extracting Cross-Sectional Geometry</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DrawingView</b></tt>
+</dt>
+<dd>The view handle. <t>null</t> if not drawing.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The xhatch style object.
+   </dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

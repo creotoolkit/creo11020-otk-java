@@ -1,0 +1,1826 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcModel2D.Model2D"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      470
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcModel2D.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcModel2D-Model2D.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;Model2D</h2>
+<tt>
+     package 
+     <b><a href="p-pfcModel2D.html">com.ptc.pfc.pfcModel2D</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>Model2D</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcSheet-SheetOwner.html">com.ptc.pfc.pfcSheet.SheetOwner</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="bold" href="c-pfcDetail-DetailItemOwner.html">com.ptc.pfc.pfcDetail.DetailItemOwner</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="bold" href="c-pfcTable-TableOwner.html">com.ptc.pfc.pfcTable.TableOwner</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="bold" href="c-pfcModel-Model.html">com.ptc.pfc.pfcModel.Model</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface represents a two-dimensional Creo Parametric model.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcSession-BaseSession.html#ListModels">BaseSession.ListModels()</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#GetModel">BaseSession.GetModel(String, ModelType)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#GetModelFromDescr">BaseSession.GetModelFromDescr(ModelDescriptor)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#CreateDrawingFromTemplate">BaseSession.CreateDrawingFromTemplate(String, String, ModelDescriptor, DrawingCreateOptions)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#Import2DModel">BaseSession.Import2DModel(String, ModelType, String, Import2DInstructions)</a></tt>, <tt><tt><a class="class" href="c-pfcDrawing-Drawing.html">Drawing</a></tt></tt>, <tt><tt><a class="class" href="c-pfcReport-Report.html">Report</a></tt></tt>, <tt><tt><a class="class" href="c-pfcLayout-Layout.html">Layout</a></tt></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-pfcDrawing-Drawing.html">Drawing</a></tt>, 
+        <tt><a class="class" href="c-pfcReport-Report.html">Report</a></tt>, 
+        <tt><a class="class" href="c-pfcLayout-Layout.html">Layout</a></tt>, 
+        <tt><a class="class" href="c-wfcModel-WModel2D.html">WModel2D</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AddModel">AddModel</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;NewModel)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Adds a solid model to the drawing.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AddSimplifiedRep">AddSimplifiedRep</a>
+ (<a class="type" href="c-pfcSimpRep-SimpRep.html">SimpRep</a>&nbsp;SimplifiedRep)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Adds a new simplified representation of a model to a drawing.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDimension-Dimensions.html">Dimensions</a></tt></td><td class="method-summary"><tt><a class="method" href="#CollectShownDimensions">CollectShownDimensions</a>
+ (<a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;SolidMdl)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDimension-Dimensions.html">Dimensions</a></tt></td><td class="method-summary"><tt><a class="method" href="#CollectShownRefDimensions">CollectShownRefDimensions</a>
+ (<a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;SolidMdl)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDimension-Dimension.html">Dimension</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateDimension">CreateDimension</a>
+ (<a class="type" href="c-pfcSelect-DimensionAttachments.html">DimensionAttachments</a>&nbsp;Attachments, <a class="type" href="c-pfcDimension-DimSenses.html">DimSenses</a>&nbsp;Senses, <a class="type" href="c-pfcDimension-DimOrientationHint.html">DimOrientationHint</a>&nbsp;hint, <a class="type" href="c-pfcBase-Point2D.html">Point2D</a>&nbsp;Location)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDimension2D-Dimension2D.html">Dimension2D</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateDrawingDimension">CreateDrawingDimension</a>
+ (<a class="type" href="c-pfcDimension2D-DrawingDimCreateInstructions.html">DrawingDimCreateInstructions</a>&nbsp;Instructions)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcModel2D-Model2D.html#CreateRefDimension">Model2D.CreateRefDimension</a>, <a class="method" href="c-pfcModel2D-Model2D.html#CreateDimension">Model2D.CreateDimension</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new drawing dimension.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDimension-Dimension.html">Dimension</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateRefDimension">CreateRefDimension</a>
+ (<a class="type" href="c-pfcSelect-DimensionAttachments.html">DimensionAttachments</a>&nbsp;Attachments, <a class="type" href="c-pfcDimension-DimSenses.html">DimSenses</a>&nbsp;Senses, <a class="type" href="c-pfcDimension-DimOrientationHint.html">DimOrientationHint</a>&nbsp;hint, <a class="type" href="c-pfcBase-Point2D.html">Point2D</a>&nbsp;Location)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcView2D-View2D.html">View2D</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateView">CreateView</a>
+ (<a class="type" href="c-pfcView2D-View2DCreateInstructions.html">View2DCreateInstructions</a>&nbsp;Instructions)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new view in the drawing.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DeleteModel">DeleteModel</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Model)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Removes a model from the drawing.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DeleteSimplifiedRep">DeleteSimplifiedRep</a>
+ (<a class="type" href="c-pfcSimpRep-SimpRep.html">SimpRep</a>&nbsp;SimplifiedRep)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Deletes a simplified representation of a model from a drawing.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcModel-Model.html">Model</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetCurrentSolid">GetCurrentSolid</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Gets the current solid model of the drawing</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#TextHeight">GetTextHeight</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "TextHeight"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The text height of the model. The model must be in the current window inorderto access this property.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetViewByName">GetViewByName</a>
+ (String&nbsp;ViewName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns a drawing view, given its name.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetViewDisplaying">GetViewDisplaying</a>
+ (<a class="type" href="c-pfcDimension-BaseDimension.html">BaseDimension</a>&nbsp;Dim)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns the drawing view that displays a dimension.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcView2D-View2Ds.html">View2Ds</a></tt></td><td class="method-summary"><tt><a class="method" href="#List2DViews">List2DViews</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Lists the drawing views.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcModel-Models.html">Models</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListModels">ListModels</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Lists the models used in the drawing.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDimension2D-Dimension2Ds.html">Dimension2Ds</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListShownDimensions">ListShownDimensions</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Model, 
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ModelItemType.html">ModelItemType</a>&nbsp;Type)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcModel2D-Model2D.html#CollectShownRefDimensions">Model2D.CollectShownRefDimensions</a>, <a class="method" href="c-pfcModel2D-Model2D.html#CollectShownDimensions">Model2D.CollectShownDimensions</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Lists the solid-model owned dimensions and reference dimensions shown in the drawing.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcSimpRep-SimpReps.html">SimpReps</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListSimplifiedReps">ListSimplifiedReps</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Solid)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns a list of the simplified representations referenced by the drawing.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Regenerate">Regenerate</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Regenerates the drawing draft entities.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ReplaceModel">ReplaceModel</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;FromModel, <a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;ToModel, boolean&nbsp;Unrepresent)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Replaces a drawing model solid with another solid. The old and new solids must be members of the same family table.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetCurrentSolid">SetCurrentSolid</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;NewCurrentSolid)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sets the current solid model for the drawing.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#TextHeight">SetTextHeight</a>
+ (double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "TextHeight"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The text height of the model. The model must be in the current window inorderto access this property.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetViewDisplaying">SetViewDisplaying</a>
+ (<a class="type" href="c-pfcDimension-BaseDimension.html">BaseDimension</a>&nbsp;Dim, <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;NewView)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sets the view that shows the model dimension.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcSheet-SheetOwner.html"><tt>com.ptc.pfc.pfcSheet.SheetOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcSheet-SheetOwner.html#NumberOfSheets"><tt>GetNumberOfSheets</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#CurrentSheetNumber"><tt>GetCurrentSheetNumber</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#CurrentSheetNumber"><tt>SetCurrentSheetNumber</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#AddSheet"><tt>AddSheet</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#ReorderSheet"><tt>ReorderSheet</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetData"><tt>GetSheetData</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetInfo"><tt>GetSheetInfo</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetTransform"><tt>GetSheetTransform</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#RegenerateSheet"><tt>RegenerateSheet</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#DeleteSheet"><tt>DeleteSheet</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetScale"><tt>GetSheetScale</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#SetSheetScale"><tt>SetSheetScale</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetFormat"><tt>GetSheetFormat</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#SetSheetFormat"><tt>SetSheetFormat</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetBackgroundView"><tt>GetSheetBackgroundView</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetUnits"><tt>GetSheetUnits</tt></a>,
+      <a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetFormatDescr"><tt>GetSheetFormatDescr</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcDetail-DetailItemOwner.html"><tt>com.ptc.pfc.pfcDetail.DetailItemOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcDetail-DetailItemOwner.html#ListDetailItems"><tt>ListDetailItems</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItemOwner.html#GetDetailItem"><tt>GetDetailItem</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateDetailItem"><tt>CreateDetailItem</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateFreeNote"><tt>CreateFreeNote</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateOffsetNote"><tt>CreateOffsetNote</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateOnItemNote"><tt>CreateOnItemNote</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateLeaderNote"><tt>CreateLeaderNote</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItemOwner.html#RetrieveSymbolDefinition"><tt>RetrieveSymbolDefinition</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItemOwner.html#RetrieveSymbolDefItem"><tt>RetrieveSymbolDefItem</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItemOwner.html#AllowReadonlyNoteSelection"><tt>AllowReadonlyNoteSelection</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcTable-TableOwner.html"><tt>com.ptc.pfc.pfcTable.TableOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcTable-TableOwner.html#ListTables"><tt>ListTables</tt></a>,
+      <a class="method" href="c-pfcTable-TableOwner.html#GetTable"><tt>GetTable</tt></a>,
+      <a class="method" href="c-pfcTable-TableOwner.html#CreateTable"><tt>CreateTable</tt></a>,
+      <a class="method" href="c-pfcTable-TableOwner.html#RetrieveTable"><tt>RetrieveTable</tt></a>,
+      <a class="method" href="c-pfcTable-TableOwner.html#RetrieveTableByOrigin"><tt>RetrieveTableByOrigin</tt></a>,
+      <a class="method" href="c-pfcTable-TableOwner.html#UpdateTables"><tt>UpdateTables</tt></a>,
+      <a class="method" href="c-pfcTable-TableOwner.html#DeleteTable"><tt>DeleteTable</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Parent.html"><tt>com.ptc.pfc.pfcObject.Parent</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ModelItemOwner.html"><tt>com.ptc.pfc.pfcModelItem.ModelItemOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ModelItemOwner.html#GetItemByName"><tt>GetItemByName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItemOwner.html#GetItemById"><tt>GetItemById</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItemOwner.html#ListItems"><tt>ListItems</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcView-ViewOwner.html"><tt>com.ptc.pfc.pfcView.ViewOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcView-ViewOwner.html#RetrieveView"><tt>RetrieveView</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#GetView"><tt>GetView</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#SaveView"><tt>SaveView</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#GetCurrentViewTransform"><tt>GetCurrentViewTransform</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#SetCurrentViewTransform"><tt>SetCurrentViewTransform</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#CurrentViewRotate"><tt>CurrentViewRotate</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#ListViews"><tt>ListViews</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#GetCurrentView"><tt>GetCurrentView</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Child.html"><tt>com.ptc.pfc.pfcObject.Child</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+      <a class="method" href="c-pfcObject-Child.html#OId"><tt>GetOId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcBase-ActionSource.html"><tt>com.ptc.pfc.pfcBase.ActionSource</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-RelationOwner.html"><tt>com.ptc.pfc.pfcModelItem.RelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ParameterOwner.html"><tt>com.ptc.pfc.pfcModelItem.ParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModel-Model.html"><tt>com.ptc.pfc.pfcModel.Model</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModel-Model.html#Descr"><tt>GetDescr</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#RelationId"><tt>GetRelationId</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsModified"><tt>GetIsModified</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#VersionStamp"><tt>GetVersionStamp</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Revision"><tt>GetRevision</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Version"><tt>GetVersion</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Branch"><tt>GetBranch</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ReleaseLevel"><tt>GetReleaseLevel</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CommonName"><tt>GetCommonName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CommonName"><tt>SetCommonName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsCommonNameModifiable"><tt>IsCommonNameModifiable</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#FullName"><tt>GetFullName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#InstanceName"><tt>GetInstanceName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#GenericName"><tt>GetGenericName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Type"><tt>GetType</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#FileName"><tt>GetFileName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Backup"><tt>Backup</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Copy"><tt>Copy</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CopyAndRetrieve"><tt>CopyAndRetrieve</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Rename"><tt>Rename</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Save"><tt>Save</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Erase"><tt>Erase</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#EraseWithDependencies"><tt>EraseWithDependencies</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Delete"><tt>Delete</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Display"><tt>Display</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#DisplayInNewWindow"><tt>DisplayInNewWindow</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ListDependencies"><tt>ListDependencies</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ListDeclaredModels"><tt>ListDeclaredModels</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CreateLayer"><tt>CreateLayer</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Export"><tt>Export</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Import"><tt>Import</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#AccessExternalData"><tt>AccessExternalData</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#TerminateExternalData"><tt>TerminateExternalData</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CheckIsSaveAllowed"><tt>CheckIsSaveAllowed</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CheckIsModifiable"><tt>CheckIsModifiable</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Origin"><tt>GetOrigin</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#PostRegenerationRelations"><tt>GetPostRegenerationRelations</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#PostRegenerationRelations"><tt>SetPostRegenerationRelations</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#RegeneratePostRegenerationRelations"><tt>RegeneratePostRegenerationRelations</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#DeletePostRegenerationRelations"><tt>DeletePostRegenerationRelations</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CleanupDependencies"><tt>CleanupDependencies</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsNativeModel"><tt>IsNativeModel</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ExportIntf3D"><tt>ExportIntf3D</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#SetIntf3DLayerSetupFile"><tt>SetIntf3DLayerSetupFile</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsIntf3DLayerSetupFileIgnored"><tt>IsIntf3DLayerSetupFileIgnored</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsIntf3DCsysIgnored"><tt>IsIntf3DCsysIgnored</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ClearIntf3DModelData"><tt>ClearIntf3DModelData</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TextHeight">GetTextHeight/SetTextHeight</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetTextHeight</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetTextHeight</tt></td><td class="method-params"><tt>
+ (double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The text height of the model. The model must be in the current window inorderto access this property.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#24">Drawings: Drawing Information</a>, <a href="../manual0/jdrawfns.html#41">Drawings: Drawing Operations</a>, <a href="../manual0/jdrawfns.html#43">Drawings: Drawing Operations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="List2DViews">List2DViews</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcView2D-View2Ds.html">View2Ds</a></tt></td><td class="method-name"><tt>List2DViews</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Lists the drawing views.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - No views were found</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#106">Drawings: Obtaining Drawing Views</a>, <a href="../manual0/jdrawfns.html#109">Drawings: Obtaining Drawing Views</a>, <a href="../manual0/jdrawfns.html#440">Drawings: Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The drawing views found.  This does not include the drawing sheet background view(s), returned by <tt><a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetBackgroundView">SheetOwner.GetSheetBackgroundView(int)</a></tt>.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetViewByName">GetViewByName</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a></tt></td><td class="method-name"><tt>GetViewByName</tt></td><td class="method-params"><tt>
+ (String&nbsp;ViewName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns a drawing view, given its name.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#107">Drawings: Obtaining Drawing Views</a>, <a href="../manual0/jdrawfns.html#109">Drawings: Obtaining Drawing Views</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ViewName</b></tt>
+</dt>
+<dd>The name of the drawing view.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The drawing view, or <tt>null</tt>, if the view does not exist.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetViewDisplaying">GetViewDisplaying</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a></tt></td><td class="method-name"><tt>GetViewDisplaying</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDimension-BaseDimension.html">BaseDimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns the drawing view that displays a dimension.
+<br>
+<br>Works for solid and drawing dimensions.
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotDisplayed.html">XToolkitNotDisplayed</a></tt></tt> - The dimension is not displayed in the drawing. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#108">Drawings: Obtaining Drawing Views</a>, <a href="../manual0/jdrawfns.html#109">Drawings: Obtaining Drawing Views</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>The dimension object.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The view where the dimension is displayed, or <tt>null</tt>, if the dimension is not displayed in the drawing.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateView">CreateView</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcView2D-View2D.html">View2D</a></tt></td><td class="method-name"><tt>CreateView</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcView2D-View2DCreateInstructions.html">View2DCreateInstructions</a>&nbsp;Instructions)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new view in the drawing.
+<br>
+<br>Before calling this method, display the drawing using the <tt><a class="method" href="c-pfcModel-Model.html#Display">Model.Display()</a></tt> method.
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCreateViewBadSheet.html">XToolkitCreateViewBadSheet</a></tt></tt> - The specified sheet does not exist. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCreateViewBadModel.html">XToolkitCreateViewBadModel</a></tt></tt> - The specified model is not in the list of drawing models, or the function cannot make the specified view of this model. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCreateViewBadExplode.html">XToolkitCreateViewBadExplode</a></tt></tt> - The function cannot explode the view model. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCreateViewBadParent.html">XToolkitCreateViewBadParent</a></tt></tt> - The parent view for project does not exist, or is of unsupported type, or does not align with the selected position. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><tt><a class="class" href="c-pfcView2D-GeneralViewCreateInstructions.html">GeneralViewCreateInstructions</a></tt></tt>, <tt><tt><a class="class" href="c-pfcView2D-ProjectionViewCreateInstructions.html">ProjectionViewCreateInstructions</a></tt></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#43">Drawings: Drawing Operations</a>, <a href="../manual0/jdrawfns.html#90">Drawings: Creating Drawing Views</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Instructions</b></tt>
+</dt>
+<dd>Data object containing details about how to create the view.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The newly created drawing view.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetViewDisplaying">SetViewDisplaying</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetViewDisplaying</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDimension-BaseDimension.html">BaseDimension</a>&nbsp;Dim, <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;NewView)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Sets the view that shows the model dimension.
+<br>
+<br>Before calling this method, dimension should be displayed in the drawing.
+ <p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantWrite.html">XToolkitCantWrite</a></tt></tt> - Could not delete the given item because it has read-only access. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#185">Drawings: Drawing Dimensions Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>The model dimension.</dd>
+<dt>
+<tt><b>NewView</b></tt>
+</dt>
+<dd>The view in which to show this dimension.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetCurrentSolid">GetCurrentSolid</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcModel-Model.html">Model</a></tt></td><td class="method-name"><tt>GetCurrentSolid</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Gets the current solid model of the drawing<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - No current model is assigned to the drawing.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#22">Drawings: Drawing Information</a>, <a href="../manual0/jdrawfns.html#24">Drawings: Drawing Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The current solid model.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetCurrentSolid">SetCurrentSolid</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetCurrentSolid</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;NewCurrentSolid)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Sets the current solid model for the drawing.<br>
+<br>Before calling this method, the solid model must be assigned to the drawing
+using <tt><a class="method" href="c-pfcModel2D-Model2D.html#AddModel">Model2D.AddModel(Model)</a></tt>. To see changes to parameters
+and fields reflecting the change of the current solid model, regenerate the drawing
+using <tt><a class="method" href="c-pfcSheet-SheetOwner.html#RegenerateSheet">SheetOwner.RegenerateSheet(int)</a></tt>
+  
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The solid is not included in the drawing.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#37">Drawings: Drawing Operations</a>, <a href="../manual0/jdrawfns.html#43">Drawings: Drawing Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>NewCurrentSolid</b></tt>
+</dt>
+<dd>The solid model to be made current.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListModels">ListModels</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcModel-Models.html">Models</a></tt></td><td class="method-name"><tt>ListModels</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Lists the models used in the drawing.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - No drawing models were found</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#21">Drawings: Drawing Information</a>, <a href="../manual0/jdrawfns.html#24">Drawings: Drawing Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Sequence of models used in the drawing, or <tt>null</tt>, if no models are used.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AddModel">AddModel</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>AddModel</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;NewModel)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Adds a solid model to the drawing.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInUse.html">XToolkitInUse</a></tt></tt> - The function did nothing because the specified model already exists. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#34">Drawings: Drawing Operations</a>, <a href="../manual0/jdrawfns.html#43">Drawings: Drawing Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>NewModel</b></tt>
+</dt>
+<dd>The model to add.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DeleteModel">DeleteModel</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>DeleteModel</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Model)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Removes a model from the drawing.
+<br>
+<br>The model cannot appear in any drawing views.
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - The function did nothing because the model is NULL. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The function failed because the specified model is not in the drawing. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInUse.html">XToolkitInUse</a></tt></tt> - The function failed because the specified model is referenced by a view. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#35">Drawings: Drawing Operations</a>, <a href="../manual0/jdrawfns.html#43">Drawings: Drawing Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Model</b></tt>
+</dt>
+<dd>The model to remove.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Regenerate">Regenerate</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>Regenerate</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Regenerates the drawing draft entities.
+<br>
+<br>If the model is a layout, this regenerates the layout and its relations.
+  <p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidType.html">XToolkitInvalidType</a></tt></tt> - Model is not a notebook</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#40">Drawings: Drawing Operations</a>, <a href="../manual0/jdrawfns.html#43">Drawings: Drawing Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ReplaceModel">ReplaceModel</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>ReplaceModel</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;FromModel, <a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;ToModel, boolean&nbsp;Unrepresent)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Replaces a drawing model solid with another solid. The old and new solids must be members of the same family table.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The 'from' model is not in the drawing. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitFound.html">XToolkitFound</a></tt></tt> - The 'to' model is already in the drawing. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - unrepresent_ok was FALSE, but the "from" solid had a simplified view. OR 'from' and 'to' solids were not from the same family table. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel2D-Model2D.html#AddModel">Model2D.AddModel(Model)</a></tt>, <tt><a class="method" href="c-pfcModel2D-Model2D.html#ListModels">Model2D.ListModels()</a></tt>, <tt><a class="method" href="c-pfcModel2D-Model2D.html#DeleteModel">Model2D.DeleteModel(Model)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#36">Drawings: Drawing Operations</a>, <a href="../manual0/jdrawfns.html#43">Drawings: Drawing Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FromModel</b></tt>
+</dt>
+<dd>The model to be replaced.</dd>
+<dt>
+<tt><b>ToModel</b></tt>
+</dt>
+<dd>The model to use as the replacement.</dd>
+<dt>
+<tt><b>Unrepresent</b></tt>
+</dt>
+<dd>
+<tt>true</tt> to unrepresent any simplified views of the old model in the drawing, <tt>false</tt> to fail if the old model has one or more simplified views in the drawing.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateDrawingDimension">CreateDrawingDimension</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDimension2D-Dimension2D.html">Dimension2D</a></tt></td><td class="method-name"><tt>CreateDrawingDimension</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDimension2D-DrawingDimCreateInstructions.html">DrawingDimCreateInstructions</a>&nbsp;Instructions)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcModel2D-Model2D.html#CreateRefDimension">Model2D.CreateRefDimension</a>, <a class="method" href="c-pfcModel2D-Model2D.html#CreateDimension">Model2D.CreateDimension</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new drawing dimension.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadDimAttach.html">XToolkitBadDimAttach</a></tt></tt> - a dimension could not be created with the attachments and sense specified. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#42">Drawings: Drawing Operations</a>, <a href="../manual0/jdrawfns.html#43">Drawings: Drawing Operations</a>, <a href="../manual0/jdrawfns.html#154">Drawings: Creating Drawing Dimensions</a>, <a href="../manual0/jdrawfns.html#161">Drawings: Creating Drawing Dimensions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Instructions</b></tt>
+</dt>
+<dd>Data object containing information needed to place the dimension.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created dimension.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListShownDimensions">ListShownDimensions</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDimension2D-Dimension2Ds.html">Dimension2Ds</a></tt></td><td class="method-name"><tt>ListShownDimensions</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Model, 
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ModelItemType.html">ModelItemType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcModel2D-Model2D.html#CollectShownRefDimensions">Model2D.CollectShownRefDimensions</a>, <a class="method" href="c-pfcModel2D-Model2D.html#CollectShownDimensions">Model2D.CollectShownDimensions</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Lists the solid-model owned dimensions and reference dimensions shown in the drawing.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - No model dimensions were visited.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Model</b></tt>
+</dt>
+<dd>The model which owns the dimensions.</dd>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The type of dimension to find, or <tt>null</tt> to find normal and reference dimensions.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The list of dimensions and reference dimensions.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateDimension">CreateDimension</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDimension-Dimension.html">Dimension</a></tt></td><td class="method-name"><tt>CreateDimension</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSelect-DimensionAttachments.html">DimensionAttachments</a>&nbsp;Attachments, <a class="type" href="c-pfcDimension-DimSenses.html">DimSenses</a>&nbsp;Senses, <a class="type" href="c-pfcDimension-DimOrientationHint.html">DimOrientationHint</a>&nbsp;hint, <a class="type" href="c-pfcBase-Point2D.html">Point2D</a>&nbsp;Location)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadDimAttach.html">XToolkitBadDimAttach</a></tt></tt> - a dimension could not be created with the attachments and sense specified. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Attachments</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Senses</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>hint</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Location</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateRefDimension">CreateRefDimension</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDimension-Dimension.html">Dimension</a></tt></td><td class="method-name"><tt>CreateRefDimension</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSelect-DimensionAttachments.html">DimensionAttachments</a>&nbsp;Attachments, <a class="type" href="c-pfcDimension-DimSenses.html">DimSenses</a>&nbsp;Senses, <a class="type" href="c-pfcDimension-DimOrientationHint.html">DimOrientationHint</a>&nbsp;hint, <a class="type" href="c-pfcBase-Point2D.html">Point2D</a>&nbsp;Location)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadDimAttach.html">XToolkitBadDimAttach</a></tt></tt> - a dimension could not be created with the attachments and sense specified. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Attachments</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Senses</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>hint</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Location</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CollectShownDimensions">CollectShownDimensions</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDimension-Dimensions.html">Dimensions</a></tt></td><td class="method-name"><tt>CollectShownDimensions</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;SolidMdl)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoLicense.html">XToolkitNoLicense</a></tt></tt> - License check failure. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - No model dimensions were visited.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SolidMdl</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CollectShownRefDimensions">CollectShownRefDimensions</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDimension-Dimensions.html">Dimensions</a></tt></td><td class="method-name"><tt>CollectShownRefDimensions</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;SolidMdl)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoLicense.html">XToolkitNoLicense</a></tt></tt> - License check failure. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - No model dimensions were visited.</p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SolidMdl</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListSimplifiedReps">ListSimplifiedReps</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcSimpRep-SimpReps.html">SimpReps</a></tt></td><td class="method-name"><tt>ListSimplifiedReps</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Solid)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns a list of the simplified representations referenced by the drawing.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel2D-Model2D.html#ListModels">Model2D.ListModels()</a></tt>, <tt><a class="method" href="c-pfcModel2D-Model2D.html#AddSimplifiedRep">Model2D.AddSimplifiedRep(SimpRep)</a></tt>, <tt><a class="method" href="c-pfcModel2D-Model2D.html#AddModel">Model2D.AddModel(Model)</a></tt>, <tt><a class="method" href="c-pfcModel2D-Model2D.html#DeleteSimplifiedRep">Model2D.DeleteSimplifiedRep(SimpRep)</a></tt>, <tt><a class="method" href="c-pfcModel2D-Model2D.html#DeleteModel">Model2D.DeleteModel(Model)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#23">Drawings: Drawing Information</a>, <a href="../manual0/jdrawfns.html#24">Drawings: Drawing Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Solid</b></tt>
+</dt>
+<dd>The solid model owner of the simplified representations.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Sequence of simplified representations found, or <tt>null</tt>, if no representations were found.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AddSimplifiedRep">AddSimplifiedRep</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>AddSimplifiedRep</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSimpRep-SimpRep.html">SimpRep</a>&nbsp;SimplifiedRep)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Adds a new simplified representation of a model to a drawing.
+<br>
+<br>Allows the creation of views displaying the simplified rep.
+  <p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitFound.html">XToolkitFound</a></tt></tt> - The function did nothing because the specified simplified representation already exists. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel2D-Model2D.html#AddModel">Model2D.AddModel(Model)</a></tt>, <tt><a class="method" href="c-pfcModel2D-Model2D.html#ListSimplifiedReps">Model2D.ListSimplifiedReps(Model)</a></tt>, <tt><a class="method" href="c-pfcModel2D-Model2D.html#ListModels">Model2D.ListModels()</a></tt>, <tt><a class="method" href="c-pfcModel2D-Model2D.html#DeleteSimplifiedRep">Model2D.DeleteSimplifiedRep(SimpRep)</a></tt>, <tt><a class="method" href="c-pfcModel2D-Model2D.html#DeleteModel">Model2D.DeleteModel(Model)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#38">Drawings: Drawing Operations</a>, <a href="../manual0/jdrawfns.html#43">Drawings: Drawing Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SimplifiedRep</b></tt>
+</dt>
+<dd>The simplfied representation to add to the drawing.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DeleteSimplifiedRep">DeleteSimplifiedRep</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>DeleteSimplifiedRep</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSimpRep-SimpRep.html">SimpRep</a>&nbsp;SimplifiedRep)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Deletes a simplified representation of a model from a drawing.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - The function did nothing because the simplified representation is null. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The function failed because the specified simplified representation is not in the drawing. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInUse.html">XToolkitInUse</a></tt></tt> - The function failed because the specified model and simplified representation are referenced by another view in the drawing. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel2D-Model2D.html#DeleteModel">Model2D.DeleteModel(Model)</a></tt>, <tt><a class="method" href="c-pfcModel2D-Model2D.html#ListSimplifiedReps">Model2D.ListSimplifiedReps(Model)</a></tt>, <tt><a class="method" href="c-pfcModel2D-Model2D.html#ListModels">Model2D.ListModels()</a></tt>, <tt><a class="method" href="c-pfcModel2D-Model2D.html#AddSimplifiedRep">Model2D.AddSimplifiedRep(SimpRep)</a></tt>, <tt><a class="method" href="c-pfcModel2D-Model2D.html#AddModel">Model2D.AddModel(Model)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#39">Drawings: Drawing Operations</a>, <a href="../manual0/jdrawfns.html#43">Drawings: Drawing Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SimplifiedRep</b></tt>
+</dt>
+<dd>The simplfied representation to delete from the drawing.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

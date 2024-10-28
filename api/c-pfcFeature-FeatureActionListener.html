@@ -1,0 +1,756 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcFeature.FeatureActionListener"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      305
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcFeature.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcFeature-FeatureActionListener.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;FeatureActionListener</h2>
+<tt>
+     package 
+     <b><a href="p-pfcFeature.html">com.ptc.pfc.pfcFeature</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>FeatureActionListener</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcBase-ActionListener.html">com.ptc.pfc.pfcBase.ActionListener</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class defines an action listener for features.
+<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterCopy">OnAfterCopy</a>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;FromFeat, <a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;ToFeat, <a class="type" href="c-pfcFeature-FeatureCopyType.html">FeatureCopyType</a>&nbsp;Type)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the listener method called after a successful feature copy.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterRegen">OnAfterRegen</a>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the notification function called after a feature has been
+regenerated.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterSuppress">OnAfterSuppress</a>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the notification function called after a feature has been 
+suppressed from a solid.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnBeforeDelete">OnBeforeDelete</a>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the action listener called before deleting a feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnBeforeParameterCreate">OnBeforeParameterCreate</a>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Owner, String&nbsp;Name, <a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a>&nbsp;Value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the notification function called before a parameter is created.
+    To abort parameter creation throw exception <tt><tt><a class="class" href="c-pfcExceptions-XCancelProEAction.html">XCancelProEAction</a></tt></tt>.<br>
+
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnBeforeParameterDelete">OnBeforeParameterDelete</a>
+ (<a class="type" href="c-pfcModelItem-Parameter.html">Parameter</a>&nbsp;Param)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the listener method called before deleting a parameter.
+   To abort parameter delete operation throw exception <tt><tt><a class="class" href="c-pfcExceptions-XCancelProEAction.html">XCancelProEAction</a></tt></tt>.<br>
+
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnBeforeParameterModify">OnBeforeParameterModify</a>
+ (<a class="type" href="c-pfcModelItem-Parameter.html">Parameter</a>&nbsp;Param, <a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a>&nbsp;Value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the notification function called before a parameter is modified.
+   To abort parameter modification throw exception <tt><tt><a class="class" href="c-pfcExceptions-XCancelProEAction.html">XCancelProEAction</a></tt></tt>.<br>
+
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnBeforeRedefine">OnBeforeRedefine</a>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the notification function called before a feature is redefined.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnBeforeRegen">OnBeforeRegen</a>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the notification function called before a feature is 
+regenerated.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnBeforeSuppress">OnBeforeSuppress</a>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the notification function called before a feature is suppressed.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnRegenFailure">OnRegenFailure</a>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the notification function called when a regeneration fails.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnBeforeDelete">OnBeforeDelete</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnBeforeDelete</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the action listener called before deleting a feature.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#76">Action Listeners: Feature Level Action Listeners</a>, <a href="../manual0/JAction.html#88">Action Listeners: Feature Level Action Listeners</a>, <a href="../manual0/JAction.html#90">Action Listeners: Cancelling an ActionListener Operation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Feat</b></tt>
+</dt>
+<dd>The feature about to be deleted </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnBeforeSuppress">OnBeforeSuppress</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnBeforeSuppress</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the notification function called before a feature is suppressed.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#77">Action Listeners: Feature Level Action Listeners</a>, <a href="../manual0/JAction.html#88">Action Listeners: Feature Level Action Listeners</a>, <a href="../manual0/JAction.html#90">Action Listeners: Cancelling an ActionListener Operation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Feat</b></tt>
+</dt>
+<dd>The feature to be suppressed</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterSuppress">OnAfterSuppress</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterSuppress</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the notification function called after a feature has been 
+suppressed from a solid.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#78">Action Listeners: Feature Level Action Listeners</a>, <a href="../manual0/JAction.html#88">Action Listeners: Feature Level Action Listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Feat</b></tt>
+</dt>
+<dd>The feature that was suppressed</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnBeforeRegen">OnBeforeRegen</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnBeforeRegen</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the notification function called before a feature is 
+regenerated.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#79">Action Listeners: Feature Level Action Listeners</a>, <a href="../manual0/JAction.html#88">Action Listeners: Feature Level Action Listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Feat</b></tt>
+</dt>
+<dd>The feature to be regenerated </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterRegen">OnAfterRegen</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterRegen</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the notification function called after a feature has been
+regenerated.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#80">Action Listeners: Feature Level Action Listeners</a>, <a href="../manual0/JAction.html#88">Action Listeners: Feature Level Action Listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Feat</b></tt>
+</dt>
+<dd>The feature that was just regenerated</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnRegenFailure">OnRegenFailure</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnRegenFailure</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the notification function called when a regeneration fails.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#81">Action Listeners: Feature Level Action Listeners</a>, <a href="../manual0/JAction.html#88">Action Listeners: Feature Level Action Listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Feat</b></tt>
+</dt>
+<dd>The feature whose regeneration failed</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnBeforeRedefine">OnBeforeRedefine</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnBeforeRedefine</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the notification function called before a feature is redefined.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#82">Action Listeners: Feature Level Action Listeners</a>, <a href="../manual0/JAction.html#88">Action Listeners: Feature Level Action Listeners</a>, <a href="../manual0/JAction.html#90">Action Listeners: Cancelling an ActionListener Operation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Feat</b></tt>
+</dt>
+<dd>The feature to be redefined</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterCopy">OnAfterCopy</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterCopy</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;FromFeat, <a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;ToFeat, <a class="type" href="c-pfcFeature-FeatureCopyType.html">FeatureCopyType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the listener method called after a successful feature copy.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#83">Action Listeners: Feature Level Action Listeners</a>, <a href="../manual0/JAction.html#88">Action Listeners: Feature Level Action Listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FromFeat</b></tt>
+</dt>
+<dd>Feature to be copied</dd>
+<dt>
+<tt><b>ToFeat</b></tt>
+</dt>
+<dd>Target for copied feature</dd>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>Type of feature copy, for example, using the same references, flipped to a miror image, and so on.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnBeforeParameterCreate">OnBeforeParameterCreate</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnBeforeParameterCreate</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Owner, String&nbsp;Name, <a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a>&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the notification function called before a parameter is created.
+    To abort parameter creation throw exception <tt><tt><a class="class" href="c-pfcExceptions-XCancelProEAction.html">XCancelProEAction</a></tt></tt>.<br>
+
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#90">Action Listeners: Cancelling an ActionListener Operation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Owner</b></tt>
+</dt>
+<dd>Owner feature of parameter. </dd>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>Name of the parameter. </dd>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>Value of the parameter. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnBeforeParameterModify">OnBeforeParameterModify</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnBeforeParameterModify</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModelItem-Parameter.html">Parameter</a>&nbsp;Param, <a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a>&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the notification function called before a parameter is modified.
+   To abort parameter modification throw exception <tt><tt><a class="class" href="c-pfcExceptions-XCancelProEAction.html">XCancelProEAction</a></tt></tt>.<br>
+
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Param</b></tt>
+</dt>
+<dd>Name of the parameter.</dd>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>Value of the parameter.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnBeforeParameterDelete">OnBeforeParameterDelete</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnBeforeParameterDelete</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModelItem-Parameter.html">Parameter</a>&nbsp;Param)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the listener method called before deleting a parameter.
+   To abort parameter delete operation throw exception <tt><tt><a class="class" href="c-pfcExceptions-XCancelProEAction.html">XCancelProEAction</a></tt></tt>.<br>
+
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#84">Action Listeners: Feature Level Action Listeners</a>, <a href="../manual0/JAction.html#88">Action Listeners: Feature Level Action Listeners</a>, <a href="../manual0/JAction.html#90">Action Listeners: Cancelling an ActionListener Operation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Param</b></tt>
+</dt>
+<dd>Parameter to be deleted</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,481 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcDetail.DetailEntityInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      185
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcDetail.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcDetail-DetailEntityInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;DetailEntityInstructions</h2>
+<tt>
+     package 
+     <b><a href="p-pfcDetail.html">com.ptc.pfc.pfcDetail</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>DetailEntityInstructions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcDetail-DetailCreateInstructions.html">com.ptc.pfc.pfcDetail.DetailCreateInstructions</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface contains information used to describe a detail entity item.
+It may be used when creating detail entities (<tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateDetailItem">DetailItemOwner.CreateDetailItem(DetailCreateInstructions)</a></tt> and <tt><a class="method" href="c-pfcDetail-DetailSymbolDefItem.html#CreateDetailItem">DetailSymbolDefItem.CreateDetailItem(DetailCreateInstructions)</a></tt>), or accessing existing entities (<tt><a class="method" href="c-pfcDetail-DetailEntityItem.html#Modify">DetailEntityItem.Modify(DetailEntityInstructions)</a></tt> and <tt><a class="method" href="c-pfcDetail-DetailEntityItem.html#GetInstructions">DetailEntityItem.GetInstructions()</a></tt>).
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcGeometry-pfcGeometry.html#LineDescriptor::Create">pfcGeometry.LineDescriptor_Create(Point3D, Point3D)</a></tt>, <tt><a class="method" href="c-pfcGeometry-pfcGeometry.html#ArcDescriptor::Create">pfcGeometry.ArcDescriptor_Create(Vector3D, Vector3D, Point3D, double, double, double)</a></tt>, <tt><a class="method" href="c-pfcGeometry-pfcGeometry.html#ArrowDescriptor::Create">pfcGeometry.ArrowDescriptor_Create(Point3D, Point3D)</a></tt>, <tt><a class="method" href="c-pfcGeometry-pfcGeometry.html#CircleDescriptor::Create">pfcGeometry.CircleDescriptor_Create(Point3D, double, Vector3D)</a></tt>, <tt><a class="method" href="c-pfcGeometry-pfcGeometry.html#SplineDescriptor::Create">pfcGeometry.SplineDescriptor_Create(SplinePoints)</a></tt>, <tt><a class="method" href="c-pfcGeometry-pfcGeometry.html#BSplineDescriptor::Create">pfcGeometry.BSplineDescriptor_Create(int, BSplinePoints, realseq)</a></tt>, <tt><a class="method" href="c-pfcGeometry-pfcGeometry.html#EllipseDescriptor::Create">pfcGeometry.EllipseDescriptor_Create(Point3D, Vector3D, Vector3D, double, double, double, double)</a></tt>, <tt><a class="method" href="c-pfcGeometry-pfcGeometry.html#PolygonDescriptor::Create">pfcGeometry.PolygonDescriptor_Create(Point3Ds)</a></tt>, <tt><a class="method" href="c-pfcGeometry-pfcGeometry.html#CompositeCurveDescriptor::Create">pfcGeometry.CompositeCurveDescriptor_Create(CurveDescriptors)</a></tt>, <tt><a class="method" href="c-pfcModel2D-Model2D.html#List2DViews">Model2D.List2DViews()</a></tt>, <tt><a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetBackgroundView">SheetOwner.GetSheetBackgroundView(int)</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a></tt></td><td class="method-summary"><tt><a class="method" href="#Color">GetColor</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Color"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The color of the detail item.  If <tt>null</tt>, the default drawing color is used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-summary"><tt><a class="method" href="#FontName">GetFontName</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "FontName"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The name of the linestyle.  If <tt>null</tt>, the default linestyle is used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#Geometry">GetGeometry</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Geometry"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The geometry of the detail entity.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsConstruction">GetIsConstruction</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IsConstruction"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Whether or not the entity is construction.  If <tt>null</tt>, the entity is not a construction entity.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a></tt></td><td class="method-summary"><tt><a class="method" href="#View">GetView</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "View"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The drawing view associated with the entity.  This can be a view of a drawing model, or a drawing sheet background view.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-summary"><tt><a class="method" href="#Width">GetWidth</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Width"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The width of the entity line.  If <tt>null</tt>, the default width is used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Color">SetColor</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Color"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The color of the detail item.  If <tt>null</tt>, the default drawing color is used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#FontName">SetFontName</a>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "FontName"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The name of the linestyle.  If <tt>null</tt>, the default linestyle is used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Geometry">SetGeometry</a>
+ (<a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Geometry"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The geometry of the detail entity.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#IsConstruction">SetIsConstruction</a>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "IsConstruction"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Whether or not the entity is construction.  If <tt>null</tt>, the entity is not a construction entity.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#View">SetView</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "View"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The drawing view associated with the entity.  This can be a view of a drawing model, or a drawing sheet background view.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Width">SetWidth</a>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Width"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The width of the entity line.  If <tt>null</tt>, the default width is used.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcDetail-DetailCreateInstructions.html"><tt>com.ptc.pfc.pfcDetail.DetailCreateInstructions</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcDetail-DetailCreateInstructions.html#GetType"><tt>GetType</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailCreateInstructions.html#Id"><tt>GetId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Geometry">GetGeometry/SetGeometry</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a></tt></td><td class="method-name"><tt>GetGeometry</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetGeometry</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The geometry of the detail entity.<br>
+<br>When creating a "circle" detail entity, use an arc with a start
+   angle of 0 and an end angle of 2*PI. Creo Parametric represents circle detail
+   entities with the <tt><tt><a class="class" href="c-pfcGeometry-ArcDescriptor.html">ArcDescriptor</a></tt></tt> object.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#429">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#440">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#430">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#440">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsConstruction">GetIsConstruction/SetIsConstruction</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>GetIsConstruction</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetIsConstruction</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Whether or not the entity is construction.  If <tt>null</tt>, the entity is not a construction entity.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#431">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#440">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#432">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#440">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Color">GetColor/SetColor</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a></tt></td><td class="method-name"><tt>GetColor</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetColor</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The color of the detail item.  If <tt>null</tt>, the default drawing color is used.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#433">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#440">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#434">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#440">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FontName">GetFontName/SetFontName</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-name"><tt>GetFontName</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetFontName</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The name of the linestyle.  If <tt>null</tt>, the default linestyle is used.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - No font name is specified.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#435">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#440">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#436">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#440">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Width">GetWidth/SetWidth</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-name"><tt>GetWidth</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetWidth</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The width of the entity line.  If <tt>null</tt>, the default width is used.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#437">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#440">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#438">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#440">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="View">GetView/SetView</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a></tt></td><td class="method-name"><tt>GetView</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetView</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The drawing view associated with the entity.  This can be a view of a drawing model, or a drawing sheet background view.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The entity is not attached to a drawing view.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#439">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#440">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#440">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

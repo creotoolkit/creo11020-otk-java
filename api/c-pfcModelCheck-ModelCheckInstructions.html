@@ -1,0 +1,348 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcModelCheck.ModelCheckInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      474
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcModelCheck.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcModelCheck-ModelCheckInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;ModelCheckInstructions</h2>
+<tt>
+     package 
+     <b><a href="p-pfcModelCheck.html">com.ptc.pfc.pfcModelCheck</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>ModelCheckInstructions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class describes ModelCheck instructions details.<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-summary"><tt><a class="method" href="#ConfigDir">GetConfigDir</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ConfigDir"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Specifies the directory which contains the ModelCheck configuration directory
+   (which must be named 'config'). If <tt>null</tt> then the default
+   ModelCheck configuration directory will be used.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcModelCheck-ModelCheckMode.html">ModelCheckMode</a></tt></td><td class="method-summary"><tt><a class="method" href="#Mode">GetMode</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Mode"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Specifies the mode to use when executing ModelCheck.
+   If <tt>null</tt>, the non-graphic mode will be used. 
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-summary"><tt><a class="method" href="#OutputDir">GetOutputDir</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "OutputDir"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Specifies the directory where the report will be written.
+   If <tt>null</tt> then default ModelCheck output directory ,as per config_init.mc , will be used.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#ShowInBrowser">GetShowInBrowser</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ShowInBrowser"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Specifies if the results report should be shown in the browser.
+   If <tt>null</tt> (the default) it will not be shown. 
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ConfigDir">SetConfigDir</a>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ConfigDir"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Specifies the directory which contains the ModelCheck configuration directory
+   (which must be named 'config'). If <tt>null</tt> then the default
+   ModelCheck configuration directory will be used.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Mode">SetMode</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcModelCheck-ModelCheckMode.html">ModelCheckMode</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Mode"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Specifies the mode to use when executing ModelCheck.
+   If <tt>null</tt>, the non-graphic mode will be used. 
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OutputDir">SetOutputDir</a>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "OutputDir"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Specifies the directory where the report will be written.
+   If <tt>null</tt> then default ModelCheck output directory ,as per config_init.mc , will be used.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ShowInBrowser">SetShowInBrowser</a>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ShowInBrowser"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Specifies if the results report should be shown in the browser.
+   If <tt>null</tt> (the default) it will not be shown. 
+  </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ShowInBrowser">GetShowInBrowser/SetShowInBrowser</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>GetShowInBrowser</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetShowInBrowser</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Specifies if the results report should be shown in the browser.
+   If <tt>null</tt> (the default) it will not be shown. 
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#84">Models: Running Creo ModelCHECK</a>, <a href="../manual0/JModel.html#87">Models: Running Creo ModelCHECK</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Mode">GetMode/SetMode</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcModelCheck-ModelCheckMode.html">ModelCheckMode</a></tt></td><td class="method-name"><tt>GetMode</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetMode</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcModelCheck-ModelCheckMode.html">ModelCheckMode</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Specifies the mode to use when executing ModelCheck.
+   If <tt>null</tt>, the non-graphic mode will be used. 
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#82">Models: Running Creo ModelCHECK</a>, <a href="../manual0/JModel.html#87">Models: Running Creo ModelCHECK</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ConfigDir">GetConfigDir/SetConfigDir</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-name"><tt>GetConfigDir</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetConfigDir</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Specifies the directory which contains the ModelCheck configuration directory
+   (which must be named 'config'). If <tt>null</tt> then the default
+   ModelCheck configuration directory will be used.
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#81">Models: Running Creo ModelCHECK</a>, <a href="../manual0/JModel.html#87">Models: Running Creo ModelCHECK</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OutputDir">GetOutputDir/SetOutputDir</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-name"><tt>GetOutputDir</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetOutputDir</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Specifies the directory where the report will be written.
+   If <tt>null</tt> then default ModelCheck output directory ,as per config_init.mc , will be used.
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#83">Models: Running Creo ModelCHECK</a>, <a href="../manual0/JModel.html#87">Models: Running Creo ModelCHECK</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

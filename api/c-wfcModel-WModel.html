@@ -1,0 +1,2899 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcModel.WModel"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      883
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcModel.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcModel-WModel.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;WModel</h2>
+<tt>
+     package 
+     <b><a href="p-wfcModel.html">com.ptc.wfc.wfcModel</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>WModel</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-wfcModelItem-WParameterOwner.html">com.ptc.wfc.wfcModelItem.WParameterOwner</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="bold" href="c-wfcModelItem-WRelationOwner.html">com.ptc.wfc.wfcModelItem.WRelationOwner</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="bold" href="c-pfcModel-Model.html">com.ptc.pfc.pfcModel.Model</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>
+      Adds more functionality to <tt><tt><a class="class" href="c-pfcModel-Model.html">Model</a></tt></tt>.
+    <br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-wfcModel-WDiagram.html">WDiagram</a></tt>, 
+        <tt><a class="class" href="c-wfcModel-WMFG.html">WMFG</a></tt>, 
+        <tt><a class="class" href="c-wfcModel-WMarkup.html">WMarkup</a></tt>, 
+        <tt><a class="class" href="c-wfcModel-WModel2D.html">WModel2D</a></tt>, 
+        <tt><a class="class" href="c-wfcSection-Section.html">Section</a></tt>, 
+        <tt><a class="class" href="c-wfcDrawing-WDrawingFormat.html">WDrawingFormat</a></tt>, 
+        <tt><a class="class" href="c-wfcSolid-WSolid.html">WSolid</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AddAnnotationPlaneToGallery">AddAnnotationPlaneToGallery</a>
+ (String&nbsp;AnnotPlaneName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Add annotation plane with specified name to gallery.
+	    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#CanCreateSectionFeature">CanCreateSectionFeature</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Determines if Cross Section can be created as feature in specified model
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcModelItem-ParamTablesets.html">ParamTablesets</a></tt></td><td class="method-summary"><tt><a class="method" href="#CollectParamTablesets">CollectParamTablesets</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Obtains all table sets that are available for use in the given model.
+        This includes all sets that are loaded from files setup in this session,
+        and any sets that were previously stored in the model.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcSelect-Selections.html">Selections</a></tt></td><td class="method-summary"><tt><a class="method" href="#ComputeRayIntersections">ComputeRayIntersections</a>
+ (double&nbsp;ApertureRadius, <a class="type" href="c-wfcModel-Ray.html">Ray</a>&nbsp;Ray)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Returns a list of ray intersections with a model. The function computes the intersection points
+        of both the original ray and its "negative" with the geometry of the model.  The output array is sorted
+        in order of increasing signed distance.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ConvertOldXSectionsToNew">ConvertOldXSectionsToNew</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Convert all legacy cross sections to features
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#CopyLayerRules">CopyLayerRules</a>
+ (String&nbsp;LayerName, <a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;RefModel)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+    Copy the rules of a layer LayerName in ReferenceModel into a layer LayerName in CurrentModel, overwriting any rules &lt;p&gt;&lt;b&gt;Note: &lt;/b&gt;This function copies both the rules definitions and the rules options set interactively (including option "Associative")
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcGTol-GTol.html">GTol</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateGTol">CreateGTol</a>
+ (<a class="type" href="c-wfcGTol-GTolType.html">GTolType</a>&nbsp;Type, <a class="type" href="c-wfcGTol-GTolAttach.html">GTolAttach</a>&nbsp;GtolAttach, String&nbsp;Value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+    Creates new Gtol with specified placement and value string
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcAnnotation-SetDatumTag.html">SetDatumTag</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateSetDatumTag">CreateSetDatumTag</a>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;Selection, String&nbsp;Label, 
+   /*optional*/
+   <a class="type" href="c-wfcAnnotation-AnnotationPlane.html">AnnotationPlane</a>&nbsp;Plane)
+</tt>
+<br>
+<tt><b>LICENSE: </b>222</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Create a new datum feature symbol annotation.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcAnnotation-SurfaceFinish.html">SurfaceFinish</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateSurfaceFinish">CreateSurfaceFinish</a>
+ (<a class="type" href="c-pfcDetail-DetailSymbolInstInstructions.html">DetailSymbolInstInstructions</a>&nbsp;SymbolInstructions, <a class="type" href="c-wfcAnnotation-AnnotationPlane.html">AnnotationPlane</a>&nbsp;AnnotPlane)
+</tt>
+<br>
+<tt><b>LICENSE: </b>222</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Create a surface finish in the specified model. wfcSurfaceFinish::Show() should be called after creating the surface finish in order for the surface finish to be displayed. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcUnits-Unit.html">Unit</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateUnitByExpression">CreateUnitByExpression</a>
+ (String&nbsp;UnitName, String&nbsp;UnitExpression)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a derived unit. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DesignateSymbol">DesignateSymbol</a>
+ (String&nbsp;SymbolName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ExecuteLayerRules">ExecuteLayerRules</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+    Execute the layer rules on the CurrentModel if rules are enabled.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcSelect-Selections.html">Selections</a></tt></td><td class="method-summary"><tt><a class="method" href="#GenerateSelectionsFromCollection">GenerateSelectionsFromCollection</a>
+ (<a class="type" href="c-wfcCollection-Collection.html">Collection</a>&nbsp;Collection)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Generates selections based on instructions and rules insided the specified collection object
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcAnnotation-AnnotationPlane.html">AnnotationPlane</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetActiveAnnotationPlane">GetActiveAnnotationPlane</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Get last used Annotation plane in the specified model.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcAnnotation-AnnotationPlane.html">AnnotationPlane</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetAnnotationPlaneByName">GetAnnotationPlaneByName</a>
+ (String&nbsp;AnnotPlaneName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Get Annotation plane from specified name.
+	    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-stdcols-stringseq.html">stringseq</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetAnnotationPlanes">GetAnnotationPlanes</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Collect the names of all the named annotation planes in the model.
+	    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-stdcols-stringseq.html">stringseq</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetAnnotationPlanesFromGallery">GetAnnotationPlanesFromGallery</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Collect the names of all annotation planes in gallery.
+	    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#GetDefaultName">GetDefaultName</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Returns the next available default name for given object type.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcLayerState-LayerItem.html">LayerItem</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetLayerItem">GetLayerItem</a>
+ (<a class="type" href="c-wfcLayerState-LayerType.html">LayerType</a>&nbsp;LayerType, int&nbsp;LayerId)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Initializes the layer item structure. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcModel-MdlfileDescriptor.html">MdlfileDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetMdlfileDescriptor">GetMdlfileDescriptor</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a filetype descriptor from the model and returns it.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcModel-ModelSubType.html">ModelSubType</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetSubType">GetSubType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Returns the subtype of a model.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcModel-TIMInfo.html">TIMInfo</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetTIMInfo">GetTIMInfo</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Gets the TIM related information of the model
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsDesignatedSymbol">IsDesignatedSymbol</a>
+ (String&nbsp;SymbolName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsStandardLocation">IsStandardLocation</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Returns true if the model was loaded from a local folder.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsVariantFeatModel">IsVariantFeatModel</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Identifies if a model pointer is from an inheritance feature or flexible component.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcLayer-Layers.html">Layers</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListLayers">ListLayers</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Collects an array containing the layers in the model. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#MarkATBModelAsOutOfDate">MarkATBModelAsOutOfDate</a>
+ (
+   /*optional*/
+   <a class="type" href="c-stdcols-intseq.html">intseq</a>&nbsp;FeatIds)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Mark the ATB model/feature as out of date.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#MarkForSaving">MarkForSaving</a>
+ (String&nbsp;marker)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#MatchLayerRules">MatchLayerRules</a>
+ (String&nbsp;LayerName, <a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;RefModel)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+    Compare the rules of a layer LayerName in ReferenceModel to the rules in layer LayerName in CurrentModel.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#RefreshMdlTree">RefreshMdlTree</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Refreshes the display of the model tree.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#RelinkATB">RelinkATB</a>
+ (String&nbsp;MasterModelPath, 
+   /*optional*/
+   Integer&nbsp;FeatId)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Relink the model/feature that have lost the link to the master model. Relinking a model here will represent searching for the
+        master model (using the master model name) in the location specified in the 'MasterModelPath' argument. If the master model
+        with the same name is found, the Creo Parametric TIM model is linked to that master model.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#RemoveAnnotationPlaneFromGallery">RemoveAnnotationPlaneFromGallery</a>
+ (String&nbsp;AnnotPlaneName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Remove annotation plane with specified name from gallery.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SaveLayerDisplayStatus">SaveLayerDisplayStatus</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Permanently saves all the changes to the display status of all layers
+        in the owner, and all its submodels (and views, for drawings).
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#UndesignateSymbol">UndesignateSymbol</a>
+ (String&nbsp;SymbolName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#UpdateATB">UpdateATB</a>
+ (
+   /*optional*/
+   <a class="type" href="c-stdcols-intseq.html">intseq</a>&nbsp;FeatIds, 
+   /*optional*/
+   <a class="type" href="c-stdcols-stringseq.html">stringseq</a>&nbsp;SearchPaths)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Update the ATB model(s)/feature(s).
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcModel-ATBVerificationResults.html">ATBVerificationResults</a></tt></td><td class="method-summary"><tt><a class="method" href="#VerifyATB">VerifyATB</a>
+ (
+   /*optional*/
+   <a class="type" href="c-stdcols-intseq.html">intseq</a>&nbsp;FeatIds, 
+   /*optional*/
+   <a class="type" href="c-stdcols-stringseq.html">stringseq</a>&nbsp;SearchPaths)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        To Verify if the ATB models are out of date. This function will first check to see if the model specified is a TIM (of some master model).
+        If model is not a TIM, it will check to see if the model contains one or more features which are TIM representations.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcClient-Status.html">Status</a></tt></td><td class="method-summary"><tt><a class="method" href="#VisitDetailItems">VisitDetailItems</a>
+ (<a class="type" href="c-wfcClient-VisitingClient.html">VisitingClient</a>&nbsp;visitingClient, <a class="type" href="c-pfcDetail-DetailType.html">DetailType</a>&nbsp;detailType, int&nbsp;Sheet)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcClient-Status.html">Status</a></tt></td><td class="method-summary"><tt><a class="method" href="#VisitItems">VisitItems</a>
+ (<a class="type" href="c-wfcClient-VisitingClient.html">VisitingClient</a>&nbsp;visitingClient, <a class="type" href="c-pfcModelItem-ModelItemType.html">ModelItemType</a>&nbsp;itemType)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcBase-ActionSource.html"><tt>com.ptc.pfc.pfcBase.ActionSource</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Parent.html"><tt>com.ptc.pfc.pfcObject.Parent</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ParameterOwner.html"><tt>com.ptc.pfc.pfcModelItem.ParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcModelItem-WParameterOwner.html"><tt>com.ptc.wfc.wfcModelItem.WParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcModelItem-WParameterOwner.html#ExportParameterTable"><tt>ExportParameterTable</tt></a>,
+      <a class="method" href="c-wfcModelItem-WParameterOwner.html#ApplyParameterTableset"><tt>ApplyParameterTableset</tt></a>,
+      <a class="method" href="c-wfcModelItem-WParameterOwner.html#MathcadParametersSet"><tt>MathcadParametersSet</tt></a>,
+      <a class="method" href="c-wfcModelItem-WParameterOwner.html#MathcadInputParametersGet"><tt>MathcadInputParametersGet</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-RelationOwner.html"><tt>com.ptc.pfc.pfcModelItem.RelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcModelItem-WRelationOwner.html"><tt>com.ptc.wfc.wfcModelItem.WRelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcModelItem-WRelationOwner.html#GetRelationConstraints"><tt>GetRelationConstraints</tt></a>,
+      <a class="method" href="c-wfcModelItem-WRelationOwner.html#UnitsUsed"><tt>UnitsUsed</tt></a>,
+      <a class="method" href="c-wfcModelItem-WRelationOwner.html#UseUnits"><tt>UseUnits</tt></a>,
+      <a class="method" href="c-wfcModelItem-WRelationOwner.html#EvaluateExpressionWithUnits"><tt>EvaluateExpressionWithUnits</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ModelItemOwner.html"><tt>com.ptc.pfc.pfcModelItem.ModelItemOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ModelItemOwner.html#GetItemByName"><tt>GetItemByName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItemOwner.html#GetItemById"><tt>GetItemById</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItemOwner.html#ListItems"><tt>ListItems</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcView-ViewOwner.html"><tt>com.ptc.pfc.pfcView.ViewOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcView-ViewOwner.html#RetrieveView"><tt>RetrieveView</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#GetView"><tt>GetView</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#SaveView"><tt>SaveView</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#GetCurrentViewTransform"><tt>GetCurrentViewTransform</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#SetCurrentViewTransform"><tt>SetCurrentViewTransform</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#CurrentViewRotate"><tt>CurrentViewRotate</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#ListViews"><tt>ListViews</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#GetCurrentView"><tt>GetCurrentView</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Child.html"><tt>com.ptc.pfc.pfcObject.Child</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+      <a class="method" href="c-pfcObject-Child.html#OId"><tt>GetOId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModel-Model.html"><tt>com.ptc.pfc.pfcModel.Model</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModel-Model.html#Descr"><tt>GetDescr</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#RelationId"><tt>GetRelationId</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsModified"><tt>GetIsModified</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#VersionStamp"><tt>GetVersionStamp</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Revision"><tt>GetRevision</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Version"><tt>GetVersion</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Branch"><tt>GetBranch</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ReleaseLevel"><tt>GetReleaseLevel</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CommonName"><tt>GetCommonName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CommonName"><tt>SetCommonName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsCommonNameModifiable"><tt>IsCommonNameModifiable</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#FullName"><tt>GetFullName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#InstanceName"><tt>GetInstanceName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#GenericName"><tt>GetGenericName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Type"><tt>GetType</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#FileName"><tt>GetFileName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Backup"><tt>Backup</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Copy"><tt>Copy</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CopyAndRetrieve"><tt>CopyAndRetrieve</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Rename"><tt>Rename</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Save"><tt>Save</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Erase"><tt>Erase</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#EraseWithDependencies"><tt>EraseWithDependencies</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Delete"><tt>Delete</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Display"><tt>Display</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#DisplayInNewWindow"><tt>DisplayInNewWindow</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ListDependencies"><tt>ListDependencies</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ListDeclaredModels"><tt>ListDeclaredModels</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CreateLayer"><tt>CreateLayer</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Export"><tt>Export</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Import"><tt>Import</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#AccessExternalData"><tt>AccessExternalData</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#TerminateExternalData"><tt>TerminateExternalData</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CheckIsSaveAllowed"><tt>CheckIsSaveAllowed</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CheckIsModifiable"><tt>CheckIsModifiable</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Origin"><tt>GetOrigin</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#PostRegenerationRelations"><tt>GetPostRegenerationRelations</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#PostRegenerationRelations"><tt>SetPostRegenerationRelations</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#RegeneratePostRegenerationRelations"><tt>RegeneratePostRegenerationRelations</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#DeletePostRegenerationRelations"><tt>DeletePostRegenerationRelations</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CleanupDependencies"><tt>CleanupDependencies</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsNativeModel"><tt>IsNativeModel</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ExportIntf3D"><tt>ExportIntf3D</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#SetIntf3DLayerSetupFile"><tt>SetIntf3DLayerSetupFile</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsIntf3DLayerSetupFileIgnored"><tt>IsIntf3DLayerSetupFileIgnored</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsIntf3DCsysIgnored"><tt>IsIntf3DCsysIgnored</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ClearIntf3DModelData"><tt>ClearIntf3DModelData</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="VerifyATB">VerifyATB</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcModel-ATBVerificationResults.html">ATBVerificationResults</a></tt></td><td class="method-name"><tt>VerifyATB</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-stdcols-intseq.html">intseq</a>&nbsp;FeatIds, 
+   /*optional*/
+   <a class="type" href="c-stdcols-stringseq.html">stringseq</a>&nbsp;SearchPaths)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        To Verify if the ATB models are out of date. This function will first check to see if the model specified is a TIM (of some master model).
+        If model is not a TIM, it will check to see if the model contains one or more features which are TIM representations.
+      <br>
+<br>
+        
+<p>
+          
+<b>Exceptions thrown (but not limited to):</b>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoChange.html">XToolkitNoChange</a></tt></tt> - The function successfully verified the model and didn't find any ATB models out of date nor any models of old version nor any models with broken link.
+          </p>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotValid.html">XToolkitNotValid</a></tt></tt> - The function successfully verified the model, found ONE or more models of older version and found no ATB models out of date.
+          </p>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - The function successfully verified the model, found ONE or more models with broken link and found no ATB models out of date and no ATB models of older version
+          </p>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitUnsupported.html">XToolkitUnsupported</a></tt></tt> - The input model is Multi-CAD model.
+          </p>
+        
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#242">Interface: Associative Topology Bus Enabled Models and Features</a>, <a href="../manual0/Jinterface.html#248">Interface: Associative Topology Bus Enabled Models and Features</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FeatIds</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>SearchPaths</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>ATB verification results object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="MarkATBModelAsOutOfDate">MarkATBModelAsOutOfDate</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>MarkATBModelAsOutOfDate</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-stdcols-intseq.html">intseq</a>&nbsp;FeatIds)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Mark the ATB model/feature as out of date.
+      <br>
+<br>
+        
+<p>
+          
+<b>Exceptions thrown (but not limited to):</b>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitUnsupported.html">XToolkitUnsupported</a></tt></tt> - The input model is Multi-CAD model.
+          </p>
+        
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#246">Interface: Associative Topology Bus Enabled Models and Features</a>, <a href="../manual0/Jinterface.html#248">Interface: Associative Topology Bus Enabled Models and Features</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FeatIds</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UpdateATB">UpdateATB</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>UpdateATB</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-stdcols-intseq.html">intseq</a>&nbsp;FeatIds, 
+   /*optional*/
+   <a class="type" href="c-stdcols-stringseq.html">stringseq</a>&nbsp;SearchPaths)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Update the ATB model(s)/feature(s).
+      <br>
+<br>
+        
+<p>
+          
+<b>Exceptions thrown (but not limited to):</b>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoChange.html">XToolkitNoChange</a></tt></tt> - The function runs successfully and found no ATB models out of date.
+          </p>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantModify.html">XToolkitCantModify</a></tt></tt> - During ATB update the regeneration failed.
+          </p>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - There are non-displayed models in the session.
+          </p>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotDisplayed.html">XToolkitNotDisplayed</a></tt></tt> - The input model is not displayed.
+          </p>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitAmbiguous.html">XToolkitAmbiguous</a></tt></tt> - Both: there are non-displayed models in the session AND the input model is not displayed.
+          </p>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitUnsupported.html">XToolkitUnsupported</a></tt></tt> - The input model is Multi-CAD model.
+          </p>
+        
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#247">Interface: Associative Topology Bus Enabled Models and Features</a>, <a href="../manual0/Jinterface.html#248">Interface: Associative Topology Bus Enabled Models and Features</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FeatIds</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>SearchPaths</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RelinkATB">RelinkATB</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>RelinkATB</tt></td><td class="method-params"><tt>
+ (String&nbsp;MasterModelPath, 
+   /*optional*/
+   Integer&nbsp;FeatId)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Relink the model/feature that have lost the link to the master model. Relinking a model here will represent searching for the
+        master model (using the master model name) in the location specified in the 'MasterModelPath' argument. If the master model
+        with the same name is found, the Creo Parametric TIM model is linked to that master model.
+      <br>
+<br>
+        
+<p>
+          
+<b>Exceptions thrown (but not limited to):</b>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitUnsupported.html">XToolkitUnsupported</a></tt></tt> - The input model is Multi-CAD model.
+          </p>
+        
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#248">Interface: Associative Topology Bus Enabled Models and Features</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>MasterModelPath</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>FeatId</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetAnnotationPlanesFromGallery">GetAnnotationPlanesFromGallery</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-stdcols-stringseq.html">stringseq</a></tt></td><td class="method-name"><tt>GetAnnotationPlanesFromGallery</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Collect the names of all annotation planes in gallery.
+	    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#133">Annotations: Annotation Features and Annotations: Annotation Orientation</a>, <a href="../manual0/jannot.html#138">Annotations: Annotation Features and Annotations: Annotation Orientation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> Names of annotation planes in the gallery</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetAnnotationPlanes">GetAnnotationPlanes</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-stdcols-stringseq.html">stringseq</a></tt></td><td class="method-name"><tt>GetAnnotationPlanes</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Collect the names of all the named annotation planes in the model.
+	    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#134">Annotations: Annotation Features and Annotations: Annotation Orientation</a>, <a href="../manual0/jannot.html#138">Annotations: Annotation Features and Annotations: Annotation Orientation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> Names of annotation planes in the model</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetAnnotationPlaneByName">GetAnnotationPlaneByName</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcAnnotation-AnnotationPlane.html">AnnotationPlane</a></tt></td><td class="method-name"><tt>GetAnnotationPlaneByName</tt></td><td class="method-params"><tt>
+ (String&nbsp;AnnotPlaneName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Get Annotation plane from specified name.
+	    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#135">Annotations: Annotation Features and Annotations: Annotation Orientation</a>, <a href="../manual0/jannot.html#138">Annotations: Annotation Features and Annotations: Annotation Orientation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AnnotPlaneName</b></tt>
+</dt>
+<dd>Name of wanted Annotation Plane</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Annotation plane with specified name.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AddAnnotationPlaneToGallery">AddAnnotationPlaneToGallery</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>AddAnnotationPlaneToGallery</tt></td><td class="method-params"><tt>
+ (String&nbsp;AnnotPlaneName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Add annotation plane with specified name to gallery.
+	    <br>
+<br>
+        
+<p>
+          
+<b>Exceptions thrown (but not limited to):</b>
+          
+<p>
+            
+<tt><tt>
+   &lt;reference 6 to unknown entity pfcExceptions::pfcXToolkitNotFound&gt;
+  </tt></tt> - No annotation plane exists with specified name.
+          </p>
+          
+<p>
+            
+<tt><tt>
+   &lt;reference 6 to unknown entity pfcExceptions::pfcXToolkitFound&gt;
+  </tt></tt> - Annotation plane with same name already exist in the gallery.
+          </p>
+        
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#136">Annotations: Annotation Features and Annotations: Annotation Orientation</a>, <a href="../manual0/jannot.html#138">Annotations: Annotation Features and Annotations: Annotation Orientation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AnnotPlaneName</b></tt>
+</dt>
+<dd>Name of the valid annotation plane</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RemoveAnnotationPlaneFromGallery">RemoveAnnotationPlaneFromGallery</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>RemoveAnnotationPlaneFromGallery</tt></td><td class="method-params"><tt>
+ (String&nbsp;AnnotPlaneName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Remove annotation plane with specified name from gallery.
+      <br>
+<br>
+        
+<p>
+          
+<b>Exceptions thrown (but not limited to):</b>
+          
+<p>
+            
+<tt><tt>
+   &lt;reference 6 to unknown entity pfcExceptions::pfcXToolkitNotFound&gt;
+  </tt></tt> - No annotation plane exists with specified name.
+          </p>
+        
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#137">Annotations: Annotation Features and Annotations: Annotation Orientation</a>, <a href="../manual0/jannot.html#138">Annotations: Annotation Features and Annotations: Annotation Orientation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AnnotPlaneName</b></tt>
+</dt>
+<dd>Name of the valid annotation plane</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetActiveAnnotationPlane">GetActiveAnnotationPlane</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcAnnotation-AnnotationPlane.html">AnnotationPlane</a></tt></td><td class="method-name"><tt>GetActiveAnnotationPlane</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Get last used Annotation plane in the specified model.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#138">Annotations: Annotation Features and Annotations: Annotation Orientation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Returns wfcAnnotationPlane_ptr</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetTIMInfo">GetTIMInfo</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcModel-TIMInfo.html">TIMInfo</a></tt></td><td class="method-name"><tt>GetTIMInfo</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Gets the TIM related information of the model
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#238">Interface: Associative Topology Bus Enabled Models and Features</a>, <a href="../manual0/Jinterface.html#248">Interface: Associative Topology Bus Enabled Models and Features</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The TIM information object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ConvertOldXSectionsToNew">ConvertOldXSectionsToNew</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>ConvertOldXSectionsToNew</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Convert all legacy cross sections to features
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#59">Cross Sections: Creating and Modifying Cross Sections</a>, <a href="../manual0/OTK_Cross_section.html#62">Cross Sections: Creating and Modifying Cross Sections</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CanCreateSectionFeature">CanCreateSectionFeature</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>CanCreateSectionFeature</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Determines if Cross Section can be created as feature in specified model
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#58">Cross Sections: Creating and Modifying Cross Sections</a>, <a href="../manual0/OTK_Cross_section.html#62">Cross Sections: Creating and Modifying Cross Sections</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+        
+<t>true</t> if Cross Section can be created as feature in specified model
+      </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListLayers">ListLayers</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcLayer-Layers.html">Layers</a></tt></td><td class="method-name"><tt>ListLayers</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Collects an array containing the layers in the model. <br>
+<br>
+        
+<p>
+          
+<b>Exceptions thrown (but not limited to):</b>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - No layers were found and collected.
+          </p>
+        
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModelitem.html#84">ModelItem: Layer State</a>, <a href="../manual0/JModelitem.html#90">ModelItem: Layer State</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SaveLayerDisplayStatus">SaveLayerDisplayStatus</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SaveLayerDisplayStatus</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Permanently saves all the changes to the display status of all layers
+        in the owner, and all its submodels (and views, for drawings).
+      <br>
+<br>
+        
+<p>
+          
+<b>Exceptions thrown (but not limited to):</b>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoChange.html">XToolkitNoChange</a></tt></tt> - No layers have been changed since the last save.
+          </p>
+        
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModelitem.html#85">ModelItem: Layer State</a>, <a href="../manual0/JModelitem.html#90">ModelItem: Layer State</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetLayerItem">GetLayerItem</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcLayerState-LayerItem.html">LayerItem</a></tt></td><td class="method-name"><tt>GetLayerItem</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcLayerState-LayerType.html">LayerType</a>&nbsp;LayerType, int&nbsp;LayerId)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Initializes the layer item structure. <br>
+<br>
+        
+<p>
+          
+<b>Exceptions thrown (but not limited to):</b>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotExist.html">XToolkitNotExist</a></tt></tt> - Item with such identifier and type does not exist.
+          </p>
+        
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModelitem.html#89">ModelItem: Layer State</a>, <a href="../manual0/JModelitem.html#90">ModelItem: Layer State</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>LayerType</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>LayerId</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetSubType">GetSubType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcModel-ModelSubType.html">ModelSubType</a></tt></td><td class="method-name"><tt>GetSubType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Returns the subtype of a model.
+      <br>
+<br>
+        
+<p>
+          
+<b>Exceptions thrown (but not limited to):</b>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - The model has no subtype.
+          </p>
+        
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#57">Models: Model Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> subtype of the model</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetDefaultName">GetDefaultName</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetDefaultName</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Returns the next available default name for given object type.
+      <br>
+<br>
+        
+<p>
+          
+<b>Exceptions thrown (but not limited to):</b>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitUnsupported.html">XToolkitUnsupported</a></tt></tt> - the type is not supported.
+          </p>
+        
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#41">Models: Model Information</a>, <a href="../manual0/JModel.html#57">Models: Model Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> The default Name.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsVariantFeatModel">IsVariantFeatModel</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>IsVariantFeatModel</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Identifies if a model pointer is from an inheritance feature or flexible component.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#146">Assemblies and Components: Variant Feature Model</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> xtrue if model pointer is inheritance feature otherwise false.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateUnitByExpression">CreateUnitByExpression</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcUnits-Unit.html">Unit</a></tt></td><td class="method-name"><tt>CreateUnitByExpression</tt></td><td class="method-params"><tt>
+ (String&nbsp;UnitName, String&nbsp;UnitExpression)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a derived unit. <br>
+<br>
+        
+<p>
+          
+<b>Exceptions thrown (but not limited to):</b>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The reference unit was not found in the model.
+          </p>
+        
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#129">Solid: Accessing Individual Units</a>, <a href="../manual0/JSolid.html#130">Solid: Accessing Individual Units</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>UnitName</b></tt>
+</dt>
+<dd>The unit name. </dd>
+<dt>
+<tt><b>UnitExpression</b></tt>
+</dt>
+<dd>The unit expression. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ComputeRayIntersections">ComputeRayIntersections</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcSelect-Selections.html">Selections</a></tt></td><td class="method-name"><tt>ComputeRayIntersections</tt></td><td class="method-params"><tt>
+ (double&nbsp;ApertureRadius, <a class="type" href="c-wfcModel-Ray.html">Ray</a>&nbsp;Ray)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Returns a list of ray intersections with a model. The function computes the intersection points
+        of both the original ray and its "negative" with the geometry of the model.  The output array is sorted
+        in order of increasing signed distance.
+      <br>
+<br>
+        
+<p>
+          
+<b>Exceptions thrown (but not limited to):</b>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - No objects were found in the workspace.
+          </p>
+        
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#282">Geometry Evaluation: Tracing a Ray</a>, <a href="../manual0/JGeom.html#287">Geometry Evaluation: Tracing a Ray</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ApertureRadius</b></tt>
+</dt>
+<dd>The value of aperture_radius.</dd>
+<dt>
+<tt><b>Ray</b></tt>
+</dt>
+<dd>The starting point of the ray. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CollectParamTablesets">CollectParamTablesets</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcModelItem-ParamTablesets.html">ParamTablesets</a></tt></td><td class="method-name"><tt>CollectParamTablesets</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Obtains all table sets that are available for use in the given model.
+        This includes all sets that are loaded from files setup in this session,
+        and any sets that were previously stored in the model.
+      <br>
+<br>
+        
+<p>
+          
+<b>Exceptions thrown (but not limited to):</b>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - No parameter table sets are available for this model.
+          </p>
+        
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The wfcModelItem::ParamTablesets object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GenerateSelectionsFromCollection">GenerateSelectionsFromCollection</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcSelect-Selections.html">Selections</a></tt></td><td class="method-name"><tt>GenerateSelectionsFromCollection</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcCollection-Collection.html">Collection</a>&nbsp;Collection)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Generates selections based on instructions and rules insided the specified collection object
+      <br>
+<br>
+        
+<p>
+          
+<b>Exceptions thrown (but not limited to):</b>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfMemory.html">XToolkitOutOfMemory</a></tt></tt> - There was a memory error.
+          </p>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitAmbiguous.html">XToolkitAmbiguous</a></tt></tt> - The curve collection chain cannot be regenerated because there is an ambiguity which could not be resolved.
+          </p>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The curve collection chain cannot be regenerated because a reference could not be found while collecting edges/curves/points.
+          </p>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotValid.html">XToolkitNotValid</a></tt></tt> - The checking of the curve collection failed.
+          </p>
+        
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/otk_Collection.html#11">Curve and Surface Collection: The wfcCollection Interface</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Collection</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A sequence of selection objects </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="MarkForSaving">MarkForSaving</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>MarkForSaving</tt></td><td class="method-params"><tt>
+ (String&nbsp;marker)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+<p></p>
+      
+<p>
+        
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataTKError.html">XExternalDataTKError</a></tt></tt> - The function failed.
+        </p>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataInvalidObject.html">XExternalDataInvalidObject</a></tt></tt> - The specified model or class name is invalid.
+        </p>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataClassOrSlotExists.html">XExternalDataClassOrSlotExists</a></tt></tt> - The specified class name already exists.
+        </p>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataNamesTooLong.html">XExternalDataNamesTooLong</a></tt></tt> - The specified class name exceeds the length 32 Chars.
+        </p>
+      
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>marker</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RefreshMdlTree">RefreshMdlTree</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>RefreshMdlTree</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Refreshes the display of the model tree.<br>
+<br>
+        
+<p>
+          
+<b>Exceptions thrown (but not limited to):</b>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The model tree is not present.
+          </p>
+        
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetMdlfileDescriptor">GetMdlfileDescriptor</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcModel-MdlfileDescriptor.html">MdlfileDescriptor</a></tt></td><td class="method-name"><tt>GetMdlfileDescriptor</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a filetype descriptor from the model and returns it.<br>
+<br>
+        The created descriptor has no information about the initial descriptor used to create this model.
+        It contains the model name stripped of its extension, version and location.
+        <p>
+          
+<b>Exceptions thrown (but not limited to):</b>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidPtr.html">XToolkitInvalidPtr</a></tt></tt> - the model argument does not represent a correct model.
+          </p>
+        
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsStandardLocation">IsStandardLocation</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>IsStandardLocation</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Returns true if the model was loaded from a local folder.
+      <br>
+<br>
+        
+<p>
+          
+<b>Exceptions thrown (but not limited to):</b>
+          
+<p>
+            
+<tt><tt><a class="class" href="c-pfcExceptions-XBadArgument.html">XBadArgument</a></tt></tt> - the model is null.
+          </p>
+        
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#77">Models: Model Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DesignateSymbol">DesignateSymbol</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>DesignateSymbol</tt></td><td class="method-params"><tt>
+ (String&nbsp;SymbolName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+<p></p>
+      
+<p>
+        
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoChange.html">XToolkitNoChange</a></tt></tt> - The symbol is already designated.
+        </p>
+      
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#190">Annotations: Annotation Features and Annotations: Designating Dimensions and Symbols</a>, <a href="../manual0/jannot.html#192">Annotations: Annotation Features and Annotations: Designating Dimensions and Symbols</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SymbolName</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UndesignateSymbol">UndesignateSymbol</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>UndesignateSymbol</tt></td><td class="method-params"><tt>
+ (String&nbsp;SymbolName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+      
+<p></p>
+      
+<p>
+        
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoChange.html">XToolkitNoChange</a></tt></tt> - The symbol is not currently designated.
+        </p>
+      
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#192">Annotations: Annotation Features and Annotations: Designating Dimensions and Symbols</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SymbolName</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsDesignatedSymbol">IsDesignatedSymbol</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>IsDesignatedSymbol</tt></td><td class="method-params"><tt>
+ (String&nbsp;SymbolName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#191">Annotations: Annotation Features and Annotations: Designating Dimensions and Symbols</a>, <a href="../manual0/jannot.html#192">Annotations: Annotation Features and Annotations: Designating Dimensions and Symbols</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SymbolName</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="VisitItems">VisitItems</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcClient-Status.html">Status</a></tt></td><td class="method-name"><tt>VisitItems</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcClient-VisitingClient.html">VisitingClient</a>&nbsp;visitingClient, <a class="type" href="c-pfcModelItem-ModelItemType.html">ModelItemType</a>&nbsp;itemType)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+<p></p>
+      
+<p>
+        
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - Either no supported items exist, or they were all filtered out by the filter function.
+        </p>
+      
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JlinkOverview.html#117">Overview of Creo Object TOOLKIT Java: Visit Methods</a>, <a href="../manual0/JlinkOverview.html#119">Overview of Creo Object TOOLKIT Java: Visit Methods</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>visitingClient</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>itemType</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="VisitDetailItems">VisitDetailItems</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcClient-Status.html">Status</a></tt></td><td class="method-name"><tt>VisitDetailItems</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcClient-VisitingClient.html">VisitingClient</a>&nbsp;visitingClient, <a class="type" href="c-pfcDetail-DetailType.html">DetailType</a>&nbsp;detailType, int&nbsp;Sheet)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+<p></p>
+      
+<p>
+        
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - Either no supported items exist, or they were all filtered out by the filter function.
+        </p>
+      
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JlinkOverview.html#119">Overview of Creo Object TOOLKIT Java: Visit Methods</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>visitingClient</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>detailType</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Sheet</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateSurfaceFinish">CreateSurfaceFinish</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcAnnotation-SurfaceFinish.html">SurfaceFinish</a></tt></td><td class="method-name"><tt>CreateSurfaceFinish</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailSymbolInstInstructions.html">DetailSymbolInstInstructions</a>&nbsp;SymbolInstructions, <a class="type" href="c-wfcAnnotation-AnnotationPlane.html">AnnotationPlane</a>&nbsp;AnnotPlane)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>LICENSE: </b>222</tt>
+<br>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Create a surface finish in the specified model. wfcSurfaceFinish::Show() should be called after creating the surface finish in order for the surface finish to be displayed. <br>
+<br>
+<p></p>
+      
+<p>
+        
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidType.html">XToolkitInvalidType</a></tt></tt> - Invalid type of leader or attachment for creation of a surface finish.
+        </p>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitFound.html">XToolkitFound</a></tt></tt> - Leader or attachment to surface which already has a surface finish.
+        </p>
+        
+<p>
+          
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoLicense.html">XToolkitNoLicense</a></tt></tt> - License check failure
+        </p>
+      
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#203">Annotations: Annotation Features and Annotations: Surface Finish Annotations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SymbolInstructions</b></tt>
+</dt>
+<dd>
+        The symbol instance instructions. This data must contain:
+        <p>Zero or more leaders pointing to model surfaces, or, a model surface used for the attachment point.</p>
+        
+<p>An annotation plane (for solid owned surface finishes).</p>
+        
+<p>Optionally, variant texts for the surface finish.</p>
+        
+<p>Consult the Creo Parametric TOOLKIT user's guide for information about how to find the standard surface finish symbols in order to use them during creation.</p>
+      
+</dd>
+<dt>
+<tt><b>AnnotPlane</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created surface finish. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateGTol">CreateGTol</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcGTol-GTol.html">GTol</a></tt></td><td class="method-name"><tt>CreateGTol</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcGTol-GTolType.html">GTolType</a>&nbsp;Type, <a class="type" href="c-wfcGTol-GTolAttach.html">GTolAttach</a>&nbsp;GtolAttach, String&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+    Creates new Gtol with specified placement and value string
+  <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>
+    Type of GTol to create
+  </dd>
+<dt>
+<tt><b>GtolAttach</b></tt>
+</dt>
+<dd>
+    The GTol Attachment
+  </dd>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>
+    The GTol value text
+  </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+    The Created GTol
+  </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateSetDatumTag">CreateSetDatumTag</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcAnnotation-SetDatumTag.html">SetDatumTag</a></tt></td><td class="method-name"><tt>CreateSetDatumTag</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;Selection, String&nbsp;Label, 
+   /*optional*/
+   <a class="type" href="c-wfcAnnotation-AnnotationPlane.html">AnnotationPlane</a>&nbsp;Plane)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>LICENSE: </b>222</tt>
+<br>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Create a new datum feature symbol annotation.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#187">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>, <a href="../manual0/jannot.html#188">Annotations: Annotation Features and Annotations: Accessing Set Datum Tags</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Selection</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Label</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Plane</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Returns wfcSetDatumTag_ptr</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="MatchLayerRules">MatchLayerRules</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>MatchLayerRules</tt></td><td class="method-params"><tt>
+ (String&nbsp;LayerName, <a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;RefModel)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+    Compare the rules of a layer LayerName in ReferenceModel to the rules in layer LayerName in CurrentModel.
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModelitem.html#62">ModelItem: Layer Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>LayerName</b></tt>
+</dt>
+<dd>
+    Layer Name
+  </dd>
+<dt>
+<tt><b>RefModel</b></tt>
+</dt>
+<dd>
+    Reference Model with which rule will be matched
+  </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+    return description
+  </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CopyLayerRules">CopyLayerRules</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>CopyLayerRules</tt></td><td class="method-params"><tt>
+ (String&nbsp;LayerName, <a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;RefModel)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+    Copy the rules of a layer LayerName in ReferenceModel into a layer LayerName in CurrentModel, overwriting any rules &lt;p&gt;&lt;b&gt;Note: &lt;/b&gt;This function copies both the rules definitions and the rules options set interactively (including option "Associative")
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModelitem.html#61">ModelItem: Layer Operations</a>, <a href="../manual0/JModelitem.html#62">ModelItem: Layer Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>LayerName</b></tt>
+</dt>
+<dd>
+    Layer Name
+  </dd>
+<dt>
+<tt><b>RefModel</b></tt>
+</dt>
+<dd>
+    Reference Model from which rule will be copied
+  </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ExecuteLayerRules">ExecuteLayerRules</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>ExecuteLayerRules</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+    Execute the layer rules on the CurrentModel if rules are enabled.
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModelitem.html#60">ModelItem: Layer Operations</a>, <a href="../manual0/JModelitem.html#62">ModelItem: Layer Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

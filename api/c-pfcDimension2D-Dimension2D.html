@@ -1,0 +1,1220 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcDimension2D.Dimension2D"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      220
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcDimension2D.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcDimension2D-Dimension2D.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;Dimension2D</h2>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDimension-Dimension.html">Dimension</a></tt>
+<p></p>
+<tt>
+     package 
+     <b><a href="p-pfcDimension2D.html">com.ptc.pfc.pfcDimension2D</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>Dimension2D</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcDimension-BaseDimension.html">com.ptc.pfc.pfcDimension.BaseDimension</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface represents a dimension or reference dimension in a drawing.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel2D-Model2D.html#CreateDrawingDimension">Model2D.CreateDrawingDimension(DrawingDimCreateInstructions)</a></tt>, <tt><a class="method" href="c-pfcModelItem-ModelItemOwner.html#GetItemById">ModelItemOwner.GetItemById(ModelItemType, int)</a></tt>, <tt><a class="method" href="c-pfcModelItem-ModelItemOwner.html#ListItems">ModelItemOwner.ListItems(/*optional*/ ModelItemType)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-wfcDimension-WDimension2D.html">WDimension2D</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDimension2D-Dimension2D.html">Dimension2D</a></tt></td><td class="method-summary"><tt><a class="method" href="#ConvertToBaseline">ConvertToBaseline</a>
+ (<a class="type" href="c-pfcBase-Vector2D.html">Vector2D</a>&nbsp;Location)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#ConvertLinearDimensionToBaseline">Drawing.ConvertLinearDimensionToBaseline</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Converts a location on a linear drawing dimension to be used as an ordinate baseline dimension.  The linear dimension will be converted to ordinate.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ConvertToLinear">ConvertToLinear</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#ConvertOrdinateDimensionToLinear">Drawing.ConvertOrdinateDimensionToLinear</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Converts an ordinate drawing dimension to a linear dimension.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ConvertToOrdinate">ConvertToOrdinate</a>
+ (<a class="type" href="c-pfcDimension2D-Dimension2D.html">Dimension2D</a>&nbsp;BaselineDimension)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#ConvertLinearDimensionToOrdinate">Drawing.ConvertLinearDimensionToOrdinate</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Converts a linear drawing dimension to ordinate.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#EraseFromModel2D">EraseFromModel2D</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#EraseDimension">Drawing.EraseDimension</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Erases the dimension from drawing permanently.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcSelect-Selections.html">Selections</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetAttachmentPoints">GetAttachmentPoints</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#GetDimensionAttachPoints">Drawing.GetDimensionAttachPoints</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns the attachment locations for a drawing dimension.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDimension2D-Dimension2D.html">Dimension2D</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetBaselineDimension">GetBaselineDimension</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#GetBaselineDimension">Drawing.GetBaselineDimension</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns the baseline dimension for an ordinate drawing dimension.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDimension2D-DimensionSenses.html">DimensionSenses</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetDimensionSenses">GetDimensionSenses</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#GetDimensionSenses">Drawing.GetDimensionSenses</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns the dimension senses for the drawing dimension.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsAssociative">GetIsAssociative</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#IsDimensionAssociative">Drawing.IsDimensionAssociative</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IsAssociative"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Whether or not the dimension is associative.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsDisplayed">GetIsDisplayed</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b>
+          &lt;reference 1 to unknown entity &gt;
+        </tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IsDisplayed"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Whether or not the dimension is current displayed in the drawing.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#GetIsReference">GetIsReference</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDimension-Dimension.html#IsReference">Dimension.IsReference</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Determines if a drawing dimension is a reference dimension.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsToleranceDisplayed">GetIsToleranceDisplayed</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#IsDimensionToleranceDisplayed">Drawing.IsDimensionToleranceDisplayed</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IsToleranceDisplayed"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Whether or not the dimension's tolerance is displayed in the drawing.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcBase-Point3D.html">Point3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#Location">GetLocation</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#SetDimensionLocation">Drawing.SetDimensionLocation</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Location"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The placement location of the dimension.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDimension2D-OrientationHint.html">OrientationHint</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetOrientationHint">GetOrientationHint</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#GetDimensionOrientHint">Drawing.GetDimensionOrientHint</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns the orientation hint used for placing the drawing dimension.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDimension-DimTolerance.html">DimTolerance</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetTolerance">GetTolerance</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDimension-Dimension.html#Tolerance">Dimension.GetTolerance</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Retrieves parameters of a specified dimension.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetView">GetView</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#GetDimensionView">Drawing.GetDimensionView</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns the view associated with a drawing dimension.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Location">SetLocation</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;value)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#SetDimensionLocation">Drawing.SetDimensionLocation</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Location"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The placement location of the dimension.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetTolerance">SetTolerance</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDimension-DimTolerance.html">DimTolerance</a>&nbsp;Limits)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDimension-Dimension.html#Tolerance">Dimension.GetTolerance</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sets the tolerance of the specified dimension of the object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SwitchView">SwitchView</a>
+ (<a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;View)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#SwitchDimensionView">Drawing.SwitchDimensionView</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Switches a drawing dimension to a new view.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-BaseParameter.html"><tt>com.ptc.pfc.pfcModelItem.BaseParameter</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-BaseParameter.html#Value"><tt>GetValue</tt></a>,
+      <a class="method" href="c-pfcModelItem-BaseParameter.html#Value"><tt>SetValue</tt></a>,
+      <a class="method" href="c-pfcModelItem-BaseParameter.html#IsDesignated"><tt>GetIsDesignated</tt></a>,
+      <a class="method" href="c-pfcModelItem-BaseParameter.html#IsDesignated"><tt>SetIsDesignated</tt></a>,
+      <a class="method" href="c-pfcModelItem-BaseParameter.html#IsRelationDriven"><tt>GetIsRelationDriven</tt></a>,
+      <a class="method" href="c-pfcModelItem-BaseParameter.html#IsModified"><tt>GetIsModified</tt></a>,
+      <a class="method" href="c-pfcModelItem-BaseParameter.html#ResetFromBackup"><tt>ResetFromBackup</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Child.html"><tt>com.ptc.pfc.pfcObject.Child</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+      <a class="method" href="c-pfcObject-Child.html#OId"><tt>GetOId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcBase-ActionSource.html"><tt>com.ptc.pfc.pfcBase.ActionSource</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-RelationOwner.html"><tt>com.ptc.pfc.pfcModelItem.RelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Parent.html"><tt>com.ptc.pfc.pfcObject.Parent</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ParameterOwner.html"><tt>com.ptc.pfc.pfcModelItem.ParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ModelItem.html"><tt>com.ptc.pfc.pfcModelItem.ModelItem</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcDimension-BaseDimension.html"><tt>com.ptc.pfc.pfcDimension.BaseDimension</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcDimension-BaseDimension.html#DimValue"><tt>GetDimValue</tt></a>,
+      <a class="method" href="c-pfcDimension-BaseDimension.html#DimValue"><tt>SetDimValue</tt></a>,
+      <a class="method" href="c-pfcDimension-BaseDimension.html#DimType"><tt>GetDimType</tt></a>,
+      <a class="method" href="c-pfcDimension-BaseDimension.html#Symbol"><tt>GetSymbol</tt></a>,
+      <a class="method" href="c-pfcDimension-BaseDimension.html#Symbol"><tt>SetSymbol</tt></a>,
+      <a class="method" href="c-pfcDimension-BaseDimension.html#Texts"><tt>GetTexts</tt></a>,
+      <a class="method" href="c-pfcDimension-BaseDimension.html#Texts"><tt>SetTexts</tt></a>,
+      <a class="method" href="c-pfcDimension-BaseDimension.html#ExtendsInNegativeDirection"><tt>GetExtendsInNegativeDirection</tt></a>,
+      <a class="method" href="c-pfcDimension-BaseDimension.html#Show"><tt>Show</tt></a>,
+      <a class="method" href="c-pfcDimension-BaseDimension.html#Erase"><tt>Erase</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetIsReference">GetIsReference</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetIsReference</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDimension-Dimension.html#IsReference">Dimension.IsReference</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Determines if a drawing dimension is a reference dimension.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#164">Drawings: Drawing Dimensions Information</a>, <a href="../manual0/jdrawfns.html#178">Drawings: Drawing Dimensions Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+<tt>true</tt> if the dimension is a reference dimension, otherwise <tt>false</tt>.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetTolerance">SetTolerance</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetTolerance</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDimension-DimTolerance.html">DimTolerance</a>&nbsp;Limits)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDimension-Dimension.html#Tolerance">Dimension.GetTolerance</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Sets the tolerance of the specified dimension of the object.<br>
+<br> A null value indicates a nominal tolerance. <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Limits</b></tt>
+</dt>
+<dd> The dimension's upper and lower limit. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetTolerance">GetTolerance</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDimension-DimTolerance.html">DimTolerance</a></tt></td><td class="method-name"><tt>GetTolerance</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDimension-Dimension.html#Tolerance">Dimension.GetTolerance</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Retrieves parameters of a specified dimension.<br>
+<br> A null value indicates a nominal tolerance.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#172">Drawings: Drawing Dimensions Information</a>, <a href="../manual0/jdrawfns.html#178">Drawings: Drawing Dimensions Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The upper and lower limit of the dimension.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsAssociative">GetIsAssociative</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetIsAssociative</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#IsDimensionAssociative">Drawing.IsDimensionAssociative</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Whether or not the dimension is associative.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsToleranceDisplayed">GetIsToleranceDisplayed</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetIsToleranceDisplayed</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#IsDimensionToleranceDisplayed">Drawing.IsDimensionToleranceDisplayed</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Whether or not the dimension's tolerance is displayed in the drawing.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetBaselineDimension">GetBaselineDimension</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDimension2D-Dimension2D.html">Dimension2D</a></tt></td><td class="method-name"><tt>GetBaselineDimension</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#GetBaselineDimension">Drawing.GetBaselineDimension</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns the baseline dimension for an ordinate drawing dimension.
+<br>
+<br>The drawing must be displayed.
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The ordinate baseline dimension, or <tt>null</tt> if the dimension is not an ordinate dimension.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetDimensionSenses">GetDimensionSenses</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDimension2D-DimensionSenses.html">DimensionSenses</a></tt></td><td class="method-name"><tt>GetDimensionSenses</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#GetDimensionSenses">Drawing.GetDimensionSenses</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns the dimension senses for the drawing dimension.
+<br>
+<br>Only applicable for dimensions created in drawing mode. 
+This method does not support drawing dimensions created from intersections of geometric entities.
+   <p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+  	
+<p>
+<tt><tt>
+   &lt;reference 6 to unknown entity pfcExceptions::pfcXInAMethod&gt;
+  </tt></tt>
+</p>
+ 
+</p>
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><tt><a class="class" href="c-pfcDimension2D-EmptyDimensionSense.html">EmptyDimensionSense</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-PointDimensionSense.html">PointDimensionSense</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-SplinePointDimensionSense.html">SplinePointDimensionSense</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-TangentIndexDimensionSense.html">TangentIndexDimensionSense</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-LinAOCTangentDimensionSense.html">LinAOCTangentDimensionSense</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-AngleDimensionSense.html">AngleDimensionSense</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-PointToAngleDimensionSense.html">PointToAngleDimensionSense</a></tt></tt>, <tt><a class="method" href="c-pfcDimension2D-Dimension2D.html#GetOrientationHint">Dimension2D.GetOrientationHint()</a></tt>, <tt><a class="method" href="c-pfcDimension2D-Dimension2D.html#GetAttachmentPoints">Dimension2D.GetAttachmentPoints()</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Sequence of dimension senses, describing how the dimension is attached at each attachment returned from <tt><a class="method" href="c-pfcDimension2D-Dimension2D.html#GetAttachmentPoints">Dimension2D.GetAttachmentPoints()</a></tt>.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetAttachmentPoints">GetAttachmentPoints</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcSelect-Selections.html">Selections</a></tt></td><td class="method-name"><tt>GetAttachmentPoints</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#GetDimensionAttachPoints">Drawing.GetDimensionAttachPoints</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns the attachment locations for a drawing dimension.
+<br>
+<br>Applicable only for dimensions created in drawing mode.  
+This function does not support dimensions created at intersection points of entities.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcDimension2D-Dimension2D.html#GetDimensionSenses">Dimension2D.GetDimensionSenses()</a></tt>, <tt><a class="method" href="c-pfcDimension2D-Dimension2D.html#GetOrientationHint">Dimension2D.GetOrientationHint()</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Sequence of attachment points.  For information about how these attachments are interpreted, see the dimension senses array returned from <tt><a class="method" href="c-pfcDimension2D-Dimension2D.html#GetDimensionSenses">Dimension2D.GetDimensionSenses()</a></tt>.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetOrientationHint">GetOrientationHint</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDimension2D-OrientationHint.html">OrientationHint</a></tt></td><td class="method-name"><tt>GetOrientationHint</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#GetDimensionOrientHint">Drawing.GetDimensionOrientHint</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns the orientation hint used for placing the drawing dimension.
+<br>
+<br>Only applicable for dimensions created in drawing mode. 
+This function does not support drawing dimensions created from intersections of geometric entities.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcDimension2D-Dimension2D.html#GetAttachmentPoints">Dimension2D.GetAttachmentPoints()</a></tt>, <tt><a class="method" href="c-pfcDimension2D-Dimension2D.html#GetDimensionSenses">Dimension2D.GetDimensionSenses()</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The orientation hint, which determines how Creo Parametric will orient the dimension with respect to the attachment points.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ConvertToLinear">ConvertToLinear</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>ConvertToLinear</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#ConvertOrdinateDimensionToLinear">Drawing.ConvertOrdinateDimensionToLinear</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Converts an ordinate drawing dimension to a linear dimension.
+<br>
+<br>The drawing must be displayed.
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ConvertToOrdinate">ConvertToOrdinate</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>ConvertToOrdinate</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDimension2D-Dimension2D.html">Dimension2D</a>&nbsp;BaselineDimension)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#ConvertLinearDimensionToOrdinate">Drawing.ConvertLinearDimensionToOrdinate</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Converts a linear drawing dimension to ordinate.
+<br>
+<br>The drawing must be displayed.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>BaselineDimension</b></tt>
+</dt>
+<dd>The ordinate baseline dimension used for the conversion.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ConvertToBaseline">ConvertToBaseline</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDimension2D-Dimension2D.html">Dimension2D</a></tt></td><td class="method-name"><tt>ConvertToBaseline</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Vector2D.html">Vector2D</a>&nbsp;Location)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#ConvertLinearDimensionToBaseline">Drawing.ConvertLinearDimensionToBaseline</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Converts a location on a linear drawing dimension to be used as an ordinate baseline dimension.  The linear dimension will be converted to ordinate.
+<br>
+<br>The drawing must be displayed.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Location</b></tt>
+</dt>
+<dd>A point on one of the extension line of the linear 
+   dimension specified in screen coordinates.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The newly created baseline dimension.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Location">GetLocation/SetLocation</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcBase-Point3D.html">Point3D</a></tt></td><td class="method-name"><tt>GetLocation</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetLocation</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#SetDimensionLocation">Drawing.SetDimensionLocation</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The placement location of the dimension.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#182">Drawings: Drawing Dimensions Operations</a>, <a href="../manual0/jdrawfns.html#185">Drawings: Drawing Dimensions Operations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetView">GetView</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a></tt></td><td class="method-name"><tt>GetView</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#GetDimensionView">Drawing.GetDimensionView</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns the view associated with a drawing dimension.
+<br>
+<br>Applies to dimensions stored in the solid or in the drawing.
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The drawing view where the dimension is displayed, or <tt>null</tt>, if the dimension is not attached to a drawing view.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SwitchView">SwitchView</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SwitchView</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;View)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#SwitchDimensionView">Drawing.SwitchDimensionView</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Switches a drawing dimension to a new view.
+<br>
+<br>Applies to dimensions stored in the solid or in the drawing.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>View</b></tt>
+</dt>
+<dd>The new drawing view for the dimension.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsDisplayed">GetIsDisplayed</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetIsDisplayed</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b>
+          &lt;reference 1 to unknown entity &gt;
+        </tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Whether or not the dimension is current displayed in the drawing.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="EraseFromModel2D">EraseFromModel2D</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>EraseFromModel2D</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDrawing-Drawing.html#EraseDimension">Drawing.EraseDimension</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Erases the dimension from drawing permanently.<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

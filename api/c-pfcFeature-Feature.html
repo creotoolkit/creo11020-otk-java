@@ -1,0 +1,1374 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcFeature.Feature"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      304
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcFeature.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcFeature-Feature.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;Feature</h2>
+<tt>
+     package 
+     <b><a href="p-pfcFeature.html">com.ptc.pfc.pfcFeature</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>Feature</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcModelItem-ModelItem.html">com.ptc.pfc.pfcModelItem.ModelItem</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class defines a feature.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcSolid-Solid.html#GetFeatureById">Solid.GetFeatureById(int)</a></tt>, <tt><a class="method" href="c-pfcSolid-Solid.html#GetFeatureByName">Solid.GetFeatureByName(String)</a></tt>, <tt><a class="method" href="c-pfcSolid-Solid.html#ListFeaturesByType">Solid.ListFeaturesByType(/*optional*/ Boolean, /*optional*/ FeatureType)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-pfcComponentFeat-ComponentFeat.html">ComponentFeat</a></tt>, 
+        <tt><a class="class" href="c-pfcDatumAxisFeat-DatumAxisFeat.html">DatumAxisFeat</a></tt>, 
+        <tt><a class="class" href="c-pfcCurveFeat-CurveFeat.html">CurveFeat</a></tt>, 
+        <tt><a class="class" href="c-pfcCoordSysFeat-CoordSysFeat.html">CoordSysFeat</a></tt>, 
+        <tt><a class="class" href="c-pfcDatumPlaneFeat-DatumPlaneFeat.html">DatumPlaneFeat</a></tt>, 
+        <tt><a class="class" href="c-pfcRoundFeat-RoundFeat.html">RoundFeat</a></tt>, 
+        <tt><a class="class" href="c-pfcDatumPointFeat-DatumPointFeat.html">DatumPointFeat</a></tt>, 
+        <tt><a class="class" href="c-wfcFeature-WFeature.html">WFeature</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFeature-DeleteOperation.html">DeleteOperation</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateDeleteOp">CreateDeleteOp</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a feature delete operation.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFeature-ReorderAfterOperation.html">ReorderAfterOperation</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateReorderAfterOp">CreateReorderAfterOp</a>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;AfterFeat)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates an operation that will reorder the features after the specified feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFeature-ReorderBeforeOperation.html">ReorderBeforeOperation</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateReorderBeforeOp">CreateReorderBeforeOp</a>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;BeforeFeat)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates an operation that will reorder the features before the specified feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFeature-ResumeOperation.html">ResumeOperation</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateResumeOp">CreateResumeOp</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new resume operation object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFeature-SuppressOperation.html">SuppressOperation</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateSuppressOp">CreateSuppressOp</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new suppress operation object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#FeatSubType">GetFeatSubType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "FeatSubType"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The feature subtype, i.e. "Extrude" or "Revolve" for a protrusion.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFeature-FeatureType.html">FeatureType</a></tt></td><td class="method-summary"><tt><a class="method" href="#FeatType">GetFeatType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "FeatType"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The feature type.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#FeatTypeName">GetFeatTypeName</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "FeatTypeName"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The feature type expressed as a string.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFeature-FeatureGroup.html">FeatureGroup</a></tt></td><td class="method-summary"><tt><a class="method" href="#Group">GetGroup</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Group"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The group, if the feature is a member of a group.  Otherwise this will be <tt>null</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFeature-FeatureGroup.html">FeatureGroup</a></tt></td><td class="method-summary"><tt><a class="method" href="#GroupDirectHeader">GetGroupDirectHeader</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "GroupDirectHeader"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFeature-GroupPattern.html">GroupPattern</a></tt></td><td class="method-summary"><tt><a class="method" href="#GroupPattern">GetGroupPattern</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "GroupPattern"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The group pattern, if the feature is a member of a group pattern.  Otherwise this will be <tt>null</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFeature-GroupPatternStatus.html">GroupPatternStatus</a></tt></td><td class="method-summary"><tt><a class="method" href="#GroupPatternStatus">GetGroupPatternStatus</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "GroupPatternStatus"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The group pattern status.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFeature-GroupStatus.html">GroupStatus</a></tt></td><td class="method-summary"><tt><a class="method" href="#GroupStatus">GetGroupStatus</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "GroupStatus"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The group status.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsEmbedded">GetIsEmbedded</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IsEmbedded"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A Boolean flag that specifies whether the feature 
+   is an embedded datum or not.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsGroupMember">GetIsGroupMember</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IsGroupMember"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Retrieves the group status of the specified feature.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsReadonly">GetIsReadonly</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IsReadonly"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A Boolean flag that specifies whether the feature is read only</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsVisible">GetIsVisible</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IsVisible"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A Boolean flag that specifies whether the feature is visible.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Integer</tt></td><td class="method-summary"><tt><a class="method" href="#Number">GetNumber</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Number"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The regeneration number of the feature.  If the feature is suppressed or unregenerated, this will be <tt>null</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFeature-FeaturePattern.html">FeaturePattern</a></tt></td><td class="method-summary"><tt><a class="method" href="#Pattern">GetPattern</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Pattern"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The pattern, if the feature is a member of a pattern.  Otherwise this will be <tt>null</tt>. This function should only be used for simple patttern and use GetPatternByType function for nested pattern.
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFeature-FeaturePattern.html">FeaturePattern</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetPatternByType">GetPatternByType</a>
+ (<a class="type" href="c-pfcFeature-PatternType.html">PatternType</a>&nbsp;Type)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFeature-PatternStatus.html">PatternStatus</a></tt></td><td class="method-summary"><tt><a class="method" href="#PatternStatus">GetPatternStatus</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PatternStatus"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The pattern status.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFeature-FeatureStatus.html">FeatureStatus</a></tt></td><td class="method-summary"><tt><a class="method" href="#Status">GetStatus</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Status"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The feature status.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#VersionStamp">GetVersionStamp</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "VersionStamp"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The version stamp</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFeature-Features.html">Features</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListChildren">ListChildren</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Lists the children of the feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFeature-Features.html">Features</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListParents">ListParents</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Lists the parents of the feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ModelItems.html">ModelItems</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListSubItems">ListSubItems</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ModelItemType.html">ModelItemType</a>&nbsp;Type)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Lists the component model items that make up the feature.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Child.html"><tt>com.ptc.pfc.pfcObject.Child</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+      <a class="method" href="c-pfcObject-Child.html#OId"><tt>GetOId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcBase-ActionSource.html"><tt>com.ptc.pfc.pfcBase.ActionSource</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-RelationOwner.html"><tt>com.ptc.pfc.pfcModelItem.RelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Parent.html"><tt>com.ptc.pfc.pfcObject.Parent</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ParameterOwner.html"><tt>com.ptc.pfc.pfcModelItem.ParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ModelItem.html"><tt>com.ptc.pfc.pfcModelItem.ModelItem</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FeatType">GetFeatType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFeature-FeatureType.html">FeatureType</a></tt></td><td class="method-name"><tt>GetFeatType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The feature type.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#29">Features: Feature Information</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FeatTypeName">GetFeatTypeName</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetFeatTypeName</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The feature type expressed as a string.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#35">Features: Feature Information</a>, <a href="../manual0/JFeat.html#56">Features: Feature Information</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FeatSubType">GetFeatSubType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetFeatSubType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The feature subtype, i.e. "Extrude" or "Revolve" for a protrusion.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#36">Features: Feature Information</a>, <a href="../manual0/JFeat.html#56">Features: Feature Information</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Status">GetStatus</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFeature-FeatureStatus.html">FeatureStatus</a></tt></td><td class="method-name"><tt>GetStatus</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The feature status.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#30">Features: Feature Information</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Group">GetGroup</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFeature-FeatureGroup.html">FeatureGroup</a></tt></td><td class="method-name"><tt>GetGroup</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The group, if the feature is a member of a group.  Otherwise this will be <tt>null</tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#107">Features: Feature Groups and Patterns</a>, <a href="../manual0/JFeat.html#118">Features: Feature Groups and Patterns</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Pattern">GetPattern</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFeature-FeaturePattern.html">FeaturePattern</a></tt></td><td class="method-name"><tt>GetPattern</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The pattern, if the feature is a member of a pattern.  Otherwise this will be <tt>null</tt>. This function should only be used for simple patttern and use GetPatternByType function for nested pattern.
+    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#108">Features: Feature Groups and Patterns</a>, <a href="../manual0/JFeat.html#118">Features: Feature Groups and Patterns</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GroupPattern">GetGroupPattern</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFeature-GroupPattern.html">GroupPattern</a></tt></td><td class="method-name"><tt>GetGroupPattern</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The group pattern, if the feature is a member of a group pattern.  Otherwise this will be <tt>null</tt>.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetPatternByType">GetPatternByType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFeature-FeaturePattern.html">FeaturePattern</a></tt></td><td class="method-name"><tt>GetPatternByType</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFeature-PatternType.html">PatternType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#109">Features: Feature Groups and Patterns</a>, <a href="../manual0/JFeat.html#118">Features: Feature Groups and Patterns</a>, <a href="../manual0/atechsum_java_creo_11020.html#2">Technical Summary of Changes for Creo 11.0.2.0: Features</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PatternStatus">GetPatternStatus</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFeature-PatternStatus.html">PatternStatus</a></tt></td><td class="method-name"><tt>GetPatternStatus</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The pattern status.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#110">Features: Feature Groups and Patterns</a>, <a href="../manual0/JFeat.html#118">Features: Feature Groups and Patterns</a>, <a href="../manual0/atechsum_java_creo_11020.html#2">Technical Summary of Changes for Creo 11.0.2.0: Features</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GroupStatus">GetGroupStatus</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFeature-GroupStatus.html">GroupStatus</a></tt></td><td class="method-name"><tt>GetGroupStatus</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The group status.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#111">Features: Feature Groups and Patterns</a>, <a href="../manual0/JFeat.html#118">Features: Feature Groups and Patterns</a>, <a href="../manual0/atechsum_java_creo_11020.html#2">Technical Summary of Changes for Creo 11.0.2.0: Features</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GroupPatternStatus">GetGroupPatternStatus</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFeature-GroupPatternStatus.html">GroupPatternStatus</a></tt></td><td class="method-name"><tt>GetGroupPatternStatus</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The group pattern status.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#112">Features: Feature Groups and Patterns</a>, <a href="../manual0/JFeat.html#118">Features: Feature Groups and Patterns</a>, <a href="../manual0/atechsum_java_creo_11020.html#2">Technical Summary of Changes for Creo 11.0.2.0: Features</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsVisible">GetIsVisible</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetIsVisible</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>A Boolean flag that specifies whether the feature is visible.<br>
+<br>This flag distinguishes visible features from internal features. 
+    Internal features are invisible features used for construction purposes.
+    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#31">Features: Feature Information</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsReadonly">GetIsReadonly</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetIsReadonly</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>A Boolean flag that specifies whether the feature is read only<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#32">Features: Feature Information</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Number">GetNumber</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Integer</tt></td><td class="method-name"><tt>GetNumber</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The regeneration number of the feature.  If the feature is suppressed or unregenerated, this will be <tt>null</tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#34">Features: Feature Information</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="VersionStamp">GetVersionStamp</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetVersionStamp</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The version stamp<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsGroupMember">GetIsGroupMember</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetIsGroupMember</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Retrieves the group status of the specified feature.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsEmbedded">GetIsEmbedded</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetIsEmbedded</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>A Boolean flag that specifies whether the feature 
+   is an embedded datum or not.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#33">Features: Feature Information</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateSuppressOp">CreateSuppressOp</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFeature-SuppressOperation.html">SuppressOperation</a></tt></td><td class="method-name"><tt>CreateSuppressOp</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new suppress operation object.
+<br>
+<br>The return value must be passed as a member of a <tt><tt><a class="class" href="c-pfcFeature-FeatureOperations.html">FeatureOperations</a></tt></tt> sequence to the method <tt><a class="method" href="c-pfcSolid-Solid.html#ExecuteFeatureOps">Solid.ExecuteFeatureOps(FeatureOperations, /*optional*/ RegenInstructions)</a></tt> .
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#77">Features: Feature Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new suppress operation object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateResumeOp">CreateResumeOp</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFeature-ResumeOperation.html">ResumeOperation</a></tt></td><td class="method-name"><tt>CreateResumeOp</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new resume operation object.
+<br>
+<br>The return value must be passed as a member of a <tt><tt><a class="class" href="c-pfcFeature-FeatureOperations.html">FeatureOperations</a></tt></tt> sequence to the method <tt><a class="method" href="c-pfcSolid-Solid.html#ExecuteFeatureOps">Solid.ExecuteFeatureOps(FeatureOperations, /*optional*/ RegenInstructions)</a></tt> .
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#86">Features: Feature Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new resume operation object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateDeleteOp">CreateDeleteOp</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFeature-DeleteOperation.html">DeleteOperation</a></tt></td><td class="method-name"><tt>CreateDeleteOp</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a feature delete operation.
+<br>
+<br>The return value must be passed as a member of a <tt><tt><a class="class" href="c-pfcFeature-FeatureOperations.html">FeatureOperations</a></tt></tt> sequence to the method <tt><a class="method" href="c-pfcSolid-Solid.html#ExecuteFeatureOps">Solid.ExecuteFeatureOps(FeatureOperations, /*optional*/ RegenInstructions)</a></tt> .
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#81">Features: Feature Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The deletion operation</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateReorderBeforeOp">CreateReorderBeforeOp</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFeature-ReorderBeforeOperation.html">ReorderBeforeOperation</a></tt></td><td class="method-name"><tt>CreateReorderBeforeOp</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;BeforeFeat)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates an operation that will reorder the features before the specified feature.
+<br>
+<br>The return value must be passed as a member of a <tt><tt><a class="class" href="c-pfcFeature-FeatureOperations.html">FeatureOperations</a></tt></tt> sequence to the method <tt><a class="method" href="c-pfcSolid-Solid.html#ExecuteFeatureOps">Solid.ExecuteFeatureOps(FeatureOperations, /*optional*/ RegenInstructions)</a></tt> .
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#88">Features: Feature Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>BeforeFeat</b></tt>
+</dt>
+<dd>The feature before which you want to reorder the features</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new <i>ReorderBeforeOperation</i> object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateReorderAfterOp">CreateReorderAfterOp</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFeature-ReorderAfterOperation.html">ReorderAfterOperation</a></tt></td><td class="method-name"><tt>CreateReorderAfterOp</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;AfterFeat)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates an operation that will reorder the features after the specified feature.
+<br>
+<br>The return value must be passed as a member of a <tt><tt><a class="class" href="c-pfcFeature-FeatureOperations.html">FeatureOperations</a></tt></tt> sequence to the method <tt><a class="method" href="c-pfcSolid-Solid.html#ExecuteFeatureOps">Solid.ExecuteFeatureOps(FeatureOperations, /*optional*/ RegenInstructions)</a></tt> .
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#90">Features: Feature Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AfterFeat</b></tt>
+</dt>
+<dd>The feature after which you want to reorder the features</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new <i>ReorderAfterOperation</i> object </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListChildren">ListChildren</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFeature-Features.html">Features</a></tt></td><td class="method-name"><tt>ListChildren</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Lists the children of the feature.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#12">Features: Access to Features</a>, <a href="../manual0/JFeat.html#23">Features: Access to Features</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The list of first-generation children features.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListParents">ListParents</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFeature-Features.html">Features</a></tt></td><td class="method-name"><tt>ListParents</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Lists the parents of the feature.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#13">Features: Access to Features</a>, <a href="../manual0/JFeat.html#23">Features: Access to Features</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The list of first-generation parents features.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListSubItems">ListSubItems</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ModelItems.html">ModelItems</a></tt></td><td class="method-name"><tt>ListSubItems</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ModelItemType.html">ModelItemType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Lists the component model items that make up the feature.
+<br>
+<br>
+      Following are the subitems that can get listed with this method: 
+      ITEM_SURFACE, ITEM_EDGE, ITEM_QUILT, ITEM_CURVE, ITEM_POINT, ITEM_AXIS, ITEM_COORD_SYS and ITEM_DIMENSION.
+    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModelitem.html#11">ModelItem: Getting ModelItem Objects</a>, <a href="../manual0/JModelitem.html#17">ModelItem: Getting ModelItem Objects</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The type of subitem you want to find </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The list of subitems of the specified type </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GroupDirectHeader">GetGroupDirectHeader</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFeature-FeatureGroup.html">FeatureGroup</a></tt></td><td class="method-name"><tt>GetGroupDirectHeader</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#14">Features: Access to Features</a>, <a href="../manual0/JFeat.html#23">Features: Access to Features</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

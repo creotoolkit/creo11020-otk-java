@@ -1,0 +1,1197 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcSection.Section"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      614
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcSection.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcSection-Section.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;Section</h2>
+<tt>
+     package 
+     <b><a href="p-wfcSection.html">com.ptc.wfc.wfcSection</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>Section</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-wfcModel-WModel.html">com.ptc.wfc.wfcModel.WModel</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="bold" href="c-pfcSection-Section2D.html">com.ptc.pfc.pfcSection.Section2D</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>
+    This interface represents both Section2D and Section3D.
+  <br>
+<br>This is the actual type of in Object Toolkit to represent models of pfcMDL_2D_SECTION type.<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>int</tt></td><td class="method-summary"><tt><a class="method" href="#AddEntity">AddEntity</a>
+ (<a class="type" href="c-wfcSection-SectionEntity.html">SectionEntity</a>&nbsp;Ent)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Add an entity to section.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AutoDimension">AutoDimension</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DeleteEntity">DeleteEntity</a>
+ (int&nbsp;EntId)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Delete an entity from section.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcSection-SectionEntity.html">SectionEntity</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetEntity">GetEntity</a>
+ (int&nbsp;EntId)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get an entity from section.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-stdcols-intseq.html">intseq</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetEntityIds">GetEntityIds</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get Identifier of all valid entities in the section</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#GetEpsilon">GetEpsilon</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Gets epsilon value of the section</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#GetIntentManagerMode">GetIntentManagerMode</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Check if Intent Manager mode is used for the specified section</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcBase-Matrix3D.html">Matrix3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetLocation">GetLocation</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Gets location of the section</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-summary"><tt><a class="method" href="#GetName">GetName</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Gets name of the section</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcSection-SectionDimIds.html">SectionDimIds</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetSectionDimensions">GetSectionDimensions</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Returns corresponding arrays of section dimension identifiers and solid dimension identifiers.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcSection-SectionEntities.html">SectionEntities</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListSectionEntities">ListSectionEntities</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Lists entities present in the section</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Regenerate">Regenerate</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ReplaceEntity">ReplaceEntity</a>
+ (int&nbsp;OriginalEntId, int&nbsp;NewEntId)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Replaces an entity from the specified section with another entity from the same section (for redefine purposes).</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetActive">SetActive</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>	Set a copy of the section to be a current active sketcher section. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetEpsilon">SetEpsilon</a>
+ (double&nbsp;Value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sets epsilon value of the section</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetIntentManagerMode">SetIntentManagerMode</a>
+ (boolean&nbsp;Value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set Intent manager mode ON or OFF.Section conversion invoking section resolve is done here.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetName">SetName</a>
+ (String&nbsp;Name)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sets name of the section</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcBase-ActionSource.html"><tt>com.ptc.pfc.pfcBase.ActionSource</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Parent.html"><tt>com.ptc.pfc.pfcObject.Parent</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ParameterOwner.html"><tt>com.ptc.pfc.pfcModelItem.ParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcModelItem-WParameterOwner.html"><tt>com.ptc.wfc.wfcModelItem.WParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcModelItem-WParameterOwner.html#ExportParameterTable"><tt>ExportParameterTable</tt></a>,
+      <a class="method" href="c-wfcModelItem-WParameterOwner.html#ApplyParameterTableset"><tt>ApplyParameterTableset</tt></a>,
+      <a class="method" href="c-wfcModelItem-WParameterOwner.html#MathcadParametersSet"><tt>MathcadParametersSet</tt></a>,
+      <a class="method" href="c-wfcModelItem-WParameterOwner.html#MathcadInputParametersGet"><tt>MathcadInputParametersGet</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-RelationOwner.html"><tt>com.ptc.pfc.pfcModelItem.RelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcModelItem-WRelationOwner.html"><tt>com.ptc.wfc.wfcModelItem.WRelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcModelItem-WRelationOwner.html#GetRelationConstraints"><tt>GetRelationConstraints</tt></a>,
+      <a class="method" href="c-wfcModelItem-WRelationOwner.html#UnitsUsed"><tt>UnitsUsed</tt></a>,
+      <a class="method" href="c-wfcModelItem-WRelationOwner.html#UseUnits"><tt>UseUnits</tt></a>,
+      <a class="method" href="c-wfcModelItem-WRelationOwner.html#EvaluateExpressionWithUnits"><tt>EvaluateExpressionWithUnits</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ModelItemOwner.html"><tt>com.ptc.pfc.pfcModelItem.ModelItemOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ModelItemOwner.html#GetItemByName"><tt>GetItemByName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItemOwner.html#GetItemById"><tt>GetItemById</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItemOwner.html#ListItems"><tt>ListItems</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcView-ViewOwner.html"><tt>com.ptc.pfc.pfcView.ViewOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcView-ViewOwner.html#RetrieveView"><tt>RetrieveView</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#GetView"><tt>GetView</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#SaveView"><tt>SaveView</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#GetCurrentViewTransform"><tt>GetCurrentViewTransform</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#SetCurrentViewTransform"><tt>SetCurrentViewTransform</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#CurrentViewRotate"><tt>CurrentViewRotate</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#ListViews"><tt>ListViews</tt></a>,
+      <a class="method" href="c-pfcView-ViewOwner.html#GetCurrentView"><tt>GetCurrentView</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Child.html"><tt>com.ptc.pfc.pfcObject.Child</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+      <a class="method" href="c-pfcObject-Child.html#OId"><tt>GetOId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModel-Model.html"><tt>com.ptc.pfc.pfcModel.Model</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModel-Model.html#Descr"><tt>GetDescr</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#RelationId"><tt>GetRelationId</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsModified"><tt>GetIsModified</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#VersionStamp"><tt>GetVersionStamp</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Revision"><tt>GetRevision</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Version"><tt>GetVersion</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Branch"><tt>GetBranch</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ReleaseLevel"><tt>GetReleaseLevel</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CommonName"><tt>GetCommonName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CommonName"><tt>SetCommonName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsCommonNameModifiable"><tt>IsCommonNameModifiable</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#FullName"><tt>GetFullName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#InstanceName"><tt>GetInstanceName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#GenericName"><tt>GetGenericName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Type"><tt>GetType</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#FileName"><tt>GetFileName</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Backup"><tt>Backup</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Copy"><tt>Copy</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CopyAndRetrieve"><tt>CopyAndRetrieve</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Rename"><tt>Rename</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Save"><tt>Save</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Erase"><tt>Erase</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#EraseWithDependencies"><tt>EraseWithDependencies</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Delete"><tt>Delete</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Display"><tt>Display</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#DisplayInNewWindow"><tt>DisplayInNewWindow</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ListDependencies"><tt>ListDependencies</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ListDeclaredModels"><tt>ListDeclaredModels</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CreateLayer"><tt>CreateLayer</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Export"><tt>Export</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Import"><tt>Import</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#AccessExternalData"><tt>AccessExternalData</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#TerminateExternalData"><tt>TerminateExternalData</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CheckIsSaveAllowed"><tt>CheckIsSaveAllowed</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CheckIsModifiable"><tt>CheckIsModifiable</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#Origin"><tt>GetOrigin</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#PostRegenerationRelations"><tt>GetPostRegenerationRelations</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#PostRegenerationRelations"><tt>SetPostRegenerationRelations</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#RegeneratePostRegenerationRelations"><tt>RegeneratePostRegenerationRelations</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#DeletePostRegenerationRelations"><tt>DeletePostRegenerationRelations</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#CleanupDependencies"><tt>CleanupDependencies</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsNativeModel"><tt>IsNativeModel</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ExportIntf3D"><tt>ExportIntf3D</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#SetIntf3DLayerSetupFile"><tt>SetIntf3DLayerSetupFile</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsIntf3DLayerSetupFileIgnored"><tt>IsIntf3DLayerSetupFileIgnored</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#IsIntf3DCsysIgnored"><tt>IsIntf3DCsysIgnored</tt></a>,
+      <a class="method" href="c-pfcModel-Model.html#ClearIntf3DModelData"><tt>ClearIntf3DModelData</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcModel-WModel.html"><tt>com.ptc.wfc.wfcModel.WModel</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcModel-WModel.html#VerifyATB"><tt>VerifyATB</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#MarkATBModelAsOutOfDate"><tt>MarkATBModelAsOutOfDate</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#UpdateATB"><tt>UpdateATB</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#RelinkATB"><tt>RelinkATB</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GetAnnotationPlanesFromGallery"><tt>GetAnnotationPlanesFromGallery</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GetAnnotationPlanes"><tt>GetAnnotationPlanes</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GetAnnotationPlaneByName"><tt>GetAnnotationPlaneByName</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#AddAnnotationPlaneToGallery"><tt>AddAnnotationPlaneToGallery</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#RemoveAnnotationPlaneFromGallery"><tt>RemoveAnnotationPlaneFromGallery</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GetActiveAnnotationPlane"><tt>GetActiveAnnotationPlane</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GetTIMInfo"><tt>GetTIMInfo</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#ConvertOldXSectionsToNew"><tt>ConvertOldXSectionsToNew</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#CanCreateSectionFeature"><tt>CanCreateSectionFeature</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#ListLayers"><tt>ListLayers</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#SaveLayerDisplayStatus"><tt>SaveLayerDisplayStatus</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GetLayerItem"><tt>GetLayerItem</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GetSubType"><tt>GetSubType</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GetDefaultName"><tt>GetDefaultName</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#IsVariantFeatModel"><tt>IsVariantFeatModel</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#CreateUnitByExpression"><tt>CreateUnitByExpression</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#ComputeRayIntersections"><tt>ComputeRayIntersections</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#CollectParamTablesets"><tt>CollectParamTablesets</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GenerateSelectionsFromCollection"><tt>GenerateSelectionsFromCollection</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#MarkForSaving"><tt>MarkForSaving</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#RefreshMdlTree"><tt>RefreshMdlTree</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#GetMdlfileDescriptor"><tt>GetMdlfileDescriptor</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#IsStandardLocation"><tt>IsStandardLocation</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#DesignateSymbol"><tt>DesignateSymbol</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#UndesignateSymbol"><tt>UndesignateSymbol</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#IsDesignatedSymbol"><tt>IsDesignatedSymbol</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#VisitItems"><tt>VisitItems</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#VisitDetailItems"><tt>VisitDetailItems</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#CreateSurfaceFinish"><tt>CreateSurfaceFinish</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#CreateGTol"><tt>CreateGTol</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#CreateSetDatumTag"><tt>CreateSetDatumTag</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#MatchLayerRules"><tt>MatchLayerRules</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#CopyLayerRules"><tt>CopyLayerRules</tt></a>,
+      <a class="method" href="c-wfcModel-WModel.html#ExecuteLayerRules"><tt>ExecuteLayerRules</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AddEntity">AddEntity</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>int</tt></td><td class="method-name"><tt>AddEntity</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcSection-SectionEntity.html">SectionEntity</a>&nbsp;Ent)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Add an entity to section.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfMemory.html">XToolkitOutOfMemory</a></tt></tt> - There was a memory error.</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitLineTooLong.html">XToolkitLineTooLong</a></tt></tt> - In the case of a <i>Pro2dTextdef</i> being added, the text string exceeded the internal limitation of Creo Parametric. </p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidName.html">XToolkitInvalidName</a></tt></tt> - In the case of a <i>Pro2dTextdef</i> being added, the text font is not supported by Creo Parametric. </p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidItem.html">XToolkitInvalidItem</a></tt></tt> - Invalid entity type</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#35">Element Trees: Sections: Section Entities</a>, <a href="../manual0/Sections_create.html#40">Element Trees: Sections: Section Entities</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Ent</b></tt>
+</dt>
+<dd>Entity to be added.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Identifier of an added entity.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DeleteEntity">DeleteEntity</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>DeleteEntity</tt></td><td class="method-params"><tt>
+ (int&nbsp;EntId)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Delete an entity from section.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#36">Element Trees: Sections: Section Entities</a>, <a href="../manual0/Sections_create.html#40">Element Trees: Sections: Section Entities</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>EntId</b></tt>
+</dt>
+<dd>Identifier of an entity to be deleted.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetEntity">GetEntity</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcSection-SectionEntity.html">SectionEntity</a></tt></td><td class="method-name"><tt>GetEntity</tt></td><td class="method-params"><tt>
+ (int&nbsp;EntId)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Get an entity from section.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfMemory.html">XToolkitOutOfMemory</a></tt></tt> - There was a memory error.</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitLineTooLong.html">XToolkitLineTooLong</a></tt></tt> - In the case of <i>Pro2dTextdef</i>, the text string exceeded the internal limitation of Creo Parametric. </p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidName.html">XToolkitInvalidName</a></tt></tt> - In the case of <i>Pro2dTextdef</i>, the text font name violated the <i>Pro2dTextdef</i> conventions. </p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidType.html">XToolkitInvalidType</a></tt></tt> - This Creo Parametric entity type is not available in Creo Parametric TOOLKIT environment. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#37">Element Trees: Sections: Section Entities</a>, <a href="../manual0/Sections_create.html#40">Element Trees: Sections: Section Entities</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>EntId</b></tt>
+</dt>
+<dd>Identifier of an entity.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ReplaceEntity">ReplaceEntity</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>ReplaceEntity</tt></td><td class="method-params"><tt>
+ (int&nbsp;OriginalEntId, int&nbsp;NewEntId)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Replaces an entity from the specified section with another entity from the same section (for redefine purposes).<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>OriginalEntId</b></tt>
+</dt>
+<dd>The identifier of the entity to be replaced.</dd>
+<dt>
+<tt><b>NewEntId</b></tt>
+</dt>
+<dd>The identifier of the entity to replace the old one.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetIntentManagerMode">SetIntentManagerMode</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetIntentManagerMode</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Set Intent manager mode ON or OFF.Section conversion invoking section resolve is done here.<br>
+<br>By default Intent Manager is OFF.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#12">Element Trees: Sections: Setting the Intent Manager Mode of a Section</a>, <a href="../manual0/Sections_create.html#13">Element Trees: Sections: To Create and Save a Section Model</a>, <a href="../manual0/Sections_create.html#25">Element Trees: Sections: Copying the Current Section</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>
+        Pass value <tt>true</tt> to turn ON Intent manager mode.
+      </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetIntentManagerMode">GetIntentManagerMode</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetIntentManagerMode</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Check if Intent Manager mode is used for the specified section<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#11">Element Trees: Sections: Setting the Intent Manager Mode of a Section</a>, <a href="../manual0/Sections_create.html#12">Element Trees: Sections: Setting the Intent Manager Mode of a Section</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+        Returns value <tt>true</tt> if intent manager mode is used.
+      </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetName">GetName</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-name"><tt>GetName</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Gets name of the section<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#19">Element Trees: Sections: Allocating a Two-Dimensional Section</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Name of the section</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetName">SetName</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetName</tt></td><td class="method-params"><tt>
+ (String&nbsp;Name)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Sets name of the section<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitFound.html">XToolkitFound</a></tt></tt> - Could not rename the section because another section with this name already exists. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#20">Element Trees: Sections: Allocating a Two-Dimensional Section</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>Name of section.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetEpsilon">GetEpsilon</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetEpsilon</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Gets epsilon value of the section<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#28">Element Trees: Sections: Epsilon Value in Sections</a>, <a href="../manual0/Sections_create.html#29">Element Trees: Sections: Epsilon Value in Sections</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Epsilon value of the section</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetEpsilon">SetEpsilon</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetEpsilon</tt></td><td class="method-params"><tt>
+ (double&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Sets epsilon value of the section<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#29">Element Trees: Sections: Epsilon Value in Sections</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>Epsilon value of section to be set.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetLocation">GetLocation</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcBase-Matrix3D.html">Matrix3D</a></tt></td><td class="method-name"><tt>GetLocation</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Gets location of the section<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sketched_features_create.html#11">Element Trees: Sketched Features: 3D Section Location in the Owning Model</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>location matrix of the section</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListSectionEntities">ListSectionEntities</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcSection-SectionEntities.html">SectionEntities</a></tt></td><td class="method-name"><tt>ListSectionEntities</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Lists entities present in the section<br>
+<br>Array size returned by this method may be different from <tt><a class="method" href="c-wfcSection-Section.html#GetEntityIds">Section.GetEntityIds()</a></tt> since this method does not list dummy entities.
+    <p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfMemory.html">XToolkitOutOfMemory</a></tt></tt> - There was a memory error.</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitLineTooLong.html">XToolkitLineTooLong</a></tt></tt> - In the case of <i>Pro2dTextdef</i>, the text string exceeded the internal limitation of Creo Parametric. </p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidName.html">XToolkitInvalidName</a></tt></tt> - In the case of <i>Pro2dTextdef</i>, the text font name violated the <i>Pro2dTextdef</i> conventions. </p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidType.html">XToolkitInvalidType</a></tt></tt> - This Creo Parametric entity type is not available in Creo Parametric TOOLKIT environment. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#38">Element Trees: Sections: Section Entities</a>, <a href="../manual0/Sections_create.html#40">Element Trees: Sections: Section Entities</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Array of section entities</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetEntityIds">GetEntityIds</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-stdcols-intseq.html">intseq</a></tt></td><td class="method-name"><tt>GetEntityIds</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Get Identifier of all valid entities in the section<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#39">Element Trees: Sections: Section Entities</a>, <a href="../manual0/Sections_create.html#40">Element Trees: Sections: Section Entities</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Array of integer identifiers</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetActive">SetActive</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetActive</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>	Set a copy of the section to be a current active sketcher section. <br>
+<br>
+        Caller is responsible for the section validity. This section will also be added to Undo/Redo stack.
+        The section must be solved or to be in Intent Manager mode.
+      <p>
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - Section not in sketcher mode or IntentManager is Off.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#25">Element Trees: Sections: Copying the Current Section</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Regenerate">Regenerate</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>Regenerate</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AutoDimension">AutoDimension</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>AutoDimension</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetSectionDimensions">GetSectionDimensions</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcSection-SectionDimIds.html">SectionDimIds</a></tt></td><td class="method-name"><tt>GetSectionDimensions</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Returns corresponding arrays of section dimension identifiers and solid dimension identifiers.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#113">Element Trees: Sections: Retrieving a Section</a>, <a href="../manual0/Sections_create.html#115">Element Trees: Sections: Retrieving a Section</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> 
+        Returns wfcSectionDimIds_ptr 
+      </dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

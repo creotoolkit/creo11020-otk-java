@@ -1,0 +1,266 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcTable.TableCreateInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      742
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcTable.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcTable-TableCreateInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;TableCreateInstructions</h2>
+<tt>
+     package 
+     <b><a href="p-pfcTable.html">com.ptc.pfc.pfcTable</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>TableCreateInstructions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface is used when creating a table.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcTable-TableOwner.html#CreateTable">TableOwner.CreateTable(TableCreateInstructions)</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcTable-ColumnCreateOptions.html">ColumnCreateOptions</a></tt></td><td class="method-summary"><tt><a class="method" href="#ColumnData">GetColumnData</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ColumnData"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sequence of column heights and justifications (the number of elements included indicates the number of columns to create). The maximum number of columns that can be created is 50.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcBase-Point3D.html">Point3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#Origin">GetOrigin</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Origin"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The origin for the table placement.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-stdcols-realseq.html">realseq</a></tt></td><td class="method-summary"><tt><a class="method" href="#RowHeights">GetRowHeights</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "RowHeights"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sequence of row heights (the number of heights included indicates the number of rows to create). The maximum number of rows that can be created is 100.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcTable-TableSizeType.html">TableSizeType</a></tt></td><td class="method-summary"><tt><a class="method" href="#SizeType">GetSizeType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "SizeType"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Indicates the scale used when calculating the size of rows and columns.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ColumnData">SetColumnData</a>
+ (<a class="type" href="c-pfcTable-ColumnCreateOptions.html">ColumnCreateOptions</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ColumnData"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sequence of column heights and justifications (the number of elements included indicates the number of columns to create). The maximum number of columns that can be created is 50.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Origin">SetOrigin</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Origin"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The origin for the table placement.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#RowHeights">SetRowHeights</a>
+ (<a class="type" href="c-stdcols-realseq.html">realseq</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "RowHeights"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sequence of row heights (the number of heights included indicates the number of rows to create). The maximum number of rows that can be created is 100.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SizeType">SetSizeType</a>
+ (<a class="type" href="c-pfcTable-TableSizeType.html">TableSizeType</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "SizeType"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Indicates the scale used when calculating the size of rows and columns.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Origin">GetOrigin/SetOrigin</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcBase-Point3D.html">Point3D</a></tt></td><td class="method-name"><tt>GetOrigin</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetOrigin</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The origin for the table placement.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SizeType">GetSizeType/SetSizeType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcTable-TableSizeType.html">TableSizeType</a></tt></td><td class="method-name"><tt>GetSizeType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetSizeType</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcTable-TableSizeType.html">TableSizeType</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Indicates the scale used when calculating the size of rows and columns.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ColumnData">GetColumnData/SetColumnData</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcTable-ColumnCreateOptions.html">ColumnCreateOptions</a></tt></td><td class="method-name"><tt>GetColumnData</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetColumnData</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcTable-ColumnCreateOptions.html">ColumnCreateOptions</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Sequence of column heights and justifications (the number of elements included indicates the number of columns to create). The maximum number of columns that can be created is 50.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RowHeights">GetRowHeights/SetRowHeights</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-stdcols-realseq.html">realseq</a></tt></td><td class="method-name"><tt>GetRowHeights</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetRowHeights</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-stdcols-realseq.html">realseq</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Sequence of row heights (the number of heights included indicates the number of rows to create). The maximum number of rows that can be created is 100.<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

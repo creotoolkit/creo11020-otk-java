@@ -1,0 +1,460 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcDisplay.wfcDisplay"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      645
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcDisplay.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcDisplay-wfcDisplay.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcDisplay</h2>
+<tt>
+     package <b><a href="p-wfcDisplay.html">com.ptc.wfc.wfcDisplay</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>wfcDisplay</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "wfcDisplay"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcDisplay-Appearance.html">Appearance</a></tt></td><td class="method-summary"><tt><a class="method" href="#Appearance::Create">Appearance_Create</a>
+ (double&nbsp;Ambient, double&nbsp;Diffuse, double&nbsp;Highlight, double&nbsp;Shininess, double&nbsp;Transparency, <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;RGBColor, <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;HighlightColor, double&nbsp;Reflection, String&nbsp;Name, String&nbsp;Label, String&nbsp;Description, String&nbsp;Keywords)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Creates the Appearance properties</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcDisplay-LightSourceInstruction.html">LightSourceInstruction</a></tt></td><td class="method-summary"><tt><a class="method" href="#LightSourceInstruction::Create">LightSourceInstruction_Create</a>
+ (
+   /*optional*/
+   String&nbsp;inName, 
+   /*optional*/
+   <a class="type" href="c-wfcDisplay-LightType.html">LightType</a>&nbsp;inType, 
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;inColor, 
+   /*optional*/
+   Boolean&nbsp;inIsActive)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Create a light source </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcDisplay-Texture.html">Texture</a></tt></td><td class="method-summary"><tt><a class="method" href="#Texture::Create">Texture_Create</a>
+ (<a class="type" href="c-wfcDisplay-TextureType.html">TextureType</a>&nbsp;Type, String&nbsp;FilePath, 
+   /*optional*/
+   <a class="type" href="c-wfcDisplay-TexturePlacement.html">TexturePlacement</a>&nbsp;Placement)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Creates the texture interface</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcDisplay-TexturePlacement.html">TexturePlacement</a></tt></td><td class="method-summary"><tt><a class="method" href="#TexturePlacement::Create">TexturePlacement_Create</a>
+ (<a class="type" href="c-wfcDisplay-TextureProjectionType.html">TextureProjectionType</a>&nbsp;TextureProjectionType, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;LocalSys, double&nbsp;HorizontalOffset, double&nbsp;VerticalOffset, double&nbsp;Rotate, double&nbsp;HorizontalScale, double&nbsp;VerticalScale, double&nbsp;BumpHeight, double&nbsp;DecalIntensity, boolean&nbsp;HorizontalFlip, boolean&nbsp;VerticalFlip)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Creates texture placement property</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Appearance::Create">Appearance_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcDisplay-Appearance.html">Appearance</a></tt></td><td class="method-name"><tt>Appearance_Create</tt></td><td class="method-params"><tt>
+ (double&nbsp;Ambient, double&nbsp;Diffuse, double&nbsp;Highlight, double&nbsp;Shininess, double&nbsp;Transparency, <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;RGBColor, <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;HighlightColor, double&nbsp;Reflection, String&nbsp;Name, String&nbsp;Label, String&nbsp;Description, String&nbsp;Keywords)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Creates the Appearance properties<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#11">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#67">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Ambient</b></tt>
+</dt>
+<dd>
+   
+<purpose>Ambient Color component</purpose>
+    
+<notes>
+<b>Note</b> Valid values are from 0.00 to 1.00.</notes>
+</dd>
+<dt>
+<tt><b>Diffuse</b></tt>
+</dt>
+<dd>
+<purpose>Diffuse value</purpose>
+   	
+<notes>
+<b>Note</b> Valid values are from 0.00 to 1.00.</notes>
+</dd>
+<dt>
+<tt><b>Highlight</b></tt>
+</dt>
+<dd>
+<purpose>Highlight intensity</purpose>
+   	
+<notes>
+<b>Note</b> Valid values are from 0.00 to 1.00.</notes>
+</dd>
+<dt>
+<tt><b>Shininess</b></tt>
+</dt>
+<dd> 
+<purpose>Shininess</purpose>
+   	
+<notes>
+<b>Note</b> Valid values are from 0.00 to 1.00.</notes>
+</dd>
+<dt>
+<tt><b>Transparency</b></tt>
+</dt>
+<dd> 
+<purpose>Transparency of selected appearance</purpose>
+   	
+<notes>
+<b>Note</b> Valid values are from 0.00 to 1.00.</notes>
+</dd>
+<dt>
+<tt><b>RGBColor</b></tt>
+</dt>
+<dd>
+<purpose>Appearance color</purpose>
+   	
+<notes>
+<b>Note</b> Valid values for each of RGB is from 0.00 to 1.00.</notes>
+</dd>
+<dt>
+<tt><b>HighlightColor</b></tt>
+</dt>
+<dd>
+<purpose>Highlight color</purpose> 
+</dd>
+<dt>
+<tt><b>Reflection</b></tt>
+</dt>
+<dd> 
+<purpose>Reflective property of selected appearance</purpose>
+   	
+<notes>
+<b>Note</b> Valid values are from 0.00 to 1.00.</notes>
+</dd>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd> 
+<purpose>Appearance name</purpose>
+</dd>
+<dt>
+<tt><b>Label</b></tt>
+</dt>
+<dd> 
+<purpose>Appearance label</purpose>
+</dd>
+<dt>
+<tt><b>Description</b></tt>
+</dt>
+<dd> 
+<purpose>Appearance description</purpose>
+</dd>
+<dt>
+<tt><b>Keywords</b></tt>
+</dt>
+<dd> 
+<purpose>Appearance keywords</purpose>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> Handle to appearance properties</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TexturePlacement::Create">TexturePlacement_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcDisplay-TexturePlacement.html">TexturePlacement</a></tt></td><td class="method-name"><tt>TexturePlacement_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcDisplay-TextureProjectionType.html">TextureProjectionType</a>&nbsp;TextureProjectionType, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;LocalSys, double&nbsp;HorizontalOffset, double&nbsp;VerticalOffset, double&nbsp;Rotate, double&nbsp;HorizontalScale, double&nbsp;VerticalScale, double&nbsp;BumpHeight, double&nbsp;DecalIntensity, boolean&nbsp;HorizontalFlip, boolean&nbsp;VerticalFlip)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Creates texture placement property<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#45">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#67">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TextureProjectionType</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>LocalSys</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>HorizontalOffset</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>VerticalOffset</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Rotate</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>HorizontalScale</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>VerticalScale</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>BumpHeight</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>DecalIntensity</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>HorizontalFlip</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>VerticalFlip</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Handle to texture placement property </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Texture::Create">Texture_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcDisplay-Texture.html">Texture</a></tt></td><td class="method-name"><tt>Texture_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcDisplay-TextureType.html">TextureType</a>&nbsp;Type, String&nbsp;FilePath, 
+   /*optional*/
+   <a class="type" href="c-wfcDisplay-TexturePlacement.html">TexturePlacement</a>&nbsp;Placement)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Creates the texture interface<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#38">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#67">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>FilePath</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Placement</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> Handle to the texture interface</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="LightSourceInstruction::Create">LightSourceInstruction_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcDisplay-LightSourceInstruction.html">LightSourceInstruction</a></tt></td><td class="method-name"><tt>LightSourceInstruction_Create</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   String&nbsp;inName, 
+   /*optional*/
+   <a class="type" href="c-wfcDisplay-LightType.html">LightType</a>&nbsp;inType, 
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;inColor, 
+   /*optional*/
+   Boolean&nbsp;inIsActive)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Create a light source <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#75">Graphics: Setting Light Sources</a>, <a href="../manual0/JGraphics.html#91">Graphics: Setting Light Sources</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inName</b></tt>
+</dt>
+<dd> Name of the light. If <t>null</t> default name will be set </dd>
+<dt>
+<tt><b>inType</b></tt>
+</dt>
+<dd> Type of the light. If <t>null</t> wfcLIGHT_SPOT will be set </dd>
+<dt>
+<tt><b>inColor</b></tt>
+</dt>
+<dd> Color of the light. If <t>null</t> green color will be set </dd>
+<dt>
+<tt><b>inIsActive</b></tt>
+</dt>
+<dd> Active status of the light. If <t>null</t> light will be set to be activated  </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

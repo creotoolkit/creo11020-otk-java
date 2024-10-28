@@ -1,0 +1,750 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcModel.wfcModel"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      653
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcModel.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcModel-wfcModel.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcModel</h2>
+<tt>
+     package <b><a href="p-wfcModel.html">com.ptc.wfc.wfcModel</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>wfcModel</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "wfcModel"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-FormatSizeData.html">FormatSizeData</a></tt></td><td class="method-summary"><tt><a class="method" href="#FormatSizeData::Create">FormatSizeData_Create</a>
+ (<a class="type" href="c-pfcModel-PlotPaperSize.html">PlotPaperSize</a>&nbsp;PaperSize, int&nbsp;Width, int&nbsp;Height)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-InterfaceData.html">InterfaceData</a></tt></td><td class="method-summary"><tt><a class="method" href="#InterfaceData::Create">InterfaceData_Create</a>
+ (
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-WSurfaceDescriptors.html">WSurfaceDescriptors</a>&nbsp;SurfaceData, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-EdgeDescriptors.html">EdgeDescriptors</a>&nbsp;EdgeDescriptor, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-QuiltDatas.html">QuiltDatas</a>&nbsp;QuiltData, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-DatumDatas.html">DatumDatas</a>&nbsp;DatumData, 
+   /*optional*/
+   <a class="type" href="c-wfcModel-Accuracytype.html">Accuracytype</a>&nbsp;Accuracytype, 
+   /*optional*/
+   Double&nbsp;Accuracy, 
+   /*optional*/
+   <a class="type" href="c-pfcBase-Outline3D.html">Outline3D</a>&nbsp;Outline)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates InterfaceData object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-IntfIBL.html">IntfIBL</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfIBL::Create">IntfIBL_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Creates a new object representing the IBL file from which to create an import feature.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-IntfInventorAsm.html">IntfInventorAsm</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfInventorAsm::Create">IntfInventorAsm_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Creates a new object representing the Inventor assembly file from which to create an import feature.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-IntfInventorPart.html">IntfInventorPart</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfInventorPart::Create">IntfInventorPart_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Creates a new object representing the Inventor part file from which to create an import feature.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-IntfPTS.html">IntfPTS</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfPTS::Create">IntfPTS_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Creates a new object representing the PTS file from which to create an import feature.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-IntfSEdgePart.html">IntfSEdgePart</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfSEdgePart::Create">IntfSEdgePart_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Creates a new object representing the solid Edge part file from which to create an import feature.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-IntfSEdgeSheetmetal.html">IntfSEdgeSheetmetal</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfSEdgeSheetmetal::Create">IntfSEdgeSheetmetal_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Creates a new object representing the solid Edge sheetmetal file from which to create an import feature.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-MdlfileDescriptor.html">MdlfileDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#MdlfileDescriptor::Create">MdlfileDescriptor_Create</a>
+ (<a class="type" href="c-wfcModel-MdlfileType.html">MdlfileType</a>&nbsp;Type, String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Creates the MdlfileDescriptor object</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-Ray.html">Ray</a></tt></td><td class="method-summary"><tt><a class="method" href="#Ray::Create">Ray_Create</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Point, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;Vector)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-WIntfNeutral.html">WIntfNeutral</a></tt></td><td class="method-summary"><tt><a class="method" href="#WIntfNeutral::Create">WIntfNeutral_Create</a>
+ (String&nbsp;FileName, 
+   /*optional*/
+   <a class="type" href="c-wfcModel-InterfaceData.html">InterfaceData</a>&nbsp;Data)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates WIntfNeutral object.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfInventorPart::Create">IntfInventorPart_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-IntfInventorPart.html">IntfInventorPart</a></tt></td><td class="method-name"><tt>IntfInventorPart_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Creates a new object representing the Inventor part file from which to create an import feature.
+      <br>
+<br>
+        The return value must be passed to <tt><a class="method" href="c-wfcSolid-WSolid.html#ImportAsFeat">WSolid.ImportAsFeat(IntfDataSource, /*optional*/ CoordSystem, /*optional*/ Boolean, /*optional*/ String, /*optional*/ Boolean)</a></tt> to read from the file.
+      <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfInventorPart data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfInventorAsm::Create">IntfInventorAsm_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-IntfInventorAsm.html">IntfInventorAsm</a></tt></td><td class="method-name"><tt>IntfInventorAsm_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Creates a new object representing the Inventor assembly file from which to create an import feature.
+      <br>
+<br>
+        The return value must be passed to <tt><a class="method" href="c-wfcSolid-WSolid.html#ImportAsFeat">WSolid.ImportAsFeat(IntfDataSource, /*optional*/ CoordSystem, /*optional*/ Boolean, /*optional*/ String, /*optional*/ Boolean)</a></tt> to read from the file.
+      <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfInventorAsm data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfIBL::Create">IntfIBL_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-IntfIBL.html">IntfIBL</a></tt></td><td class="method-name"><tt>IntfIBL_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Creates a new object representing the IBL file from which to create an import feature.
+      <br>
+<br>
+        The return value must be passed to <tt><a class="method" href="c-wfcSolid-WSolid.html#ImportAsFeat">WSolid.ImportAsFeat(IntfDataSource, /*optional*/ CoordSystem, /*optional*/ Boolean, /*optional*/ String, /*optional*/ Boolean)</a></tt> to read from the file.
+      <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfIBL data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfPTS::Create">IntfPTS_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-IntfPTS.html">IntfPTS</a></tt></td><td class="method-name"><tt>IntfPTS_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Creates a new object representing the PTS file from which to create an import feature.
+      <br>
+<br>
+        The return value must be passed to <tt><a class="method" href="c-wfcSolid-WSolid.html#ImportAsFeat">WSolid.ImportAsFeat(IntfDataSource, /*optional*/ CoordSystem, /*optional*/ Boolean, /*optional*/ String, /*optional*/ Boolean)</a></tt> to read from the file.
+      <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfPTS data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfSEdgePart::Create">IntfSEdgePart_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-IntfSEdgePart.html">IntfSEdgePart</a></tt></td><td class="method-name"><tt>IntfSEdgePart_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Creates a new object representing the solid Edge part file from which to create an import feature.
+      <br>
+<br>
+        The return value must be passed to <tt><a class="method" href="c-wfcSolid-WSolid.html#ImportAsFeat">WSolid.ImportAsFeat(IntfDataSource, /*optional*/ CoordSystem, /*optional*/ Boolean, /*optional*/ String, /*optional*/ Boolean)</a></tt> to read from the file.
+      <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfSEdgePart data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfSEdgeSheetmetal::Create">IntfSEdgeSheetmetal_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-IntfSEdgeSheetmetal.html">IntfSEdgeSheetmetal</a></tt></td><td class="method-name"><tt>IntfSEdgeSheetmetal_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Creates a new object representing the solid Edge sheetmetal file from which to create an import feature.
+      <br>
+<br>
+        The return value must be passed to <tt><a class="method" href="c-wfcSolid-WSolid.html#ImportAsFeat">WSolid.ImportAsFeat(IntfDataSource, /*optional*/ CoordSystem, /*optional*/ Boolean, /*optional*/ String, /*optional*/ Boolean)</a></tt> to read from the file.
+      <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfSEdgeSheetmetal data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Ray::Create">Ray_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-Ray.html">Ray</a></tt></td><td class="method-name"><tt>Ray_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Point, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;Vector)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#283">Geometry Evaluation: Tracing a Ray</a>, <a href="../manual0/JGeom.html#287">Geometry Evaluation: Tracing a Ray</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Point</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Vector</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="MdlfileDescriptor::Create">MdlfileDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-MdlfileDescriptor.html">MdlfileDescriptor</a></tt></td><td class="method-name"><tt>MdlfileDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcModel-MdlfileType.html">MdlfileType</a>&nbsp;Type, String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Creates the MdlfileDescriptor object<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="InterfaceData::Create">InterfaceData_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-InterfaceData.html">InterfaceData</a></tt></td><td class="method-name"><tt>InterfaceData_Create</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-WSurfaceDescriptors.html">WSurfaceDescriptors</a>&nbsp;SurfaceData, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-EdgeDescriptors.html">EdgeDescriptors</a>&nbsp;EdgeDescriptor, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-QuiltDatas.html">QuiltDatas</a>&nbsp;QuiltData, 
+   /*optional*/
+   <a class="type" href="c-wfcGeometry-DatumDatas.html">DatumDatas</a>&nbsp;DatumData, 
+   /*optional*/
+   <a class="type" href="c-wfcModel-Accuracytype.html">Accuracytype</a>&nbsp;Accuracytype, 
+   /*optional*/
+   Double&nbsp;Accuracy, 
+   /*optional*/
+   <a class="type" href="c-pfcBase-Outline3D.html">Outline3D</a>&nbsp;Outline)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates InterfaceData object.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#217">Interface: Redefining the Import Feature</a>, <a href="../manual0/Jinterface.html#232">Interface: Redefining the Import Feature</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SurfaceData</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>EdgeDescriptor</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>QuiltData</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>DatumData</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Accuracytype</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Accuracy</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Outline</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WIntfNeutral::Create">WIntfNeutral_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-WIntfNeutral.html">WIntfNeutral</a></tt></td><td class="method-name"><tt>WIntfNeutral_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName, 
+   /*optional*/
+   <a class="type" href="c-wfcModel-InterfaceData.html">InterfaceData</a>&nbsp;Data)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates WIntfNeutral object.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#234">Interface: Extracting Interface Data for Neutral Files</a>, <a href="../manual0/Jinterface.html#236">Interface: Extracting Interface Data for Neutral Files</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Data</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FormatSizeData::Create">FormatSizeData_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcModel-FormatSizeData.html">FormatSizeData</a></tt></td><td class="method-name"><tt>FormatSizeData_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-PlotPaperSize.html">PlotPaperSize</a>&nbsp;PaperSize, int&nbsp;Width, int&nbsp;Height)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PaperSize</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Width</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Height</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

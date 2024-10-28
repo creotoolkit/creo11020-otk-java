@@ -1,0 +1,2205 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcSession.Session"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      646
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcSession.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcSession-Session.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;Session</h2>
+<tt>
+     package 
+     <b><a href="p-pfcSession.html">com.ptc.pfc.pfcSession</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>Session</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcSession-BaseSession.html">com.ptc.pfc.pfcSession.BaseSession</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>The Creo Parametric session.
+  <br>
+<br>To each application, Creo assigns a unique session, which contains
+    the application licensing information, its <tt><tt><a class="class" href="c-pfcSession-CreoCompatibility.html">CreoCompatibility</a></tt></tt>
+    and other data. The application can obtain
+    this session by calling <tt><tt><a class="method" href="c-pfcSession-pfcSession.html#GetCurrentSession">pfcSession.GetCurrentSession()</a></tt></tt>.
+    However, when assigning the session, Creo sets its compatibility (in associated
+    <tt><tt><a class="class" href="c-pfcSession-AppInfo.html">AppInfo</a></tt></tt>) to
+    <tt><a class="enumtype" href="c-pfcSession-CreoCompatibility.html">CompatibilityUndefined</a></tt>.
+    This makes setting the compatibility be the responsibility of the application.
+    To do this, <b>when obtaining the assigned session the first time,
+    the application must call <tt><tt><a class="method" href="c-pfcSession-pfcSession.html#GetCurrentSessionWithCompatibility">pfcSession.GetCurrentSessionWithCompatibility(CreoCompatibility)</a></tt></tt>
+    and pass a specific Creo compatibility to it</b>. Otherwise, calls
+    to <tt><tt><a class="method" href="c-pfcSession-pfcSession.html#GetCurrentSession">pfcSession.GetCurrentSession()</a></tt></tt> will be throwing <tt><tt><a class="class" href="c-pfcExceptions-XCompatibilityNotSet.html">XCompatibilityNotSet</a></tt></tt>.
+    Setting the comatiblity can be done
+    only once during the runtime, although doing this always is a save approach
+    to avoid the exception. For instance, if a Java toolkit application has more than one
+    starting method, each such method must set
+    the compatibility when obtaining the assigned session the first time.
+
+    <p></p>Another function to obtain the assigned session is
+    <tt><tt><a class="method" href="c-pfcGlobal-pfcGlobal.html#GetProESession">pfcGlobal.GetProESession()</a></tt></tt>. It does not throw exceptions,
+    but if it is used as the first call to obtain the session, then it sets the compatibility to
+    <tt><a class="enumtype" href="c-pfcSession-CreoCompatibility.html">C3Compatible</a></tt>.
+    This is done to provide the forward compatibility for applications
+    based on earlier versions of Creo. This behavior can be changed by calling first
+    <tt><tt><a class="method" href="c-pfcSession-pfcSession.html#GetCurrentSessionWithCompatibility">pfcSession.GetCurrentSessionWithCompatibility(CreoCompatibility)</a></tt></tt> with compatibility
+    passed as desired. Then all subsequent calls to
+    <tt><tt><a class="method" href="c-pfcGlobal-pfcGlobal.html#GetProESession">pfcGlobal.GetProESession()</a></tt></tt> will return the
+    session with same compatibility. Such behavior facilitates
+    the migration of pre-Creo4 applications: it is enough
+    to replace only the first call to
+    <tt><tt><a class="method" href="c-pfcGlobal-pfcGlobal.html#GetProESession">pfcGlobal.GetProESession()</a></tt></tt> with
+    <tt><tt><a class="method" href="c-pfcSession-pfcSession.html#GetCurrentSessionWithCompatibility">pfcSession.GetCurrentSessionWithCompatibility(CreoCompatibility)</a></tt></tt>(<tt><a class="enumtype" href="c-pfcSession-CreoCompatibility.html">C4Compatible</a></tt>),
+    while leaving all subsequent calls to
+    <tt><tt><a class="method" href="c-pfcGlobal-pfcGlobal.html#GetProESession">pfcGlobal.GetProESession()</a></tt></tt> without a change.
+
+    <p></p>Please note that <b>using
+    <tt><tt><a class="method" href="c-pfcGlobal-pfcGlobal.html#GetProESession">pfcGlobal.GetProESession()</a></tt></tt>is deprecated</b>.
+    In subsequent releases it will result in an exception.
+  <br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-wfcSession-WSession.html">WSession</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcSession-AppInfo.html">AppInfo</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetAppInfo">GetAppInfo</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns the application information from the applicatoin session.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcSelect-SelectionBuffer.html">SelectionBuffer</a></tt></td><td class="method-summary"><tt><a class="method" href="#CurrentSelectionBuffer">GetCurrentSelectionBuffer</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "CurrentSelectionBuffer"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The current selection buffer object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#ModelDescrContainsOrigin">ModelDescrContainsOrigin</a>
+ (<a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a>&nbsp;Descr)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#NavigatorPaneBrowserAdd">NavigatorPaneBrowserAdd</a>
+ (String&nbsp;PaneName, 
+   /*optional*/
+   String&nbsp;IconFileName, String&nbsp;URL)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Adds a new Navigator Pane.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#NavigatorPaneBrowserIconSet">NavigatorPaneBrowserIconSet</a>
+ (String&nbsp;PaneName, String&nbsp;IconFileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Set the icon for a Navigator Pane.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#NavigatorPaneBrowserURLSet">NavigatorPaneBrowserURLSet</a>
+ (String&nbsp;PaneName, String&nbsp;URL)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Set the url for a Navigator Pane.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#RibbonDefinitionfileLoad">RibbonDefinitionfileLoad</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Loads ribbon definition file from a default path.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetAppInfo">SetAppInfo</a>
+ (<a class="type" href="c-pfcSession-AppInfo.html">AppInfo</a>&nbsp;Info)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sends the application information for the application session.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#UIAddButton">UIAddButton</a>
+ (<a class="type" href="c-pfcCommand-UICommand.html">UICommand</a>&nbsp;Command, String&nbsp;MenuName, 
+   /*optional*/
+   String&nbsp;NeighborButton, String&nbsp;ButtonName, String&nbsp;Message, String&nbsp;MsgFile)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Adds a new button to an existing menu.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#UIAddMenu">UIAddMenu</a>
+ (String&nbsp;MenuName, String&nbsp;NeighborItem, String&nbsp;FileName, 
+   /*optional*/
+   String&nbsp;ParentMenu)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new menu.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#UIClearMessage">UIClearMessage</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Scrolls the text in the message area up one line after a call to <tt><a class="method" href="c-pfcSession-Session.html#UIDisplayMessage">Session.UIDisplayMessage(String, String, /*optional*/ stringseq)</a></tt> . This command produces only one carriage return; if called multiple times, the command is ignored.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcCommand-UICommand.html">UICommand</a></tt></td><td class="method-summary"><tt><a class="method" href="#UICreateCommand">UICreateCommand</a>
+ (String&nbsp;Name, <a class="type" href="c-pfcCommand-UICommandActionListener.html">UICommandActionListener</a>&nbsp;Action)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a command with the specified name.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcCommand-UICommand.html">UICommand</a></tt></td><td class="method-summary"><tt><a class="method" href="#UICreateMaxPriorityCommand">UICreateMaxPriorityCommand</a>
+ (String&nbsp;Name, <a class="type" href="c-pfcCommand-UICommandActionListener.html">UICommandActionListener</a>&nbsp;Action)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a command with the specified name. This command
+   differs from a command created by
+  <tt><a class="method" href="c-pfcSession-Session.html#UICreateCommand">Session.UICreateCommand(String, UICommandActionListener)</a></tt> in that it
+   uses the maximum command priority available. Maximum command priority
+   should be used only in commands which open and activate a new model in
+   a window. All other commands should be created using
+   <tt><a class="method" href="c-pfcSession-Session.html#UICreateCommand">Session.UICreateCommand(String, UICommandActionListener)</a></tt> because
+   commands created with maximum priority may dismiss context of the
+   current model in certain situations.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#UIDisplayFeatureParams">UIDisplayFeatureParams</a>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;Selection, <a class="type" href="c-pfcSession-ParamType.html">ParamType</a>&nbsp;Type)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Displays parameters of a selected feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#UIDisplayLocalizedMessage">UIDisplayLocalizedMessage</a>
+ (String&nbsp;MsgFile, String&nbsp;Format, 
+   /*optional*/
+   <a class="type" href="c-stdcols-stringseq.html">stringseq</a>&nbsp;Messages)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Prints a text message to the message area in Creo Parametric.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#UIDisplayMessage">UIDisplayMessage</a>
+ (String&nbsp;MsgFile, String&nbsp;Format, 
+   /*optional*/
+   <a class="type" href="c-stdcols-stringseq.html">stringseq</a>&nbsp;Messages)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Prints a text message to the message area in Creo Parametric.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcCommand-UICommand.html">UICommand</a></tt></td><td class="method-summary"><tt><a class="method" href="#UIGetCommand">UIGetCommand</a>
+ (String&nbsp;Name)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Finds the identifier of the specified action or option.
+ </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcSession-MouseStatus.html">MouseStatus</a></tt></td><td class="method-summary"><tt><a class="method" href="#UIGetCurrentMouseStatus">UIGetCurrentMouseStatus</a>
+ (boolean&nbsp;SnapToGrid)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns the status of mouse at this particular moment.  This method returns whenever the mouse is
+moved or a button is pressed.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcSession-MouseStatus.html">MouseStatus</a></tt></td><td class="method-summary"><tt><a class="method" href="#UIGetNextMousePick">UIGetNextMousePick</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcSession-MouseButton.html">MouseButton</a>&nbsp;ExpectedButton)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns the mouse status at the time that the user makes a mouse pick.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#UIOpenFile">UIOpenFile</a>
+ (<a class="type" href="c-pfcUI-FileOpenOptions.html">FileOpenOptions</a>&nbsp;Options)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Prompts the standard file browser interface of Creo Parametric.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcBase-Outline3D.html">Outline3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#UIPickMouseBox">UIPickMouseBox</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;FirstCorner)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Prompt the user to select a rectangle using the mouse.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Integer</tt></td><td class="method-summary"><tt><a class="method" href="#UIReadIntMessage">UIReadIntMessage</a>
+ (int&nbsp;LowerLimit, int&nbsp;UpperLimit)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Reads an integer from the keyboard.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-summary"><tt><a class="method" href="#UIReadRealMessage">UIReadRealMessage</a>
+ (double&nbsp;LowerLimit, double&nbsp;UpperLimit)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Reads a double-precision float from the keyboard.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-summary"><tt><a class="method" href="#UIReadStringMessage">UIReadStringMessage</a>
+ (
+   /*optional*/
+   Boolean&nbsp;HideInput)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Reads a line of keyboard input and returns the contents as a wide
+string.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#UISaveFile">UISaveFile</a>
+ (<a class="type" href="c-pfcUI-FileSaveOptions.html">FileSaveOptions</a>&nbsp;Options)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Prompts the standard file browser interface of Creo Parametric, set up for the purpose of allowing the user to save a file.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#UISelectDirectory">UISelectDirectory</a>
+ (<a class="type" href="c-pfcUI-DirectorySelectionOptions.html">DirectorySelectionOptions</a>&nbsp;Options)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Prompts the standard file browser interface of Creo Parametric, set up for the purpose of allowing the user to select a directory.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcUI-MessageButton.html">MessageButton</a></tt></td><td class="method-summary"><tt><a class="method" href="#UIShowMessageDialog">UIShowMessageDialog</a>
+ (String&nbsp;Message, 
+   /*optional*/
+   <a class="type" href="c-pfcUI-MessageDialogOptions.html">MessageDialogOptions</a>&nbsp;Options)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Displays the UI Message Dialog.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcBase-ActionSource.html"><tt>com.ptc.pfc.pfcBase.ActionSource</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Parent.html"><tt>com.ptc.pfc.pfcObject.Parent</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcDisplay-Display.html"><tt>com.ptc.pfc.pfcDisplay.Display</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcDisplay-Display.html#CreateDisplayList2D"><tt>CreateDisplayList2D</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#Invalidate"><tt>Invalidate</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DrawArc2D"><tt>DrawArc2D</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DrawPolygon2D"><tt>DrawPolygon2D</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DrawText2D"><tt>DrawText2D</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CreateDisplayList3D"><tt>CreateDisplayList3D</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DrawCircle"><tt>DrawCircle</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DrawLine"><tt>DrawLine</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#SetPenPosition"><tt>SetPenPosition</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DrawPolyline"><tt>DrawPolyline</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DefaultFont"><tt>GetDefaultFont</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CurrentFont"><tt>GetCurrentFont</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CurrentFont"><tt>SetCurrentFont</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#GetFontById"><tt>GetFontById</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#GetFontByName"><tt>GetFontByName</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#TextHeight"><tt>GetTextHeight</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#TextHeight"><tt>SetTextHeight</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#RotationAngle"><tt>GetRotationAngle</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#RotationAngle"><tt>SetRotationAngle</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#SlantAngle"><tt>GetSlantAngle</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#SlantAngle"><tt>SetSlantAngle</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#WidthFactor"><tt>GetWidthFactor</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#WidthFactor"><tt>SetWidthFactor</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#ResetTextAttributes"><tt>ResetTextAttributes</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CurrentGraphicsMode"><tt>GetCurrentGraphicsMode</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CurrentGraphicsMode"><tt>SetCurrentGraphicsMode</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CurrentGraphicsColor"><tt>GetCurrentGraphicsColor</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CurrentGraphicsColor"><tt>SetCurrentGraphicsColor</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcSession-BaseSession.html"><tt>com.ptc.pfc.pfcSession.BaseSession</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcSession-BaseSession.html#CopyFileFromWS"><tt>CopyFileFromWS</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#CopyFileToWS"><tt>CopyFileToWS</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#CurrentWindow"><tt>GetCurrentWindow</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#CurrentWindow"><tt>SetCurrentWindow</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#CreateModelWindow"><tt>CreateModelWindow</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetModelWindow"><tt>GetModelWindow</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#OpenFile"><tt>OpenFile</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ListWindows"><tt>ListWindows</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetWindow"><tt>GetWindow</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#FlushCurrentWindow"><tt>FlushCurrentWindow</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ListModels"><tt>ListModels</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ListModelsByType"><tt>ListModelsByType</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#CurrentModel"><tt>GetCurrentModel</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetActiveModel"><tt>GetActiveModel</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#CreatePart"><tt>CreatePart</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#CreateAssembly"><tt>CreateAssembly</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#CreateDrawingFromTemplate"><tt>CreateDrawingFromTemplate</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#Import2DModel"><tt>Import2DModel</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetByRelationId"><tt>GetByRelationId</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrieveModel"><tt>RetrieveModel</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrieveModelWithOpts"><tt>RetrieveModelWithOpts</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetModel"><tt>GetModel</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetModelFromDescr"><tt>GetModelFromDescr</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetModelFromFileName"><tt>GetModelFromFileName</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#EraseUndisplayedModels"><tt>EraseUndisplayedModels</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#Select"><tt>Select</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#QueryFeatureEdit"><tt>QueryFeatureEdit</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#SetConfigOption"><tt>SetConfigOption</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetConfigOption"><tt>GetConfigOption</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetConfigOptionValues"><tt>GetConfigOptionValues</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RunMacro"><tt>RunMacro</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#SetTextColor"><tt>SetTextColor</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetRGBFromStdColor"><tt>GetRGBFromStdColor</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#SetStdColorFromRGB"><tt>SetStdColorFromRGB</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#SetLineStyle"><tt>SetLineStyle</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ExportDirectVRML"><tt>ExportDirectVRML</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#LoadConfigFile"><tt>LoadConfigFile</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetCurrentDirectory"><tt>GetCurrentDirectory</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ChangeDirectory"><tt>ChangeDirectory</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ListFiles"><tt>ListFiles</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ListSubdirectories"><tt>ListSubdirectories</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetEnvironmentVariable"><tt>GetEnvironmentVariable</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#CheckoutToWS"><tt>CheckoutToWS</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ExportFromCurrentWS"><tt>ExportFromCurrentWS</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ImportToCurrentWS"><tt>ImportToCurrentWS</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#SetWSExportOptions"><tt>SetWSExportOptions</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ExportCurrentRasterImage"><tt>ExportCurrentRasterImage</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrieveAssemSimpRep"><tt>RetrieveAssemSimpRep</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrieveGraphicsSimpRep"><tt>RetrieveGraphicsSimpRep</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrieveSymbolicSimpRep"><tt>RetrieveSymbolicSimpRep</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrieveGeomSimpRep"><tt>RetrieveGeomSimpRep</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrievePartSimpRep"><tt>RetrievePartSimpRep</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrieveGraphicsPartRep"><tt>RetrieveGraphicsPartRep</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrieveGeometryPartRep"><tt>RetrieveGeometryPartRep</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrieveSymbolicPartRep"><tt>RetrieveSymbolicPartRep</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetCurrentWS"><tt>GetCurrentWS</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#SetCurrentWS"><tt>SetCurrentWS</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetImportSourceType"><tt>GetImportSourceType</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ImportNewModel"><tt>ImportNewModel</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#LoadProToolkitDll"><tt>LoadProToolkitDll</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#LoadProToolkitLegacyDll"><tt>LoadProToolkitLegacyDll</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetProToolkitDll"><tt>GetProToolkitDll</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#EndSession"><tt>EndSession</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#StartJLinkApplication"><tt>StartJLinkApplication</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RegisterTask"><tt>RegisterTask</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#UnregisterTask"><tt>UnregisterTask</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#IsConfigurationSupported"><tt>IsConfigurationSupported</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#IsGeometryRepSupported"><tt>IsGeometryRepSupported</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#DimensionDisplayMode"><tt>GetDimensionDisplayMode</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#DimensionDisplayMode"><tt>SetDimensionDisplayMode</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#AuthenticateBrowser"><tt>AuthenticateBrowser</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RegisterServer"><tt>RegisterServer</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ListServers"><tt>ListServers</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetServerByAlias"><tt>GetServerByAlias</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetServerByUrl"><tt>GetServerByUrl</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetServerLocation"><tt>GetServerLocation</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetActiveServer"><tt>GetActiveServer</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetUrlFromAliasedUrl"><tt>GetUrlFromAliasedUrl</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetAliasFromAliasedUrl"><tt>GetAliasFromAliasedUrl</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetModelNameFromAliasedUrl"><tt>GetModelNameFromAliasedUrl</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ConnectionId"><tt>GetConnectionId</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ExecuteModelCheck"><tt>ExecuteModelCheck</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RegisterCustomModelCheck"><tt>RegisterCustomModelCheck</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RegisterRelationFunction"><tt>RegisterRelationFunction</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetMessageContents"><tt>GetMessageContents</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetLocalizedMessageContents"><tt>GetLocalizedMessageContents</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#UIRegisterFileSave"><tt>UIRegisterFileSave</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#UIRegisterFileOpen"><tt>UIRegisterFileOpen</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetPrintPlacementOptions"><tt>GetPrintPlacementOptions</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetPrintPrinterOptions"><tt>GetPrintPrinterOptions</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetPrintMdlOptions"><tt>GetPrintMdlOptions</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetPrintPCFOptions"><tt>GetPrintPCFOptions</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#PLMSInitialize"><tt>PLMSInitialize</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#AllowDuplicateModelItems"><tt>AllowDuplicateModelItems</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#WLBInitialize"><tt>WLBInitialize</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ExportProfileLoad"><tt>ExportProfileLoad</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UIAddMenu">UIAddMenu</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>UIAddMenu</tt></td><td class="method-params"><tt>
+ (String&nbsp;MenuName, String&nbsp;NeighborItem, String&nbsp;FileName, 
+   /*optional*/
+   String&nbsp;ParentMenu)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new menu.<br>
+<br> This method is deprecated. Use Customize UI dialog to create menus in Creo Parametric Ribbon UI<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitMsgNotFound.html">XToolkitMsgNotFound</a></tt></tt> - The specified message was not found in the message file. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitFound.html">XToolkitFound</a></tt></tt> - a menubar entity with this name already exists.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>MenuName</b></tt>
+</dt>
+<dd>The name of the new menu </dd>
+<dt>
+<tt><b>NeighborItem</b></tt>
+</dt>
+<dd>The neighbor item in the parent menu </dd>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the menu file</dd>
+<dt>
+<tt><b>ParentMenu</b></tt>
+</dt>
+<dd>The name of the parent menu, or NULL if the menu is along the toolbar.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UICreateCommand">UICreateCommand</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcCommand-UICommand.html">UICommand</a></tt></td><td class="method-name"><tt>UICreateCommand</tt></td><td class="method-params"><tt>
+ (String&nbsp;Name, <a class="type" href="c-pfcCommand-UICommandActionListener.html">UICommandActionListener</a>&nbsp;Action)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a command with the specified name.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitFound.html">XToolkitFound</a></tt></tt> - An action already exists under <i>action_name</i>. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcSession-Session.html#UICreateMaxPriorityCommand">Session.UICreateMaxPriorityCommand(String, UICommandActionListener)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#32">Action Listeners: UI Command Action Listeners</a>, <a href="../manual0/JAction.html#33">Action Listeners: UI Command Action Listeners</a>, <a href="../manual0/menus_jlink.html#6">Menus, Commands, and Pop-up Menus: Menus Buttons and Menus</a>, <a href="../manual0/menus_jlink.html#8">Menus, Commands, and Pop-up Menus: Menus Buttons and Menus</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>The name of the new command</dd>
+<dt>
+<tt><b>Action</b></tt>
+</dt>
+<dd>The corresponding action listener, which will be
+   run when the command is activated.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A pointer to the new command</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UICreateMaxPriorityCommand">UICreateMaxPriorityCommand</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcCommand-UICommand.html">UICommand</a></tt></td><td class="method-name"><tt>UICreateMaxPriorityCommand</tt></td><td class="method-params"><tt>
+ (String&nbsp;Name, <a class="type" href="c-pfcCommand-UICommandActionListener.html">UICommandActionListener</a>&nbsp;Action)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a command with the specified name. This command
+   differs from a command created by
+  <tt><a class="method" href="c-pfcSession-Session.html#UICreateCommand">Session.UICreateCommand(String, UICommandActionListener)</a></tt> in that it
+   uses the maximum command priority available. Maximum command priority
+   should be used only in commands which open and activate a new model in
+   a window. All other commands should be created using
+   <tt><a class="method" href="c-pfcSession-Session.html#UICreateCommand">Session.UICreateCommand(String, UICommandActionListener)</a></tt> because
+   commands created with maximum priority may dismiss context of the
+   current model in certain situations.<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitFound.html">XToolkitFound</a></tt></tt> - An action already exists under <i>action_name</i>. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/menus_jlink.html#7">Menus, Commands, and Pop-up Menus: Menus Buttons and Menus</a>, <a href="../manual0/menus_jlink.html#8">Menus, Commands, and Pop-up Menus: Menus Buttons and Menus</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>The name of the new command</dd>
+<dt>
+<tt><b>Action</b></tt>
+</dt>
+<dd>The corresponding action listener, which will
+    be run when the command is activated.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A pointer to the new command</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UIAddButton">UIAddButton</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>UIAddButton</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcCommand-UICommand.html">UICommand</a>&nbsp;Command, String&nbsp;MenuName, 
+   /*optional*/
+   String&nbsp;NeighborButton, String&nbsp;ButtonName, String&nbsp;Message, String&nbsp;MsgFile)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Adds a new button to an existing menu.<br>
+<br> This method is deprecated. Use Customize UI dialog to create menus in Creo Parametric Ribbon UI<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitMsgNotFound.html">XToolkitMsgNotFound</a></tt></tt> - The specified message was not found in the message file. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitFound.html">XToolkitFound</a></tt></tt> - a menubar entity with this name already exists.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Command</b></tt>
+</dt>
+<dd>The menu command </dd>
+<dt>
+<tt><b>MenuName</b></tt>
+</dt>
+<dd>The name of the menu to which to add the button </dd>
+<dt>
+<tt><b>NeighborButton</b></tt>
+</dt>
+<dd>The name of the neighboring menu button. To determine thename of a menu button, check the trail file after the menu button has beenselected from the parent menu.</dd>
+<dt>
+<tt><b>ButtonName</b></tt>
+</dt>
+<dd>The label for the name of the button to add to the menu, as declared in the message file.</dd>
+<dt>
+<tt><b>Message</b></tt>
+</dt>
+<dd>The label for the one-line help message displayed when your cursor is over thenew button, as declared in the message file.</dd>
+<dt>
+<tt><b>MsgFile</b></tt>
+</dt>
+<dd>The name of the message file used for the menu</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UIDisplayMessage">UIDisplayMessage</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>UIDisplayMessage</tt></td><td class="method-params"><tt>
+ (String&nbsp;MsgFile, String&nbsp;Format, 
+   /*optional*/
+   <a class="type" href="c-stdcols-stringseq.html">stringseq</a>&nbsp;Messages)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Prints a text message to the message area in Creo Parametric.
+<br>
+<br>This method supports only ASCII character strings as messages.
+Remember that Web.Link applications, as unregistered web pages, do not currently support setting of the PTC Creo Parametric text directory.
+All the resource files for messages must be located at $PRO_DIRECTORY/text folder.<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The specified message file was not found.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantOpen.html">XToolkitCantOpen</a></tt></tt> - The system could not read the message file.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitMsgNotFound.html">XToolkitMsgNotFound</a></tt></tt> - The specified message was not found in the message file. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitMsgNoTrans.html">XToolkitMsgNoTrans</a></tt></tt> - The message text (in the current language of the user interface) was not found. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitMsgFmtError.html">XToolkitMsgFmtError</a></tt></tt> - There was a format error in the message text.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitMsgTooLong.html">XToolkitMsgTooLong</a></tt></tt> - The message was longer than 80 characters and has been truncated to fit. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitFound.html">XToolkitFound</a></tt></tt> - The message file had been read in before this call and the message was not in it. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#74">Session Objects: Accessing the Message Window</a>, <a href="../manual0/JSession.html#76">Session Objects: Accessing the Message Window</a>, <a href="../manual0/JSession.html#78">Session Objects: Accessing the Message Window</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>MsgFile</b></tt>
+</dt>
+<dd>The name of the message file containing the format</dd>
+<dt>
+<tt><b>Format</b></tt>
+</dt>
+<dd>The format of the message: the first line of the section of the message file that uniquely identifies the message</dd>
+<dt>
+<tt><b>Messages</b></tt>
+</dt>
+<dd>A sequence of strings which will replace any occurrences of %#s in the message format, where '#' is the numerical identifier of the replacement.  This method does not support formats using %#w.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UIDisplayLocalizedMessage">UIDisplayLocalizedMessage</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>UIDisplayLocalizedMessage</tt></td><td class="method-params"><tt>
+ (String&nbsp;MsgFile, String&nbsp;Format, 
+   /*optional*/
+   <a class="type" href="c-stdcols-stringseq.html">stringseq</a>&nbsp;Messages)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Prints a text message to the message area in Creo Parametric.
+<br>
+<br>This method supports non-ASCII character strings as messages.
+Remember that Web.Link applications, as unregistered web pages, do not currently support setting of the PTC Creo Parametric text directory.
+All the resource files for messages must be located at $PRO_DIRECTORY/text folder.<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The specified message file was not found.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantOpen.html">XToolkitCantOpen</a></tt></tt> - The system could not read the message file.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitMsgNotFound.html">XToolkitMsgNotFound</a></tt></tt> - The specified message was not found in the message file. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitMsgNoTrans.html">XToolkitMsgNoTrans</a></tt></tt> - The message text (in the current language of the user interface) was not found. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitMsgFmtError.html">XToolkitMsgFmtError</a></tt></tt> - There was a format error in the message text.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitMsgTooLong.html">XToolkitMsgTooLong</a></tt></tt> - The message was longer than 259 characters and has been truncated to fit. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitFound.html">XToolkitFound</a></tt></tt> - The message file had been read in before this call and the message was not in it. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#75">Session Objects: Accessing the Message Window</a>, <a href="../manual0/JSession.html#76">Session Objects: Accessing the Message Window</a>, <a href="../manual0/JSession.html#78">Session Objects: Accessing the Message Window</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>MsgFile</b></tt>
+</dt>
+<dd>The name of the message file containing the format</dd>
+<dt>
+<tt><b>Format</b></tt>
+</dt>
+<dd>The format of the message: the first line of the section of the message file that uniquely identifies the message</dd>
+<dt>
+<tt><b>Messages</b></tt>
+</dt>
+<dd>A sequence of strings which will replace any occurrences of %#w in the message file, where '#' is the numerical identifier of the replacement.  This method does not support formats using %#s.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UIClearMessage">UIClearMessage</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>UIClearMessage</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Scrolls the text in the message area up one line after a call to <tt><a class="method" href="c-pfcSession-Session.html#UIDisplayMessage">Session.UIDisplayMessage(String, String, /*optional*/ stringseq)</a></tt> . This command produces only one carriage return; if called multiple times, the command is ignored.
+<br>
+<br>You could use this function to remove a message once the user has
+responded to it, so it is clear that the system received the response.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#76">Session Objects: Accessing the Message Window</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UIReadIntMessage">UIReadIntMessage</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Integer</tt></td><td class="method-name"><tt>UIReadIntMessage</tt></td><td class="method-params"><tt>
+ (int&nbsp;LowerLimit, int&nbsp;UpperLimit)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Reads an integer from the keyboard.
+<br>
+<br>If the user types a value outside the specified range of values, the
+functions prompts the user to enter the value again.<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitMsgUserQuit.html">XToolkitMsgUserQuit</a></tt></tt> - The user canceled input by typing ESC.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#80">Session Objects: Message Classification</a>, <a href="../manual0/JSession.html#82">Session Objects: Message Classification</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>LowerLimit</b></tt>
+</dt>
+<dd>The lower limit of the range of valid values</dd>
+<dt>
+<tt><b>UpperLimit</b></tt>
+</dt>
+<dd>The upper limit of the range of valid values</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A pointer to the value entered</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UIReadRealMessage">UIReadRealMessage</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-name"><tt>UIReadRealMessage</tt></td><td class="method-params"><tt>
+ (double&nbsp;LowerLimit, double&nbsp;UpperLimit)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Reads a double-precision float from the keyboard.
+<br>
+<br>If the user types a value outside the specified range of values,
+the function prompts the user to enter the value again.<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitMsgUserQuit.html">XToolkitMsgUserQuit</a></tt></tt> - The user canceled input by typing ESC.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#81">Session Objects: Message Classification</a>, <a href="../manual0/JSession.html#82">Session Objects: Message Classification</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>LowerLimit</b></tt>
+</dt>
+<dd>The lower limit of the range of valid values</dd>
+<dt>
+<tt><b>UpperLimit</b></tt>
+</dt>
+<dd>The upper limit of the range of valid values </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A pointer to the value entered</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UIReadStringMessage">UIReadStringMessage</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-name"><tt>UIReadStringMessage</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;HideInput)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Reads a line of keyboard input and returns the contents as a wide
+string.
+<br>
+<br>Leading and trailing blanks are stripped from the string.
+   <p></p>
+   Default values are displayed in the text box as input.
+   Note that this value will not be returned if the user hits a carriage return;
+   instead, the function will return constant string "use_default_string" and
+   the application must interpret that the user intends to use the default.
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitMsgUserQuit.html">XToolkitMsgUserQuit</a></tt></tt> - The user canceled input by typing &lt;ESC&gt;.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#82">Session Objects: Message Classification</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>HideInput</b></tt>
+</dt>
+<dd>A Boolean flag that specifies whether the input should be hidden, such as when you type in a password</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The string entered</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UIDisplayFeatureParams">UIDisplayFeatureParams</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>UIDisplayFeatureParams</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;Selection, <a class="type" href="c-pfcSession-ParamType.html">ParamType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Displays parameters of a selected feature.
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The model is not the top-level model in the window. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#84">Session Objects: Displaying Feature Parameters</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Selection</b></tt>
+</dt>
+<dd>A selection object in which the selected model item is a feature.</dd>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>Specifies the type of parameter to display. The options are:<ul type="disc">
+
+<li>
+ DIM_PARAM</li>
+
+<li>
+ PATTERN_PARAM</li>
+
+<li>
+ REFDIM_PARAM</li>
+
+<li>
+ ALL_PARAMS</li>
+
+<li>
+ GTOL_PARAM</li>
+
+<li>
+ SURFFIN_PARAM</li>
+
+</ul>
+
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UIPickMouseBox">UIPickMouseBox</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcBase-Outline3D.html">Outline3D</a></tt></td><td class="method-name"><tt>UIPickMouseBox</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;FirstCorner)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Prompt the user to select a rectangle using the mouse.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#6">Graphics: Drawing a Mouse Box</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FirstCorner</b></tt>
+</dt>
+<dd>The location of the first corner of the rectangle, or <tt>null</tt>, in which case the user willbe able to select both corners.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The two boundary points, in screen coordinates.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UIGetCurrentMouseStatus">UIGetCurrentMouseStatus</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcSession-MouseStatus.html">MouseStatus</a></tt></td><td class="method-name"><tt>UIGetCurrentMouseStatus</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;SnapToGrid)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns the status of mouse at this particular moment.  This method returns whenever the mouse is
+moved or a button is pressed.
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitAbort.html">XToolkitAbort</a></tt></tt> - The user aborted input. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#4">Graphics: Getting Mouse Input</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SnapToGrid</b></tt>
+</dt>
+<dd>Boolean specifying whether or not the mouse positions should be indicated as the closest gridpoint.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Data object with the current mouse position and button status.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UIGetNextMousePick">UIGetNextMousePick</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcSession-MouseStatus.html">MouseStatus</a></tt></td><td class="method-name"><tt>UIGetNextMousePick</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcSession-MouseButton.html">MouseButton</a>&nbsp;ExpectedButton)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns the mouse status at the time that the user makes a mouse pick.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#3">Graphics: Getting Mouse Input</a>, <a href="../manual0/JGraphics.html#4">Graphics: Getting Mouse Input</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ExpectedButton</b></tt>
+</dt>
+<dd>The button that the user should press, or <tt>null</tt>, which means any button will cause the function to return.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Data object containing the current mouse position and button status.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UIShowMessageDialog">UIShowMessageDialog</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcUI-MessageButton.html">MessageButton</a></tt></td><td class="method-name"><tt>UIShowMessageDialog</tt></td><td class="method-params"><tt>
+ (String&nbsp;Message, 
+   /*optional*/
+   <a class="type" href="c-pfcUI-MessageDialogOptions.html">MessageDialogOptions</a>&nbsp;Options)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Displays the UI Message Dialog.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#69">Session Objects: Writing a Message Using a Message Pop-up Dialog Box</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Message</b></tt>
+</dt>
+<dd>The message text to be displayed in the dialog.</dd>
+<dt>
+<tt><b>Options</b></tt>
+</dt>
+<dd>The various options for message dialog. If null, a default message dialog is displayed, with only an OK button and an Info icon and title. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The identifier of the button that the user pressed to dismiss the dialog.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UIOpenFile">UIOpenFile</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>UIOpenFile</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcUI-FileOpenOptions.html">FileOpenOptions</a>&nbsp;Options)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Prompts the standard file browser interface of Creo Parametric.
+<br>
+<br>This method cannot be used for NX models in the current release.
+ <p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitUserAbort.html">XToolkitUserAbort</a></tt></tt> - The user aborted from the user interface. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#86">Session Objects: File Dialogs</a>, <a href="../manual0/JSession.html#123">Session Objects: File Dialogs</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Options</b></tt>
+</dt>
+<dd>The various options for file open dialog.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The selected file.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UISelectDirectory">UISelectDirectory</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>UISelectDirectory</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcUI-DirectorySelectionOptions.html">DirectorySelectionOptions</a>&nbsp;Options)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Prompts the standard file browser interface of Creo Parametric, set up for the purpose of allowing the user to select a directory.
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitUserAbort.html">XToolkitUserAbort</a></tt></tt> - The user aborted from the user interface. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#110">Session Objects: File Dialogs</a>, <a href="../manual0/JSession.html#123">Session Objects: File Dialogs</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Options</b></tt>
+</dt>
+<dd>The various options for directory selection dialog.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The selected directory path.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UISaveFile">UISaveFile</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>UISaveFile</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcUI-FileSaveOptions.html">FileSaveOptions</a>&nbsp;Options)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Prompts the standard file browser interface of Creo Parametric, set up for the purpose of allowing the user to save a file.
+<br>
+<br>For Multi-CAD objects, this method does not support local disk saving
+  location in a Windchill connected session.<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitUserAbort.html">XToolkitUserAbort</a></tt></tt> - The user aborted from the user interface. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#102">Session Objects: File Dialogs</a>, <a href="../manual0/JSession.html#123">Session Objects: File Dialogs</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Options</b></tt>
+</dt>
+<dd>The various options for save file dialog.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The saved file.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UIGetCommand">UIGetCommand</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcCommand-UICommand.html">UICommand</a></tt></td><td class="method-name"><tt>UIGetCommand</tt></td><td class="method-params"><tt>
+ (String&nbsp;Name)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Finds the identifier of the specified action or option.
+ <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/menus_jlink.html#9">Menus, Commands, and Pop-up Menus: Menus Buttons and Menus</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>The name of the action or option.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A pointer to the command.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CurrentSelectionBuffer">GetCurrentSelectionBuffer</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcSelect-SelectionBuffer.html">SelectionBuffer</a></tt></td><td class="method-name"><tt>GetCurrentSelectionBuffer</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The current selection buffer object.<br>
+<br>It is necessary to have a model active in the session before calling the Get
+   method for the above attribute.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSelection.html#56">Selection: Reading the Contents of the Selection Buffer</a>, <a href="../manual0/JSelection.html#57">Selection: Reading the Contents of the Selection Buffer</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="NavigatorPaneBrowserAdd">NavigatorPaneBrowserAdd</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>NavigatorPaneBrowserAdd</tt></td><td class="method-params"><tt>
+ (String&nbsp;PaneName, 
+   /*optional*/
+   String&nbsp;IconFileName, String&nbsp;URL)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Adds a new Navigator Pane.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#125">Session Objects: Customizing the Creo Navigation Area</a>, <a href="../manual0/JSession.html#127">Session Objects: Customizing the Creo Navigation Area</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PaneName</b></tt>
+</dt>
+<dd>The name of the new navigator pane</dd>
+<dt>
+<tt><b>IconFileName</b></tt>
+</dt>
+<dd>The name of the icon file</dd>
+<dt>
+<tt><b>URL</b></tt>
+</dt>
+<dd>URL of the pane</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="NavigatorPaneBrowserIconSet">NavigatorPaneBrowserIconSet</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>NavigatorPaneBrowserIconSet</tt></td><td class="method-params"><tt>
+ (String&nbsp;PaneName, String&nbsp;IconFileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Set the icon for a Navigator Pane.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#126">Session Objects: Customizing the Creo Navigation Area</a>, <a href="../manual0/JSession.html#127">Session Objects: Customizing the Creo Navigation Area</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PaneName</b></tt>
+</dt>
+<dd>The name of the new navigator pane</dd>
+<dt>
+<tt><b>IconFileName</b></tt>
+</dt>
+<dd>The name of the icon file</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="NavigatorPaneBrowserURLSet">NavigatorPaneBrowserURLSet</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>NavigatorPaneBrowserURLSet</tt></td><td class="method-params"><tt>
+ (String&nbsp;PaneName, String&nbsp;URL)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Set the url for a Navigator Pane.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#127">Session Objects: Customizing the Creo Navigation Area</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PaneName</b></tt>
+</dt>
+<dd>The name of the new navigator pane</dd>
+<dt>
+<tt><b>URL</b></tt>
+</dt>
+<dd>URL to set in the pane</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RibbonDefinitionfileLoad">RibbonDefinitionfileLoad</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>RibbonDefinitionfileLoad</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Loads ribbon definition file from a default path.
+<br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The ribbon definition file was not found.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidFile.html">XToolkitInvalidFile</a></tt></tt> - The file specified was not a ribbon definition file.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/pfc_ribbon.html#5">Ribbon Tabs, Groups, and Menu Items: To Specify the Path for the Ribbon Definition File</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>Name of ribbon definition file including extension name. The default search paths for finding the ribbon definition file are: <ul type="disc">
+
+<li> Current directory</li>
+
+<li> Creo Parametric Loadpoint/text/ribbon</li>
+
+<li> Application text dir/ribbon</li>
+
+<li> Application text dir/(language)/ribbon</li>
+
+</ul>
+ 
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ModelDescrContainsOrigin">ModelDescrContainsOrigin</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>ModelDescrContainsOrigin</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a>&nbsp;Descr)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Descr</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetAppInfo">SetAppInfo</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetAppInfo</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSession-AppInfo.html">AppInfo</a>&nbsp;Info)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Sends the application information for the application session.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JlinkOverview.html#109">Overview of Creo Object TOOLKIT Java: Compatibility of Deprecated Methods</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Info</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetAppInfo">GetAppInfo</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcSession-AppInfo.html">AppInfo</a></tt></td><td class="method-name"><tt>GetAppInfo</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns the application information from the applicatoin session.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JlinkOverview.html#108">Overview of Creo Object TOOLKIT Java: Compatibility of Deprecated Methods</a>, <a href="../manual0/JlinkOverview.html#109">Overview of Creo Object TOOLKIT Java: Compatibility of Deprecated Methods</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

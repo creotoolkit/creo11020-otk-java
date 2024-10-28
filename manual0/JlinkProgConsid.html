@@ -1,0 +1,209 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9">
+      <meta name="ch:resourceid" content="JlinkProgConsid" scheme="atiChunkerMeta">
+      
+      
+      
+      
+      
+      
+      <link href="css/styler.css" rel="stylesheet" type="text/css">
+      <title>Creo Object TOOLKIT Java Programming Considerations</title>
+   
+<SCRIPT LANGUAGE="JAVASCRIPT">
+  function findProperNode() { top.frames[0].document.apiwizard.manual("MANJLINKPROGCONSID0", location.hash); }
+</SCRIPT>
+
+</head>
+   <body onLoad="findProperNode()">
+      
+         
+         <a name="0"> </a><div class=" x-title-65-0 x-title-65-1" combinedFontName="off" id="styler-id1.1.1.6.1" class="ChapterTitle">Creo Object TOOLKIT Java Programming Considerations</div>
+         <div class=" x-body-2-0">
+            <div class=" x-p-7-0">This <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> contains information needed to develop an application using <span class=" x-ph-2-0" id="JlinkProgConsid_PTCCreoObjectTOOLKITJavaProgramming-9E9B_8_7">Creo Object TOOLKIT Java</span>.
+            </div>
+         </div>
+         <div class=" x-topic-4-0 x-topic-4-1 x-topic-4-2" combinedFontName="off" id="JlinkProgConsid_PTCCreoObjectTOOLKITJavaThreadRestr-9E9B_8_8">
+            
+            <a name="1"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.6.3.1" class="Heading1">Creo Object TOOLKIT Java Thread Restrictions</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="2"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="3"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">When you run a synchronous <span class=" x-ph-2-0" id="JlinkProgConsid_PTCCreoObjectTOOLKITJavaThreadRestr-9E9B_8_17">Creo Object TOOLKIT Java</span> program, you should configure your program so it does not interfere with the main thread of the <span class=" x-ph-2-0" id="JlinkProgConsid_PTCCreoObjectTOOLKITJavaThreadRestr-9E9B_8_18">Creo</span> program. Because the Java API allows you to run with multiple threads, you should be cautious of using certain Java routines
+                  in your program.
+               </div>
+               <div class=" x-p-7-0">The most obvious restriction involves the use of Java language user interfaces. Any Java window that you create must be a
+                  dialog box that is blocking (or modal).
+               </div>
+               <div class=" x-p-7-0">Creating a nonblocking frame causes a new thread to begin, which can have unexpected results when running with <span class=" x-ph-2-0" id="JlinkProgConsid_PTCCreoObjectTOOLKITJavaThreadRestr-9E9B_8_18">Creo</span> application. For example, you can use the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">javax.swing.JDialog</span></span> class and set <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">modal</span></span> true. You cannot use <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">javax.swing.JWindow</span></span>, however, because it starts a thread.
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JlinkProgConsid_Parent-ChildRelationshipsBetweenPTC-9E9B_8_25">
+            
+            <a name="4"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.6.4.1" class="Heading1">Parent-Child Relationships Between Creo Object TOOLKIT Java Objects</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Some <span class=" x-ph-2-0" id="JlinkProgConsid_Parent-ChildRelationshipsBetweenPTC-9E9B_8_29">Creo Object TOOLKIT Java</span> objects inherit from either the interface <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">com.ptc.pfc.pfcObject.Parent</span></span> or <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">com.ptc.pfc.pfcObject.Child</span></span>. These interfaces are used to maintain a relationship between the two objects. This has nothing to do with Java inheritance.
+                  In <span class=" x-ph-2-0" id="JlinkProgConsid_Parent-ChildRelationshipsBetweenPTC-9E9B_8_29">Creo Object TOOLKIT Java</span>, the Child is owned by the Parent.
+               </div>
+               <div class=" x-p-7-0">Methods Introduced:</div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; "></td>
+                           <td><span class=" x-p-4-0"><a name="5"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcObject-Child.html#DBParent">pfcObject.Child.GetDBParent</A></li></span></span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">GetDBParent</span></span> returns the owner of the child object. Because the object is returned as a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">com.ptc.pfc.pfcObject.Parent</span></span> object, the application developer must down cast the return to the appropriate class. The following table lists parent/child
+                  relationships in <span class=" x-ph-2-0" id="JlinkProgConsid_Parent-ChildRelationshipsBetweenPTC-9E9B_8_29">Creo Object TOOLKIT Java</span>.
+               </div>
+               <div class=" x-table-2-0 x-table-2-3" id="styler-id1.1.1.6.4.2.5">
+                  <table xmlns="" cellpadding="6.666666666666667" class=" x-tgroup-1-0" frame="box" rules="none" style="border-collapse: collapse; border-width: 1pt; " width="100%">
+                     <colgroup>
+                        <col>
+                        <col>
+                     </colgroup>
+                     <thead align="left" class=" x-thead-1-0" style="font-weight: bold" valign="top">
+                        <tr class=" x-row-2-0">
+                           <th class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; " valign="top">
+                              <div class=" x-p-3-0">Parent</div>
+                           </th>
+                           <th class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; " valign="top">
+                              <div class=" x-p-3-0">Child</div>
+                           </th>
+                        </tr>
+                     </thead>
+                     <tbody class=" x-tbody-1-0" valign="top">
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Session</div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Model</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Session</div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Window</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Model</div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">ModelItem</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Solid</div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Feature</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Model</div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Parameter</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Model</div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">ExternalDataAccess</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Display</div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">DisplayList2D/3D</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Part</div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Material</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Model</div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">View</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Model2D</div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">View2D</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Solid</div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">XSection</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Session</div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Dll (<span class=" x-ph-2-0"><span class=" x-ph-2-0" id="JlinkProgConsid_Parent-ChildRelationshipsBetweenPTC-9E9B_8_112">Creo TOOLKIT</span></span>)
+                              </div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Session</div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Application (<span class=" x-ph-2-0" id="JlinkProgConsid_Parent-ChildRelationshipsBetweenPTC-9E9B_8_29">Creo Object TOOLKIT Java</span>)
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JlinkProgConsid_Run-TimeTypeIdentificationInPTCCreo-9E9B_8_119">
+            
+            <a name="6"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.6.5.1" class="Heading1">Run-Time Type Identification in Creo Object TOOLKIT Java</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0"><span class=" x-ph-2-0" id="JlinkProgConsid_Run-TimeTypeIdentificationInPTCCreo-9E9B_8_123">Creo Object TOOLKIT Java</span> and the Java language provides several methods to identify the type of an object.  Each has its adavantages and disadvantages.
+               </div>
+               <div class=" x-p-7-0">Many <span class=" x-ph-2-0" id="JlinkProgConsid_Run-TimeTypeIdentificationInPTCCreo-9E9B_8_123">Creo Object TOOLKIT Java</span> classes provide read access to a type enum (for example, the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Feature</span></span> class has a <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">GetFeatType</span></span> method, returning a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">FeatureType</span></span> enumeration value representing the type of the feature). Based upon the type, a user can downcast the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Feature</span></span> object to a particular subtype, such as <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">ComponentFeat</span></span>, which is an assembly component.
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

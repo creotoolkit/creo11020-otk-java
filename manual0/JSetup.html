@@ -1,0 +1,664 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9">
+      <meta name="ch:resourceid" content="JSetup" scheme="atiChunkerMeta">
+      
+      
+      
+      
+      
+      
+      <link href="css/styler.css" rel="stylesheet" type="text/css">
+      <title>Setting Up Creo Object TOOLKIT Java</title>
+   
+<SCRIPT LANGUAGE="JAVASCRIPT">
+  function findProperNode() { top.frames[0].document.apiwizard.manual("MANJSETUP0", location.hash); }
+</SCRIPT>
+
+</head>
+   <body onLoad="findProperNode()">
+      
+         
+         <a name="0"> </a><div class=" x-title-65-0 x-title-65-1" combinedFontName="off" id="styler-id1.1.1.4.1" class="ChapterTitle">Setting Up Creo Object TOOLKIT Java</div>
+         <div class=" x-body-2-0">
+            <div class=" x-p-7-0">This <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> describes how to set up your environment so you can run <span class=" x-ph-2-0" id="JSetup_SettingUpPTCCreoObjectTOOLKITJava-9E9C30D9_PTCCre_6_9">Creo Object TOOLKIT Java</span>.
+            </div>
+         </div>
+         <div class=" x-topic-4-0 x-topic-4-1 x-topic-4-2" combinedFontName="off" id="JSetup_SettingUpYourMachine-9EADB268_6_10">
+            
+            <a name="1"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.4.3.1" class="Heading1">Setting Up Your Machine</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="2"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="3"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">See <a href="Ajoptions.html" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Java Options and Debugging</a> for more information about supported Java Virtual Machines and how to setup <span class=" x-ph-2-0" id="JSetup_SettingUpYourMachine-9EADB268_PTCCreo-EC6F7D2F_6_20">Creo</span> application.
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JSetup_SettingUpASynchronousPTCCreoObjectT-9EADB5EB_6_21">
+            
+            <a name="4"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.4.4.1" class="Heading1">Setting Up a Synchronous Creo Object TOOLKIT Java Program</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="5"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="6"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="7"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">A synchronous <span class=" x-ph-2-0" id="JSetup_SettingUpASynchronousPTCCreoObjectT-9EADB5EB_PTCC_6_32">Creo Object TOOLKIT Java</span> application is started and managed by <span class=" x-ph-2-0" id="JSetup_SettingUpASynchronousPTCCreoObjectT-9EADB5EB_PTCC_6_33">Creo</span> application. Control belongs to either <span class=" x-ph-2-0" id="JSetup_SettingUpASynchronousPTCCreoObjectT-9EADB5EB_PTCC_6_33">Creo</span> or the application, but not both at the same time.
+               </div>
+               <div class=" x-p-7-0">All <span class=" x-ph-2-0" id="JSetup_SettingUpASynchronousPTCCreoObjectT-9EADB5EB_PTCC_6_32">Creo Object TOOLKIT Java</span> applications must be packaged as a jar. The <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">.class</span></span> files will be ignored, even if their locations are present either in the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">java_app_classpath</span></span> field in the registry file, or in the classpath. Refer to the section <a href="JlinkOverview.html" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Unlockin</a>, for more information.
+               </div>
+               <div class=" x-p-7-0">You can run synchronous <span class=" x-ph-2-0" id="JSetup_SettingUpASynchronousPTCCreoObjectT-9EADB5EB_PTCC_6_32">Creo Object TOOLKIT Java</span> programs as standalone applications or model-specific programs. Most of the required settings for these two programs are
+                  independent of the programs themselves. This enables you to convert an application program to a model program, or vice versa.
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JSetup_StandaloneApplications-9EADB84E_6_42">
+               
+               <a name="8"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.4.4.4.1" class="Heading2">Standalone Applications</div>
+               <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="9"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="10"></a><span class=" x-indexterm-1-0"></span></div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">You can start the <span class=" x-ph-2-0" id="JSetup_StandaloneApplications-9EADB84E_PTCCreoObjectTool_6_50">Creo Object TOOLKIT Java</span> application independently at any time, regardless of which models are in session. A registry file contains key information
+                     regarding the execution of the program.
+                  </div>
+                  <div class=" x-p-7-0">Using application programs you can make additions to the <span class=" x-ph-2-0" id="JSetup_StandaloneApplications-9EADB84E_PTCCreo-EC6F7D2F_6_52">Creo</span> user interface, gather or change data associated with the models in session, or add session-level <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">ActionListener</span></span> routines.
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JSetup_RegistryFile-9EAE6BD4_6_54">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.4.4.4.4.1">Registry File</div>
+                  <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="11"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="12"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="13"></a><span class=" x-indexterm-1-0"></span></div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">A registry file contains <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreo-EC6F7D2F_6_62">Creo</span>-specific information about the standalone application you want to load.
+                     </div>
+                     <div class=" x-p-7-0">The registry file called <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">creotk.dat</span></span> or <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">protk.dat</span></span> is a simple text file, where each line consists of one predefined keyword followed by a value. The standard form of the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">creotk.dat</span></span> or <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">protk.dat</span></span> file is as follows:
+                     </div><pre class=" x-codeblock-3-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">name                              java_demo
+startup                            otk_java
+toolkit                             object
+creo_type                       parametric
+java_app_class               MyJavaApp
+java_app_classpath         &lt;full path to the application classes 
+                                      and archives&gt;
+java_app_start                 start
+java_app_stop                 stop
+allow_stop                       true
+delay_start                      true
+text_dir                           &lt;path to text directory used by
+                                      message and menu related commands&gt;
+end</span></pre><div class=" x-p-7-0">The fields of the registry file are as follows:</div>
+                     <div class=" x-ul-2-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">name</span></span>&#8212;Assigns a unique name to this <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreoObjectToolkitJava-EC_6_74">Creo Object TOOLKIT Java</span> application. The name identifies the application when there is more than one in the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">creotk.dat</span></span> or <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">protk.dat</span></span> file. The maximum size of the name is 31 characters for the name, plus the end-of-string character.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">startup</span></span>&#8212;Specifies the method <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreo-EC6F7D2F_6_62">Creo</span> should use to communicate with the <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreoObjectToolkitJava-EC_6_74">Creo Object TOOLKIT Java</span> application. For <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreoObjectToolkitJava-EC_6_74">Creo Object TOOLKIT Java</span> applications, set <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">startup</span></span> to <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">otk_java</span></span>.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">toolkit</span></span>&#8212;<span class=" x-p-4-0">Specifies the name of the Toolkit which was used to create the customization. The valid values for this field are <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">object</span></span> and <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">protoolkit</span></span>. </span><div class=" x-p-5-0">An application created in <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreoObjectToolkitJava-EC_6_74">Creo Object TOOLKIT Java</span> must always have the value of this field set as <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">object</span></span>.
+                                    </div>
+                                    <div class=" x-note-2-0 x-note-2-3">
+                                       <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                                       <div class=" x-p-7-0">This field can also be used to indicate other toolkits. Its default value is <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">protoolkit</span></span>, which specifies that the customizing application was created in <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreoParametricToolkit-EC_6_96">Creo TOOLKIT</span>. If you set the value for this field as <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">protoolkit</span></span>, or omit this field, then the application can be used only with <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreoParametric-E96269BB_6_98"><span xmlns="" profilecode="1">Creo Parametric</span></span>.
+                                       </div>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">creo_type</span></span>&#8212;<span class=" x-p-4-0">Specifies the <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreo-EC6F7D2F_6_62">Creo</span> applications that support the <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreoObjectToolkitJava-EC_6_74">Creo Object TOOLKIT Java</span> applications. The valid values for this field are:
+                                       <div class=" x-ul-1-0">
+                                          <table border="0" cellpadding="0" cellspacing="0" class=" x-li-10-0" style="table-layout: fixed; " width="100%">
+                                             <col style="width: 0em">
+                                             <col style="width: 18pt">
+                                             <col>
+                                             <tbody>
+                                                <tr valign="baseline">
+                                                   <td align="right"></td>
+                                                   <td align="left" style="word-break: keep-all; "><span style="font-family: 'Arial Unicode MS'; ">&#9675;</span>&nbsp;
+                                                   </td>
+                                                   <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">parametric</span></span>&#8212;This is the default value. Specify <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">parametric</span></span> to load the <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreoObjectToolkitJava-EC_6_74">Creo Object TOOLKIT Java</span> application in <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreoParametric-E96269BB_6_98"><span xmlns="" profilecode="1">Creo Parametric</span></span>.</span></td>
+                                                </tr>
+                                             </tbody>
+                                          </table>
+                                       </div>
+                                       <div class=" x-note-1-0 x-note-1-3">
+                                          <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                                          <div class=" x-p-7-0">Other <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreo-EC6F7D2F_6_62">Creo</span> applications will be supported in future releases.
+                                          </div>
+                                       </div></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">java_app_class</span></span>&#8212;Specifies the fully qualified package and name of a Java class. This class contains the <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreoObjectToolkitJava-EC_6_74">Creo Object TOOLKIT Java</span> application&#8217;s start and stop methods.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">java_app_classpath</span></span>&#8212;An optional field to specify the full path to the <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreoObjectToolkitJava-EC_6_74">Creo Object TOOLKIT Java</span> application jar file. Refer to the section <a href="Ajoptions.html" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">CLASSPATH Variables</a> for more information on the other available mechanisms to set the CLASSPATH. This field has a character limit of 2047 wide
+                                       characters (<span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wchar_t</span></span>).</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">java_app_start</span></span>&#8212;Specifies the start method of your program. See the section <a href="#JSetup_StartAndStopMethods-9EAE8CB36_133" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Start and Stop Methods</a> for more information.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">java_app_stop</span></span>&#8212;Specifies the stop method of your program. See the section <a href="#JSetup_StartAndStopMethods-9EAE8CB36_133" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Start and Stop Methods</a> for more information.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">allow_stop</span></span>&#8212;Stops the application during the session if it is set to true. If this field is missing or set to false, you cannot stop
+                                       the application, regardless of how it was started.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">delay_start</span></span>&#8212;Enables you to choose when to start the <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreoObjectToolkitJava-EC_6_74">Creo Object TOOLKIT Java</span> application if it is set to true. <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreo-EC6F7D2F_6_62">Creo</span> application does not start the <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreoObjectToolkitJava-EC_6_74">Creo Object TOOLKIT Java</span> application during startup. If this field is missing or is set to false, the <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreoObjectToolkitJava-EC_6_74">Creo Object TOOLKIT Java</span> application starts automatically.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">text_dir</span></span>&#8212;Specifies the location of the text directory that contains the language-specific directories. The language-specific directories
+                                       contain the message files, menu files, resource files and UI bitmaps in the language supported by the <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreoObjectToolkitJava-EC_6_74">Creo Object TOOLKIT Java</span> application. The files must be located under a directory called <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">text</span></span> or <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">text/&lt;language&gt;</span></span>, if localized messages are used in the application. This field has a character limit of 2047 wide characters (<span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wchar_t</span></span>).</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">rbn_path</span></span>&#8212;Specifies the name of the ribbon file along with its path, which must be loaded when you open the <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreo-EC6F7D2F_6_62">Creo</span> application. The location of the ribbon file is relative to the location of the text directory. The field <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">text_dir</span></span> specifies the path for the text directory. </span><div class=" x-p-5-0">If the field is not specified, by default, the ribbon file with its location, <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">text_dir/toolkitribbonui.rbn</span></span> is used.
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">end</span></span>&#8212;Indicates the end of the description of the <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreoObjectToolkitJava-EC_6_74">Creo Object TOOLKIT Java</span> application. You can define multiple <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreoObjectToolkitJava-EC_6_74">Creo Object TOOLKIT Java</span> applications in the registry files. All these applications are started by <span class=" x-ph-2-0" id="JSetup_RegistryFile-9EAE6BD4_PTCCreo-EC6F7D2F_6_62">Creo</span> application.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_6_164">
+               
+               <a name="14"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.4.4.5.1" class="Heading2">Registering a Creo Object TOOLKIT Java Application</div>
+               <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="15"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="16"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="17"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="18"></a><span class=" x-indexterm-1-0"></span></div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Registering a <span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_177">Creo Object TOOLKIT Java</span> application means providing information about the files that form the <span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_177">Creo Object TOOLKIT Java</span> application to <span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_179">Creo</span> application. To do this, create a small text file, called the <span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_177">Creo Object TOOLKIT Java</span> &#8220;registry file,&#8221; that <span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_179">Creo</span> application will find and read.
+                  </div>
+                  <div class=" x-p-7-0"><span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_179">Creo</span> application searches for the registry file in the following order:
+                  </div>
+                  <div class=" x-ol-6-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-11-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">1.</td>
+                              <td><span class=" x-p-4-0">A file called <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">creotk.dat</span></span> or <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">protk.dat</span></span> in the current directory</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">2.</td>
+                              <td><span class=" x-p-4-0">A file named in a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">creotk.dat</span></span>, <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">protk.dat</span></span>, or <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">toolkit_registry_file</span></span> statement in the<span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_179">Creo</span> application configuration file</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">3.</td>
+                              <td><span class=" x-p-4-0">A file called <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">creotk.dat</span></span> or <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">protk.dat</span></span> in the directory <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_loadpoint&gt;\&lt;version&gt;\Common Files\&lt;machine type&gt;\text\&lt;language&gt;</span></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-12-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">4.</td>
+                              <td><span class=" x-p-4-0">A file called <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">creotk.dat</span></span> or <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">protk.dat</span></span> in the directory <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_loadpoint&gt;\&lt;version&gt;\Common Files\text</span></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">In the last two options, the variables are as follows:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;creo_loadpoint&gt;</span></span>&#8212;The <span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_179">Creo</span> loadpoint (not the <span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_177">Creo Object TOOLKIT Java</span> loadpoint)</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;machine type&gt;</span></span>&#8212;The machine-specific subdirectory such as <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">x86e_win64</span></span> or <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">i486_nt</span></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">&lt;language&gt;</span></span>&#8212;The language of <span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_179">Creo</span> application with which the <span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_177">Creo Object TOOLKIT Java</span> application is used such as <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">usascii</span></span> (English), <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">german</span></span>, or <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">japanese</span></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">If more than one registry file having the same filename exists in this search path, <span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_177">Creo Object TOOLKIT Java</span> stops searching after finding the first instance of the file and starts all the <span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_177">Creo Object TOOLKIT Java</span> applications specified in it. If more than one registry file having different filenames exists in this search path, <span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_179">Creo</span> application stops searching after finding one instance of each of them and starts all the <span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_177">Creo Object TOOLKIT Java</span> applications specified in them.
+                  </div>
+                  <div class=" x-p-7-0">Option 1 is used normally during development, because the <span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_177">Creo Object TOOLKIT Java</span> application is seen only if you start <span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_179">Creo</span> application from the specific directory that contains <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">creotk.dat</span></span> or <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">protk.dat</span></span>.
+                  </div>
+                  <div class=" x-p-7-0">Option 2 or 4 is recommended when making an end-user installation, because it makes sure that the registry file is found irrespective
+                     of the directory used to start <span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_179">Creo</span> application.
+                  </div>
+                  <div class=" x-p-7-0">Option 3 enables you to have a different registry file for each platform, and for each <span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_179">Creo</span> application language. This is more commonly used for <span class=" x-ph-2-0" id="JSetup_RegisteringAPTCCreoObjectTOOLKITJav-9EAE7327_PTCC_6_177">Creo Object TOOLKIT Java</span> applications that have a platform dependent setup.
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JSetup_StartingAndStoppingAStandaloneAppli-9EAE77AA_6_240">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.4.4.5.4.1">Starting and Stopping a Standalone Application</div>
+                  <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="19"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="20"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="21"></a><span class=" x-indexterm-1-0"></span></div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">If the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">delay_start</span></span> field in the registry file is set to false, the <span class=" x-ph-2-0" id="JSetup_StartingAndStoppingAStandaloneAppli-9EAE77AA_PTCC_6_252">Creo Object TOOLKIT Java</span> application starts automatically when you start <span class=" x-ph-2-0" id="JSetup_StartingAndStoppingAStandaloneAppli-9EAE77AA_PTCC_6_253">Creo</span>. Otherwise start the program by following these steps:
+                     </div>
+                     <div class=" x-ol-6-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-11-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">1.</td>
+                                 <td><span class=" x-p-4-0">From the <span class=" x-ph-2-0" id="JSetup_StartingAndStoppingAStandaloneAppli-9EAE77AA_PTCC_6_257"><span xmlns="" profilecode="1">Creo Parametric</span></span> toolbar, select <span class=" x-menucascade-1-0"><span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Utilities</span></span><span class=" x-uicontrol-3-0" combinedFontName="Sanserif-combined"><span class=" x--ufe-menuchoicekeep-1-0"><span xmlns="" class="cf-Sanserif-combined-Default">&nbsp;</span><span style="font-family: 'Arial Unicode MS'; "><span xmlns="" class="cf-Sanserif-combined-Default">&#9654; </span></span></span><span style="font-size: 1pt; "> </span><span xmlns="" class="cf-Sanserif-combined-Default">Auxiliary Applications</span></span></span>.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">2.</td>
+                                 <td><span class=" x-p-4-0">Choose the name of the application.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-12-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">3.</td>
+                                 <td><span class=" x-p-4-0">Click <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Start</span></span>.</span><div class=" x-ul-2-0">
+                                       <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                                          <col style="width: 0em">
+                                          <col style="width: 18pt">
+                                          <col>
+                                          <tbody>
+                                             <tr valign="baseline">
+                                                <td align="right"></td>
+                                                <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                                <td><span class=" x-p-4-0"><span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Start</span></span>&#8212;activates start method</span></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                                          <col style="width: 0em">
+                                          <col style="width: 18pt">
+                                          <col>
+                                          <tbody>
+                                             <tr valign="baseline">
+                                                <td align="right"></td>
+                                                <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                                <td><span class=" x-p-4-0"><span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Stop</span></span>&#8212; activates stop method</span></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">If the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">allow_stop</span></span> field in the registry file is set to true, you can click <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Stop</span></span> in the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Auxiliary Applications</span></span> dialog box to stop the application. Click <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Start</span></span> to restart it. If the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">allow_stop</span></span> field is set to false, the program runs until the <span class=" x-ph-2-0" id="JSetup_StartingAndStoppingAStandaloneAppli-9EAE77AA_PTCC_6_257"><span xmlns="" profilecode="1">Creo Parametric</span></span> session ends. 
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JSetup_SettingUpAModelProgram-9EAE81C3_6_282">
+               
+               <a name="22"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.4.4.6.1" class="Heading2">Setting Up a Model Program</div>
+               <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="23"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="24"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="25"></a><span class=" x-indexterm-1-0"></span></div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">A model program is a <span class=" x-ph-2-0" id="JSetup_SettingUpAModelProgram-9EAE81C3_PTCCreoObjectTool_6_292">Creo Object TOOLKIT Java</span> program specific to a particular solid model, that is part or assembly. <span class=" x-ph-2-0" id="JSetup_SettingUpAModelProgram-9EAE81C3_PTCCreo-EC6F7D2F_6_293">Creo</span> application activates the start method for a program when it loads the part into memory and activates the stop method when
+                     it erases the part from memory.
+                  </div>
+                  <div class=" x-p-7-0">Using model programs you can add programming logic to the interaction with a solid model. You can create a dialog box to drive
+                     the regeneration of a part or create model-specific utilities to generate reports or engineering information from a model.
+                     As Java programs are platform independent, the same model program runs on any Windows installation of <span class=" x-ph-2-0" id="JSetup_SettingUpAModelProgram-9EAE81C3_PTCCreo-EC6F7D2F_6_293">Creo</span> application.
+                  </div>
+                  <div class=" x-p-7-0">To setup a model program you need to:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Associate and run a <span class=" x-ph-2-0" id="JSetup_SettingUpAModelProgram-9EAE81C3_PTCCreoObjectTool_6_292">Creo Object TOOLKIT Java</span> application with a model</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Create a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">JAR</span></span> file for Model-Program Dependency</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JSetup_AssociatingAndRunningAPTCCreoObject-9EAE85AB_6_304">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.4.4.6.4.1">Associating and Running a Creo Object TOOLKIT Java Application with a Model</div>
+                  <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="26"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="27"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="28"></a><span class=" x-indexterm-1-0"></span></div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-ol-6-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-11-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">1.</td>
+                                 <td><span class=" x-p-4-0">Load the solid model that you want to associate and run with the <span class=" x-ph-2-0" id="JSetup_AssociatingAndRunningAPTCCreoObject-9EAE85AB_PTCC_6_317">Creo Object TOOLKIT Java</span> application.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">2.</td>
+                                 <td><span class=" x-p-4-0">From the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">PART</span></span> or <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">ASSEMBLY</span></span> menu, select <span class=" x-menucascade-1-0"><span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Tools</span></span><span class=" x-uicontrol-3-0" combinedFontName="Sanserif-combined"><span class=" x--ufe-menuchoicekeep-1-0"><span xmlns="" class="cf-Sanserif-combined-Default">&nbsp;</span><span style="font-family: 'Arial Unicode MS'; "><span xmlns="" class="cf-Sanserif-combined-Default">&#9654; </span></span></span><span style="font-size: 1pt; "> </span><span xmlns="" class="cf-Sanserif-combined-Default">Program</span></span><span class=" x-uicontrol-3-0" combinedFontName="Sanserif-combined"><span class=" x--ufe-menuchoicekeep-1-0"><span xmlns="" class="cf-Sanserif-combined-Default">&nbsp;</span><span style="font-family: 'Arial Unicode MS'; "><span xmlns="" class="cf-Sanserif-combined-Default">&#9654; </span></span></span><span style="font-size: 1pt; "> </span><span xmlns="" class="cf-Sanserif-combined-Default">Object TOOLKIT Java</span></span></span>.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">3.</td>
+                                 <td><span class=" x-p-4-0">If the application is stored in a Java archive (<span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">JAR</span></span>) file, click <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Add File</span></span> in the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Model Programs</span></span> dialog box and add the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">JAR</span></span> file to the list of Java archive files. If the application is stored in a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">.class</span></span> file proceed to the next step.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-12-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0.00em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">4.</td>
+                                 <td><span class=" x-p-4-0">Click <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Add</span></span> and enter the following information in the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Java Application Properties</span></span> dialog box:</span><div class=" x-ul-2-0">
+                                       <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                                          <col style="width: 0em">
+                                          <col style="width: 18pt">
+                                          <col>
+                                          <tbody>
+                                             <tr valign="baseline">
+                                                <td align="right"></td>
+                                                <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                                <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Application Name</span></span>&#8212;A unique name for this <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Object TOOLKIT Java</span></span> application. The maximum size of the name is 31 characters for the name, plus the end-of-string character.</span></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                                          <col style="width: 0em">
+                                          <col style="width: 18pt">
+                                          <col>
+                                          <tbody>
+                                             <tr valign="baseline">
+                                                <td align="right"></td>
+                                                <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                                <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Class Name</span></span>&#8212;The Java class that contains the start and stop methods for the <span class=" x-ph-2-0" id="JSetup_AssociatingAndRunningAPTCCreoObject-9EAE85AB_PTCC_6_317">Creo Object TOOLKIT Java</span> application. This class must reside in a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">JAR</span></span> file you have added to the list or in a directory that is part of your <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">CLASSPATH</span></span>.</span></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                                          <col style="width: 0em">
+                                          <col style="width: 18pt">
+                                          <col>
+                                          <tbody>
+                                             <tr valign="baseline">
+                                                <td align="right"></td>
+                                                <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                                <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Start Method Name</span></span>&#8212;The method in the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Class Name</span></span> class that will be called whenever the model is loaded into a session.</span></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                       <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                                          <col style="width: 0em">
+                                          <col style="width: 18pt">
+                                          <col>
+                                          <tbody>
+                                             <tr valign="baseline">
+                                                <td align="right"></td>
+                                                <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                                <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Stop Method Name</span></span>&#8212;The method in the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Class Name</span></span> class  that will be called whenever the model is erased.</span></td>
+                                             </tr>
+                                          </tbody>
+                                       </table>
+                                    </div>
+                                 </td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                     <div class=" x-p-7-0">The <span class=" x-ph-2-0" id="JSetup_AssociatingAndRunningAPTCCreoObject-9EAE85AB_PTCC_6_317">Creo Object TOOLKIT Java</span> application immediately attempts to run. If it cannot start successfully an exception condition is listed in the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Status</span></span> column of the <span class=" x-uicontrol-4-0" combinedFontName="Sanserif-combined"><span xmlns="" class="cf-Sanserif-combined-Default">Model Programs</span></span> dialog box.
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="JSetup_JARFileNeededForModel-ProgramDepend-9EAE8930_6_360">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.4.4.6.5.1">JAR File Needed for Model-Program Dependency</div>
+                  <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="29"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="30"></a><span class=" x-indexterm-1-0"></span></div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Although individual class files are associated with a model, there is no dependency between the model and the program. Therefore,
+                        <span class=" x-ph-2-0" id="JSetup_JARFileNeededForModel-ProgramDepend-9EAE8930_PTCW_6_368">Windchill</span> server is not able to recognize the relationship between the class files and the model. To create a dependency, include all
+                        the class files and the source code in a Java archive file (jar file). <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">JAR</span></span> files are created through the command <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">jar</span></span>, which is a part of the standard Java Development Kit (JDK) package. 
+                     </div>
+                     <div class=" x-p-7-0">To create a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">JAR</span></span> file use a command similar to the following command string:
+                     </div><pre class=" x-codeblock-3-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">jar cvf0 myjar.jar *.java *.class</span></pre><div class=" x-note-2-0 x-note-2-3">
+                        <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                        <div class=" x-p-7-0">You must use the command-line switch 0 (zero) because JAVA cannot read classes from compressed <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">JAR</span></span> files.
+                        </div>
+                     </div>
+                     <div class=" x-p-7-0">You can add <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">JAR</span></span> files to, or remove them from, a model by using the buttons on the left side of the model program interface. All the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">JAR</span></span> files for the model program must be placed in the <span class=" x-ph-2-0" id="JSetup_JARFileNeededForModel-ProgramDepend-9EAE8930_PTCC_6_380">Creo</span> search path.
+                     </div>
+                     <div class=" x-note-2-0 x-note-2-3">
+                        <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                        <div class=" x-p-7-0">When naming a <span class=" x-ph-2-0" id="JSetup_JARFileNeededForModel-ProgramDepend-9EAE8930_PTCC_6_383">Creo Object TOOLKIT Java</span> model program <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">JAR</span></span> file, you must use lower case.
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JSetup_StartAndStopMethods-9EAE8CB36_133">
+               
+               <a name="31"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.4.4.7.1" class="Heading2">Start and Stop Methods</div>
+               <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="32"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="33"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="34"></a><span class=" x-indexterm-1-0"></span></div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">All synchronous <span class=" x-ph-2-0" id="JSetup_StartAndStopMethods-9EAE8CB3_PTCCreoObjectToolkit_6_394">Creo Object TOOLKIT Java</span> programs must have a static start and stop method regardless of whether they will run standalone or as model programs. You
+                     can give these methods any name you want because you identify them in the registry file or in the model program setup. The
+                     <span class=" x-ph-2-0" id="JSetup_StartAndStopMethods-9EAE8CB3_PTCCreo-EC6F7D2F_6_395">Creo</span> application automatically calls these methods upon starting or stopping a program. All methods that you want to call in a
+                     particular program must be called in the start and stop methods, or you must use the start method to register listeners to
+                     react to events in the <span class=" x-ph-2-0" id="JSetup_StartAndStopMethods-9EAE8CB3_PTCCreo-EC6F7D2F_6_395">Creo</span> user interface.
+                  </div>
+                  <div class=" x-p-7-0">For example:</div><pre class=" x-codeblock-3-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">public static void startMyProgram() 
+{
+    runMyUtilities();
+    configureMyModels();
+    addMyUI();
+}
+
+public static void stop() {
+    cleanupModels();
+    outputToPrinterFiles();
+}</span></pre><div class=" x-p-7-0"><span class=" x-ph-2-0" id="JSetup_StartAndStopMethods-9EAE8CB3_PTCCreoObjectToolkit_6_394">Creo Object TOOLKIT Java</span> start and stop methods must be public, static, return void and take no arguments. You can configure applications based on
+                     the <span class=" x-ph-2-0" id="JSetup_StartAndStopMethods-9EAE8CB3_PTCCreo-EC6F7D2F_6_395">Creo</span> version and build or custom command line arguments using methods described in the <a href="JSession.html" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Session Objects</a> <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span>.
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

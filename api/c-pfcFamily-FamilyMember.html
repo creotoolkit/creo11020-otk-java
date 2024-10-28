@@ -1,0 +1,1799 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcFamily.FamilyMember"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      299
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcFamily.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcFamily-FamilyMember.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;FamilyMember</h2>
+<tt>
+     package 
+     <b><a href="p-pfcFamily.html">com.ptc.pfc.pfcFamily</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>FamilyMember</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcObject-Object.html">com.ptc.pfc.pfcObject.Object</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class describes a member in a family table.
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-pfcSolid-Solid.html">Solid</a></tt>, 
+        <tt><a class="class" href="c-wfcFamily-WFamilyMember.html">WFamilyMember</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFamily-FamilyTableColumn.html">FamilyTableColumn</a></tt></td><td class="method-summary"><tt><a class="method" href="#AddColumn">AddColumn</a>
+ (<a class="type" href="c-pfcFamily-FamilyTableColumn.html">FamilyTableColumn</a>&nbsp;Column, 
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ParamValues.html">ParamValues</a>&nbsp;Values)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Adds a new column to the family table. 
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFamily-FamilyTableRow.html">FamilyTableRow</a></tt></td><td class="method-summary"><tt><a class="method" href="#AddRow">AddRow</a>
+ (String&nbsp;InstanceName, 
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ParamValues.html">ParamValues</a>&nbsp;Values)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Adds a new row to the family table.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFamily-FamilyTableColumn.html">FamilyTableColumn</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateColumn">CreateColumn</a>
+ (<a class="type" href="c-pfcFamily-FamilyColumnType.html">FamilyColumnType</a>&nbsp;Type, String&nbsp;Symbol)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new family table column object given a string symbol.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFamily-FamColCompModel.html">FamColCompModel</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateCompModelColumn">CreateCompModelColumn</a>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Comp)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a component model column that will be added to a family table.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFamily-FamColComp.html">FamColComp</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateComponentColumn">CreateComponentColumn</a>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Comp)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a single component column in the family table.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFamily-FamColDimension.html">FamColDimension</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateDimensionColumn">CreateDimensionColumn</a>
+ (<a class="type" href="c-pfcDimension-Dimension.html">Dimension</a>&nbsp;Dim)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a dimension column in the family table.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFamily-FamColFeature.html">FamColFeature</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateFeatureColumn">CreateFeatureColumn</a>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a feature column in the family table.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFamily-FamColGroup.html">FamColGroup</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateGroupColumn">CreateGroupColumn</a>
+ (<a class="type" href="c-pfcFeature-FeatureGroup.html">FeatureGroup</a>&nbsp;Group)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a group column in the family table.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFamily-FamColMergePart.html">FamColMergePart</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateMergePartColumn">CreateMergePartColumn</a>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a merged-part column in the family table.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFamily-FamColParam.html">FamColParam</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateParamColumn">CreateParamColumn</a>
+ (<a class="type" href="c-pfcModelItem-Parameter.html">Parameter</a>&nbsp;Param)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a parameter column in the family table.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFamily-FamColTolMinus.html">FamColTolMinus</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateTolMinusColumn">CreateTolMinusColumn</a>
+ (<a class="type" href="c-pfcDimension-Dimension.html">Dimension</a>&nbsp;Dim)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new family table column representing a dimension tolerance minus value.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFamily-FamColTolPlus.html">FamColTolPlus</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateTolPlusColumn">CreateTolPlusColumn</a>
+ (<a class="type" href="c-pfcDimension-Dimension.html">Dimension</a>&nbsp;Dim)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new family table column representing a dimension tolerance plus value.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcFamily-FamColTolPlusMinus.html">FamColTolPlusMinus</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateTolPlusMinusColumn">CreateTolPlusMinusColumn</a>
+ (<a class="type" href="c-pfcDimension-Dimension.html">Dimension</a>&nbsp;Dim)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new family table column representing a dimension tolerance plus/minus symmetric value.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetCell">GetCell</a>
+ (<a class="type" href="c-pfcFamily-FamilyTableColumn.html">FamilyTableColumn</a>&nbsp;Column, <a class="type" href="c-pfcFamily-FamilyTableRow.html">FamilyTableRow</a>&nbsp;Row)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Retrieves the value in the specified cell of the family table.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#GetCellIsDefault">GetCellIsDefault</a>
+ (<a class="type" href="c-pfcFamily-FamilyTableColumn.html">FamilyTableColumn</a>&nbsp;Column, <a class="type" href="c-pfcFamily-FamilyTableRow.html">FamilyTableRow</a>&nbsp;Row)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Determines if the value of the item in the specified 
+    cell is the default value.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFamily-FamilyTableColumn.html">FamilyTableColumn</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetColumn">GetColumn</a>
+ (String&nbsp;Symbol)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns a column in the family table, given its string name.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetImmediateGenericInfo">GetImmediateGenericInfo</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Gets the model descriptor of the immediate generic model.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFamily-FamilyMember.html">FamilyMember</a></tt></td><td class="method-summary"><tt><a class="method" href="#Parent">GetParent</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Parent"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The parent of the member object (the immediate generic model).</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFamily-FamilyTableRow.html">FamilyTableRow</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetRow">GetRow</a>
+ (String&nbsp;InstanceName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns the specified row of the family table.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetTopGenericInfo">GetTopGenericInfo</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Gets the model descriptor of the top generic model.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFamily-FamilyTableColumns.html">FamilyTableColumns</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListColumns">ListColumns</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Lists the columns of the family table.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFamily-FamilyTableRows.html">FamilyTableRows</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListRows">ListRows</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Lists the rows of the family table.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#RemoveColumn">RemoveColumn</a>
+ (<a class="type" href="c-pfcFamily-FamilyTableColumn.html">FamilyTableColumn</a>&nbsp;Column)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Removes a specified column from the family table.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#RemoveRow">RemoveRow</a>
+ (<a class="type" href="c-pfcFamily-FamilyTableRow.html">FamilyTableRow</a>&nbsp;Row)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Removes a specified row from the family table.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetCell">SetCell</a>
+ (<a class="type" href="c-pfcFamily-FamilyTableColumn.html">FamilyTableColumn</a>&nbsp;Column, <a class="type" href="c-pfcFamily-FamilyTableRow.html">FamilyTableRow</a>&nbsp;Row, <a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a>&nbsp;Value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sets the value of the specified cell in the family table.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Parent">GetParent</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFamily-FamilyMember.html">FamilyMember</a></tt></td><td class="method-name"><tt>GetParent</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The parent of the member object (the immediate generic model).<br>
+<br>If immediate generic model is not in session an 
+   <tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantOpen.html">XToolkitCantOpen</a></tt></tt> exception is thrown.
+   In that case use <tt><a class="method" href="c-pfcFamily-FamilyMember.html#GetImmediateGenericInfo">FamilyMember.GetImmediateGenericInfo()</a></tt> 
+   to get the model descriptor of immediate generic.
+   <p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The specified model is not an instance -- it has no generic model. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantOpen.html">XToolkitCantOpen</a></tt></tt> - The immediate generic is not in session ('immediate' is set to TRUE). Use <b>ProFaminstanceImmediategenericinfoGet()</b> to obtain the name and modeltype of immediate generic in such case. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#9">Family Tables: Accessing Instances</a>, <a href="../manual0/JFamily.html#18">Family Tables: Accessing Instances</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetImmediateGenericInfo">GetImmediateGenericInfo</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a></tt></td><td class="method-name"><tt>GetImmediateGenericInfo</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Gets the model descriptor of the immediate generic model.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The specified model is not an instance -- it has no generic model. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#10">Family Tables: Accessing Instances</a>, <a href="../manual0/JFamily.html#18">Family Tables: Accessing Instances</a>, <a href="../manual0/JModel.html#57">Models: Model Information</a>, <a href="../manual0/jassembly.html#20">Assemblies and Components: Assembly Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The model descriptor of the immediate generic model. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetTopGenericInfo">GetTopGenericInfo</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a></tt></td><td class="method-name"><tt>GetTopGenericInfo</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Gets the model descriptor of the top generic model.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The specified model is not an instance -- it has no generic model. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantOpen.html">XToolkitCantOpen</a></tt></tt> - The immediate generic is not in session ('immediate' is set to TRUE). Use <b>ProFaminstanceImmediategenericinfoGet()</b> to obtain the name and modeltype of immediate generic in such case. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#11">Family Tables: Accessing Instances</a>, <a href="../manual0/JFamily.html#18">Family Tables: Accessing Instances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The model descriptor of the top generic model. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListColumns">ListColumns</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFamily-FamilyTableColumns.html">FamilyTableColumns</a></tt></td><td class="method-name"><tt>ListColumns</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Lists the columns of the family table.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#22">Family Tables: Accessing Columns</a>, <a href="../manual0/JFamily.html#28">Family Tables: Accessing Columns</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A sequence of the family table columns. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListRows">ListRows</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFamily-FamilyTableRows.html">FamilyTableRows</a></tt></td><td class="method-name"><tt>ListRows</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Lists the rows of the family table.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#13">Family Tables: Accessing Instances</a>, <a href="../manual0/JFamily.html#18">Family Tables: Accessing Instances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A sequence of the family table rows.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetCell">GetCell</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a></tt></td><td class="method-name"><tt>GetCell</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFamily-FamilyTableColumn.html">FamilyTableColumn</a>&nbsp;Column, <a class="type" href="c-pfcFamily-FamilyTableRow.html">FamilyTableRow</a>&nbsp;Row)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Retrieves the value in the specified cell of the family table.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The specified instance does not exist in the family table, or the specified model item is not table-driven. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcFamily-FamilyMember.html#SetCell">FamilyMember.SetCell(FamilyTableColumn, FamilyTableRow, ParamValue)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#32">Family Tables: Accessing Cell Information</a>, <a href="../manual0/JFamily.html#38">Family Tables: Accessing Cell Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Column</b></tt>
+</dt>
+<dd>The column in the family table</dd>
+<dt>
+<tt><b>Row</b></tt>
+</dt>
+<dd>The row in the family table</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The value in the specified cell </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetCell">SetCell</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetCell</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFamily-FamilyTableColumn.html">FamilyTableColumn</a>&nbsp;Column, <a class="type" href="c-pfcFamily-FamilyTableRow.html">FamilyTableRow</a>&nbsp;Row, <a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a>&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Sets the value of the specified cell in the family table.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The specified instance does not exist in the family table, or the specified model item is not table-driven. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcFamily-FamilyMember.html#GetCell">FamilyMember.GetCell(FamilyTableColumn, FamilyTableRow)</a></tt>, <tt><tt><a class="method" href="c-pfcModelItem-pfcModelItem.html#CreateIntParamValue">pfcModelItem.CreateIntParamValue(int)</a></tt></tt>, <tt><tt><a class="method" href="c-pfcModelItem-pfcModelItem.html#CreateDoubleParamValue">pfcModelItem.CreateDoubleParamValue(double)</a></tt></tt>, <tt><tt><a class="method" href="c-pfcModelItem-pfcModelItem.html#CreateStringParamValue">pfcModelItem.CreateStringParamValue(String)</a></tt></tt>, <tt><tt><a class="method" href="c-pfcModelItem-pfcModelItem.html#CreateBoolParamValue">pfcModelItem.CreateBoolParamValue(boolean)</a></tt></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#34">Family Tables: Accessing Cell Information</a>, <a href="../manual0/JFamily.html#38">Family Tables: Accessing Cell Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Column</b></tt>
+</dt>
+<dd>The column where the cell is located.</dd>
+<dt>
+<tt><b>Row</b></tt>
+</dt>
+<dd>The row where the cell is located.</dd>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>The new cell value.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetCellIsDefault">GetCellIsDefault</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetCellIsDefault</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFamily-FamilyTableColumn.html">FamilyTableColumn</a>&nbsp;Column, <a class="type" href="c-pfcFamily-FamilyTableRow.html">FamilyTableRow</a>&nbsp;Row)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Determines if the value of the item in the specified 
+    cell is the default value.
+   <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The specified instance does not exist in the family table, or the specified model item is not table-driven. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#33">Family Tables: Accessing Cell Information</a>, <a href="../manual0/JFamily.html#38">Family Tables: Accessing Cell Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Column</b></tt>
+</dt>
+<dd>The column in the family table</dd>
+<dt>
+<tt><b>Row</b></tt>
+</dt>
+<dd>The row in the family table</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+<tt>true</tt> if the value is default 
+    and <tt>false</tt> if not.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AddRow">AddRow</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFamily-FamilyTableRow.html">FamilyTableRow</a></tt></td><td class="method-name"><tt>AddRow</tt></td><td class="method-params"><tt>
+ (String&nbsp;InstanceName, 
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ParamValues.html">ParamValues</a>&nbsp;Values)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Adds a new row to the family table.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitFound.html">XToolkitFound</a></tt></tt> - The specified instance already exists in the family table. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitAbort.html">XToolkitAbort</a></tt></tt> - Operation of adding instance is aborted since the supplied name was already in use. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#40">Family Tables: Creating Family Table Instances</a>, <a href="../manual0/JFamily.html#44">Family Tables: Creating Family Table Instances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>InstanceName</b></tt>
+</dt>
+<dd>Name of the new instance. </dd>
+<dt>
+<tt><b>Values</b></tt>
+</dt>
+<dd>Values to add to the row (or NULL). </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>New row</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetRow">GetRow</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFamily-FamilyTableRow.html">FamilyTableRow</a></tt></td><td class="method-name"><tt>GetRow</tt></td><td class="method-params"><tt>
+ (String&nbsp;InstanceName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns the specified row of the family table.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#14">Family Tables: Accessing Instances</a>, <a href="../manual0/JFamily.html#18">Family Tables: Accessing Instances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>InstanceName</b></tt>
+</dt>
+<dd>The name of the instance to find.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The specified instance.  </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RemoveRow">RemoveRow</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>RemoveRow</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFamily-FamilyTableRow.html">FamilyTableRow</a>&nbsp;Row)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Removes a specified row from the family table.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The specified instance does not exist in the family table. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#15">Family Tables: Accessing Instances</a>, <a href="../manual0/JFamily.html#18">Family Tables: Accessing Instances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Row</b></tt>
+</dt>
+<dd>The row to be deleted.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AddColumn">AddColumn</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFamily-FamilyTableColumn.html">FamilyTableColumn</a></tt></td><td class="method-name"><tt>AddColumn</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFamily-FamilyTableColumn.html">FamilyTableColumn</a>&nbsp;Column, 
+   /*optional*/
+   <a class="type" href="c-pfcModelItem-ParamValues.html">ParamValues</a>&nbsp;Values)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Adds a new column to the family table. 
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoChange.html">XToolkitNoChange</a></tt></tt> - The specified item already exists in the family table. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#55">Family Tables: Creating Family Table Columns</a>, <a href="../manual0/JFamily.html#57">Family Tables: Creating Family Table Columns</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Column</b></tt>
+</dt>
+<dd>The object describing the column to add.</dd>
+<dt>
+<tt><b>Values</b></tt>
+</dt>
+<dd>Values to add to the new column (or NULL).</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new column</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RemoveColumn">RemoveColumn</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>RemoveColumn</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFamily-FamilyTableColumn.html">FamilyTableColumn</a>&nbsp;Column)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Removes a specified column from the family table.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The specified item was not found in the family table. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#24">Family Tables: Accessing Columns</a>, <a href="../manual0/JFamily.html#28">Family Tables: Accessing Columns</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Column</b></tt>
+</dt>
+<dd>The column to be deleted.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetColumn">GetColumn</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFamily-FamilyTableColumn.html">FamilyTableColumn</a></tt></td><td class="method-name"><tt>GetColumn</tt></td><td class="method-params"><tt>
+ (String&nbsp;Symbol)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns a column in the family table, given its string name.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcFamily-FamilyMember.html#ListColumns">FamilyMember.ListColumns()</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#23">Family Tables: Accessing Columns</a>, <a href="../manual0/JFamily.html#28">Family Tables: Accessing Columns</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Symbol</b></tt>
+</dt>
+<dd>The family table column symbol.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The column object, or <tt>null</tt>, if the column was not found.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateColumn">CreateColumn</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFamily-FamilyTableColumn.html">FamilyTableColumn</a></tt></td><td class="method-name"><tt>CreateColumn</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFamily-FamilyColumnType.html">FamilyColumnType</a>&nbsp;Type, String&nbsp;Symbol)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new family table column object given a string symbol.
+<br>
+<br>The column will not be added to the family table until <tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt> is used.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#54">Family Tables: Creating Family Table Columns</a>, <a href="../manual0/JFamily.html#57">Family Tables: Creating Family Table Columns</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The type of element contained in the column.</dd>
+<dt>
+<tt><b>Symbol</b></tt>
+</dt>
+<dd>The string symbol that will appear of the column, for example "F1" or "D7".</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created family table column object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateParamColumn">CreateParamColumn</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFamily-FamColParam.html">FamColParam</a></tt></td><td class="method-name"><tt>CreateParamColumn</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModelItem-Parameter.html">Parameter</a>&nbsp;Param)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a parameter column in the family table.
+<br>
+<br>The column name will be same as the parameter name.
+<p></p>
+
+The column will not be added to the family table until <tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt> is used.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#48">Family Tables: Creating Family Table Columns</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Param</b></tt>
+</dt>
+<dd>The parameter</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new column</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateDimensionColumn">CreateDimensionColumn</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFamily-FamColDimension.html">FamColDimension</a></tt></td><td class="method-name"><tt>CreateDimensionColumn</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDimension-Dimension.html">Dimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a dimension column in the family table.
+<br>
+<br>The string name for this column will be "d#", where # is the dimension id.
+<p></p>
+
+The column will not be added to the family table until <tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt> is used.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#47">Family Tables: Creating Family Table Columns</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>The dimension.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new column.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateFeatureColumn">CreateFeatureColumn</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFamily-FamColFeature.html">FamColFeature</a></tt></td><td class="method-name"><tt>CreateFeatureColumn</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a feature column in the family table.
+<br>
+<br>The string name for this column will be "f#", where # is the feature id.
+<p></p>
+
+The column will not be added to the family table until <tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt> is used.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#49">Family Tables: Creating Family Table Columns</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Feat</b></tt>
+</dt>
+<dd>The feature</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new column</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateComponentColumn">CreateComponentColumn</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFamily-FamColComp.html">FamColComp</a></tt></td><td class="method-name"><tt>CreateComponentColumn</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Comp)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a single component column in the family table.
+<br>
+<br>The string name for this column will be "m#", where # is the component id.
+<p></p>
+
+The return value must be passed to <tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt> .
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#50">Family Tables: Creating Family Table Columns</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Comp</b></tt>
+</dt>
+<dd>The component.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new column.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateCompModelColumn">CreateCompModelColumn</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFamily-FamColCompModel.html">FamColCompModel</a></tt></td><td class="method-name"><tt>CreateCompModelColumn</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Comp)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a component model column that will be added to a family table.
+<br>
+<br>The string name for this column will be "mm#", where "#" is the component feature id.
+<p></p>
+
+A component model column drives all occurrences of a component part (or subassembly) in an assembly. 
+<p></p>
+
+Creating a component model column is the same as using <b>Family Tab &gt; Add Item &gt; Component</b>, then selecting an occurrence of the component and choosing <b>All</b>.
+<p></p>
+
+The return value must be passed to <tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt> .
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcFamily-FamilyMember.html#CreateComponentColumn">FamilyMember.CreateComponentColumn(Feature)</a></tt>, <tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#51">Family Tables: Creating Family Table Columns</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Comp</b></tt>
+</dt>
+<dd>Any <i>ComponentFeat</i> that contains the component being added<p></p>
+
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new column</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateGroupColumn">CreateGroupColumn</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFamily-FamColGroup.html">FamColGroup</a></tt></td><td class="method-name"><tt>CreateGroupColumn</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFeature-FeatureGroup.html">FeatureGroup</a>&nbsp;Group)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a group column in the family table.
+<br>
+<br>The column will not be added to the family table until <tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt> is used.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#52">Family Tables: Creating Family Table Columns</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Group</b></tt>
+</dt>
+<dd>The feature group to add to the table</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new column</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateMergePartColumn">CreateMergePartColumn</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFamily-FamColMergePart.html">FamColMergePart</a></tt></td><td class="method-name"><tt>CreateMergePartColumn</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a merged-part column in the family table.
+<br>
+<br>The column will not be added to the family table until <tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt> is used.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFamily.html#53">Family Tables: Creating Family Table Columns</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Feat</b></tt>
+</dt>
+<dd>The feature</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new column</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateTolPlusColumn">CreateTolPlusColumn</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFamily-FamColTolPlus.html">FamColTolPlus</a></tt></td><td class="method-name"><tt>CreateTolPlusColumn</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDimension-Dimension.html">Dimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new family table column representing a dimension tolerance plus value.
+<br>
+<br>The string name for this column  will be "tp#", where # is the dimension id.
+<p></p>
+
+The column will not be added to the family table until <tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt> is used.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcFamily-FamilyMember.html#CreateTolMinusColumn">FamilyMember.CreateTolMinusColumn(Dimension)</a></tt>, <tt><a class="method" href="c-pfcFamily-FamilyMember.html#CreateTolPlusMinusColumn">FamilyMember.CreateTolPlusMinusColumn(Dimension)</a></tt>, <tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>The dimension whose tolerance will be assigned to the column.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created family table column.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateTolMinusColumn">CreateTolMinusColumn</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFamily-FamColTolMinus.html">FamColTolMinus</a></tt></td><td class="method-name"><tt>CreateTolMinusColumn</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDimension-Dimension.html">Dimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new family table column representing a dimension tolerance minus value.
+<br>
+<br>The string name for this column  will be "tm#", where # is the dimension id.
+<p></p>
+
+The column will not be added to the family table until <tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt> is used.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcFamily-FamilyMember.html#CreateTolPlusColumn">FamilyMember.CreateTolPlusColumn(Dimension)</a></tt>, <tt><a class="method" href="c-pfcFamily-FamilyMember.html#CreateTolPlusMinusColumn">FamilyMember.CreateTolPlusMinusColumn(Dimension)</a></tt>, <tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>The dimension whose tolerance will be assigned to the column.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created family table column.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateTolPlusMinusColumn">CreateTolPlusMinusColumn</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcFamily-FamColTolPlusMinus.html">FamColTolPlusMinus</a></tt></td><td class="method-name"><tt>CreateTolPlusMinusColumn</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDimension-Dimension.html">Dimension</a>&nbsp;Dim)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new family table column representing a dimension tolerance plus/minus symmetric value.
+<br>
+<br>The string name for this column  will be "tpm#", where # is the dimension id.
+<p></p>
+
+The column will not be added to the family table until <tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt> is used.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcFamily-FamilyMember.html#CreateTolPlusColumn">FamilyMember.CreateTolPlusColumn(Dimension)</a></tt>, <tt><a class="method" href="c-pfcFamily-FamilyMember.html#CreateTolMinusColumn">FamilyMember.CreateTolMinusColumn(Dimension)</a></tt>, <tt><a class="method" href="c-pfcFamily-FamilyMember.html#AddColumn">FamilyMember.AddColumn(FamilyTableColumn, /*optional*/ ParamValues)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Dim</b></tt>
+</dt>
+<dd>The dimension whose tolerance will be assigned to the column.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created family table column.</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9">
+      <meta name="ch:resourceid" content="Sketched_features_create" scheme="atiChunkerMeta">
+      
+      
+      
+      
+      
+      
+      <link href="css/styler.css" rel="stylesheet" type="text/css">
+      <title>Element Trees: Sketched Features</title>
+   
+<SCRIPT LANGUAGE="JAVASCRIPT">
+  function findProperNode() { top.frames[0].document.apiwizard.manual("MANSKETCHED_FEATURES_CREATE0", location.hash); }
+</SCRIPT>
+
+</head>
+   <body onLoad="findProperNode()">
+      
+         
+         <a name="0"> </a><div class=" x-title-65-0 x-title-65-1" combinedFontName="off" id="styler-id1.1.1.28.1" class="ChapterTitle">Element Trees: Sketched Features</div>
+         <div class=" x-body-2-0">
+            <div class=" x-p-7-0">This <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> describes the <span class=" x-ph-2-0" id="Sketched_features_create_ElementTreesSketchedFeatures-03_30_7">Creo Object TOOLKIT Java</span> methods that enable you to work with sketched features.
+            </div>
+            <div class=" x-p-7-0">Sketched features are features that require one or more sections to completely define the feature, such as extruded and revolved
+               protrusions.
+            </div>
+            <div class=" x-p-7-0">This  <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> outlines the necessary steps to programmatically create sketched features using <span class=" x-ph-2-0" id="Sketched_features_create_ElementTreesSketchedFeatures-03_30_7">Creo Object TOOLKIT Java</span>.
+            </div>
+         </div>
+         <div class=" x-topic-4-0 x-topic-4-1 x-topic-4-2" combinedFontName="off" id="Sketched_features_create_Overview-02FBAC05_30_13">
+            
+            <a name="1"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.28.3.1" class="Heading1">Overview</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="2"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">The <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> <a href="OTK_elem_tree.html" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Feature Element Tree</a> explains how to create a simple feature using the feature element tree, and the documentation in the <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> <a href="Sections_create.html" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Element Trees: Sections</a> explains how to create a section. This <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> explains how to put these methods together, with a few additional techniques, to create features that contain sketched sections.
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="Sketched_features_create_CreatingFeaturesContainingSecti_30_28">
+            
+            <a name="3"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.28.4.1" class="Heading1">Creating Features Containing Sections</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="4"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">The <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> <a href="OTK_elem_tree.html" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Feature Element Tree</a> explained that to create a feature from an element tree, you must build the tree of elements using the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcElementTree</span></span> object, and then call <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSolid.WSolid.WCreateFeature</span></span> to create the feature using the tree. If the feature is to contain a sketch, the sequence is a little more complex.
+               </div>
+               <div class=" x-p-7-0">As explained in the <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> <a href="Sections_create.html" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">Element Trees: Sections</a>, a 2D section stored in a model file can be allocated by calling <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSession.WSession.CreateSection2D</span></span>. Instead, <span class=" x-ph-2-0" id="Sketched_features_create_CreatingFeaturesContainingSecti_30_45">Creo</span> application must allocate as part of the initial creation of the sketched feature, a section that will be part of a feature.
+                  The allocation is done by calling <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSolid.WSolid.WCreateFeature</span></span> with an element tree which describes at minimum the feature type and form, in order to create an incomplete feature. In creating
+                  the feature, <span class=" x-ph-2-0" id="Sketched_features_create_CreatingFeaturesContainingSecti_30_45">Creo</span> application calculates the location and orientation of the section, and allocates the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSection</span></span> object. This section is then retrieved from the value of the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PRO_E_SKETCHER</span></span> element that is found in the element tree extracted from the created feature. Fill the empty section using <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSection</span></span> related methods.
+               </div>
+               <div class=" x-p-7-0">After adding the section contents and the remaining elements in the tree, add the new information to the feature using <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcFeature.WFeature.RedefineFeature</span></span>.
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="Sketched_features_create_ToCreateSketchedFeaturesElement_30_53">
+               
+               <a name="5"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.28.4.4.1" class="Heading2">To Create Sketched Features Element Trees</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-ol-6-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-11-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">1.</td>
+                              <td><span class=" x-p-4-0">Build an element tree but do not include the element <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PRO_E_SKETCHER</span></span>.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">2.</td>
+                              <td><span class=" x-p-4-0">Call <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSolid.WSolid.WCreateFeature</span></span> with the option <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcFEAT_CR_INCOMPLETE_FEAT</span></span> to create an incomplete feature.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">3.</td>
+                              <td><span class=" x-p-4-0">Extract the value of the element <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PRO_E_SKETCHER</span></span> created by the <span class=" x-ph-2-0" id="Sketched_features_create_ToCreateSketchedFeaturesElement_30_67">Creo</span> application from an element tree extracted using <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcFeature.WFeature.GetElementTree</span></span> on the incomplete feature.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">4.</td>
+                              <td><span class=" x-p-4-0">Using that value as the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSection</span></span> object create the necessary section entities.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-15-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">5.</td>
+                              <td><span class=" x-p-4-0">Add any other elements not previously added to the tree, such as extrusion depth. The depth elements may also be added before
+                                    the creation of incomplete feature (before step 2).</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-12-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0.00em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">6.</td>
+                              <td><span class=" x-p-4-0">Call <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcFeature.WFeature.RedefineFeature</span></span> with the completed element tree.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="Sketched_features_create_CreatingFeaturesWith2DSections-_30_77">
+            
+            <a name="6"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.28.5.1" class="Heading1">Creating Features with 2D Sections </div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="7"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Sketched features using 2D sections do not require references to other geometry in the <span class=" x-ph-2-0" id="Sketched_features_create_CreatingFeaturesWith2DSections-_30_84">Creo</span> model. Some examples of where 2D sections are used are:
+               </div>
+               <div class=" x-ul-2-0">
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">Base features, sometimes called first features. This type of feature must be the first feature created in the model.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+                  <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                     <col style="width: 0em">
+                     <col style="width: 18pt">
+                     <col>
+                     <tbody>
+                        <tr valign="baseline">
+                           <td align="right"></td>
+                           <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                           <td><span class=" x-p-4-0">Sketched hole features.</span></td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+               <div class=" x-p-7-0">To create 2D sketched features, follow the steps outlined in the section <a href="#Sketched_features_create_ToCreateSketchedFeaturesElement_30_53" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">To Create Sketched Features Element Trees</a>.
+               </div>
+               <div class=" x-note-2-0 x-note-2-3">
+                  <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                  <div class=" x-p-7-0">For 2D sketched features, you need not specify section references or use projected 3D entities. Entities in a 2D section are
+                     dimensioned to themselves only. A 2D section does not require any elements in the tree to setup the sketch plane or the orientation
+                     of the sketch. Thus, the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PRO_E_STD_SEC_SETUP_PLANE</span></span> subtree is not included.
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="Sketched_features_create_CreatingFeaturesWith3DSections-_30_95">
+            
+            <a name="8"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.28.6.1" class="Heading1">Creating Features with 3D Sections</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="9"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">A 3D section needs to define its location with respect to the existing geometrical features. The subtree contained in the
+                  element <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PRO_STD_SEC_SETUP_PLANE</span></span> defines the location of the sketch plane edge entities; any other 2D entities in the sketch must be dimensioned to those
+                  entities, so that their 3D location is fully defined.
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="Sketched_features_create_DSectionLocationInTheOwningMode_30_103">
+               
+               <a name="10"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.28.6.4.1" class="Heading2">3D Section Location in the Owning Model</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Method Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="11"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcSection-Section.html#GetLocation">wfcSection.Section.GetLocation</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">The <span class=" x-ph-2-0" id="Sketched_features_create_DSectionLocationInTheOwningMode_30_112">Creo</span> application decides where the section will be positioned in 3D for all the features except the first feature and sketched
+                     hole feature.
+                  </div>
+                  <div class=" x-p-7-0">If the section is 3D, the feature tree elements below <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">PRO_E_STD_SEC_SETUP_PLANE</span></span> specifies the sketch plane, the direction from which it is being viewed, an orientation reference, and a direction which
+                     that reference represents (TOP, BOTTOM, LEFT or RIGHT). When you call <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSolid.WSolid.WCreateFeature</span></span>, this information is used to calculate the 3D plane in which the section lies, and its orientation in that plane.
+                  </div>
+                  <div class=" x-p-7-0">The position of the section origin in the plane is not implied by the element tree, and cannot be specified by the <span class=" x-ph-2-0" id="Sketched_features_create_DSectionLocationInTheOwningMode_30_117">Creo Object TOOLKIT Java</span> application: position is chosen arbitrarily by the <span class=" x-ph-2-0" id="Sketched_features_create_DSectionLocationInTheOwningMode_30_112">Creo</span> application. This is because the interactive user of <span class=" x-ph-2-0" id="Sketched_features_create_DSectionLocationInTheOwningMode_30_112">Creo</span> application never deals in absolute coordinates, and does not need to specify, or even know, the location of the origin of
+                     the section. In <span class=" x-ph-2-0" id="Sketched_features_create_DSectionLocationInTheOwningMode_30_117">Creo Object TOOLKIT Java</span> describe all section entities in terms of their coordinate values, so you need to find out where <span class=" x-ph-2-0" id="Sketched_features_create_DSectionLocationInTheOwningMode_30_112">Creo</span> application has put the origin of the section. This is the role of the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSection.Section.GetLocation</span></span>.
+                  </div>
+                  <div class=" x-p-7-0"><span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSection.Section.GetLocation</span></span> provides the transformation matrix that goes from 2D coordinates within the section to 3D coordinates of the owning part
+                     or assembly. This is equivalent to describing the position and orientation of the 2D section coordinate system with respect
+                     to the base coordinate system of the 3D model.
+                  </div>
+                  <div class=" x-p-7-0"><span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSection.Section.GetLocation</span></span> can be called in order to calculate where to position new section entities so that they are in the correct 3D position in
+                     the part or assembly.
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

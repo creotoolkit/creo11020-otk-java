@@ -1,0 +1,495 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcCoordSysFeat.CoordSysFeat"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      122
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcCoordSysFeat.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcCoordSysFeat-CoordSysFeat.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;CoordSysFeat</h2>
+<tt>
+     package 
+     <b><a href="p-pfcCoordSysFeat.html">com.ptc.pfc.pfcCoordSysFeat</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>CoordSysFeat</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcFeature-Feature.html">com.ptc.pfc.pfcFeature.Feature</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Describes a coordinate system feature. 
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-wfcFeature-WCoordSysFeat.html">WCoordSysFeat</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcCoordSysFeat-DatumCsysDimensionConstraints.html">DatumCsysDimensionConstraints</a></tt></td><td class="method-summary"><tt><a class="method" href="#DimensionConstraints">GetDimensionConstraints</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "DimensionConstraints"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The dimension constraints of the coordinate system.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsNormalToScreen">GetIsNormalToScreen</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IsNormalToScreen"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Specifies if coordinate system is normal to screen.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcCoordSysFeat-DatumCsysOffsetType.html">DatumCsysOffsetType</a></tt></td><td class="method-summary"><tt><a class="method" href="#OffsetType">GetOffsetType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "OffsetType"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Specifies the offset mode of the coordinate system.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcCoordSysFeat-DatumCsysOnSurfaceType.html">DatumCsysOnSurfaceType</a></tt></td><td class="method-summary"><tt><a class="method" href="#OnSurfaceType">GetOnSurfaceType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "OnSurfaceType"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Specifies the on-surface mode of the coordinate system.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcCoordSysFeat-DatumCsysOrientMoveConstraints.html">DatumCsysOrientMoveConstraints</a></tt></td><td class="method-summary"><tt><a class="method" href="#OrientationConstraints">GetOrientationConstraints</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "OrientationConstraints"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The orientation constraints of the coordinate system.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcCoordSysFeat-DatumCsysOrientByMethod.html">DatumCsysOrientByMethod</a></tt></td><td class="method-summary"><tt><a class="method" href="#OrientByMethod">GetOrientByMethod</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "OrientByMethod"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Specifies the orientation method.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcCoordSysFeat-DatumCsysOriginConstraints.html">DatumCsysOriginConstraints</a></tt></td><td class="method-summary"><tt><a class="method" href="#OriginConstraints">GetOriginConstraints</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "OriginConstraints"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The origin constraints of the coordinate system.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Child.html"><tt>com.ptc.pfc.pfcObject.Child</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+      <a class="method" href="c-pfcObject-Child.html#OId"><tt>GetOId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcBase-ActionSource.html"><tt>com.ptc.pfc.pfcBase.ActionSource</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-RelationOwner.html"><tt>com.ptc.pfc.pfcModelItem.RelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Parent.html"><tt>com.ptc.pfc.pfcObject.Parent</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ParameterOwner.html"><tt>com.ptc.pfc.pfcModelItem.ParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ModelItem.html"><tt>com.ptc.pfc.pfcModelItem.ModelItem</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcFeature-Feature.html"><tt>com.ptc.pfc.pfcFeature.Feature</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcFeature-Feature.html#FeatType"><tt>GetFeatType</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#FeatTypeName"><tt>GetFeatTypeName</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#FeatSubType"><tt>GetFeatSubType</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#Status"><tt>GetStatus</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#Group"><tt>GetGroup</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#Pattern"><tt>GetPattern</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#GroupPattern"><tt>GetGroupPattern</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#GetPatternByType"><tt>GetPatternByType</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#PatternStatus"><tt>GetPatternStatus</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#GroupStatus"><tt>GetGroupStatus</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#GroupPatternStatus"><tt>GetGroupPatternStatus</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#IsVisible"><tt>GetIsVisible</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#IsReadonly"><tt>GetIsReadonly</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#Number"><tt>GetNumber</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#VersionStamp"><tt>GetVersionStamp</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#IsGroupMember"><tt>GetIsGroupMember</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#IsEmbedded"><tt>GetIsEmbedded</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#CreateSuppressOp"><tt>CreateSuppressOp</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#CreateResumeOp"><tt>CreateResumeOp</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#CreateDeleteOp"><tt>CreateDeleteOp</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#CreateReorderBeforeOp"><tt>CreateReorderBeforeOp</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#CreateReorderAfterOp"><tt>CreateReorderAfterOp</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#ListChildren"><tt>ListChildren</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#ListParents"><tt>ListParents</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#ListSubItems"><tt>ListSubItems</tt></a>,
+      <a class="method" href="c-pfcFeature-Feature.html#GroupDirectHeader"><tt>GetGroupDirectHeader</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OriginConstraints">GetOriginConstraints</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcCoordSysFeat-DatumCsysOriginConstraints.html">DatumCsysOriginConstraints</a></tt></td><td class="method-name"><tt>GetOriginConstraints</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The origin constraints of the coordinate system.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/datum_features.html#33">Datum Features: Datum Coordinate System Features</a>, <a href="../manual0/datum_features.html#45">Datum Features: Datum Coordinate System Features</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DimensionConstraints">GetDimensionConstraints</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcCoordSysFeat-DatumCsysDimensionConstraints.html">DatumCsysDimensionConstraints</a></tt></td><td class="method-name"><tt>GetDimensionConstraints</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The dimension constraints of the coordinate system.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/datum_features.html#35">Datum Features: Datum Coordinate System Features</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OrientationConstraints">GetOrientationConstraints</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcCoordSysFeat-DatumCsysOrientMoveConstraints.html">DatumCsysOrientMoveConstraints</a></tt></td><td class="method-name"><tt>GetOrientationConstraints</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The orientation constraints of the coordinate system.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/datum_features.html#39">Datum Features: Datum Coordinate System Features</a>, <a href="../manual0/datum_features.html#45">Datum Features: Datum Coordinate System Features</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsNormalToScreen">GetIsNormalToScreen</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetIsNormalToScreen</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Specifies if coordinate system is normal to screen.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/datum_features.html#42">Datum Features: Datum Coordinate System Features</a>, <a href="../manual0/datum_features.html#45">Datum Features: Datum Coordinate System Features</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OffsetType">GetOffsetType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcCoordSysFeat-DatumCsysOffsetType.html">DatumCsysOffsetType</a></tt></td><td class="method-name"><tt>GetOffsetType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Specifies the offset mode of the coordinate system.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/datum_features.html#43">Datum Features: Datum Coordinate System Features</a>, <a href="../manual0/datum_features.html#45">Datum Features: Datum Coordinate System Features</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnSurfaceType">GetOnSurfaceType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcCoordSysFeat-DatumCsysOnSurfaceType.html">DatumCsysOnSurfaceType</a></tt></td><td class="method-name"><tt>GetOnSurfaceType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Specifies the on-surface mode of the coordinate system.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/datum_features.html#44">Datum Features: Datum Coordinate System Features</a>, <a href="../manual0/datum_features.html#45">Datum Features: Datum Coordinate System Features</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OrientByMethod">GetOrientByMethod</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcCoordSysFeat-DatumCsysOrientByMethod.html">DatumCsysOrientByMethod</a></tt></td><td class="method-name"><tt>GetOrientByMethod</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Specifies the orientation method.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/datum_features.html#45">Datum Features: Datum Coordinate System Features</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

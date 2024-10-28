@@ -1,0 +1,450 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcUDFCreate.pfcUDFCreate"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      597
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcUDFCreate.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcUDFCreate-pfcUDFCreate.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcUDFCreate</h2>
+<tt>
+     package <b><a href="p-pfcUDFCreate.html">com.ptc.pfc.pfcUDFCreate</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>pfcUDFCreate</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "pfcUDFCreate"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcUDFCreate-UDFAssemblyIntersection.html">UDFAssemblyIntersection</a></tt></td><td class="method-summary"><tt><a class="method" href="#UDFAssemblyIntersection::Create">UDFAssemblyIntersection_Create</a>
+ (<a class="type" href="c-stdcols-intseq.html">intseq</a>&nbsp;ComponentPath, int&nbsp;VisibilityLevel)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates an assembly intersection object, which is 
+used to place a UDF programatically.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcUDFCreate-UDFCustomCreateInstructions.html">UDFCustomCreateInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#UDFCustomCreateInstructions::Create">UDFCustomCreateInstructions_Create</a>
+ (String&nbsp;Name)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates an instructions object, which is used to 
+place a UDF programmatically.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcUDFCreate-UDFExternalReference.html">UDFExternalReference</a></tt></td><td class="method-summary"><tt><a class="method" href="#UDFExternalReference::Create">UDFExternalReference_Create</a>
+ (<a class="type" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a>&nbsp;Model)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a UDFExternalReference object that is required when 
+placing a UDF with external references.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcUDFCreate-UDFReference.html">UDFReference</a></tt></td><td class="method-summary"><tt><a class="method" href="#UDFReference::Create">UDFReference_Create</a>
+ (String&nbsp;PromptForReference, <a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;ReferenceItem)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a UDF reference that is required when placing 
+a UDF with references.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcUDFCreate-UDFVariantDimension.html">UDFVariantDimension</a></tt></td><td class="method-summary"><tt><a class="method" href="#UDFVariantDimension::Create">UDFVariantDimension_Create</a>
+ (String&nbsp;Name, double&nbsp;DimensionValue)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Specifies the value of the dimension the user 
+must supply to place the UDF.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcUDFCreate-UDFVariantPatternParam.html">UDFVariantPatternParam</a></tt></td><td class="method-summary"><tt><a class="method" href="#UDFVariantPatternParam::Create">UDFVariantPatternParam_Create</a>
+ (String&nbsp;Name, int&nbsp;PatternParam)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Specifies the name of the pattern parameter the user 
+must supply to place the UDF.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UDFVariantDimension::Create">UDFVariantDimension_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcUDFCreate-UDFVariantDimension.html">UDFVariantDimension</a></tt></td><td class="method-name"><tt>UDFVariantDimension_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;Name, double&nbsp;DimensionValue)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Specifies the value of the dimension the user 
+must supply to place the UDF.
+<br>
+<br>Used as a component of <tt><tt><a class="class" href="c-pfcUDFCreate-UDFCustomCreateInstructions.html">UDFCustomCreateInstructions</a></tt></tt> .
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#155">Features: Creating a Custom UDF</a>, <a href="../manual0/JFeat.html#168">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>The name given to the dimension by the UDF.</dd>
+<dt>
+<tt><b>DimensionValue</b></tt>
+</dt>
+<dd>The dimension value.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Instance of the UDFVariantDimension object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UDFVariantPatternParam::Create">UDFVariantPatternParam_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcUDFCreate-UDFVariantPatternParam.html">UDFVariantPatternParam</a></tt></td><td class="method-name"><tt>UDFVariantPatternParam_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;Name, int&nbsp;PatternParam)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Specifies the name of the pattern parameter the user 
+must supply to place the UDF.
+<br>
+<br>Used as a component of <tt><tt><a class="class" href="c-pfcUDFCreate-UDFCustomCreateInstructions.html">UDFCustomCreateInstructions</a></tt></tt> .
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#156">Features: Creating a Custom UDF</a>, <a href="../manual0/JFeat.html#168">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>The name given to the pattern parameter by the UDF.</dd>
+<dt>
+<tt><b>PatternParam</b></tt>
+</dt>
+<dd>The parameter value</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Instance of the UDFVariantPatternParem object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UDFReference::Create">UDFReference_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcUDFCreate-UDFReference.html">UDFReference</a></tt></td><td class="method-name"><tt>UDFReference_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;PromptForReference, <a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;ReferenceItem)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a UDF reference that is required when placing 
+a UDF with references.
+<br>
+<br>Used as a component of <tt><tt><a class="class" href="c-pfcUDFCreate-UDFCustomCreateInstructions.html">UDFCustomCreateInstructions</a></tt></tt> .
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#171">Features: Creating a Custom UDF</a>, <a href="../manual0/JFeat.html#174">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PromptForReference</b></tt>
+</dt>
+<dd>String that would be given to user if placing UDF interactively.</dd>
+<dt>
+<tt><b>ReferenceItem</b></tt>
+</dt>
+<dd>Item to use as reference. Include component path if reference is external.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Instance of the UDFReference object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UDFAssemblyIntersection::Create">UDFAssemblyIntersection_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcUDFCreate-UDFAssemblyIntersection.html">UDFAssemblyIntersection</a></tt></td><td class="method-name"><tt>UDFAssemblyIntersection_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-stdcols-intseq.html">intseq</a>&nbsp;ComponentPath, int&nbsp;VisibilityLevel)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates an assembly intersection object, which is 
+used to place a UDF programatically.
+<br>
+<br>Used as a component of <tt><tt><a class="class" href="c-pfcUDFCreate-UDFCustomCreateInstructions.html">UDFCustomCreateInstructions</a></tt></tt> .
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#177">Features: Creating a Custom UDF</a>, <a href="../manual0/JFeat.html#179">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ComponentPath</b></tt>
+</dt>
+<dd>The member identifier table that defines the location of the intersected part in the assembly that contains the UDF.</dd>
+<dt>
+<tt><b>VisibilityLevel</b></tt>
+</dt>
+<dd>The length of the <tt><tt><a class="class" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a></tt></tt> that corresponds to the visibility level of the intersected part in the assembly. If VisibilityLevel == the number of entries in the <tt><tt><a class="class" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a></tt></tt> sequence, the feature is visible in the part that it intersects. If VisibilityLevel is 0, the feature is visible at the level of the assembly containing the UDF.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Instance of the AssemblyIntersection object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UDFExternalReference::Create">UDFExternalReference_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcUDFCreate-UDFExternalReference.html">UDFExternalReference</a></tt></td><td class="method-name"><tt>UDFExternalReference_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a>&nbsp;Model)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a UDFExternalReference object that is required when 
+placing a UDF with external references.
+<br>
+<br>Used as a component of <tt><tt><a class="class" href="c-pfcUDFCreate-UDFCustomCreateInstructions.html">UDFCustomCreateInstructions</a></tt></tt> .
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Model</b></tt>
+</dt>
+<dd>Component path to the model to which the external reference is made.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Instance of the UDFExternalReference object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UDFCustomCreateInstructions::Create">UDFCustomCreateInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcUDFCreate-UDFCustomCreateInstructions.html">UDFCustomCreateInstructions</a></tt></td><td class="method-name"><tt>UDFCustomCreateInstructions_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;Name)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates an instructions object, which is used to 
+place a UDF programmatically.
+<br>
+<br>Used as a component of <tt><tt><a class="class" href="c-pfcUDFCreate-UDFCustomCreateInstructions.html">UDFCustomCreateInstructions</a></tt></tt> .
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#140">Features: Creating a Custom UDF</a>, <a href="../manual0/JFeat.html#141">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>Name of UDF to be placed.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Instance of the UDFCustomCreateInstructions object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

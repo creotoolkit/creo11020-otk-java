@@ -1,0 +1,1113 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcModel.ModelActionListener"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      471
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcModel.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcModel-ModelActionListener.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;ModelActionListener</h2>
+<tt>
+     package 
+     <b><a href="p-pfcModel.html">com.ptc.pfc.pfcModel</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>ModelActionListener</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcBase-ActionListener.html">com.ptc.pfc.pfcBase.ActionListener</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class defines an action listener for models that notifies you
+when operations on a model occur.
+<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterModelCopy">OnAfterModelCopy</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;FromMdl, 
+   /*optional*/
+   <a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;ToMdl)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The listener method called after successful
+execution of a copy command.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterModelCopyAll">OnAfterModelCopyAll</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;FromMdl, 
+   /*optional*/
+   <a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;ToMdl)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the listener method called after successful
+copying of any model (not just an explicit copy of a single model). 
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterModelCreate">OnAfterModelCreate</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Mdl)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the listener method called after successful
+creation of a model.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterModelDelete">OnAfterModelDelete</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Mdl)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the listener method called after successful
+deletion of a model.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterModelDeleteAll">OnAfterModelDeleteAll</a>
+ (<a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a>&nbsp;Descr)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The listener method called after successful
+deletion of any model, (not just an explicit deletion of a single model).
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterModelErase">OnAfterModelErase</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Mdl)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the listener method called after successful
+erasing of a model.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterModelEraseAll">OnAfterModelEraseAll</a>
+ (<a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a>&nbsp;Descr)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the listener method called after successful
+erasure of any model, (not just an explicit erasure of a single model). 
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterModelRename">OnAfterModelRename</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;FromMdl, 
+   /*optional*/
+   <a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;ToMdl)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the listener method called after successful renaming of a model.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterModelRetrieve">OnAfterModelRetrieve</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Mdl)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the listener method called after successful retrieval of 
+a model.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterModelRetrieveAll">OnAfterModelRetrieveAll</a>
+ (<a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a>&nbsp;Descr)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the listener method called after successful retrieval of
+any model, (not just an explicit retrieval of a single model).
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterModelSave">OnAfterModelSave</a>
+ (<a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a>&nbsp;Descr)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the listener mothod called after successful
+saving of a model.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterModelSaveAll">OnAfterModelSaveAll</a>
+ (<a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a>&nbsp;Descr)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This is the listener method called after successful
+saving of any model, (not just an explicit save of a single model).
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnBeforeModelDisplay">OnBeforeModelDisplay</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Mdl)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The listener method called before a model is displayed.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnBeforeParameterCreate">OnBeforeParameterCreate</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Owner, String&nbsp;Name, <a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a>&nbsp;Value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+       This is the listener method called before creating a parameter.
+       To abort parameter creation throw exception <tt><tt><a class="class" href="c-pfcExceptions-XCancelProEAction.html">XCancelProEAction</a></tt></tt>.<br>
+     
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnBeforeParameterDelete">OnBeforeParameterDelete</a>
+ (<a class="type" href="c-pfcModelItem-Parameter.html">Parameter</a>&nbsp;Param)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+       This is the listener method called before deleting a parameter.
+       To abort parameter delete operation throw exception <tt><tt><a class="class" href="c-pfcExceptions-XCancelProEAction.html">XCancelProEAction</a></tt></tt>.<br>
+     
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnBeforeParameterModify">OnBeforeParameterModify</a>
+ (<a class="type" href="c-pfcModelItem-Parameter.html">Parameter</a>&nbsp;Param, <a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a>&nbsp;Value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+       This is the listener method called before modifying a parameter.
+       To abort parameter modification throw exception <tt><tt><a class="class" href="c-pfcExceptions-XCancelProEAction.html">XCancelProEAction</a></tt></tt>.<br>
+     
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterModelSave">OnAfterModelSave</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterModelSave</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a>&nbsp;Descr)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the listener mothod called after successful
+saving of a model.
+<br>
+<br>This listener method is called only for models which are explicitly
+saved, not for dependent models.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#35">Action Listeners: Model Level Action listeners</a>, <a href="../manual0/JAction.html#61">Action Listeners: Model Level Action listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Descr</b></tt>
+</dt>
+<dd>The descriptor of the saved model</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterModelSaveAll">OnAfterModelSaveAll</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterModelSaveAll</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a>&nbsp;Descr)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the listener method called after successful
+saving of any model, (not just an explicit save of a single model).
+<br>
+<br>For example, when saving an assembly and all the
+component parts in it, this method is called once for each model saved.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#43">Action Listeners: Model Level Action listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Descr</b></tt>
+</dt>
+<dd>The model descriptor of the saved part</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterModelCopy">OnAfterModelCopy</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterModelCopy</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;FromMdl, 
+   /*optional*/
+   <a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;ToMdl)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The listener method called after successful
+execution of a copy command.
+<br>
+<br>This method is <b>deprecated</b>.  Use <tt><a class="method" href="c-pfcModel-ModelEventActionListener.html#OnAfterModelCopy">ModelEventActionListener.OnAfterModelCopy(ModelDescriptor, ModelDescriptor)</a></tt> for better performance.
+This listener method is called only for models which are explicity copied, not for dependent models.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FromMdl</b></tt>
+</dt>
+<dd>Source model that was copied.</dd>
+<dt>
+<tt><b>ToMdl</b></tt>
+</dt>
+<dd>Target model created by copying.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterModelCopyAll">OnAfterModelCopyAll</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterModelCopyAll</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;FromMdl, 
+   /*optional*/
+   <a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;ToMdl)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the listener method called after successful
+copying of any model (not just an explicit copy of a single model). 
+<br>
+<br>This method is <b>deprecated</b>.  Use <tt><a class="method" href="c-pfcModel-ModelEventActionListener.html#OnAfterModelCopyAll">ModelEventActionListener.OnAfterModelCopyAll(ModelDescriptor, ModelDescriptor)</a></tt> for better performance.
+For example, when copying an assembly and all the component
+parts in it, this method will be called once for each model copied.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FromMdl</b></tt>
+</dt>
+<dd>Source model that was copied.</dd>
+<dt>
+<tt><b>ToMdl</b></tt>
+</dt>
+<dd>Target model created by copying.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterModelRename">OnAfterModelRename</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterModelRename</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;FromMdl, 
+   /*optional*/
+   <a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;ToMdl)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the listener method called after successful renaming of a model.
+<br>
+<br>This method is <b>deprecated</b>.  Use <tt><a class="method" href="c-pfcModel-ModelEventActionListener.html#OnAfterModelRename">ModelEventActionListener.OnAfterModelRename(ModelDescriptor, ModelDescriptor)</a></tt> for better performance.
+This listener method is called only for models which are explicitly renamed, not for dependent models.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FromMdl</b></tt>
+</dt>
+<dd>Model that was renamed.</dd>
+<dt>
+<tt><b>ToMdl</b></tt>
+</dt>
+<dd>The newly renamed model.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterModelErase">OnAfterModelErase</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterModelErase</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Mdl)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the listener method called after successful
+erasing of a model.
+<br>
+<br>This method is <b>deprecated</b>.  Use <tt><a class="method" href="c-pfcModel-ModelEventActionListener.html#OnAfterModelErase">ModelEventActionListener.OnAfterModelErase(ModelDescriptor)</a></tt> for better performance.
+This listener method is called only for models which are explicitly 
+erased, not for dependent models.
+This listener method will only be invoked if the ModelActionListener is
+assigned to the Creo Parametric session.  It may not be assigned to an individual
+model.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Mdl</b></tt>
+</dt>
+<dd>Model that was erased.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterModelEraseAll">OnAfterModelEraseAll</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterModelEraseAll</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a>&nbsp;Descr)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the listener method called after successful
+erasure of any model, (not just an explicit erasure of a single model). 
+<br>
+<br>For example, when erasing an assembly and all the
+component parts in it, this method is called once for each model erased.
+This listener method will only be invoked if the ModelActionListener is
+assigned to the Creo Parametric session.  It may not be assigned to an individual
+model.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#45">Action Listeners: Model Level Action listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Descr</b></tt>
+</dt>
+<dd>The model descriptor of the erased model</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterModelDelete">OnAfterModelDelete</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterModelDelete</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Mdl)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the listener method called after successful
+deletion of a model.
+<br>
+<br>This method is <b>deprecated</b>.  Use <tt><a class="method" href="c-pfcModel-ModelEventActionListener.html#OnAfterModelDelete">ModelEventActionListener.OnAfterModelDelete(ModelDescriptor)</a></tt> for better performance.
+This listener method is caled only for models which are explicitly deleted, not for dependent models.
+This listener method will only be invoked if the ModelActionListener is
+assigned to the Creo Parametric session.  It may not be assigned to an individual
+model.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Mdl</b></tt>
+</dt>
+<dd>Model that was deleted.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterModelDeleteAll">OnAfterModelDeleteAll</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterModelDeleteAll</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a>&nbsp;Descr)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The listener method called after successful
+deletion of any model, (not just an explicit deletion of a single model).
+<br>
+<br>For example, when deleting an assembly and all the
+component parts in it, called once for each model deleted.
+This listener method will only be invoked if the ModelActionListener is
+assigned to the Creo Parametric session.  It may not be assigned to an individual
+model.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#46">Action Listeners: Model Level Action listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Descr</b></tt>
+</dt>
+<dd>The model descriptor of the deleted part</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterModelRetrieve">OnAfterModelRetrieve</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterModelRetrieve</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Mdl)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the listener method called after successful retrieval of 
+a model.
+<br>
+<br>This listener method is called only for models which are explicitly
+retrieved, not for dependent models. This listener method will only be invoked
+if the ModelActionListener is assigned to the Creo Parametric session. It may not
+be assigned to an individual model.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#40">Action Listeners: Model Level Action listeners</a>, <a href="../manual0/JAction.html#61">Action Listeners: Model Level Action listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Mdl</b></tt>
+</dt>
+<dd>Name of the retrieved model</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterModelRetrieveAll">OnAfterModelRetrieveAll</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterModelRetrieveAll</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a>&nbsp;Descr)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the listener method called after successful retrieval of
+any model, (not just an explicit retrieval of a single model).
+<br>
+<br>For example, when retrieving an assembly and all the
+component parts in it, this method is called once for each model retrieved.
+This listener method will only be invoked if the ModelActionListener is
+assigned to the Creo Parametric session. It may not be assigned to an individual
+model.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Descr</b></tt>
+</dt>
+<dd>The model descriptor of the retrieved part</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnBeforeModelDisplay">OnBeforeModelDisplay</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnBeforeModelDisplay</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Mdl)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The listener method called before a model is displayed.
+   <br>
+<br>This method is blocked for asynchronous mode, because it causes a significant slowdown 
+when changing the display of a model (rotating or moving).<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#41">Action Listeners: Model Level Action listeners</a>, <a href="../manual0/JAction.html#61">Action Listeners: Model Level Action listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Mdl</b></tt>
+</dt>
+<dd>Name of the model to be displayed</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterModelCreate">OnAfterModelCreate</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterModelCreate</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Mdl)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This is the listener method called after successful
+creation of a model.
+<br>
+<br>This listener method will only be invoked if the ModelActionListener is
+assigned to the Creo Parametric session.  It may not be assigned to an individual
+model.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#42">Action Listeners: Model Level Action listeners</a>, <a href="../manual0/JAction.html#61">Action Listeners: Model Level Action listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Mdl</b></tt>
+</dt>
+<dd>Model just created</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnBeforeParameterCreate">OnBeforeParameterCreate</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnBeforeParameterCreate</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Owner, String&nbsp;Name, <a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a>&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+       This is the listener method called before creating a parameter.
+       To abort parameter creation throw exception <tt><tt><a class="class" href="c-pfcExceptions-XCancelProEAction.html">XCancelProEAction</a></tt></tt>.<br>
+     
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#90">Action Listeners: Cancelling an ActionListener Operation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Owner</b></tt>
+</dt>
+<dd>Owner model of parameter </dd>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>Name of parameter </dd>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>Value of parameter </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnBeforeParameterModify">OnBeforeParameterModify</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnBeforeParameterModify</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModelItem-Parameter.html">Parameter</a>&nbsp;Param, <a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a>&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+       This is the listener method called before modifying a parameter.
+       To abort parameter modification throw exception <tt><tt><a class="class" href="c-pfcExceptions-XCancelProEAction.html">XCancelProEAction</a></tt></tt>.<br>
+     
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#90">Action Listeners: Cancelling an ActionListener Operation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Param</b></tt>
+</dt>
+<dd>Parameter to be modified </dd>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>Value of the parameter </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnBeforeParameterDelete">OnBeforeParameterDelete</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnBeforeParameterDelete</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModelItem-Parameter.html">Parameter</a>&nbsp;Param)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+       This is the listener method called before deleting a parameter.
+       To abort parameter delete operation throw exception <tt><tt><a class="class" href="c-pfcExceptions-XCancelProEAction.html">XCancelProEAction</a></tt></tt>.<br>
+     
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#90">Action Listeners: Cancelling an ActionListener Operation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Param</b></tt>
+</dt>
+<dd>Name of parameter to be deleted</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

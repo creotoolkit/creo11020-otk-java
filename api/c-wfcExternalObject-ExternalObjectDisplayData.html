@@ -1,0 +1,535 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcExternalObject.ExternalObjectDisplayData"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      274
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcExternalObject.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcExternalObject-ExternalObjectDisplayData.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;ExternalObjectDisplayData</h2>
+<tt>
+     package 
+     <b><a href="p-wfcExternalObject.html">com.ptc.wfc.wfcExternalObject</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>ExternalObjectDisplayData</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-wfcExternalObject-ExternalObjectData.html">com.ptc.wfc.wfcExternalObject.ExternalObjectData</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br> Display properties of external object <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-StdColor.html">StdColor</a></tt></td><td class="method-summary"><tt><a class="method" href="#DisplayColor">GetDisplayColor</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "DisplayColor"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Display color for external object </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcGeometry-CurveDescriptors.html">CurveDescriptors</a></tt></td><td class="method-summary"><tt><a class="method" href="#Entities">GetEntities</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Entities"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+     List of entities to display in external object.
+     
+     The entities are specified in the local coordinates of the external object.
+     To transform them to model coordinates, Use method SetTransormationMatrix(). 
+     <b> NOTE: </b>The only entities for which this is supported are wfcENTITY_LINE and wfcENTITY_ARC.
+     (Polygons may be drawn as multiple lines, and circles as arcs of extent 2 * pi.)
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-StdColors.html">StdColors</a></tt></td><td class="method-summary"><tt><a class="method" href="#EntityColors">GetEntityColors</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "EntityColors"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> A sequnce of colors for entities </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-StdLineStyle.html">StdLineStyle</a></tt></td><td class="method-summary"><tt><a class="method" href="#LineStyle">GetLineStyle</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "LineStyle"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Line style for external object  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcExternalObject-ExternalObjectDisplayDataProperties.html">ExternalObjectDisplayDataProperties</a></tt></td><td class="method-summary"><tt><a class="method" href="#Properties">GetProperties</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Properties"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Some display properties for external object </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-summary"><tt><a class="method" href="#Scale">GetScale</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Scale"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Scale for external object </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-Matrix3D.html">Matrix3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#TransormationMatrix">GetTransormationMatrix</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "TransormationMatrix"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Use this matrix to transform from local coordinates to model coordinates </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DisplayColor">SetDisplayColor</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-StdColor.html">StdColor</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "DisplayColor"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Display color for external object </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Entities">SetEntities</a>
+ (<a class="type" href="c-pfcGeometry-CurveDescriptors.html">CurveDescriptors</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Entities"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+     List of entities to display in external object.
+     
+     The entities are specified in the local coordinates of the external object.
+     To transform them to model coordinates, Use method SetTransormationMatrix(). 
+     <b> NOTE: </b>The only entities for which this is supported are wfcENTITY_LINE and wfcENTITY_ARC.
+     (Polygons may be drawn as multiple lines, and circles as arcs of extent 2 * pi.)
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#EntityColors">SetEntityColors</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-StdColors.html">StdColors</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "EntityColors"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> A sequnce of colors for entities </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#LineStyle">SetLineStyle</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-StdLineStyle.html">StdLineStyle</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "LineStyle"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Line style for external object  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Properties">SetProperties</a>
+ (
+   /*optional*/
+   <a class="type" href="c-wfcExternalObject-ExternalObjectDisplayDataProperties.html">ExternalObjectDisplayDataProperties</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Properties"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Some display properties for external object </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Scale">SetScale</a>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Scale"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Scale for external object </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#TransormationMatrix">SetTransormationMatrix</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-Matrix3D.html">Matrix3D</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "TransormationMatrix"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Use this matrix to transform from local coordinates to model coordinates </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcExternalObject-ExternalObjectData.html"><tt>com.ptc.wfc.wfcExternalObject.ExternalObjectData</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcExternalObject-ExternalObjectData.html#Type"><tt>GetType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DisplayColor">GetDisplayColor/SetDisplayColor</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-StdColor.html">StdColor</a></tt></td><td class="method-name"><tt>GetDisplayColor</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetDisplayColor</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-StdColor.html">StdColor</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Display color for external object <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jextobjs.html#27">External Objects: Display Data for External Objects</a>, <a href="../manual0/jextobjs.html#28">External Objects: Display Data for External Objects</a>, <a href="../manual0/jextobjs.html#28">External Objects: Display Data for External Objects</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Entities">GetEntities/SetEntities</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcGeometry-CurveDescriptors.html">CurveDescriptors</a></tt></td><td class="method-name"><tt>GetEntities</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetEntities</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-CurveDescriptors.html">CurveDescriptors</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+     List of entities to display in external object.
+     
+     The entities are specified in the local coordinates of the external object.
+     To transform them to model coordinates, Use method SetTransormationMatrix(). 
+     <b> NOTE: </b>The only entities for which this is supported are wfcENTITY_LINE and wfcENTITY_ARC.
+     (Polygons may be drawn as multiple lines, and circles as arcs of extent 2 * pi.)
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jextobjs.html#20">External Objects: Display Data for External Objects</a>, <a href="../manual0/jextobjs.html#23">External Objects: Display Data for External Objects</a>, <a href="../manual0/jextobjs.html#21">External Objects: Display Data for External Objects</a>, <a href="../manual0/jextobjs.html#23">External Objects: Display Data for External Objects</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="EntityColors">GetEntityColors/SetEntityColors</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-StdColors.html">StdColors</a></tt></td><td class="method-name"><tt>GetEntityColors</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetEntityColors</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-StdColors.html">StdColors</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> A sequnce of colors for entities <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jextobjs.html#22">External Objects: Display Data for External Objects</a>, <a href="../manual0/jextobjs.html#23">External Objects: Display Data for External Objects</a>, <a href="../manual0/jextobjs.html#23">External Objects: Display Data for External Objects</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="LineStyle">GetLineStyle/SetLineStyle</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-StdLineStyle.html">StdLineStyle</a></tt></td><td class="method-name"><tt>GetLineStyle</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetLineStyle</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-StdLineStyle.html">StdLineStyle</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Line style for external object  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jextobjs.html#29">External Objects: Display Data for External Objects</a>, <a href="../manual0/jextobjs.html#30">External Objects: Display Data for External Objects</a>, <a href="../manual0/jextobjs.html#30">External Objects: Display Data for External Objects</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Properties">GetProperties/SetProperties</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcExternalObject-ExternalObjectDisplayDataProperties.html">ExternalObjectDisplayDataProperties</a></tt></td><td class="method-name"><tt>GetProperties</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetProperties</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-wfcExternalObject-ExternalObjectDisplayDataProperties.html">ExternalObjectDisplayDataProperties</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Some display properties for external object <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jextobjs.html#25">External Objects: Display Data for External Objects</a>, <a href="../manual0/jextobjs.html#26">External Objects: Display Data for External Objects</a>, <a href="../manual0/jextobjs.html#26">External Objects: Display Data for External Objects</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Scale">GetScale/SetScale</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-name"><tt>GetScale</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetScale</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Scale for external object <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jextobjs.html#31">External Objects: Display Data for External Objects</a>, <a href="../manual0/jextobjs.html#32">External Objects: Display Data for External Objects</a>, <a href="../manual0/jextobjs.html#32">External Objects: Display Data for External Objects</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TransormationMatrix">GetTransormationMatrix/SetTransormationMatrix</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-Matrix3D.html">Matrix3D</a></tt></td><td class="method-name"><tt>GetTransormationMatrix</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetTransormationMatrix</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-Matrix3D.html">Matrix3D</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Use this matrix to transform from local coordinates to model coordinates <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jextobjs.html#33">External Objects: Display Data for External Objects</a>, <a href="../manual0/jextobjs.html#34">External Objects: Display Data for External Objects</a>, <a href="../manual0/jextobjs.html#34">External Objects: Display Data for External Objects</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,860 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcDetail.DetailItemOwner"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      190
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcDetail.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcDetail-DetailItemOwner.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;DetailItemOwner</h2>
+<tt>
+     package 
+     <b><a href="p-pfcDetail.html">com.ptc.pfc.pfcDetail</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>DetailItemOwner</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface represents an object in Creo Parametric that contains detail items.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><tt><a class="class" href="c-pfcModel2D-Model2D.html">Model2D</a></tt></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-pfcModel2D-Model2D.html">Model2D</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AllowReadonlyNoteSelection">AllowReadonlyNoteSelection</a>
+ (boolean&nbsp;Allow)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Controls whether or not the Creo Parametric user can select read only detail notes.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDetail-DetailItem.html">DetailItem</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateDetailItem">CreateDetailItem</a>
+ (<a class="type" href="c-pfcDetail-DetailCreateInstructions.html">DetailCreateInstructions</a>&nbsp;Instructions)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new detail item in the model.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDetail-DetailNoteItem.html">DetailNoteItem</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateFreeNote">CreateFreeNote</a>
+ (<a class="type" href="c-pfcDetail-DetailTextLines.html">DetailTextLines</a>&nbsp;TextLines, <a class="type" href="c-pfcDetail-FreeAttachment.html">FreeAttachment</a>&nbsp;Attach)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates Free note in specifed 2D model. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDetail-DetailNoteItem.html">DetailNoteItem</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateLeaderNote">CreateLeaderNote</a>
+ (<a class="type" href="c-pfcDetail-DetailTextLines.html">DetailTextLines</a>&nbsp;TextLines, <a class="type" href="c-pfcDetail-Attachment.html">Attachment</a>&nbsp;NoteAttach, <a class="type" href="c-pfcDetail-LeaderAttachments.html">LeaderAttachments</a>&nbsp;LeaderAttach, 
+   /*optional*/
+   Double&nbsp;ElbowLength)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates leader note in specifed 2D model. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDetail-DetailNoteItem.html">DetailNoteItem</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateOffsetNote">CreateOffsetNote</a>
+ (<a class="type" href="c-pfcDetail-DetailTextLines.html">DetailTextLines</a>&nbsp;TextLines, <a class="type" href="c-pfcDetail-OffsetAttachment.html">OffsetAttachment</a>&nbsp;Attach)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates offset note in specifed 2D model. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDetail-DetailNoteItem.html">DetailNoteItem</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateOnItemNote">CreateOnItemNote</a>
+ (<a class="type" href="c-pfcDetail-DetailTextLines.html">DetailTextLines</a>&nbsp;TextLines, <a class="type" href="c-pfcDetail-ParametricAttachment.html">ParametricAttachment</a>&nbsp;Attach)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates on item note in specifed 2D model. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailItem.html">DetailItem</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetDetailItem">GetDetailItem</a>
+ (<a class="type" href="c-pfcDetail-DetailType.html">DetailType</a>&nbsp;Type, int&nbsp;Id)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Finds a specified detail item, given the identifier and type.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailItems.html">DetailItems</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListDetailItems">ListDetailItems</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailType.html">DetailType</a>&nbsp;Type, 
+   /*optional*/
+   Integer&nbsp;SheetNumber)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Lists the detail items in the model.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDetail-DetailSymbolDefItem.html">DetailSymbolDefItem</a></tt></td><td class="method-summary"><tt><a class="method" href="#RetrieveSymbolDefinition">RetrieveSymbolDefinition</a>
+ (String&nbsp;FileName, 
+   /*optional*/
+   String&nbsp;FilePath, 
+   /*optional*/
+   Integer&nbsp;Version, 
+   /*optional*/
+   Boolean&nbsp;UpdateUnconditionally)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailItemOwner.html#RetrieveSymbolDefItem">DetailItemOwner.RetrieveSymbolDefItem</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Retrieves a symbol definition from disk.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDetail-DetailSymbolDefItem.html">DetailSymbolDefItem</a></tt></td><td class="method-summary"><tt><a class="method" href="#RetrieveSymbolDefItem">RetrieveSymbolDefItem</a>
+ (String&nbsp;FileName, <a class="type" href="c-pfcDetail-DetailSymbolDefItemSource.html">DetailSymbolDefItemSource</a>&nbsp;Source, 
+   /*optional*/
+   String&nbsp;FilePath, 
+   /*optional*/
+   Integer&nbsp;Version, 
+   /*optional*/
+   Boolean&nbsp;UpdateUnconditionally)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListDetailItems">ListDetailItems</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailItems.html">DetailItems</a></tt></td><td class="method-name"><tt>ListDetailItems</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailType.html">DetailType</a>&nbsp;Type, 
+   /*optional*/
+   Integer&nbsp;SheetNumber)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Lists the detail items in the model.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - This means either:
+    <ul>
+       
+<li>No items were found, OR</li>
+	   
+<li>No entities were found, OR</li>
+       
+<li>No groups were found, OR</li>
+	   
+<li>No notes were found, OR</li>
+	   
+<li>No symbol definitions were found, OR</li>
+	   
+<li>No symbol instances were found.</li>
+	
+</ul>
+	
+</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfMemory.html">XToolkitOutOfMemory</a></tt></tt> - Found too many (either/all of) entities, items, groups, notes, symbol definitions, symbol instances to be contained in the output array. Use Visit instead.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#413">Drawings: Listing Detail Items</a>, <a href="../manual0/jdrawfns.html#415">Drawings: Listing Detail Items</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The detail item type to search for, or <tt>null</tt> to return all detail items.</dd>
+<dt>
+<tt><b>SheetNumber</b></tt>
+</dt>
+<dd>The sheet number to search, or <tt>null</tt> to search all sheets.  This argument is ignored if type is DETAIL_SYM_DEFINITION.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Sequence of detail items, or <tt>null</tt> if no items matching the input values were found.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetDetailItem">GetDetailItem</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailItem.html">DetailItem</a></tt></td><td class="method-name"><tt>GetDetailItem</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailType.html">DetailType</a>&nbsp;Type, int&nbsp;Id)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Finds a specified detail item, given the identifier and type.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - This means either:
+    <ul>
+	   
+<li>No entities were found, OR</li>
+	   
+<li>No notes were found.</li>
+	
+</ul>
+	
+</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfMemory.html">XToolkitOutOfMemory</a></tt></tt> - Found too many (either/all of) entities, notes to be contained in the output array. Use Visit instead.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The detail item type.</dd>
+<dt>
+<tt><b>Id</b></tt>
+</dt>
+<dd>The Creo Parametric integer identifier.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The detail item, or <tt>null</tt> if the item was not found.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateDetailItem">CreateDetailItem</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDetail-DetailItem.html">DetailItem</a></tt></td><td class="method-name"><tt>CreateDetailItem</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailCreateInstructions.html">DetailCreateInstructions</a>&nbsp;Instructions)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new detail item in the model.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#415">Drawings: Listing Detail Items</a>, <a href="../manual0/jdrawfns.html#417">Drawings: Creating a Detail Item</a>, <a href="../manual0/jdrawfns.html#418">Drawings: Creating a Detail Item</a>, <a href="../manual0/jdrawfns.html#440">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#494">Drawings: Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Instructions</b></tt>
+</dt>
+<dd>A data object describing the type and content of the new detail item.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The newly created detail item.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateFreeNote">CreateFreeNote</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDetail-DetailNoteItem.html">DetailNoteItem</a></tt></td><td class="method-name"><tt>CreateFreeNote</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailTextLines.html">DetailTextLines</a>&nbsp;TextLines, <a class="type" href="c-pfcDetail-FreeAttachment.html">FreeAttachment</a>&nbsp;Attach)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates Free note in specifed 2D model. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TextLines</b></tt>
+</dt>
+<dd>Text lines. </dd>
+<dt>
+<tt><b>Attach</b></tt>
+</dt>
+<dd>Free attachment. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A note object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateOffsetNote">CreateOffsetNote</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDetail-DetailNoteItem.html">DetailNoteItem</a></tt></td><td class="method-name"><tt>CreateOffsetNote</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailTextLines.html">DetailTextLines</a>&nbsp;TextLines, <a class="type" href="c-pfcDetail-OffsetAttachment.html">OffsetAttachment</a>&nbsp;Attach)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates offset note in specifed 2D model. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TextLines</b></tt>
+</dt>
+<dd>Text lines.</dd>
+<dt>
+<tt><b>Attach</b></tt>
+</dt>
+<dd>offset attachment.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A note object. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateOnItemNote">CreateOnItemNote</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDetail-DetailNoteItem.html">DetailNoteItem</a></tt></td><td class="method-name"><tt>CreateOnItemNote</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailTextLines.html">DetailTextLines</a>&nbsp;TextLines, <a class="type" href="c-pfcDetail-ParametricAttachment.html">ParametricAttachment</a>&nbsp;Attach)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates on item note in specifed 2D model. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TextLines</b></tt>
+</dt>
+<dd>Text lines.</dd>
+<dt>
+<tt><b>Attach</b></tt>
+</dt>
+<dd>on item attachment.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A note object. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateLeaderNote">CreateLeaderNote</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDetail-DetailNoteItem.html">DetailNoteItem</a></tt></td><td class="method-name"><tt>CreateLeaderNote</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailTextLines.html">DetailTextLines</a>&nbsp;TextLines, <a class="type" href="c-pfcDetail-Attachment.html">Attachment</a>&nbsp;NoteAttach, <a class="type" href="c-pfcDetail-LeaderAttachments.html">LeaderAttachments</a>&nbsp;LeaderAttach, 
+   /*optional*/
+   Double&nbsp;ElbowLength)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates leader note in specifed 2D model. <br>
+<br>
+   
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfMemory.html">XToolkitOutOfMemory</a></tt></tt> - Not enough memory. </p>
+   
+</p>
+  
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TextLines</b></tt>
+</dt>
+<dd>Text lines. </dd>
+<dt>
+<tt><b>NoteAttach</b></tt>
+</dt>
+<dd>Note text attachment. </dd>
+<dt>
+<tt><b>LeaderAttach</b></tt>
+</dt>
+<dd>Note leader attachment. </dd>
+<dt>
+<tt><b>ElbowLength</b></tt>
+</dt>
+<dd>Elbow Length of the note. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RetrieveSymbolDefinition">RetrieveSymbolDefinition</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDetail-DetailSymbolDefItem.html">DetailSymbolDefItem</a></tt></td><td class="method-name"><tt>RetrieveSymbolDefinition</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName, 
+   /*optional*/
+   String&nbsp;FilePath, 
+   /*optional*/
+   Integer&nbsp;Version, 
+   /*optional*/
+   Boolean&nbsp;UpdateUnconditionally)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailItemOwner.html#RetrieveSymbolDefItem">DetailItemOwner.RetrieveSymbolDefItem</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Retrieves a symbol definition from disk.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The specified symbol does not exist.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitFound.html">XToolkitFound</a></tt></tt> - The specified symbol exist but was not retrieved. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#521">Drawings: Detail Symbol Definitions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the symbol definition file.</dd>
+<dt>
+<tt><b>FilePath</b></tt>
+</dt>
+<dd>The path to the symbol definition file, relative to the configuration option <i>pro_symbol_dir</i>.  <tt>null</tt> indicates that the function should search the system symbol definition directory instead.</dd>
+<dt>
+<tt><b>Version</b></tt>
+</dt>
+<dd>The numerical version of the symbol definition file, or <tt>null</tt> to retrieve the latest version.</dd>
+<dt>
+<tt><b>UpdateUnconditionally</b></tt>
+</dt>
+<dd>
+<tt>true</tt> if Creo Parametric should update existing instances of this symbol definition, <tt>false</tt> if the operation should fail if the definition already exists in the model.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RetrieveSymbolDefItem">RetrieveSymbolDefItem</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDetail-DetailSymbolDefItem.html">DetailSymbolDefItem</a></tt></td><td class="method-name"><tt>RetrieveSymbolDefItem</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName, <a class="type" href="c-pfcDetail-DetailSymbolDefItemSource.html">DetailSymbolDefItemSource</a>&nbsp;Source, 
+   /*optional*/
+   String&nbsp;FilePath, 
+   /*optional*/
+   Integer&nbsp;Version, 
+   /*optional*/
+   Boolean&nbsp;UpdateUnconditionally)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+  
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The specified symbol does not exist.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitFound.html">XToolkitFound</a></tt></tt> - The specified symbol exist but was not retrieved. </p>
+  
+</p>
+  
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#521">Drawings: Detail Symbol Definitions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Source</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>FilePath</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Version</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>UpdateUnconditionally</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AllowReadonlyNoteSelection">AllowReadonlyNoteSelection</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>AllowReadonlyNoteSelection</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;Allow)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Controls whether or not the Creo Parametric user can select read only detail notes.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Allow</b></tt>
+</dt>
+<dd>
+<tt>true</tt> to allow selection of readonly detail notes, <tt>false</tt> to disallow it.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

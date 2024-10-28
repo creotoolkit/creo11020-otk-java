@@ -1,0 +1,505 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcSelect.pfcSelect"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      590
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcSelect.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcSelect-pfcSelect.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcSelect</h2>
+<tt>
+     package <b><a href="p-pfcSelect.html">com.ptc.pfc.pfcSelect</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>pfcSelect</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "pfcSelect"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcSelect-Selection.html">Selection</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateComponentSelection">CreateComponentSelection</a>
+ (<a class="type" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a>&nbsp;Path)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Used to create a <tt><tt><a class="class" href="c-pfcSelect-Selection.html">Selection</a></tt></tt> object, based on the path to a specified component.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcSelect-Selection.html">Selection</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateModelItemSelection">CreateModelItemSelection</a>
+ (<a class="type" href="c-pfcModelItem-ModelItem.html">ModelItem</a>&nbsp;SelItem, 
+   /*optional*/
+   <a class="type" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a>&nbsp;Path)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Used to create a <tt><tt><a class="class" href="c-pfcSelect-Selection.html">Selection</a></tt></tt> object, based on a <tt><tt><a class="class" href="c-pfcModelItem-ModelItem.html">ModelItem</a></tt></tt> and, optionally, its <tt><tt><a class="class" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a></tt></tt> in an assembly.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcSelect-Selection.html">Selection</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateModelSelection">CreateModelSelection</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Model)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Used to create a <tt><tt><a class="class" href="c-pfcSelect-Selection.html">Selection</a></tt></tt> object, based on a <tt><tt><a class="class" href="c-pfcModel-Model.html">Model</a></tt></tt>
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcSelect-Selection.html">Selection</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateSelectionFromString">CreateSelectionFromString</a>
+ (String&nbsp;SelectionString)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new selection object, given a Web.Link style selection string.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcSelect-SelectionOptions.html">SelectionOptions</a></tt></td><td class="method-summary"><tt><a class="method" href="#SelectionOptions::Create">SelectionOptions_Create</a>
+ (String&nbsp;inOptionKeywords)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Specifies the options used in the selection. 
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcSelect-SelectionPair.html">SelectionPair</a></tt></td><td class="method-summary"><tt><a class="method" href="#SelectionPair::Create">SelectionPair_Create</a>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;inSel1, <a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;inSel2)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new SelectionPair object; it's a field of SelectionEvaluator and GlobalInterference classes and represents the data necessary to call several functions that deal with interference.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SelectionOptions::Create">SelectionOptions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcSelect-SelectionOptions.html">SelectionOptions</a></tt></td><td class="method-name"><tt>SelectionOptions_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;inOptionKeywords)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Specifies the options used in the selection. 
+<br>
+<br>The return value is an argument to <tt><a class="method" href="c-pfcSession-BaseSession.html#Select">BaseSession.Select(SelectionOptions, /*optional*/ Selections)</a></tt> .
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSelection.html#6">Selection: Interactive Selection</a>, <a href="../manual0/JSelection.html#18">Selection: Interactive Selection</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inOptionKeywords</b></tt>
+</dt>
+<dd>The keywords to include in the selection</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A pointer to the new <i>SelectionOptions</i> object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SelectionPair::Create">SelectionPair_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcSelect-SelectionPair.html">SelectionPair</a></tt></td><td class="method-name"><tt>SelectionPair_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;inSel1, <a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;inSel2)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new SelectionPair object; it's a field of SelectionEvaluator and GlobalInterference classes and represents the data necessary to call several functions that deal with interference.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#167">Geometry Evaluation: Analyzing Interference Information</a>, <a href="../manual0/JGeom.html#173">Geometry Evaluation: Analyzing Interference Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inSel1</b></tt>
+</dt>
+<dd>The first Selected object.</dd>
+<dt>
+<tt><b>inSel2</b></tt>
+</dt>
+<dd>The second Selected object.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The SelectionPair object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateComponentSelection">CreateComponentSelection</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcSelect-Selection.html">Selection</a></tt></td><td class="method-name"><tt>CreateComponentSelection</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a>&nbsp;Path)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Used to create a <tt><tt><a class="class" href="c-pfcSelect-Selection.html">Selection</a></tt></tt> object, based on the path to a specified component.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidPtr.html">XToolkitInvalidPtr</a></tt></tt> - The selection argument is an invalid pointer.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSelection.html#43">Selection: Programmatic Selection</a>, <a href="../manual0/JSelection.html#52">Selection: Programmatic Selection</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd>The <tt><tt><a class="class" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a></tt></tt> of the object to selected within an assembly.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The <tt><tt><a class="class" href="c-pfcSelect-Selection.html">Selection</a></tt></tt> object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateModelSelection">CreateModelSelection</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcSelect-Selection.html">Selection</a></tt></td><td class="method-name"><tt>CreateModelSelection</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Model)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Used to create a <tt><tt><a class="class" href="c-pfcSelect-Selection.html">Selection</a></tt></tt> object, based on a <tt><tt><a class="class" href="c-pfcModel-Model.html">Model</a></tt></tt>
+
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSelection.html#44">Selection: Programmatic Selection</a>, <a href="../manual0/JSelection.html#52">Selection: Programmatic Selection</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Model</b></tt>
+</dt>
+<dd>The Selected <tt><tt><a class="class" href="c-pfcModel-Model.html">Model</a></tt></tt>
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The <tt><tt><a class="class" href="c-pfcSelect-Selection.html">Selection</a></tt></tt> object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateModelItemSelection">CreateModelItemSelection</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcSelect-Selection.html">Selection</a></tt></td><td class="method-name"><tt>CreateModelItemSelection</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModelItem-ModelItem.html">ModelItem</a>&nbsp;SelItem, 
+   /*optional*/
+   <a class="type" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a>&nbsp;Path)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Used to create a <tt><tt><a class="class" href="c-pfcSelect-Selection.html">Selection</a></tt></tt> object, based on a <tt><tt><a class="class" href="c-pfcModelItem-ModelItem.html">ModelItem</a></tt></tt> and, optionally, its <tt><tt><a class="class" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a></tt></tt> in an assembly.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidPtr.html">XToolkitInvalidPtr</a></tt></tt> - The selection argument is an invalid pointer.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSelection.html#42">Selection: Programmatic Selection</a>, <a href="../manual0/JSelection.html#52">Selection: Programmatic Selection</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SelItem</b></tt>
+</dt>
+<dd>The Selected <tt><tt><a class="class" href="c-pfcModelItem-ModelItem.html">ModelItem</a></tt></tt>
+</dd>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd>The <tt><tt><a class="class" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a></tt></tt> of the selected object within an assembly.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The <tt><tt><a class="class" href="c-pfcSelect-Selection.html">Selection</a></tt></tt> object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateSelectionFromString">CreateSelectionFromString</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcSelect-Selection.html">Selection</a></tt></td><td class="method-name"><tt>CreateSelectionFromString</tt></td><td class="method-params"><tt>
+ (String&nbsp;SelectionString)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new selection object, given a Web.Link style selection string.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><tt><a class="method" href="c-pfcSelect-pfcSelect.html#CreateModelItemSelection">pfcSelect.CreateModelItemSelection(ModelItem, /*optional*/ ComponentPath)</a></tt></tt>, <tt><tt><a class="method" href="c-pfcSelect-pfcSelect.html#CreateComponentSelection">pfcSelect.CreateComponentSelection(ComponentPath)</a></tt></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSelection.html#45">Selection: Programmatic Selection</a>, <a href="../manual0/JSelection.html#52">Selection: Programmatic Selection</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SelectionString</b></tt>
+</dt>
+<dd>The selection string.  The string should follow the following formats (items in brackets [] are optional):<tt> TopLevelObject:[SubAsm]:[SubAs:LeafComponent]/[ModelItem] </tt>
+<p></p>
+ The top level object should provided as:<i> "name.type" </i>
+<p></p>
+Each component in the path can have one of the following formats:<ul type="disc">
+
+<li>
+ 
+<i>"name.type"</i>
+</li>
+
+<li>
+ 
+<i>"name.type(#comp_id)"</i>
+</li>
+
+<li>
+ 
+<i>"name.type(comp_name)"</i>
+</li>
+
+</ul>
+The component name is the name of the component feature in the context of its parent assembly.<p></p>
+The model item can have one of the following formats:<ul type="disc">
+
+<li>
+ 
+<i>"itemtype(#item_id) </i>
+</li>
+
+<li>
+ 
+<i>"itemtype(item_name) </i>
+</li>
+
+</ul>
+Itemtype must one of the following:<ul type="disc">
+
+<li>
+ Feature</li>
+
+<li>
+ Dimension</li>
+
+</ul>
+
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created selection object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

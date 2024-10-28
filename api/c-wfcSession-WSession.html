@@ -1,0 +1,4948 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcSession.WSession"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      912
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcSession.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcSession-WSession.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;WSession</h2>
+<tt>
+     package 
+     <b><a href="p-wfcSession.html">com.ptc.wfc.wfcSession</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>WSession</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-wfcSession-WBaseSession.html">com.ptc.wfc.wfcSession.WBaseSession</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="bold" href="c-pfcSession-Session.html">com.ptc.pfc.pfcSession.Session</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Top interface in Object Toolkit.<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AddBeforeModelRetrieveListener">AddBeforeModelRetrieveListener</a>
+ (<a class="type" href="c-wfcSession-BeforeModelRetrieveActionListener.html">BeforeModelRetrieveActionListener</a>&nbsp;listen)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener">ActionSource.AddActionListener</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Adds an action listener to notify you of activating file open dialog using <b>File -&gt; Open</b>.<br>
+        This listener can pass instructions for retrieving model to Creo Parametric.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AddBrowserMessageListener">AddBrowserMessageListener</a>
+ (String&nbsp;key, <a class="type" href="c-wfcSession-BrowserMessageListener.html">BrowserMessageListener</a>&nbsp;Listener)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Add listener callback for browser events.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AddCollectionToSelectionBuffer">AddCollectionToSelectionBuffer</a>
+ (<a class="type" href="c-wfcCollection-Collection.html">Collection</a>&nbsp;Coll)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+       Adds collection to selection buffer
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AddModelRetrievePreListener">AddModelRetrievePreListener</a>
+ (<a class="type" href="c-wfcSession-BeforeModelRetrieveListener.html">BeforeModelRetrieveListener</a>&nbsp;listen)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener">ActionSource.AddActionListener</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Adds an action listener to notify you of activating file open dialog using <b>File -&gt; Open</b>.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AddModelSavePreAllListener">AddModelSavePreAllListener</a>
+ (<a class="type" href="c-wfcSession-BeforeModelSaveAllListener.html">BeforeModelSaveAllListener</a>&nbsp;listen)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener">ActionSource.AddActionListener</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AddNavigatorPaneLayout">AddNavigatorPaneLayout</a>
+ (String&nbsp;PaneName, String&nbsp;ResFileName, 
+   /*optional*/
+   String&nbsp;IconFileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+       Add new pane tab with specified name on the Navigator pane.       
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AutoPropagate">AutoPropagate</a>
+ ()
+</tt>
+<br>
+<tt><b>LICENSE: </b>222</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Automatically propagates annotation elements within the current
+        model to the currently selected feature based on the standard Creo Parametric
+        algorithm.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcDisplay-WWindow.html">WWindow</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateAccessorywindowWithTree">CreateAccessorywindowWithTree</a>
+ (String&nbsp;ObjectName, <a class="type" href="c-wfcModel-MdlfileType.html">MdlfileType</a>&nbsp;ObjectType, 
+   /*optional*/
+   Boolean&nbsp;EnableTree)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Retrieves a window and attaches the object to it.
+     </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcDisplay-WWindow.html">WWindow</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateBarewindow">CreateBarewindow</a>
+ (String&nbsp;ObjectName, <a class="type" href="c-wfcModel-MdlfileType.html">MdlfileType</a>&nbsp;ObjectType)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+   Retrieves a window and attaches the object to it.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcElementTree-ElementTree.html">ElementTree</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateElementTree">CreateElementTree</a>
+ (<a class="type" href="c-wfcElementTree-Elements.html">Elements</a>&nbsp;Elems)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Creates an element tree from the elements and returns a handle to <tt><tt><a class="class" href="c-wfcElementTree-ElementTree.html">ElementTree</a></tt></tt> 
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcElementTree-ElementTree.html">ElementTree</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateElementTreeFromXML">CreateElementTreeFromXML</a>
+ (String&nbsp;Filename)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Creates an element tree from xml file provided.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcExternalObject-ExternalObjectClass.html">ExternalObjectClass</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateExternalClass">CreateExternalClass</a>
+ (String&nbsp;Name, int&nbsp;Type)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Registers a new external object class.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcSection-Section.html">Section</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateSection2D">CreateSection2D</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Allocates a two-dimensional section.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#CreateSnapshot">CreateSnapshot</a>
+ (String&nbsp;Name)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+			  Creates a top assembly level snapshot from the current position on screen. 
+			  Constraints will be copied from the active snapshot.
+			  The newly created snapshot will become the active one.
+		  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DeleteBrowserMessageListener">DeleteBrowserMessageListener</a>
+ (String&nbsp;key)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DeleteSnapshot">DeleteSnapshot</a>
+ (String&nbsp;Name, 
+   /*optional*/
+   <a class="type" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a>&nbsp;Path)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+			Deletes snapshot.
+		  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DisplayInformationWindow">DisplayInformationWindow</a>
+ (String&nbsp;FilePath, 
+   /*optional*/
+   Double&nbsp;XOffset, 
+   /*optional*/
+   Double&nbsp;YOffset, 
+   /*optional*/
+   Integer&nbsp;Rows, 
+   /*optional*/
+   Integer&nbsp;Columns)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Creates a window and shows the text of the file specified by <i>FilePath</i>.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ExecuteMacro">ExecuteMacro</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcSection-Section.html">Section</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetActiveSection">GetActiveSection</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns a copy of the current active sketcher section.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#GetApplicationPath">GetApplicationPath</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#GetApplicationTextPath">GetApplicationTextPath</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcSession-CreoType.html">CreoType</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetCreoType">GetCreoType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns the type of Creo which runs this application.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcSession-IntfDataSourceType.html">IntfDataSourceType</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetDataSourceType">GetDataSourceType</a>
+ (<a class="type" href="c-pfcModel-IntfType.html">IntfType</a>&nbsp;IntfType)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Provide the <tt><tt><a class="class" href="c-wfcSession-IntfDataSourceType.html">IntfDataSourceType</a></tt></tt> for given <tt><tt><a class="class" href="c-pfcModel-IntfType.html">IntfType</a></tt></tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#GetDefaultTolerance">GetDefaultTolerance</a>
+ (<a class="type" href="c-wfcSolid-ToleranceType.html">ToleranceType</a>&nbsp;Type, int&nbsp;Decimals)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Retrieves the current Creo Parametric default tolerance value for the specified number of decimal places. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#GetDisplayDateCode">GetDisplayDateCode</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns the Creo session's customer visible datecode.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcSession-ElementWstringOption.html">ElementWstringOption</a></tt></td><td class="method-summary"><tt><a class="method" href="#ElemWstrOption">GetElemWstrOption</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ElemWstrOption"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Options used to retrieve string values of elements</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#GetGTolSymbolString">GetGTolSymbolString</a>
+ (<a class="type" href="c-wfcGTol-GTolSymbol.html">GTolSymbol</a>&nbsp;Symbol, <a class="type" href="c-wfcGTol-SymbolFont.html">SymbolFont</a>&nbsp;Font)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+    Get value string of gtol
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcFeature-ImportfeatRedefSourceType.html">ImportfeatRedefSourceType</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetImportFeatRedefSourceType">GetImportFeatRedefSourceType</a>
+ (<a class="type" href="c-wfcFeature-ImportFeatRedefOperationType.html">ImportFeatRedefOperationType</a>&nbsp;Type)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> 
+     Provides the wfcFeature::ImportfeatRedefSourceType used to redefine an import feature.  
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#GetIncompleteSurfaceTessellationAllowed">GetIncompleteSurfaceTessellationAllowed</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcSession-SnapshotTransformations.html">SnapshotTransformations</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetKinSnapshotTransformations">GetKinSnapshotTransformations</a>
+ (String&nbsp;Name, 
+   /*optional*/
+   <a class="type" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a>&nbsp;Path)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+			  This method brings transformation paths and transformation matrices for all
+			  components in the snapshot versus top level assembly.
+		  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-summary"><tt><a class="method" href="#GetKnownDirectory">GetKnownDirectory</a>
+ (<a class="type" href="c-wfcSession-KnownDirectoryType.html">KnownDirectoryType</a>&nbsp;dir_type)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcSession-LineStyleData.html">LineStyleData</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetLineStyleData">GetLineStyleData</a>
+ (<a class="type" href="c-pfcBase-StdLineStyle.html">StdLineStyle</a>&nbsp;LineStyle)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Provides a description of the specified line style.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcModel-MdlfileDescriptor.html">MdlfileDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetMdlfileDescriptor">GetMdlfileDescriptor</a>
+ (<a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a>&nbsp;ModelDescr)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcModel-Model.html">Model</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetModelFromMdlfileDescriptor">GetModelFromMdlfileDescriptor</a>
+ (<a class="type" href="c-wfcModel-MdlfileDescriptor.html">MdlfileDescriptor</a>&nbsp;MdlfileDescr)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+       Returns the model based on the model descriptor input.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#GetNavigatorPaneComponent">GetNavigatorPaneComponent</a>
+ (String&nbsp;PaneName, String&nbsp;ComponentLocalName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+       Get the changed name of a component in the pane.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#GetNavigatorPaneDevice">GetNavigatorPaneDevice</a>
+ (<a class="type" href="c-pfcWindow-Window.html">Window</a>&nbsp;WindowObject)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+       Get the name of the navigator pane device specific to window object.       
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#GetNavigatorPaneLayoutComponent">GetNavigatorPaneLayoutComponent</a>
+ (String&nbsp;PaneName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+       Get the changed name of the top layout in navigator pane.       
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>int</tt></td><td class="method-summary"><tt><a class="method" href="#GetReleaseNumericVersion">GetReleaseNumericVersion</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Returns the integer major version number of the Creo 
+        executable that the application is connected to.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#GetResourcePath">GetResourcePath</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Provides the resource path of an application.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcSolid-Solid.html">Solid</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetSolid">GetSolid</a>
+ (String&nbsp;Name, <a class="type" href="c-pfcModel-ModelType.html">ModelType</a>&nbsp;Type)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+     Initializes the ProSolid handle.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-summary"><tt><a class="method" href="#GetTextureFilePath">GetTextureFilePath</a>
+ (String&nbsp;TextureFileName, boolean&nbsp;CreateTempFile)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Looks up the full path to the texture, decal, or bump map file
+        indicated. 
+       </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcUDFCreate-UDFVariableParameters.html">UDFVariableParameters</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetUDFDataDefaultVariableParameters">GetUDFDataDefaultVariableParameters</a>
+ (String&nbsp;Name, 
+   /*optional*/
+   String&nbsp;Instance)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcModel-Model.html">Model</a></tt></td><td class="method-summary"><tt><a class="method" href="#ImportAsModel">ImportAsModel</a>
+ (String&nbsp;FileToImport, <a class="type" href="c-pfcImport-NewModelImportType.html">NewModelImportType</a>&nbsp;NewModelType, <a class="type" href="c-pfcModel-ModelType.html">ModelType</a>&nbsp;Type, String&nbsp;NewModelName, <a class="type" href="c-wfcImport-ImportRepType.html">ImportRepType</a>&nbsp;ModelRepType, 
+   /*optional*/
+   String&nbsp;profile, 
+   /*optional*/
+   <a class="type" href="c-pfcImport-LayerImportFilter.html">LayerImportFilter</a>&nbsp;Filter)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new imported model in the solid.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsOptionOrdered">IsOptionOrdered</a>
+ (String&nbsp;OptionName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Determines whether the specified option is available.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsTextureFileEmbedded">IsTextureFileEmbedded</a>
+ (String&nbsp;TextureFileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+       Checks if the texture file was embedded.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcModel-Model.html">Model</a></tt></td><td class="method-summary"><tt><a class="method" href="#LoadModelRepresentation">LoadModelRepresentation</a>
+ (String&nbsp;AssemblyFileName, <a class="type" href="c-pfcModel-ModelType.html">ModelType</a>&nbsp;Type, 
+   /*optional*/
+   String&nbsp;SimpRepName, 
+   /*optional*/
+   <a class="type" href="c-pfcSimpRep-SimpRepInstructions.html">SimpRepInstructions</a>&nbsp;Instructions)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Retrieves the specified simplified representation.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#MoveKinDrag">MoveKinDrag</a>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;DragPoint, <a class="type" href="c-pfcBase-Point2Ds.html">Point2Ds</a>&nbsp;Moves)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+			  This method bring to drag this selected object. Displays a hook point around the point.
+			  Performs a drag according to the environment set in <tt><a class="method" href="c-wfcSession-WSession.html#SetKinDragEnvironment">WSession.SetKinDragEnvironment(KinDragType, /*optional*/ String, /*optional*/ ComponentPath, /*optional*/ Selection)</a></tt>
+			  For dragging use constraints from current snapshot, if it set. 
+			  After end of the movement the hook point is removed.
+		  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#MoveKinDragForModel">MoveKinDragForModel</a>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;DragPoint, <a class="type" href="c-pfcBase-Point3Ds.html">Point3Ds</a>&nbsp;Moves, 
+   /*optional*/
+   <a class="type" href="c-pfcBase-Matrix3D.html">Matrix3D</a>&nbsp;Matrix)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+			  This function brings to drag this selected object. Performs a drag
+			  according to the environment set in  <tt><a class="method" href="c-wfcSession-WSession.html#SetKinDragEnvironment">WSession.SetKinDragEnvironment(KinDragType, /*optional*/ String, /*optional*/ ComponentPath, /*optional*/ Selection)</a></tt>
+			  For dragging use constraints from the current snapshot, if it is set.
+		  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDrawing-Drawing.html">Drawing</a></tt></td><td class="method-summary"><tt><a class="method" href="#OpenDrawingAsReadOnly">OpenDrawingAsReadOnly</a>
+ (String&nbsp;Path)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcWindow-Window.html">Window</a></tt></td><td class="method-summary"><tt><a class="method" href="#OpenSource">OpenSource</a>
+ (<a class="type" href="c-wfcModel-MdlfileDescriptor.html">MdlfileDescriptor</a>&nbsp;MdlfileDesc)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Retrieves the specified model and displays it in a window.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcSession-ParsedFileNameData.html">ParsedFileNameData</a></tt></td><td class="method-summary"><tt><a class="method" href="#ParseFileName">ParseFileName</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Parses the specified file name into its components.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#RegisterExternalSelectionHighlight">RegisterExternalSelectionHighlight</a>
+ (<a class="type" href="c-wfcSelect-ExternalSelectionHighlight.html">ExternalSelectionHighlight</a>&nbsp;RegistrationMethods)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+       Registers external application highlighting callbacks in order to 
+       let application media (like a tree) react on selections made 
+       while calling or while in <tt><a class="method" href="c-pfcSession-BaseSession.html#Select">BaseSession.Select(SelectionOptions, /*optional*/ Selections)</a></tt>
+       </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ReleaseExternalSelectionHighlight">ReleaseExternalSelectionHighlight</a>
+ (<a class="type" href="c-wfcSelect-ExternalSelectionHighlight.html">ExternalSelectionHighlight</a>&nbsp;RegistrationMethods)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Releases the client interface used for external selection.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcClient-Status.html">Status</a></tt></td><td class="method-summary"><tt><a class="method" href="#ReleaseVisitor">ReleaseVisitor</a>
+ (<a class="type" href="c-wfcClient-VisitingClient.html">VisitingClient</a>&nbsp;visitingClient)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcAssembly-Assembly.html">Assembly</a></tt></td><td class="method-summary"><tt><a class="method" href="#RetrieveAssemblySimpRep">RetrieveAssemblySimpRep</a>
+ (String&nbsp;AssemName, <a class="type" href="c-wfcModel-MdlfileType.html">MdlfileType</a>&nbsp;FileType, 
+   /*optional*/
+   <a class="type" href="c-pfcSimpRep-SimpRepInstructions.html">SimpRepInstructions</a>&nbsp;Instructions)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Retrieves the specified simplified representation.
+       Takes the origin file type into account.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcAssembly-Assembly.html">Assembly</a></tt></td><td class="method-summary"><tt><a class="method" href="#RetrieveAutomaticSimpRep">RetrieveAutomaticSimpRep</a>
+ (String&nbsp;AssemName, <a class="type" href="c-wfcModel-MdlfileType.html">MdlfileType</a>&nbsp;FileType, String&nbsp;UDSrepName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Retrieve user defined simplified representation as automatic rep.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcAssembly-Assembly.html">Assembly</a></tt></td><td class="method-summary"><tt><a class="method" href="#RetrieveDefaultEnvelopeSimprep">RetrieveDefaultEnvelopeSimprep</a>
+ (String&nbsp;AssemName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Retrieves the Default Envelope simplified representation of an assembly
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcAssembly-Assembly.html">Assembly</a></tt></td><td class="method-summary"><tt><a class="method" href="#RetrieveLightweightGraphicsSimpRep">RetrieveLightweightGraphicsSimpRep</a>
+ (String&nbsp;AssemName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Retrieves the light-weight graphics simplified representation of
+      an assembly. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcModel-Model.html">Model</a></tt></td><td class="method-summary"><tt><a class="method" href="#RetrieveModelByFiletype">RetrieveModelByFiletype</a>
+ (<a class="type" href="c-wfcModel-MdlfileDescriptor.html">MdlfileDescriptor</a>&nbsp;MdlfileDescr, <a class="type" href="c-pfcSession-RetrieveModelOptions.html">RetrieveModelOptions</a>&nbsp;Opts)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Retrieves the specified model into the Creo Parametric session from standard directory.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcSolid-Solid.html">Solid</a></tt></td><td class="method-summary"><tt><a class="method" href="#RetrieveSimpRep">RetrieveSimpRep</a>
+ (String&nbsp;ModelName, <a class="type" href="c-wfcModel-MdlfileType.html">MdlfileType</a>&nbsp;FileType, <a class="type" href="c-pfcSimpRep-SimpRepType.html">SimpRepType</a>&nbsp;SimpRepType, 
+   /*optional*/
+   String&nbsp;ReprName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Retrieves the specified simplified representation
+       Takes the origin file type into account.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#RunAsCreoType">RunAsCreoType</a>
+ (<a class="type" href="c-wfcSession-CreoType.html">CreoType</a>&nbsp;type)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sets the type of Creo.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ElemWstrOption">SetElemWstrOption</a>
+ (
+   /*optional*/
+   <a class="type" href="c-wfcSession-ElementWstringOption.html">ElementWstringOption</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ElemWstrOption"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Options used to retrieve string values of elements</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetIncompleteSurfaceTessellationAllowed">SetIncompleteSurfaceTessellationAllowed</a>
+ (boolean&nbsp;IsAllowed)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetKinDragEnvironment">SetKinDragEnvironment</a>
+ (<a class="type" href="c-wfcSession-KinDragType.html">KinDragType</a>&nbsp;Type, 
+   /*optional*/
+   String&nbsp;Name, 
+   /*optional*/
+   <a class="type" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a>&nbsp;Path, 
+   /*optional*/
+   <a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;Reference)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+			  This method setups the environment for subsequenmt dragging and reconnect operations. 
+			  Environment can be set / reset several times after  <tt><a class="method" href="c-wfcSession-WSession.html#StartKinDrag">WSession.StartKinDrag()</a></tt> is called.
+		  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#StartKinDrag">StartKinDrag</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+			  This method starts a drag session it should be called before any other Kinematic drag or Snapshot function is called.
+			  All subsequent methods will work with the Snapshots of the window assembly. 
+			  All component path should start from this assembly.
+			  All transforms belong to this assembly.
+			  The method can be called for design assemblies in Standard Assembly and Mechanism modes. 
+			  It cannot be used if assembly is exploded, if sketcher is active, when component
+			  placement is active or when drag dialog is on screen.
+		  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#StopKinDrag">StopKinDrag</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+			  This method will stop drag session. Method <tt><a class="method" href="c-pfcWindow-Window.html#Refresh">Window.Refresh()</a></tt>
+			  should be performed to see the change of the graphic window scale according to updated outline.
+		  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#UIEditFile">UIEditFile</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Opens an edit window for the specified file using the default text editor.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#UIOpenFileType">UIOpenFileType</a>
+ (<a class="type" href="c-wfcSession-FiletypeOpenOptions.html">FiletypeOpenOptions</a>&nbsp;Options)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Prompts the standard file open browser interface of Creo Parametric.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#UISaveFileType">UISaveFileType</a>
+ (<a class="type" href="c-wfcSession-FiletypeSaveOptions.html">FiletypeSaveOptions</a>&nbsp;Options)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Prompts the standard file save browser interface of Creo Parametric.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#UpdateSnapshot">UpdateSnapshot</a>
+ (String&nbsp;Name)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+			  Update snapshot.
+		  </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Parent.html"><tt>com.ptc.pfc.pfcObject.Parent</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcDisplay-Display.html"><tt>com.ptc.pfc.pfcDisplay.Display</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcDisplay-Display.html#CreateDisplayList2D"><tt>CreateDisplayList2D</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#Invalidate"><tt>Invalidate</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DrawArc2D"><tt>DrawArc2D</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DrawPolygon2D"><tt>DrawPolygon2D</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DrawText2D"><tt>DrawText2D</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CreateDisplayList3D"><tt>CreateDisplayList3D</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DrawCircle"><tt>DrawCircle</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DrawLine"><tt>DrawLine</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#SetPenPosition"><tt>SetPenPosition</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DrawPolyline"><tt>DrawPolyline</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#DefaultFont"><tt>GetDefaultFont</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CurrentFont"><tt>GetCurrentFont</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CurrentFont"><tt>SetCurrentFont</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#GetFontById"><tt>GetFontById</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#GetFontByName"><tt>GetFontByName</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#TextHeight"><tt>GetTextHeight</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#TextHeight"><tt>SetTextHeight</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#RotationAngle"><tt>GetRotationAngle</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#RotationAngle"><tt>SetRotationAngle</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#SlantAngle"><tt>GetSlantAngle</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#SlantAngle"><tt>SetSlantAngle</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#WidthFactor"><tt>GetWidthFactor</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#WidthFactor"><tt>SetWidthFactor</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#ResetTextAttributes"><tt>ResetTextAttributes</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CurrentGraphicsMode"><tt>GetCurrentGraphicsMode</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CurrentGraphicsMode"><tt>SetCurrentGraphicsMode</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CurrentGraphicsColor"><tt>GetCurrentGraphicsColor</tt></a>,
+      <a class="method" href="c-pfcDisplay-Display.html#CurrentGraphicsColor"><tt>SetCurrentGraphicsColor</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcDisplay-WDisplay.html"><tt>com.ptc.wfc.wfcDisplay.WDisplay</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcDisplay-WDisplay.html#GetColorByObjectType"><tt>GetColorByObjectType</tt></a>,
+      <a class="method" href="c-wfcDisplay-WDisplay.html#SetColorRGBAlternateScheme"><tt>SetColorRGBAlternateScheme</tt></a>,
+      <a class="method" href="c-wfcDisplay-WDisplay.html#GetColorRGBAlternateScheme"><tt>GetColorRGBAlternateScheme</tt></a>,
+      <a class="method" href="c-wfcDisplay-WDisplay.html#SetColorRGBVersion"><tt>SetColorRGBVersion</tt></a>,
+      <a class="method" href="c-wfcDisplay-WDisplay.html#GetColorRGBVersion"><tt>GetColorRGBVersion</tt></a>,
+      <a class="method" href="c-wfcDisplay-WDisplay.html#ModifyGraphicsColor"><tt>ModifyGraphicsColor</tt></a>,
+      <a class="method" href="c-wfcDisplay-WDisplay.html#ModifyTextColor"><tt>ModifyTextColor</tt></a>,
+      <a class="method" href="c-wfcDisplay-WDisplay.html#DrawPolylines"><tt>DrawPolylines</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcBase-ActionSource.html"><tt>com.ptc.pfc.pfcBase.ActionSource</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcSession-BaseSession.html"><tt>com.ptc.pfc.pfcSession.BaseSession</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcSession-BaseSession.html#CopyFileFromWS"><tt>CopyFileFromWS</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#CopyFileToWS"><tt>CopyFileToWS</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#CurrentWindow"><tt>GetCurrentWindow</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#CurrentWindow"><tt>SetCurrentWindow</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#CreateModelWindow"><tt>CreateModelWindow</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetModelWindow"><tt>GetModelWindow</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#OpenFile"><tt>OpenFile</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ListWindows"><tt>ListWindows</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetWindow"><tt>GetWindow</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#FlushCurrentWindow"><tt>FlushCurrentWindow</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ListModels"><tt>ListModels</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ListModelsByType"><tt>ListModelsByType</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#CurrentModel"><tt>GetCurrentModel</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetActiveModel"><tt>GetActiveModel</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#CreatePart"><tt>CreatePart</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#CreateAssembly"><tt>CreateAssembly</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#CreateDrawingFromTemplate"><tt>CreateDrawingFromTemplate</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#Import2DModel"><tt>Import2DModel</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetByRelationId"><tt>GetByRelationId</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrieveModel"><tt>RetrieveModel</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrieveModelWithOpts"><tt>RetrieveModelWithOpts</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetModel"><tt>GetModel</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetModelFromDescr"><tt>GetModelFromDescr</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetModelFromFileName"><tt>GetModelFromFileName</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#EraseUndisplayedModels"><tt>EraseUndisplayedModels</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#Select"><tt>Select</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#QueryFeatureEdit"><tt>QueryFeatureEdit</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#SetConfigOption"><tt>SetConfigOption</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetConfigOption"><tt>GetConfigOption</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetConfigOptionValues"><tt>GetConfigOptionValues</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RunMacro"><tt>RunMacro</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#SetTextColor"><tt>SetTextColor</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetRGBFromStdColor"><tt>GetRGBFromStdColor</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#SetStdColorFromRGB"><tt>SetStdColorFromRGB</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#SetLineStyle"><tt>SetLineStyle</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ExportDirectVRML"><tt>ExportDirectVRML</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#LoadConfigFile"><tt>LoadConfigFile</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetCurrentDirectory"><tt>GetCurrentDirectory</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ChangeDirectory"><tt>ChangeDirectory</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ListFiles"><tt>ListFiles</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ListSubdirectories"><tt>ListSubdirectories</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetEnvironmentVariable"><tt>GetEnvironmentVariable</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#CheckoutToWS"><tt>CheckoutToWS</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ExportFromCurrentWS"><tt>ExportFromCurrentWS</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ImportToCurrentWS"><tt>ImportToCurrentWS</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#SetWSExportOptions"><tt>SetWSExportOptions</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ExportCurrentRasterImage"><tt>ExportCurrentRasterImage</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrieveAssemSimpRep"><tt>RetrieveAssemSimpRep</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrieveGraphicsSimpRep"><tt>RetrieveGraphicsSimpRep</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrieveSymbolicSimpRep"><tt>RetrieveSymbolicSimpRep</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrieveGeomSimpRep"><tt>RetrieveGeomSimpRep</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrievePartSimpRep"><tt>RetrievePartSimpRep</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrieveGraphicsPartRep"><tt>RetrieveGraphicsPartRep</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrieveGeometryPartRep"><tt>RetrieveGeometryPartRep</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RetrieveSymbolicPartRep"><tt>RetrieveSymbolicPartRep</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetCurrentWS"><tt>GetCurrentWS</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#SetCurrentWS"><tt>SetCurrentWS</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetImportSourceType"><tt>GetImportSourceType</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ImportNewModel"><tt>ImportNewModel</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#LoadProToolkitDll"><tt>LoadProToolkitDll</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#LoadProToolkitLegacyDll"><tt>LoadProToolkitLegacyDll</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetProToolkitDll"><tt>GetProToolkitDll</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#EndSession"><tt>EndSession</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#StartJLinkApplication"><tt>StartJLinkApplication</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RegisterTask"><tt>RegisterTask</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#UnregisterTask"><tt>UnregisterTask</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#IsConfigurationSupported"><tt>IsConfigurationSupported</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#IsGeometryRepSupported"><tt>IsGeometryRepSupported</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#DimensionDisplayMode"><tt>GetDimensionDisplayMode</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#DimensionDisplayMode"><tt>SetDimensionDisplayMode</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#AuthenticateBrowser"><tt>AuthenticateBrowser</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RegisterServer"><tt>RegisterServer</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ListServers"><tt>ListServers</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetServerByAlias"><tt>GetServerByAlias</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetServerByUrl"><tt>GetServerByUrl</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetServerLocation"><tt>GetServerLocation</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetActiveServer"><tt>GetActiveServer</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetUrlFromAliasedUrl"><tt>GetUrlFromAliasedUrl</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetAliasFromAliasedUrl"><tt>GetAliasFromAliasedUrl</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetModelNameFromAliasedUrl"><tt>GetModelNameFromAliasedUrl</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ConnectionId"><tt>GetConnectionId</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ExecuteModelCheck"><tt>ExecuteModelCheck</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RegisterCustomModelCheck"><tt>RegisterCustomModelCheck</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#RegisterRelationFunction"><tt>RegisterRelationFunction</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetMessageContents"><tt>GetMessageContents</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetLocalizedMessageContents"><tt>GetLocalizedMessageContents</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#UIRegisterFileSave"><tt>UIRegisterFileSave</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#UIRegisterFileOpen"><tt>UIRegisterFileOpen</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetPrintPlacementOptions"><tt>GetPrintPlacementOptions</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetPrintPrinterOptions"><tt>GetPrintPrinterOptions</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetPrintMdlOptions"><tt>GetPrintMdlOptions</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#GetPrintPCFOptions"><tt>GetPrintPCFOptions</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#PLMSInitialize"><tt>PLMSInitialize</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#AllowDuplicateModelItems"><tt>AllowDuplicateModelItems</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#WLBInitialize"><tt>WLBInitialize</tt></a>,
+      <a class="method" href="c-pfcSession-BaseSession.html#ExportProfileLoad"><tt>ExportProfileLoad</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcSession-Session.html"><tt>com.ptc.pfc.pfcSession.Session</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcSession-Session.html#UIAddMenu"><tt>UIAddMenu</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#UICreateCommand"><tt>UICreateCommand</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#UICreateMaxPriorityCommand"><tt>UICreateMaxPriorityCommand</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#UIAddButton"><tt>UIAddButton</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#UIDisplayMessage"><tt>UIDisplayMessage</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#UIDisplayLocalizedMessage"><tt>UIDisplayLocalizedMessage</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#UIClearMessage"><tt>UIClearMessage</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#UIReadIntMessage"><tt>UIReadIntMessage</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#UIReadRealMessage"><tt>UIReadRealMessage</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#UIReadStringMessage"><tt>UIReadStringMessage</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#UIDisplayFeatureParams"><tt>UIDisplayFeatureParams</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#UIPickMouseBox"><tt>UIPickMouseBox</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#UIGetCurrentMouseStatus"><tt>UIGetCurrentMouseStatus</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#UIGetNextMousePick"><tt>UIGetNextMousePick</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#UIShowMessageDialog"><tt>UIShowMessageDialog</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#UIOpenFile"><tt>UIOpenFile</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#UISelectDirectory"><tt>UISelectDirectory</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#UISaveFile"><tt>UISaveFile</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#UIGetCommand"><tt>UIGetCommand</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#CurrentSelectionBuffer"><tt>GetCurrentSelectionBuffer</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#NavigatorPaneBrowserAdd"><tt>NavigatorPaneBrowserAdd</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#NavigatorPaneBrowserIconSet"><tt>NavigatorPaneBrowserIconSet</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#NavigatorPaneBrowserURLSet"><tt>NavigatorPaneBrowserURLSet</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#RibbonDefinitionfileLoad"><tt>RibbonDefinitionfileLoad</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#ModelDescrContainsOrigin"><tt>ModelDescrContainsOrigin</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#SetAppInfo"><tt>SetAppInfo</tt></a>,
+      <a class="method" href="c-pfcSession-Session.html#GetAppInfo"><tt>GetAppInfo</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetCreoType">GetCreoType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcSession-CreoType.html">CreoType</a></tt></td><td class="method-name"><tt>GetCreoType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns the type of Creo which runs this application.<br>
+<br>This method allows the developer to write an application 
+       which can be used with different types of Creo (Parametric, Direct etc.) 
+       - for instance, avoid calling methods allowed for Creo Parametric 
+       in case if the application is run with Creo Direct.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JlinkOverview.html#97">Overview of Creo Object TOOLKIT Java: Creo Object TOOLKIT Java Support for Creo</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Creo type.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RunAsCreoType">RunAsCreoType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>RunAsCreoType</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcSession-CreoType.html">CreoType</a>&nbsp;type)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Sets the type of Creo.
+      <br>
+<br>This method allows to emulate other Creo types 
+       while running the application with Creo Parametric - for instance to check
+       that used methods are enabled for a specific Creo type. 
+       <b>It must be used only during the development cycle and removed
+       in the final version of the application. If used with Creo 
+       applications other than Creo Parametric, this method will throw an exception.</b>
+      
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XMethodForbidden.html">XMethodForbidden</a></tt></tt> - Type is other than <tt><tt>
+   &lt;reference 6 to unknown entity wfcCreoType::wfcCREO_PARAMETRIC&gt;
+  </tt></tt>.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JlinkOverview.html#96">Overview of Creo Object TOOLKIT Java: Creo Object TOOLKIT Java Support for Creo</a>, <a href="../manual0/JlinkOverview.html#97">Overview of Creo Object TOOLKIT Java: Creo Object TOOLKIT Java Support for Creo</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>type</b></tt>
+</dt>
+<dd>Type of Creo Application.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetGTolSymbolString">GetGTolSymbolString</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetGTolSymbolString</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcGTol-GTolSymbol.html">GTolSymbol</a>&nbsp;Symbol, <a class="type" href="c-wfcGTol-SymbolFont.html">SymbolFont</a>&nbsp;Font)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+    Get value string of gtol
+  <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Symbol</b></tt>
+</dt>
+<dd>
+    arg description
+  </dd>
+<dt>
+<tt><b>Font</b></tt>
+</dt>
+<dd>
+    arg description
+  </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+    return description
+  </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateElementTreeFromXML">CreateElementTreeFromXML</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcElementTree-ElementTree.html">ElementTree</a></tt></td><td class="method-name"><tt>CreateElementTreeFromXML</tt></td><td class="method-params"><tt>
+ (String&nbsp;Filename)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Creates an element tree from xml file provided.
+      <br>
+<br>Reads in the xml file and converts into an element tree
+	  <p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfMemory.html">XToolkitOutOfMemory</a></tt></tt> - XML Parser failed to initialize</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantAccess.html">XToolkitCantAccess</a></tt></tt> - XML Parser failed during parsing</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantOpen.html">XToolkitCantOpen</a></tt></tt> - XML Parser failed opening DOM Tree</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotValid.html">XToolkitNotValid</a></tt></tt> - XML Parser failed due to other errors</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitAmbiguous.html">XToolkitAmbiguous</a></tt></tt> - Error occurred during creation of output transcoder </p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - Function failed to create the element tree due to an error in the ProElemId, ProType, or Enum Value in the XML file The function populates the ProArray p_errors to hold the errors ( refer to fields: <UL> 
+<LI>error_type = PRO_XML_OTHERERROR </LI>
+<LI>line_number = sr. no. of Element in file </LI>
+<LI>message = name of Element </LI>
+<LI>column_number = elem_id of Element </LI>
+</UL> ) </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#34">Feature Element Tree: Feature Element Tree</a>, <a href="../manual0/OTK_elem_tree.html#36">Feature Element Tree: Feature Element Tree</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Filename</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateElementTree">CreateElementTree</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcElementTree-ElementTree.html">ElementTree</a></tt></td><td class="method-name"><tt>CreateElementTree</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcElementTree-Elements.html">Elements</a>&nbsp;Elems)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Creates an element tree from the elements and returns a handle to <tt><tt><a class="class" href="c-wfcElementTree-ElementTree.html">ElementTree</a></tt></tt> 
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#35">Feature Element Tree: Feature Element Tree</a>, <a href="../manual0/OTK_elem_tree.html#36">Feature Element Tree: Feature Element Tree</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Elems</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ElemWstrOption">GetElemWstrOption/SetElemWstrOption</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcSession-ElementWstringOption.html">ElementWstringOption</a></tt></td><td class="method-name"><tt>GetElemWstrOption</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetElemWstrOption</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-wfcSession-ElementWstringOption.html">ElementWstringOption</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Options used to retrieve string values of elements<br>
+<br>
+      These options will be considered on call to method <tt><a class="method" href="c-wfcElementTree-Element.html#ValueAsString">Element.GetValueAsString(/*optional*/ String)</a></tt>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_elem_tree.html#43">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#69">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#44">Feature Element Tree: Feature Elements</a>, <a href="../manual0/OTK_elem_tree.html#69">Feature Element Tree: Feature Elements</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ImportAsModel">ImportAsModel</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcModel-Model.html">Model</a></tt></td><td class="method-name"><tt>ImportAsModel</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileToImport, <a class="type" href="c-pfcImport-NewModelImportType.html">NewModelImportType</a>&nbsp;NewModelType, <a class="type" href="c-pfcModel-ModelType.html">ModelType</a>&nbsp;Type, String&nbsp;NewModelName, <a class="type" href="c-wfcImport-ImportRepType.html">ImportRepType</a>&nbsp;ModelRepType, 
+   /*optional*/
+   String&nbsp;profile, 
+   /*optional*/
+   <a class="type" href="c-pfcImport-LayerImportFilter.html">LayerImportFilter</a>&nbsp;Filter)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new imported model in the solid.<br>
+<br>
+      
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantOpen.html">XToolkitCantOpen</a></tt></tt> - import_file can't be opened. </p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitUnsupported.html">XToolkitUnsupported</a></tt></tt> - Creo Parametric does not support import of the indicated file. </p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotExist.html">XToolkitNotExist</a></tt></tt> - No profile found. </p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidFile.html">XToolkitInvalidFile</a></tt></tt> - profile is not readable. </p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidType.html">XToolkitInvalidType</a></tt></tt> - This combination of arguments is invalid.</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitLineTooLong.html">XToolkitLineTooLong</a></tt></tt> - Name length of new model is more than 31 chars.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#345">Interface: Solid Operations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileToImport</b></tt>
+</dt>
+<dd>The file to be imported.</dd>
+<dt>
+<tt><b>NewModelType</b></tt>
+</dt>
+<dd>The type of the file to be imported.</dd>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The type of the model to create.</dd>
+<dt>
+<tt><b>NewModelName</b></tt>
+</dt>
+<dd>The name of the new imported model.</dd>
+<dt>
+<tt><b>ModelRepType</b></tt>
+</dt>
+<dd>The representation type.</dd>
+<dt>
+<tt><b>profile</b></tt>
+</dt>
+<dd>The profile path. Can be NULL.</dd>
+<dt>
+<tt><b>Filter</b></tt>
+</dt>
+<dd>The callback function that determines how to display and map layers of imported model. Can be NULL.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The handle to the new import model.The imported model.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetActiveSection">GetActiveSection</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcSection-Section.html">Section</a></tt></td><td class="method-name"><tt>GetActiveSection</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns a copy of the current active sketcher section.<br>
+<br>
+        If Intent Manager mode is supposed to be used for this section,the call 
+        <tt><a class="method" href="c-wfcSection-Section.html#SetIntentManagerMode">Section.SetIntentManagerMode(boolean)</a></tt> to <tt>true</tt> must follow this method
+        You must be in active sketcher mode to get section.
+       
+        <p>
+<b>Exceptions thrown (but not limited to):</b>
+        
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - Section not in sketcher mode.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#24">Element Trees: Sections: Copying the Current Section</a>, <a href="../manual0/Sections_create.html#25">Element Trees: Sections: Copying the Current Section</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Copy of active section object handle</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateSection2D">CreateSection2D</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcSection-Section.html">Section</a></tt></td><td class="method-name"><tt>CreateSection2D</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Allocates a two-dimensional section.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfMemory.html">XToolkitOutOfMemory</a></tt></tt> - There was a memory error.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Sections_create.html#18">Element Trees: Sections: Allocating a Two-Dimensional Section</a>, <a href="../manual0/Sections_create.html#20">Element Trees: Sections: Allocating a Two-Dimensional Section</a>, <a href="../manual0/Sketched_features_create.html#4">Element Trees: Sketched Features: Creating Features Containing Sections</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Section object handle</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetDisplayDateCode">GetDisplayDateCode</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetDisplayDateCode</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns the Creo session's customer visible datecode.<br>
+<br>
+         The datecode is returned in the same format as
+         shown in Creo Parametric Help information. 
+         <p>
+<B>Note for the users of C++ Object Toolkit:</B> If it is necessary to
+         show an identifier for the Creo version to the user from
+         an application, this value should be used, rather than the value
+         passed in to the application's user_initialize().</p>
+      
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JlinkOverview.html#101">Overview of Creo Object TOOLKIT Java: Retrieving Creo Version</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetReleaseNumericVersion">GetReleaseNumericVersion</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>int</tt></td><td class="method-name"><tt>GetReleaseNumericVersion</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Returns the integer major version number of the Creo 
+        executable that the application is connected to.
+      <br>
+<br>
+        The returned value is an absolute number counting from the first
+        shipment of PTC's MCAD software; for Creo Parametric 2.0 it is 31.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JlinkOverview.html#99">Overview of Creo Object TOOLKIT Java: Support for Multi-CAD Models Using Creo Unite</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AddCollectionToSelectionBuffer">AddCollectionToSelectionBuffer</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>AddCollectionToSelectionBuffer</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcCollection-Collection.html">Collection</a>&nbsp;Coll)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+       Adds collection to selection buffer
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSelection.html#63">Selection: Adding Items to the Selection Buffer</a>, <a href="../manual0/JSelection.html#64">Selection: Adding Items to the Selection Buffer</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Coll</b></tt>
+</dt>
+<dd> Collection to be added to selection buffer.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RegisterExternalSelectionHighlight">RegisterExternalSelectionHighlight</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>RegisterExternalSelectionHighlight</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcSelect-ExternalSelectionHighlight.html">ExternalSelectionHighlight</a>&nbsp;RegistrationMethods)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+       Registers external application highlighting callbacks in order to 
+       let application media (like a tree) react on selections made 
+       while calling or while in <tt><a class="method" href="c-pfcSession-BaseSession.html#Select">BaseSession.Select(SelectionOptions, /*optional*/ Selections)</a></tt>
+       
+<br>
+<br>The client instance, passed is an input to the method, should be released after the application is done with using it.<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-wfcSelect-WSelection.html#RecordExternalSelection">WSelection.RecordExternalSelection(SelectionRecordAction)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JExtern.html#26">External Data: Selecting the Node from the External Application Tree</a>, <a href="../manual0/JExtern.html#31">External Data: Selecting the Node from the External Application Tree</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>RegistrationMethods</b></tt>
+</dt>
+<dd>
+        
+<tt><tt><a class="class" href="c-wfcSelect-ExternalSelectionHighlight.html">ExternalSelectionHighlight</a></tt></tt> object.
+      </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ReleaseExternalSelectionHighlight">ReleaseExternalSelectionHighlight</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>ReleaseExternalSelectionHighlight</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcSelect-ExternalSelectionHighlight.html">ExternalSelectionHighlight</a>&nbsp;RegistrationMethods)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Releases the client interface used for external selection.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JExtern.html#31">External Data: Selecting the Node from the External Application Tree</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>RegistrationMethods</b></tt>
+</dt>
+<dd>
+        
+<tt><tt><a class="class" href="c-wfcSelect-ExternalSelectionHighlight.html">ExternalSelectionHighlight</a></tt></tt> object.
+      </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RetrieveLightweightGraphicsSimpRep">RetrieveLightweightGraphicsSimpRep</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcAssembly-Assembly.html">Assembly</a></tt></td><td class="method-name"><tt>RetrieveLightweightGraphicsSimpRep</tt></td><td class="method-params"><tt>
+ (String&nbsp;AssemName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Retrieves the light-weight graphics simplified representation of
+      an assembly. <br>
+<br>This method is a shortcut for <tt><a class="method" href="c-wfcSession-WSession.html#RetrieveSimpRep">WSession.RetrieveSimpRep(String, MdlfileType, SimpRepType, /*optional*/ String)</a></tt>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoPermission.html">XToolkitNoPermission</a></tt></tt> - The function does not have permission to operate on this assembly. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AssemName</b></tt>
+</dt>
+<dd>The name of the assembly to retrieve.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The handle to the assembly.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RetrieveDefaultEnvelopeSimprep">RetrieveDefaultEnvelopeSimprep</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcAssembly-Assembly.html">Assembly</a></tt></td><td class="method-name"><tt>RetrieveDefaultEnvelopeSimprep</tt></td><td class="method-params"><tt>
+ (String&nbsp;AssemName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Retrieves the Default Envelope simplified representation of an assembly
+      <br>
+<br>This method is a shortcut for <tt><a class="method" href="c-wfcSession-WSession.html#RetrieveSimpRep">WSession.RetrieveSimpRep(String, MdlfileType, SimpRepType, /*optional*/ String)</a></tt>
+        Operates on assemblies only, not parts<p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoPermission.html">XToolkitNoPermission</a></tt></tt> - The function does not have permission to operate on this assembly. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSimpRep.html#13">Simplified Representations: Retrieving Simplified Representations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AssemName</b></tt>
+</dt>
+<dd>
+        The name of the assembly to retrieve
+      </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The handle to the assembly.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RetrieveAssemblySimpRep">RetrieveAssemblySimpRep</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcAssembly-Assembly.html">Assembly</a></tt></td><td class="method-name"><tt>RetrieveAssemblySimpRep</tt></td><td class="method-params"><tt>
+ (String&nbsp;AssemName, <a class="type" href="c-wfcModel-MdlfileType.html">MdlfileType</a>&nbsp;FileType, 
+   /*optional*/
+   <a class="type" href="c-pfcSimpRep-SimpRepInstructions.html">SimpRepInstructions</a>&nbsp;Instructions)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Retrieves the specified simplified representation.
+       Takes the origin file type into account.
+      <br>
+<br>This method supports Multi-CAD models.<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoPermission.html">XToolkitNoPermission</a></tt></tt> - The function does not have permission to operate on this assembly. </p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The function did not find the simplified representation in the solid. </p>
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AssemName</b></tt>
+</dt>
+<dd>The name of the assembly to retrieve.</dd>
+<dt>
+<tt><b>FileType</b></tt>
+</dt>
+<dd>The file type of the assembly to retrieve.</dd>
+<dt>
+<tt><b>Instructions</b></tt>
+</dt>
+<dd>The simplified representation Instructions - the internal data required to define a simplified representation.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The retrieved representation.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RetrieveSimpRep">RetrieveSimpRep</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcSolid-Solid.html">Solid</a></tt></td><td class="method-name"><tt>RetrieveSimpRep</tt></td><td class="method-params"><tt>
+ (String&nbsp;ModelName, <a class="type" href="c-wfcModel-MdlfileType.html">MdlfileType</a>&nbsp;FileType, <a class="type" href="c-pfcSimpRep-SimpRepType.html">SimpRepType</a>&nbsp;SimpRepType, 
+   /*optional*/
+   String&nbsp;ReprName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Retrieves the specified simplified representation
+       Takes the origin file type into account.
+      <br>
+<br>This method supports Multi-CAD models.
+        <p>If errors occur in regeneration, the model will include suppressed features.
+           Use <tt><a class="method" href="c-pfcSolid-Solid.html#HasRetrievalErrors">Solid.HasRetrievalErrors()</a></tt> to identify the errors.
+        </p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoPermission.html">XToolkitNoPermission</a></tt></tt> - The function does not have permission to operate on this model. </p>
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ModelName</b></tt>
+</dt>
+<dd>The name of the model to retrieve.</dd>
+<dt>
+<tt><b>FileType</b></tt>
+</dt>
+<dd>The file type of the model to retrieve.</dd>
+<dt>
+<tt><b>SimpRepType</b></tt>
+</dt>
+<dd>The representation type.
+        SIMPREP_MASTER_REP and SIMPREP_USER_DEFINED
+        can be used only if FileType is MDLFILE_PART.
+      </dd>
+<dt>
+<tt><b>ReprName</b></tt>
+</dt>
+<dd>The name of the simplified representation, if SimpRepType
+        is SIMPREP_USER_DEFINED, otherwise is ignored.
+      </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The retrieved representation.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetDefaultTolerance">GetDefaultTolerance</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetDefaultTolerance</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcSolid-ToleranceType.html">ToleranceType</a>&nbsp;Type, int&nbsp;Decimals)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Retrieves the current Creo Parametric default tolerance value for the specified number of decimal places. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#160">Dimensions and Parameters: Dimension Tolerances</a>, <a href="../manual0/JDims.html#166">Dimensions and Parameters: Dimension Tolerances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The tolerance type. </dd>
+<dt>
+<tt><b>Decimals</b></tt>
+</dt>
+<dd>The number of decimal places used to identify the tolerance. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="LoadModelRepresentation">LoadModelRepresentation</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcModel-Model.html">Model</a></tt></td><td class="method-name"><tt>LoadModelRepresentation</tt></td><td class="method-params"><tt>
+ (String&nbsp;AssemblyFileName, <a class="type" href="c-pfcModel-ModelType.html">ModelType</a>&nbsp;Type, 
+   /*optional*/
+   String&nbsp;SimpRepName, 
+   /*optional*/
+   <a class="type" href="c-pfcSimpRep-SimpRepInstructions.html">SimpRepInstructions</a>&nbsp;Instructions)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Retrieves the specified simplified representation.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The file was not found.</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantOpen.html">XToolkitCantOpen</a></tt></tt> - The file exists but is not readable.</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitEmpty.html">XToolkitEmpty</a></tt></tt> - The specified representation was not stored in the file (for non user-defined representations). </p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidFile.html">XToolkitInvalidFile</a></tt></tt> - The model is not a Creo Parametric model.</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitLineTooLong.html">XToolkitLineTooLong</a></tt></tt> - The model name is too long.</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidName.html">XToolkitInvalidName</a></tt></tt> - The specified user defined representation was not found (in which case it may be created on the fly following instructions in p_simp_rep_data - check p_result for being not NULL) </p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoPermission.html">XToolkitNoPermission</a></tt></tt> - The function does not have permission to operate on this model. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSimpRep.html#14">Simplified Representations: Retrieving Simplified Representations</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AssemblyFileName</b></tt>
+</dt>
+<dd> The assembly file location.</dd>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd> Model type.</dd>
+<dt>
+<tt><b>SimpRepName</b></tt>
+</dt>
+<dd> The name of the simplified representation.</dd>
+<dt>
+<tt><b>Instructions</b></tt>
+</dt>
+<dd> The simplified representation data.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+         
+<tt><tt><a class="class" href="c-pfcModel-Model.html">Model</a></tt></tt>object
+      </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetSolid">GetSolid</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcSolid-Solid.html">Solid</a></tt></td><td class="method-name"><tt>GetSolid</tt></td><td class="method-params"><tt>
+ (String&nbsp;Name, <a class="type" href="c-pfcModel-ModelType.html">ModelType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+     Initializes the ProSolid handle.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#12">Solid: Getting a Solid Object</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>The solid name. </dd>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The solid type. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetImportFeatRedefSourceType">GetImportFeatRedefSourceType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcFeature-ImportfeatRedefSourceType.html">ImportfeatRedefSourceType</a></tt></td><td class="method-name"><tt>GetImportFeatRedefSourceType</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcFeature-ImportFeatRedefOperationType.html">ImportFeatRedefOperationType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> 
+     Provides the wfcFeature::ImportfeatRedefSourceType used to redefine an import feature.  
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#198">Interface: Redefining the Import Feature</a>, <a href="../manual0/Jinterface.html#201">Interface: Redefining the Import Feature</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd> wfcFeature::ImportFeatRedefOperationType</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetLineStyleData">GetLineStyleData</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcSession-LineStyleData.html">LineStyleData</a></tt></td><td class="method-name"><tt>GetLineStyleData</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-StdLineStyle.html">StdLineStyle</a>&nbsp;LineStyle)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Provides a description of the specified line style.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidPtr.html">XToolkitInvalidPtr</a></tt></tt> - The <i>style_info</i> == NULL. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#110">Graphics: Line Styles for Graphics</a>, <a href="../manual0/JGraphics.html#118">Graphics: Line Styles for Graphics</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>LineStyle</b></tt>
+</dt>
+<dd> The style type.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetDataSourceType">GetDataSourceType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcSession-IntfDataSourceType.html">IntfDataSourceType</a></tt></td><td class="method-name"><tt>GetDataSourceType</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-IntfType.html">IntfType</a>&nbsp;IntfType)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Provide the <tt><tt><a class="class" href="c-wfcSession-IntfDataSourceType.html">IntfDataSourceType</a></tt></tt> for given <tt><tt><a class="class" href="c-pfcModel-IntfType.html">IntfType</a></tt></tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#232">Interface: Redefining the Import Feature</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>IntfType</b></tt>
+</dt>
+<dd> The interface type.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The wfcSession::IntfDataSourceType.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateAccessorywindowWithTree">CreateAccessorywindowWithTree</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcDisplay-WWindow.html">WWindow</a></tt></td><td class="method-name"><tt>CreateAccessorywindowWithTree</tt></td><td class="method-params"><tt>
+ (String&nbsp;ObjectName, <a class="type" href="c-wfcModel-MdlfileType.html">MdlfileType</a>&nbsp;ObjectType, 
+   /*optional*/
+   Boolean&nbsp;EnableTree)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Retrieves a window and attaches the object to it.
+     <br>
+<br>
+     If the window is already open with the object attached,
+     the function returns the window.If there is an empty window up,
+     the function attaches the object to it.Otherwise, the function creates a new window and attaches
+     the object to it.<br>
+     The window created is smaller than the one created by
+     <tt><a class="method" href="c-pfcSession-BaseSession.html#CreateModelWindow">BaseSession.CreateModelWindow(Model)</a></tt> 
+     This window doesn't have the toolbar.
+     It doesn't allow any options and has restricted options under Windows menu.
+       <p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidType.html">XToolkitInvalidType</a></tt></tt> - You specified an invalid object type.</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The application is trying to open an embedded model (that is, a model representing a single body of a multi-body foreign object) in a separate window. This operation is not supported. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#18">Windows and Views: Creating Windows</a>, <a href="../manual0/JWinView.html#19">Windows and Views: Creating Windows</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ObjectName</b></tt>
+</dt>
+<dd>The name of the object to be retrieved. It should not contain extension. </dd>
+<dt>
+<tt><b>ObjectType</b></tt>
+</dt>
+<dd>The type of the object. </dd>
+<dt>
+<tt><b>EnableTree</b></tt>
+</dt>
+<dd>If <t>true</t> enables model tree or disables otherwise. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A window object </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateBarewindow">CreateBarewindow</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcDisplay-WWindow.html">WWindow</a></tt></td><td class="method-name"><tt>CreateBarewindow</tt></td><td class="method-params"><tt>
+ (String&nbsp;ObjectName, <a class="type" href="c-wfcModel-MdlfileType.html">MdlfileType</a>&nbsp;ObjectType)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+   Retrieves a window and attaches the object to it.
+   <br>
+<br>
+   If the window is already open with the object attached,
+   the function returns the window.  If there is an
+   empty window up, the function attaches the object to it.
+   Otherwise, the function creates a new window and attaches
+   the object to it.<br>
+   The window created doesn't have any toolbars or menus. 
+   It can be minimized or closed and it has all the regular
+   mouse-driven view capabilites like zoom, rotation and panning.
+   <p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidType.html">XToolkitInvalidType</a></tt></tt> - You specified an invalid object type.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The application is trying to open an embedded model (that is, a model representing a single body of a multi-body foreign object) in a separate window. This operation is not supported. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#19">Windows and Views: Creating Windows</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ObjectName</b></tt>
+</dt>
+<dd>The name of the object to be retrieved.It should not contain extension </dd>
+<dt>
+<tt><b>ObjectType</b></tt>
+</dt>
+<dd>The type of the object. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A window object </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsTextureFileEmbedded">IsTextureFileEmbedded</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>IsTextureFileEmbedded</tt></td><td class="method-params"><tt>
+ (String&nbsp;TextureFileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+       Checks if the texture file was embedded.
+      <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The texture file could not be found on disk or in memory.</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantWrite.html">XToolkitCantWrite</a></tt></tt> - The temporary texture file could not be written.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#66">Graphics: Surface Properties</a>, <a href="../manual0/JGraphics.html#67">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TextureFileName</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+        
+<t>true</t> if texture file was embedded.
+      </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetTextureFilePath">GetTextureFilePath</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-name"><tt>GetTextureFilePath</tt></td><td class="method-params"><tt>
+ (String&nbsp;TextureFileName, boolean&nbsp;CreateTempFile)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Looks up the full path to the texture, decal, or bump map file
+        indicated. 
+       <br>
+<br>
+        If the texture is embedded inside a Creo Parametric model,
+        instead of being loaded from the texture path, this function will
+        write a temporary copy of the file if <i>CreateTempFile</i> is set to
+        <t>true</t>.
+      <p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The texture file could not be found on disk or in memory.</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantWrite.html">XToolkitCantWrite</a></tt></tt> - The temporary texture file could not be written.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#67">Graphics: Surface Properties</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TextureFileName</b></tt>
+</dt>
+<dd>The texture file name.</dd>
+<dt>
+<tt><b>CreateTempFile</b></tt>
+</dt>
+<dd>
+        Pass <t>true</t> to have Creo Parametric write a temporary copy
+        of the texture file if its is embedded in a model.
+        and <t>false</t> to skip writing the file..</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+        Full path to the texture file
+      </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DisplayInformationWindow">DisplayInformationWindow</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>DisplayInformationWindow</tt></td><td class="method-params"><tt>
+ (String&nbsp;FilePath, 
+   /*optional*/
+   Double&nbsp;XOffset, 
+   /*optional*/
+   Double&nbsp;YOffset, 
+   /*optional*/
+   Integer&nbsp;Rows, 
+   /*optional*/
+   Integer&nbsp;Columns)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Creates a window and shows the text of the file specified by <i>FilePath</i>.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#26">Session Objects: File Handling</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FilePath</b></tt>
+</dt>
+<dd>The file name.</dd>
+<dt>
+<tt><b>XOffset</b></tt>
+</dt>
+<dd>Location of the window in terms of X offset.The valid values are between 0.00 and 1.00 </dd>
+<dt>
+<tt><b>YOffset</b></tt>
+</dt>
+<dd>Location of the window in terms of Y offset.The valid values are between 0.00 and 1.00 </dd>
+<dt>
+<tt><b>Rows</b></tt>
+</dt>
+<dd> Size of the window in terms of rows. The valid values are between 6 and 33 </dd>
+<dt>
+<tt><b>Columns</b></tt>
+</dt>
+<dd> Size of the window in terms of columns. The valid values are between 8 and 80 </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OpenDrawingAsReadOnly">OpenDrawingAsReadOnly</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDrawing-Drawing.html">Drawing</a></tt></td><td class="method-name"><tt>OpenDrawingAsReadOnly</tt></td><td class="method-params"><tt>
+ (String&nbsp;Path)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#294">Drawings: Listing Drawing Views</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UIEditFile">UIEditFile</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>UIEditFile</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Opens an edit window for the specified file using the default text editor.
+      <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoChange.html">XToolkitNoChange</a></tt></tt> - The user quit from the editor.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#20">Session Objects: File Handling</a>, <a href="../manual0/JSession.html#26">Session Objects: File Handling</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd> Name of the file or File name with full path</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The boolean status that file is edited or not. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ParseFileName">ParseFileName</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcSession-ParsedFileNameData.html">ParsedFileNameData</a></tt></td><td class="method-name"><tt>ParseFileName</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Parses the specified file name into its components.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#21">Session Objects: File Handling</a>, <a href="../manual0/JSession.html#26">Session Objects: File Handling</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd> Name of the file or File name with full path</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The <tt><tt><a class="class" href="c-wfcSession-ParsedFileNameData.html">ParsedFileNameData</a></tt></tt> object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UIOpenFileType">UIOpenFileType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>UIOpenFileType</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcSession-FiletypeOpenOptions.html">FiletypeOpenOptions</a>&nbsp;Options)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Prompts the standard file open browser interface of Creo Parametric.
+      <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitUserAbort.html">XToolkitUserAbort</a></tt></tt> - The user aborted from the user interface. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#93">Session Objects: File Dialogs</a>, <a href="../manual0/JSession.html#123">Session Objects: File Dialogs</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Options</b></tt>
+</dt>
+<dd>The various options for file open dialog.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The selected file.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UISaveFileType">UISaveFileType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>UISaveFileType</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcSession-FiletypeSaveOptions.html">FiletypeSaveOptions</a>&nbsp;Options)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Prompts the standard file save browser interface of Creo Parametric.
+      <br>
+<br>For Multi-CAD objects, this method does not support local disk saving
+			location in a Windchill connected session.<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitUserAbort.html">XToolkitUserAbort</a></tt></tt> - The user aborted from the user interface. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#104">Session Objects: File Dialogs</a>, <a href="../manual0/JSession.html#123">Session Objects: File Dialogs</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Options</b></tt>
+</dt>
+<dd>The various options for file save dialog.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The selected file.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsOptionOrdered">IsOptionOrdered</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>IsOptionOrdered</tt></td><td class="method-params"><tt>
+ (String&nbsp;OptionName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Determines whether the specified option is available.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The specified option was not found.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#13">Session Objects: Creo License Data</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>OptionName</b></tt>
+</dt>
+<dd> The option name.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetResourcePath">GetResourcePath</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetResourcePath</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Provides the resource path of an application.<br>
+<br>This function can be used only to obtain the resource path. 
+    The path and its contents must not be altered in any way; 
+    an attempt to do so will make the application behavior unpredictable. 
+      <br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Path to a local folder.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetMdlfileDescriptor">GetMdlfileDescriptor</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcModel-MdlfileDescriptor.html">MdlfileDescriptor</a></tt></td><td class="method-name"><tt>GetMdlfileDescriptor</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a>&nbsp;ModelDescr)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ModelDescr</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OpenSource">OpenSource</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcWindow-Window.html">Window</a></tt></td><td class="method-name"><tt>OpenSource</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcModel-MdlfileDescriptor.html">MdlfileDescriptor</a>&nbsp;MdlfileDesc)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Retrieves the specified model and displays it in a window.
+      <br>
+<br>This method opens the file and displays it in a new window. It accepts filetypes supported by Multi-CAD approach.<p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - This means either: 
+    <ul>
+       
+<li>The model was not found in the current directory, OR</li> 
+	   
+<li>The method was not able to find the window, OR</li>
+       
+<li>The application is trying to open an embedded model (that is, a model representing a single body of a multi-body foreign object) in a separate window. This operation is not supported.</li>	   
+	
+</ul>
+	
+</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoPermission.html">XToolkitNoPermission</a></tt></tt> - The function does not have permission to operate on this model. </p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - The Multi-CAD model is not being retrieved from an active Windchill server. </p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidType.html">XToolkitInvalidType</a></tt></tt> - You specified an invalid object type.</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitDeadLock.html">XToolkitDeadLock</a></tt></tt> - The Creo Parametric user interface is not prepared to handle this request (because it is blocked by another process such as an OLE container activation). </p>
+   
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>MdlfileDesc</b></tt>
+</dt>
+<dd>The descriptor of a model to retrieve.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new window</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RetrieveModelByFiletype">RetrieveModelByFiletype</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcModel-Model.html">Model</a></tt></td><td class="method-name"><tt>RetrieveModelByFiletype</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcModel-MdlfileDescriptor.html">MdlfileDescriptor</a>&nbsp;MdlfileDescr, <a class="type" href="c-pfcSession-RetrieveModelOptions.html">RetrieveModelOptions</a>&nbsp;Opts)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Retrieves the specified model into the Creo Parametric session from standard directory.
+      <br>
+<br>
+     The method does not create a window for the model or display
+     it anywhere. The model can be retrieved only from standard directory. 
+     Path argument in model descriptor is ignored by this api. 
+     It accepts filetypes supported by Multi-CAD approach. 
+		<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The model was not found in the current directory.</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoPermission.html">XToolkitNoPermission</a></tt></tt> - The function does not have permission to operate on this model. </p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - The Multi-CAD model is not being retrieved from an active Windchill server. </p>
+    
+</p>
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-wfcSession-WSession.html#OpenSource">WSession.OpenSource(MdlfileDescriptor)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>MdlfileDescr</b></tt>
+</dt>
+<dd>The information about the model to retrieve.</dd>
+<dt>
+<tt><b>Opts</b></tt>
+</dt>
+<dd>Options for retrieval.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The retrieved model</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateExternalClass">CreateExternalClass</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcExternalObject-ExternalObjectClass.html">ExternalObjectClass</a></tt></td><td class="method-name"><tt>CreateExternalClass</tt></td><td class="method-params"><tt>
+ (String&nbsp;Name, int&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Registers a new external object class.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+   
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitFound.html">XToolkitFound</a></tt></tt> - The external object class already exists.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>The name of external object class.</dd>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The type of external object class.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The external object class.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AddNavigatorPaneLayout">AddNavigatorPaneLayout</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>AddNavigatorPaneLayout</tt></td><td class="method-params"><tt>
+ (String&nbsp;PaneName, String&nbsp;ResFileName, 
+   /*optional*/
+   String&nbsp;IconFileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+       Add new pane tab with specified name on the Navigator pane.       
+      <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PaneName</b></tt>
+</dt>
+<dd>Name of the navigator pane </dd>
+<dt>
+<tt><b>ResFileName</b></tt>
+</dt>
+<dd>Name of the resource file whose top component must be a layout. </dd>
+<dt>
+<tt><b>IconFileName</b></tt>
+</dt>
+<dd>Name of the icon file to be displayed on pane. Pass NULL to use default icon. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>void</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetNavigatorPaneDevice">GetNavigatorPaneDevice</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetNavigatorPaneDevice</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcWindow-Window.html">Window</a>&nbsp;WindowObject)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+       Get the name of the navigator pane device specific to window object.       
+      <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>WindowObject</b></tt>
+</dt>
+<dd>Window object whose device name is required.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Device Name</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetNavigatorPaneComponent">GetNavigatorPaneComponent</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetNavigatorPaneComponent</tt></td><td class="method-params"><tt>
+ (String&nbsp;PaneName, String&nbsp;ComponentLocalName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+       Get the changed name of a component in the pane.
+      <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+         
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitMsgTooLong.html">XToolkitMsgTooLong</a></tt></tt> - Pane name is too long.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PaneName</b></tt>
+</dt>
+<dd>Name of the navigator pane </dd>
+<dt>
+<tt><b>ComponentLocalName</b></tt>
+</dt>
+<dd>Local name of the component (as specified in resource before addition)</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Component Name</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetNavigatorPaneLayoutComponent">GetNavigatorPaneLayoutComponent</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetNavigatorPaneLayoutComponent</tt></td><td class="method-params"><tt>
+ (String&nbsp;PaneName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+       Get the changed name of the top layout in navigator pane.       
+      <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+         
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitMsgTooLong.html">XToolkitMsgTooLong</a></tt></tt> - Pane name is too long.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PaneName</b></tt>
+</dt>
+<dd>Name of the navigator pane </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Top Layout Name</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetModelFromMdlfileDescriptor">GetModelFromMdlfileDescriptor</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcModel-Model.html">Model</a></tt></td><td class="method-name"><tt>GetModelFromMdlfileDescriptor</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcModel-MdlfileDescriptor.html">MdlfileDescriptor</a>&nbsp;MdlfileDescr)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+       Returns the model based on the model descriptor input.
+      <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - Unable to find the required model.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>MdlfileDescr</b></tt>
+</dt>
+<dd>The model descriptor.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The model.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AddModelRetrievePreListener">AddModelRetrievePreListener</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>AddModelRetrievePreListener</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcSession-BeforeModelRetrieveListener.html">BeforeModelRetrieveListener</a>&nbsp;listen)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener">ActionSource.AddActionListener</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Adds an action listener to notify you of activating file open dialog using <b>File -&gt; Open</b>.
+      <br>
+<br>
+        
+<b>Warning:</b>
+        This notification blocks Creo Parametric or Direct's standard file open dialog.
+        It is developer's responsibility to substitute it with his own
+        dialog through this function.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#61">Action Listeners: Model Level Action listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>listen</b></tt>
+</dt>
+<dd>
+        A reference of client class which overrides method <tt><a class="method" href="c-wfcSession-BeforeModelRetrieveListener.html#OnBeforeModelRetrieve">BeforeModelRetrieveListener.OnBeforeModelRetrieve()</a></tt>
+      
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>void</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AddBeforeModelRetrieveListener">AddBeforeModelRetrieveListener</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>AddBeforeModelRetrieveListener</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcSession-BeforeModelRetrieveActionListener.html">BeforeModelRetrieveActionListener</a>&nbsp;listen)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener">ActionSource.AddActionListener</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Adds an action listener to notify you of activating file open dialog using <b>File -&gt; Open</b>.<br>
+        This listener can pass instructions for retrieving model to Creo Parametric.
+      <br>
+<br>
+        
+<b>Warning:</b>
+        This notification blocks Creo Parametric or Direct's standard file open dialog.
+        It is developer's responsibility to substitute it with his own
+        dialog through this function.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#47">Action Listeners: Model Level Action listeners</a>, <a href="../manual0/JAction.html#61">Action Listeners: Model Level Action listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>listen</b></tt>
+</dt>
+<dd>
+        A reference of client class which overrides method <tt><a class="method" href="c-wfcSession-BeforeModelRetrieveActionListener.html#OnBeforeModelRetrieve">BeforeModelRetrieveActionListener.OnBeforeModelRetrieve()</a></tt>
+      
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>void</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AddModelSavePreAllListener">AddModelSavePreAllListener</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>AddModelSavePreAllListener</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcSession-BeforeModelSaveAllListener.html">BeforeModelSaveAllListener</a>&nbsp;listen)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener">ActionSource.AddActionListener</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>listen</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetUDFDataDefaultVariableParameters">GetUDFDataDefaultVariableParameters</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcUDFCreate-UDFVariableParameters.html">UDFVariableParameters</a></tt></td><td class="method-name"><tt>GetUDFDataDefaultVariableParameters</tt></td><td class="method-params"><tt>
+ (String&nbsp;Name, 
+   /*optional*/
+   String&nbsp;Instance)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<br>
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotValid.html">XToolkitNotValid</a></tt></tt> - If the variant item type is not parameter or annotation. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoLicense.html">XToolkitNoLicense</a></tt></tt> - No license is available for this function. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - Cannot access the UDF data because the name and path have not been set. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitCantOpen.html">XToolkitCantOpen</a></tt></tt> - Cannot access the UDF .gph file at the path specified. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - This UDF does not have any variable items.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#157">Features: Creating a Custom UDF</a>, <a href="../manual0/JFeat.html#168">Features: Creating a Custom UDF</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Instance</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ReleaseVisitor">ReleaseVisitor</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcClient-Status.html">Status</a></tt></td><td class="method-name"><tt>ReleaseVisitor</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcClient-VisitingClient.html">VisitingClient</a>&nbsp;visitingClient)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>visitingClient</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AutoPropagate">AutoPropagate</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>AutoPropagate</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>LICENSE: </b>222</tt>
+<br>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Automatically propagates annotation elements within the current
+        model to the currently selected feature based on the standard Creo Parametric
+        algorithm.<br>
+<br>The behavior is based on the current contents of the selection buffer.	
+  <p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - The current selections do not allow propagation of annotation elements. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoLicense.html">XToolkitNoLicense</a></tt></tt> - No license is available for this function. </p>
+  
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#74">Annotations: Annotation Features and Annotations: Automatic Propagation of Annotation Elements</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetApplicationPath">GetApplicationPath</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetApplicationPath</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#34">Session Objects: Registry File Data</a>, <a href="../manual0/JSession.html#35">Session Objects: Registry File Data</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetApplicationTextPath">GetApplicationTextPath</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetApplicationTextPath</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#35">Session Objects: Registry File Data</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ExecuteMacro">ExecuteMacro</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>ExecuteMacro</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#39">Session Objects: Macros</a>, <a href="../manual0/JSession.html#40">Session Objects: Macros</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetKnownDirectory">GetKnownDirectory</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-name"><tt>GetKnownDirectory</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcSession-KnownDirectoryType.html">KnownDirectoryType</a>&nbsp;dir_type)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>dir_type</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AddBrowserMessageListener">AddBrowserMessageListener</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>AddBrowserMessageListener</tt></td><td class="method-params"><tt>
+ (String&nbsp;key, <a class="type" href="c-wfcSession-BrowserMessageListener.html">BrowserMessageListener</a>&nbsp;Listener)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Add listener callback for browser events.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#29">Action Listeners: Session Level Action Listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>key</b></tt>
+</dt>
+<dd>
+        Unique key that should be specified in Java Script message with syntax as <b>window.external.ptc ('ToolkitJSBridge=' + key + '?' + message) </b>
+      
+</dd>
+<dt>
+<tt><b>Listener</b></tt>
+</dt>
+<dd>
+        Listener object
+      </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+      
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DeleteBrowserMessageListener">DeleteBrowserMessageListener</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>DeleteBrowserMessageListener</tt></td><td class="method-params"><tt>
+ (String&nbsp;key)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>key</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetIncompleteSurfaceTessellationAllowed">GetIncompleteSurfaceTessellationAllowed</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetIncompleteSurfaceTessellationAllowed</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetIncompleteSurfaceTessellationAllowed">SetIncompleteSurfaceTessellationAllowed</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetIncompleteSurfaceTessellationAllowed</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;IsAllowed)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>IsAllowed</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RetrieveAutomaticSimpRep">RetrieveAutomaticSimpRep</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcAssembly-Assembly.html">Assembly</a></tt></td><td class="method-name"><tt>RetrieveAutomaticSimpRep</tt></td><td class="method-params"><tt>
+ (String&nbsp;AssemName, <a class="type" href="c-wfcModel-MdlfileType.html">MdlfileType</a>&nbsp;FileType, String&nbsp;UDSrepName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Retrieve user defined simplified representation as automatic rep.
+      <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoPermission.html">XToolkitNoPermission</a></tt></tt> - The function does not have permission to operate on this assembly. </p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The function did not find the simplified representation in the solid. </p>
+</p>
+      
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AssemName</b></tt>
+</dt>
+<dd>The name of the assembly to retrieve.</dd>
+<dt>
+<tt><b>FileType</b></tt>
+</dt>
+<dd>The file type of the assembly to retrieve.</dd>
+<dt>
+<tt><b>UDSrepName</b></tt>
+</dt>
+<dd>The name of the user defined simprep to retrieve as automatic.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The retrieved representation.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="StartKinDrag">StartKinDrag</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>StartKinDrag</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+			  This method starts a drag session it should be called before any other Kinematic drag or Snapshot function is called.
+			  All subsequent methods will work with the Snapshots of the window assembly. 
+			  All component path should start from this assembly.
+			  All transforms belong to this assembly.
+			  The method can be called for design assemblies in Standard Assembly and Mechanism modes. 
+			  It cannot be used if assembly is exploded, if sketcher is active, when component
+			  placement is active or when drag dialog is on screen.
+		  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/atechsum_java_creo_11000.html#2">Technical Summary of Changes for Creo 11.0.0.0: Kinematic Dragging</a>, <a href="../manual0/jassembly_drag.html#2">Assembly: Kinematic Dragging and Creating Snapshots: Connecting to a Kinematic Drag Session</a>, <a href="../manual0/jassembly_drag.html#4">Assembly: Kinematic Dragging and Creating Snapshots: Connecting to a Kinematic Drag Session</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="StopKinDrag">StopKinDrag</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>StopKinDrag</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+			  This method will stop drag session. Method <tt><a class="method" href="c-pfcWindow-Window.html#Refresh">Window.Refresh()</a></tt>
+			  should be performed to see the change of the graphic window scale according to updated outline.
+		  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/atechsum_java_creo_11000.html#2">Technical Summary of Changes for Creo 11.0.0.0: Kinematic Dragging</a>, <a href="../manual0/jassembly_drag.html#3">Assembly: Kinematic Dragging and Creating Snapshots: Connecting to a Kinematic Drag Session</a>, <a href="../manual0/jassembly_drag.html#4">Assembly: Kinematic Dragging and Creating Snapshots: Connecting to a Kinematic Drag Session</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="MoveKinDrag">MoveKinDrag</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>MoveKinDrag</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;DragPoint, <a class="type" href="c-pfcBase-Point2Ds.html">Point2Ds</a>&nbsp;Moves)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+			  This method bring to drag this selected object. Displays a hook point around the point.
+			  Performs a drag according to the environment set in <tt><a class="method" href="c-wfcSession-WSession.html#SetKinDragEnvironment">WSession.SetKinDragEnvironment(KinDragType, /*optional*/ String, /*optional*/ ComponentPath, /*optional*/ Selection)</a></tt>
+			  For dragging use constraints from current snapshot, if it set. 
+			  After end of the movement the hook point is removed.
+		  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/atechsum_java_creo_11000.html#2">Technical Summary of Changes for Creo 11.0.0.0: Kinematic Dragging</a>, <a href="../manual0/jassembly_drag.html#6">Assembly: Kinematic Dragging and Creating Snapshots: Performing Kinematic Drag</a>, <a href="../manual0/jassembly_drag.html#7">Assembly: Kinematic Dragging and Creating Snapshots: Performing Kinematic Drag</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DragPoint</b></tt>
+</dt>
+<dd>
+			  A geometrical object point,surface,axis or component to be dragged.
+			  Set the selected-point using <tt><a class="method" href="c-pfcSelect-Selection.html#Point">Selection.GetPoint(Point3D)</a></tt>, otherwise the hook point will be wrong and movement result will be wrong as well.
+		  </dd>
+<dt>
+<tt><b>Moves</b></tt>
+</dt>
+<dd>Sequence of 2d points on screen.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetKinSnapshotTransformations">GetKinSnapshotTransformations</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcSession-SnapshotTransformations.html">SnapshotTransformations</a></tt></td><td class="method-name"><tt>GetKinSnapshotTransformations</tt></td><td class="method-params"><tt>
+ (String&nbsp;Name, 
+   /*optional*/
+   <a class="type" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a>&nbsp;Path)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+			  This method brings transformation paths and transformation matrices for all
+			  components in the snapshot versus top level assembly.
+		  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/atechsum_java_creo_11000.html#2">Technical Summary of Changes for Creo 11.0.0.0: Kinematic Dragging</a>, <a href="../manual0/jassembly_drag.html#13">Assembly: Kinematic Dragging and Creating Snapshots: Snapshot Transforms</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>Name of the snapshot</dd>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd> from top assembly</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Sequence of transformations and paths </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetKinDragEnvironment">SetKinDragEnvironment</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetKinDragEnvironment</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcSession-KinDragType.html">KinDragType</a>&nbsp;Type, 
+   /*optional*/
+   String&nbsp;Name, 
+   /*optional*/
+   <a class="type" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a>&nbsp;Path, 
+   /*optional*/
+   <a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;Reference)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+			  This method setups the environment for subsequenmt dragging and reconnect operations. 
+			  Environment can be set / reset several times after  <tt><a class="method" href="c-wfcSession-WSession.html#StartKinDrag">WSession.StartKinDrag()</a></tt> is called.
+		  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/atechsum_java_creo_11000.html#2">Technical Summary of Changes for Creo 11.0.0.0: Kinematic Dragging</a>, <a href="../manual0/jassembly_drag.html#4">Assembly: Kinematic Dragging and Creating Snapshots: Connecting to a Kinematic Drag Session</a>, <a href="../manual0/jassembly_drag.html#7">Assembly: Kinematic Dragging and Creating Snapshots: Performing Kinematic Drag</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>type of the drag to be performed.</dd>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>
+			  Name of the existing snapshot which constraints will be active during drag. NULL can be passed instead. 
+			  The snapshot will be checked for status (good / outdated /incomplete);
+		  </dd>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd>Path of snapshot. NULL can be passed for top levsnapshots.</dd>
+<dt>
+<tt><b>Reference</b></tt>
+</dt>
+<dd>
+			  a selection represented coordinate system,part  or body  for advanced drag. It is relevant for advanced drag types only.
+			  For all other dragtypes it is ignored, NULL should be passed instead. 
+			  In part selection case takes coordinates of corresponded body.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateSnapshot">CreateSnapshot</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>CreateSnapshot</tt></td><td class="method-params"><tt>
+ (String&nbsp;Name)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+			  Creates a top assembly level snapshot from the current position on screen. 
+			  Constraints will be copied from the active snapshot.
+			  The newly created snapshot will become the active one.
+		  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/atechsum_java_creo_11000.html#2">Technical Summary of Changes for Creo 11.0.0.0: Kinematic Dragging</a>, <a href="../manual0/jassembly_drag.html#9">Assembly: Kinematic Dragging and Creating Snapshots: Creating and Modifying Snapshots</a>, <a href="../manual0/jassembly_drag.html#11">Assembly: Kinematic Dragging and Creating Snapshots: Creating and Modifying Snapshots</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>Name of the Snapshot.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DeleteSnapshot">DeleteSnapshot</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>DeleteSnapshot</tt></td><td class="method-params"><tt>
+ (String&nbsp;Name, 
+   /*optional*/
+   <a class="type" href="c-pfcAssembly-ComponentPath.html">ComponentPath</a>&nbsp;Path)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+			Deletes snapshot.
+		  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/atechsum_java_creo_11000.html#2">Technical Summary of Changes for Creo 11.0.0.0: Kinematic Dragging</a>, <a href="../manual0/jassembly_drag.html#11">Assembly: Kinematic Dragging and Creating Snapshots: Creating and Modifying Snapshots</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>Name of the Snapshot.Path of the component of the Snapshot.</dd>
+<dt>
+<tt><b>Path</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UpdateSnapshot">UpdateSnapshot</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>UpdateSnapshot</tt></td><td class="method-params"><tt>
+ (String&nbsp;Name)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+			  Update snapshot.
+		  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/atechsum_java_creo_11000.html#2">Technical Summary of Changes for Creo 11.0.0.0: Kinematic Dragging</a>, <a href="../manual0/jassembly_drag.html#10">Assembly: Kinematic Dragging and Creating Snapshots: Creating and Modifying Snapshots</a>, <a href="../manual0/jassembly_drag.html#11">Assembly: Kinematic Dragging and Creating Snapshots: Creating and Modifying Snapshots</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>Name of the Snapshot.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="MoveKinDragForModel">MoveKinDragForModel</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>MoveKinDragForModel</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;DragPoint, <a class="type" href="c-pfcBase-Point3Ds.html">Point3Ds</a>&nbsp;Moves, 
+   /*optional*/
+   <a class="type" href="c-pfcBase-Matrix3D.html">Matrix3D</a>&nbsp;Matrix)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+			  This function brings to drag this selected object. Performs a drag
+			  according to the environment set in  <tt><a class="method" href="c-wfcSession-WSession.html#SetKinDragEnvironment">WSession.SetKinDragEnvironment(KinDragType, /*optional*/ String, /*optional*/ ComponentPath, /*optional*/ Selection)</a></tt>
+			  For dragging use constraints from the current snapshot, if it is set.
+		  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/atechsum_java_creo_11000.html#2">Technical Summary of Changes for Creo 11.0.0.0: Kinematic Dragging</a>, <a href="../manual0/jassembly_drag.html#7">Assembly: Kinematic Dragging and Creating Snapshots: Performing Kinematic Drag</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DragPoint</b></tt>
+</dt>
+<dd>
+			  A geometrical object point,surface,axis or component to be dragged. 
+			  Set the selected-point using <tt><a class="method" href="c-pfcSelect-Selection.html#Point">Selection.GetPoint(Point3D)</a></tt>, otherwise the hook point will be wrong and movement result will be wrong as well.
+		  </dd>
+<dt>
+<tt><b>Moves</b></tt>
+</dt>
+<dd>Sequence of 3d points in model coordinates.</dd>
+<dt>
+<tt><b>Matrix</b></tt>
+</dt>
+<dd>
+			  The view transformation matrix for the drag operation. See <tt>
+         &lt;reference 4 to unknown entity pfcView ::View::Transform&gt;
+          </tt>.
+			  The system would extract a ray direction from this matrix. The ray would be oriented orthogonal to the view plane directed inwards. 
+			  Pass NULL to use current view and current object.
+		  </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

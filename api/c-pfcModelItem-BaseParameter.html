@@ -1,0 +1,358 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcModelItem.BaseParameter"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      47
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcModelItem.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcModelItem-BaseParameter.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;BaseParameter</h2>
+<tt>
+     package 
+     <b><a href="p-pfcModelItem.html">com.ptc.pfc.pfcModelItem</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>BaseParameter</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcObject-Object.html">com.ptc.pfc.pfcObject.Object</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Describes the base parameter, which can be a Creo Parametric parameter or dimension.
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-pfcModelItem-Parameter.html">Parameter</a></tt>, 
+        <tt><a class="class" href="c-pfcDimension-BaseDimension.html">BaseDimension</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsDesignated">GetIsDesignated</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IsDesignated"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If this is <tt>true</tt>, the parameter is designated for use with Windchill.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsModified">GetIsModified</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IsModified"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If this is <tt>true</tt>, the parameter is modified. A parameter is said to be "modified" when it has been changed, but the parameter's owner has not yet been regenerated. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsRelationDriven">GetIsRelationDriven</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IsRelationDriven"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Identifies if the dimension or parameter is relation driven.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a></tt></td><td class="method-summary"><tt><a class="method" href="#Value">GetValue</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Value"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The value of the parameter.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ResetFromBackup">ResetFromBackup</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Resets the parameter to the value it had before it was
+last set in the current Creo Parametric.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#IsDesignated">SetIsDesignated</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "IsDesignated"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If this is <tt>true</tt>, the parameter is designated for use with Windchill.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Value">SetValue</a>
+ (<a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Value"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The value of the parameter.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Value">GetValue/SetValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a></tt></td><td class="method-name"><tt>GetValue</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetValue</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModelItem-ParamValue.html">ParamValue</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The value of the parameter.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - The input dimension is reference.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The owner was not found.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#10">Dimensions and Parameters: Accessing a ParamValue Object</a>, <a href="../manual0/JDims.html#44">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#100">Dimensions and Parameters: Dimension Information</a>, <a href="../manual0/JDims.html#45">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#101">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsDesignated">GetIsDesignated/SetIsDesignated</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetIsDesignated</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetIsDesignated</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>If this is <tt>true</tt>, the parameter is designated for use with Windchill.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitFound.html">XToolkitFound</a></tt></tt> - The specified parameter already exists.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The specified parameter was not found.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#49">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#104">Dimensions and Parameters: Dimension Information</a>, <a href="../manual0/JDims.html#50">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#105">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsRelationDriven">GetIsRelationDriven</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetIsRelationDriven</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Identifies if the dimension or parameter is relation driven.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#108">Dimensions and Parameters: Dimension Information</a>, <a href="../manual0/JDims.html#128">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsModified">GetIsModified</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetIsModified</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>If this is <tt>true</tt>, the parameter is modified. A parameter is said to be "modified" when it has been changed, but the parameter's owner has not yet been regenerated. <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The owner was not found.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#51">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#106">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ResetFromBackup">ResetFromBackup</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>ResetFromBackup</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Resets the parameter to the value it had before it was
+last set in the current Creo Parametric.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The owner was not found.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#52">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#107">Dimensions and Parameters: Dimension Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

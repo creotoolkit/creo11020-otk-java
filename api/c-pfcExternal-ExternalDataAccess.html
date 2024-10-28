@@ -1,0 +1,377 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcExternal.ExternalDataAccess"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      267
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcExternal.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcExternal-ExternalDataAccess.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;ExternalDataAccess</h2>
+<tt>
+     package 
+     <b><a href="p-pfcExternal.html">com.ptc.pfc.pfcExternal</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>ExternalDataAccess</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcObject-Child.html">com.ptc.pfc.pfcObject.Child</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Object that represents a conduit to the external data stored in the Creo Parametric file.
+<br>
+<br>To make the external data available for the next session of Creo Parametric save the model.
+<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcExternal-ExternalDataClass.html">ExternalDataClass</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateClass">CreateClass</a>
+ (String&nbsp;Name)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a class in the model's external data.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsValid">IsValid</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns true if this object is still valid for this model, false if access has been terminated
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcExternal-ExternalDataClasses.html">ExternalDataClasses</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListClasses">ListClasses</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Lists all of the external data classes for the model
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#LoadAll">LoadAll</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Loads all of the model's external data into memory.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ReleaseDataBuffer">ReleaseDataBuffer</a>
+ (<a class="type" href="c-pfcExternal-ExternalData.html">ExternalData</a>&nbsp;data)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Frees the memory allocated for data buffer.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Child.html"><tt>com.ptc.pfc.pfcObject.Child</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+      <a class="method" href="c-pfcObject-Child.html#OId"><tt>GetOId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListClasses">ListClasses</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcExternal-ExternalDataClasses.html">ExternalDataClasses</a></tt></td><td class="method-name"><tt>ListClasses</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Lists all of the external data classes for the model
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataTKError.html">XExternalDataTKError</a></tt></tt> - The function failed.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataInvalidObject.html">XExternalDataInvalidObject</a></tt></tt> - The specified model is invalid. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XBadExternalData.html">XBadExternalData</a></tt></tt> - Data access object is no longer valid</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JExtern.html#18">External Data: Retrieving External Data</a>, <a href="../manual0/JExtern.html#24">External Data: Retrieving External Data</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Sequence of class objects.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateClass">CreateClass</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcExternal-ExternalDataClass.html">ExternalDataClass</a></tt></td><td class="method-name"><tt>CreateClass</tt></td><td class="method-params"><tt>
+ (String&nbsp;Name)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a class in the model's external data.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataTKError.html">XExternalDataTKError</a></tt></tt> - The function failed.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataInvalidObject.html">XExternalDataInvalidObject</a></tt></tt> - The specified model or class name is invalid. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataClassOrSlotExists.html">XExternalDataClassOrSlotExists</a></tt></tt> - The specified class name already exists. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataNamesTooLong.html">XExternalDataNamesTooLong</a></tt></tt> - The specified class name exceeds the length 32. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XBadExternalData.html">XBadExternalData</a></tt></tt> - Data access object is no longer valid</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JExtern.html#9">External Data: Storing External Data</a>, <a href="../manual0/JExtern.html#11">External Data: Storing External Data</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>Name for the class.  This must be unique, and typically reflects the name and/or purpose ofthe application.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Object representing the new external data class.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="LoadAll">LoadAll</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>LoadAll</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Loads all of the model's external data into memory.
+<br>
+<br>Using this method can improve the performance of reading the model data.
+  <p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataTKError.html">XExternalDataTKError</a></tt></tt> - The function failed.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataInvalidObject.html">XExternalDataInvalidObject</a></tt></tt> - The specified model is invalid.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XBadExternalData.html">XBadExternalData</a></tt></tt> - Data access object is no longer valid</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JExtern.html#17">External Data: Retrieving External Data</a>, <a href="../manual0/JExtern.html#24">External Data: Retrieving External Data</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsValid">IsValid</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>IsValid</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns true if this object is still valid for this model, false if access has been terminated
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JExtern.html#7">External Data: Accessing External Data</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The status</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ReleaseDataBuffer">ReleaseDataBuffer</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>ReleaseDataBuffer</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExternal-ExternalData.html">ExternalData</a>&nbsp;data)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Frees the memory allocated for data buffer.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>data</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

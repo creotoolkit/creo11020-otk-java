@@ -1,0 +1,192 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcComponentFeat.pfcComponentFeat"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      572
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcComponentFeat.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcComponentFeat-pfcComponentFeat.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcComponentFeat</h2>
+<tt>
+     package <b><a href="p-pfcComponentFeat.html">com.ptc.pfc.pfcComponentFeat</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>pfcComponentFeat</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "pfcComponentFeat"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcComponentFeat-ComponentConstraint.html">ComponentConstraint</a></tt></td><td class="method-summary"><tt><a class="method" href="#ComponentConstraint::Create">ComponentConstraint_Create</a>
+ (<a class="type" href="c-pfcComponentFeat-ComponentConstraintType.html">ComponentConstraintType</a>&nbsp;Type)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new component constraint object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcComponentFeat-ConstraintAttributes.html">ConstraintAttributes</a></tt></td><td class="method-summary"><tt><a class="method" href="#ConstraintAttributes::Create">ConstraintAttributes_Create</a>
+ (boolean&nbsp;Force, boolean&nbsp;Ignore)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new constraint attributes object.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ConstraintAttributes::Create">ConstraintAttributes_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcComponentFeat-ConstraintAttributes.html">ConstraintAttributes</a></tt></td><td class="method-name"><tt>ConstraintAttributes_Create</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;Force, boolean&nbsp;Ignore)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new constraint attributes object.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#67">Assemblies and Components: Constraint Attributes</a>, <a href="../manual0/jassembly.html#71">Assemblies and Components: Constraint Attributes</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Force</b></tt>
+</dt>
+<dd>
+<tt>true</tt> if the constraint should be forced (required for ASM_CONSTRAINT_PNT_ON_LINE).</dd>
+<dt>
+<tt><b>Ignore</b></tt>
+</dt>
+<dd>
+<tt>true</tt> if the constraint is stored with the component, but not enforced.  <tt>false</tt> if the constraint is enforced.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ComponentConstraint::Create">ComponentConstraint_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcComponentFeat-ComponentConstraint.html">ComponentConstraint</a></tt></td><td class="method-name"><tt>ComponentConstraint_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcComponentFeat-ComponentConstraintType.html">ComponentConstraintType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new component constraint object.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcComponentFeat-ComponentFeat.html#SetConstraints">ComponentFeat.SetConstraints(/*optional*/ ComponentConstraints, /*optional*/ ComponentPath)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#73">Assemblies and Components: Assembling a Component Parametrically</a>, <a href="../manual0/jassembly.html#89">Assemblies and Components: Assembling a Component Parametrically</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The type of constraint.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new component constraint object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

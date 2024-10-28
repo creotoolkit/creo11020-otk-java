@@ -1,0 +1,160 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcDimension2D.DimensionSense"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      223
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcDimension2D.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcDimension2D-DimensionSense.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;DimensionSense</h2>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDimension-DimSense.html">DimSense</a></tt>
+<p></p>
+<tt>
+     package 
+     <b><a href="p-pfcDimension2D.html">com.ptc.pfc.pfcDimension2D</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>DimensionSense</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface is the parent for interfaces used for dimensions to attach to entities in a drawing.
+<br>
+<br>The dimension sense gives more information about how the dimension attaches to the entity, 
+for example, to what part of the entity, and in what direction the dimension runs. 
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><tt><a class="class" href="c-pfcDimension2D-DrawingDimCreateInstructions.html">DrawingDimCreateInstructions</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-EmptyDimensionSense.html">EmptyDimensionSense</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-PointDimensionSense.html">PointDimensionSense</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-SplinePointDimensionSense.html">SplinePointDimensionSense</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-TangentIndexDimensionSense.html">TangentIndexDimensionSense</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-LinAOCTangentDimensionSense.html">LinAOCTangentDimensionSense</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-AngleDimensionSense.html">AngleDimensionSense</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-PointToAngleDimensionSense.html">PointToAngleDimensionSense</a></tt></tt>, <tt><a class="method" href="c-pfcDimension2D-Dimension2D.html#GetDimensionSenses">Dimension2D.GetDimensionSenses()</a></tt>, <tt><a class="method" href="c-pfcDimension2D-pfcDimension2D.html#EmptyDimensionSense::Create">pfcDimension2D.EmptyDimensionSense_Create()</a></tt>, <tt><a class="method" href="c-pfcDimension2D-pfcDimension2D.html#PointDimensionSense::Create">pfcDimension2D.PointDimensionSense_Create(DimensionPointType)</a></tt>, <tt><a class="method" href="c-pfcDimension2D-pfcDimension2D.html#SplinePointDimensionSense::Create">pfcDimension2D.SplinePointDimensionSense_Create(int)</a></tt>, <tt><a class="method" href="c-pfcDimension2D-pfcDimension2D.html#TangentIndexDimensionSense::Create">pfcDimension2D.TangentIndexDimensionSense_Create(int)</a></tt>, <tt><a class="method" href="c-pfcDimension2D-pfcDimension2D.html#LinAOCTangentDimensionSense::Create">pfcDimension2D.LinAOCTangentDimensionSense_Create(DimensionLinAOCTangentType)</a></tt>, <tt><a class="method" href="c-pfcDimension2D-pfcDimension2D.html#AngleDimensionSense::Create">pfcDimension2D.AngleDimensionSense_Create(/*optional*/ DimensionAngleOptions)</a></tt>, <tt><a class="method" href="c-pfcDimension2D-pfcDimension2D.html#PointToAngleDimensionSense::Create">pfcDimension2D.PointToAngleDimensionSense_Create(DimensionPointType, /*optional*/ DimensionAngleOptions)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-pfcDimension2D-EmptyDimensionSense.html">EmptyDimensionSense</a></tt>, 
+        <tt><a class="class" href="c-pfcDimension2D-PointDimensionSense.html">PointDimensionSense</a></tt>, 
+        <tt><a class="class" href="c-pfcDimension2D-SplinePointDimensionSense.html">SplinePointDimensionSense</a></tt>, 
+        <tt><a class="class" href="c-pfcDimension2D-TangentIndexDimensionSense.html">TangentIndexDimensionSense</a></tt>, 
+        <tt><a class="class" href="c-pfcDimension2D-LinAOCTangentDimensionSense.html">LinAOCTangentDimensionSense</a></tt>, 
+        <tt><a class="class" href="c-pfcDimension2D-AngleDimensionSense.html">AngleDimensionSense</a></tt>, 
+        <tt><a class="class" href="c-pfcDimension2D-PointToAngleDimensionSense.html">PointToAngleDimensionSense</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDimension2D-DimensionSenseType.html">DimensionSenseType</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetType">GetType</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b>
+          &lt;reference 1 to unknown entity &gt;
+        </tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns the type of option used for a dimension to attach to entities in a drawing. 
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetType">GetType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDimension2D-DimensionSenseType.html">DimensionSenseType</a></tt></td><td class="method-name"><tt>GetType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b>
+          &lt;reference 1 to unknown entity &gt;
+        </tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns the type of option used for a dimension to attach to entities in a drawing. 
+<br>
+<br>The dimension sense gives more information about how the dimension attaches to the entity, 
+for example, to what part of the entity, and in what direction the dimension runs. 
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><tt><a class="class" href="c-pfcDimension2D-EmptyDimensionSense.html">EmptyDimensionSense</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-PointDimensionSense.html">PointDimensionSense</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-SplinePointDimensionSense.html">SplinePointDimensionSense</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-TangentIndexDimensionSense.html">TangentIndexDimensionSense</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-LinAOCTangentDimensionSense.html">LinAOCTangentDimensionSense</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-AngleDimensionSense.html">AngleDimensionSense</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDimension2D-PointToAngleDimensionSense.html">PointToAngleDimensionSense</a></tt></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The type of dimension sense.</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

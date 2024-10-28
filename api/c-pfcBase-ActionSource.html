@@ -1,0 +1,277 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcBase.ActionSource"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      4
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcBase.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcBase-ActionSource.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;ActionSource</h2>
+<tt>
+     package 
+     <b><a href="p-pfcBase.html">com.ptc.pfc.pfcBase</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>ActionSource</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class specifies an action source.
+<br>
+<br>Relevant Action Sources:
+    <tt><tt><a class="class" href="c-pfcSession-BaseSession.html">BaseSession</a></tt></tt>
+    <tt><tt><a class="class" href="c-pfcModel-Model.html">Model</a></tt></tt>
+    <tt><tt><a class="class" href="c-pfcSolid-Solid.html">Solid</a></tt></tt>
+    <tt><tt><a class="class" href="c-pfcFeature-Feature.html">Feature</a></tt></tt>
+    <tt><tt><a class="class" href="c-pfcModelItem-Parameter.html">Parameter</a></tt></tt>
+    
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-pfcModelItem-ParameterOwner.html">ParameterOwner</a></tt>, 
+        <tt><a class="class" href="c-pfcModelItem-ModelItem.html">ModelItem</a></tt>, 
+        <tt><a class="class" href="c-pfcModel-Model.html">Model</a></tt>, 
+        <tt><a class="class" href="c-pfcDisplay-DisplayList2D.html">DisplayList2D</a></tt>, 
+        <tt><a class="class" href="c-pfcDisplay-DisplayList3D.html">DisplayList3D</a></tt>, 
+        <tt><a class="class" href="c-pfcCommand-UICommand.html">UICommand</a></tt>, 
+        <tt><a class="class" href="c-pfcSession-BaseSession.html">BaseSession</a></tt>, 
+        <tt><a class="class" href="c-pfcAsyncConnection-AsyncConnection.html">AsyncConnection</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AddActionListener">AddActionListener</a>
+ (<a class="type" href="c-pfcBase-ActionListener.html">ActionListener</a>&nbsp;Listener)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Adds an action listener to notify you of certain events.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AddActionListenerWithType">AddActionListenerWithType</a>
+ (<a class="type" href="c-pfcBase-ActionListener.html">ActionListener</a>&nbsp;Listener, <a class="type" href="c-pfcBase-ActionTypes.html">ActionTypes</a>&nbsp;ATypes)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Adds an action listener to notify chosen events.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#RemoveActionListener">RemoveActionListener</a>
+ (<a class="type" href="c-pfcBase-ActionListener.html">ActionListener</a>&nbsp;Listener)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Deletes the specified action listener so you are no longer notified of
+those events.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AddActionListener">AddActionListener</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>AddActionListener</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-ActionListener.html">ActionListener</a>&nbsp;Listener)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Adds an action listener to notify you of certain events.
+<br>
+<br>The type of event depends upon the type of Action Listener you provide.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#9">Action Listeners: Action Sources</a>, <a href="../manual0/JAction.html#11">Action Listeners: Action Sources</a>, <a href="../manual0/menus_jlink.html#11">Menus, Commands, and Pop-up Menus: Access Listeners for Commands</a>, <a href="../manual0/menus_jlink.html#12">Menus, Commands, and Pop-up Menus: Access Listeners for Commands</a>, <a href="../manual0/menus_jlink.html#14">Menus, Commands, and Pop-up Menus: Bracket Listeners for Commands</a>, <a href="../manual0/menus_jlink.html#16">Menus, Commands, and Pop-up Menus: Bracket Listeners for Commands</a>, <a href="../manual0/menus_jlink.html#36">Menus, Commands, and Pop-up Menus: Listening for Pop-up Menu Initialization</a>, <a href="../manual0/menus_jlink.html#38">Menus, Commands, and Pop-up Menus: Listening for Pop-up Menu Initialization</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Listener</b></tt>
+</dt>
+<dd>The new listener</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RemoveActionListener">RemoveActionListener</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>RemoveActionListener</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-ActionListener.html">ActionListener</a>&nbsp;Listener)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Deletes the specified action listener so you are no longer notified of
+those events.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#11">Action Listeners: Action Sources</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Listener</b></tt>
+</dt>
+<dd>The action listener to delete</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AddActionListenerWithType">AddActionListenerWithType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>AddActionListenerWithType</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-ActionListener.html">ActionListener</a>&nbsp;Listener, <a class="type" href="c-pfcBase-ActionTypes.html">ActionTypes</a>&nbsp;ATypes)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Adds an action listener to notify chosen events.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#10">Action Listeners: Action Sources</a>, <a href="../manual0/JAction.html#11">Action Listeners: Action Sources</a>, <a href="../manual0/JlinkOverview.html#65">Overview of Creo Object TOOLKIT Java: Action Listeners</a>, <a href="../manual0/menus_jlink.html#37">Menus, Commands, and Pop-up Menus: Listening for Pop-up Menu Initialization</a>, <a href="../manual0/menus_jlink.html#38">Menus, Commands, and Pop-up Menus: Listening for Pop-up Menu Initialization</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Listener</b></tt>
+</dt>
+<dd>The new listener</dd>
+<dt>
+<tt><b>ATypes</b></tt>
+</dt>
+<dd>The chosen events for which notification is needed.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

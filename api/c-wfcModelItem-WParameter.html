@@ -1,0 +1,595 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcModelItem.WParameter"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      889
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcModelItem.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcModelItem-WParameter.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;WParameter</h2>
+<tt>
+     package 
+     <b><a href="p-wfcModelItem.html">com.ptc.wfc.wfcModelItem</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>WParameter</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcModelItem-Parameter.html">com.ptc.pfc.pfcModelItem.Parameter</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>A parameter object.  This is an extension of <tt><tt><a class="class" href="c-pfcModelItem-Parameter.html">Parameter</a></tt></tt>
+  
+<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcModelItem-WParameter.html">WParameter</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetDrivingParam">GetDrivingParam</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+   Obtains the driving parameter for a material parameter,
+   if the driver type is pfcPARAMDRIVER_PARAM.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcModelItem-ParamLockstatus.html">ParamLockstatus</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetLockStatus">GetLockStatus</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+      Obtains the lock status of the parameter. 
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcModelItem-ParamTableset.html">ParamTableset</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetTableset">GetTableset</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Obtains the parameter table set that this parameter is governed by.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcModelItem-ParamValueWithUnits.html">ParamValueWithUnits</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetValueWithUnits">GetValueWithUnits</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+       Obtains the value of the parameter along with units.
+     </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetDrivingParam">SetDrivingParam</a>
+ (<a class="type" href="c-wfcModelItem-WParameter.html">WParameter</a>&nbsp;DrivingParam)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+    Assigns the driving parameter for a material parameter.  This will
+    set the driver type to be pfcPARAMDRIVER_PARAM.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetLockStatus">SetLockStatus</a>
+ (<a class="type" href="c-wfcModelItem-ParamLockstatus.html">ParamLockstatus</a>&nbsp;LockStatus)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+       Sets the lock status of the parameter.
+     </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetValueWithUnits">SetValueWithUnits</a>
+ (<a class="type" href="c-wfcModelItem-ParamValueWithUnits.html">ParamValueWithUnits</a>&nbsp;ValueWithUnits)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+       Sets the value of the parameter along with units.
+     </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-BaseParameter.html"><tt>com.ptc.pfc.pfcModelItem.BaseParameter</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-BaseParameter.html#Value"><tt>GetValue</tt></a>,
+      <a class="method" href="c-pfcModelItem-BaseParameter.html#Value"><tt>SetValue</tt></a>,
+      <a class="method" href="c-pfcModelItem-BaseParameter.html#IsDesignated"><tt>GetIsDesignated</tt></a>,
+      <a class="method" href="c-pfcModelItem-BaseParameter.html#IsDesignated"><tt>SetIsDesignated</tt></a>,
+      <a class="method" href="c-pfcModelItem-BaseParameter.html#IsRelationDriven"><tt>GetIsRelationDriven</tt></a>,
+      <a class="method" href="c-pfcModelItem-BaseParameter.html#IsModified"><tt>GetIsModified</tt></a>,
+      <a class="method" href="c-pfcModelItem-BaseParameter.html#ResetFromBackup"><tt>ResetFromBackup</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Child.html"><tt>com.ptc.pfc.pfcObject.Child</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+      <a class="method" href="c-pfcObject-Child.html#OId"><tt>GetOId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-NamedModelItem.html"><tt>com.ptc.pfc.pfcModelItem.NamedModelItem</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-NamedModelItem.html#Name"><tt>GetName</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-Parameter.html"><tt>com.ptc.pfc.pfcModelItem.Parameter</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-Parameter.html#Delete"><tt>Delete</tt></a>,
+      <a class="method" href="c-pfcModelItem-Parameter.html#Units"><tt>GetUnits</tt></a>,
+      <a class="method" href="c-pfcModelItem-Parameter.html#GetScaledValue"><tt>GetScaledValue</tt></a>,
+      <a class="method" href="c-pfcModelItem-Parameter.html#SetScaledValue"><tt>SetScaledValue</tt></a>,
+      <a class="method" href="c-pfcModelItem-Parameter.html#Description"><tt>GetDescription</tt></a>,
+      <a class="method" href="c-pfcModelItem-Parameter.html#Description"><tt>SetDescription</tt></a>,
+      <a class="method" href="c-pfcModelItem-Parameter.html#Reorder"><tt>Reorder</tt></a>,
+      <a class="method" href="c-pfcModelItem-Parameter.html#GetDriverType"><tt>GetDriverType</tt></a>,
+      <a class="method" href="c-pfcModelItem-Parameter.html#GetRestriction"><tt>GetRestriction</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetTableset">GetTableset</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcModelItem-ParamTableset.html">ParamTableset</a></tt></td><td class="method-name"><tt>GetTableset</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Obtains the parameter table set that this parameter is governed by.<br>
+<br>
+  
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The parameter is not governed by a parameter table set. </p>
+  
+</p>
+  
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#88">Dimensions and Parameters: Table Parameters</a>, <a href="../manual0/JDims.html#91">Dimensions and Parameters: Table Parameters</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The parameter table set</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetDrivingParam">GetDrivingParam</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcModelItem-WParameter.html">WParameter</a></tt></td><td class="method-name"><tt>GetDrivingParam</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+   Obtains the driving parameter for a material parameter,
+   if the driver type is pfcPARAMDRIVER_PARAM.
+   <br>
+<br>
+  
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The driver type is not 'parameter'. </p>
+  
+</p>
+   
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#93">Dimensions and Parameters: Driven and Driving Parameters</a>, <a href="../manual0/JDims.html#94">Dimensions and Parameters: Driven and Driving Parameters</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The driving parameter</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetDrivingParam">SetDrivingParam</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetDrivingParam</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcModelItem-WParameter.html">WParameter</a>&nbsp;DrivingParam)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+    Assigns the driving parameter for a material parameter.  This will
+    set the driver type to be pfcPARAMDRIVER_PARAM.
+   <br>
+<br>
+  
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - This parameter cannot be driven by another parameter. </p>
+  
+</p>
+   
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#94">Dimensions and Parameters: Driven and Driving Parameters</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DrivingParam</b></tt>
+</dt>
+<dd>The driving parameter</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetLockStatus">GetLockStatus</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcModelItem-ParamLockstatus.html">ParamLockstatus</a></tt></td><td class="method-name"><tt>GetLockStatus</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+      Obtains the lock status of the parameter. 
+    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#60">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The parameter lock status <tt>
+       &lt;reference 3 to unknown entity ParamLockstatus&gt;
+      </tt> 
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetLockStatus">SetLockStatus</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetLockStatus</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcModelItem-ParamLockstatus.html">ParamLockstatus</a>&nbsp;LockStatus)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+       Sets the lock status of the parameter.
+     <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#61">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>LockStatus</b></tt>
+</dt>
+<dd>
+       The parameter lock status <tt>
+       &lt;reference 3 to unknown entity ParamLockstatus&gt;
+      </tt>
+     
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetValueWithUnits">GetValueWithUnits</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcModelItem-ParamValueWithUnits.html">ParamValueWithUnits</a></tt></td><td class="method-name"><tt>GetValueWithUnits</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+       Obtains the value of the parameter along with units.
+     <br>
+<br>
+   
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The owner was not found.</p>
+    
+</p>
+     
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#62">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+       The parameter value and units contained in <tt>
+       &lt;reference 3 to unknown entity ParamValueWithUnits&gt;
+      </tt>
+     
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetValueWithUnits">SetValueWithUnits</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetValueWithUnits</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcModelItem-ParamValueWithUnits.html">ParamValueWithUnits</a>&nbsp;ValueWithUnits)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+       Sets the value of the parameter along with units.
+     <br>
+<br>For unitless parameters use <tt><tt><a class="class" href="c-pfcUnits-Unit.html">Unit</a></tt></tt> as NULL in <tt>
+       &lt;reference 3 to unknown entity ParamValueWithUnits&gt;
+      </tt>
+     
+<p></p>
+     
+<argument name="ValueWithUnits">
+       The parameter value and units contained in <tt>
+       &lt;reference 3 to unknown entity ParamValueWithUnits&gt;
+      </tt>
+     
+</argument>
+   
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The owner was not found.</p>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidType.html">XToolkitInvalidType</a></tt></tt> - The unit type provided does not match the units of the parameter. </p>
+	  
+</p>
+     
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JDims.html#63">Dimensions and Parameters: Parameter Information</a>, <a href="../manual0/JDims.html#76">Dimensions and Parameters: Parameter Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ValueWithUnits</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

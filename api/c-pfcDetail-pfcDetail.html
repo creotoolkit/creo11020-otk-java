@@ -1,0 +1,1211 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcDetail.pfcDetail"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      577
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcDetail.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcDetail-pfcDetail.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcDetail</h2>
+<tt>
+     package <b><a href="p-pfcDetail.html">com.ptc.pfc.pfcDetail</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>pfcDetail</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "pfcDetail"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-AnnotationTextStyle.html">AnnotationTextStyle</a></tt></td><td class="method-summary"><tt><a class="method" href="#AnnotationTextStyle::Create">AnnotationTextStyle_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailAttachment.html">DetailAttachment</a></tt></td><td class="method-summary"><tt><a class="method" href="#DetailAttachment::Create">DetailAttachment_Create</a>
+ (<a class="type" href="c-pfcDetail-Attachment.html">Attachment</a>&nbsp;NoteAttach, 
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailLeaderAttachments.html">DetailLeaderAttachments</a>&nbsp;LeaderAttach)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates attachment data for detail item. Currently supports only notes. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailEntityInstructions.html">DetailEntityInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#DetailEntityInstructions::Create">DetailEntityInstructions_Create</a>
+ (<a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;inGeometry, 
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;inView)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates an instructions object describing how to construct a detail entity, for use in the methods <tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateDetailItem">DetailItemOwner.CreateDetailItem(DetailCreateInstructions)</a></tt>, <tt><a class="method" href="c-pfcDetail-DetailSymbolDefItem.html#CreateDetailItem">DetailSymbolDefItem.CreateDetailItem(DetailCreateInstructions)</a></tt> and <tt><a class="method" href="c-pfcDetail-DetailEntityItem.html#Modify">DetailEntityItem.Modify(DetailEntityInstructions)</a></tt>.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailGroupInstructions.html">DetailGroupInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#DetailGroupInstructions::Create">DetailGroupInstructions_Create</a>
+ (String&nbsp;inName, <a class="type" href="c-pfcDetail-DetailItems.html">DetailItems</a>&nbsp;inElements)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates an instructions data object used to describe the construction of a detail group, for use in the methods <tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateDetailItem">DetailItemOwner.CreateDetailItem(DetailCreateInstructions)</a></tt> and <tt><a class="method" href="c-pfcDetail-DetailGroupItem.html#Modify">DetailGroupItem.Modify(DetailGroupInstructions)</a></tt>.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailLeaders.html">DetailLeaders</a></tt></td><td class="method-summary"><tt><a class="method" href="#DetailLeaders::Create">DetailLeaders_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a data object describing a set of detail item leaders.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailNoteInstructions.html">DetailNoteInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#DetailNoteInstructions::Create">DetailNoteInstructions_Create</a>
+ (<a class="type" href="c-pfcDetail-DetailTextLines.html">DetailTextLines</a>&nbsp;inTextLines)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a data object used to describe how a detail note item should be construct, when passed to <tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateDetailItem">DetailItemOwner.CreateDetailItem(DetailCreateInstructions)</a></tt>, <tt><a class="method" href="c-pfcDetail-DetailSymbolDefItem.html#CreateDetailItem">DetailSymbolDefItem.CreateDetailItem(DetailCreateInstructions)</a></tt>, or <tt><a class="method" href="c-pfcDetail-DetailNoteItem.html#Modify">DetailNoteItem.Modify(DetailNoteInstructions)</a></tt>.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailSymbolDefInstructions.html">DetailSymbolDefInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#DetailSymbolDefInstructions::Create">DetailSymbolDefInstructions_Create</a>
+ (String&nbsp;inFullPath)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates an instructions object used to create a symbol definition.  Pass this object to <tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateDetailItem">DetailItemOwner.CreateDetailItem(DetailCreateInstructions)</a></tt> and <tt><a class="method" href="c-pfcDetail-DetailSymbolDefItem.html#Modify">DetailSymbolDefItem.Modify(DetailSymbolDefInstructions)</a></tt>.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailSymbolGroupInstructions.html">DetailSymbolGroupInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#DetailSymbolGroupInstructions::Create">DetailSymbolGroupInstructions_Create</a>
+ (String&nbsp;Name, <a class="type" href="c-pfcDetail-DetailItems.html">DetailItems</a>&nbsp;Items)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a data object having a specific name and list of detail items.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailSymbolInstInstructions.html">DetailSymbolInstInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#DetailSymbolInstInstructions::Create">DetailSymbolInstInstructions_Create</a>
+ (<a class="type" href="c-pfcDetail-DetailSymbolDefItem.html">DetailSymbolDefItem</a>&nbsp;inSymbolDef)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a data object containing information about a symbol instance placement.
+   Pass this object to <tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateDetailItem">DetailItemOwner.CreateDetailItem(DetailCreateInstructions)</a></tt>
+   and <tt><a class="method" href="c-pfcDetail-DetailSymbolInstItem.html#Modify">DetailSymbolInstItem.Modify(DetailSymbolInstInstructions)</a></tt>.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailText.html">DetailText</a></tt></td><td class="method-summary"><tt><a class="method" href="#DetailText::Create">DetailText_Create</a>
+ (String&nbsp;inText)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a data object containing a text item in a note.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailTextLine.html">DetailTextLine</a></tt></td><td class="method-summary"><tt><a class="method" href="#DetailTextLine::Create">DetailTextLine_Create</a>
+ (<a class="type" href="c-pfcDetail-DetailTexts.html">DetailTexts</a>&nbsp;inTexts)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a data object containing a line of text in a note.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailVariantText.html">DetailVariantText</a></tt></td><td class="method-summary"><tt><a class="method" href="#DetailVariantText::Create">DetailVariantText_Create</a>
+ (String&nbsp;inPrompt, String&nbsp;inValue)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a data object describing the replacement of variable text in a symbol definition.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-FreeAttachment.html">FreeAttachment</a></tt></td><td class="method-summary"><tt><a class="method" href="#FreeAttachment::Create">FreeAttachment_Create</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;inAttachmentPoint)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a data object used for representing a free attachment.
+A free attachment is relative to a fixed location, or relative to a fixed location with respect to a drawing view.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-LeaderAttachment.html">LeaderAttachment</a></tt></td><td class="method-summary"><tt><a class="method" href="#LeaderAttachment::Create">LeaderAttachment_Create</a>
+ (<a class="type" href="c-pfcDetail-Attachment.html">Attachment</a>&nbsp;LeaderAttachs)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates leader attachment. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-NormalLeaderAttachment.html">NormalLeaderAttachment</a></tt></td><td class="method-summary"><tt><a class="method" href="#NormalLeaderAttachment::Create">NormalLeaderAttachment_Create</a>
+ (<a class="type" href="c-pfcDetail-Attachment.html">Attachment</a>&nbsp;LeaderAttachs)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates normal leader attachment. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-OffsetAttachment.html">OffsetAttachment</a></tt></td><td class="method-summary"><tt><a class="method" href="#OffsetAttachment::Create">OffsetAttachment_Create</a>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;inAttachedGeometry, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;inAttachmentPoint)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a data object, used for attaching a detail item, offset to a reference point or axis.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-ParametricAttachment.html">ParametricAttachment</a></tt></td><td class="method-summary"><tt><a class="method" href="#ParametricAttachment::Create">ParametricAttachment_Create</a>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;inAttachedGeometry)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a data object, used for attaching a detail item to an item.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-SymbolDefAttachment.html">SymbolDefAttachment</a></tt></td><td class="method-summary"><tt><a class="method" href="#SymbolDefAttachment::Create">SymbolDefAttachment_Create</a>
+ (<a class="type" href="c-pfcDetail-SymbolDefAttachmentType.html">SymbolDefAttachmentType</a>&nbsp;inType, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;inAttachmentPoint)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a data object that represents the way that an instance may be attached to a symbol definition.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-TangentLeaderAttachment.html">TangentLeaderAttachment</a></tt></td><td class="method-summary"><tt><a class="method" href="#TangentLeaderAttachment::Create">TangentLeaderAttachment_Create</a>
+ (<a class="type" href="c-pfcDetail-Attachment.html">Attachment</a>&nbsp;LeaderAttachs)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates tangent leader attachment. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-TextReference.html">TextReference</a></tt></td><td class="method-summary"><tt><a class="method" href="#TextReference::Create">TextReference_Create</a>
+ (<a class="type" href="c-pfcDetail-DetailNoteItem.html">DetailNoteItem</a>&nbsp;inTextRefNote, int&nbsp;inTextLineNumber, int&nbsp;inTextIndexNumber)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a data object that identifies the text item used for a symbol definition which as a height type of SYMDEF_TEXT_RELATED.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FreeAttachment::Create">FreeAttachment_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-FreeAttachment.html">FreeAttachment</a></tt></td><td class="method-name"><tt>FreeAttachment_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;inAttachmentPoint)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a data object used for representing a free attachment.
+A free attachment is relative to a fixed location, or relative to a fixed location with respect to a drawing view.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><tt><a class="class" href="c-pfcDetail-DetailLeaders.html">DetailLeaders</a></tt></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inAttachmentPoint</b></tt>
+</dt>
+<dd>The attachment point, in screen coordinates.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OffsetAttachment::Create">OffsetAttachment_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-OffsetAttachment.html">OffsetAttachment</a></tt></td><td class="method-name"><tt>OffsetAttachment_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;inAttachedGeometry, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;inAttachmentPoint)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a data object, used for attaching a detail item, offset to a reference point or axis.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><tt><a class="class" href="c-pfcDetail-DetailLeaders.html">DetailLeaders</a></tt></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#Select">BaseSession.Select(SelectionOptions, /*optional*/ Selections)</a></tt>, <tt><tt><a class="method" href="c-pfcSelect-pfcSelect.html#CreateComponentSelection">pfcSelect.CreateComponentSelection(ComponentPath)</a></tt></tt>, <tt><tt><a class="method" href="c-pfcSelect-pfcSelect.html#CreateModelItemSelection">pfcSelect.CreateModelItemSelection(ModelItem, /*optional*/ ComponentPath)</a></tt></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inAttachedGeometry</b></tt>
+</dt>
+<dd>Selection representing the item to attach to. This should include the drawing model view. The attachment will occur at the selected parameters</dd>
+<dt>
+<tt><b>inAttachmentPoint</b></tt>
+</dt>
+<dd>The attachment point, in screen coordinates.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ParametricAttachment::Create">ParametricAttachment_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-ParametricAttachment.html">ParametricAttachment</a></tt></td><td class="method-name"><tt>ParametricAttachment_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;inAttachedGeometry)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a data object, used for attaching a detail item to an item.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><tt><a class="class" href="c-pfcDetail-DetailLeaders.html">DetailLeaders</a></tt></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#Select">BaseSession.Select(SelectionOptions, /*optional*/ Selections)</a></tt>, <tt><tt><a class="method" href="c-pfcSelect-pfcSelect.html#CreateComponentSelection">pfcSelect.CreateComponentSelection(ComponentPath)</a></tt></tt>, <tt><tt><a class="method" href="c-pfcSelect-pfcSelect.html#CreateModelItemSelection">pfcSelect.CreateModelItemSelection(ModelItem, /*optional*/ ComponentPath)</a></tt></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inAttachedGeometry</b></tt>
+</dt>
+<dd>Selection representing the item to attach to. This should include the drawing model view. The attachment will occur at the selected parameters</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="LeaderAttachment::Create">LeaderAttachment_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-LeaderAttachment.html">LeaderAttachment</a></tt></td><td class="method-name"><tt>LeaderAttachment_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-Attachment.html">Attachment</a>&nbsp;LeaderAttachs)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates leader attachment. <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>LeaderAttachs</b></tt>
+</dt>
+<dd>attachment </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>leader attachment </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="NormalLeaderAttachment::Create">NormalLeaderAttachment_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-NormalLeaderAttachment.html">NormalLeaderAttachment</a></tt></td><td class="method-name"><tt>NormalLeaderAttachment_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-Attachment.html">Attachment</a>&nbsp;LeaderAttachs)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates normal leader attachment. <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>LeaderAttachs</b></tt>
+</dt>
+<dd>attachment </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>normal leader attachment. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TangentLeaderAttachment::Create">TangentLeaderAttachment_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-TangentLeaderAttachment.html">TangentLeaderAttachment</a></tt></td><td class="method-name"><tt>TangentLeaderAttachment_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-Attachment.html">Attachment</a>&nbsp;LeaderAttachs)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates tangent leader attachment. <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>LeaderAttachs</b></tt>
+</dt>
+<dd>attachment </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd> tangent leader attachment.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DetailAttachment::Create">DetailAttachment_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailAttachment.html">DetailAttachment</a></tt></td><td class="method-name"><tt>DetailAttachment_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-Attachment.html">Attachment</a>&nbsp;NoteAttach, 
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailLeaderAttachments.html">DetailLeaderAttachments</a>&nbsp;LeaderAttach)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates attachment data for detail item. Currently supports only notes. <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>NoteAttach</b></tt>
+</dt>
+<dd>Attachment of note text.  </dd>
+<dt>
+<tt><b>LeaderAttach</b></tt>
+</dt>
+<dd>Attachment of note leader. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DetailLeaders::Create">DetailLeaders_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailLeaders.html">DetailLeaders</a></tt></td><td class="method-name"><tt>DetailLeaders_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a data object describing a set of detail item leaders.
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DetailEntityInstructions::Create">DetailEntityInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailEntityInstructions.html">DetailEntityInstructions</a></tt></td><td class="method-name"><tt>DetailEntityInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;inGeometry, 
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;inView)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates an instructions object describing how to construct a detail entity, for use in the methods <tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateDetailItem">DetailItemOwner.CreateDetailItem(DetailCreateInstructions)</a></tt>, <tt><a class="method" href="c-pfcDetail-DetailSymbolDefItem.html#CreateDetailItem">DetailSymbolDefItem.CreateDetailItem(DetailCreateInstructions)</a></tt> and <tt><a class="method" href="c-pfcDetail-DetailEntityItem.html#Modify">DetailEntityItem.Modify(DetailEntityInstructions)</a></tt>.
+<br>
+<br>When creating a "circle" detail entity, use an arc with a start angle
+   of 0 and an end angle of 2*PI. Creo Parametric represents circle detail entities
+   with the <tt><tt><a class="class" href="c-pfcGeometry-ArcDescriptor.html">ArcDescriptor</a></tt></tt> object.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#428">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#440">Drawings: Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inGeometry</b></tt>
+</dt>
+<dd>The curve geometry describing the trajectory of the detail entity (in screen coordinates).</dd>
+<dt>
+<tt><b>inView</b></tt>
+</dt>
+<dd>The drawing view associated with the entity.  This can be a model view obtained from <tt><a class="method" href="c-pfcModel2D-Model2D.html#List2DViews">Model2D.List2DViews()</a></tt>, or a drawing sheet background view obtained from <tt><a class="method" href="c-pfcSheet-SheetOwner.html#GetSheetBackgroundView">SheetOwner.GetSheetBackgroundView(int)</a></tt>.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instructions object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AnnotationTextStyle::Create">AnnotationTextStyle_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-AnnotationTextStyle.html">AnnotationTextStyle</a></tt></td><td class="method-name"><tt>AnnotationTextStyle_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jannot.html#89">Annotations: Annotation Features and Annotations: Annotation Text Styles</a>, <a href="../manual0/jannot.html#113">Annotations: Annotation Features and Annotations: Annotation Text Styles</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DetailText::Create">DetailText_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailText.html">DetailText</a></tt></td><td class="method-name"><tt>DetailText_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;inText)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a data object containing a text item in a note.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inText</b></tt>
+</dt>
+<dd>The text string.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DetailTextLine::Create">DetailTextLine_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailTextLine.html">DetailTextLine</a></tt></td><td class="method-name"><tt>DetailTextLine_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailTexts.html">DetailTexts</a>&nbsp;inTexts)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a data object containing a line of text in a note.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inTexts</b></tt>
+</dt>
+<dd>The text strings that make up the line.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DetailNoteInstructions::Create">DetailNoteInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailNoteInstructions.html">DetailNoteInstructions</a></tt></td><td class="method-name"><tt>DetailNoteInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailTextLines.html">DetailTextLines</a>&nbsp;inTextLines)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a data object used to describe how a detail note item should be construct, when passed to <tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateDetailItem">DetailItemOwner.CreateDetailItem(DetailCreateInstructions)</a></tt>, <tt><a class="method" href="c-pfcDetail-DetailSymbolDefItem.html#CreateDetailItem">DetailSymbolDefItem.CreateDetailItem(DetailCreateInstructions)</a></tt>, or <tt><a class="method" href="c-pfcDetail-DetailNoteItem.html#Modify">DetailNoteItem.Modify(DetailNoteInstructions)</a></tt>.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#455">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inTextLines</b></tt>
+</dt>
+<dd>Sequence of text line data objects describing the contents of the note.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SymbolDefAttachment::Create">SymbolDefAttachment_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-SymbolDefAttachment.html">SymbolDefAttachment</a></tt></td><td class="method-name"><tt>SymbolDefAttachment_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-SymbolDefAttachmentType.html">SymbolDefAttachmentType</a>&nbsp;inType, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;inAttachmentPoint)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a data object that represents the way that an instance may be attached to a symbol definition.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><tt><a class="class" href="c-pfcDetail-DetailSymbolDefInstructions.html">DetailSymbolDefInstructions</a></tt></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inType</b></tt>
+</dt>
+<dd>The type of attachment.</dd>
+<dt>
+<tt><b>inAttachmentPoint</b></tt>
+</dt>
+<dd>The attachment point, in the coordinate system of the symbol definition.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TextReference::Create">TextReference_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-TextReference.html">TextReference</a></tt></td><td class="method-name"><tt>TextReference_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailNoteItem.html">DetailNoteItem</a>&nbsp;inTextRefNote, int&nbsp;inTextLineNumber, int&nbsp;inTextIndexNumber)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a data object that identifies the text item used for a symbol definition which as a height type of SYMDEF_TEXT_RELATED.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><tt><a class="class" href="c-pfcDetail-SymbolDefHeight.html">SymbolDefHeight</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDetail-DetailSymbolDefInstructions.html">DetailSymbolDefInstructions</a></tt></tt>, <tt><a class="method" href="c-pfcDetail-DetailSymbolDefItem.html#ListDetailItems">DetailSymbolDefItem.ListDetailItems(/*optional*/ DetailType)</a></tt>, <tt><a class="method" href="c-pfcDetail-DetailSymbolDefItem.html#GetDetailItem">DetailSymbolDefItem.GetDetailItem(DetailType, int)</a></tt>, <tt><a class="method" href="c-pfcDetail-DetailSymbolDefItem.html#CreateDetailItem">DetailSymbolDefItem.CreateDetailItem(DetailCreateInstructions)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inTextRefNote</b></tt>
+</dt>
+<dd>The note item containing the text.</dd>
+<dt>
+<tt><b>inTextLineNumber</b></tt>
+</dt>
+<dd>The line number of the note.</dd>
+<dt>
+<tt><b>inTextIndexNumber</b></tt>
+</dt>
+<dd>The index of the text, on this line.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DetailSymbolDefInstructions::Create">DetailSymbolDefInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailSymbolDefInstructions.html">DetailSymbolDefInstructions</a></tt></td><td class="method-name"><tt>DetailSymbolDefInstructions_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;inFullPath)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates an instructions object used to create a symbol definition.  Pass this object to <tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateDetailItem">DetailItemOwner.CreateDetailItem(DetailCreateInstructions)</a></tt> and <tt><a class="method" href="c-pfcDetail-DetailSymbolDefItem.html#Modify">DetailSymbolDefItem.Modify(DetailSymbolDefInstructions)</a></tt>.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#503">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#516">Drawings: Detail Symbol Definitions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inFullPath</b></tt>
+</dt>
+<dd>Path and name for the symbol definition.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DetailSymbolGroupInstructions::Create">DetailSymbolGroupInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailSymbolGroupInstructions.html">DetailSymbolGroupInstructions</a></tt></td><td class="method-name"><tt>DetailSymbolGroupInstructions_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;Name, <a class="type" href="c-pfcDetail-DetailItems.html">DetailItems</a>&nbsp;Items)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a data object having a specific name and list of detail items.
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#551">Drawings: Detail Symbol Groups</a>, <a href="../manual0/jdrawfns.html#555">Drawings: Detail Symbol Groups</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>The name of the symbol group. </dd>
+<dt>
+<tt><b>Items</b></tt>
+</dt>
+<dd>The detail items to be included in the symbol group.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The symbol group instructions object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DetailVariantText::Create">DetailVariantText_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailVariantText.html">DetailVariantText</a></tt></td><td class="method-name"><tt>DetailVariantText_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;inPrompt, String&nbsp;inValue)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a data object describing the replacement of variable text in a symbol definition.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inPrompt</b></tt>
+</dt>
+<dd>The variable text in the symbol definition (without the boundary "\" characters).</dd>
+<dt>
+<tt><b>inValue</b></tt>
+</dt>
+<dd>The text to use in place of the variable text in a symbol instance placement.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DetailSymbolInstInstructions::Create">DetailSymbolInstInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailSymbolInstInstructions.html">DetailSymbolInstInstructions</a></tt></td><td class="method-name"><tt>DetailSymbolInstInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailSymbolDefItem.html">DetailSymbolDefItem</a>&nbsp;inSymbolDef)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a data object containing information about a symbol instance placement.
+   Pass this object to <tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateDetailItem">DetailItemOwner.CreateDetailItem(DetailCreateInstructions)</a></tt>
+   and <tt><a class="method" href="c-pfcDetail-DetailSymbolInstItem.html#Modify">DetailSymbolInstItem.Modify(DetailSymbolInstInstructions)</a></tt>.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#523">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inSymbolDef</b></tt>
+</dt>
+<dd>The symbol definition.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DetailGroupInstructions::Create">DetailGroupInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcDetail-DetailGroupInstructions.html">DetailGroupInstructions</a></tt></td><td class="method-name"><tt>DetailGroupInstructions_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;inName, <a class="type" href="c-pfcDetail-DetailItems.html">DetailItems</a>&nbsp;inElements)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates an instructions data object used to describe the construction of a detail group, for use in the methods <tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateDetailItem">DetailItemOwner.CreateDetailItem(DetailCreateInstructions)</a></tt> and <tt><a class="method" href="c-pfcDetail-DetailGroupItem.html#Modify">DetailGroupItem.Modify(DetailGroupInstructions)</a></tt>.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#418">Drawings: Creating a Detail Item</a>, <a href="../manual0/jdrawfns.html#488">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#494">Drawings: Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inName</b></tt>
+</dt>
+<dd>The name of the group to create.</dd>
+<dt>
+<tt><b>inElements</b></tt>
+</dt>
+<dd>Sequence of detail items (these must be entities, groups or notes).</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

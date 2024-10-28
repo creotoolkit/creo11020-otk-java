@@ -1,0 +1,312 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcTable.pfcTable"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      596
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcTable.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcTable-pfcTable.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcTable</h2>
+<tt>
+     package <b><a href="p-pfcTable.html">com.ptc.pfc.pfcTable</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>pfcTable</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "pfcTable"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcTable-ColumnCreateOption.html">ColumnCreateOption</a></tt></td><td class="method-summary"><tt><a class="method" href="#ColumnCreateOption::Create">ColumnCreateOption_Create</a>
+ (<a class="type" href="c-pfcTable-ColumnJustification.html">ColumnJustification</a>&nbsp;Justification, double&nbsp;ColumnWidth)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a data object used for creating a column in a drawing table.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcTable-TableCell.html">TableCell</a></tt></td><td class="method-summary"><tt><a class="method" href="#TableCell::Create">TableCell_Create</a>
+ (int&nbsp;RowNumber, int&nbsp;ColumnNumber)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new data object representing a cell in drawing table.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcTable-TableCreateInstructions.html">TableCreateInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#TableCreateInstructions::Create">TableCreateInstructions_Create</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Origin)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a data object used to create a table, when passed to <tt><a class="method" href="c-pfcTable-TableOwner.html#CreateTable">TableOwner.CreateTable(TableCreateInstructions)</a></tt>.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcTable-TableRetrieveInstructions.html">TableRetrieveInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#TableRetrieveInstructions::Create">TableRetrieveInstructions_Create</a>
+ (String&nbsp;FileName, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Position)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a data object containing instructions to retrieve a drawing table.<br>
+   Pass this function to <tt><a class="method" href="c-pfcTable-TableOwner.html#RetrieveTable">TableOwner.RetrieveTable(TableRetrieveInstructions)</a></tt>. or <tt><a class="method" href="c-pfcTable-TableOwner.html#RetrieveTableByOrigin">TableOwner.RetrieveTableByOrigin(TableRetrieveInstructions)</a></tt>.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ColumnCreateOption::Create">ColumnCreateOption_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcTable-ColumnCreateOption.html">ColumnCreateOption</a></tt></td><td class="method-name"><tt>ColumnCreateOption_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcTable-ColumnJustification.html">ColumnJustification</a>&nbsp;Justification, double&nbsp;ColumnWidth)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a data object used for creating a column in a drawing table.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><tt><a class="class" href="c-pfcTable-TableCreateInstructions.html">TableCreateInstructions</a></tt></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Justification</b></tt>
+</dt>
+<dd>The column justification.</dd>
+<dt>
+<tt><b>ColumnWidth</b></tt>
+</dt>
+<dd>The column width.  This is either in length units or in the number of characters, depending on the value of the SizeType attribute in <tt><tt><a class="class" href="c-pfcTable-TableCreateInstructions.html">TableCreateInstructions</a></tt></tt>.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created column data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TableCreateInstructions::Create">TableCreateInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcTable-TableCreateInstructions.html">TableCreateInstructions</a></tt></td><td class="method-name"><tt>TableCreateInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Origin)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a data object used to create a table, when passed to <tt><a class="method" href="c-pfcTable-TableOwner.html#CreateTable">TableOwner.CreateTable(TableCreateInstructions)</a></tt>.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#203">Drawings: Creating Drawing Tables</a>, <a href="../manual0/jdrawfns.html#204">Drawings: Creating Drawing Tables</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Origin</b></tt>
+</dt>
+<dd>The location of the table origin.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TableRetrieveInstructions::Create">TableRetrieveInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcTable-TableRetrieveInstructions.html">TableRetrieveInstructions</a></tt></td><td class="method-name"><tt>TableRetrieveInstructions_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Position)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a data object containing instructions to retrieve a drawing table.<br>
+   Pass this function to <tt><a class="method" href="c-pfcTable-TableOwner.html#RetrieveTable">TableOwner.RetrieveTable(TableRetrieveInstructions)</a></tt>. or <tt><a class="method" href="c-pfcTable-TableOwner.html#RetrieveTableByOrigin">TableOwner.RetrieveTableByOrigin(TableRetrieveInstructions)</a></tt>.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#207">Drawings: Retrieving Drawing Tables</a>, <a href="../manual0/jdrawfns.html#215">Drawings: Retrieving Drawing Tables</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the table file.</dd>
+<dt>
+<tt><b>Position</b></tt>
+</dt>
+<dd>The location for the retrieved table.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TableCell::Create">TableCell_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcTable-TableCell.html">TableCell</a></tt></td><td class="method-name"><tt>TableCell_Create</tt></td><td class="method-params"><tt>
+ (int&nbsp;RowNumber, int&nbsp;ColumnNumber)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new data object representing a cell in drawing table.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#193">Drawings: Creating Drawing Cells</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>RowNumber</b></tt>
+</dt>
+<dd>The row number.  Row numbers range from 1 to the number of row in the table.</dd>
+<dt>
+<tt><b>ColumnNumber</b></tt>
+</dt>
+<dd>The column number.  Column numbers range from 1 to the number of columns in the table.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

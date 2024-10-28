@@ -1,0 +1,414 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcXSection.wfcXSection"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      663
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcXSection.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcXSection-wfcXSection.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcXSection</h2>
+<tt>
+     package <b><a href="p-wfcXSection.html">com.ptc.wfc.wfcXSection</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>wfcXSection</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "wfcXSection"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcXSection-XSectionComponents.html">XSectionComponents</a></tt></td><td class="method-summary"><tt><a class="method" href="#XSectionComponents::Create">XSectionComponents_Create</a>
+ (<a class="type" href="c-pfcAssembly-ComponentPaths.html">ComponentPaths</a>&nbsp;Components, boolean&nbsp;Exclude)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Returns <tt><tt><a class="class" href="c-wfcXSection-XSectionComponents.html">XSectionComponents</a></tt></tt> object
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcXSection-XSectionExcludeItems.html">XSectionExcludeItems</a></tt></td><td class="method-summary"><tt><a class="method" href="#XSectionExcludeItems::Create">XSectionExcludeItems_Create</a>
+ (<a class="type" href="c-pfcSelect-Selections.html">Selections</a>&nbsp;Items, boolean&nbsp;Exclude)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Create the XSectionExcludeItems object</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcXSection-XSectionHatch.html">XSectionHatch</a></tt></td><td class="method-summary"><tt><a class="method" href="#XSectionHatch::Create">XSectionHatch_Create</a>
+ (int&nbsp;Angle, double&nbsp;Spacing, double&nbsp;Offset)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns <tt><tt><a class="class" href="c-wfcXSection-XSectionHatch.html">XSectionHatch</a></tt></tt> object </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcXSection-XSectionHatchStyle.html">XSectionHatchStyle</a></tt></td><td class="method-summary"><tt><a class="method" href="#XSectionHatchStyle::Create">XSectionHatchStyle_Create</a>
+ (<a class="type" href="c-wfcXSection-XSectionHatchStyleType.html">XSectionHatchStyleType</a>&nbsp;Type, <a class="type" href="c-wfcXSection-XSectionNewHatches.html">XSectionNewHatches</a>&nbsp;NewHatches)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Create the XSectionHatchStyle object</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcXSection-XSectionNewHatch.html">XSectionNewHatch</a></tt></td><td class="method-summary"><tt><a class="method" href="#XSectionNewHatch::Create">XSectionNewHatch_Create</a>
+ (double&nbsp;Angle, 
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;Color)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Create the XSectionNewHatch object</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcXSection-XSectionOldHatch.html">XSectionOldHatch</a></tt></td><td class="method-summary"><tt><a class="method" href="#XSectionOldHatch::Create">XSectionOldHatch_Create</a>
+ (int&nbsp;Angle)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Create the XSectionOldHatch object</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="XSectionComponents::Create">XSectionComponents_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcXSection-XSectionComponents.html">XSectionComponents</a></tt></td><td class="method-name"><tt>XSectionComponents_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcAssembly-ComponentPaths.html">ComponentPaths</a>&nbsp;Components, boolean&nbsp;Exclude)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Returns <tt><tt><a class="class" href="c-wfcXSection-XSectionComponents.html">XSectionComponents</a></tt></tt> object
+      <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Components</b></tt>
+</dt>
+<dd>  Sequence of componets to exclude or include from cross section definition </dd>
+<dt>
+<tt><b>Exclude</b></tt>
+</dt>
+<dd>
+        Pass <t>true</t> to exclude components and <t>xfalse</t> to include
+      </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+        
+<tt><tt><a class="class" href="c-wfcXSection-XSectionHatch.html">XSectionHatch</a></tt></tt>
+      
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="XSectionExcludeItems::Create">XSectionExcludeItems_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcXSection-XSectionExcludeItems.html">XSectionExcludeItems</a></tt></td><td class="method-name"><tt>XSectionExcludeItems_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSelect-Selections.html">Selections</a>&nbsp;Items, boolean&nbsp;Exclude)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Create the XSectionExcludeItems object<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Items</b></tt>
+</dt>
+<dd>The components/bodies selections.</dd>
+<dt>
+<tt><b>Exclude</b></tt>
+</dt>
+<dd>
+<t>true</t> if excluded and <t>false</t> if not.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+   
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="XSectionHatch::Create">XSectionHatch_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcXSection-XSectionHatch.html">XSectionHatch</a></tt></td><td class="method-name"><tt>XSectionHatch_Create</tt></td><td class="method-params"><tt>
+ (int&nbsp;Angle, double&nbsp;Spacing, double&nbsp;Offset)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns <tt><tt><a class="class" href="c-wfcXSection-XSectionHatch.html">XSectionHatch</a></tt></tt> object <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#71">Cross Sections: Line Patterns of Cross Section Components</a>, <a href="../manual0/OTK_Cross_section.html#109">Cross Sections: Line Patterns of Cross Section Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Angle</b></tt>
+</dt>
+<dd> Specify angle for line pattern </dd>
+<dt>
+<tt><b>Spacing</b></tt>
+</dt>
+<dd> Specify spacing for line pattern </dd>
+<dt>
+<tt><b>Offset</b></tt>
+</dt>
+<dd> Specify offset for line pattern </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+       
+<tt><tt><a class="class" href="c-wfcXSection-XSectionHatch.html">XSectionHatch</a></tt></tt>
+   
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="XSectionOldHatch::Create">XSectionOldHatch_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcXSection-XSectionOldHatch.html">XSectionOldHatch</a></tt></td><td class="method-name"><tt>XSectionOldHatch_Create</tt></td><td class="method-params"><tt>
+ (int&nbsp;Angle)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Create the XSectionOldHatch object<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Angle</b></tt>
+</dt>
+<dd>Angle for old line pattern</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The XSectionOldHatch object
+      </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="XSectionNewHatch::Create">XSectionNewHatch_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcXSection-XSectionNewHatch.html">XSectionNewHatch</a></tt></td><td class="method-name"><tt>XSectionNewHatch_Create</tt></td><td class="method-params"><tt>
+ (double&nbsp;Angle, 
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;Color)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Create the XSectionNewHatch object<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Angle</b></tt>
+</dt>
+<dd>Angle for new line pattern</dd>
+<dt>
+<tt><b>Color</b></tt>
+</dt>
+<dd>Color for new line pattern</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The XSectionNewHatch object
+      </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="XSectionHatchStyle::Create">XSectionHatchStyle_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcXSection-XSectionHatchStyle.html">XSectionHatchStyle</a></tt></td><td class="method-name"><tt>XSectionHatchStyle_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcXSection-XSectionHatchStyleType.html">XSectionHatchStyleType</a>&nbsp;Type, <a class="type" href="c-wfcXSection-XSectionNewHatches.html">XSectionNewHatches</a>&nbsp;NewHatches)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Create the XSectionHatchStyle object<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The section hatch style</dd>
+<dt>
+<tt><b>NewHatches</b></tt>
+</dt>
+<dd>The new line hatch object sequence</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The XSectionHatchStyle object.
+   </dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

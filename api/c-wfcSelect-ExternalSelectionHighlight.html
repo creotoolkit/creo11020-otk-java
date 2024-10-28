@@ -1,0 +1,226 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcSelect.ExternalSelectionHighlight"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      277
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcSelect.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcSelect-ExternalSelectionHighlight.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;ExternalSelectionHighlight</h2>
+<tt>
+     package 
+     <b><a href="p-wfcSelect.html">com.ptc.wfc.wfcSelect</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>ExternalSelectionHighlight</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcBase-ApplicationCallback.html">com.ptc.pfc.pfcBase.ApplicationCallback</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>
+    Notification methods for external application media (like a tree) react on selections made
+    while calling or while in <tt><a class="method" href="c-pfcSession-BaseSession.html#Select">BaseSession.Select(SelectionOptions, /*optional*/ Selections)</a></tt>.
+  <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Action">Action</a>
+ (<a class="type" href="c-wfcSelect-WSelection.html">WSelection</a>&nbsp;Selection, boolean&nbsp;HighLight)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Action method to be called when selection is made </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#EndNotify">EndNotify</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+     Method to be called when applications is about to exit from <tt><a class="method" href="c-pfcSession-BaseSession.html#Select">BaseSession.Select(SelectionOptions, /*optional*/ Selections)</a></tt> </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#StartNotify">StartNotify</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Method to be called when applications is entering in <tt><a class="method" href="c-pfcSession-BaseSession.html#Select">BaseSession.Select(SelectionOptions, /*optional*/ Selections)</a></tt>
+ </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="StartNotify">StartNotify</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>StartNotify</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Method to be called when applications is entering in <tt><a class="method" href="c-pfcSession-BaseSession.html#Select">BaseSession.Select(SelectionOptions, /*optional*/ Selections)</a></tt>
+ 
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JExtern.html#27">External Data: Selecting the Node from the External Application Tree</a>, <a href="../manual0/JExtern.html#31">External Data: Selecting the Node from the External Application Tree</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Action">Action</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>Action</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcSelect-WSelection.html">WSelection</a>&nbsp;Selection, boolean&nbsp;HighLight)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Action method to be called when selection is made <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JExtern.html#28">External Data: Selecting the Node from the External Application Tree</a>, <a href="../manual0/JExtern.html#31">External Data: Selecting the Node from the External Application Tree</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Selection</b></tt>
+</dt>
+<dd> Selection </dd>
+<dt>
+<tt><b>HighLight</b></tt>
+</dt>
+<dd> Whether to highlight selection </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="EndNotify">EndNotify</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>EndNotify</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+     Method to be called when applications is about to exit from <tt><a class="method" href="c-pfcSession-BaseSession.html#Select">BaseSession.Select(SelectionOptions, /*optional*/ Selections)</a></tt> 
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JExtern.html#29">External Data: Selecting the Node from the External Application Tree</a>, <a href="../manual0/JExtern.html#31">External Data: Selecting the Node from the External Application Tree</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

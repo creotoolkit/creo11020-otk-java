@@ -1,0 +1,532 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcSolid.RegenInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      576
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcSolid.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcSolid-RegenInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;RegenInstructions</h2>
+<tt>
+     package 
+     <b><a href="p-pfcSolid.html">com.ptc.pfc.pfcSolid</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>RegenInstructions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class describes the instructions for regenerating the solid.
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-wfcSolidInstructions-WRegenInstructions.html">WRegenInstructions</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#AllowFixUI">GetAllowFixUI</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "AllowFixUI"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If this is <tt>true</tt>, the <b>Fix Model</b> interface is displayed if there is an error. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#ForceRegen">GetForceRegen</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ForceRegen"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Forces the solid to fully regenerate. This will regenerate every feature in the solid. If not set, Creo Parametric uses its internal algorithm to determine which features to regenerate.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFeature-Feature.html">Feature</a></tt></td><td class="method-summary"><tt><a class="method" href="#FromFeat">GetFromFeat</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "FromFeat"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Not used. Reserved for the future.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#RefreshModelTree">GetRefreshModelTree</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "RefreshModelTree"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If this is <tt>true</tt>, refresh the Creo Parametric Model Tree after the regeneration.  If this is <tt>false</tt> (the default) the tree is not refreshed.  A model must be active to use this attribute. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#ResolveModeRegen">GetResolveModeRegen</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ResolveModeRegen"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Regenerate in resolve mode</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#ResumeExcludedComponents">GetResumeExcludedComponents</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ResumeExcludedComponents"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Enables Creo Parametric to resume available excluded components of the simplified representation during regeneration. This can result in a more accurate update of the simplified representation.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#UpdateAssemblyOnly">GetUpdateAssemblyOnly</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "UpdateAssemblyOnly"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Updates assembly and sub-assembly placements and regenerates assembly features and intersected parts. If the affected assembly is retrieved as a simplified representation, this flag will update the locations of the components.If the flag is not set, the component locations are not updated by default when the simplified representation is retrieved.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#UpdateInstances">GetUpdateInstances</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "UpdateInstances"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Updates instances of the solid in memory. This may slow down the regeneration process.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AllowFixUI">SetAllowFixUI</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "AllowFixUI"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If this is <tt>true</tt>, the <b>Fix Model</b> interface is displayed if there is an error. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ForceRegen">SetForceRegen</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ForceRegen"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Forces the solid to fully regenerate. This will regenerate every feature in the solid. If not set, Creo Parametric uses its internal algorithm to determine which features to regenerate.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#FromFeat">SetFromFeat</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "FromFeat"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Not used. Reserved for the future.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#RefreshModelTree">SetRefreshModelTree</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "RefreshModelTree"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If this is <tt>true</tt>, refresh the Creo Parametric Model Tree after the regeneration.  If this is <tt>false</tt> (the default) the tree is not refreshed.  A model must be active to use this attribute. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ResolveModeRegen">SetResolveModeRegen</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ResolveModeRegen"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Regenerate in resolve mode</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ResumeExcludedComponents">SetResumeExcludedComponents</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ResumeExcludedComponents"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Enables Creo Parametric to resume available excluded components of the simplified representation during regeneration. This can result in a more accurate update of the simplified representation.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#UpdateAssemblyOnly">SetUpdateAssemblyOnly</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "UpdateAssemblyOnly"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Updates assembly and sub-assembly placements and regenerates assembly features and intersected parts. If the affected assembly is retrieved as a simplified representation, this flag will update the locations of the components.If the flag is not set, the component locations are not updated by default when the simplified representation is retrieved.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#UpdateInstances">SetUpdateInstances</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "UpdateInstances"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Updates instances of the solid in memory. This may slow down the regeneration process.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AllowFixUI">GetAllowFixUI/SetAllowFixUI</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetAllowFixUI</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetAllowFixUI</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>If this is <tt>true</tt>, the <b>Fix Model</b> interface is displayed if there is an error. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#55">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ForceRegen">GetForceRegen/SetForceRegen</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetForceRegen</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetForceRegen</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Forces the solid to fully regenerate. This will regenerate every feature in the solid. If not set, Creo Parametric uses its internal algorithm to determine which features to regenerate.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#56">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ResumeExcludedComponents">GetResumeExcludedComponents/SetResumeExcludedComponents</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetResumeExcludedComponents</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetResumeExcludedComponents</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Enables Creo Parametric to resume available excluded components of the simplified representation during regeneration. This can result in a more accurate update of the simplified representation.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#59">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UpdateAssemblyOnly">GetUpdateAssemblyOnly/SetUpdateAssemblyOnly</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetUpdateAssemblyOnly</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetUpdateAssemblyOnly</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Updates assembly and sub-assembly placements and regenerates assembly features and intersected parts. If the affected assembly is retrieved as a simplified representation, this flag will update the locations of the components.If the flag is not set, the component locations are not updated by default when the simplified representation is retrieved.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#60">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UpdateInstances">GetUpdateInstances/SetUpdateInstances</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetUpdateInstances</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetUpdateInstances</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Updates instances of the solid in memory. This may slow down the regeneration process.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#61">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ResolveModeRegen">GetResolveModeRegen/SetResolveModeRegen</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetResolveModeRegen</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetResolveModeRegen</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Regenerate in resolve mode<br>
+<br>Allows temporary override of default settings 
+      controlling regeneration behavior.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#62">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#63">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FromFeat">GetFromFeat/SetFromFeat</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFeature-Feature.html">Feature</a></tt></td><td class="method-name"><tt>GetFromFeat</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetFromFeat</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Not used. Reserved for the future.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#57">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RefreshModelTree">GetRefreshModelTree/SetRefreshModelTree</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetRefreshModelTree</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetRefreshModelTree</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>If this is <tt>true</tt>, refresh the Creo Parametric Model Tree after the regeneration.  If this is <tt>false</tt> (the default) the tree is not refreshed.  A model must be active to use this attribute. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSolid.html#58">Solid: Regenerating a Solid</a>, <a href="../manual0/JSolid.html#75">Solid: Regenerating a Solid</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

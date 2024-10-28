@@ -1,0 +1,425 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcRelations.RelationFunctionOptions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      580
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcRelations.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcRelations-RelationFunctionOptions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;RelationFunctionOptions</h2>
+<tt>
+     package 
+     <b><a href="p-pfcRelations.html">com.ptc.pfc.pfcRelations</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>RelationFunctionOptions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Options to enable/disable various relation function related 
+ features.<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcRelations-RelationFunctionArguments.html">RelationFunctionArguments</a></tt></td><td class="method-summary"><tt><a class="method" href="#ArgumentTypes">GetArgumentTypes</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ArgumentTypes"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The types of arguments permitted 
+ by the relation function. Default is <tt>null</tt>, indicating that no 
+ arguments are permitted.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#EnableArgumentCheckMethod">GetEnableArgumentCheckMethod</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "EnableArgumentCheckMethod"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+ Turn the method (using 
+ <tt><a class="method" href="c-pfcRelations-RelationFunctionListener.html#CheckArguments">RelationFunctionListener.CheckArguments(RelationOwner, String, ParamValues)</a></tt>) 
+ on/off. Default is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#EnableExpressionEvaluationMethod">GetEnableExpressionEvaluationMethod</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "EnableExpressionEvaluationMethod"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+ Turn the method (using 
+ <tt><a class="method" href="c-pfcRelations-RelationFunctionListener.html#EvaluateFunction">RelationFunctionListener.EvaluateFunction(RelationOwner, String, ParamValues)</a></tt>)
+ on/off. Default is <tt>true</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#EnableTypeChecking">GetEnableTypeChecking</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "EnableTypeChecking"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Turn argument type 
+ checking (using 
+ <tt><a class="method" href="c-pfcRelations-RelationFunctionOptions.html#ArgumentTypes">RelationFunctionOptions.GetArgumentTypes(/*optional*/ RelationFunctionArguments)</a></tt>) 
+ on/off.  Default is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#EnableValueAssignmentMethod">GetEnableValueAssignmentMethod</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "EnableValueAssignmentMethod"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+ Turn <tt><a class="method" href="c-pfcRelations-RelationFunctionListener.html#AssignValue">RelationFunctionListener.AssignValue(RelationOwner, String, ParamValues, ParamValue)</a></tt>
+ on/off. Default is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ArgumentTypes">SetArgumentTypes</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcRelations-RelationFunctionArguments.html">RelationFunctionArguments</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ArgumentTypes"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The types of arguments permitted 
+ by the relation function. Default is <tt>null</tt>, indicating that no 
+ arguments are permitted.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#EnableArgumentCheckMethod">SetEnableArgumentCheckMethod</a>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "EnableArgumentCheckMethod"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+ Turn the method (using 
+ <tt><a class="method" href="c-pfcRelations-RelationFunctionListener.html#CheckArguments">RelationFunctionListener.CheckArguments(RelationOwner, String, ParamValues)</a></tt>) 
+ on/off. Default is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#EnableExpressionEvaluationMethod">SetEnableExpressionEvaluationMethod</a>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "EnableExpressionEvaluationMethod"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+ Turn the method (using 
+ <tt><a class="method" href="c-pfcRelations-RelationFunctionListener.html#EvaluateFunction">RelationFunctionListener.EvaluateFunction(RelationOwner, String, ParamValues)</a></tt>)
+ on/off. Default is <tt>true</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#EnableTypeChecking">SetEnableTypeChecking</a>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "EnableTypeChecking"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Turn argument type 
+ checking (using 
+ <tt><a class="method" href="c-pfcRelations-RelationFunctionOptions.html#ArgumentTypes">RelationFunctionOptions.GetArgumentTypes(/*optional*/ RelationFunctionArguments)</a></tt>) 
+ on/off.  Default is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#EnableValueAssignmentMethod">SetEnableValueAssignmentMethod</a>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "EnableValueAssignmentMethod"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+ Turn <tt><a class="method" href="c-pfcRelations-RelationFunctionListener.html#AssignValue">RelationFunctionListener.AssignValue(RelationOwner, String, ParamValues, ParamValue)</a></tt>
+ on/off. Default is <tt>false</tt>.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ArgumentTypes">GetArgumentTypes/SetArgumentTypes</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcRelations-RelationFunctionArguments.html">RelationFunctionArguments</a></tt></td><td class="method-name"><tt>GetArgumentTypes</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetArgumentTypes</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcRelations-RelationFunctionArguments.html">RelationFunctionArguments</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The types of arguments permitted 
+ by the relation function. Default is <tt>null</tt>, indicating that no 
+ arguments are permitted.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JRelations.html#18">Relations: Relation Function Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="EnableTypeChecking">GetEnableTypeChecking/SetEnableTypeChecking</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>GetEnableTypeChecking</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetEnableTypeChecking</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Turn argument type 
+ checking (using 
+ <tt><a class="method" href="c-pfcRelations-RelationFunctionOptions.html#ArgumentTypes">RelationFunctionOptions.GetArgumentTypes(/*optional*/ RelationFunctionArguments)</a></tt>) 
+ on/off.  Default is <tt>false</tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JRelations.html#22">Relations: Relation Function Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="EnableArgumentCheckMethod">GetEnableArgumentCheckMethod/SetEnableArgumentCheckMethod</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>GetEnableArgumentCheckMethod</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetEnableArgumentCheckMethod</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+ Turn the method (using 
+ <tt><a class="method" href="c-pfcRelations-RelationFunctionListener.html#CheckArguments">RelationFunctionListener.CheckArguments(RelationOwner, String, ParamValues)</a></tt>) 
+ on/off. Default is <tt>false</tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JRelations.html#23">Relations: Relation Function Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="EnableExpressionEvaluationMethod">GetEnableExpressionEvaluationMethod/SetEnableExpressionEvaluationMethod</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>GetEnableExpressionEvaluationMethod</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetEnableExpressionEvaluationMethod</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+ Turn the method (using 
+ <tt><a class="method" href="c-pfcRelations-RelationFunctionListener.html#EvaluateFunction">RelationFunctionListener.EvaluateFunction(RelationOwner, String, ParamValues)</a></tt>)
+ on/off. Default is <tt>true</tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JRelations.html#24">Relations: Relation Function Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="EnableValueAssignmentMethod">GetEnableValueAssignmentMethod/SetEnableValueAssignmentMethod</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>GetEnableValueAssignmentMethod</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetEnableValueAssignmentMethod</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+ Turn <tt><a class="method" href="c-pfcRelations-RelationFunctionListener.html#AssignValue">RelationFunctionListener.AssignValue(RelationOwner, String, ParamValues, ParamValue)</a></tt>
+ on/off. Default is <tt>false</tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JRelations.html#25">Relations: Relation Function Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

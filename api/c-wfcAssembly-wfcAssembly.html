@@ -1,0 +1,563 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcAssembly.wfcAssembly"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      640
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcAssembly.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcAssembly-wfcAssembly.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcAssembly</h2>
+<tt>
+     package <b><a href="p-wfcAssembly.html">com.ptc.wfc.wfcAssembly</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>wfcAssembly</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "wfcAssembly"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcAssembly-AssemblyDistanceRule.html">AssemblyDistanceRule</a></tt></td><td class="method-summary"><tt><a class="method" href="#AssemblyDistanceRule::Create">AssemblyDistanceRule_Create</a>
+ (<a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;Center, double&nbsp;Distance, boolean&nbsp;IncludeDatums)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Create an object of AssemblyDistanceRule.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcAssembly-AssemblyExpressionRule.html">AssemblyExpressionRule</a></tt></td><td class="method-summary"><tt><a class="method" href="#AssemblyExpressionRule::Create">AssemblyExpressionRule_Create</a>
+ (<a class="type" href="c-stdcols-stringseq.html">stringseq</a>&nbsp;Expressions)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Create an object of AssemblyExpressionRule.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcAssembly-AssemblyNameRule.html">AssemblyNameRule</a></tt></td><td class="method-summary"><tt><a class="method" href="#AssemblyNameRule::Create">AssemblyNameRule_Create</a>
+ (String&nbsp;NameMask)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Create an object of AssemblyNameRule.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcAssembly-AssemblySimpRepRule.html">AssemblySimpRepRule</a></tt></td><td class="method-summary"><tt><a class="method" href="#AssemblySimpRepRule::Create">AssemblySimpRepRule_Create</a>
+ (<a class="type" href="c-pfcSimpRep-SimpRep.html">SimpRep</a>&nbsp;RuleSimpRep)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Create an object of AssemblySimpRepRule.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcAssembly-AssemblySizeRule.html">AssemblySizeRule</a></tt></td><td class="method-summary"><tt><a class="method" href="#AssemblySizeRule::Create">AssemblySizeRule_Create</a>
+ (boolean&nbsp;Absolute, boolean&nbsp;GreaterThan, boolean&nbsp;IncludeDatums, double&nbsp;Value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Create an object of AssemblySizeRule.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcAssembly-AssemblyZoneRule.html">AssemblyZoneRule</a></tt></td><td class="method-summary"><tt><a class="method" href="#AssemblyZoneRule::Create">AssemblyZoneRule_Create</a>
+ (<a class="type" href="c-wfcFeature-WFeature.html">WFeature</a>&nbsp;ZoneFeature)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Create an object of AssemblyZoneRule. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcAssembly-ExplodedAnimationMove.html">ExplodedAnimationMove</a></tt></td><td class="method-summary"><tt><a class="method" href="#ExplodedAnimationMove::Create">ExplodedAnimationMove_Create</a>
+ (<a class="type" href="c-wfcAssembly-ExplodedAnimationMoveType.html">ExplodedAnimationMoveType</a>&nbsp;MoveType, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;StartPoint, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;DirVector, double&nbsp;Value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates object of ExplodedAnimationMove</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcAssembly-ExplodedAnimationMoveInstruction.html">ExplodedAnimationMoveInstruction</a></tt></td><td class="method-summary"><tt><a class="method" href="#ExplodedAnimationMoveInstruction::Create">ExplodedAnimationMoveInstruction_Create</a>
+ (<a class="type" href="c-wfcAssembly-WComponentPaths.html">WComponentPaths</a>&nbsp;CompSet, <a class="type" href="c-wfcAssembly-ExplodedAnimationMove.html">ExplodedAnimationMove</a>&nbsp;Move)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates object of ExplodedAnimationMoveInstruction</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AssemblyNameRule::Create">AssemblyNameRule_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcAssembly-AssemblyNameRule.html">AssemblyNameRule</a></tt></td><td class="method-name"><tt>AssemblyNameRule_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;NameMask)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Create an object of AssemblyNameRule.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#164">Assemblies and Components: Gathering Components by Model Name</a>, <a href="../manual0/jassembly.html#166">Assemblies and Components: Gathering Components by Model Name</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>NameMask</b></tt>
+</dt>
+<dd>The name to use in the rule.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The AssemblyNameRule object. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AssemblySizeRule::Create">AssemblySizeRule_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcAssembly-AssemblySizeRule.html">AssemblySizeRule</a></tt></td><td class="method-name"><tt>AssemblySizeRule_Create</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;Absolute, boolean&nbsp;GreaterThan, boolean&nbsp;IncludeDatums, double&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Create an object of AssemblySizeRule.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#168">Assemblies and Components: Gathering Components by Size</a>, <a href="../manual0/jassembly.html#176">Assemblies and Components: Gathering Components by Size</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Absolute</b></tt>
+</dt>
+<dd>Specify Absolute (<tt>true</tt>) or Relative (<tt>false</tt>) size.</dd>
+<dt>
+<tt><b>GreaterThan</b></tt>
+</dt>
+<dd>Specify greater (<tt>true</tt>) or lesser (<tt>false</tt>) than size. </dd>
+<dt>
+<tt><b>IncludeDatums</b></tt>
+</dt>
+<dd>Specify bounding box (<tt>true</tt>) or regeneration outline (<tt>false</tt>).</dd>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>Size to compare against.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The AssemblySizeRule object. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AssemblyExpressionRule::Create">AssemblyExpressionRule_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcAssembly-AssemblyExpressionRule.html">AssemblyExpressionRule</a></tt></td><td class="method-name"><tt>AssemblyExpressionRule_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-stdcols-stringseq.html">stringseq</a>&nbsp;Expressions)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Create an object of AssemblyExpressionRule.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#182">Assemblies and Components: Gathering Components by Parameters</a>, <a href="../manual0/jassembly.html#184">Assemblies and Components: Gathering Components by Parameters</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Expressions</b></tt>
+</dt>
+<dd>The parameter expression(s).</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The AssemblyExpressionRule object. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AssemblyZoneRule::Create">AssemblyZoneRule_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcAssembly-AssemblyZoneRule.html">AssemblyZoneRule</a></tt></td><td class="method-name"><tt>AssemblyZoneRule_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcFeature-WFeature.html">WFeature</a>&nbsp;ZoneFeature)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Create an object of AssemblyZoneRule. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#186">Assemblies and Components: Gathering Components by Zone</a>, <a href="../manual0/jassembly.html#188">Assemblies and Components: Gathering Components by Zone</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ZoneFeature</b></tt>
+</dt>
+<dd>The zone feature. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The AssemblyZoneRule object. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AssemblySimpRepRule::Create">AssemblySimpRepRule_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcAssembly-AssemblySimpRepRule.html">AssemblySimpRepRule</a></tt></td><td class="method-name"><tt>AssemblySimpRepRule_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSimpRep-SimpRep.html">SimpRep</a>&nbsp;RuleSimpRep)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Create an object of AssemblySimpRepRule.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#178">Assemblies and Components: Gathering Components by Simplified Representation</a>, <a href="../manual0/jassembly.html#180">Assemblies and Components: Gathering Components by Simplified Representation</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>RuleSimpRep</b></tt>
+</dt>
+<dd>The simprep to use.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The AssemblySimpRepRule object. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AssemblyDistanceRule::Create">AssemblyDistanceRule_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcAssembly-AssemblyDistanceRule.html">AssemblyDistanceRule</a></tt></td><td class="method-name"><tt>AssemblyDistanceRule_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;Center, double&nbsp;Distance, boolean&nbsp;IncludeDatums)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Create an object of AssemblyDistanceRule.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#190">Assemblies and Components: Gathering Components by Distance from a Point</a>, <a href="../manual0/jassembly.html#196">Assemblies and Components: Gathering Components by Distance from a Point</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Center</b></tt>
+</dt>
+<dd>The center point. </dd>
+<dt>
+<tt><b>Distance</b></tt>
+</dt>
+<dd>The distance from center point. </dd>
+<dt>
+<tt><b>IncludeDatums</b></tt>
+</dt>
+<dd>Specify bounding box (<tt>true</tt>) or 
+   regeneration outline (<tt>false</tt>). </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The AssemblyDistanceRule object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ExplodedAnimationMove::Create">ExplodedAnimationMove_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcAssembly-ExplodedAnimationMove.html">ExplodedAnimationMove</a></tt></td><td class="method-name"><tt>ExplodedAnimationMove_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcAssembly-ExplodedAnimationMoveType.html">ExplodedAnimationMoveType</a>&nbsp;MoveType, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;StartPoint, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;DirVector, double&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates object of ExplodedAnimationMove<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#121">Assemblies and Components: Accessing Exploded States</a>, <a href="../manual0/jassembly.html#129">Assemblies and Components: Accessing Exploded States</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>MoveType</b></tt>
+</dt>
+<dd>Exploded animation move type</dd>
+<dt>
+<tt><b>StartPoint</b></tt>
+</dt>
+<dd>Start point of translation direction or rotation axis</dd>
+<dt>
+<tt><b>DirVector</b></tt>
+</dt>
+<dd>Direction vector of translation direction or rotation axis</dd>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>distance or angle</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ExplodedAnimationMoveInstruction::Create">ExplodedAnimationMoveInstruction_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcAssembly-ExplodedAnimationMoveInstruction.html">ExplodedAnimationMoveInstruction</a></tt></td><td class="method-name"><tt>ExplodedAnimationMoveInstruction_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcAssembly-WComponentPaths.html">WComponentPaths</a>&nbsp;CompSet, <a class="type" href="c-wfcAssembly-ExplodedAnimationMove.html">ExplodedAnimationMove</a>&nbsp;Move)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates object of ExplodedAnimationMoveInstruction<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#116">Assemblies and Components: Accessing Exploded States</a>, <a href="../manual0/jassembly.html#129">Assemblies and Components: Accessing Exploded States</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CompSet</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Move</b></tt>
+</dt>
+<dd>
+        
+<tt><tt><a class="class" href="c-wfcAssembly-ExplodedAnimationMove.html">ExplodedAnimationMove</a></tt></tt> 
+      
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

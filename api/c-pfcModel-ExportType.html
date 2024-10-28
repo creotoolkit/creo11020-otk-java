@@ -1,0 +1,1225 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcModel.ExportType"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      190
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcModel.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcModel-ExportType.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;ExportType</h2>
+<tt>
+     package 
+     <b><a href="p-pfcModel.html">com.ptc.pfc.pfcModel</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       class&nbsp;<b>ExportType</b>
+<br>&nbsp;
+       implements&nbsp;<a class="bold" href="c-cipjava-jxenum.html">jxenum</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Enumeration of the available export-instructions classes.
+  <br>
+<br>These enumeration objects are used to indicate the type of export to perform. These enumeration objects are returned by the GetFileType() method of those classes.
+  <br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="field-summary">
+<tr>
+<th colspan="2" class="field-summary">Field Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_RELATION</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_RELATION" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-RelationExportInstructions.html">RelationExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_RELATION</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_RELATION" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-RelationExportInstructions.html">RelationExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_MODEL_INFO</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_MODEL_INFO" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-ModelInfoExportInstructions.html">ModelInfoExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_MODEL_INFO</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_MODEL_INFO" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-ModelInfoExportInstructions.html">ModelInfoExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_PROGRAM</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_PROGRAM" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-ProgramExportInstructions.html">ProgramExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_PROGRAM</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_PROGRAM" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-ProgramExportInstructions.html">ProgramExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_IGES</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_IGES" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-IGESFileExportInstructions.html">IGESFileExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_IGES</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_IGES" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-IGESFileExportInstructions.html">IGESFileExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_DXF</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_DXF" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-DXFExportInstructions.html">DXFExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_DXF</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_DXF" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-DXFExportInstructions.html">DXFExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_RENDER</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_RENDER" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-RenderExportInstructions.html">RenderExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_RENDER</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_RENDER" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-RenderExportInstructions.html">RenderExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_STL_ASCII</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_STL_ASCII" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-STLASCIIExportInstructions.html">STLASCIIExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_STL_ASCII</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_STL_ASCII" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-STLASCIIExportInstructions.html">STLASCIIExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_STL_BINARY</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_STL_BINARY" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-STLBinaryExportInstructions.html">STLBinaryExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_STL_BINARY</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_STL_BINARY" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-STLBinaryExportInstructions.html">STLBinaryExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_BOM</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_BOM" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-BOMExportInstructions.html">BOMExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_BOM</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_BOM" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-BOMExportInstructions.html">BOMExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_DWG_SETUP</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_DWG_SETUP" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-DWGSetupExportInstructions.html">DWGSetupExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_DWG_SETUP</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_DWG_SETUP" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-DWGSetupExportInstructions.html">DWGSetupExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_FEAT_INFO</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_FEAT_INFO" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-FeatInfoExportInstructions.html">FeatInfoExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_FEAT_INFO</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_FEAT_INFO" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-FeatInfoExportInstructions.html">FeatInfoExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_MFG_OPER_CL</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_MFG_OPER_CL" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-MFGOperCLExportInstructions.html">MFGOperCLExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_MFG_OPER_CL</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_MFG_OPER_CL" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-MFGOperCLExportInstructions.html">MFGOperCLExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_MFG_FEAT_CL</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_MFG_FEAT_CL" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-MFGFeatCLExportInstructions.html">MFGFeatCLExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_MFG_FEAT_CL</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_MFG_FEAT_CL" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-MFGFeatCLExportInstructions.html">MFGFeatCLExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_MATERIAL</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_MATERIAL" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-MaterialExportInstructions.html">MaterialExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_MATERIAL</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_MATERIAL" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-MaterialExportInstructions.html">MaterialExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_IGES_3D</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_IGES_3D" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcExport-IGES3DNewExportInstructions.html">IGES3DNewExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_IGES_3D</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_IGES_3D" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcExport-IGES3DNewExportInstructions.html">IGES3DNewExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_STEP</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_STEP" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcExport-STEP3DExportInstructions.html">STEP3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_STEP</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_STEP" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcExport-STEP3DExportInstructions.html">STEP3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_VDA</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_VDA" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcExport-VDA3DExportInstructions.html">VDA3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_VDA</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_VDA" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcExport-VDA3DExportInstructions.html">VDA3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_CGM</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_CGM" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-CGMFILEExportInstructions.html">CGMFILEExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_CGM</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_CGM" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-CGMFILEExportInstructions.html">CGMFILEExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_INVENTOR</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_INVENTOR" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-InventorExportInstructions.html">InventorExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_INVENTOR</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_INVENTOR" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-InventorExportInstructions.html">InventorExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_FIAT</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_FIAT" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-FIATExportInstructions.html">FIATExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_FIAT</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_FIAT" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-FIATExportInstructions.html">FIATExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_CONNECTOR_PARAMS</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_CONNECTOR_PARAMS" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-ConnectorParamExportInstructions.html">ConnectorParamExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_CONNECTOR_PARAMS</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_CONNECTOR_PARAMS" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-ConnectorParamExportInstructions.html">ConnectorParamExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_CABLE_PARAMS</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_CABLE_PARAMS" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-CableParamsFileInstructions.html">CableParamsFileInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_CABLE_PARAMS</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_CABLE_PARAMS" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-CableParamsFileInstructions.html">CableParamsFileInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_CATIAFACETS</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_CATIAFACETS" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-CATIAFacetsExportInstructions.html">CATIAFacetsExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_CATIAFACETS</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_CATIAFACETS" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-CATIAFacetsExportInstructions.html">CATIAFacetsExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_PLOT</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_PLOT" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-PlotInstructions.html">PlotInstructions</a></tt></tt> objects.
+   This export-instructions class has been superseeded by 
+   <tt><tt><a class="class" href="c-pfcExport-PrinterInstructions.html">PrinterInstructions</a></tt></tt> objects.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_PLOT</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_PLOT" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-PlotInstructions.html">PlotInstructions</a></tt></tt> objects.
+   This export-instructions class has been superseeded by 
+   <tt><tt><a class="class" href="c-pfcExport-PrinterInstructions.html">PrinterInstructions</a></tt></tt> objects.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_VRML</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_VRML" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-VRMLExportInstructions.html">VRMLExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_VRML</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_VRML" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-VRMLExportInstructions.html">VRMLExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_CATIA_MODEL</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_CATIA_MODEL" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcExport-CATIAModel3DExportInstructions.html">CATIAModel3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_CATIA_MODEL</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_CATIA_MODEL" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcExport-CATIAModel3DExportInstructions.html">CATIAModel3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_ACIS</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_ACIS" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcExport-ACIS3DExportInstructions.html">ACIS3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_ACIS</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_ACIS" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcExport-ACIS3DExportInstructions.html">ACIS3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_CATIA_SESSION</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_CATIA_SESSION" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcExport-CATIASession3DExportInstructions.html">CATIASession3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_CATIA_SESSION</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_CATIA_SESSION" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcExport-CATIASession3DExportInstructions.html">CATIASession3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_CADDS</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_CADDS" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcExport-CADDSExportInstructions.html">CADDSExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_CADDS</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_CADDS" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcExport-CADDSExportInstructions.html">CADDSExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_STEP_2D</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_STEP_2D" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-STEP2DExportInstructions.html">STEP2DExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_STEP_2D</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_STEP_2D" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-STEP2DExportInstructions.html">STEP2DExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_MEDUSA</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_MEDUSA" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-MedusaExportInstructions.html">MedusaExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_MEDUSA</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_MEDUSA" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcModel-MedusaExportInstructions.html">MedusaExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_NEUTRAL</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_NEUTRAL" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcExport-NEUTRALFileExportInstructions.html">NEUTRALFileExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_NEUTRAL</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_NEUTRAL" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by <tt><tt><a class="class" href="c-pfcExport-NEUTRALFileExportInstructions.html">NEUTRALFileExportInstructions</a></tt></tt> objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_PRODUCTVIEW</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_PRODUCTVIEW" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-ProductViewExportInstructions.html">ProductViewExportInstructions</a></tt></tt> objects.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_PRODUCTVIEW</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_PRODUCTVIEW" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-ProductViewExportInstructions.html">ProductViewExportInstructions</a></tt></tt> objects.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_PDF</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_PDF" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-PDFExportInstructions.html">PDFExportInstructions</a></tt></tt> objects.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_PDF</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_PDF" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-PDFExportInstructions.html">PDFExportInstructions</a></tt></tt> objects.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_JT</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_JT" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-JT3DExportInstructions.html">JT3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_JT</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_JT" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-JT3DExportInstructions.html">JT3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_UG</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_UG" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-UG3DExportInstructions.html">UG3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_UG</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_UG" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-UG3DExportInstructions.html">UG3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_CATIA_PART</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_CATIA_PART" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-CatiaPart3DExportInstructions.html">CatiaPart3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_CATIA_PART</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_CATIA_PART" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-CatiaPart3DExportInstructions.html">CatiaPart3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_CATIA_PRODUCT</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_CATIA_PRODUCT" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-CatiaProduct3DExportInstructions.html">CatiaProduct3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_CATIA_PRODUCT</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_CATIA_PRODUCT" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-CatiaProduct3DExportInstructions.html">CatiaProduct3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_CATIA_CGR</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_CATIA_CGR" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-CatiaCGR3DExportInstructions.html">CatiaCGR3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_CATIA_CGR</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_CATIA_CGR" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-CatiaCGR3DExportInstructions.html">CatiaCGR3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_PARASOLID</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_PARASOLID" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-ParaSolid3DExportInstructions.html">ParaSolid3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_PARASOLID</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_PARASOLID" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-ParaSolid3DExportInstructions.html">ParaSolid3DExportInstructions</a></tt></tt> objects.
+    <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_PRINT</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_PRINT" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-PrinterInstructions.html">PrinterInstructions</a></tt></tt> objects.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_PRINT</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_PRINT" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-PrinterInstructions.html">PrinterInstructions</a></tt></tt> objects.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_INTF_DXF</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_INTF_DXF" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-DXF3DExportInstructions.html">DXF3DExportInstructions</a></tt></tt> objects.
+     <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_INTF_DXF</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_INTF_DXF" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-DXF3DExportInstructions.html">DXF3DExportInstructions</a></tt></tt> objects.
+     <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_INTF_DWG</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_INTF_DWG" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-DWG3DExportInstructions.html">DWG3DExportInstructions</a></tt></tt> objects.
+      <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_INTF_DWG</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_INTF_DWG" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returned by 
+   <tt><tt><a class="class" href="c-pfcExport-DWG3DExportInstructions.html">DWG3DExportInstructions</a></tt></tt> objects.
+      <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_INTF_SW_PART</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_INTF_SW_PART" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+     Returned by
+     <tt><tt><a class="class" href="c-pfcExport-SWPart3DExportInstructions.html">SWPart3DExportInstructions</a></tt></tt> objects.
+     <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_INTF_SW_PART</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_INTF_SW_PART" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+     Returned by
+     <tt><tt><a class="class" href="c-pfcExport-SWPart3DExportInstructions.html">SWPart3DExportInstructions</a></tt></tt> objects.
+     <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_INTF_SW_ASSEM</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_INTF_SW_ASSEM" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+     Returned by
+     <tt><tt><a class="class" href="c-pfcExport-SWAsm3DExportInstructions.html">SWAsm3DExportInstructions</a></tt></tt> objects.
+     <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_INTF_SW_ASSEM</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_INTF_SW_ASSEM" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+     Returned by
+     <tt><tt><a class="class" href="c-pfcExport-SWAsm3DExportInstructions.html">SWAsm3DExportInstructions</a></tt></tt> objects.
+     <b>NOTE:</b> Use superseding method <tt><tt>
+   &lt;reference 6 to unknown entity pfcModel::ExportIntf3D&gt;
+  </tt></tt> to export this type.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_EXPORT_INTF_3MF</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Integer value of enum value 
+        "EXPORT_INTF_3MF" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="field-summary"><tt><b>EXPORT_INTF_3MF</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Object value of enum value 
+        "EXPORT_INTF_3MF" 
+        <br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+     static&nbsp;final&nbsp;int</tt></td><td class="field-summary"><tt><b>_ExportType_null</b></tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Enum null value.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="method-summary"><tt><a class="method" href="#FromInt">FromInt</a>
+ (int&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates enum object from an integer.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="method-summary"><tt><a class="method" href="#FromInteger">FromInt</a>
+ (Integer&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates enum object from an integer object.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>int</tt></td><td class="method-summary"><tt><a class="method" href="#getValue">getValue</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns enum object value as an integer.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="getValue">getValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>int</tt></td><td class="method-name"><tt>getValue</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns enum object value as an integer.<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Integer enum value.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FromInt">FromInt</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="method-name"><tt>FromInt</tt></td><td class="method-params"><tt>
+ (int&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates enum object from an integer.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>value</b></tt>
+</dt>
+<dd>Input integer value.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Enum value object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FromInteger">FromInt</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ExportType.html">ExportType</a></tt></td><td class="method-name"><tt>FromInt</tt></td><td class="method-params"><tt>
+ (Integer&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates enum object from an integer object.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>value</b></tt>
+</dt>
+<dd>Input integer object.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Enum value object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcFeature.SuppressOperation"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      717
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcFeature.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcFeature-SuppressOperation.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;SuppressOperation</h2>
+<tt>
+     package 
+     <b><a href="p-pfcFeature.html">com.ptc.pfc.pfcFeature</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>SuppressOperation</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcFeature-FeatureOperation.html">com.ptc.pfc.pfcFeature.FeatureOperation</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class defines a suppress operation.
+<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#AllowChildGroupMembers">GetAllowChildGroupMembers</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "AllowChildGroupMembers"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If <tt>true</tt> the children of feature, if members of a group,
+    will be individually suppressed from their group. If <tt>false</tt>, 
+    then the group containing the feature's children will be also 
+    suppressed. This attribute can be set to 
+   <tt>true</tt> if and only if both
+   <tt><a class="method" href="c-pfcFeature-SuppressOperation.html#Clip">SuppressOperation.GetClip(boolean)</a></tt> and  
+   <tt><a class="method" href="c-pfcFeature-SuppressOperation.html#AllowGroupMembers">SuppressOperation.GetAllowGroupMembers(boolean)</a></tt> 
+   are set to <tt>true</tt>. Default value is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#AllowGroupMembers">GetAllowGroupMembers</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "AllowGroupMembers"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If <tt>true</tt> the feature, if member of a group, will be 
+   individually suppressed from the group. If <tt>false</tt>, the group 
+   containing the feature will be also suppressed.  This attribute 
+   can be set to <tt>true</tt> if and only if 
+   <tt><a class="method" href="c-pfcFeature-SuppressOperation.html#Clip">SuppressOperation.GetClip(boolean)</a></tt> 
+   is also set to <tt>true</tt>. Default value is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#Clip">GetClip</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Clip"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A Boolean flag that specifies whether to suppress the selected 
+   feature and all the features that follow. 
+   Default value is <tt>false</tt>. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AllowChildGroupMembers">SetAllowChildGroupMembers</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "AllowChildGroupMembers"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If <tt>true</tt> the children of feature, if members of a group,
+    will be individually suppressed from their group. If <tt>false</tt>, 
+    then the group containing the feature's children will be also 
+    suppressed. This attribute can be set to 
+   <tt>true</tt> if and only if both
+   <tt><a class="method" href="c-pfcFeature-SuppressOperation.html#Clip">SuppressOperation.GetClip(boolean)</a></tt> and  
+   <tt><a class="method" href="c-pfcFeature-SuppressOperation.html#AllowGroupMembers">SuppressOperation.GetAllowGroupMembers(boolean)</a></tt> 
+   are set to <tt>true</tt>. Default value is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AllowGroupMembers">SetAllowGroupMembers</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "AllowGroupMembers"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If <tt>true</tt> the feature, if member of a group, will be 
+   individually suppressed from the group. If <tt>false</tt>, the group 
+   containing the feature will be also suppressed.  This attribute 
+   can be set to <tt>true</tt> if and only if 
+   <tt><a class="method" href="c-pfcFeature-SuppressOperation.html#Clip">SuppressOperation.GetClip(boolean)</a></tt> 
+   is also set to <tt>true</tt>. Default value is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Clip">SetClip</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Clip"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A Boolean flag that specifies whether to suppress the selected 
+   feature and all the features that follow. 
+   Default value is <tt>false</tt>. </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcFeature-FeatureOperation.html"><tt>com.ptc.pfc.pfcFeature.FeatureOperation</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcFeature-FeatureOperation.html#OpFeature"><tt>GetOpFeature</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Clip">GetClip/SetClip</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetClip</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetClip</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>A Boolean flag that specifies whether to suppress the selected 
+   feature and all the features that follow. 
+   Default value is <tt>false</tt>. <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#78">Features: Feature Operations</a>, <a href="../manual0/JFeat.html#96">Features: Feature Operations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AllowGroupMembers">GetAllowGroupMembers/SetAllowGroupMembers</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetAllowGroupMembers</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetAllowGroupMembers</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>If <tt>true</tt> the feature, if member of a group, will be 
+   individually suppressed from the group. If <tt>false</tt>, the group 
+   containing the feature will be also suppressed.  This attribute 
+   can be set to <tt>true</tt> if and only if 
+   <tt><a class="method" href="c-pfcFeature-SuppressOperation.html#Clip">SuppressOperation.GetClip(boolean)</a></tt> 
+   is also set to <tt>true</tt>. Default value is <tt>false</tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#79">Features: Feature Operations</a>, <a href="../manual0/JFeat.html#96">Features: Feature Operations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AllowChildGroupMembers">GetAllowChildGroupMembers/SetAllowChildGroupMembers</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetAllowChildGroupMembers</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetAllowChildGroupMembers</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>If <tt>true</tt> the children of feature, if members of a group,
+    will be individually suppressed from their group. If <tt>false</tt>, 
+    then the group containing the feature's children will be also 
+    suppressed. This attribute can be set to 
+   <tt>true</tt> if and only if both
+   <tt><a class="method" href="c-pfcFeature-SuppressOperation.html#Clip">SuppressOperation.GetClip(boolean)</a></tt> and  
+   <tt><a class="method" href="c-pfcFeature-SuppressOperation.html#AllowGroupMembers">SuppressOperation.GetAllowGroupMembers(boolean)</a></tt> 
+   are set to <tt>true</tt>. Default value is <tt>false</tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JFeat.html#80">Features: Feature Operations</a>, <a href="../manual0/JFeat.html#96">Features: Feature Operations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

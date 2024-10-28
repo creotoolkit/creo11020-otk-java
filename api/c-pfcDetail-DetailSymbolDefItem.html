@@ -1,0 +1,908 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcDetail.DetailSymbolDefItem"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      197
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcDetail.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcDetail-DetailSymbolDefItem.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;DetailSymbolDefItem</h2>
+<tt>
+     package 
+     <b><a href="p-pfcDetail.html">com.ptc.pfc.pfcDetail</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>DetailSymbolDefItem</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcDetail-DetailItem.html">com.ptc.pfc.pfcDetail.DetailItem</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface represents a symbol definition in a Creo Parametric model.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#GetDetailItem">DetailItemOwner.GetDetailItem(DetailType, int)</a></tt>, <tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#ListDetailItems">DetailItemOwner.ListDetailItems(/*optional*/ DetailType, /*optional*/ Integer)</a></tt>, <tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateDetailItem">DetailItemOwner.CreateDetailItem(DetailCreateInstructions)</a></tt>, <tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#RetrieveSymbolDefinition">DetailItemOwner.RetrieveSymbolDefinition(String, /*optional*/ String, /*optional*/ Integer, /*optional*/ Boolean)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-wfcDetail-WDetailSymbolDefItem.html">WDetailSymbolDefItem</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDetail-DetailItem.html">DetailItem</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateDetailItem">CreateDetailItem</a>
+ (<a class="type" href="c-pfcDetail-DetailCreateInstructions.html">DetailCreateInstructions</a>&nbsp;Instructions)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a detail item in the symbol definition.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDetail-DetailNoteItem.html">DetailNoteItem</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateFreeNote">CreateFreeNote</a>
+ (<a class="type" href="c-pfcDetail-DetailTextLines.html">DetailTextLines</a>&nbsp;TextLines, <a class="type" href="c-pfcDetail-FreeAttachment.html">FreeAttachment</a>&nbsp;Attach)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDetail-DetailSymbolGroup.html">DetailSymbolGroup</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateSubgroup">CreateSubgroup</a>
+ (<a class="type" href="c-pfcDetail-DetailSymbolGroupInstructions.html">DetailSymbolGroupInstructions</a>&nbsp;Instructions, 
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailSymbolGroup.html">DetailSymbolGroup</a>&nbsp;ParentGroup)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Create a subgroup in the specified symbol group. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailItem.html">DetailItem</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetDetailItem">GetDetailItem</a>
+ (<a class="type" href="c-pfcDetail-DetailType.html">DetailType</a>&nbsp;Type, int&nbsp;Id)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns a detail item in a symbol definition, given its id and type.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDetail-DetailSymbolDefInstructions.html">DetailSymbolDefInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetInstructions">GetInstructions</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns an instructions data object describing how a symbol definition is constructed.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsSubgroupLevelExclusive">IsSubgroupLevelExclusive</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailSymbolGroup.html">DetailSymbolGroup</a>&nbsp;ParentGroup)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Determine if the subgroups stored in the symbol definition on
+  the indicated level are exclusive.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailItems.html">DetailItems</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListDetailItems">ListDetailItems</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailType.html">DetailType</a>&nbsp;Type)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Lists the detail items in the symbol definition.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailSymbolGroups.html">DetailSymbolGroups</a></tt></td><td class="method-summary"><tt><a class="method" href="#ListSubgroups">ListSubgroups</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>List the subgroups in the symbol definition.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Modify">Modify</a>
+ (<a class="type" href="c-pfcDetail-DetailSymbolDefInstructions.html">DetailSymbolDefInstructions</a>&nbsp;Instructions)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Modifies a symbol definition.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetSubgroupLevelExclusive">SetSubgroupLevelExclusive</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailSymbolGroup.html">DetailSymbolGroup</a>&nbsp;ParentGroup)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set the symbol groups exclusive at specified level.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetSubgroupLevelIndependent">SetSubgroupLevelIndependent</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailSymbolGroup.html">DetailSymbolGroup</a>&nbsp;ParentGroup)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set the symbol groups independent at specified level.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Child.html"><tt>com.ptc.pfc.pfcObject.Child</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+      <a class="method" href="c-pfcObject-Child.html#OId"><tt>GetOId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcBase-ActionSource.html"><tt>com.ptc.pfc.pfcBase.ActionSource</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-RelationOwner.html"><tt>com.ptc.pfc.pfcModelItem.RelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Parent.html"><tt>com.ptc.pfc.pfcObject.Parent</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ParameterOwner.html"><tt>com.ptc.pfc.pfcModelItem.ParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ModelItem.html"><tt>com.ptc.pfc.pfcModelItem.ModelItem</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcDetail-DetailItem.html"><tt>com.ptc.pfc.pfcDetail.DetailItem</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcDetail-DetailItem.html#GetDetailType"><tt>GetDetailType</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailItem.html#Delete"><tt>Delete</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetDetailItem">GetDetailItem</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailItem.html">DetailItem</a></tt></td><td class="method-name"><tt>GetDetailItem</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailType.html">DetailType</a>&nbsp;Type, int&nbsp;Id)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns a detail item in a symbol definition, given its id and type.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - This means either:
+    <ul>
+	   
+<li>No entities were found, OR</li>
+	   
+<li>No notes were found.</li>
+	
+</ul>
+	
+</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfMemory.html">XToolkitOutOfMemory</a></tt></tt> - Found too many (either/all of) entities, notes to be contained in the output array. Use Visit instead.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The detail type.</dd>
+<dt>
+<tt><b>Id</b></tt>
+</dt>
+<dd>The integer identifier.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The detail item, or <tt>null</tt>, if the item was not found.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListDetailItems">ListDetailItems</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailItems.html">DetailItems</a></tt></td><td class="method-name"><tt>ListDetailItems</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailType.html">DetailType</a>&nbsp;Type)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Lists the detail items in the symbol definition.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - This means either:
+    <ul>
+       
+<li>No items were found, OR</li>
+	   
+<li>No entities were found, OR</li>
+       
+<li>No groups were found, OR</li>
+	   
+<li>No notes were found, OR</li>
+	   
+<li>No symbol definitions were found, OR</li>
+	   
+<li>No symbol instances were found.</li>
+	
+</ul>
+	
+</p>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfMemory.html">XToolkitOutOfMemory</a></tt></tt> - Found too many (either/all of) entities, groups, notes, symbol definitions, symbol instances to be contained in the output array. Use Visit instead.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#517">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#518">Drawings: Detail Symbol Definitions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The type of detail items to list.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The items found, or <tt>null</tt>, if no items were found.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateDetailItem">CreateDetailItem</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDetail-DetailItem.html">DetailItem</a></tt></td><td class="method-name"><tt>CreateDetailItem</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailCreateInstructions.html">DetailCreateInstructions</a>&nbsp;Instructions)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a detail item in the symbol definition.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#440">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#519">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#520">Drawings: Detail Symbol Definitions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Instructions</b></tt>
+</dt>
+<dd>The data item instructions.  This should be a <tt><tt><a class="class" href="c-pfcDetail-DetailEntityInstructions.html">DetailEntityInstructions</a></tt></tt> or <tt><tt><a class="class" href="c-pfcDetail-DetailNoteInstructions.html">DetailNoteInstructions</a></tt></tt> object.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The detail item created in the symbol definition.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateFreeNote">CreateFreeNote</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDetail-DetailNoteItem.html">DetailNoteItem</a></tt></td><td class="method-name"><tt>CreateFreeNote</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailTextLines.html">DetailTextLines</a>&nbsp;TextLines, <a class="type" href="c-pfcDetail-FreeAttachment.html">FreeAttachment</a>&nbsp;Attach)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TextLines</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Attach</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetInstructions">GetInstructions</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDetail-DetailSymbolDefInstructions.html">DetailSymbolDefInstructions</a></tt></td><td class="method-name"><tt>GetInstructions</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns an instructions data object describing how a symbol definition is constructed.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#518">Drawings: Detail Symbol Definitions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Modify">Modify</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>Modify</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailSymbolDefInstructions.html">DetailSymbolDefInstructions</a>&nbsp;Instructions)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Modifies a symbol definition.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#516">Drawings: Detail Symbol Definitions</a>, <a href="../manual0/jdrawfns.html#520">Drawings: Detail Symbol Definitions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Instructions</b></tt>
+</dt>
+<dd>Data object containing modifications to the symbol definition. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateSubgroup">CreateSubgroup</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDetail-DetailSymbolGroup.html">DetailSymbolGroup</a></tt></td><td class="method-name"><tt>CreateSubgroup</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailSymbolGroupInstructions.html">DetailSymbolGroupInstructions</a>&nbsp;Instructions, 
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailSymbolGroup.html">DetailSymbolGroup</a>&nbsp;ParentGroup)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Create a subgroup in the specified symbol group. <br>
+<br>If no symbol group is specificed,
+ the subgroup is created under the top level symbol group.
+ <p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidName.html">XToolkitInvalidName</a></tt></tt> - A group with the provided name already exists at this level. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#565">Drawings: Detail Symbol Groups</a>, <a href="../manual0/jdrawfns.html#567">Drawings: Detail Symbol Groups</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Instructions</b></tt>
+</dt>
+<dd>The characteristics for creating
+ the subgroup.</dd>
+<dt>
+<tt><b>ParentGroup</b></tt>
+</dt>
+<dd>The symbol group under which the subgroup
+ is to be made.
+ </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The symbol group.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ListSubgroups">ListSubgroups</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailSymbolGroups.html">DetailSymbolGroups</a></tt></td><td class="method-name"><tt>ListSubgroups</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>List the subgroups in the symbol definition.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - No groups are stored in the symbol definition at this level. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#560">Drawings: Detail Symbol Groups</a>, <a href="../manual0/jdrawfns.html#562">Drawings: Detail Symbol Groups</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The list of sub symbol groups.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsSubgroupLevelExclusive">IsSubgroupLevelExclusive</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>IsSubgroupLevelExclusive</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailSymbolGroup.html">DetailSymbolGroup</a>&nbsp;ParentGroup)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Determine if the subgroups stored in the symbol definition on
+  the indicated level are exclusive.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#561">Drawings: Detail Symbol Groups</a>, <a href="../manual0/jdrawfns.html#562">Drawings: Detail Symbol Groups</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ParentGroup</b></tt>
+</dt>
+<dd>The exclusiveness is determined at the level
+  of this symbol group. If not specifed, the top level is assumed.
+ </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+<tt>true</tt> if the subgroups are exclusive and <tt>false</tt>
+ if independent.
+ </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetSubgroupLevelExclusive">SetSubgroupLevelExclusive</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetSubgroupLevelExclusive</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailSymbolGroup.html">DetailSymbolGroup</a>&nbsp;ParentGroup)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Set the symbol groups exclusive at specified level.<br>
+<br>Once set exclusive, only one of the groups at this level may be active
+  in the model at any time.
+  <p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoChange.html">XToolkitNoChange</a></tt></tt> - The status was already set to the designated value.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#566">Drawings: Detail Symbol Groups</a>, <a href="../manual0/jdrawfns.html#567">Drawings: Detail Symbol Groups</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ParentGroup</b></tt>
+</dt>
+<dd>The symbol groups at the level of this
+ symbol group are set exclusive. If not specified, the top level
+ is assumed. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetSubgroupLevelIndependent">SetSubgroupLevelIndependent</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetSubgroupLevelIndependent</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailSymbolGroup.html">DetailSymbolGroup</a>&nbsp;ParentGroup)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Set the symbol groups independent at specified level.<br>
+<br>Once set independent, any number of groups at this level may be active
+  in the model at any time.
+  <p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoChange.html">XToolkitNoChange</a></tt></tt> - The status was already set to the designated value.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#567">Drawings: Detail Symbol Groups</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ParentGroup</b></tt>
+</dt>
+<dd>The symbol groups at the level of this
+ symbol group are set independent. If not specified, the top level is
+ assumed.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

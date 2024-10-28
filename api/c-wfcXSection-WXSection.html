@@ -1,0 +1,1169 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcXSection.WXSection"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      936
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcXSection.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcXSection-WXSection.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;WXSection</h2>
+<tt>
+     package 
+     <b><a href="p-wfcXSection.html">com.ptc.wfc.wfcXSection</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>WXSection</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-wfcModelItem-WModelItem.html">com.ptc.wfc.wfcModelItem.WModelItem</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="bold" href="c-wfcLayerState-LayerItem.html">com.ptc.wfc.wfcLayerState.LayerItem</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="bold" href="c-pfcXSection-XSection.html">com.ptc.pfc.pfcXSection.XSection</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br> 
+   Adds more functionality to <tt><tt><a class="class" href="c-pfcXSection-XSection.html">XSection</a></tt></tt> as indicated below.
+   
+   This interface adds method for adding line pattern hathching on cross section. 
+   It also provides methods to get mass properties ,feature representation and geometry of cross section.
+   
+  <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionCutComponents.html">XSectionCutComponents</a></tt></td><td class="method-summary"><tt><a class="method" href="#CollectCutComponents">CollectCutComponents</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;DrawingView)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns sequence of XSectionCutComponent objects.
+     A sequence item is created for each body. 
+     If no bodies are created, contains one XSectionCutComponent for each component.
+ </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionGeometries.html">XSectionGeometries</a></tt></td><td class="method-summary"><tt><a class="method" href="#CollectGeometry">CollectGeometry</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;DrawingView)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  &lt;incorrect deprecated ref&gt;
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-wfcXSection-WXSection.html#CollectCutComponents">WXSection.CollectCutComponents</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Retrieves the geometry of non-empty cross-section components (intersecting their sub-assemblies) </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionComponents.html">XSectionComponents</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetComponents">GetComponents</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  &lt;incorrect deprecated ref&gt;
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b>
+          &lt;reference 1 to unknown entity &gt;
+        </tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Gets componets which are included or excluded from cross section definition </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionHatches.html">XSectionHatches</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetCompXSectionHatches">GetCompXSectionHatches</a>
+ (int&nbsp;XSecCompId, 
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;DrawingView)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  &lt;incorrect deprecated ref&gt;
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-wfcXSection-XSectionCutComponentItem.html#GetXHatchStyle">XSectionCutComponentItem.GetXHatchStyle</a>, <a class="method" href="c-wfcXSection-XSectionCutComponent.html#GetXHatchStyle">XSectionCutComponent.GetXHatchStyle</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Gets line patterns in cross section </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionExcludeItems.html">XSectionExcludeItems</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetExcludedItems">GetExcludedItems</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns object containing excluded/included components and bodies and their excluded/included status.
+ </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFeature-Feature.html">Feature</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetFeature">GetFeature</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+       Returns feature representing cross section. Method should be called only if <tt><a class="method" href="c-wfcModel-WModel.html#CanCreateSectionFeature">WModel.CanCreateSectionFeature()</a></tt> returns <t> true </t>
+  
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#GetFlip">GetFlip</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Gets model clipping direction </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcSolid-MassProperty.html">MassProperty</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetMassProperty">GetMassProperty</a>
+ (String&nbsp;CsysName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Mass Property related information. Only following methods should be called on this <tt><tt><a class="class" href="c-pfcSolid-MassProperty.html">MassProperty</a></tt></tt> object <br>
+           
+<tt><a class="method" href="c-pfcSolid-MassProperty.html#SurfaceArea">MassProperty.GetSurfaceArea(double)</a></tt> 
+<br>
+           
+<tt><a class="method" href="c-pfcSolid-MassProperty.html#GravityCenter">MassProperty.GetGravityCenter(Point3D)</a></tt> 
+<br>
+           
+<tt><a class="method" href="c-pfcSolid-MassProperty.html#CoordSysInertia">MassProperty.GetCoordSysInertia(Inertia)</a></tt>
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#GetName">GetName</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Returns name of the cross section </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcXSection-OffsetXSectionData.html">OffsetXSectionData</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetOffsetXSectionData">GetOffsetXSectionData</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;DrawingView)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Get parameters of offset cross section </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcGeometry-Surface.html">Surface</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetPlane">GetPlane</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Returns the plane of a given Cross Section.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsFeature">IsFeature</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Determines if cross section is feature </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetCompXSectionHatches">SetCompXSectionHatches</a>
+ (int&nbsp;XSecCompId, 
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;DrawingView, 
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionHatches.html">XSectionHatches</a>&nbsp;Hatches)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  &lt;incorrect deprecated ref&gt;
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-wfcXSection-XSectionCutComponentItem.html#SetXHatchStyle">XSectionCutComponentItem.SetXHatchStyle</a>, <a class="method" href="c-wfcXSection-XSectionCutComponent.html#SetXHatchStyle">XSectionCutComponent.SetXHatchStyle</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Sets line patterns on cross section component </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetName">SetName</a>
+ (String&nbsp;XSectionName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Renames the cross section </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcBase-ActionSource.html"><tt>com.ptc.pfc.pfcBase.ActionSource</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Parent.html"><tt>com.ptc.pfc.pfcObject.Parent</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ParameterOwner.html"><tt>com.ptc.pfc.pfcModelItem.ParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ParameterOwner.html#GetParam"><tt>GetParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParam"><tt>CreateParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#ListParams"><tt>ListParams</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParam"><tt>SelectParam</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#CreateParamWithUnits"><tt>CreateParamWithUnits</tt></a>,
+      <a class="method" href="c-pfcModelItem-ParameterOwner.html#SelectParameters"><tt>SelectParameters</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcModelItem-WParameterOwner.html"><tt>com.ptc.wfc.wfcModelItem.WParameterOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcModelItem-WParameterOwner.html#ExportParameterTable"><tt>ExportParameterTable</tt></a>,
+      <a class="method" href="c-wfcModelItem-WParameterOwner.html#ApplyParameterTableset"><tt>ApplyParameterTableset</tt></a>,
+      <a class="method" href="c-wfcModelItem-WParameterOwner.html#MathcadParametersSet"><tt>MathcadParametersSet</tt></a>,
+      <a class="method" href="c-wfcModelItem-WParameterOwner.html#MathcadInputParametersGet"><tt>MathcadInputParametersGet</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-RelationOwner.html"><tt>com.ptc.pfc.pfcModelItem.RelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-RelationOwner.html#DeleteRelations"><tt>DeleteRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>GetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#Relations"><tt>SetRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#RegenerateRelations"><tt>RegenerateRelations</tt></a>,
+      <a class="method" href="c-pfcModelItem-RelationOwner.html#EvaluateExpression"><tt>EvaluateExpression</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcModelItem-WRelationOwner.html"><tt>com.ptc.wfc.wfcModelItem.WRelationOwner</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcModelItem-WRelationOwner.html#GetRelationConstraints"><tt>GetRelationConstraints</tt></a>,
+      <a class="method" href="c-wfcModelItem-WRelationOwner.html#UnitsUsed"><tt>UnitsUsed</tt></a>,
+      <a class="method" href="c-wfcModelItem-WRelationOwner.html#UseUnits"><tt>UseUnits</tt></a>,
+      <a class="method" href="c-wfcModelItem-WRelationOwner.html#EvaluateExpressionWithUnits"><tt>EvaluateExpressionWithUnits</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Child.html"><tt>com.ptc.pfc.pfcObject.Child</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Child.html#DBParent"><tt>GetDBParent</tt></a>,
+      <a class="method" href="c-pfcObject-Child.html#OId"><tt>GetOId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModelItem-ModelItem.html"><tt>com.ptc.pfc.pfcModelItem.ModelItem</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModelItem-ModelItem.html#GetName"><tt>GetName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#SetName"><tt>SetName</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#Id"><tt>GetId</tt></a>,
+      <a class="method" href="c-pfcModelItem-ModelItem.html#Type"><tt>GetType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcModelItem-WModelItem.html"><tt>com.ptc.wfc.wfcModelItem.WModelItem</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcModelItem-WModelItem.html#DeleteUserDefinedName"><tt>DeleteUserDefinedName</tt></a>,
+      <a class="method" href="c-wfcModelItem-WModelItem.html#Unhide"><tt>Unhide</tt></a>,
+      <a class="method" href="c-wfcModelItem-WModelItem.html#Hide"><tt>Hide</tt></a>,
+      <a class="method" href="c-wfcModelItem-WModelItem.html#IsHidden"><tt>IsHidden</tt></a>,
+      <a class="method" href="c-wfcModelItem-WModelItem.html#IsNameReadOnly"><tt>IsNameReadOnly</tt></a>,
+      <a class="method" href="c-wfcModelItem-WModelItem.html#IsZoneFeature"><tt>IsZoneFeature</tt></a>,
+      <a class="method" href="c-wfcModelItem-WModelItem.html#GetDefaultName"><tt>GetDefaultName</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-wfcLayerState-LayerItem.html"><tt>com.ptc.wfc.wfcLayerState.LayerItem</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-wfcLayerState-LayerItem.html#IsLayerItemVisible"><tt>IsLayerItemVisible</tt></a>,
+      <a class="method" href="c-wfcLayerState-LayerItem.html#RemoveNoUpdate"><tt>RemoveNoUpdate</tt></a>,
+      <a class="method" href="c-wfcLayerState-LayerItem.html#GetLayers"><tt>GetLayers</tt></a>,
+      <a class="method" href="c-wfcLayerState-LayerItem.html#AddNoUpdate"><tt>AddNoUpdate</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcXSection-XSection.html"><tt>com.ptc.pfc.pfcXSection.XSection</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcXSection-XSection.html#GetName"><tt>GetName</tt></a>,
+      <a class="method" href="c-pfcXSection-XSection.html#SetName"><tt>SetName</tt></a>,
+      <a class="method" href="c-pfcXSection-XSection.html#GetXSecType"><tt>GetXSecType</tt></a>,
+      <a class="method" href="c-pfcXSection-XSection.html#Delete"><tt>Delete</tt></a>,
+      <a class="method" href="c-pfcXSection-XSection.html#Display"><tt>Display</tt></a>,
+      <a class="method" href="c-pfcXSection-XSection.html#Regenerate"><tt>Regenerate</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetCompXSectionHatches">SetCompXSectionHatches</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetCompXSectionHatches</tt></td><td class="method-params"><tt>
+ (int&nbsp;XSecCompId, 
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;DrawingView, 
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionHatches.html">XSectionHatches</a>&nbsp;Hatches)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  &lt;incorrect deprecated ref&gt;
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-wfcXSection-XSectionCutComponentItem.html#SetXHatchStyle">XSectionCutComponentItem.SetXHatchStyle</a>, <a class="method" href="c-wfcXSection-XSectionCutComponent.html#SetXHatchStyle">XSectionCutComponent.SetXHatchStyle</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Sets line patterns on cross section component <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+   
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - Input cross-section is not a drawing view cross-section or doesn't have the component with given id that is inside the view. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitFound.html">XToolkitFound</a></tt></tt> - Cross-section component already has the input line pattern. Nothing added. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitEmpty.html">XToolkitEmpty</a></tt></tt> - Empty sequence of line patterns.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#70">Cross Sections: Line Patterns of Cross Section Components</a>, <a href="../manual0/OTK_Cross_section.html#109">Cross Sections: Line Patterns of Cross Section Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>XSecCompId</b></tt>
+</dt>
+<dd> Component identifier being cut by cross section </dd>
+<dt>
+<tt><b>DrawingView</b></tt>
+</dt>
+<dd> View object if not <t>null</t>, in component list we have only solid geometry (non-quilt and non-facetrep) components that intersect their non-hidden, non-suppressed parts and are inside view borders; 
+                                 if <t>null</t> in component list we have all non-empty components </dd>
+<dt>
+<tt><b>Hatches</b></tt>
+</dt>
+<dd> Line Patterns on cross section. Pass sequence of <tt><tt><a class="class" href="c-wfcXSection-XSectionHatch.html">XSectionHatch</a></tt></tt> 
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetCompXSectionHatches">GetCompXSectionHatches</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionHatches.html">XSectionHatches</a></tt></td><td class="method-name"><tt>GetCompXSectionHatches</tt></td><td class="method-params"><tt>
+ (int&nbsp;XSecCompId, 
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;DrawingView)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  &lt;incorrect deprecated ref&gt;
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-wfcXSection-XSectionCutComponentItem.html#GetXHatchStyle">XSectionCutComponentItem.GetXHatchStyle</a>, <a class="method" href="c-wfcXSection-XSectionCutComponent.html#GetXHatchStyle">XSectionCutComponent.GetXHatchStyle</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Gets line patterns in cross section <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - Input cross-section is not a drawing view cross-section or doesn't have the component with given id that is inside the view or the component doesn't have xhatches. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#69">Cross Sections: Line Patterns of Cross Section Components</a>, <a href="../manual0/OTK_Cross_section.html#109">Cross Sections: Line Patterns of Cross Section Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>XSecCompId</b></tt>
+</dt>
+<dd> Component identifier being cut by cross section </dd>
+<dt>
+<tt><b>DrawingView</b></tt>
+</dt>
+<dd>
+       View object if not <t>null</t>, in component list we have only solid geometry (non-quilt and non-facetrep) components that intersect their non-hidden, non-suppressed parts and are inside view borders;
+       if <t>null</t> in component list we have all non-empty components
+   </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+       
+<tt><tt><a class="class" href="c-wfcXSection-XSectionHatches.html">XSectionHatches</a></tt></tt> object
+   </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetFeature">GetFeature</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcFeature-Feature.html">Feature</a></tt></td><td class="method-name"><tt>GetFeature</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+       Returns feature representing cross section. Method should be called only if <tt><a class="method" href="c-wfcModel-WModel.html#CanCreateSectionFeature">WModel.CanCreateSectionFeature()</a></tt> returns <t> true </t>
+  
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+   
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - Legacy cross sections.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#61">Cross Sections: Creating and Modifying Cross Sections</a>, <a href="../manual0/OTK_Cross_section.html#62">Cross Sections: Creating and Modifying Cross Sections</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+       
+<tt><tt><a class="class" href="c-pfcFeature-Feature.html">Feature</a></tt></tt> 
+   
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetMassProperty">GetMassProperty</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcSolid-MassProperty.html">MassProperty</a></tt></td><td class="method-name"><tt>GetMassProperty</tt></td><td class="method-params"><tt>
+ (String&nbsp;CsysName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Mass Property related information. Only following methods should be called on this <tt><tt><a class="class" href="c-pfcSolid-MassProperty.html">MassProperty</a></tt></tt> object <br>
+           
+<tt><a class="method" href="c-pfcSolid-MassProperty.html#SurfaceArea">MassProperty.GetSurfaceArea(double)</a></tt> 
+<br>
+           
+<tt><a class="method" href="c-pfcSolid-MassProperty.html#GravityCenter">MassProperty.GetGravityCenter(Point3D)</a></tt> 
+<br>
+           
+<tt><a class="method" href="c-pfcSolid-MassProperty.html#CoordSysInertia">MassProperty.GetCoordSysInertia(Inertia)</a></tt>
+   
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#66">Cross Sections: Mass Properties of Cross Sections</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CsysName</b></tt>
+</dt>
+<dd> Name of the CSYS </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+        
+<tt><tt><a class="class" href="c-pfcSolid-MassProperty.html">MassProperty</a></tt></tt> object
+    </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CollectGeometry">CollectGeometry</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionGeometries.html">XSectionGeometries</a></tt></td><td class="method-name"><tt>CollectGeometry</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;DrawingView)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  &lt;incorrect deprecated ref&gt;
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-wfcXSection-WXSection.html#CollectCutComponents">WXSection.CollectCutComponents</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Retrieves the geometry of non-empty cross-section components (intersecting their sub-assemblies) <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - Input cross-section is not a drawing view cross-section.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#49">Cross Sections: Extracting Cross-Sectional Geometry</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DrawingView</b></tt>
+</dt>
+<dd>
+       View object if not <t>null</t>, in component list we have only solid geometry (non-quilt and non-facetrep) components that intersect their non-hidden, non-suppressed parts and are inside view borders;
+       if <t>null</t> in component list we have all non-empty components
+   </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+        
+<tt><tt><a class="class" href="c-wfcXSection-XSectionGeometries.html">XSectionGeometries</a></tt></tt> object
+    </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CollectCutComponents">CollectCutComponents</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionCutComponents.html">XSectionCutComponents</a></tt></td><td class="method-name"><tt>CollectCutComponents</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;DrawingView)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns sequence of XSectionCutComponent objects.
+     A sequence item is created for each body. 
+     If no bodies are created, contains one XSectionCutComponent for each component.
+ <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#15">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#49">Cross Sections: Extracting Cross-Sectional Geometry</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DrawingView</b></tt>
+</dt>
+<dd>The drawing view.  This method returns only items containing solid geometry
+   (non-quilt and non-facetrep) components that intersect their non-hidden,
+   non-suppressed parts and are inside view borders;
+   If <t>null</t>, returns all non-empty components.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The XSectionCutComponents object.   
+   </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetPlane">GetPlane</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcGeometry-Surface.html">Surface</a></tt></td><td class="method-name"><tt>GetPlane</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Returns the plane of a given Cross Section.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotImplemented.html">XToolkitNotImplemented</a></tt></tt> - This is not a planar cross-section.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#34">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#49">Cross Sections: Extracting Cross-Sectional Geometry</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+        
+<tt><tt><a class="class" href="c-pfcGeometry-Surface.html">Surface</a></tt></tt> object </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsFeature">IsFeature</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>IsFeature</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Determines if cross section is feature <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#60">Cross Sections: Creating and Modifying Cross Sections</a>, <a href="../manual0/OTK_Cross_section.html#62">Cross Sections: Creating and Modifying Cross Sections</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>If <t>true</t> cross section is a feature </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetOffsetXSectionData">GetOffsetXSectionData</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcXSection-OffsetXSectionData.html">OffsetXSectionData</a></tt></td><td class="method-name"><tt>GetOffsetXSectionData</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcView2D-View2D.html">View2D</a>&nbsp;DrawingView)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Get parameters of offset cross section <br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotImplemented.html">XToolkitNotImplemented</a></tt></tt> - Some of X-section entities is not a line segment.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#35">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#49">Cross Sections: Extracting Cross-Sectional Geometry</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>DrawingView</b></tt>
+</dt>
+<dd>
+       View object if not <t>null</t>, in component list we have only solid geometry (non-quilt and non-facetrep) components that intersect their non-hidden, non-suppressed parts and are inside view borders;
+       if <t>null</t> in component list we have all non-empty components
+   </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetName">GetName</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetName</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Returns name of the cross section <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#38">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#49">Cross Sections: Extracting Cross-Sectional Geometry</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+       Cross section name
+     </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetName">SetName</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetName</tt></td><td class="method-params"><tt>
+ (String&nbsp;XSectionName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Renames the cross section <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#39">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#49">Cross Sections: Extracting Cross-Sectional Geometry</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>XSectionName</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>      
+     
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetFlip">GetFlip</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetFlip</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Gets model clipping direction <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#36">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#49">Cross Sections: Extracting Cross-Sectional Geometry</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+       If <t>true</t> model is clipped in the direction of the positive normal to the cross section plane
+       otherwise in the direction of negative normal of cross section plane
+     </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetComponents">GetComponents</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionComponents.html">XSectionComponents</a></tt></td><td class="method-name"><tt>GetComponents</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  &lt;incorrect deprecated ref&gt;
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b>
+          &lt;reference 1 to unknown entity &gt;
+        </tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Gets componets which are included or excluded from cross section definition <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#37">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#49">Cross Sections: Extracting Cross-Sectional Geometry</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>
+       
+<tt><tt><a class="class" href="c-wfcXSection-XSectionComponents.html">XSectionComponents</a></tt></tt> object
+     </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetExcludedItems">GetExcludedItems</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionExcludeItems.html">XSectionExcludeItems</a></tt></td><td class="method-name"><tt>GetExcludedItems</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns object containing excluded/included components and bodies and their excluded/included status.
+ <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/OTK_Cross_section.html#16">Cross Sections: Extracting Cross-Sectional Geometry</a>, <a href="../manual0/OTK_Cross_section.html#49">Cross Sections: Extracting Cross-Sectional Geometry</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The XSectionExcludeItems object</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

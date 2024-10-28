@@ -1,0 +1,370 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcComponentFeat.AssemblyItemInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      31
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcComponentFeat.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcComponentFeat-AssemblyItemInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;AssemblyItemInstructions</h2>
+<tt>
+     package 
+     <b><a href="p-wfcComponentFeat.html">com.ptc.wfc.wfcComponentFeat</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>AssemblyItemInstructions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>The instructions to create an variant item for Flexible component definition.<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcAssembly-WComponentPath.html">WComponentPath</a></tt></td><td class="method-summary"><tt><a class="method" href="#ItemCompPath">GetItemCompPath</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ItemCompPath"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        The item component path.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>int</tt></td><td class="method-summary"><tt><a class="method" href="#ItemId">GetItemId</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ItemId"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The item identifier</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-summary"><tt><a class="method" href="#ItemName">GetItemName</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ItemName"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Parameter Name</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcModel-Model.html">Model</a></tt></td><td class="method-summary"><tt><a class="method" href="#ItemOwner">GetItemOwner</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ItemOwner"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The model owner of the item or parameter.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcModelItem-ModelItemType.html">ModelItemType</a></tt></td><td class="method-summary"><tt><a class="method" href="#ItemType">GetItemType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ItemType"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The item type. In case of parameter pass type of owner modelitem. For model Parameter pass this as pfcModelItemType_nil.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ItemCompPath">SetItemCompPath</a>
+ (
+   /*optional*/
+   <a class="type" href="c-wfcAssembly-WComponentPath.html">WComponentPath</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ItemCompPath"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        The item component path.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ItemId">SetItemId</a>
+ (int&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ItemId"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The item identifier</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ItemName">SetItemName</a>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ItemName"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Parameter Name</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ItemOwner">SetItemOwner</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ItemOwner"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The model owner of the item or parameter.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ItemType">SetItemType</a>
+ (<a class="type" href="c-pfcModelItem-ModelItemType.html">ModelItemType</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ItemType"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The item type. In case of parameter pass type of owner modelitem. For model Parameter pass this as pfcModelItemType_nil.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ItemOwner">GetItemOwner/SetItemOwner</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcModel-Model.html">Model</a></tt></td><td class="method-name"><tt>GetItemOwner</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetItemOwner</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The model owner of the item or parameter.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#149">Assemblies and Components: Variant Items for Flexible Components</a>, <a href="../manual0/jassembly.html#160">Assemblies and Components: Variant Items for Flexible Components</a>, <a href="../manual0/jassembly.html#150">Assemblies and Components: Variant Items for Flexible Components</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ItemType">GetItemType/SetItemType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcModelItem-ModelItemType.html">ModelItemType</a></tt></td><td class="method-name"><tt>GetItemType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetItemType</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModelItem-ModelItemType.html">ModelItemType</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The item type. In case of parameter pass type of owner modelitem. For model Parameter pass this as pfcModelItemType_nil.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#157">Assemblies and Components: Variant Items for Flexible Components</a>, <a href="../manual0/jassembly.html#160">Assemblies and Components: Variant Items for Flexible Components</a>, <a href="../manual0/jassembly.html#158">Assemblies and Components: Variant Items for Flexible Components</a>, <a href="../manual0/jassembly.html#160">Assemblies and Components: Variant Items for Flexible Components</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ItemId">GetItemId/SetItemId</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>int</tt></td><td class="method-name"><tt>GetItemId</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetItemId</tt></td><td class="method-params"><tt>
+ (int&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The item identifier<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#153">Assemblies and Components: Variant Items for Flexible Components</a>, <a href="../manual0/jassembly.html#160">Assemblies and Components: Variant Items for Flexible Components</a>, <a href="../manual0/jassembly.html#154">Assemblies and Components: Variant Items for Flexible Components</a>, <a href="../manual0/jassembly.html#160">Assemblies and Components: Variant Items for Flexible Components</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ItemName">GetItemName/SetItemName</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-name"><tt>GetItemName</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetItemName</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Parameter Name<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#155">Assemblies and Components: Variant Items for Flexible Components</a>, <a href="../manual0/jassembly.html#160">Assemblies and Components: Variant Items for Flexible Components</a>, <a href="../manual0/jassembly.html#156">Assemblies and Components: Variant Items for Flexible Components</a>, <a href="../manual0/jassembly.html#160">Assemblies and Components: Variant Items for Flexible Components</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ItemCompPath">GetItemCompPath/SetItemCompPath</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcAssembly-WComponentPath.html">WComponentPath</a></tt></td><td class="method-name"><tt>GetItemCompPath</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetItemCompPath</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-wfcAssembly-WComponentPath.html">WComponentPath</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        The item component path.
+      <br>
+<br> To set a component as flexible, the path of this 'assembly item' should not 
+      contain the ID of a component which is: a) out of flexible context, b) to be made flexible.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jassembly.html#151">Assemblies and Components: Variant Items for Flexible Components</a>, <a href="../manual0/jassembly.html#160">Assemblies and Components: Variant Items for Flexible Components</a>, <a href="../manual0/jassembly.html#152">Assemblies and Components: Variant Items for Flexible Components</a>, <a href="../manual0/jassembly.html#160">Assemblies and Components: Variant Items for Flexible Components</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

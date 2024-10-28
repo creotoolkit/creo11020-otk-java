@@ -1,0 +1,936 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcModel.PlotInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      532
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcModel.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcModel-PlotInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;PlotInstructions</h2>
+<tt>
+     package 
+     <b><a href="p-pfcModel.html">com.ptc.pfc.pfcModel</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>PlotInstructions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcModel-ExportInstructions.html">com.ptc.pfc.pfcModel.ExportInstructions</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Instructions object used to plot drawings.
+<br>
+<br>
+ This export-instructions class has been superseeded by 
+ <tt><tt><a class="class" href="c-pfcExport-PrinterInstructions.html">PrinterInstructions</a></tt></tt> objects.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-pfcModel.html#PlotInstructions::Create">pfcModel.PlotInstructions_Create(String)</a></tt>, <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Integer</tt></td><td class="method-summary"><tt><a class="method" href="#FirstPage">GetFirstPage</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "FirstPage"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>When <i>PageRangeChoice</i> is <tt>PlotPageRange.PLOT_RANGE_OF_PAGES</tt>, this specifies the first page to print. Otherwise, the value is <tt>null</tt> </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#LabelPlot">GetLabelPlot</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "LabelPlot"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If set to <tt>true</tt> , generates the plot with a label. Default is <tt>false</tt>; no label is created.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Integer</tt></td><td class="method-summary"><tt><a class="method" href="#LastPage">GetLastPage</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "LastPage"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>When <i>PageRangeChoice</i> is <tt>PlotPageRange.PLOT_RANGE_OF_PAGES</tt>, this specifies the last page to print. Otherwise, the value is <tt>null</tt> </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>int</tt></td><td class="method-summary"><tt><a class="method" href="#OutputQuality">GetOutputQuality</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "OutputQuality"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A value of 0, 1, 2, or 3. Default is 1. Defines the amount of checking for overlapping lines in a plot or 2-D export file, such as IGES, before making a file. <p></p>
+The values are interpreted as follows:<ul type="disc">
+
+<li>
+ 0-Does not check for overlapping lines or collect lines of the same pen color.</li>
+
+<li>
+ 1-Does not check for overlapping lines, but collects lines of the same pen color for plotting.</li>
+
+<li>
+ 2-Partially checks edges with two vertices, and collects lines of the same pen color for plotting.</li>
+
+<li>
+ 3-Does a complete check of all edges against each other, regardless of the number of vertices, font, or color. Collects lines of the same pen color for plotting.</li>
+
+</ul>
+
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcModel-PlotPageRange.html">PlotPageRange</a></tt></td><td class="method-summary"><tt><a class="method" href="#PageRangeChoice">GetPageRangeChoice</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PageRangeChoice"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>One of the <tt><tt><a class="class" href="c-pfcModel-PlotPageRange.html">PlotPageRange</a></tt></tt> enumeration objects. Default is PlotPageRange.PLOT_RANGE_ALL.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcModel-PlotPaperSize.html">PlotPaperSize</a></tt></td><td class="method-summary"><tt><a class="method" href="#PaperSize">GetPaperSize</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PaperSize"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>One of the <tt><tt><a class="class" href="c-pfcModel-PlotPaperSize.html">PlotPaperSize</a></tt></tt> enumeration objects. Default is PlotPaperSize.ASIZEPLOT.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-summary"><tt><a class="method" href="#PaperSizeX">GetPaperSizeX</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PaperSizeX"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>When <i>PaperSize</i> is <tt>PlotPaperSize.VARIABLEPLOTSIZE</tt>, this specifies the size of the plotter paper in the X dimension. Otherwise, the value is <tt>null</tt></td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-summary"><tt><a class="method" href="#PaperSizeY">GetPaperSizeY</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PaperSizeY"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>When <i>PaperSize</i> is <tt>PlotPaperSize.VARIABLEPLOTSIZE</tt>, this specifies the size of the plotter paper in the Y dimension. Otherwise, the value is <tt>null</tt>. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#PenSlew">GetPenSlew</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PenSlew"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set to <tt>true</tt> if you want to adjust pen velocity. Default is <tt>false</tt>. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#PenVelocityX">GetPenVelocityX</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PenVelocityX"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>When <i>PenSlew</i> is <tt>true</tt>, this value is a multiple of the default pen speed in the X dimension. Permitted range is 0.1 to 100. Ignored when <i>PenSlew</i> is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#PenVelocityY">GetPenVelocityY</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PenVelocityY"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>When <i>PenSlew</i> is <tt>true</tt>, this value is a multiple of the default pen speed in the y dimension. Permitted range is 0.1 to 100. Ignored when <i>PenSlew</i> is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#PlotterName">GetPlotterName</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PlotterName"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>c.f. The print dialog for support names
+	    eg: POSTSCRIPT, COLORPOSTSC
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#SegmentedOutput">GetSegmentedOutput</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "SegmentedOutput"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set to <tt>true</tt> to generate a segmented plot. Default is <tt>false</tt>.This may be <tt>true</tt> only if you are plotting a single page.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#SeparatePlotFiles">GetSeparatePlotFiles</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "SeparatePlotFiles"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Defines the default in the <b>Print to File</b> dialog box.<ul type="disc">
+
+<li>
+ 
+<tt>true</tt>-Sets the default to Create Separate Files. </li>
+
+<li>
+ 
+<tt>false</tt> -A single file is created by default.</li>
+
+</ul>
+
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#UserScale">GetUserScale</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "UserScale"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Specifies a scale factor between 0.01 and 100 for scaling a model or drawing for plotting. Default is 0.01.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#FirstPage">SetFirstPage</a>
+ (
+   /*optional*/
+   Integer&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "FirstPage"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>When <i>PageRangeChoice</i> is <tt>PlotPageRange.PLOT_RANGE_OF_PAGES</tt>, this specifies the first page to print. Otherwise, the value is <tt>null</tt> </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#LabelPlot">SetLabelPlot</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "LabelPlot"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If set to <tt>true</tt> , generates the plot with a label. Default is <tt>false</tt>; no label is created.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#LastPage">SetLastPage</a>
+ (
+   /*optional*/
+   Integer&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "LastPage"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>When <i>PageRangeChoice</i> is <tt>PlotPageRange.PLOT_RANGE_OF_PAGES</tt>, this specifies the last page to print. Otherwise, the value is <tt>null</tt> </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OutputQuality">SetOutputQuality</a>
+ (int&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "OutputQuality"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A value of 0, 1, 2, or 3. Default is 1. Defines the amount of checking for overlapping lines in a plot or 2-D export file, such as IGES, before making a file. <p></p>
+The values are interpreted as follows:<ul type="disc">
+
+<li>
+ 0-Does not check for overlapping lines or collect lines of the same pen color.</li>
+
+<li>
+ 1-Does not check for overlapping lines, but collects lines of the same pen color for plotting.</li>
+
+<li>
+ 2-Partially checks edges with two vertices, and collects lines of the same pen color for plotting.</li>
+
+<li>
+ 3-Does a complete check of all edges against each other, regardless of the number of vertices, font, or color. Collects lines of the same pen color for plotting.</li>
+
+</ul>
+
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PageRangeChoice">SetPageRangeChoice</a>
+ (<a class="type" href="c-pfcModel-PlotPageRange.html">PlotPageRange</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PageRangeChoice"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>One of the <tt><tt><a class="class" href="c-pfcModel-PlotPageRange.html">PlotPageRange</a></tt></tt> enumeration objects. Default is PlotPageRange.PLOT_RANGE_ALL.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PaperSize">SetPaperSize</a>
+ (<a class="type" href="c-pfcModel-PlotPaperSize.html">PlotPaperSize</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PaperSize"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>One of the <tt><tt><a class="class" href="c-pfcModel-PlotPaperSize.html">PlotPaperSize</a></tt></tt> enumeration objects. Default is PlotPaperSize.ASIZEPLOT.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PaperSizeX">SetPaperSizeX</a>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PaperSizeX"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>When <i>PaperSize</i> is <tt>PlotPaperSize.VARIABLEPLOTSIZE</tt>, this specifies the size of the plotter paper in the X dimension. Otherwise, the value is <tt>null</tt></td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PaperSizeY">SetPaperSizeY</a>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PaperSizeY"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>When <i>PaperSize</i> is <tt>PlotPaperSize.VARIABLEPLOTSIZE</tt>, this specifies the size of the plotter paper in the Y dimension. Otherwise, the value is <tt>null</tt>. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PenSlew">SetPenSlew</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PenSlew"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set to <tt>true</tt> if you want to adjust pen velocity. Default is <tt>false</tt>. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PenVelocityX">SetPenVelocityX</a>
+ (double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PenVelocityX"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>When <i>PenSlew</i> is <tt>true</tt>, this value is a multiple of the default pen speed in the X dimension. Permitted range is 0.1 to 100. Ignored when <i>PenSlew</i> is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PenVelocityY">SetPenVelocityY</a>
+ (double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PenVelocityY"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>When <i>PenSlew</i> is <tt>true</tt>, this value is a multiple of the default pen speed in the y dimension. Permitted range is 0.1 to 100. Ignored when <i>PenSlew</i> is <tt>false</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PlotterName">SetPlotterName</a>
+ (String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PlotterName"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>c.f. The print dialog for support names
+	    eg: POSTSCRIPT, COLORPOSTSC
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SegmentedOutput">SetSegmentedOutput</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "SegmentedOutput"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set to <tt>true</tt> to generate a segmented plot. Default is <tt>false</tt>.This may be <tt>true</tt> only if you are plotting a single page.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SeparatePlotFiles">SetSeparatePlotFiles</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "SeparatePlotFiles"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Defines the default in the <b>Print to File</b> dialog box.<ul type="disc">
+
+<li>
+ 
+<tt>true</tt>-Sets the default to Create Separate Files. </li>
+
+<li>
+ 
+<tt>false</tt> -A single file is created by default.</li>
+
+</ul>
+
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#UserScale">SetUserScale</a>
+ (double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "UserScale"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Specifies a scale factor between 0.01 and 100 for scaling a model or drawing for plotting. Default is 0.01.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModel-ExportInstructions.html"><tt>com.ptc.pfc.pfcModel.ExportInstructions</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModel-ExportInstructions.html#GetFileType"><tt>GetFileType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PlotterName">GetPlotterName/SetPlotterName</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetPlotterName</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPlotterName</tt></td><td class="method-params"><tt>
+ (String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>c.f. The print dialog for support names
+	    eg: POSTSCRIPT, COLORPOSTSC
+   <br>
+<br>Note: MS_PRINT_MGR is not supported<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OutputQuality">GetOutputQuality/SetOutputQuality</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>int</tt></td><td class="method-name"><tt>GetOutputQuality</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetOutputQuality</tt></td><td class="method-params"><tt>
+ (int&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>A value of 0, 1, 2, or 3. Default is 1. Defines the amount of checking for overlapping lines in a plot or 2-D export file, such as IGES, before making a file. <p></p>
+The values are interpreted as follows:<ul type="disc">
+
+<li>
+ 0-Does not check for overlapping lines or collect lines of the same pen color.</li>
+
+<li>
+ 1-Does not check for overlapping lines, but collects lines of the same pen color for plotting.</li>
+
+<li>
+ 2-Partially checks edges with two vertices, and collects lines of the same pen color for plotting.</li>
+
+<li>
+ 3-Does a complete check of all edges against each other, regardless of the number of vertices, font, or color. Collects lines of the same pen color for plotting.</li>
+
+</ul>
+
+<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UserScale">GetUserScale/SetUserScale</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetUserScale</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetUserScale</tt></td><td class="method-params"><tt>
+ (double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Specifies a scale factor between 0.01 and 100 for scaling a model or drawing for plotting. Default is 0.01.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PenSlew">GetPenSlew/SetPenSlew</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetPenSlew</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPenSlew</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Set to <tt>true</tt> if you want to adjust pen velocity. Default is <tt>false</tt>. <br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PenVelocityX">GetPenVelocityX/SetPenVelocityX</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetPenVelocityX</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPenVelocityX</tt></td><td class="method-params"><tt>
+ (double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>When <i>PenSlew</i> is <tt>true</tt>, this value is a multiple of the default pen speed in the X dimension. Permitted range is 0.1 to 100. Ignored when <i>PenSlew</i> is <tt>false</tt>.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PenVelocityY">GetPenVelocityY/SetPenVelocityY</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetPenVelocityY</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPenVelocityY</tt></td><td class="method-params"><tt>
+ (double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>When <i>PenSlew</i> is <tt>true</tt>, this value is a multiple of the default pen speed in the y dimension. Permitted range is 0.1 to 100. Ignored when <i>PenSlew</i> is <tt>false</tt>.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SegmentedOutput">GetSegmentedOutput/SetSegmentedOutput</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetSegmentedOutput</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetSegmentedOutput</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Set to <tt>true</tt> to generate a segmented plot. Default is <tt>false</tt>.This may be <tt>true</tt> only if you are plotting a single page.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="LabelPlot">GetLabelPlot/SetLabelPlot</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetLabelPlot</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetLabelPlot</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>If set to <tt>true</tt> , generates the plot with a label. Default is <tt>false</tt>; no label is created.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SeparatePlotFiles">GetSeparatePlotFiles/SetSeparatePlotFiles</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetSeparatePlotFiles</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetSeparatePlotFiles</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Defines the default in the <b>Print to File</b> dialog box.<ul type="disc">
+
+<li>
+ 
+<tt>true</tt>-Sets the default to Create Separate Files. </li>
+
+<li>
+ 
+<tt>false</tt> -A single file is created by default.</li>
+
+</ul>
+
+<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PaperSize">GetPaperSize/SetPaperSize</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcModel-PlotPaperSize.html">PlotPaperSize</a></tt></td><td class="method-name"><tt>GetPaperSize</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPaperSize</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-PlotPaperSize.html">PlotPaperSize</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>One of the <tt><tt><a class="class" href="c-pfcModel-PlotPaperSize.html">PlotPaperSize</a></tt></tt> enumeration objects. Default is PlotPaperSize.ASIZEPLOT.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PageRangeChoice">GetPageRangeChoice/SetPageRangeChoice</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcModel-PlotPageRange.html">PlotPageRange</a></tt></td><td class="method-name"><tt>GetPageRangeChoice</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPageRangeChoice</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-PlotPageRange.html">PlotPageRange</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>One of the <tt><tt><a class="class" href="c-pfcModel-PlotPageRange.html">PlotPageRange</a></tt></tt> enumeration objects. Default is PlotPageRange.PLOT_RANGE_ALL.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PaperSizeX">GetPaperSizeX/SetPaperSizeX</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-name"><tt>GetPaperSizeX</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPaperSizeX</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>When <i>PaperSize</i> is <tt>PlotPaperSize.VARIABLEPLOTSIZE</tt>, this specifies the size of the plotter paper in the X dimension. Otherwise, the value is <tt>null</tt>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PaperSizeY">GetPaperSizeY/SetPaperSizeY</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-name"><tt>GetPaperSizeY</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPaperSizeY</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>When <i>PaperSize</i> is <tt>PlotPaperSize.VARIABLEPLOTSIZE</tt>, this specifies the size of the plotter paper in the Y dimension. Otherwise, the value is <tt>null</tt>. <br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FirstPage">GetFirstPage/SetFirstPage</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Integer</tt></td><td class="method-name"><tt>GetFirstPage</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetFirstPage</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Integer&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>When <i>PageRangeChoice</i> is <tt>PlotPageRange.PLOT_RANGE_OF_PAGES</tt>, this specifies the first page to print. Otherwise, the value is <tt>null</tt> 
+<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="LastPage">GetLastPage/SetLastPage</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Integer</tt></td><td class="method-name"><tt>GetLastPage</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetLastPage</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Integer&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>When <i>PageRangeChoice</i> is <tt>PlotPageRange.PLOT_RANGE_OF_PAGES</tt>, this specifies the last page to print. Otherwise, the value is <tt>null</tt> 
+<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

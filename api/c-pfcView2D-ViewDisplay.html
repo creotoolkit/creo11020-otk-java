@@ -1,0 +1,362 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcView2D.ViewDisplay"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      815
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcView2D.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcView2D-ViewDisplay.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;ViewDisplay</h2>
+<tt>
+     package 
+     <b><a href="p-pfcView2D.html">com.ptc.pfc.pfcView2D</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>ViewDisplay</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface contains the options for display in a drawing view.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><tt><a class="class" href="c-pfcView2D-View2D.html">View2D</a></tt></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcBase-CableDisplayStyle.html">CableDisplayStyle</a></tt></td><td class="method-summary"><tt><a class="method" href="#CableStyle">GetCableStyle</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "CableStyle"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The display style for cables.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#RemoveQuiltHiddenLines">GetRemoveQuiltHiddenLines</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "RemoveQuiltHiddenLines"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to remove quilt hidden lines, <tt>false</tt> otherwise.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#ShowConceptModel">GetShowConceptModel</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ShowConceptModel"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to include the skeleton model in the display, <tt>false</tt> otherwise.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#ShowWeldXSection">GetShowWeldXSection</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ShowWeldXSection"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to show weld cross sections in the display, <tt>false</tt> otherwise.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcBase-DisplayStyle.html">DisplayStyle</a></tt></td><td class="method-summary"><tt><a class="method" href="#Style">GetStyle</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Style"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The display style for hidden lines.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcBase-TangentEdgeDisplayStyle.html">TangentEdgeDisplayStyle</a></tt></td><td class="method-summary"><tt><a class="method" href="#TangentStyle">GetTangentStyle</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "TangentStyle"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The display style for tangent lines.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#CableStyle">SetCableStyle</a>
+ (<a class="type" href="c-pfcBase-CableDisplayStyle.html">CableDisplayStyle</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "CableStyle"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The display style for cables.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#RemoveQuiltHiddenLines">SetRemoveQuiltHiddenLines</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "RemoveQuiltHiddenLines"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to remove quilt hidden lines, <tt>false</tt> otherwise.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ShowConceptModel">SetShowConceptModel</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ShowConceptModel"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to include the skeleton model in the display, <tt>false</tt> otherwise.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ShowWeldXSection">SetShowWeldXSection</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ShowWeldXSection"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to show weld cross sections in the display, <tt>false</tt> otherwise.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Style">SetStyle</a>
+ (<a class="type" href="c-pfcBase-DisplayStyle.html">DisplayStyle</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Style"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The display style for hidden lines.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#TangentStyle">SetTangentStyle</a>
+ (<a class="type" href="c-pfcBase-TangentEdgeDisplayStyle.html">TangentEdgeDisplayStyle</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "TangentStyle"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The display style for tangent lines.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Style">GetStyle/SetStyle</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcBase-DisplayStyle.html">DisplayStyle</a></tt></td><td class="method-name"><tt>GetStyle</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetStyle</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-DisplayStyle.html">DisplayStyle</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The display style for hidden lines.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TangentStyle">GetTangentStyle/SetTangentStyle</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcBase-TangentEdgeDisplayStyle.html">TangentEdgeDisplayStyle</a></tt></td><td class="method-name"><tt>GetTangentStyle</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetTangentStyle</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-TangentEdgeDisplayStyle.html">TangentEdgeDisplayStyle</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The display style for tangent lines.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CableStyle">GetCableStyle/SetCableStyle</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcBase-CableDisplayStyle.html">CableDisplayStyle</a></tt></td><td class="method-name"><tt>GetCableStyle</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetCableStyle</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-CableDisplayStyle.html">CableDisplayStyle</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The display style for cables.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RemoveQuiltHiddenLines">GetRemoveQuiltHiddenLines/SetRemoveQuiltHiddenLines</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetRemoveQuiltHiddenLines</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetRemoveQuiltHiddenLines</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> to remove quilt hidden lines, <tt>false</tt> otherwise.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ShowConceptModel">GetShowConceptModel/SetShowConceptModel</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetShowConceptModel</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetShowConceptModel</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> to include the skeleton model in the display, <tt>false</tt> otherwise.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ShowWeldXSection">GetShowWeldXSection/SetShowWeldXSection</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetShowWeldXSection</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetShowWeldXSection</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> to show weld cross sections in the display, <tt>false</tt> otherwise.<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,1004 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcSession.wfcSession"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      659
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcSession.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcSession-wfcSession.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;wfcSession</h2>
+<tt>
+     package <b><a href="p-wfcSession.html">com.ptc.wfc.wfcSession</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>wfcSession</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "wfcSession"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcSession-BeforeModelRetrieveInstructions.html">BeforeModelRetrieveInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#BeforeModelRetrieveInstructions::Create">BeforeModelRetrieveInstructions_Create</a>
+ (<a class="type" href="c-wfcSession-WModelRetrieveOptions.html">WModelRetrieveOptions</a>&nbsp;RetrieveOptions, String&nbsp;ModelFilePath)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Creates a class object for model retrieve instrctions.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-Matrix3D.html">Matrix3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateMatrix3D">CreateMatrix3D</a>
+ (double&nbsp;idx00, double&nbsp;idx01, double&nbsp;idx02, double&nbsp;idx03, double&nbsp;idx10, double&nbsp;idx11, double&nbsp;idx12, double&nbsp;idx13, double&nbsp;idx20, double&nbsp;idx21, double&nbsp;idx22, double&nbsp;idx23, double&nbsp;idx30, double&nbsp;idx31, double&nbsp;idx32, double&nbsp;idx33)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Intialize a 3 dimensional Matrix with specified values
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-Outline2D.html">Outline2D</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateOutline2D">CreateOutline2D</a>
+ (double&nbsp;idx00, double&nbsp;idx01, double&nbsp;idx10, double&nbsp;idx11)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Intialize a 2 dimensional Line with specified values
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-Outline3D.html">Outline3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateOutline3D">CreateOutline3D</a>
+ (double&nbsp;idx00, double&nbsp;idx01, double&nbsp;idx02, double&nbsp;idx10, double&nbsp;idx11, double&nbsp;idx12)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Intialize a 3 dimensional Line with specified values
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-Point2D.html">Point2D</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreatePoint2D">CreatePoint2D</a>
+ (double&nbsp;idx0, double&nbsp;idx1)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Intialize a 2 dimensional Point with specified values
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-Point3D.html">Point3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreatePoint3D">CreatePoint3D</a>
+ (double&nbsp;idx0, double&nbsp;idx1, double&nbsp;idx2)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Intialize a 3 dimensional Point with specified values
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcSession-Timer.html">Timer</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateTimer">CreateTimer</a>
+ (<a class="type" href="c-wfcSession-TimerAction.html">TimerAction</a>&nbsp;Action)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+      Create timer object with specified listener.
+      This method can be called from non-Toolkit thread. For example , Thread created by application to process non-Creo tasks.
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-Vector2D.html">Vector2D</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateVector2D">CreateVector2D</a>
+ (double&nbsp;idx0, double&nbsp;idx1)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Intialize a 2 dimensional Vector with specified values
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateVector3D">CreateVector3D</a>
+ (double&nbsp;idx0, double&nbsp;idx1, double&nbsp;idx2)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Intialize a 3 dimensional Vector with specified values
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcSession-ElementWstringOption.html">ElementWstringOption</a></tt></td><td class="method-summary"><tt><a class="method" href="#ElementWstringOption::Create">ElementWstringOption_Create</a>
+ (boolean&nbsp;Positive, boolean&nbsp;Sign)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcSession-FiletypeOpenOptions.html">FiletypeOpenOptions</a></tt></td><td class="method-summary"><tt><a class="method" href="#FiletypeOpenOptions::Create">FiletypeOpenOptions_Create</a>
+ (<a class="type" href="c-wfcModel-MdlfileTypes.html">MdlfileTypes</a>&nbsp;ModelFiletypes)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a class object for file open dialog options.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcSession-FiletypeSaveOptions.html">FiletypeSaveOptions</a></tt></td><td class="method-summary"><tt><a class="method" href="#FiletypeSaveOptions::Create">FiletypeSaveOptions_Create</a>
+ (<a class="type" href="c-wfcModel-MdlfileTypes.html">MdlfileTypes</a>&nbsp;ModelFiletypes)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a class object for file save dialog options.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;void</tt></td><td class="method-summary"><tt><a class="method" href="#InvokeLater">InvokeLater</a>
+ (<a class="type" href="c-wfcSession-RunnableAction.html">RunnableAction</a>&nbsp;Action)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+      Create listener object whose callback can be called as soon as Toolkit thread is available. User can call Object Toolkit methods in this callback.
+      This method can be called from non-Toolkit thread. For example , Thread created by application to process non-Creo tasks.
+    </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcSession-TimeValue.html">TimeValue</a></tt></td><td class="method-summary"><tt><a class="method" href="#TimeValue::Create">TimeValue_Create</a>
+ (int&nbsp;Seconds, int&nbsp;MicroSeconds)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ElementWstringOption::Create">ElementWstringOption_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcSession-ElementWstringOption.html">ElementWstringOption</a></tt></td><td class="method-name"><tt>ElementWstringOption_Create</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;Positive, boolean&nbsp;Sign)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Positive</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Sign</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="BeforeModelRetrieveInstructions::Create">BeforeModelRetrieveInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcSession-BeforeModelRetrieveInstructions.html">BeforeModelRetrieveInstructions</a></tt></td><td class="method-name"><tt>BeforeModelRetrieveInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcSession-WModelRetrieveOptions.html">WModelRetrieveOptions</a>&nbsp;RetrieveOptions, String&nbsp;ModelFilePath)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Creates a class object for model retrieve instrctions.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#49">Action Listeners: Model Level Action listeners</a>, <a href="../manual0/JAction.html#61">Action Listeners: Model Level Action listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>RetrieveOptions</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>ModelFilePath</b></tt>
+</dt>
+<dd>
+        A full path to the valid model file including FileName + Extension + Version.
+      </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A pointer to the object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FiletypeOpenOptions::Create">FiletypeOpenOptions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcSession-FiletypeOpenOptions.html">FiletypeOpenOptions</a></tt></td><td class="method-name"><tt>FiletypeOpenOptions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcModel-MdlfileTypes.html">MdlfileTypes</a>&nbsp;ModelFiletypes)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a class object for file open dialog options.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#94">Session Objects: File Dialogs</a>, <a href="../manual0/JSession.html#123">Session Objects: File Dialogs</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ModelFiletypes</b></tt>
+</dt>
+<dd>The filter sequence for file types. 
+   </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A pointer to the object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FiletypeSaveOptions::Create">FiletypeSaveOptions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcSession-FiletypeSaveOptions.html">FiletypeSaveOptions</a></tt></td><td class="method-name"><tt>FiletypeSaveOptions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcModel-MdlfileTypes.html">MdlfileTypes</a>&nbsp;ModelFiletypes)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a class object for file save dialog options.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#105">Session Objects: File Dialogs</a>, <a href="../manual0/JSession.html#123">Session Objects: File Dialogs</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ModelFiletypes</b></tt>
+</dt>
+<dd>The filter sequence for file types. 
+   </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A pointer to the object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TimeValue::Create">TimeValue_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcSession-TimeValue.html">TimeValue</a></tt></td><td class="method-name"><tt>TimeValue_Create</tt></td><td class="method-params"><tt>
+ (int&nbsp;Seconds, int&nbsp;MicroSeconds)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Seconds</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>MicroSeconds</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateTimer">CreateTimer</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcSession-Timer.html">Timer</a></tt></td><td class="method-name"><tt>CreateTimer</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcSession-TimerAction.html">TimerAction</a>&nbsp;Action)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+      Create timer object with specified listener.
+      This method can be called from non-Toolkit thread. For example , Thread created by application to process non-Creo tasks.
+    <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Action</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="InvokeLater">InvokeLater</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;void</tt></td><td class="method-name"><tt>InvokeLater</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcSession-RunnableAction.html">RunnableAction</a>&nbsp;Action)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+      Create listener object whose callback can be called as soon as Toolkit thread is available. User can call Object Toolkit methods in this callback.
+      This method can be called from non-Toolkit thread. For example , Thread created by application to process non-Creo tasks.
+    <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Action</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateMatrix3D">CreateMatrix3D</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-Matrix3D.html">Matrix3D</a></tt></td><td class="method-name"><tt>CreateMatrix3D</tt></td><td class="method-params"><tt>
+ (double&nbsp;idx00, double&nbsp;idx01, double&nbsp;idx02, double&nbsp;idx03, double&nbsp;idx10, double&nbsp;idx11, double&nbsp;idx12, double&nbsp;idx13, double&nbsp;idx20, double&nbsp;idx21, double&nbsp;idx22, double&nbsp;idx23, double&nbsp;idx30, double&nbsp;idx31, double&nbsp;idx32, double&nbsp;idx33)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Intialize a 3 dimensional Matrix with specified values
+    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#50">Session Objects: Initializing Objects</a>, <a href="../manual0/JSession.html#56">Session Objects: Initializing Objects</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx00</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx01</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx02</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx03</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx10</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx11</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx12</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx13</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx20</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx21</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx22</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx23</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx30</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx31</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx32</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx33</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The <tt><tt><a class="class" href="c-pfcBase-Matrix3D.html">Matrix3D</a></tt></tt> object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreatePoint2D">CreatePoint2D</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-Point2D.html">Point2D</a></tt></td><td class="method-name"><tt>CreatePoint2D</tt></td><td class="method-params"><tt>
+ (double&nbsp;idx0, double&nbsp;idx1)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Intialize a 2 dimensional Point with specified values
+    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#51">Session Objects: Initializing Objects</a>, <a href="../manual0/JSession.html#56">Session Objects: Initializing Objects</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx0</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx1</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The <tt><tt><a class="class" href="c-pfcBase-Point2D.html">Point2D</a></tt></tt> object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreatePoint3D">CreatePoint3D</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-Point3D.html">Point3D</a></tt></td><td class="method-name"><tt>CreatePoint3D</tt></td><td class="method-params"><tt>
+ (double&nbsp;idx0, double&nbsp;idx1, double&nbsp;idx2)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Intialize a 3 dimensional Point with specified values
+    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#52">Session Objects: Initializing Objects</a>, <a href="../manual0/JSession.html#56">Session Objects: Initializing Objects</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx0</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx1</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx2</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The <tt><tt><a class="class" href="c-pfcBase-Point3D.html">Point3D</a></tt></tt> object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateOutline3D">CreateOutline3D</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-Outline3D.html">Outline3D</a></tt></td><td class="method-name"><tt>CreateOutline3D</tt></td><td class="method-params"><tt>
+ (double&nbsp;idx00, double&nbsp;idx01, double&nbsp;idx02, double&nbsp;idx10, double&nbsp;idx11, double&nbsp;idx12)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Intialize a 3 dimensional Line with specified values
+    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#54">Session Objects: Initializing Objects</a>, <a href="../manual0/JSession.html#56">Session Objects: Initializing Objects</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx00</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx01</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx02</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx10</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx11</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx12</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The <tt><tt><a class="class" href="c-pfcBase-Outline3D.html">Outline3D</a></tt></tt> object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateOutline2D">CreateOutline2D</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-Outline2D.html">Outline2D</a></tt></td><td class="method-name"><tt>CreateOutline2D</tt></td><td class="method-params"><tt>
+ (double&nbsp;idx00, double&nbsp;idx01, double&nbsp;idx10, double&nbsp;idx11)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Intialize a 2 dimensional Line with specified values
+    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#53">Session Objects: Initializing Objects</a>, <a href="../manual0/JSession.html#56">Session Objects: Initializing Objects</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx00</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx01</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx10</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx11</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The <tt><tt><a class="class" href="c-pfcBase-Outline2D.html">Outline2D</a></tt></tt> object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateVector2D">CreateVector2D</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-Vector2D.html">Vector2D</a></tt></td><td class="method-name"><tt>CreateVector2D</tt></td><td class="method-params"><tt>
+ (double&nbsp;idx0, double&nbsp;idx1)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Intialize a 2 dimensional Vector with specified values
+    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#55">Session Objects: Initializing Objects</a>, <a href="../manual0/JSession.html#56">Session Objects: Initializing Objects</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx0</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx1</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The <tt><tt><a class="class" href="c-pfcBase-Vector2D.html">Vector2D</a></tt></tt> object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateVector3D">CreateVector3D</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a></tt></td><td class="method-name"><tt>CreateVector3D</tt></td><td class="method-params"><tt>
+ (double&nbsp;idx0, double&nbsp;idx1, double&nbsp;idx2)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Intialize a 3 dimensional Vector with specified values
+    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#56">Session Objects: Initializing Objects</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx0</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx1</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>idx2</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The <tt><tt><a class="class" href="c-pfcBase-Vector3D.html">Vector3D</a></tt></tt> object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

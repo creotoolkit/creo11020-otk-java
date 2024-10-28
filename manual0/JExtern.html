@@ -1,0 +1,684 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9">
+      <meta name="ch:resourceid" content="JExtern" scheme="atiChunkerMeta">
+      
+      
+      
+      
+      
+      
+      <link href="css/styler.css" rel="stylesheet" type="text/css">
+      <title>External Data</title>
+   
+<SCRIPT LANGUAGE="JAVASCRIPT">
+  function findProperNode() { top.frames[0].document.apiwizard.manual("MANJEXTERN0", location.hash); }
+</SCRIPT>
+
+</head>
+   <body onLoad="findProperNode()">
+      
+         
+         <a name="0"> </a><div class=" x-title-65-0 x-title-65-1" combinedFontName="off" id="styler-id1.1.1.42.1" class="ChapterTitle">External Data</div>
+         <div class=" x-body-2-0">
+            <div class=" x-p-7-0">This chapter explains using External Data in <span class=" x-ph-2-0" id="JExtern_ExternalData-BCB3F00E_PTCCreoObjectToolkitJava-E_44_5">Creo Object TOOLKIT Java</span>.
+            </div>
+         </div>
+         <div class=" x-topic-4-0 x-topic-4-1 x-topic-4-2" combinedFontName="off" id="JExtern_ExternalData-BCB3F0F9_44_6">
+            
+            <a name="1"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.42.3.1" class="Heading1">External Data</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">This chapter describes how to store and retrieve external data. External data enables a <span class=" x-ph-2-0" id="JExtern_ExternalData-BCB3F0F9_PTCCreoObjectToolkitJava-E_44_10">Creo Object TOOLKIT Java</span> application to store its own data in a <span class=" x-ph-2-0" id="JExtern_ExternalData-BCB3F0F9_PTCCreo-EC6F7D2F_44_11">Creo</span> database in such a way that it is invisible to the <span class=" x-ph-2-0" id="JExtern_ExternalData-BCB3F0F9_PTCCreo-EC6F7D2F_44_11">Creo</span> user. This method is different from other means of storage accessible through the <span class=" x-ph-2-0" id="JExtern_ExternalData-BCB3F0F9_PTCCreo-EC6F7D2F_44_11">Creo</span> user interface.
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JExtern_IntroductionToExternalData-BCB3F284_44_14">
+               
+               <a name="2"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.42.3.3.1" class="Heading2">Introduction to External Data</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">External data provides a way for the <span class=" x-ph-2-0" id="JExtern_IntroductionToExternalData-BCB3F284_PTCCreo-EC6F_44_18">Creo</span> application to store its own private information about a <span class=" x-ph-2-0" id="JExtern_IntroductionToExternalData-BCB3F284_PTCCreo-EC6F_44_18">Creo</span> model within the model file. The data is built and interrogated by the application as a workspace data structure. It is saved
+                     to the model file when the model is saved, and retrieved when the model is retrieved. The external data is otherwise ignored
+                     by <span class=" x-ph-2-0" id="JExtern_IntroductionToExternalData-BCB3F284_PTCCreo-EC6F_44_18">Creo</span>; the application has complete control over form and content.
+                  </div>
+                  <div class=" x-p-7-0">The external data for a specific <span class=" x-ph-2-0" id="JExtern_IntroductionToExternalData-BCB3F284_PTCCreo-EC6F_44_18">Creo</span> model is broken down into classes and slots. A class is a named &#8216;&#8216;bin&#8217;&#8217; for your data, and identifies it as yours so no other
+                     <span class=" x-ph-2-0" id="JExtern_IntroductionToExternalData-BCB3F284_PTCCreo-EC6F_44_18">Creo</span> API application (or other classes in your own application) will use it by mistake. An application usually needs only one
+                     class. The class name should be unique for each application and describe the role of the data in your application.
+                  </div>
+                  <div class=" x-p-7-0">Each class contains a set of data slots. Each slot is identified by an identifier and optionally, a name. A slot contains
+                     a single data item of one of the following types:
+                  </div>
+                  <div class=" x-table-2-0 x-table-2-3" id="styler-id1.1.1.42.3.3.2.4">
+                     <table xmlns="" cellpadding="6.666666666666667" class=" x-tgroup-1-0" frame="box" rules="none" style="border-collapse: collapse; border-width: 1pt; " width="100%">
+                        <colgroup>
+                           <col width="304.79999999999995">
+                           <col width="175.2">
+                        </colgroup>
+                        <thead align="left" class=" x-thead-1-0" style="font-weight: bold" valign="top">
+                           <tr class=" x-row-2-0">
+                              <th class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; " valign="top">
+                                 <div class=" x-p-3-0"><span class=" x-ph-2-0" id="JExtern_IntroductionToExternalData-BCB3F284_PTCCreoObjec_44_33">Creo Object TOOLKIT Java</span> Type
+                                 </div>
+                              </th>
+                              <th class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; " valign="top">
+                                 <div class=" x-p-3-0">Data</div>
+                              </th>
+                           </tr>
+                        </thead>
+                        <tbody class=" x-tbody-1-0" valign="top">
+                           <tr class=" x-row-2-0">
+                              <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                                 <div class=" x-p-3-0"><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfc</span></span><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">External.ExternalDataType.EXTDATA_INTEGER</span></span></div>
+                              </td>
+                              <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                                 <div class=" x-p-3-0">integer</div>
+                              </td>
+                           </tr>
+                           <tr class=" x-row-2-0">
+                              <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                                 <div class=" x-p-3-0"><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfc</span></span><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">External.ExternalDataType.EXTDATA_DOUBLE</span></span></div>
+                              </td>
+                              <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                                 <div class=" x-p-3-0">double</div>
+                              </td>
+                           </tr>
+                           <tr class=" x-row-2-0">
+                              <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                                 <div class=" x-p-3-0"><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfc</span></span><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">External.ExternalDataType.EXTDATA_STRING</span></span></div>
+                              </td>
+                              <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                                 <div class=" x-p-3-0">string</div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">The <span class=" x-ph-2-0" id="JExtern_IntroductionToExternalData-BCB3F284_PTCCreoObjec_44_33">Creo Object TOOLKIT Java</span> interfaces used to access external data in <span class=" x-ph-2-0" id="JExtern_IntroductionToExternalData-BCB3F284_PTCCreo-EC6F_44_18">Creo</span> applications are:
+                  </div>
+                  <div class=" x-table-2-0 x-table-2-3" id="styler-id1.1.1.42.3.3.2.6">
+                     <table xmlns="" cellpadding="6.666666666666667" class=" x-tgroup-1-0" frame="box" rules="none" style="border-collapse: collapse; border-width: 1pt; " width="100%">
+                        <colgroup>
+                           <col width="304.79999999999995">
+                           <col width="175.2">
+                        </colgroup>
+                        <thead align="left" class=" x-thead-1-0" style="font-weight: bold" valign="top">
+                           <tr class=" x-row-2-0">
+                              <th class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; " valign="top">
+                                 <div class=" x-p-3-0"><span class=" x-ph-2-0" id="JExtern_IntroductionToExternalData-BCB3F284_PTCCreoObjec_44_33">Creo Object TOOLKIT Java</span> Type
+                                 </div>
+                              </th>
+                              <th class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; " valign="top">
+                                 <div class=" x-p-3-0">Data Type</div>
+                              </th>
+                           </tr>
+                        </thead>
+                        <tbody class=" x-tbody-1-0" valign="top">
+                           <tr class=" x-row-2-0">
+                              <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                                 <div class=" x-p-3-0"><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">com.ptc.pfc.</span></span><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">External.ExternalDataAccess</span></span></div>
+                              </td>
+                              <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                                 <div class=" x-p-3-0">This is the top level object and is created when attempting to access external data.</div>
+                              </td>
+                           </tr>
+                           <tr class=" x-row-2-0">
+                              <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                                 <div class=" x-p-3-0"><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">com.ptc.pfc.</span></span><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfc</span></span><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">External.ExternalDataClass</span></span></div>
+                              </td>
+                              <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                                 <div class=" x-p-3-0">This is a class of external data and is identified by a unique name.</div>
+                              </td>
+                           </tr>
+                           <tr class=" x-row-2-0">
+                              <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                                 <div class=" x-p-3-0"><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">com.ptc.pfc.</span></span><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfc</span></span><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">External.ExternalDataSlot</span></span></div>
+                              </td>
+                              <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                                 <div class=" x-p-3-0">This is a container for one item of data. Each slot is stored in a class.</div>
+                              </td>
+                           </tr>
+                           <tr class=" x-row-2-0">
+                              <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                                 <div class=" x-p-3-0"><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">com.ptc.pfc.</span></span><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfc</span></span><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">External.ExternalData</span></span></div>
+                              </td>
+                              <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                                 <div class=" x-p-3-0">This is a compact data structure that contains either an integer, double or string value.</div>
+                              </td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JExtern_CompatibilityWithProTOOLKIT-BCB3F9BF_44_104">
+               
+               <a name="3"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.42.3.4.1" class="Heading2">Compatibility with Creo TOOLKIT</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0"><span class=" x-ph-2-0" id="JExtern_CompatibilityWithProTOOLKIT-BCB3F9BF_PTCCreoObje_44_108">Creo Object TOOLKIT Java</span> and <span class=" x-ph-2-0"><span class=" x-ph-2-0" id="JExtern_CompatibilityWithProTOOLKIT-BCB3F9BF_PTCCreoPara_44_110">Creo TOOLKIT</span> </span> share external data in the same manner. <span class=" x-ph-2-0" id="JExtern_CompatibilityWithProTOOLKIT-BCB3F9BF_PTCCreoObje_44_108">Creo Object TOOLKIT Java</span> external data is accessible by <span class=" x-ph-2-0"><span class=" x-ph-2-0" id="JExtern_CompatibilityWithProTOOLKIT-BCB3F9BF_PTCCreoPara_44_110">Creo TOOLKIT</span> </span> and the reverse is also true. However, an error will result if <span class=" x-ph-2-0" id="JExtern_CompatibilityWithProTOOLKIT-BCB3F9BF_PTCCreoObje_44_108">Creo Object TOOLKIT Java</span> attempts to access external data previously stored by <span class=" x-ph-2-0" id="JExtern_CompatibilityWithProTOOLKIT-BCB3F9BF_PTCCreoPara_44_110">Creo TOOLKIT</span> as a stream.
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JExtern_AccessingExternalData-BCB3FB8C_44_116">
+               
+               <a name="4"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.42.3.5.1" class="Heading2">Accessing External Data</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Methods Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="5"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcModel-Model.html#AccessExternalData">pfcModel.Model.AccessExternalData</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="6"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcModel-Model.html#TerminateExternalData">pfcModel.Model.TerminateExternalData</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="7"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcExternal-ExternalDataAccess.html#IsValid">pfcExternal.ExternalDataAccess.IsValid</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcModel.Model.AccessExternalData</span></span> prepares <span class=" x-ph-2-0" id="JExtern_AccessingExternalData-BCB3FB8C_PTCCreo-EC6F7D2F_44_132">Creo</span> application to read external data from the model file. It returns the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfc</span></span><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">External.ExternalDataAccess</span></span> object that is used to read and write data. This method should be called only once for any given model in session.
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcModel.Model.TerminateExternalData</span></span> stops <span class=" x-ph-2-0" id="JExtern_AccessingExternalData-BCB3FB8C_PTCCreo-EC6F7D2F_44_132">Creo</span> application from accessing external data in a model. When you use this method all external data in the model will be removed.
+                     Permanent removal will occur when the model is saved.
+                  </div>
+                  <div class=" x-note-2-0 x-note-2-3">
+                     <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                     <div class=" x-p-7-0">If you need to preserve the external data created in session, you must save the model before calling this function. Otherwise,
+                        your data will be lost.
+                     </div>
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcExternal.ExternalDataAccess.IsValid</span></span> determines if the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">ExternalDataAccess</span></span> object can be used to read and write data.
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JExtern_StoringExternalData-BCB3FDD9_44_143">
+               
+               <a name="8"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.42.3.6.1" class="Heading2">Storing External Data</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Methods Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="9"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcExternal-ExternalDataAccess.html#CreateClass">pfcExternal.ExternalDataAccess.CreateClass</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="10"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcExternal-ExternalDataClass.html#CreateSlot">pfcExternal.ExternalDataClass.CreateSlot</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="11"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcExternal-ExternalDataSlot.html#Value">pfcExternal.ExternalDataSlot.SetValue</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">The first step in storing external data in a new class and slot is to set up a class using the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcExternal.ExternalDataAccess.CreateClass</span></span>, which provides the class name. The method outputs <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfc</span></span><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">External.ExternalDataClass</span></span>, used by the application to reference the class.
+                  </div>
+                  <div class=" x-p-7-0">The next step is to use <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcExternal.ExternalDataClass.CreateSlot</span></span> to create an empty data slot and input a slot name. The method outputs a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfc</span></span><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">External.ExternalDataSlot</span></span> object to identify the new slot.
+                  </div>
+                  <div class=" x-note-2-0 x-note-2-3">
+                     <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                     <div class=" x-p-7-0">Slot names cannot begin with a number.</div>
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcExternal.ExternalDataSlot.SetValue</span></span> specifies the data type of a slot and writes an item of that type to the slot. The input is a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfc</span></span><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">External.ExternalData</span></span> object that you can create by calling any one of the methods in the next section.
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JExtern_InitializingDataObjects-BCB40590_44_171">
+               
+               <a name="12"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.42.3.7.1" class="Heading2">Initializing Data Objects</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Methods Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="13"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcExternal-pfcExternal.html#CreateIntExternalData">pfcExternal.pfcExternal.CreateIntExternalData</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="14"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcExternal-pfcExternal.html#CreateDoubleExternalData">pfcExternal.pfcExternal.CreateDoubleExternalData</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="15"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcExternal-pfcExternal.html#CreateStringExternalData">pfcExternal.pfcExternal.CreateStringExternalData</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">These methods initialize a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfc</span></span><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">External.ExternalData</span></span> object with the appropriate data inputs.
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JExtern_RetrievingExternalData-BCB4068E_44_188">
+               
+               <a name="16"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.42.3.8.1" class="Heading2">Retrieving External Data</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Methods Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="17"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcExternal-ExternalDataAccess.html#LoadAll">pfcExternal.ExternalDataAccess.LoadAll</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="18"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcExternal-ExternalDataAccess.html#ListClasses">pfcExternal.ExternalDataAccess.ListClasses</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="19"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcExternal-ExternalDataClass.html#ListSlots">pfcExternal.ExternalDataClass.ListSlots</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="20"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcExternal-ExternalDataSlot.html#Value">pfcExternal.ExternalDataSlot.GetValue</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="21"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcExternal-ExternalData.html#discr">pfcExternal.ExternalData.Getdiscr</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="22"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcExternal-ExternalData.html#IntegerValue">pfcExternal.ExternalData.GetIntegerValue</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="23"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcExternal-ExternalData.html#DoubleValue">pfcExternal.ExternalData.GetDoubleValue</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="24"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-pfcExternal-ExternalData.html#StringValue">pfcExternal.ExternalData.GetStringValue</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">For improved performance, external data is not loaded automatically into memory with the model. When the model is in session,
+                     call the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcExternal.ExternalDataAccess.LoadAll</span></span> to retrieve all the external data for the specified model from the <span class=" x-ph-2-0" id="JExtern_RetrievingExternalData-BCB4068E_PTCCreo-EC6F7D2F_44_219">Creo</span> model file and put it in the workspace. The method needs to be called only once to retrieve all the data.
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcExternal.ExternalDataAccess.ListClasses</span></span> returns a sequence of <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">ExternalDataClasses</span></span> registered in the model. The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcExternal.ExternalDataClass.ListSlots</span></span> provide a sequence of <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">ExternalDataSlots</span></span> existing for each class.
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcExternal.ExternalDataSlot.GetValue</span></span> reads the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcExternal.ExternalData</span></span> from a specified slot.
+                  </div>
+                  <div class=" x-p-7-0">To find out a data type of a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfc</span></span><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">External.ExternalData</span></span>, call <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcExternal.ExternalData.Getdiscr</span></span> and then call one of these methods to get the data, depending on the data type:
+                  </div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcExternal.ExternalData.GetIntegerValue</span></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcExternal.ExternalData.GetDoubleValue</span></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0"><span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcExternal.ExternalData.GetStringValue</span></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="JExtern_SelectingTheNodeFromTheExternalAppl-9D2CE7C0_44_242">
+               
+               <a name="25"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.42.3.9.1" class="Heading2">Selecting the Node from the External Application Tree</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">The tree created by an external application is similar to the <span class=" x-ph-2-0" id="JExtern_SelectingTheNodeFromTheExternalAppl-9D2CE7C0_PTC_44_246">Creo</span> model tree. Each node of this tree represents an external object that has been created by the application. The external objects
+                     could be different types of entities, such as, light sources, light sensors, and so on.
+                  </div>
+                  <div class=" x-p-7-0">Methods Introduced:</div>
+                  <div class=" x-ul-2-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="26"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcSession-WSession.html#RegisterExternalSelectionHighlight">wfcSession.WSession.RegisterExternalSelectionHighlight</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="27"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcSelect-ExternalSelectionHighlight.html#StartNotify">wfcSelect.ExternalSelectionHighlight.StartNotify</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="28"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcSelect-ExternalSelectionHighlight.html#Action">wfcSelect.ExternalSelectionHighlight.Action</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="29"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcSelect-ExternalSelectionHighlight.html#EndNotify">wfcSelect.ExternalSelectionHighlight.EndNotify</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="30"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcSelect-WSelection.html#RecordExternalSelection">wfcSelect.WSelection.RecordExternalSelection</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; "></td>
+                              <td><span class=" x-p-4-0"><a name="31"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcSession-WSession.html#ReleaseExternalSelectionHighlight">wfcSession.WSession.ReleaseExternalSelectionHighlight</A></li></span></span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSession.WSession.RegisterExternalSelectionHighlight</span></span> registers the callback methods when you select or deselect a node in the user tree or an object in the graphics window. The
+                     notification method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSelect.ExternalSelectionHighlight.StartNotify</span></span> is called when the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSession.BaseSession.Select</span></span> is activated. It notifies the application about entering <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSession.BaseSession.Select</span></span>. The callback method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSelect.ExternalSelectionHighlight.Action</span></span> is called when you select or deselect an external object. The <span class=" x-ph-2-0" id="JExtern_SelectingTheNodeFromTheExternalAppl-9D2CE7C0_PTC_44_273">Creo Object
+                        TOOLKIT C++</span> application will highlight the external object or remove the highlight according to the selection.  The notification method
+                     <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSelect.ExternalSelectionHighlight.EndNotify</span></span> is called when the applications is about to exit the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSession.BaseSession.Select</span></span>.
+                  </div>
+                  <div class=" x-p-7-0">On clicking a tree node, the application creates a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">WSelection</span></span> object and uses the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSelect.WSelection.RecordExternalSelection</span></span> to pass it to <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcSession.BaseSession.Select</span></span>. Pass the enumerated data type <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">SelectionRecordAction</span></span> as the input argument. The valid values are:
+                     <div class=" x-ul-1-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSELECT_OVERRIDE</span></span>&#8212;Specifies that the previous selection is overridden.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSELECT_TOGGLE</span></span>&#8212;Specifies that the last two selections are toggled between.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSession.WSession.ReleaseExternalSelectionHighlight</span></span> to release the memory of the client interface <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">ExternalSelectionHighlight</span></span> in the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcSession.WSession.RegisterExternalSelectionHighlight</span></span>. After the client interface is released it cannot be used by the application.
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="JExtern_Exceptions-BCB40F7A_44_292">
+            
+            <a name="32"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.42.4.1" class="Heading1">Exceptions</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Most exceptions thrown by external data methods in <span class=" x-ph-2-0" id="JExtern_Exceptions-BCB40F7A_PTCCreoObjectToolkitJava-EC6_44_296">Creo Object TOOLKIT Java</span> extend <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfc</span></span><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Exceptions.XExternalDataError</span></span>, which is a subclass of <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfc</span></span><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Exceptions.XToolkitError</span></span>.
+               </div>
+               <div class=" x-p-7-0">An additional exception thrown by external data methods is <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfc</span></span><span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">Exceptions.XBadExternalData</span></span>. This exception signals an error accessing data. For example, external data access might have been terminated or the model
+                  might contain stream data from <span class=" x-ph-2-0"><span class=" x-ph-2-0" id="JExtern_Exceptions-BCB40F7A_PTCCreoParametricToolkit-EC6_44_305">Creo TOOLKIT</span> </span>.
+               </div>
+               <div class=" x-p-7-0">The following table lists these exceptions.</div>
+               <div class=" x-table-2-0 x-table-2-3" id="styler-id1.1.1.42.4.2.4">
+                  <table xmlns="" cellpadding="6.666666666666667" class=" x-tgroup-1-0" frame="box" rules="none" style="border-collapse: collapse; border-width: 1pt; " width="100%">
+                     <colgroup>
+                        <col width="302.4">
+                        <col width="177.60000000000002">
+                     </colgroup>
+                     <thead align="left" class=" x-thead-1-0" style="font-weight: bold" valign="top">
+                        <tr class=" x-row-2-0">
+                           <th class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; " valign="top">
+                              <div class=" x-p-3-0">Exception</div>
+                           </th>
+                           <th class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; " valign="top">
+                              <div class=" x-p-3-0">Cause</div>
+                           </th>
+                        </tr>
+                     </thead>
+                     <tbody class=" x-tbody-1-0" valign="top">
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0"><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">XExternalDataInvalidObject</span></span></div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Generated when a model or class is invalid.</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0"><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">XExternalDataClassOrSlotExists</span></span></div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Generated when creating a class or slot and the proposed class or slot already exists.</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0"><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">XExternalDataNamesTooLong</span></span></div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Generated when a class or slot name is too long.</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0"><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">XExternalDataSlotNotFound</span></span></div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Generated when a specified class or slot does not exist.</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0"><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">XExternalDataEmptySlot</span></span></div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Generated when the slot you are attempting to read is empty.</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0"><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">XExternalDataInvalidSlotName</span></span></div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Generated when a specified slot name is invalid.</div>
+                           </td>
+                        </tr>
+                        <tr class=" x-row-2-0">
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0"><span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">XBadGetExternalData</span></span></div>
+                           </td>
+                           <td class="entry-in-tbody" style="border-width: 1pt; border-right-style: solid; border-bottom-style: solid; ">
+                              <div class=" x-p-3-0">Generated when you try to access an incorrect data type in a <span class=" x-codeph-1-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">External.ExternalData</span></span> object.
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>

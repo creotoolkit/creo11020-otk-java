@@ -1,0 +1,206 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcSession.FiletypeSaveOptions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      322
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcSession.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcSession-FiletypeSaveOptions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;FiletypeSaveOptions</h2>
+<tt>
+     package 
+     <b><a href="p-wfcSession.html">com.ptc.wfc.wfcSession</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>FiletypeSaveOptions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcUI-FileUIOptions.html">com.ptc.pfc.pfcUI.FileUIOptions</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class specifies the options for file save dialog. 
+<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcModel-MdlfileTypes.html">MdlfileTypes</a></tt></td><td class="method-summary"><tt><a class="method" href="#ModelFiletypes">GetModelFiletypes</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ModelFiletypes"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The sequence of <tt><tt><a class="class" href="c-wfcModel-MdlfileType.html">MdlfileType</a></tt></tt> as filter for file types to be made available for selection.  
+  If this is empty all file types will be available.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-summary"><tt><a class="method" href="#PreselectedItem">GetPreselectedItem</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PreselectedItem"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A preselected file or item.
+  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ModelFiletypes">SetModelFiletypes</a>
+ (<a class="type" href="c-wfcModel-MdlfileTypes.html">MdlfileTypes</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ModelFiletypes"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The sequence of <tt><tt><a class="class" href="c-wfcModel-MdlfileType.html">MdlfileType</a></tt></tt> as filter for file types to be made available for selection.  
+  If this is empty all file types will be available.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PreselectedItem">SetPreselectedItem</a>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PreselectedItem"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A preselected file or item.
+  </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcUI-FileUIOptions.html"><tt>com.ptc.pfc.pfcUI.FileUIOptions</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcUI-FileUIOptions.html#DialogLabel"><tt>GetDialogLabel</tt></a>,
+      <a class="method" href="c-pfcUI-FileUIOptions.html#DialogLabel"><tt>SetDialogLabel</tt></a>,
+      <a class="method" href="c-pfcUI-FileUIOptions.html#Shortcuts"><tt>GetShortcuts</tt></a>,
+      <a class="method" href="c-pfcUI-FileUIOptions.html#Shortcuts"><tt>SetShortcuts</tt></a>,
+      <a class="method" href="c-pfcUI-FileUIOptions.html#DefaultPath"><tt>GetDefaultPath</tt></a>,
+      <a class="method" href="c-pfcUI-FileUIOptions.html#DefaultPath"><tt>SetDefaultPath</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ModelFiletypes">GetModelFiletypes/SetModelFiletypes</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcModel-MdlfileTypes.html">MdlfileTypes</a></tt></td><td class="method-name"><tt>GetModelFiletypes</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetModelFiletypes</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcModel-MdlfileTypes.html">MdlfileTypes</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The sequence of <tt><tt><a class="class" href="c-wfcModel-MdlfileType.html">MdlfileType</a></tt></tt> as filter for file types to be made available for selection.  
+  If this is empty all file types will be available.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#106">Session Objects: File Dialogs</a>, <a href="../manual0/JSession.html#123">Session Objects: File Dialogs</a>, <a href="../manual0/JSession.html#107">Session Objects: File Dialogs</a>, <a href="../manual0/JSession.html#123">Session Objects: File Dialogs</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PreselectedItem">GetPreselectedItem/SetPreselectedItem</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-name"><tt>GetPreselectedItem</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPreselectedItem</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>A preselected file or item.
+  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSession.html#108">Session Objects: File Dialogs</a>, <a href="../manual0/JSession.html#123">Session Objects: File Dialogs</a>, <a href="../manual0/JSession.html#109">Session Objects: File Dialogs</a>, <a href="../manual0/JSession.html#123">Session Objects: File Dialogs</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

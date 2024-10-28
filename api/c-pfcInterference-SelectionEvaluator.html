@@ -1,0 +1,304 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcInterference.SelectionEvaluator"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      637
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcInterference.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcInterference-SelectionEvaluator.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;SelectionEvaluator</h2>
+<tt>
+     package 
+     <b><a href="p-pfcInterference.html">com.ptc.pfc.pfcInterference</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>SelectionEvaluator</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcObject-Object.html">com.ptc.pfc.pfcObject.Object</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class allows the computation of clearances and inteferences between two selected objects.
+<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcInterference-ClearanceData.html">ClearanceData</a></tt></td><td class="method-summary"><tt><a class="method" href="#ComputeClearance">ComputeClearance</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Enables the user to compute the clearance between two selected parts or surfaces.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcInterference-InterferenceVolume.html">InterferenceVolume</a></tt></td><td class="method-summary"><tt><a class="method" href="#ComputeInterference">ComputeInterference</a>
+ (boolean&nbsp;SolidOnly)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Enables the user to measure the interference between the two specified parts.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcInterference-CriticalDistanceData.html">CriticalDistanceData</a></tt></td><td class="method-summary"><tt><a class="method" href="#ComputeNearestCriticalDistance">ComputeNearestCriticalDistance</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Enables the user to find the nearest local minimum (not the absolute minimum) of the distance function between two selected objects.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcSelect-SelectionPair.html">SelectionPair</a></tt></td><td class="method-summary"><tt><a class="method" href="#Selections">GetSelections</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Selections"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The SelectionPair: the pair of selected objects.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Selections">SetSelections</a>
+ (<a class="type" href="c-pfcSelect-SelectionPair.html">SelectionPair</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Selections"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The SelectionPair: the pair of selected objects.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Selections">GetSelections/SetSelections</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcSelect-SelectionPair.html">SelectionPair</a></tt></td><td class="method-name"><tt>GetSelections</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetSelections</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSelect-SelectionPair.html">SelectionPair</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The SelectionPair: the pair of selected objects.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#169">Geometry Evaluation: Analyzing Interference Information</a>, <a href="../manual0/JGeom.html#173">Geometry Evaluation: Analyzing Interference Information</a>, <a href="../manual0/JGeom.html#170">Geometry Evaluation: Analyzing Interference Information</a>, <a href="../manual0/JGeom.html#173">Geometry Evaluation: Analyzing Interference Information</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ComputeInterference">ComputeInterference</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcInterference-InterferenceVolume.html">InterferenceVolume</a></tt></td><td class="method-name"><tt>ComputeInterference</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;SolidOnly)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Enables the user to measure the interference between the two specified parts.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XInvalidSelection.html">XInvalidSelection</a></tt></tt> - Selections are not valid</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#171">Geometry Evaluation: Analyzing Interference Information</a>, <a href="../manual0/JGeom.html#173">Geometry Evaluation: Analyzing Interference Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>SolidOnly</b></tt>
+</dt>
+<dd>Specifies whether to compute only solid interfaces or to also compute surface interfaces.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The InterferenceVolume object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ComputeClearance">ComputeClearance</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcInterference-ClearanceData.html">ClearanceData</a></tt></td><td class="method-name"><tt>ComputeClearance</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Enables the user to compute the clearance between two selected parts or surfaces.
+<br>
+<br> 
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XInvalidSelection.html">XInvalidSelection</a></tt></tt> - Selections are not valid</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#172">Geometry Evaluation: Analyzing Interference Information</a>, <a href="../manual0/JGeom.html#173">Geometry Evaluation: Analyzing Interference Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The ClearanceData object that represents the value of the computed clearance, indicates if interference is detected and the closest points (in the respective part's coordinate systems).</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ComputeNearestCriticalDistance">ComputeNearestCriticalDistance</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcInterference-CriticalDistanceData.html">CriticalDistanceData</a></tt></td><td class="method-name"><tt>ComputeNearestCriticalDistance</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Enables the user to find the nearest local minimum (not the absolute minimum) of the distance function between two selected objects.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitBadContext.html">XToolkitBadContext</a></tt></tt> - Not applicable to the input selections.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGeom.html#173">Geometry Evaluation: Analyzing Interference Information</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The CriticalDistanceData object that represents the local minimum distance between two selected objects, two 3d points two surface UV-parameters where the distance is calculated.</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

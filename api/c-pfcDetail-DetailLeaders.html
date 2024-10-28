@@ -1,0 +1,242 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcDetail.DetailLeaders"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      192
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcDetail.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcDetail-DetailLeaders.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;DetailLeaders</h2>
+<tt>
+     package 
+     <b><a href="p-pfcDetail.html">com.ptc.pfc.pfcDetail</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>DetailLeaders</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface represents a set of leaders used by a detail item.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><tt><a class="class" href="c-pfcDetail-DetailNoteInstructions.html">DetailNoteInstructions</a></tt></tt>, <tt><tt><a class="class" href="c-pfcDetail-DetailSymbolInstInstructions.html">DetailSymbolInstInstructions</a></tt></tt>, <tt><a class="method" href="c-pfcDetail-pfcDetail.html#FreeAttachment::Create">pfcDetail.FreeAttachment_Create(Point3D)</a></tt>, <tt><a class="method" href="c-pfcDetail-pfcDetail.html#ParametricAttachment::Create">pfcDetail.ParametricAttachment_Create(Selection)</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-summary"><tt><a class="method" href="#ElbowLength">GetElbowLength</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ElbowLength"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The elbow length for the leaders.  If <tt>null</tt>, the default elbow lenghth is used if there are leaders present.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-Attachment.html">Attachment</a></tt></td><td class="method-summary"><tt><a class="method" href="#ItemAttachment">GetItemAttachment</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ItemAttachment"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The location where the detail item is attached. If this is <tt>null</tt> when retrieving the information from an existing symbol, the item's leader type is not supported by this product.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-Attachments.html">Attachments</a></tt></td><td class="method-summary"><tt><a class="method" href="#Leaders">GetLeaders</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Leaders"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sequence of leaders.  Indicates the locations where the leaders should be attached.If <tt>null</tt>, the detail item will not have leaders.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ElbowLength">SetElbowLength</a>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ElbowLength"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The elbow length for the leaders.  If <tt>null</tt>, the default elbow lenghth is used if there are leaders present.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ItemAttachment">SetItemAttachment</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-Attachment.html">Attachment</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ItemAttachment"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The location where the detail item is attached. If this is <tt>null</tt> when retrieving the information from an existing symbol, the item's leader type is not supported by this product.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Leaders">SetLeaders</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-Attachments.html">Attachments</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Leaders"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sequence of leaders.  Indicates the locations where the leaders should be attached.If <tt>null</tt>, the detail item will not have leaders.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ItemAttachment">GetItemAttachment/SetItemAttachment</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-Attachment.html">Attachment</a></tt></td><td class="method-name"><tt>GetItemAttachment</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetItemAttachment</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-Attachment.html">Attachment</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The location where the detail item is attached. If this is <tt>null</tt> when retrieving the information from an existing symbol, the item's leader type is not supported by this product.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Leaders">GetLeaders/SetLeaders</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-Attachments.html">Attachments</a></tt></td><td class="method-name"><tt>GetLeaders</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetLeaders</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-Attachments.html">Attachments</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Sequence of leaders.  Indicates the locations where the leaders should be attached.If <tt>null</tt>, the detail item will not have leaders.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ElbowLength">GetElbowLength/SetElbowLength</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-name"><tt>GetElbowLength</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetElbowLength</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The elbow length for the leaders.  If <tt>null</tt>, the default elbow lenghth is used if there are leaders present.<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

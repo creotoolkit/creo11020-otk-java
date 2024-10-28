@@ -1,0 +1,164 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcFeature.WFeatureGroup"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      870
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcFeature.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcFeature-WFeatureGroup.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;WFeatureGroup</h2>
+<tt>
+     package 
+     <b><a href="p-wfcFeature.html">com.ptc.wfc.wfcFeature</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>WFeatureGroup</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcFeature-FeatureGroup.html">com.ptc.pfc.pfcFeature.FeatureGroup</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>&nbsp; <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-wfcClient-Status.html">Status</a></tt></td><td class="method-summary"><tt><a class="method" href="#VisitDimensions">VisitDimensions</a>
+ (<a class="type" href="c-wfcClient-VisitingClient.html">VisitingClient</a>&nbsp;visitingClient)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Visit the variable dimensions in a Feature Group. </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcFeature-FeatureGroup.html"><tt>com.ptc.pfc.pfcFeature.FeatureGroup</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcFeature-FeatureGroup.html#Pattern"><tt>GetPattern</tt></a>,
+      <a class="method" href="c-pfcFeature-FeatureGroup.html#GroupLeader"><tt>GetGroupLeader</tt></a>,
+      <a class="method" href="c-pfcFeature-FeatureGroup.html#GroupName"><tt>GetGroupName</tt></a>,
+      <a class="method" href="c-pfcFeature-FeatureGroup.html#IsTableDriven"><tt>GetIsTableDriven</tt></a>,
+      <a class="method" href="c-pfcFeature-FeatureGroup.html#ListMembers"><tt>ListMembers</tt></a>,
+      <a class="method" href="c-pfcFeature-FeatureGroup.html#UDFName"><tt>GetUDFName</tt></a>,
+      <a class="method" href="c-pfcFeature-FeatureGroup.html#UDFInstanceName"><tt>GetUDFInstanceName</tt></a>,
+      <a class="method" href="c-pfcFeature-FeatureGroup.html#ListUDFDimensions"><tt>ListUDFDimensions</tt></a>,
+      <a class="method" href="c-pfcFeature-FeatureGroup.html#CollectUDFDimensions"><tt>CollectUDFDimensions</tt></a>,
+      <a class="method" href="c-pfcFeature-FeatureGroup.html#GetUDFDimensionName"><tt>GetUDFDimensionName</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="VisitDimensions">VisitDimensions</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-wfcClient-Status.html">Status</a></tt></td><td class="method-name"><tt>VisitDimensions</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-wfcClient-VisitingClient.html">VisitingClient</a>&nbsp;visitingClient)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Visit the variable dimensions in a Feature Group. <br>
+<br>
+     
+<p>If ApplyAction of the visiting client returns a value other than TK_NO_ERROR, this method returns.</p>
+     
+<p>If ApplyFilter returns TK_CONTINUE, the item is skipped (not passed to ApplyAction).</p>
+     
+<p>
+<b>Warning: </b>After this method returns, the visiting client stays alive
+     (that is, will not be subject to memory release), to make its adata and its methods
+     available for the application. After the applicatoin finishes using the client, it should call
+     <tt><a class="method" href="c-wfcSession-WSession.html#ReleaseVisitor">WSession.ReleaseVisitor(VisitingClient)</a></tt> on it.
+     </p>
+   
+<p></p>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The group is not a UDF, or does not have variable dimensions. </p>
+  
+</p>
+  
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JlinkOverview.html#116">Overview of Creo Object TOOLKIT Java: Visit Methods</a>, <a href="../manual0/JlinkOverview.html#119">Overview of Creo Object TOOLKIT Java: Visit Methods</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>visitingClient</b></tt>
+</dt>
+<dd>The visiting client implemented by the application. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

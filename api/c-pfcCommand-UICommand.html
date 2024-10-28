@@ -1,0 +1,293 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcCommand.UICommand"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      795
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcCommand.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcCommand-UICommand.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;UICommand</h2>
+<tt>
+     package 
+     <b><a href="p-pfcCommand.html">com.ptc.pfc.pfcCommand</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>UICommand</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcObject-Object.html">com.ptc.pfc.pfcObject.Object</a>,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a class="bold" href="c-pfcBase-ActionSource.html">com.ptc.pfc.pfcBase.ActionSource</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>An action-listener object for menu commands.
+<br>
+<br>The method <b>UICreateCommand</b> creates a <i>UICommand</i> object that contains a <i>UICommandActionListener</i>. You should override the <b>OnCommand</b> method in the ActionListener with the code you want to have execute when the user clicks on that button.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcSession-Session.html#UICreateCommand">Session.UICreateCommand(String, UICommandActionListener)</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Designate">Designate</a>
+ (String&nbsp;MessageFile, String&nbsp;Label, 
+   /*optional*/
+   String&nbsp;Help, 
+   /*optional*/
+   String&nbsp;Description)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Designates the command to appear as placeable in the Screen Customization dialog. This may not be used for existing Creo Parametric commands.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetIcon">SetIcon</a>
+ (String&nbsp;IconFile)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Designates the icon to be used with a user-created command. Adds the icon to the command of Creo Parametric.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcBase-ActionSource.html"><tt>com.ptc.pfc.pfcBase.ActionSource</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcBase-ActionSource.html#AddActionListener"><tt>AddActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#RemoveActionListener"><tt>RemoveActionListener</tt></a>,
+      <a class="method" href="c-pfcBase-ActionSource.html#AddActionListenerWithType"><tt>AddActionListenerWithType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetIcon">SetIcon</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetIcon</tt></td><td class="method-params"><tt>
+ (String&nbsp;IconFile)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Designates the icon to be used with a user-created command. Adds the icon to the command of Creo Parametric.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The icon file was not found.</p>
+   
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidFile.html">XToolkitInvalidFile</a></tt></tt> - The file specified was not a Creo Parametric .BIF file or a custom .GIF file. </p>
+   
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidFile.html">XToolkitInvalidFile</a></tt></tt> - The file specified was not of required format.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/menus_jlink.html#23">Menus, Commands, and Pop-up Menus: Command Icons</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>IconFile</b></tt>
+</dt>
+<dd>
+
+<purpose>The name of the icon file including the extension. 
+<notes>It can be either a Creo Parametric .BIF file, or a custom .GIF file. In order to fit with standard Creo Parametric button sizes, the size of the icon should be at most 20 x 20 pixels.
+The default search paths for finding the icons are:
+<ul type="disc">
+
+<li>Creo Parametric loadpoint/text/resource</li>
+
+<li>Application text dir/resource</li>
+
+<li>Application text dir/(language)/resource</li>
+
+</ul>
+The location of the application text dir is specifed in the registry file.
+</notes> 
+
+</purpose>
+
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Designate">Designate</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>Designate</tt></td><td class="method-params"><tt>
+ (String&nbsp;MessageFile, String&nbsp;Label, 
+   /*optional*/
+   String&nbsp;Help, 
+   /*optional*/
+   String&nbsp;Description)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Designates the command to appear as placeable in the Screen Customization dialog. This may not be used for existing Creo Parametric commands.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+   
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The message file was not found.</p>
+   
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitMsgNotFound.html">XToolkitMsgNotFound</a></tt></tt> - One or more messages was not found in the message file. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/menus_jlink.html#8">Menus, Commands, and Pop-up Menus: Menus Buttons and Menus</a>, <a href="../manual0/menus_jlink.html#26">Menus, Commands, and Pop-up Menus: Designating the Command</a>, <a href="../manual0/pfc_ribbon.html#2">Ribbon Tabs, Groups, and Menu Items: Workflow to Add Menu Items to the Ribbon User Interface</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>MessageFile</b></tt>
+</dt>
+<dd>
+
+<purpose>Message file name for the two keystrings.
+</purpose>
+
+</dd>
+<dt>
+<tt><b>Label</b></tt>
+</dt>
+<dd>
+
+<purpose>Message keystring referring to the button label . 
+<notes>If the command was not assigned an icon, the button name will appear on the toolbar button by default.</notes>
+
+</purpose>
+
+</dd>
+<dt>
+<tt><b>Help</b></tt>
+</dt>
+<dd>
+
+<purpose>Message keystring referring to the button help. This could be <i>null</i>.
+</purpose>
+
+</dd>
+<dt>
+<tt><b>Description</b></tt>
+</dt>
+<dd>
+
+<purpose>The message shown in the customization dialog when you click on Description. This could be <i> null </i>.
+</purpose>
+
+</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

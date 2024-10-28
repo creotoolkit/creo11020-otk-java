@@ -1,0 +1,1890 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcGeometry.pfcGeometry"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      582
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcGeometry.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcGeometry-pfcGeometry.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcGeometry</h2>
+<tt>
+     package <b><a href="p-pfcGeometry.html">com.ptc.pfc.pfcGeometry</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>pfcGeometry</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "pfcGeometry"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-ArcDescriptor.html">ArcDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#ArcDescriptor::Create">ArcDescriptor_Create</a>
+ (<a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;Vector1, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;Vector2, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Center, double&nbsp;StartAngle, double&nbsp;EndAngle, double&nbsp;Radius)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new ArcDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-ArrowDescriptor.html">ArrowDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#ArrowDescriptor::Create">ArrowDescriptor_Create</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;End1, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;End2)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new ArrowDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-BSplineDescriptor.html">BSplineDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#BSplineDescriptor::Create">BSplineDescriptor_Create</a>
+ (int&nbsp;Degree, <a class="type" href="c-pfcGeometry-BSplinePoints.html">BSplinePoints</a>&nbsp;Points, <a class="type" href="c-stdcols-realseq.html">realseq</a>&nbsp;Knots)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new BSplineDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-BSplinePoint.html">BSplinePoint</a></tt></td><td class="method-summary"><tt><a class="method" href="#BSplinePoint::Create">BSplinePoint_Create</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Point, 
+   /*optional*/
+   Double&nbsp;Weight)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new BSpline point object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-CircleDescriptor.html">CircleDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#CircleDescriptor::Create">CircleDescriptor_Create</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Center, double&nbsp;Radius, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;UnitNormal)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new CircleDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-CompositeCurveDescriptor.html">CompositeCurveDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#CompositeCurveDescriptor::Create">CompositeCurveDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-CurveDescriptors.html">CurveDescriptors</a>&nbsp;Elements)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new CompositeCurveDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-ConeDescriptor.html">ConeDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#ConeDescriptor::Create">ConeDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin, double&nbsp;Alpha)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new ConeDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-CoonsPatchDescriptor.html">CoonsPatchDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#CoonsPatchDescriptor::Create">CoonsPatchDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;U0Profile, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;U1Profile, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;V0Profile, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;V1Profile, <a class="type" href="c-pfcGeometry-CoonsCornerPoints.html">CoonsCornerPoints</a>&nbsp;CornerPoints, <a class="type" href="c-pfcGeometry-CoonsUVDerivatives.html">CoonsUVDerivatives</a>&nbsp;UVDerivatives)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method returns a new CoonsPatchDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-CylinderDescriptor.html">CylinderDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#CylinderDescriptor::Create">CylinderDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin, double&nbsp;Radius)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new CylinderDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-CylindricalSplineSurfaceDescriptor.html">CylindricalSplineSurfaceDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#CylindricalSplineSurfaceDescriptor::Create">CylindricalSplineSurfaceDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin, <a class="type" href="c-pfcGeometry-SplineSurfaceDescriptor.html">SplineSurfaceDescriptor</a>&nbsp;SplineSurfaceData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new CylindricalSplineSurfaceDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-EllipseDescriptor.html">EllipseDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#EllipseDescriptor::Create">EllipseDescriptor_Create</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Center, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;UnitMajorAxis, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;UnitNormal, double&nbsp;MajorLength, double&nbsp;MinorLength, double&nbsp;StartAngle, double&nbsp;EndAngle)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method returns a new EllipseDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-FilletSurfaceDescriptor.html">FilletSurfaceDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#FilletSurfaceDescriptor::Create">FilletSurfaceDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcGeometry-SplineDescriptor.html">SplineDescriptor</a>&nbsp;U0Profile, <a class="type" href="c-pfcGeometry-SplineDescriptor.html">SplineDescriptor</a>&nbsp;CenterProfile, <a class="type" href="c-pfcGeometry-SplineDescriptor.html">SplineDescriptor</a>&nbsp;TangentProfile)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new FilletSurfaceDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-ForeignSurfaceDescriptor.html">ForeignSurfaceDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#ForeignSurfaceDescriptor::Create">ForeignSurfaceDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin, int&nbsp;ForeignID)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new ForeignSurfaceDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-LineDescriptor.html">LineDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#LineDescriptor::Create">LineDescriptor_Create</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;End1, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;End2)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new LineDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-NURBSSurfaceDescriptor.html">NURBSSurfaceDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#NURBSSurfaceDescriptor::Create">NURBSSurfaceDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, int&nbsp;UDegree, int&nbsp;VDegree, <a class="type" href="c-stdcols-realseq.html">realseq</a>&nbsp;UKnots, <a class="type" href="c-stdcols-realseq.html">realseq</a>&nbsp;VKnots, <a class="type" href="c-pfcGeometry-BSplinePoints.html">BSplinePoints</a>&nbsp;Points)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new NURBSSurfaceDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-PlaneDescriptor.html">PlaneDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#PlaneDescriptor::Create">PlaneDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Method to create a set of information describing a planar surface.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-PointDescriptor.html">PointDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#PointDescriptor::Create">PointDescriptor_Create</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Point)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new PointDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-PolygonDescriptor.html">PolygonDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#PolygonDescriptor::Create">PolygonDescriptor_Create</a>
+ (<a class="type" href="c-pfcBase-Point3Ds.html">Point3Ds</a>&nbsp;Vertices)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new PolygonDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-RevolvedSurfaceDescriptor.html">RevolvedSurfaceDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#RevolvedSurfaceDescriptor::Create">RevolvedSurfaceDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;Profile)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new RevolvedSurfaceDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-RuledSurfaceDescriptor.html">RuledSurfaceDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#RuledSurfaceDescriptor::Create">RuledSurfaceDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;Profile1, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;Profile2)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new RuledSurfaceDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-SphericalSplineSurfaceDescriptor.html">SphericalSplineSurfaceDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#SphericalSplineSurfaceDescriptor::Create">SphericalSplineSurfaceDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin, <a class="type" href="c-pfcGeometry-SplineSurfaceDescriptor.html">SplineSurfaceDescriptor</a>&nbsp;SplineSurfaceData)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new SphericalSplineSurfaceDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-SplineDescriptor.html">SplineDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#SplineDescriptor::Create">SplineDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SplinePoints.html">SplinePoints</a>&nbsp;Points)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new SplineDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-SplinePoint.html">SplinePoint</a></tt></td><td class="method-summary"><tt><a class="method" href="#SplinePoint::Create">SplinePoint_Create</a>
+ (double&nbsp;Parameter, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Point, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;Tangent)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new spline point object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-SplineSurfaceDescriptor.html">SplineSurfaceDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#SplineSurfaceDescriptor::Create">SplineSurfaceDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcGeometry-SplineSurfacePoints.html">SplineSurfacePoints</a>&nbsp;Points)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new SplineSurfaceDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-SplineSurfacePoint.html">SplineSurfacePoint</a></tt></td><td class="method-summary"><tt><a class="method" href="#SplineSurfacePoint::Create">SplineSurfacePoint_Create</a>
+ (<a class="type" href="c-pfcBase-UVParams.html">UVParams</a>&nbsp;Parameter, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Point, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;UTangent, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;VTangent, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;UVDerivative)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new SplineSurfacePoint object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a></tt></td><td class="method-summary"><tt><a class="method" href="#SurfaceExtents::Create">SurfaceExtents_Create</a>
+ (<a class="type" href="c-pfcBase-UVOutline.html">UVOutline</a>&nbsp;UVExtents)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new SurfaceExtents object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-TabulatedCylinderDescriptor.html">TabulatedCylinderDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#TabulatedCylinderDescriptor::Create">TabulatedCylinderDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;Profile)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new TabulatedCylinderDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-TextDescriptor.html">TextDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#TextDescriptor::Create">TextDescriptor_Create</a>
+ (String&nbsp;TextString, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Point, <a class="type" href="c-pfcBase-TextStyle.html">TextStyle</a>&nbsp;Style)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new TextDescriptor object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-TorusDescriptor.html">TorusDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#TorusDescriptor::Create">TorusDescriptor_Create</a>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin, double&nbsp;Radius1, double&nbsp;Radius2)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new TorusDescriptor object.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SplineSurfacePoint::Create">SplineSurfacePoint_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-SplineSurfacePoint.html">SplineSurfacePoint</a></tt></td><td class="method-name"><tt>SplineSurfacePoint_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-UVParams.html">UVParams</a>&nbsp;Parameter, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Point, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;UTangent, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;VTangent, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;UVDerivative)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new SplineSurfacePoint object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Parameter</b></tt>
+</dt>
+<dd>The UV parameters of the point on the surface.</dd>
+<dt>
+<tt><b>Point</b></tt>
+</dt>
+<dd>The XYZ point</dd>
+<dt>
+<tt><b>UTangent</b></tt>
+</dt>
+<dd>The tangent vector in the U direction at the point</dd>
+<dt>
+<tt><b>VTangent</b></tt>
+</dt>
+<dd>The tangent vector in the V direction at the point</dd>
+<dt>
+<tt><b>UVDerivative</b></tt>
+</dt>
+<dd>The mixed derivative at the point</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new SplineSurfacePoint object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="BSplinePoint::Create">BSplinePoint_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-BSplinePoint.html">BSplinePoint</a></tt></td><td class="method-name"><tt>BSplinePoint_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Point, 
+   /*optional*/
+   Double&nbsp;Weight)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new BSpline point object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Point</b></tt>
+</dt>
+<dd>The point coordinates</dd>
+<dt>
+<tt><b>Weight</b></tt>
+</dt>
+<dd>The weight</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new BSplinePoint object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SurfaceExtents::Create">SurfaceExtents_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a></tt></td><td class="method-name"><tt>SurfaceExtents_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-UVOutline.html">UVOutline</a>&nbsp;UVExtents)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new SurfaceExtents object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>UVExtents</b></tt>
+</dt>
+<dd>The UV parameters at the corners of the surface.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new SurfaceExtents object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PlaneDescriptor::Create">PlaneDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-PlaneDescriptor.html">PlaneDescriptor</a></tt></td><td class="method-name"><tt>PlaneDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Method to create a set of information describing a planar surface.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Origin</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CylinderDescriptor::Create">CylinderDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-CylinderDescriptor.html">CylinderDescriptor</a></tt></td><td class="method-name"><tt>CylinderDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin, double&nbsp;Radius)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new CylinderDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The surface extents</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The surface orientation</dd>
+<dt>
+<tt><b>Origin</b></tt>
+</dt>
+<dd>The coordinate system of the surface</dd>
+<dt>
+<tt><b>Radius</b></tt>
+</dt>
+<dd>The surface radius</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new CylinderDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ConeDescriptor::Create">ConeDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-ConeDescriptor.html">ConeDescriptor</a></tt></td><td class="method-name"><tt>ConeDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin, double&nbsp;Alpha)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new ConeDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The surface extents</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The surface orientation</dd>
+<dt>
+<tt><b>Origin</b></tt>
+</dt>
+<dd>The coordinate system of the surface</dd>
+<dt>
+<tt><b>Alpha</b></tt>
+</dt>
+<dd>The cone angle</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new ConeDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TorusDescriptor::Create">TorusDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-TorusDescriptor.html">TorusDescriptor</a></tt></td><td class="method-name"><tt>TorusDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin, double&nbsp;Radius1, double&nbsp;Radius2)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new TorusDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The surface extents</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The surface orientation</dd>
+<dt>
+<tt><b>Origin</b></tt>
+</dt>
+<dd>The coordinate system of the surface</dd>
+<dt>
+<tt><b>Radius1</b></tt>
+</dt>
+<dd>The distance from the center of the generating arc to the axis of revolution </dd>
+<dt>
+<tt><b>Radius2</b></tt>
+</dt>
+<dd>The radius of the generating arc</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new TorusDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RevolvedSurfaceDescriptor::Create">RevolvedSurfaceDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-RevolvedSurfaceDescriptor.html">RevolvedSurfaceDescriptor</a></tt></td><td class="method-name"><tt>RevolvedSurfaceDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;Profile)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new RevolvedSurfaceDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The surface extents</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The surface orientation</dd>
+<dt>
+<tt><b>Origin</b></tt>
+</dt>
+<dd>The coordinate system of the surface</dd>
+<dt>
+<tt><b>Profile</b></tt>
+</dt>
+<dd>The geometry of the generating curve</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new RevolvedSurfaceDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RuledSurfaceDescriptor::Create">RuledSurfaceDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-RuledSurfaceDescriptor.html">RuledSurfaceDescriptor</a></tt></td><td class="method-name"><tt>RuledSurfaceDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;Profile1, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;Profile2)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new RuledSurfaceDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The surface extents</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The surface orientation</dd>
+<dt>
+<tt><b>Origin</b></tt>
+</dt>
+<dd>The coordinate system of the surface</dd>
+<dt>
+<tt><b>Profile1</b></tt>
+</dt>
+<dd>The geometry of the first generating curve</dd>
+<dt>
+<tt><b>Profile2</b></tt>
+</dt>
+<dd>The geometry of the second generating curve</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new RuledSurfaceDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TabulatedCylinderDescriptor::Create">TabulatedCylinderDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-TabulatedCylinderDescriptor.html">TabulatedCylinderDescriptor</a></tt></td><td class="method-name"><tt>TabulatedCylinderDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;Profile)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new TabulatedCylinderDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The surface extents</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The surface orientation</dd>
+<dt>
+<tt><b>Origin</b></tt>
+</dt>
+<dd>The coordinate system of the surface</dd>
+<dt>
+<tt><b>Profile</b></tt>
+</dt>
+<dd>The geometry of the curve that is projected</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CoonsPatchDescriptor::Create">CoonsPatchDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-CoonsPatchDescriptor.html">CoonsPatchDescriptor</a></tt></td><td class="method-name"><tt>CoonsPatchDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;U0Profile, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;U1Profile, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;V0Profile, <a class="type" href="c-pfcGeometry-CurveDescriptor.html">CurveDescriptor</a>&nbsp;V1Profile, <a class="type" href="c-pfcGeometry-CoonsCornerPoints.html">CoonsCornerPoints</a>&nbsp;CornerPoints, <a class="type" href="c-pfcGeometry-CoonsUVDerivatives.html">CoonsUVDerivatives</a>&nbsp;UVDerivatives)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method returns a new CoonsPatchDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The surface extents</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The surface orientation</dd>
+<dt>
+<tt><b>U0Profile</b></tt>
+</dt>
+<dd>The geometry at the U=0 boundary</dd>
+<dt>
+<tt><b>U1Profile</b></tt>
+</dt>
+<dd>The geometry at the U=1 boundary</dd>
+<dt>
+<tt><b>V0Profile</b></tt>
+</dt>
+<dd>The geometry at the V=0 boundary</dd>
+<dt>
+<tt><b>V1Profile</b></tt>
+</dt>
+<dd>The geometry at the V=1 boundary</dd>
+<dt>
+<tt><b>CornerPoints</b></tt>
+</dt>
+<dd>The Coons path corner points</dd>
+<dt>
+<tt><b>UVDerivatives</b></tt>
+</dt>
+<dd>The corner UV derivatives</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new CoonsPatchDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FilletSurfaceDescriptor::Create">FilletSurfaceDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-FilletSurfaceDescriptor.html">FilletSurfaceDescriptor</a></tt></td><td class="method-name"><tt>FilletSurfaceDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcGeometry-SplineDescriptor.html">SplineDescriptor</a>&nbsp;U0Profile, <a class="type" href="c-pfcGeometry-SplineDescriptor.html">SplineDescriptor</a>&nbsp;CenterProfile, <a class="type" href="c-pfcGeometry-SplineDescriptor.html">SplineDescriptor</a>&nbsp;TangentProfile)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new FilletSurfaceDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The surface extents</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The surface orientation</dd>
+<dt>
+<tt><b>U0Profile</b></tt>
+</dt>
+<dd>The geoemtry of along the u=0 boundary</dd>
+<dt>
+<tt><b>CenterProfile</b></tt>
+</dt>
+<dd>The geometry along the centers of the fillet arcs</dd>
+<dt>
+<tt><b>TangentProfile</b></tt>
+</dt>
+<dd>The geometry of the unit tangents to the axis of the fillet arcs</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new FilletSurfaceDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SplineSurfaceDescriptor::Create">SplineSurfaceDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-SplineSurfaceDescriptor.html">SplineSurfaceDescriptor</a></tt></td><td class="method-name"><tt>SplineSurfaceDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcGeometry-SplineSurfacePoints.html">SplineSurfacePoints</a>&nbsp;Points)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new SplineSurfaceDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The surface extents</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The surface orientation</dd>
+<dt>
+<tt><b>Points</b></tt>
+</dt>
+<dd>An array of spline interpolant points and derivatives</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new SplineSurfaceDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="NURBSSurfaceDescriptor::Create">NURBSSurfaceDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-NURBSSurfaceDescriptor.html">NURBSSurfaceDescriptor</a></tt></td><td class="method-name"><tt>NURBSSurfaceDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, int&nbsp;UDegree, int&nbsp;VDegree, <a class="type" href="c-stdcols-realseq.html">realseq</a>&nbsp;UKnots, <a class="type" href="c-stdcols-realseq.html">realseq</a>&nbsp;VKnots, <a class="type" href="c-pfcGeometry-BSplinePoints.html">BSplinePoints</a>&nbsp;Points)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new NURBSSurfaceDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The surface extents</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The surface orientation</dd>
+<dt>
+<tt><b>UDegree</b></tt>
+</dt>
+<dd>The degree of the U basis function</dd>
+<dt>
+<tt><b>VDegree</b></tt>
+</dt>
+<dd>The degree of the V basis function</dd>
+<dt>
+<tt><b>UKnots</b></tt>
+</dt>
+<dd>The knots on the parameter line U</dd>
+<dt>
+<tt><b>VKnots</b></tt>
+</dt>
+<dd>The knots on the parameter line V</dd>
+<dt>
+<tt><b>Points</b></tt>
+</dt>
+<dd>The control point array</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new NURBSSurfaceDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CylindricalSplineSurfaceDescriptor::Create">CylindricalSplineSurfaceDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-CylindricalSplineSurfaceDescriptor.html">CylindricalSplineSurfaceDescriptor</a></tt></td><td class="method-name"><tt>CylindricalSplineSurfaceDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin, <a class="type" href="c-pfcGeometry-SplineSurfaceDescriptor.html">SplineSurfaceDescriptor</a>&nbsp;SplineSurfaceData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new CylindricalSplineSurfaceDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The surface extents</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The surface orientation</dd>
+<dt>
+<tt><b>Origin</b></tt>
+</dt>
+<dd>The coordinate system of the surface</dd>
+<dt>
+<tt><b>SplineSurfaceData</b></tt>
+</dt>
+<dd>The spline surface geometry to use</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new CylindricalSplineSurfaceDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SphericalSplineSurfaceDescriptor::Create">SphericalSplineSurfaceDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-SphericalSplineSurfaceDescriptor.html">SphericalSplineSurfaceDescriptor</a></tt></td><td class="method-name"><tt>SphericalSplineSurfaceDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin, <a class="type" href="c-pfcGeometry-SplineSurfaceDescriptor.html">SplineSurfaceDescriptor</a>&nbsp;SplineSurfaceData)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new SphericalSplineSurfaceDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The surface extents</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The surface orientation</dd>
+<dt>
+<tt><b>Origin</b></tt>
+</dt>
+<dd>The coordinate system of the surface</dd>
+<dt>
+<tt><b>SplineSurfaceData</b></tt>
+</dt>
+<dd>The spline surface geometry</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new SphericalSplineSurfaceDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ForeignSurfaceDescriptor::Create">ForeignSurfaceDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-ForeignSurfaceDescriptor.html">ForeignSurfaceDescriptor</a></tt></td><td class="method-name"><tt>ForeignSurfaceDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SurfaceExtents.html">SurfaceExtents</a>&nbsp;Extents, <a class="type" href="c-pfcGeometry-SurfaceOrientation.html">SurfaceOrientation</a>&nbsp;Orientation, <a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Origin, int&nbsp;ForeignID)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new ForeignSurfaceDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Extents</b></tt>
+</dt>
+<dd>The surface extents</dd>
+<dt>
+<tt><b>Orientation</b></tt>
+</dt>
+<dd>The surface orientation</dd>
+<dt>
+<tt><b>Origin</b></tt>
+</dt>
+<dd>The coordinate system of the surface</dd>
+<dt>
+<tt><b>ForeignID</b></tt>
+</dt>
+<dd>The foreign surface id</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new ForeignSurfaceDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SplinePoint::Create">SplinePoint_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-SplinePoint.html">SplinePoint</a></tt></td><td class="method-name"><tt>SplinePoint_Create</tt></td><td class="method-params"><tt>
+ (double&nbsp;Parameter, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Point, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;Tangent)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new spline point object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Parameter</b></tt>
+</dt>
+<dd>The spline parameter at the point.</dd>
+<dt>
+<tt><b>Point</b></tt>
+</dt>
+<dd>The splie point.</dd>
+<dt>
+<tt><b>Tangent</b></tt>
+</dt>
+<dd>The tangent vector at the point.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new SplinePoint object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CompositeCurveDescriptor::Create">CompositeCurveDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-CompositeCurveDescriptor.html">CompositeCurveDescriptor</a></tt></td><td class="method-name"><tt>CompositeCurveDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-CurveDescriptors.html">CurveDescriptors</a>&nbsp;Elements)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new CompositeCurveDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Elements</b></tt>
+</dt>
+<dd>The geometry of the curves making up the composite curve</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new CompositeCurveDescriptor object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PointDescriptor::Create">PointDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-PointDescriptor.html">PointDescriptor</a></tt></td><td class="method-name"><tt>PointDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Point)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new PointDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Point</b></tt>
+</dt>
+<dd>The point</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new PointDescriptor object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="LineDescriptor::Create">LineDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-LineDescriptor.html">LineDescriptor</a></tt></td><td class="method-name"><tt>LineDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;End1, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;End2)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new LineDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>End1</b></tt>
+</dt>
+<dd>The first endpoint</dd>
+<dt>
+<tt><b>End2</b></tt>
+</dt>
+<dd>The second endpoint</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new LineDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ArrowDescriptor::Create">ArrowDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-ArrowDescriptor.html">ArrowDescriptor</a></tt></td><td class="method-name"><tt>ArrowDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;End1, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;End2)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new ArrowDescriptor object.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><tt><a class="class" href="c-pfcDetail-DetailEntityInstructions.html">DetailEntityInstructions</a></tt></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>End1</b></tt>
+</dt>
+<dd>The first endpoint</dd>
+<dt>
+<tt><b>End2</b></tt>
+</dt>
+<dd>The second endpoint</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new ArrowDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ArcDescriptor::Create">ArcDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-ArcDescriptor.html">ArcDescriptor</a></tt></td><td class="method-name"><tt>ArcDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;Vector1, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;Vector2, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Center, double&nbsp;StartAngle, double&nbsp;EndAngle, double&nbsp;Radius)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new ArcDescriptor object.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><tt><a class="class" href="c-pfcDetail-DetailEntityInstructions.html">DetailEntityInstructions</a></tt></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Vector1</b></tt>
+</dt>
+<dd>The first vector that defines the plane of the arc</dd>
+<dt>
+<tt><b>Vector2</b></tt>
+</dt>
+<dd>The second vector that defines the plane of the arc</dd>
+<dt>
+<tt><b>Center</b></tt>
+</dt>
+<dd>The arc center</dd>
+<dt>
+<tt><b>StartAngle</b></tt>
+</dt>
+<dd>The start angle</dd>
+<dt>
+<tt><b>EndAngle</b></tt>
+</dt>
+<dd>The arc end angle</dd>
+<dt>
+<tt><b>Radius</b></tt>
+</dt>
+<dd>The radius</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new ArcDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SplineDescriptor::Create">SplineDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-SplineDescriptor.html">SplineDescriptor</a></tt></td><td class="method-name"><tt>SplineDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcGeometry-SplinePoints.html">SplinePoints</a>&nbsp;Points)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new SplineDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Points</b></tt>
+</dt>
+<dd>The array of spline points</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new SplineDescriptor</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="BSplineDescriptor::Create">BSplineDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-BSplineDescriptor.html">BSplineDescriptor</a></tt></td><td class="method-name"><tt>BSplineDescriptor_Create</tt></td><td class="method-params"><tt>
+ (int&nbsp;Degree, <a class="type" href="c-pfcGeometry-BSplinePoints.html">BSplinePoints</a>&nbsp;Points, <a class="type" href="c-stdcols-realseq.html">realseq</a>&nbsp;Knots)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new BSplineDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Degree</b></tt>
+</dt>
+<dd>The B-Spline degree</dd>
+<dt>
+<tt><b>Points</b></tt>
+</dt>
+<dd>The array of control points</dd>
+<dt>
+<tt><b>Knots</b></tt>
+</dt>
+<dd>The array of knots</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new BSplineDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CircleDescriptor::Create">CircleDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-CircleDescriptor.html">CircleDescriptor</a></tt></td><td class="method-name"><tt>CircleDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Center, double&nbsp;Radius, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;UnitNormal)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new CircleDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Center</b></tt>
+</dt>
+<dd>The circle center</dd>
+<dt>
+<tt><b>Radius</b></tt>
+</dt>
+<dd>The circle radius</dd>
+<dt>
+<tt><b>UnitNormal</b></tt>
+</dt>
+<dd>The normal vector to the circle</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new CircleDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="EllipseDescriptor::Create">EllipseDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-EllipseDescriptor.html">EllipseDescriptor</a></tt></td><td class="method-name"><tt>EllipseDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Center, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;UnitMajorAxis, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;UnitNormal, double&nbsp;MajorLength, double&nbsp;MinorLength, double&nbsp;StartAngle, double&nbsp;EndAngle)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method returns a new EllipseDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Center</b></tt>
+</dt>
+<dd>The ellipse center</dd>
+<dt>
+<tt><b>UnitMajorAxis</b></tt>
+</dt>
+<dd>The unit major axis</dd>
+<dt>
+<tt><b>UnitNormal</b></tt>
+</dt>
+<dd>The unit normal</dd>
+<dt>
+<tt><b>MajorLength</b></tt>
+</dt>
+<dd>The axis major length</dd>
+<dt>
+<tt><b>MinorLength</b></tt>
+</dt>
+<dd>The axis minor length</dd>
+<dt>
+<tt><b>StartAngle</b></tt>
+</dt>
+<dd>The start angle</dd>
+<dt>
+<tt><b>EndAngle</b></tt>
+</dt>
+<dd>The end angle</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new EllipseDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PolygonDescriptor::Create">PolygonDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-PolygonDescriptor.html">PolygonDescriptor</a></tt></td><td class="method-name"><tt>PolygonDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3Ds.html">Point3Ds</a>&nbsp;Vertices)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new PolygonDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Vertices</b></tt>
+</dt>
+<dd>The polygon vertices</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new PolygonDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TextDescriptor::Create">TextDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcGeometry-TextDescriptor.html">TextDescriptor</a></tt></td><td class="method-name"><tt>TextDescriptor_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;TextString, <a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Point, <a class="type" href="c-pfcBase-TextStyle.html">TextStyle</a>&nbsp;Style)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new TextDescriptor object.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>TextString</b></tt>
+</dt>
+<dd>The text string</dd>
+<dt>
+<tt><b>Point</b></tt>
+</dt>
+<dd>The location of the text</dd>
+<dt>
+<tt><b>Style</b></tt>
+</dt>
+<dd>The text style</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new TextDescriptor object</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

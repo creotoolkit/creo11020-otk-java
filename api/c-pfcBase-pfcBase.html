@@ -1,0 +1,347 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcBase.pfcBase"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      571
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcBase.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcBase-pfcBase.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcBase</h2>
+<tt>
+     package <b><a href="p-pfcBase.html">com.ptc.pfc.pfcBase</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>pfcBase</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "pfcBase"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a></tt></td><td class="method-summary"><tt><a class="method" href="#ColorRGB::Create">ColorRGB_Create</a>
+ (double&nbsp;inRed, double&nbsp;inGreen, double&nbsp;inBlue)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates the values for the color map.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#MakeMatrixOrthonormal">MakeMatrixOrthonormal</a>
+ (<a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Matrix, double&nbsp;Scale)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-ScreenTransform.html">ScreenTransform</a></tt></td><td class="method-summary"><tt><a class="method" href="#ScreenTransform::Create">ScreenTransform_Create</a>
+ (
+   /*optional*/
+   Double&nbsp;PanX, 
+   /*optional*/
+   Double&nbsp;PanY, 
+   /*optional*/
+   Double&nbsp;Zoom)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new <i>ScreenTransform</i> object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-TextStyle.html">TextStyle</a></tt></td><td class="method-summary"><tt><a class="method" href="#TextStyle::Create">TextStyle_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new text style object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#Transform3D::Create">Transform3D_Create</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-Matrix3D.html">Matrix3D</a>&nbsp;Matrix)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a <i>Transform3D</i> object.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ColorRGB::Create">ColorRGB_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a></tt></td><td class="method-name"><tt>ColorRGB_Create</tt></td><td class="method-params"><tt>
+ (double&nbsp;inRed, double&nbsp;inGreen, double&nbsp;inBlue)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates the values for the color map.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inRed</b></tt>
+</dt>
+<dd>The value for the red intensity</dd>
+<dt>
+<tt><b>inGreen</b></tt>
+</dt>
+<dd>The value for the green intensity</dd>
+<dt>
+<tt><b>inBlue</b></tt>
+</dt>
+<dd>The value for the blue intensity </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The completed RGB value</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Transform3D::Create">Transform3D_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a></tt></td><td class="method-name"><tt>Transform3D_Create</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-Matrix3D.html">Matrix3D</a>&nbsp;Matrix)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a <i>Transform3D</i> object.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Matrix</b></tt>
+</dt>
+<dd>The transformation matrix</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new <i>Transform3D</i>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ScreenTransform::Create">ScreenTransform_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-ScreenTransform.html">ScreenTransform</a></tt></td><td class="method-name"><tt>ScreenTransform_Create</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;PanX, 
+   /*optional*/
+   Double&nbsp;PanY, 
+   /*optional*/
+   Double&nbsp;Zoom)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new <i>ScreenTransform</i> object.
+<br>
+<br>The pan and zoom values in a <i>ScreenTransform</i> object are applied to a window by using the <tt><a class="method" href="c-pfcWindow-Window.html#ScreenTransform">Window.GetScreenTransform(ScreenTransform)</a></tt> method. 
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PanX</b></tt>
+</dt>
+<dd>A value between -1.0 and 1.0 that specifies the amount of horizontal panning. -1.0 pans one window width to the left; 1.0 pans one window width to the right. 0 specifies no horizontal panning. This attribute can be <tt>null</tt>, in which case 0 is used.</dd>
+<dt>
+<tt><b>PanY</b></tt>
+</dt>
+<dd>A value between -1.0 and 1.0 that specifies the amount of vertical panning. -1.0 pans up by the height of the window; 1.0 pans down by the height of the window. 0 specifies no vertical panning. This attribute can be <tt>null</tt>, in which case 0 is used.</dd>
+<dt>
+<tt><b>Zoom</b></tt>
+</dt>
+<dd>A value greater than 0 and the less than or equal to the value of the Creo Parametric variable <tt>MAX_ZOOM_SCALE</tt> that specifies the zoom factor. The value 0.1, for example, would zoom out by a factor of 10. <p></p>
+This attribute can be <tt>null</tt>, in which case 1 (no zoom) is used.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new <i>ScreenTransform</i> object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TextStyle::Create">TextStyle_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-TextStyle.html">TextStyle</a></tt></td><td class="method-name"><tt>TextStyle_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new text style object.
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>A pointer to the new object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="MakeMatrixOrthonormal">MakeMatrixOrthonormal</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a></tt></td><td class="method-name"><tt>MakeMatrixOrthonormal</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Matrix, double&nbsp;Scale)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#107">Windows and Views: Transformations</a>, <a href="../manual0/jassembly.html#65">Assemblies and Components: Assembling Components</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Matrix</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>Scale</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

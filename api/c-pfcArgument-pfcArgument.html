@@ -1,0 +1,664 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcArgument.pfcArgument"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      568
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcArgument.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcArgument-pfcArgument.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcArgument</h2>
+<tt>
+     package <b><a href="p-pfcArgument.html">com.ptc.pfc.pfcArgument</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>pfcArgument</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "pfcArgument"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcArgument-Argument.html">Argument</a></tt></td><td class="method-summary"><tt><a class="method" href="#Argument::Create">Argument_Create</a>
+ (String&nbsp;inLabel, <a class="type" href="c-pfcArgument-ArgValue.html">ArgValue</a>&nbsp;inValue)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new argument object, for use in passing value to other Creo Parametric auxiliary applications like Creo Parametric TOOLKIT DLL's.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcArgument-ArgValue.html">ArgValue</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateASCIIStringArgValue">CreateASCIIStringArgValue</a>
+ (String&nbsp;Value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates an ASCII string argument value object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcArgument-ArgValue.html">ArgValue</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateBoolArgValue">CreateBoolArgValue</a>
+ (boolean&nbsp;Value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a boolean argument value object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcArgument-ArgValue.html">ArgValue</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateDoubleArgValue">CreateDoubleArgValue</a>
+ (double&nbsp;Value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a double argument value object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcArgument-ArgValue.html">ArgValue</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateIntArgValue">CreateIntArgValue</a>
+ (int&nbsp;Value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates an integer argument value object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcArgument-ArgValue.html">ArgValue</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateSelectionArgValue">CreateSelectionArgValue</a>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;Value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new selection argument value object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcArgument-ArgValue.html">ArgValue</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateStringArgValue">CreateStringArgValue</a>
+ (String&nbsp;Value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a string argument value object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcArgument-ArgValue.html">ArgValue</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateTransformArgValue">CreateTransformArgValue</a>
+ (<a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new transform argument value object.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcArgument-Argument.html">Argument</a></tt></td><td class="method-summary"><tt><a class="method" href="#FindArgumentByLabel">FindArgumentByLabel</a>
+ (<a class="type" href="c-pfcArgument-Arguments.html">Arguments</a>&nbsp;ArgList, String&nbsp;Label)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateIntArgValue">CreateIntArgValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcArgument-ArgValue.html">ArgValue</a></tt></td><td class="method-name"><tt>CreateIntArgValue</tt></td><td class="method-params"><tt>
+ (int&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates an integer argument value object.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcArgument-pfcArgument.html#Argument::Create">pfcArgument.Argument_Create(String, ArgValue)</a></tt>, <tt><a class="method" href="c-pfcProToolkit-Dll.html#ExecuteFunction">Dll.ExecuteFunction(String, Arguments)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/japplib.html#2">Task Based Application Libraries: Managing Application Arguments</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>The integer value.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created argument value object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateDoubleArgValue">CreateDoubleArgValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcArgument-ArgValue.html">ArgValue</a></tt></td><td class="method-name"><tt>CreateDoubleArgValue</tt></td><td class="method-params"><tt>
+ (double&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a double argument value object.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcArgument-pfcArgument.html#Argument::Create">pfcArgument.Argument_Create(String, ArgValue)</a></tt>, <tt><a class="method" href="c-pfcProToolkit-Dll.html#ExecuteFunction">Dll.ExecuteFunction(String, Arguments)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/japplib.html#3">Task Based Application Libraries: Managing Application Arguments</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>The double value.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created argument value object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateBoolArgValue">CreateBoolArgValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcArgument-ArgValue.html">ArgValue</a></tt></td><td class="method-name"><tt>CreateBoolArgValue</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a boolean argument value object.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcArgument-pfcArgument.html#Argument::Create">pfcArgument.Argument_Create(String, ArgValue)</a></tt>, <tt><a class="method" href="c-pfcProToolkit-Dll.html#ExecuteFunction">Dll.ExecuteFunction(String, Arguments)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/japplib.html#4">Task Based Application Libraries: Managing Application Arguments</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>The boolean value.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created argument object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateASCIIStringArgValue">CreateASCIIStringArgValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcArgument-ArgValue.html">ArgValue</a></tt></td><td class="method-name"><tt>CreateASCIIStringArgValue</tt></td><td class="method-params"><tt>
+ (String&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates an ASCII string argument value object.
+<br>
+<br>This type will be passed to Creo Parametric TOOLKIT using the ProValueDataType of PRO_VALUE_TYPE_STRING.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcArgument-pfcArgument.html#Argument::Create">pfcArgument.Argument_Create(String, ArgValue)</a></tt>, <tt><a class="method" href="c-pfcProToolkit-Dll.html#ExecuteFunction">Dll.ExecuteFunction(String, Arguments)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/japplib.html#5">Task Based Application Libraries: Managing Application Arguments</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>The character string.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created argument object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateStringArgValue">CreateStringArgValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcArgument-ArgValue.html">ArgValue</a></tt></td><td class="method-name"><tt>CreateStringArgValue</tt></td><td class="method-params"><tt>
+ (String&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a string argument value object.
+<br>
+<br>This type will be passed to Creo Parametric TOOLKIT using the ProValueDataType of PRO_VALUE_TYPE_WSTRING.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcArgument-pfcArgument.html#Argument::Create">pfcArgument.Argument_Create(String, ArgValue)</a></tt>, <tt><a class="method" href="c-pfcProToolkit-Dll.html#ExecuteFunction">Dll.ExecuteFunction(String, Arguments)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/japplib.html#6">Task Based Application Libraries: Managing Application Arguments</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>The string value.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created argument value object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateSelectionArgValue">CreateSelectionArgValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcArgument-ArgValue.html">ArgValue</a></tt></td><td class="method-name"><tt>CreateSelectionArgValue</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSelect-Selection.html">Selection</a>&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new selection argument value object.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcArgument-pfcArgument.html#Argument::Create">pfcArgument.Argument_Create(String, ArgValue)</a></tt>, <tt><a class="method" href="c-pfcProToolkit-Dll.html#ExecuteFunction">Dll.ExecuteFunction(String, Arguments)</a></tt>, <tt><tt><a class="method" href="c-pfcSelect-pfcSelect.html#CreateComponentSelection">pfcSelect.CreateComponentSelection(ComponentPath)</a></tt></tt>, <tt><tt><a class="method" href="c-pfcSelect-pfcSelect.html#CreateModelItemSelection">pfcSelect.CreateModelItemSelection(ModelItem, /*optional*/ ComponentPath)</a></tt></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/japplib.html#7">Task Based Application Libraries: Managing Application Arguments</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>The selection object.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created selection argument value object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateTransformArgValue">CreateTransformArgValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcArgument-ArgValue.html">ArgValue</a></tt></td><td class="method-name"><tt>CreateTransformArgValue</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a>&nbsp;Value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new transform argument value object.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcArgument-pfcArgument.html#Argument::Create">pfcArgument.Argument_Create(String, ArgValue)</a></tt>, <tt><a class="method" href="c-pfcProToolkit-Dll.html#ExecuteFunction">Dll.ExecuteFunction(String, Arguments)</a></tt>, <tt><a class="method" href="c-pfcBase-pfcBase.html#Transform3D::Create">pfcBase.Transform3D_Create(/*optional*/ Matrix3D)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/japplib.html#8">Task Based Application Libraries: Managing Application Arguments</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Value</b></tt>
+</dt>
+<dd>The coordinate transformation.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created argument value object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Argument::Create">Argument_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcArgument-Argument.html">Argument</a></tt></td><td class="method-name"><tt>Argument_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;inLabel, <a class="type" href="c-pfcArgument-ArgValue.html">ArgValue</a>&nbsp;inValue)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new argument object, for use in passing value to other Creo Parametric auxiliary applications like Creo Parametric TOOLKIT DLL's.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcProToolkit-Dll.html#ExecuteFunction">Dll.ExecuteFunction(String, Arguments)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/japplib.html#25">Task Based Application Libraries: Modifying Arguments</a>, <a href="../manual0/japplib.html#30">Task Based Application Libraries: Modifying Arguments</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inLabel</b></tt>
+</dt>
+<dd>The argument label string.</dd>
+<dt>
+<tt><b>inValue</b></tt>
+</dt>
+<dd>The argument value.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created argument object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FindArgumentByLabel">FindArgumentByLabel</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcArgument-Argument.html">Argument</a></tt></td><td class="method-name"><tt>FindArgumentByLabel</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcArgument-Arguments.html">Arguments</a>&nbsp;ArgList, String&nbsp;Label)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ArgList</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Label</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,379 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcExternal.ExternalDataSlot"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      269
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcExternal.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcExternal-ExternalDataSlot.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;ExternalDataSlot</h2>
+<tt>
+     package 
+     <b><a href="p-pfcExternal.html">com.ptc.pfc.pfcExternal</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>ExternalDataSlot</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcObject-Object.html">com.ptc.pfc.pfcObject.Object</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Represents a single data item stored in external data
+<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Delete">Delete</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Deletes the external data slot
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcExternal-ExternalDataClass.html">ExternalDataClass</a></tt></td><td class="method-summary"><tt><a class="method" href="#Class">GetClass</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Class"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Class to which slot belongs</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>int</tt></td><td class="method-summary"><tt><a class="method" href="#Id">GetId</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Id"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Unique identifier assigned by Creo Parametric</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-summary"><tt><a class="method" href="#Name">GetName</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Name"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Slot name.  Slots created using Creo Parametric TOOLKIT may not have a separate name.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcExternal-ExternalData.html">ExternalData</a></tt></td><td class="method-summary"><tt><a class="method" href="#Value">GetValue</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Value"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The value (integer, double, or string) stored in the slot.  Stream-type slots created byCreo Parametric TOOLKIT cannot be accessed by this attribute and an <tt><tt><a class="class" href="c-pfcExceptions-XBadExternalData.html">XBadExternalData</a></tt></tt>exception will result.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsValid">IsValid</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns true if the slot exists and can be accessed, false if it has been deleted.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Value">SetValue</a>
+ (<a class="type" href="c-pfcExternal-ExternalData.html">ExternalData</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Value"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The value (integer, double, or string) stored in the slot.  Stream-type slots created byCreo Parametric TOOLKIT cannot be accessed by this attribute and an <tt><tt><a class="class" href="c-pfcExceptions-XBadExternalData.html">XBadExternalData</a></tt></tt>exception will result.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Name">GetName</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-name"><tt>GetName</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Slot name.  Slots created using Creo Parametric TOOLKIT may not have a separate name.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XBadExternalData.html">XBadExternalData</a></tt></tt> - Slot is no longer valid</p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Id">GetId</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>int</tt></td><td class="method-name"><tt>GetId</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Unique identifier assigned by Creo Parametric<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XBadExternalData.html">XBadExternalData</a></tt></tt> - Slot is no longer valid</p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Class">GetClass</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcExternal-ExternalDataClass.html">ExternalDataClass</a></tt></td><td class="method-name"><tt>GetClass</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Class to which slot belongs<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XBadExternalData.html">XBadExternalData</a></tt></tt> - Slot is no longer valid</p>
+</p>
+<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsValid">IsValid</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>IsValid</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns true if the slot exists and can be accessed, false if it has been deleted.
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The status of the slot</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Delete">Delete</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>Delete</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Deletes the external data slot
+<br>
+<br>Permanently deletes the slot and the data it contains.
+  <p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataTKError.html">XExternalDataTKError</a></tt></tt> - The function failed.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataInvalidObject.html">XExternalDataInvalidObject</a></tt></tt> - The model or class name is invalid. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataBadKeyByFlag.html">XExternalDataBadKeyByFlag</a></tt></tt> - The 'key by flag' is invalid. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataSlotNotFound.html">XExternalDataSlotNotFound</a></tt></tt> - The slot was not found. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XBadExternalData.html">XBadExternalData</a></tt></tt> - Slot is no longer valid</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Value">GetValue/SetValue</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcExternal-ExternalData.html">ExternalData</a></tt></td><td class="method-name"><tt>GetValue</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetValue</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExternal-ExternalData.html">ExternalData</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The value (integer, double, or string) stored in the slot.  Stream-type slots created byCreo Parametric TOOLKIT cannot be accessed by this attribute and an <tt><tt><a class="class" href="c-pfcExceptions-XBadExternalData.html">XBadExternalData</a></tt></tt>exception will result.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataTKError.html">XExternalDataTKError</a></tt></tt> - The function failed.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataInvalidObject.html">XExternalDataInvalidObject</a></tt></tt> - The model or class name is invalid. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataBadKeyByFlag.html">XExternalDataBadKeyByFlag</a></tt></tt> - The 'key by flag' is invalid. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataSlotNotFound.html">XExternalDataSlotNotFound</a></tt></tt> - The slot was not found. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataStreamTooLarge.html">XExternalDataStreamTooLarge</a></tt></tt> - The stream data size is greater than 524288 bytes. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataBadDataArgs.html">XExternalDataBadDataArgs</a></tt></tt> - The data type or data size is invalid. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XExternalDataEmptySlot.html">XExternalDataEmptySlot</a></tt></tt> - No data exists in the slot.</p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XBadExternalData.html">XBadExternalData</a></tt></tt> - Slot is no longer valid</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JExtern.html#20">External Data: Retrieving External Data</a>, <a href="../manual0/JExtern.html#24">External Data: Retrieving External Data</a>, <a href="../manual0/JExtern.html#11">External Data: Storing External Data</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

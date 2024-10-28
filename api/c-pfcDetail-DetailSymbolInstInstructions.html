@@ -1,0 +1,876 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcDetail.DetailSymbolInstInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      200
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcDetail.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcDetail-DetailSymbolInstInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;DetailSymbolInstInstructions</h2>
+<tt>
+     package 
+     <b><a href="p-pfcDetail.html">com.ptc.pfc.pfcDetail</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>DetailSymbolInstInstructions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcDetail-DetailCreateInstructions.html">com.ptc.pfc.pfcDetail.DetailCreateInstructions</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface contains information used to describe a symbol instance.
+It may be used when creating symbol instances
+ (<tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateDetailItem">DetailItemOwner.CreateDetailItem(DetailCreateInstructions)</a></tt>),
+ or accessing existing groups (<tt><a class="method" href="c-pfcDetail-DetailSymbolInstItem.html#Modify">DetailSymbolInstItem.Modify(DetailSymbolInstInstructions)</a></tt>
+ and <tt><a class="method" href="c-pfcDetail-DetailSymbolInstItem.html#GetInstructions">DetailSymbolInstItem.GetInstructions(boolean)</a></tt>).
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateDetailItem">DetailItemOwner.CreateDetailItem(DetailCreateInstructions)</a></tt>, <tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#GetDetailItem">DetailItemOwner.GetDetailItem(DetailType, int)</a></tt>, <tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#ListDetailItems">DetailItemOwner.ListDetailItems(/*optional*/ DetailType, /*optional*/ Integer)</a></tt>, <tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#RetrieveSymbolDefinition">DetailItemOwner.RetrieveSymbolDefinition(String, /*optional*/ String, /*optional*/ Integer, /*optional*/ Boolean)</a></tt>, <tt><a class="method" href="c-pfcDetail-pfcDetail.html#SymbolDefAttachment::Create">pfcDetail.SymbolDefAttachment_Create(SymbolDefAttachmentType, Point3D)</a></tt>, <tt><a class="method" href="c-pfcDetail-pfcDetail.html#DetailLeaders::Create">pfcDetail.DetailLeaders_Create()</a></tt>, <tt><a class="method" href="c-pfcDetail-pfcDetail.html#DetailVariantText::Create">pfcDetail.DetailVariantText_Create(String, String)</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-summary"><tt><a class="method" href="#Angle">GetAngle</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Angle"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The angle at which the instance was placed.  <tt>null</tt> represents a 0.0 degree angle.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-SymbolDefAttachmentType.html">SymbolDefAttachmentType</a></tt></td><td class="method-summary"><tt><a class="method" href="#AttachOnDefType">GetAttachOnDefType</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "AttachOnDefType"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The instance attachment type.  <tt>null</tt> represents a free attachment.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a></tt></td><td class="method-summary"><tt><a class="method" href="#Color">GetColor</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Color"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The color of the detail item.  If <tt>null</tt>, the default drawing color is used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#CurrentTransform">GetCurrentTransform</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "CurrentTransform"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The coordinate transformation matrix for the symbol instance placement.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-SymbolDefAttachment.html">SymbolDefAttachment</a></tt></td><td class="method-summary"><tt><a class="method" href="#DefAttachment">GetDefAttachment</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "DefAttachment"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The attachment on the symbol definition.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-summary"><tt><a class="method" href="#Height">GetHeight</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Height"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The symbol instance height.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailLeaders.html">DetailLeaders</a></tt></td><td class="method-summary"><tt><a class="method" href="#InstAttachment">GetInstAttachment</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "InstAttachment"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The attachment of the instance, including leader information.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsDisplayed">GetIsDisplayed</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IsDisplayed"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Whether or not the symbol instance is displayed.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-summary"><tt><a class="method" href="#ScaledHeight">GetScaledHeight</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ScaledHeight"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The symbol instance height in the units of the drawing or model,
+  consistent with the values shown in the Properties dialog for the symbol
+  instance. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDetail-DetailSymbolDefItem.html">DetailSymbolDefItem</a></tt></td><td class="method-summary"><tt><a class="method" href="#SymbolDef">GetSymbolDef</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "SymbolDef"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The symbol definition used for the instance.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailVariantTexts.html">DetailVariantTexts</a></tt></td><td class="method-summary"><tt><a class="method" href="#TextValues">GetTextValues</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "TextValues"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sequence of variant text values used while placing the symbol instance.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Angle">SetAngle</a>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Angle"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The angle at which the instance was placed.  <tt>null</tt> represents a 0.0 degree angle.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AttachOnDefType">SetAttachOnDefType</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-SymbolDefAttachmentType.html">SymbolDefAttachmentType</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "AttachOnDefType"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The instance attachment type.  <tt>null</tt> represents a free attachment.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Color">SetColor</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Color"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The color of the detail item.  If <tt>null</tt>, the default drawing color is used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DefAttachment">SetDefAttachment</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-SymbolDefAttachment.html">SymbolDefAttachment</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "DefAttachment"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The attachment on the symbol definition.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetGroups">SetGroups</a>
+ (<a class="type" href="c-pfcDetail-DetailSymbolGroupOption.html">DetailSymbolGroupOption</a>&nbsp;option, 
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailSymbolGroups.html">DetailSymbolGroups</a>&nbsp;groups)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sets the option for displaying groups in the symbol instance.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Height">SetHeight</a>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Height"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The symbol instance height.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#InstAttachment">SetInstAttachment</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailLeaders.html">DetailLeaders</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "InstAttachment"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The attachment of the instance, including leader information.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#IsDisplayed">SetIsDisplayed</a>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "IsDisplayed"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Whether or not the symbol instance is displayed.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ScaledHeight">SetScaledHeight</a>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ScaledHeight"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The symbol instance height in the units of the drawing or model,
+  consistent with the values shown in the Properties dialog for the symbol
+  instance. </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SymbolDef">SetSymbolDef</a>
+ (<a class="type" href="c-pfcDetail-DetailSymbolDefItem.html">DetailSymbolDefItem</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "SymbolDef"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The symbol definition used for the instance.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#TextValues">SetTextValues</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailVariantTexts.html">DetailVariantTexts</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "TextValues"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sequence of variant text values used while placing the symbol instance.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcDetail-DetailCreateInstructions.html"><tt>com.ptc.pfc.pfcDetail.DetailCreateInstructions</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcDetail-DetailCreateInstructions.html#GetType"><tt>GetType</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailCreateInstructions.html#Id"><tt>GetId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsDisplayed">GetIsDisplayed/SetIsDisplayed</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>GetIsDisplayed</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetIsDisplayed</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Whether or not the symbol instance is displayed.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#524">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#525">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Color">GetColor/SetColor</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a></tt></td><td class="method-name"><tt>GetColor</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetColor</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The color of the detail item.  If <tt>null</tt>, the default drawing color is used.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#526">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#527">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SymbolDef">GetSymbolDef/SetSymbolDef</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDetail-DetailSymbolDefItem.html">DetailSymbolDefItem</a></tt></td><td class="method-name"><tt>GetSymbolDef</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetSymbolDef</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailSymbolDefItem.html">DetailSymbolDefItem</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The symbol definition used for the instance.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#528">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#529">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AttachOnDefType">GetAttachOnDefType/SetAttachOnDefType</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-SymbolDefAttachmentType.html">SymbolDefAttachmentType</a></tt></td><td class="method-name"><tt>GetAttachOnDefType</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetAttachOnDefType</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-SymbolDefAttachmentType.html">SymbolDefAttachmentType</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The instance attachment type.  <tt>null</tt> represents a free attachment.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#530">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#531">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DefAttachment">GetDefAttachment/SetDefAttachment</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-SymbolDefAttachment.html">SymbolDefAttachment</a></tt></td><td class="method-name"><tt>GetDefAttachment</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetDefAttachment</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-SymbolDefAttachment.html">SymbolDefAttachment</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The attachment on the symbol definition.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfMemory.html">XToolkitOutOfMemory</a></tt></tt> - Not enough memory. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - No symbol definition for the specified symbol instance. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#532">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#533">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="InstAttachment">GetInstAttachment/SetInstAttachment</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailLeaders.html">DetailLeaders</a></tt></td><td class="method-name"><tt>GetInstAttachment</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetInstAttachment</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailLeaders.html">DetailLeaders</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The attachment of the instance, including leader information.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfMemory.html">XToolkitOutOfMemory</a></tt></tt> - Not enough memory. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - No leaders were found.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#534">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#535">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Angle">GetAngle/SetAngle</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-name"><tt>GetAngle</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetAngle</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The angle at which the instance was placed.  <tt>null</tt> represents a 0.0 degree angle.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#536">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#537">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Height">GetHeight/SetHeight</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-name"><tt>GetHeight</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetHeight</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The symbol instance height.<br>
+<br>This function does not consistently return a value capable of being
+  related mathematically to the symbol height in drawing or model coordinates.
+  Use
+  <tt><a class="method" href="c-pfcDetail-DetailSymbolInstInstructions.html#ScaledHeight">DetailSymbolInstInstructions.GetScaledHeight(/*optional*/ Double)</a></tt>
+  instead.<br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ScaledHeight">GetScaledHeight/SetScaledHeight</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-name"><tt>GetScaledHeight</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetScaledHeight</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The symbol instance height in the units of the drawing or model,
+  consistent with the values shown in the Properties dialog for the symbol
+  instance. <br>
+<br>The scaled height is partially determined
+  based on the properties of the symbol definition (see
+  <tt><a class="method" href="c-pfcDetail-DetailSymbolInstInstructions.html#SymbolDef">DetailSymbolInstInstructions.GetSymbolDef(DetailSymbolDefItem)</a></tt>).
+  Changing the symbol definition may change how Creo Parametric calculates the
+  symbol height based on the scaled height.
+  <p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The symbol definition assigned to this data was not yet initialized so the scaled value cannot be accurately assigned or retrieved. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#538">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#539">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TextValues">GetTextValues/SetTextValues</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailVariantTexts.html">DetailVariantTexts</a></tt></td><td class="method-name"><tt>GetTextValues</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetTextValues</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailVariantTexts.html">DetailVariantTexts</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Sequence of variant text values used while placing the symbol instance.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfMemory.html">XToolkitOutOfMemory</a></tt></tt> - Not enough memory. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - No variant text values were found.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#540">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#541">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CurrentTransform">GetCurrentTransform</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcBase-Transform3D.html">Transform3D</a></tt></td><td class="method-name"><tt>GetCurrentTransform</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The coordinate transformation matrix for the symbol instance placement.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#542">Drawings: Detail Symbol Instances</a>, <a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetGroups">SetGroups</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetGroups</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailSymbolGroupOption.html">DetailSymbolGroupOption</a>&nbsp;option, 
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailSymbolGroups.html">DetailSymbolGroups</a>&nbsp;groups)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Sets the option for displaying groups in the symbol instance.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#543">Drawings: Detail Symbol Instances</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>option</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>groups</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

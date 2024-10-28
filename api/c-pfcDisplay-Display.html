@@ -1,0 +1,1469 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcDisplay.Display"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      226
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcDisplay.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcDisplay-Display.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;Display</h2>
+<tt>
+     package 
+     <b><a href="p-pfcDisplay.html">com.ptc.pfc.pfcDisplay</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>Display</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcObject-Parent.html">com.ptc.pfc.pfcObject.Parent</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface represents the current session display. Because it is extended by
+<tt><tt><a class="class" href="c-pfcSession-Session.html">Session</a></tt></tt> the methods and attributes can be accessed using that object.
+This interface contains methods to display graphics on the screen.
+<br>
+<br>To maintain displayed graphics even after a window repaint create an instance of 
+<tt><tt><a class="class" href="c-pfcDisplay-DisplayList2D.html">DisplayList2D</a></tt></tt> or <tt><tt><a class="class" href="c-pfcDisplay-DisplayList3D.html">DisplayList3D</a></tt></tt> and place the graphics 
+calls in the display list's <tt><a class="method" href="c-pfcDisplay-DisplayListener.html#OnDisplay">DisplayListener.OnDisplay(Display)</a></tt> method.
+
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-pfcSession-BaseSession.html">BaseSession</a></tt>, 
+        <tt><a class="class" href="c-wfcDisplay-WDisplay.html">WDisplay</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDisplay-DisplayList2D.html">DisplayList2D</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateDisplayList2D">CreateDisplayList2D</a>
+ (int&nbsp;Id, <a class="type" href="c-pfcBase-ScreenTransform.html">ScreenTransform</a>&nbsp;Transform, <a class="type" href="c-pfcDisplay-DisplayListener.html">DisplayListener</a>&nbsp;Action)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a two-dimensional display list
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDisplay-DisplayList3D.html">DisplayList3D</a></tt></td><td class="method-summary"><tt><a class="method" href="#CreateDisplayList3D">CreateDisplayList3D</a>
+ (int&nbsp;Id, <a class="type" href="c-pfcDisplay-DisplayListener.html">DisplayListener</a>&nbsp;Action)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a three-dimensional display list entity
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DrawArc2D">DrawArc2D</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Center, double&nbsp;Radius, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;StartDirection, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;EndDirection)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Draws an arc on the screen
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DrawCircle">DrawCircle</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Center, double&nbsp;Radius)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Draws a circle on the screen
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DrawLine">DrawLine</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Endpoint)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Draws a line on the screen from the last pen position specified to the position specified 
+by the Endpoint argument.
+The last pen position is specified using this same function previously times or by 
+<tt><a class="method" href="c-pfcDisplay-Display.html#SetPenPosition">Display.SetPenPosition(Point3D)</a></tt> 
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DrawPolygon2D">DrawPolygon2D</a>
+ (<a class="type" href="c-pfcBase-Point2Ds.html">Point2Ds</a>&nbsp;Vertices, 
+   /*optional*/
+   <a class="type" href="c-pfcBase-StdColor.html">StdColor</a>&nbsp;FillColor)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Draws two-dimensional polygon on the screen.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DrawPolyline">DrawPolyline</a>
+ (<a class="type" href="c-pfcBase-Point3Ds.html">Point3Ds</a>&nbsp;Points)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Draws a series of connected line segments on the screen.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DrawText2D">DrawText2D</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;StartPoint, String&nbsp;TextLine)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Draws text on the screen
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDisplay-Font.html">Font</a></tt></td><td class="method-summary"><tt><a class="method" href="#CurrentFont">GetCurrentFont</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "CurrentFont"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The current font used for text graphics in Creo Parametric.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcBase-StdColor.html">StdColor</a></tt></td><td class="method-summary"><tt><a class="method" href="#CurrentGraphicsColor">GetCurrentGraphicsColor</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "CurrentGraphicsColor"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The standard color used to display new graphics.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDisplay-GraphicsMode.html">GraphicsMode</a></tt></td><td class="method-summary"><tt><a class="method" href="#CurrentGraphicsMode">GetCurrentGraphicsMode</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "CurrentGraphicsMode"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The mode used to display graphics (i.e. normal or complement).</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDisplay-Font.html">Font</a></tt></td><td class="method-summary"><tt><a class="method" href="#DefaultFont">GetDefaultFont</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "DefaultFont"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The default font for this session of Creo Parametric.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDisplay-Font.html">Font</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetFontById">GetFontById</a>
+ (int&nbsp;Id)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a font object given a Creo Parametric font integer id.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDisplay-Font.html">Font</a></tt></td><td class="method-summary"><tt><a class="method" href="#GetFontByName">GetFontByName</a>
+ (String&nbsp;Name)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns a font object given a Creo Parametric font name.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#RotationAngle">GetRotationAngle</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "RotationAngle"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The rotation angle of created text graphics (default is 0).</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#SlantAngle">GetSlantAngle</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "SlantAngle"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The slant angle of created text graphics (default is 0).</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#TextHeight">GetTextHeight</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "TextHeight"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The text height of created text graphics.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>double</tt></td><td class="method-summary"><tt><a class="method" href="#WidthFactor">GetWidthFactor</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "WidthFactor"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The width-to-height ratio for created text graphics.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Invalidate">Invalidate</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Model)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Invalidates the display list of the model singalling that a repaint is needed.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ResetTextAttributes">ResetTextAttributes</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Resets the Creo Parametric text attributes to use the default settings
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#CurrentFont">SetCurrentFont</a>
+ (<a class="type" href="c-pfcDisplay-Font.html">Font</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "CurrentFont"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The current font used for text graphics in Creo Parametric.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#CurrentGraphicsColor">SetCurrentGraphicsColor</a>
+ (<a class="type" href="c-pfcBase-StdColor.html">StdColor</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "CurrentGraphicsColor"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The standard color used to display new graphics.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#CurrentGraphicsMode">SetCurrentGraphicsMode</a>
+ (<a class="type" href="c-pfcDisplay-GraphicsMode.html">GraphicsMode</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "CurrentGraphicsMode"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The mode used to display graphics (i.e. normal or complement).</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SetPenPosition">SetPenPosition</a>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;NewPosition)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method enables you to move to a point without producing any graphical output.  This
+method is used when drawing lines using <tt><a class="method" href="c-pfcDisplay-Display.html#DrawLine">Display.DrawLine(Point3D)</a></tt>
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#RotationAngle">SetRotationAngle</a>
+ (double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "RotationAngle"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The rotation angle of created text graphics (default is 0).</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SlantAngle">SetSlantAngle</a>
+ (double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "SlantAngle"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The slant angle of created text graphics (default is 0).</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#TextHeight">SetTextHeight</a>
+ (double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "TextHeight"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The text height of created text graphics.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#WidthFactor">SetWidthFactor</a>
+ (double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "WidthFactor"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The width-to-height ratio for created text graphics.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcObject-Parent.html"><tt>com.ptc.pfc.pfcObject.Parent</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcObject-Parent.html#GetChild"><tt>GetChild</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateDisplayList2D">CreateDisplayList2D</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDisplay-DisplayList2D.html">DisplayList2D</a></tt></td><td class="method-name"><tt>CreateDisplayList2D</tt></td><td class="method-params"><tt>
+ (int&nbsp;Id, <a class="type" href="c-pfcBase-ScreenTransform.html">ScreenTransform</a>&nbsp;Transform, <a class="type" href="c-pfcDisplay-DisplayListener.html">DisplayListener</a>&nbsp;Action)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a two-dimensional display list
+<br>
+<br>Two dimensional display list operations in Creo Parametric are not currently supported.  This method is 
+reserved for future activation. 
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#150">Graphics: Display Lists and Graphics</a>, <a href="../manual0/JGraphics.html#155">Graphics: Display Lists and Graphics</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Id</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+<dt>
+<tt><b>Transform</b></tt>
+</dt>
+<dd>The transformation matrix to be applied to the entities of the display list.</dd>
+<dt>
+<tt><b>Action</b></tt>
+</dt>
+<dd>The user-defined <tt><tt><a class="class" href="c-pfcDisplay-DisplayListener.html">DisplayListener</a></tt></tt> that calls <tt><tt><a class="class" href="c-pfcDisplay-Display.html">Display</a></tt></tt> methods to populate the display.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The newly created DisplayList2D class instance</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Invalidate">Invalidate</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>Invalidate</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Model)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Invalidates the display list of the model singalling that a repaint is needed.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitInvalidType.html">XToolkitInvalidType</a></tt></tt> - The specified model is not a part, assembly, or drawing. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotExist.html">XToolkitNotExist</a></tt></tt> - The function cannot find the window associated with the object. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Model</b></tt>
+</dt>
+<dd>The part, assembly or drawing</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DrawArc2D">DrawArc2D</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>DrawArc2D</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Center, double&nbsp;Radius, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;StartDirection, <a class="type" href="c-pfcBase-Vector3D.html">Vector3D</a>&nbsp;EndDirection)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Draws an arc on the screen
+<br>
+<br>All points are in logical screen cordinates
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#125">Graphics: Displaying Graphics</a>, <a href="../manual0/JGraphics.html#126">Graphics: Displaying Graphics</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Center</b></tt>
+</dt>
+<dd>The center point of the arc</dd>
+<dt>
+<tt><b>Radius</b></tt>
+</dt>
+<dd>The radius of the arc</dd>
+<dt>
+<tt><b>StartDirection</b></tt>
+</dt>
+<dd>Vector representing the start direction of the arc</dd>
+<dt>
+<tt><b>EndDirection</b></tt>
+</dt>
+<dd>Vector representing the end direction of the arc</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DrawPolygon2D">DrawPolygon2D</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>DrawPolygon2D</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point2Ds.html">Point2Ds</a>&nbsp;Vertices, 
+   /*optional*/
+   <a class="type" href="c-pfcBase-StdColor.html">StdColor</a>&nbsp;FillColor)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Draws two-dimensional polygon on the screen.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitLineTooLong.html">XToolkitLineTooLong</a></tt></tt> - You specified more than 100 points. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#126">Graphics: Displaying Graphics</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Vertices</b></tt>
+</dt>
+<dd>A sequence of two dimensional points representing the polygon's vertices.</dd>
+<dt>
+<tt><b>FillColor</b></tt>
+</dt>
+<dd>The color of the polygon.  If <tt>null</tt>, the polygon will be filled using the current graphics color.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DrawText2D">DrawText2D</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>DrawText2D</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;StartPoint, String&nbsp;TextLine)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Draws text on the screen
+<br>
+<br>If no text attributes are set before this method call the program uses the default 
+text attributes for Creo Parametric.  Set the text attributes using the attributes on the 
+<tt><tt><a class="class" href="c-pfcDisplay-Display.html">Display</a></tt></tt> object.<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The font specified in a previous call to <b>ProtText*CurrentSet()</b> was not found. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#133">Graphics: Displaying Text in the Graphics Window</a>, <a href="../manual0/JGraphics.html#141">Graphics: Displaying Text in the Graphics Window</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>StartPoint</b></tt>
+</dt>
+<dd>The starting point for text display, in logical screen coordinates</dd>
+<dt>
+<tt><b>TextLine</b></tt>
+</dt>
+<dd>The text to display</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CreateDisplayList3D">CreateDisplayList3D</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDisplay-DisplayList3D.html">DisplayList3D</a></tt></td><td class="method-name"><tt>CreateDisplayList3D</tt></td><td class="method-params"><tt>
+ (int&nbsp;Id, <a class="type" href="c-pfcDisplay-DisplayListener.html">DisplayListener</a>&nbsp;Action)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a three-dimensional display list entity
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#151">Graphics: Display Lists and Graphics</a>, <a href="../manual0/JGraphics.html#155">Graphics: Display Lists and Graphics</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Id</b></tt>
+</dt>
+<dd>The identifier of the display list.  This number must be unique.</dd>
+<dt>
+<tt><b>Action</b></tt>
+</dt>
+<dd>The user-defined <tt><tt><a class="class" href="c-pfcDisplay-DisplayListener.html">DisplayListener</a></tt></tt> that calls <tt><tt><a class="class" href="c-pfcDisplay-Display.html">Display</a></tt></tt> methods to create the display list.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The newly-created DisplayList3D class instance</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DrawCircle">DrawCircle</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>DrawCircle</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Center, double&nbsp;Radius)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Draws a circle on the screen
+<br>
+<br>Center point and orientation is in the coordinate system of the current object. 
+For example, if the current object is a part, the point must be in the part's coordinate 
+system. If the current object is an assembly, the point must be in the assembly's 
+coordinate system.
+If the current object is a two dimensional model, circle will be normal to the screen.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#124">Graphics: Displaying Graphics</a>, <a href="../manual0/JGraphics.html#126">Graphics: Displaying Graphics</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Center</b></tt>
+</dt>
+<dd>The center of the circle</dd>
+<dt>
+<tt><b>Radius</b></tt>
+</dt>
+<dd>The radius of the circle</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DrawLine">DrawLine</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>DrawLine</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;Endpoint)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Draws a line on the screen from the last pen position specified to the position specified 
+by the Endpoint argument.
+The last pen position is specified using this same function previously times or by 
+<tt><a class="method" href="c-pfcDisplay-Display.html#SetPenPosition">Display.SetPenPosition(Point3D)</a></tt> 
+
+<br>
+<br>These points are in the coordinate system of the current object. 
+For example, if the current object is a part, the points must be in the part's 
+coordinate system. If the current object is an assembly, the points must be in the 
+assembly's coordinate system.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#121">Graphics: Displaying Graphics</a>, <a href="../manual0/JGraphics.html#126">Graphics: Displaying Graphics</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Endpoint</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SetPenPosition">SetPenPosition</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPenPosition</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3D.html">Point3D</a>&nbsp;NewPosition)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method enables you to move to a point without producing any graphical output.  This
+method is used when drawing lines using <tt><a class="method" href="c-pfcDisplay-Display.html#DrawLine">Display.DrawLine(Point3D)</a></tt>
+
+<br>
+<br>This point is in the coordinate system of the current object. For example, if the 
+current object is a part, the point must be in the part's coordinate system. If the 
+current object is an assembly, the point must be in the assembly's coordinate system.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#120">Graphics: Displaying Graphics</a>, <a href="../manual0/JGraphics.html#126">Graphics: Displaying Graphics</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>NewPosition</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DrawPolyline">DrawPolyline</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>DrawPolyline</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-Point3Ds.html">Point3Ds</a>&nbsp;Points)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Draws a series of connected line segments on the screen.
+<br>
+<br>These points are in the coordinate system of the current object. For example, 
+if the current object is a part, the points must be in the part's coordinate system. 
+If the current object is an assembly, the points must be in the assembly's coordinate 
+system. The total number of points should be less than 200.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#122">Graphics: Displaying Graphics</a>, <a href="../manual0/JGraphics.html#126">Graphics: Displaying Graphics</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Points</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DefaultFont">GetDefaultFont</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDisplay-Font.html">Font</a></tt></td><td class="method-name"><tt>GetDefaultFont</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The default font for this session of Creo Parametric.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The function could not find a font name for the specified font identifier. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#143">Graphics: Controlling Text Fonts</a>, <a href="../manual0/JGraphics.html#147">Graphics: Controlling Text Fonts</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CurrentFont">GetCurrentFont/SetCurrentFont</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDisplay-Font.html">Font</a></tt></td><td class="method-name"><tt>GetCurrentFont</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetCurrentFont</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDisplay-Font.html">Font</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The current font used for text graphics in Creo Parametric.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - This means either: 
+    <ul>
+       
+<li>The attributes were not set, OR</li> 
+	   
+<li>The function could not find a font name for the specified font identifier.</li> 
+	
+</ul>   
+	
+</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#144">Graphics: Controlling Text Fonts</a>, <a href="../manual0/JGraphics.html#145">Graphics: Controlling Text Fonts</a>, <a href="../manual0/JGraphics.html#156">Graphics: Exceptions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetFontById">GetFontById</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDisplay-Font.html">Font</a></tt></td><td class="method-name"><tt>GetFontById</tt></td><td class="method-params"><tt>
+ (int&nbsp;Id)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a font object given a Creo Parametric font integer id.
+<br>
+<br>The correspondance between font names and integer identifiers stays constant for a given 
+Creo Parametric session, but may be different for different sessions.<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The function could not find a font name for the specified font identifier. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#146">Graphics: Controlling Text Fonts</a>, <a href="../manual0/JGraphics.html#147">Graphics: Controlling Text Fonts</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Id</b></tt>
+</dt>
+<dd>The Creo Parametric integer id of the font. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The font object to be used to control the font of text graphics.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GetFontByName">GetFontByName</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDisplay-Font.html">Font</a></tt></td><td class="method-name"><tt>GetFontByName</tt></td><td class="method-params"><tt>
+ (String&nbsp;Name)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns a font object given a Creo Parametric font name.
+<br>
+<br>The correspondance between font names and integer identifiers stays constant for a given 
+Creo Parametric session, but may be different for different sessions.
+   <p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The function could not find a font identifier for the specified font name. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#147">Graphics: Controlling Text Fonts</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>The font name</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The font object to be used to control the font of text graphics</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TextHeight">GetTextHeight/SetTextHeight</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetTextHeight</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetTextHeight</tt></td><td class="method-params"><tt>
+ (double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The text height of created text graphics.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The attributes were not set. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#134">Graphics: Displaying Text in the Graphics Window</a>, <a href="../manual0/JGraphics.html#135">Graphics: Displaying Text in the Graphics Window</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RotationAngle">GetRotationAngle/SetRotationAngle</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetRotationAngle</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetRotationAngle</tt></td><td class="method-params"><tt>
+ (double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The rotation angle of created text graphics (default is 0).<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The attributes were not set. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#138">Graphics: Displaying Text in the Graphics Window</a>, <a href="../manual0/JGraphics.html#139">Graphics: Displaying Text in the Graphics Window</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SlantAngle">GetSlantAngle/SetSlantAngle</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetSlantAngle</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetSlantAngle</tt></td><td class="method-params"><tt>
+ (double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The slant angle of created text graphics (default is 0).<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The attributes were not set. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#140">Graphics: Displaying Text in the Graphics Window</a>, <a href="../manual0/JGraphics.html#141">Graphics: Displaying Text in the Graphics Window</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WidthFactor">GetWidthFactor/SetWidthFactor</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>double</tt></td><td class="method-name"><tt>GetWidthFactor</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetWidthFactor</tt></td><td class="method-params"><tt>
+ (double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The width-to-height ratio for created text graphics.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+     
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - The attributes were not set. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#136">Graphics: Displaying Text in the Graphics Window</a>, <a href="../manual0/JGraphics.html#137">Graphics: Displaying Text in the Graphics Window</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ResetTextAttributes">ResetTextAttributes</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>ResetTextAttributes</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Resets the Creo Parametric text attributes to use the default settings
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CurrentGraphicsMode">GetCurrentGraphicsMode/SetCurrentGraphicsMode</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDisplay-GraphicsMode.html">GraphicsMode</a></tt></td><td class="method-name"><tt>GetCurrentGraphicsMode</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetCurrentGraphicsMode</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDisplay-GraphicsMode.html">GraphicsMode</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The mode used to display graphics (i.e. normal or complement).<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#130">Graphics: Controlling Graphics Display</a>, <a href="../manual0/JGraphics.html#131">Graphics: Controlling Graphics Display</a>, <a href="../manual0/JGraphics.html#131">Graphics: Controlling Graphics Display</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CurrentGraphicsColor">GetCurrentGraphicsColor/SetCurrentGraphicsColor</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcBase-StdColor.html">StdColor</a></tt></td><td class="method-name"><tt>GetCurrentGraphicsColor</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetCurrentGraphicsColor</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcBase-StdColor.html">StdColor</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The standard color used to display new graphics.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNoChange.html">XToolkitNoChange</a></tt></tt> - The current color is the same as the new color.</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JGraphics.html#128">Graphics: Controlling Graphics Display</a>, <a href="../manual0/JGraphics.html#131">Graphics: Controlling Graphics Display</a>, <a href="../manual0/JGraphics.html#129">Graphics: Controlling Graphics Display</a>, <a href="../manual0/JGraphics.html#131">Graphics: Controlling Graphics Display</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

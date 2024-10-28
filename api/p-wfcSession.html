@@ -1,0 +1,152 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for package "com.ptc.wfc.wfcSession"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      1,
+      129
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;Package
+     </td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="p-wfcSession.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Package&nbsp;com.ptc.wfc.wfcSession</h2>
+<b>Description</b>
+<br>
+<br>
+  Similar to its predecessor J-Link, Object Toolkit top level object is a session, which provides methods to get objects representing Creo Parametric models, model items, parameters and so on. 
+  <br>
+<br>
+  
+<p>Since Object Toolkit has more functional features than J-Link, its actual Session object, returned by pfcGlobal.GetProESession(), is of type <tt><tt><a class="class" href="c-wfcSession-WSession.html">WSession</a></tt></tt>.</p>
+  
+<p>Interface <tt><tt><a class="class" href="c-wfcSession-WSession.html">WSession</a></tt></tt> combines methods from  <tt><tt><a class="class" href="c-pfcSession-Session.html">Session</a></tt></tt> and methods which are available only in Object Toolkit. Besides, methods for obtaining models now return Object Toolkit classes instead of J-Link.</p>
+  
+<p>As pfcGetProESession is shared by both Object Toolkit and J-Link, it declares the type of the returned session as <tt><tt><a class="class" href="c-pfcSession-Session.html">Session</a></tt></tt>. To obtain <tt><tt><a class="class" href="c-wfcSession-WSession.html">WSession</a></tt></tt>, this object should be cast to that type:
+    
+    <pre>
+    WSession ses = (WSession)pfcGlobal.GetProESession();
+    </pre>
+  
+</p>
+  
+<br>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="classes">
+<tr>
+<th colspan="2" class="classes">Interfaces</th>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-BeforeModelRetrieveActionListener.html">BeforeModelRetrieveActionListener</a></tt></td><td class="classes-text">
+      This class delgates the event before activating file open dialog using <b>File -&gt; Open</b>.
+    </td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-BeforeModelRetrieveInstructions.html">BeforeModelRetrieveInstructions</a></tt></td><td class="classes-text">
+      This class specifies the instructions for action listener <tt><tt><a class="class" href="c-wfcSession-BeforeModelRetrieveActionListener.html">BeforeModelRetrieveActionListener</a></tt></tt>.
+    </td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-BeforeModelRetrieveListener.html">BeforeModelRetrieveListener</a></tt></td><td class="classes-text"><tt><b>SUCCESSOR(S): </b><a class="method" href="c-wfcSession-BeforeModelRetrieveActionListener.html">BeforeModelRetrieveActionListener</a></tt>
+<p></p>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-BeforeModelSaveAllListener.html">BeforeModelSaveAllListener</a></tt></td><td class="classes-text">&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-BrowserMessageListener.html">BrowserMessageListener</a></tt></td><td class="classes-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-ElementWstringOption.html">ElementWstringOption</a></tt></td><td class="classes-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-FiletypeOpenOptions.html">FiletypeOpenOptions</a></tt></td><td class="classes-text">This class specifies the options for file open dialog. 
+  </td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-FiletypeSaveOptions.html">FiletypeSaveOptions</a></tt></td><td class="classes-text">This class specifies the options for file save dialog. 
+</td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-LineStyleData.html">LineStyleData</a></tt></td><td class="classes-text"> Provides the information about the Line Style.</td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-ParsedFileNameData.html">ParsedFileNameData</a></tt></td><td class="classes-text">&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-RunnableAction.html">RunnableAction</a></tt></td><td class="classes-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-SnapshotTransformation.html">SnapshotTransformation</a></tt></td><td class="classes-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-Timer.html">Timer</a></tt></td><td class="classes-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-TimerAction.html">TimerAction</a></tt></td><td class="classes-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-TimeValue.html">TimeValue</a></tt></td><td class="classes-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-WBaseSession.html">WBaseSession</a></tt></td><td class="classes-text">&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-WSession.html">WSession</a></tt></td><td class="classes-text">Top interface in Object Toolkit.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="classes">
+<tr>
+<th colspan="2" class="classes">Classes</th>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-CreoType.html">CreoType</a></tt></td><td class="classes-text">&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-IntfDataSourceType.html">IntfDataSourceType</a></tt></td><td class="classes-text"> Provides the type of IntfDataSource.</td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-KinDragType.html">KinDragType</a></tt></td><td class="classes-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-KnownDirectoryType.html">KnownDirectoryType</a></tt></td><td class="classes-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-SnapshotTransformations.html">SnapshotTransformations</a></tt></td><td class="classes-text">&nbsp;</td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-wfcSession.html">wfcSession</a></tt></td><td class="classes-text">Contains global CIP definitions for module  "wfcSession"
+    </td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-WModelRetrieveOption.html">WModelRetrieveOption</a></tt></td><td class="classes-text">
+      Provides options to retrieve model.
+    </td>
+</tr>
+<tr>
+<td width="1%" class="classes-name"><tt><a class="class" href="c-wfcSession-WModelRetrieveOptions.html">WModelRetrieveOptions</a></tt></td><td class="classes-text">&nbsp;</td>
+</tr>
+</table>
+<br>
+</body>
+</html>

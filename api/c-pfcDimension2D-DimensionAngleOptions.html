@@ -1,0 +1,256 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcDimension2D.DimensionAngleOptions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      222
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcDimension2D.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcDimension2D-DimensionAngleOptions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;DimensionAngleOptions</h2>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDimension-AngularDimOptions.html">AngularDimOptions</a></tt>
+<p></p>
+<tt>
+     package 
+     <b><a href="p-pfcDimension2D.html">com.ptc.pfc.pfcDimension2D</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>DimensionAngleOptions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface contains the flags used by a <tt><tt><a class="class" href="c-pfcDimension2D-AngleDimensionSense.html">AngleDimensionSense</a></tt></tt> object.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><tt><a class="class" href="c-pfcDimension2D-AngleDimensionSense.html">AngleDimensionSense</a></tt></tt>, <tt><a class="method" href="c-pfcDimension2D-Dimension2D.html#GetDimensionSenses">Dimension2D.GetDimensionSenses()</a></tt>, <tt><a class="method" href="c-pfcDimension2D-pfcDimension2D.html#AngleDimensionSense::Create">pfcDimension2D.AngleDimensionSense_Create(/*optional*/ DimensionAngleOptions)</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsFirst">GetIsFirst</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDimension-AngularDimOptions.html#IsFirst">AngularDimOptions.GetIsFirst</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IsFirst"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> if the angle starts from this entity in a 
+   counterclockwise sense; <tt>false</tt> or <tt>null</tt> if the 
+   dimension ends at this entity.  One entity in an angular 
+   dimension must be <tt>true</tt>, and one must be <tt>false</tt>.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#ShouldFlip">GetShouldFlip</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDimension-AngularDimOptions.html#ShouldFlip">AngularDimOptions.GetShouldFlip</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ShouldFlip"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If "should_flip" is <tt>false</tt> or <tt>null</tt>, and 
+   the entity's inherent direction is away from the angle vertex, then 
+   the dimension attaches directly to the entity. If the entity's direction 
+   is towards the angle vertex, the dimension is attached to a witness 
+   line which is in line with the entity but on the opposite side of the 
+   angle vertex. If "should_flip" is <tt>true</tt>, then these cases are 
+   interchanged.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#IsFirst">SetIsFirst</a>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDimension-AngularDimOptions.html#IsFirst">AngularDimOptions.GetIsFirst</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "IsFirst"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> if the angle starts from this entity in a 
+   counterclockwise sense; <tt>false</tt> or <tt>null</tt> if the 
+   dimension ends at this entity.  One entity in an angular 
+   dimension must be <tt>true</tt>, and one must be <tt>false</tt>.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ShouldFlip">SetShouldFlip</a>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDimension-AngularDimOptions.html#ShouldFlip">AngularDimOptions.GetShouldFlip</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ShouldFlip"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>If "should_flip" is <tt>false</tt> or <tt>null</tt>, and 
+   the entity's inherent direction is away from the angle vertex, then 
+   the dimension attaches directly to the entity. If the entity's direction 
+   is towards the angle vertex, the dimension is attached to a witness 
+   line which is in line with the entity but on the opposite side of the 
+   angle vertex. If "should_flip" is <tt>true</tt>, then these cases are 
+   interchanged.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsFirst">GetIsFirst/SetIsFirst</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>GetIsFirst</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetIsFirst</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDimension-AngularDimOptions.html#IsFirst">AngularDimOptions.GetIsFirst</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> if the angle starts from this entity in a 
+   counterclockwise sense; <tt>false</tt> or <tt>null</tt> if the 
+   dimension ends at this entity.  One entity in an angular 
+   dimension must be <tt>true</tt>, and one must be <tt>false</tt>.
+   <br>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ShouldFlip">GetShouldFlip/SetShouldFlip</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>GetShouldFlip</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetShouldFlip</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDimension-AngularDimOptions.html#ShouldFlip">AngularDimOptions.GetShouldFlip</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>If "should_flip" is <tt>false</tt> or <tt>null</tt>, and 
+   the entity's inherent direction is away from the angle vertex, then 
+   the dimension attaches directly to the entity. If the entity's direction 
+   is towards the angle vertex, the dimension is attached to a witness 
+   line which is in line with the entity but on the opposite side of the 
+   angle vertex. If "should_flip" is <tt>true</tt>, then these cases are 
+   interchanged.<br>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

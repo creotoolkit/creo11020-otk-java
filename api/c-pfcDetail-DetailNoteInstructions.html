@@ -1,0 +1,844 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcDetail.DetailNoteInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      193
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcDetail.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcDetail-DetailNoteInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;DetailNoteInstructions</h2>
+<tt>
+     package 
+     <b><a href="p-pfcDetail.html">com.ptc.pfc.pfcDetail</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>DetailNoteInstructions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcDetail-DetailCreateInstructions.html">com.ptc.pfc.pfcDetail.DetailCreateInstructions</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface contains information used to describe a detail note item.
+It may be used when creating detail notes (<tt><a class="method" href="c-pfcDetail-DetailItemOwner.html#CreateDetailItem">DetailItemOwner.CreateDetailItem(DetailCreateInstructions)</a></tt> and <tt><a class="method" href="c-pfcDetail-DetailSymbolDefItem.html#CreateDetailItem">DetailSymbolDefItem.CreateDetailItem(DetailCreateInstructions)</a></tt>), or accessing existing notes (<tt><a class="method" href="c-pfcDetail-DetailNoteItem.html#Modify">DetailNoteItem.Modify(DetailNoteInstructions)</a></tt> and <tt><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetInstructions">DetailNoteItem.GetInstructions(boolean)</a></tt>).
+<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a></tt></td><td class="method-summary"><tt><a class="method" href="#Color">GetColor</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetNoteTextStyle">DetailNoteItem.GetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetNoteTextStyle">DetailNoteItem.SetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#GetColor">AnnotationTextStyle.GetColor</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#SetColor">AnnotationTextStyle.SetColor</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Color"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The color of the detail item.  If <tt>null</tt>, the default drawing color is used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-HorizontalJustification.html">HorizontalJustification</a></tt></td><td class="method-summary"><tt><a class="method" href="#Horizontal">GetHorizontal</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetNoteTextStyle">DetailNoteItem.GetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetNoteTextStyle">DetailNoteItem.SetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#GetHorizontalJustification">AnnotationTextStyle.GetHorizontalJustification</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#SetHorizontalJustification">AnnotationTextStyle.SetHorizontalJustification</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Horizontal"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The horizontal justification.  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsDisplayed">GetIsDisplayed</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#IsDisplayed">DetailNoteItem.IsDisplayed</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IsDisplayed"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> if the note is currently displayed.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsMirrored">GetIsMirrored</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetNoteTextStyle">DetailNoteItem.GetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetNoteTextStyle">DetailNoteItem.SetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#IsTextMirrored">AnnotationTextStyle.IsTextMirrored</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#MirrorText">AnnotationTextStyle.MirrorText</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IsMirrored"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> if the note is mirrored.  <tt>null</tt> or <tt>false</tt> if it has normal orientation.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsReadOnly">GetIsReadOnly</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#SetReadOnly">DetailNoteItem.SetReadOnly</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#IsReadOnly">DetailNoteItem.IsReadOnly</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IsReadOnly"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> if the note is readonly. <tt>null</tt> or <tt>false</tt> if it is user editable.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailLeaders.html">DetailLeaders</a></tt></td><td class="method-summary"><tt><a class="method" href="#Leader">GetLeader</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetElbowLength">DetailNoteItem.GetElbowLength</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetElbow">DetailNoteItem.SetElbow</a>, 
+          &lt;reference 1 to unknown entity &gt;
+        <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetOnItemAttachment">DetailNoteItem.SetOnItemAttachment</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetOffsetAttachment">DetailNoteItem.SetOffsetAttachment</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetFreeAttachment">DetailNoteItem.SetFreeAttachment</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#GetAttachment">DetailNoteItem.GetAttachment</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Leader"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The note attachment information, including placement and leaders.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-summary"><tt><a class="method" href="#TextAngle">GetTextAngle</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetNoteTextStyle">DetailNoteItem.GetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetNoteTextStyle">DetailNoteItem.SetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#GetAngle">AnnotationTextStyle.GetAngle</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#SetAngle">AnnotationTextStyle.SetAngle</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "TextAngle"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The text angle used for the note.  <tt>null</tt> indicates 0.0.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcDetail-DetailTextLines.html">DetailTextLines</a></tt></td><td class="method-summary"><tt><a class="method" href="#TextLines">GetTextLines</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#SetTextLines">DetailNoteItem.SetTextLines</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#GetTextLines">DetailNoteItem.GetTextLines</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "TextLines"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sequence of lines contained in the note.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-VerticalJustification.html">VerticalJustification</a></tt></td><td class="method-summary"><tt><a class="method" href="#Vertical">GetVertical</a>
+ ()
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetNoteTextStyle">DetailNoteItem.GetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetNoteTextStyle">DetailNoteItem.SetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#GetVerticalJustification">AnnotationTextStyle.GetVerticalJustification</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#SetVerticalJustification">AnnotationTextStyle.SetVerticalJustification</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Vertical"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The vertical justification.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Color">SetColor</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;value)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetNoteTextStyle">DetailNoteItem.GetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetNoteTextStyle">DetailNoteItem.SetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#GetColor">AnnotationTextStyle.GetColor</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#SetColor">AnnotationTextStyle.SetColor</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Color"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The color of the detail item.  If <tt>null</tt>, the default drawing color is used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Horizontal">SetHorizontal</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-HorizontalJustification.html">HorizontalJustification</a>&nbsp;value)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetNoteTextStyle">DetailNoteItem.GetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetNoteTextStyle">DetailNoteItem.SetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#GetHorizontalJustification">AnnotationTextStyle.GetHorizontalJustification</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#SetHorizontalJustification">AnnotationTextStyle.SetHorizontalJustification</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Horizontal"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The horizontal justification.  </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#IsDisplayed">SetIsDisplayed</a>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#IsDisplayed">DetailNoteItem.IsDisplayed</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "IsDisplayed"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> if the note is currently displayed.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#IsMirrored">SetIsMirrored</a>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetNoteTextStyle">DetailNoteItem.GetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetNoteTextStyle">DetailNoteItem.SetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#IsTextMirrored">AnnotationTextStyle.IsTextMirrored</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#MirrorText">AnnotationTextStyle.MirrorText</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "IsMirrored"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> if the note is mirrored.  <tt>null</tt> or <tt>false</tt> if it has normal orientation.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#IsReadOnly">SetIsReadOnly</a>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#SetReadOnly">DetailNoteItem.SetReadOnly</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#IsReadOnly">DetailNoteItem.IsReadOnly</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "IsReadOnly"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> if the note is readonly. <tt>null</tt> or <tt>false</tt> if it is user editable.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Leader">SetLeader</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailLeaders.html">DetailLeaders</a>&nbsp;value)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetElbowLength">DetailNoteItem.GetElbowLength</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetElbow">DetailNoteItem.SetElbow</a>, 
+          &lt;reference 1 to unknown entity &gt;
+        <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetOnItemAttachment">DetailNoteItem.SetOnItemAttachment</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetOffsetAttachment">DetailNoteItem.SetOffsetAttachment</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetFreeAttachment">DetailNoteItem.SetFreeAttachment</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#GetAttachment">DetailNoteItem.GetAttachment</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Leader"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The note attachment information, including placement and leaders.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#TextAngle">SetTextAngle</a>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetNoteTextStyle">DetailNoteItem.GetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetNoteTextStyle">DetailNoteItem.SetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#GetAngle">AnnotationTextStyle.GetAngle</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#SetAngle">AnnotationTextStyle.SetAngle</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "TextAngle"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The text angle used for the note.  <tt>null</tt> indicates 0.0.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#TextLines">SetTextLines</a>
+ (<a class="type" href="c-pfcDetail-DetailTextLines.html">DetailTextLines</a>&nbsp;value)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#SetTextLines">DetailNoteItem.SetTextLines</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#GetTextLines">DetailNoteItem.GetTextLines</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "TextLines"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sequence of lines contained in the note.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Vertical">SetVertical</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-VerticalJustification.html">VerticalJustification</a>&nbsp;value)
+</tt>
+<br>
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetNoteTextStyle">DetailNoteItem.GetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetNoteTextStyle">DetailNoteItem.SetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#GetVerticalJustification">AnnotationTextStyle.GetVerticalJustification</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#SetVerticalJustification">AnnotationTextStyle.SetVerticalJustification</a></tt>
+<p></p>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Vertical"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The vertical justification.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcDetail-DetailCreateInstructions.html"><tt>com.ptc.pfc.pfcDetail.DetailCreateInstructions</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcDetail-DetailCreateInstructions.html#GetType"><tt>GetType</tt></a>,
+      <a class="method" href="c-pfcDetail-DetailCreateInstructions.html#Id"><tt>GetId</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TextLines">GetTextLines/SetTextLines</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcDetail-DetailTextLines.html">DetailTextLines</a></tt></td><td class="method-name"><tt>GetTextLines</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetTextLines</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcDetail-DetailTextLines.html">DetailTextLines</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#SetTextLines">DetailNoteItem.SetTextLines</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#GetTextLines">DetailNoteItem.GetTextLines</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Sequence of lines contained in the note.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfMemory.html">XToolkitOutOfMemory</a></tt></tt> - Not enough memory. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - No text lines were found. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#456">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#457">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsDisplayed">GetIsDisplayed/SetIsDisplayed</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>GetIsDisplayed</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetIsDisplayed</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#IsDisplayed">DetailNoteItem.IsDisplayed</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> if the note is currently displayed.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#458">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#459">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsReadOnly">GetIsReadOnly/SetIsReadOnly</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>GetIsReadOnly</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetIsReadOnly</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#SetReadOnly">DetailNoteItem.SetReadOnly</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#IsReadOnly">DetailNoteItem.IsReadOnly</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> if the note is readonly. <tt>null</tt> or <tt>false</tt> if it is user editable.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#460">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#461">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Leader">GetLeader/SetLeader</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailLeaders.html">DetailLeaders</a></tt></td><td class="method-name"><tt>GetLeader</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetLeader</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-DetailLeaders.html">DetailLeaders</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetElbowLength">DetailNoteItem.GetElbowLength</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetElbow">DetailNoteItem.SetElbow</a>, 
+          &lt;reference 1 to unknown entity &gt;
+        <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetOnItemAttachment">DetailNoteItem.SetOnItemAttachment</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetOffsetAttachment">DetailNoteItem.SetOffsetAttachment</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetFreeAttachment">DetailNoteItem.SetFreeAttachment</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#GetAttachment">DetailNoteItem.GetAttachment</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The note attachment information, including placement and leaders.<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+       
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitOutOfMemory.html">XToolkitOutOfMemory</a></tt></tt> - Not enough memory. </p>
+    
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XToolkitNotFound.html">XToolkitNotFound</a></tt></tt> - No leaders were found. </p>
+</p>
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#470">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#471">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsMirrored">GetIsMirrored/SetIsMirrored</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>GetIsMirrored</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetIsMirrored</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetNoteTextStyle">DetailNoteItem.GetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetNoteTextStyle">DetailNoteItem.SetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#IsTextMirrored">AnnotationTextStyle.IsTextMirrored</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#MirrorText">AnnotationTextStyle.MirrorText</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> if the note is mirrored.  <tt>null</tt> or <tt>false</tt> if it has normal orientation.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#462">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#463">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Horizontal">GetHorizontal/SetHorizontal</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-HorizontalJustification.html">HorizontalJustification</a></tt></td><td class="method-name"><tt>GetHorizontal</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetHorizontal</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-HorizontalJustification.html">HorizontalJustification</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetNoteTextStyle">DetailNoteItem.GetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetNoteTextStyle">DetailNoteItem.SetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#GetHorizontalJustification">AnnotationTextStyle.GetHorizontalJustification</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#SetHorizontalJustification">AnnotationTextStyle.SetHorizontalJustification</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The horizontal justification.  <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#464">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#465">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Vertical">GetVertical/SetVertical</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcDetail-VerticalJustification.html">VerticalJustification</a></tt></td><td class="method-name"><tt>GetVertical</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetVertical</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcDetail-VerticalJustification.html">VerticalJustification</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetNoteTextStyle">DetailNoteItem.GetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetNoteTextStyle">DetailNoteItem.SetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#GetVerticalJustification">AnnotationTextStyle.GetVerticalJustification</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#SetVerticalJustification">AnnotationTextStyle.SetVerticalJustification</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The vertical justification.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#466">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#467">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Color">GetColor/SetColor</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a></tt></td><td class="method-name"><tt>GetColor</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetColor</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcBase-ColorRGB.html">ColorRGB</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetNoteTextStyle">DetailNoteItem.GetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetNoteTextStyle">DetailNoteItem.SetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#GetColor">AnnotationTextStyle.GetColor</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#SetColor">AnnotationTextStyle.SetColor</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The color of the detail item.  If <tt>null</tt>, the default drawing color is used.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#468">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#469">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TextAngle">GetTextAngle/SetTextAngle</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-name"><tt>GetTextAngle</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetTextAngle</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tt><b>DEPRECATED: </b>
+  since Creo 4
+  </tt>
+<br>
+<tt><b>SUCCESSOR(S): </b><a class="method" href="c-pfcDetail-DetailNoteItem.html#GetNoteTextStyle">DetailNoteItem.GetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-DetailNoteItem.html#SetNoteTextStyle">DetailNoteItem.SetNoteTextStyle</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#GetAngle">AnnotationTextStyle.GetAngle</a>, <a class="method" href="c-pfcDetail-AnnotationTextStyle.html#SetAngle">AnnotationTextStyle.SetAngle</a></tt>
+<p></p>
+</table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The text angle used for the note.  <tt>null</tt> indicates 0.0.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/jdrawfns.html#472">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>, <a href="../manual0/jdrawfns.html#473">Drawings: Instructions</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

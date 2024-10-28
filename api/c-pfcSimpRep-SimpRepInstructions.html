@@ -1,0 +1,251 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcSimpRep.SimpRepInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      675
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcSimpRep.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcSimpRep-SimpRepInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;SimpRepInstructions</h2>
+<tt>
+     package 
+     <b><a href="p-pfcSimpRep.html">com.ptc.pfc.pfcSimpRep</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>SimpRepInstructions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Base class to classes containing the data required to define a simplified representation.
+<br>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-pfcSimpRep-RetrieveExistingSimpRepInstructions.html">RetrieveExistingSimpRepInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcSimpRep-CreateNewSimpRepInstructions.html">CreateNewSimpRepInstructions</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcSimpRep-SimpRepActionType.html">SimpRepActionType</a></tt></td><td class="method-summary"><tt><a class="method" href="#DefaultAction">GetDefaultAction</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "DefaultAction"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Type of the action (SIMPREP_INCLUDE or SIMPREP_EXCLUDE).</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IsTemporary">GetIsTemporary</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IsTemporary"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Is the representation temporary <tt>true</tt> or not <tt>false</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcSimpRep-SimpRepItems.html">SimpRepItems</a></tt></td><td class="method-summary"><tt><a class="method" href="#Items">GetItems</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Items"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>An array of actions to apply to the components or features in this simplified representation.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DefaultAction">SetDefaultAction</a>
+ (<a class="type" href="c-pfcSimpRep-SimpRepActionType.html">SimpRepActionType</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "DefaultAction"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Type of the action (SIMPREP_INCLUDE or SIMPREP_EXCLUDE).</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#IsTemporary">SetIsTemporary</a>
+ (boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "IsTemporary"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Is the representation temporary <tt>true</tt> or not <tt>false</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Items">SetItems</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcSimpRep-SimpRepItems.html">SimpRepItems</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Items"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>An array of actions to apply to the components or features in this simplified representation.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IsTemporary">GetIsTemporary/SetIsTemporary</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>boolean</tt></td><td class="method-name"><tt>GetIsTemporary</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetIsTemporary</tt></td><td class="method-params"><tt>
+ (boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Is the representation temporary <tt>true</tt> or not <tt>false</tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSimpRep.html#30">Simplified Representations: Extracting Information About Simplified Representations</a>, <a href="../manual0/JSimpRep.html#34">Simplified Representations: Extracting Information About Simplified Representations</a>, <a href="../manual0/JSimpRep.html#42">Simplified Representations: Modifying Simplified Representations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DefaultAction">GetDefaultAction/SetDefaultAction</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcSimpRep-SimpRepActionType.html">SimpRepActionType</a></tt></td><td class="method-name"><tt>GetDefaultAction</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetDefaultAction</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSimpRep-SimpRepActionType.html">SimpRepActionType</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Type of the action (SIMPREP_INCLUDE or SIMPREP_EXCLUDE).<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSimpRep.html#28">Simplified Representations: Extracting Information About Simplified Representations</a>, <a href="../manual0/JSimpRep.html#34">Simplified Representations: Extracting Information About Simplified Representations</a>, <a href="../manual0/JSimpRep.html#40">Simplified Representations: Modifying Simplified Representations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Items">GetItems/SetItems</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcSimpRep-SimpRepItems.html">SimpRepItems</a></tt></td><td class="method-name"><tt>GetItems</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetItems</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcSimpRep-SimpRepItems.html">SimpRepItems</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>An array of actions to apply to the components or features in this simplified representation.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JSimpRep.html#31">Simplified Representations: Extracting Information About Simplified Representations</a>, <a href="../manual0/JSimpRep.html#34">Simplified Representations: Extracting Information About Simplified Representations</a>, <a href="../manual0/JSimpRep.html#48">Simplified Representations: Adding Items to and Deleting Items from a Simplified Representation</a>, <a href="../manual0/JSimpRep.html#57">Simplified Representations: Adding Items to and Deleting Items from a Simplified Representation</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

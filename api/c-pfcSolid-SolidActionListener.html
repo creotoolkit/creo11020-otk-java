@@ -1,0 +1,557 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcSolid.SolidActionListener"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      689
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcSolid.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcSolid-SolidActionListener.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;SolidActionListener</h2>
+<tt>
+     package 
+     <b><a href="p-pfcSolid.html">com.ptc.pfc.pfcSolid</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>SolidActionListener</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcBase-ActionListener.html">com.ptc.pfc.pfcBase.ActionListener</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This class defines an action listener that notifies you 
+when operations on solids occur. 
+<br>
+<br>You can receive notification before and after the following events:
+<ul type="disc">
+
+
+<li>
+Regeneration 
+</li>
+
+<li>
+Unit conversion
+</li>
+
+<li>
+Feature creation
+</li>
+
+<li>
+Feature deletion
+</li>
+
+</ul>
+  
+
+<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterFeatureCreate">OnAfterFeatureCreate</a>
+ (<a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;Sld, <a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Provides an action listener called after a feature is created.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterFeatureDelete">OnAfterFeatureDelete</a>
+ (<a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;Sld, int&nbsp;FeatId)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Provides an action listener called after a feature is deleted.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterRegen">OnAfterRegen</a>
+ (<a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;Sld, 
+   /*optional*/
+   <a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;StartFeature, boolean&nbsp;WasSuccessful)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Provides a notification function called after regenerating a solid.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnAfterUnitConvert">OnAfterUnitConvert</a>
+ (<a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;Sld, boolean&nbsp;ConvertNumbers)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Provides an action listener called after the unit conversion of 
+a solid.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnBeforeFeatureCreate">OnBeforeFeatureCreate</a>
+ (<a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;Sld, int&nbsp;FeatId)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Provides a callback function called before creating a feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnBeforeRegen">OnBeforeRegen</a>
+ (<a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;Sld, 
+   /*optional*/
+   <a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;StartFeature)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Provides a notification function called before the solid is 
+regenerated.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#OnBeforeUnitConvert">OnBeforeUnitConvert</a>
+ (<a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;Sld, boolean&nbsp;ConvertNumbers)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Provides an action listener called before the unit conversion of 
+a solid.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnBeforeRegen">OnBeforeRegen</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnBeforeRegen</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;Sld, 
+   /*optional*/
+   <a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;StartFeature)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Provides a notification function called before the solid is 
+regenerated.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#64">Action Listeners: Solid Level Action Listeners</a>, <a href="../manual0/JAction.html#70">Action Listeners: Solid Level Action Listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sld</b></tt>
+</dt>
+<dd>The solid to be regenerated.</dd>
+<dt>
+<tt><b>StartFeature</b></tt>
+</dt>
+<dd>The starting feature of the regeneration.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterRegen">OnAfterRegen</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterRegen</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;Sld, 
+   /*optional*/
+   <a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;StartFeature, boolean&nbsp;WasSuccessful)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Provides a notification function called after regenerating a solid.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#65">Action Listeners: Solid Level Action Listeners</a>, <a href="../manual0/JAction.html#70">Action Listeners: Solid Level Action Listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sld</b></tt>
+</dt>
+<dd>The solid that was regenerated.</dd>
+<dt>
+<tt><b>StartFeature</b></tt>
+</dt>
+<dd>The starting feature of the regeneration. </dd>
+<dt>
+<tt><b>WasSuccessful</b></tt>
+</dt>
+<dd>This is <tt>true</tt> if the solid regenerated successfully.Otherwise, this is <tt>false</tt>.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnBeforeUnitConvert">OnBeforeUnitConvert</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnBeforeUnitConvert</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;Sld, boolean&nbsp;ConvertNumbers)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Provides an action listener called before the unit conversion of 
+a solid.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#66">Action Listeners: Solid Level Action Listeners</a>, <a href="../manual0/JAction.html#70">Action Listeners: Solid Level Action Listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sld</b></tt>
+</dt>
+<dd>The solid to be converted.</dd>
+<dt>
+<tt><b>ConvertNumbers</b></tt>
+</dt>
+<dd>This is <tt>true</tt> if the dimensions are converted. This is <tt>false</tt> if the dimensions are reinterpreted.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterUnitConvert">OnAfterUnitConvert</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterUnitConvert</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;Sld, boolean&nbsp;ConvertNumbers)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Provides an action listener called after the unit conversion of 
+a solid.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#67">Action Listeners: Solid Level Action Listeners</a>, <a href="../manual0/JAction.html#70">Action Listeners: Solid Level Action Listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sld</b></tt>
+</dt>
+<dd>The solid that was converted.</dd>
+<dt>
+<tt><b>ConvertNumbers</b></tt>
+</dt>
+<dd>This is <tt>true</tt> if the dimensions are converted. This is <tt>false</tt> if the dimensions are reinterpreted.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnBeforeFeatureCreate">OnBeforeFeatureCreate</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnBeforeFeatureCreate</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;Sld, int&nbsp;FeatId)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Provides a callback function called before creating a feature.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#68">Action Listeners: Solid Level Action Listeners</a>, <a href="../manual0/JAction.html#70">Action Listeners: Solid Level Action Listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sld</b></tt>
+</dt>
+<dd>The solid where the feature is about to be created.</dd>
+<dt>
+<tt><b>FeatId</b></tt>
+</dt>
+<dd>The identifier assigned to the new feature.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterFeatureCreate">OnAfterFeatureCreate</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterFeatureCreate</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;Sld, <a class="type" href="c-pfcFeature-Feature.html">Feature</a>&nbsp;Feat)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Provides an action listener called after a feature is created.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#69">Action Listeners: Solid Level Action Listeners</a>, <a href="../manual0/JAction.html#70">Action Listeners: Solid Level Action Listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sld</b></tt>
+</dt>
+<dd>The model that owned the feature that was created</dd>
+<dt>
+<tt><b>Feat</b></tt>
+</dt>
+<dd>The feature that was just created</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="OnAfterFeatureDelete">OnAfterFeatureDelete</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>OnAfterFeatureDelete</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcSolid-Solid.html">Solid</a>&nbsp;Sld, int&nbsp;FeatId)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Provides an action listener called after a feature is deleted.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JAction.html#70">Action Listeners: Solid Level Action Listeners</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Sld</b></tt>
+</dt>
+<dd>The model that owned the feature that was deleted</dd>
+<dt>
+<tt><b>FeatId</b></tt>
+</dt>
+<dd>The feature identifier</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

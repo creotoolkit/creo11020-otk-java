@@ -1,0 +1,3903 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcModel.pfcModel"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      585
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcModel.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcModel-pfcModel.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcModel</h2>
+<tt>
+     package <b><a href="p-pfcModel.html">com.ptc.pfc.pfcModel</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>pfcModel</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "pfcModel"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ASSEMTreeCFGImportInstructions.html">ASSEMTreeCFGImportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#ASSEMTreeCFGImportInstructions::Create">ASSEMTreeCFGImportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to import (read) from the ASSEM_TREE_CFG format file.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-BOMExportInstructions.html">BOMExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#BOMExportInstructions::Create">BOMExportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>This method creates a new instructions object used to export a BOM for an assembly.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-CableParamsFileInstructions.html">CableParamsFileInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#CableParamsFileInstructions::Create">CableParamsFileInstructions_Create</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Mdl, String&nbsp;CableName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export cable parameters from an assembly.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-CableParamsImportInstructions.html">CableParamsImportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#CableParamsImportInstructions::Create">CableParamsImportInstructions_Create</a>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Harness, String&nbsp;CableName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to import from cable parameters (CABLE_PARAMS) type file.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-CATIAFacetsExportInstructions.html">CATIAFacetsExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#CATIAFacetsExportInstructions::Create">CATIAFacetsExportInstructions_Create</a>
+ (
+   /*optional*/
+   String&nbsp;CsysName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a part or assembly in CATIA format (as a faceted model).
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-CGMFILEExportInstructions.html">CGMFILEExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#CGMFILEExportInstructions::Create">CGMFILEExportInstructions_Create</a>
+ (<a class="type" href="c-pfcModel-CGMExportType.html">CGMExportType</a>&nbsp;ExportType, <a class="type" href="c-pfcModel-CGMScaleType.html">CGMScaleType</a>&nbsp;WhichScale)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a drawing in CGM format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ConfigImportInstructions.html">ConfigImportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#ConfigImportInstructions::Create">ConfigImportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to import (read) from configuration data (CONFIG) type file. 
+<p></p>
+
+Users are recommended to use <tt><a class="method" href="c-pfcSession-BaseSession.html#LoadConfigFile">BaseSession.LoadConfigFile(String)</a></tt> rather than the return value of this method.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ConnectorParamExportInstructions.html">ConnectorParamExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#ConnectorParamExportInstructions::Create">ConnectorParamExportInstructions_Create</a>
+ (<a class="type" href="c-stdcols-intseq.html">intseq</a>&nbsp;MembIdTab)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to write the parameters of a connector to a file.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ConnectorParamsImportInstructions.html">ConnectorParamsImportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#ConnectorParamsImportInstructions::Create">ConnectorParamsImportInstructions_Create</a>
+ (<a class="type" href="c-stdcols-intseq.html">intseq</a>&nbsp;MembIdTab)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to import the parameters of a connector from a file.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-DWGImport2DInstructions.html">DWGImport2DInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#DWGImport2DInstructions::Create">DWGImport2DInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new data object used for importing a DWG file into Creo Parametric.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-DWGSetupExportInstructions.html">DWGSetupExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#DWGSetupExportInstructions::Create">DWGSetupExportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a drawing setup file.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-DWGSetupImportInstructions.html">DWGSetupImportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#DWGSetupImportInstructions::Create">DWGSetupImportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to import (read) from a drawing setup (DWG_SETUP) type file.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-DXFExportInstructions.html">DXFExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#DXFExportInstructions::Create">DXFExportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a drawing in DXF format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-DXFImport2DInstructions.html">DXFImport2DInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#DXFImport2DInstructions::Create">DXFImport2DInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new data object used for importing a 2-D DXF file into Creo Parametric.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-Export2DOption.html">Export2DOption</a></tt></td><td class="method-summary"><tt><a class="method" href="#Export2DOption::Create">Export2DOption_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Creates a new Export2DOption object used to export to
+        STEP or Medusa OR DXF format.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-FeatInfoExportInstructions.html">FeatInfoExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#FeatInfoExportInstructions::Create">FeatInfoExportInstructions_Create</a>
+ (int&nbsp;FeatId)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object to export data about a specific feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-FIATExportInstructions.html">FIATExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#FIATExportInstructions::Create">FIATExportInstructions_Create</a>
+ (<a class="type" href="c-pfcModel-GeomExportFlags.html">GeomExportFlags</a>&nbsp;Flags)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a part or assembly in FIAT format. 
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-GeomExportFlags.html">GeomExportFlags</a></tt></td><td class="method-summary"><tt><a class="method" href="#GeomExportFlags::Create">GeomExportFlags_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a <tt><tt><a class="class" href="c-pfcModel-GeomExportFlags.html">GeomExportFlags</a></tt></tt> object that stores extend-surface and Bezier options for use when exporting geometric information from a model.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IGES3DExportInstructions.html">IGES3DExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#IGES3DExportInstructions::Create">IGES3DExportInstructions_Create</a>
+ (<a class="type" href="c-pfcModel-GeomExportFlags.html">GeomExportFlags</a>&nbsp;Flags)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a part or assembly in IGES format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IGESFileExportInstructions.html">IGESFileExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#IGESFileExportInstructions::Create">IGESFileExportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a drawing in IGES format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IGESImport2DInstructions.html">IGESImport2DInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#IGESImport2DInstructions::Create">IGESImport2DInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new data object used for importing a 2-D IGES file into Creo Parametric.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IGESSectionImportInstructions.html">IGESSectionImportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#IGESSectionImportInstructions::Create">IGESSectionImportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to import (read) into a section model from an IGES format file.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ImportFeatAttr.html">ImportFeatAttr</a></tt></td><td class="method-summary"><tt><a class="method" href="#ImportFeatAttr::Create">ImportFeatAttr_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new import feature attributes object - the attributes for creation of the new import feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfACIS.html">IntfACIS</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfACIS::Create">IntfACIS_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new object representing the ACIS file from which to create an import feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfAI.html">IntfAI</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfAI::Create">IntfAI_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfCatiaCGR.html">IntfCatiaCGR</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfCatiaCGR::Create">IntfCatiaCGR_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new object representing the CatiaCGR file from which to create an import feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfCatiaPart.html">IntfCatiaPart</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfCatiaPart::Create">IntfCatiaPart_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new object representing the CatiaPart file from which to create an import feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfCatiaProduct.html">IntfCatiaProduct</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfCatiaProduct::Create">IntfCatiaProduct_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfCDRS.html">IntfCDRS</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfCDRS::Create">IntfCDRS_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new object representing the CDRS file from which to create an import feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfDXF.html">IntfDXF</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfDXF::Create">IntfDXF_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new object representing the DXF file from which to create an import feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfICEM.html">IntfICEM</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfICEM::Create">IntfICEM_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new object representing the ICEM file from which to create an import feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfIges.html">IntfIges</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfIges::Create">IntfIges_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new object representing the IGES files from which to create an import feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfJT.html">IntfJT</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfJT::Create">IntfJT_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new object representing the JT file from which to create an import feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfNeutral.html">IntfNeutral</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfNeutral::Create">IntfNeutral_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new object representing the source of data from which to create an import feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfNeutralFile.html">IntfNeutralFile</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfNeutralFile::Create">IntfNeutralFile_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new object representing a neutral file from which to create an import feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfParaSolid.html">IntfParaSolid</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfParaSolid::Create">IntfParaSolid_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new object representing the ParaSolid file from which to create an import feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfProductView.html">IntfProductView</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfProductView::Create">IntfProductView_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfStep.html">IntfStep</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfStep::Create">IntfStep_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new object representing the STEP file from which to create an import feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfSTL.html">IntfSTL</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfSTL::Create">IntfSTL_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new object representing the STL file from which to create an import feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfUG.html">IntfUG</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfUG::Create">IntfUG_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfVDA.html">IntfVDA</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfVDA::Create">IntfVDA_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new object representing the VDA file from which to create an import feature.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfVRML.html">IntfVRML</a></tt></td><td class="method-summary"><tt><a class="method" href="#IntfVRML::Create">IntfVRML_Create</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-InventorExportInstructions.html">InventorExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#InventorExportInstructions::Create">InventorExportInstructions_Create</a>
+ (
+   /*optional*/
+   String&nbsp;CsysName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a part or assembly in Inventor format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-MaterialExportInstructions.html">MaterialExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#MaterialExportInstructions::Create">MaterialExportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a material from a part.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-MedusaExportInstructions.html">MedusaExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#MedusaExportInstructions::Create">MedusaExportInstructions_Create</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcModel-Export2DOption.html">Export2DOption</a>&nbsp;inOption)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a Medusa format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-MFGFeatCLExportInstructions.html">MFGFeatCLExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#MFGFeatCLExportInstructions::Create">MFGFeatCLExportInstructions_Create</a>
+ (int&nbsp;FeatId)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a cutter location (CL) file for one NC sequence in a manufacturing assembly. 
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-MFGOperCLExportInstructions.html">MFGOperCLExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#MFGOperCLExportInstructions::Create">MFGOperCLExportInstructions_Create</a>
+ (int&nbsp;FeatId)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export from a manufacturing assembly a cutter location (CL) file for all the NC sequences in an operation. 
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#ModelDescriptor::Create">ModelDescriptor_Create</a>
+ (<a class="type" href="c-pfcModel-ModelType.html">ModelType</a>&nbsp;Type, String&nbsp;InstanceName, 
+   /*optional*/
+   String&nbsp;GenericName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new model descriptor. 
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a></tt></td><td class="method-summary"><tt><a class="method" href="#ModelDescriptor::CreateFromFileName">ModelDescriptor_CreateFromFileName</a>
+ (String&nbsp;FileName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new model descriptor object, given a file name string.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ModelInfoExportInstructions.html">ModelInfoExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#ModelInfoExportInstructions::Create">ModelInfoExportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export information about a model, including units information, features, and children.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ModelOId.html">ModelOId</a></tt></td><td class="method-summary"><tt><a class="method" href="#ModelOId::Create">ModelOId_Create</a>
+ (<a class="type" href="c-pfcModel-ModelType.html">ModelType</a>&nbsp;Type, String&nbsp;Name)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a model identifier object with the specified model type and model name. 
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-PlotInstructions.html">PlotInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#PlotInstructions::Create">PlotInstructions_Create</a>
+ (String&nbsp;PlotterName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to plot a part, drawing, or assembly.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ProgramExportInstructions.html">ProgramExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#ProgramExportInstructions::Create">ProgramExportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a program file for a part or assembly, which can be edited to change the model.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ProgramImportInstructions.html">ProgramImportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#ProgramImportInstructions::Create">ProgramImportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to import from a program file.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-RelationExportInstructions.html">RelationExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#RelationExportInstructions::Create">RelationExportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a list of the relations and parameters in a part or assembly.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-RelationImportInstructions.html">RelationImportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#RelationImportInstructions::Create">RelationImportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to import (read) a list of the relations and parameters of a part or assembly from RELATION type file.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-RenderExportInstructions.html">RenderExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#RenderExportInstructions::Create">RenderExportInstructions_Create</a>
+ (
+   /*optional*/
+   String&nbsp;CsysName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a part or assembly in RENDER format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-SliceExportData.html">SliceExportData</a></tt></td><td class="method-summary"><tt><a class="method" href="#SliceExportData::Create">SliceExportData_Create</a>
+ (
+   /*optional*/
+   <a class="type" href="c-stdcols-intseq.html">intseq</a>&nbsp;CompIds)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new SliceExportData object used for slice export.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-SpoolImportInstructions.html">SpoolImportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#SpoolImportInstructions::Create">SpoolImportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to import (read) from the SPOOL type file.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-STEP2DExportInstructions.html">STEP2DExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#STEP2DExportInstructions::Create">STEP2DExportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a non-solid model to STEP format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-STEPExportInstructions.html">STEPExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#STEPExportInstructions::Create">STEPExportInstructions_Create</a>
+ (<a class="type" href="c-pfcModel-GeomExportFlags.html">GeomExportFlags</a>&nbsp;Flags)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a part or assembly in STEP format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-STEPImport2DInstructions.html">STEPImport2DInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#STEPImport2DInstructions::Create">STEPImport2DInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new data object used for importing a 2-D STEP file into Creo Parametric.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-STLASCIIExportInstructions.html">STLASCIIExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#STLASCIIExportInstructions::Create">STLASCIIExportInstructions_Create</a>
+ (
+   /*optional*/
+   String&nbsp;CsysName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a part or assembly to an ASCII STL file.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-STLBinaryExportInstructions.html">STLBinaryExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#STLBinaryExportInstructions::Create">STLBinaryExportInstructions_Create</a>
+ (
+   /*optional*/
+   String&nbsp;CsysName)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a part or assembly in a binary STL file.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-VDAExportInstructions.html">VDAExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#VDAExportInstructions::Create">VDAExportInstructions_Create</a>
+ (<a class="type" href="c-pfcModel-GeomExportFlags.html">GeomExportFlags</a>&nbsp;Flags)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a part or assembly in VDA format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-VRMLDirectExportInstructions.html">VRMLDirectExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#VRMLDirectExportInstructions::Create">VRMLDirectExportInstructions_Create</a>
+ (String&nbsp;OutputFile, String&nbsp;InputFile)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to direct export VRML data from input to output file.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-VRMLModelExportInstructions.html">VRMLModelExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#VRMLModelExportInstructions::Create">VRMLModelExportInstructions_Create</a>
+ (String&nbsp;OutputFile)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export VRML data from a model.  
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-WireListImportInstructions.html">WireListImportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#WireListImportInstructions::Create">WireListImportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to import (read) from a WIRELIST type file.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GeomExportFlags::Create">GeomExportFlags_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-GeomExportFlags.html">GeomExportFlags</a></tt></td><td class="method-name"><tt>GeomExportFlags_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a <tt><tt><a class="class" href="c-pfcModel-GeomExportFlags.html">GeomExportFlags</a></tt></tt> object that stores extend-surface and Bezier options for use when exporting geometric information from a model.
+<br>
+<br>This return value is used to construct instances of <tt><tt><a class="class" href="c-pfcModel-GeomExportInstructions.html">GeomExportInstructions</a></tt></tt> .
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The flags object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ModelDescriptor::Create">ModelDescriptor_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a></tt></td><td class="method-name"><tt>ModelDescriptor_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-ModelType.html">ModelType</a>&nbsp;Type, String&nbsp;InstanceName, 
+   /*optional*/
+   String&nbsp;GenericName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new model descriptor. 
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#15">Models: Model Descriptors</a>, <a href="../manual0/JModel.html#24">Models: Model Descriptors</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The model type</dd>
+<dt>
+<tt><b>InstanceName</b></tt>
+</dt>
+<dd>The name of the model, or, if the model is an instance, the instance name.This string can be neither <tt>null</tt> nor empty.</dd>
+<dt>
+<tt><b>GenericName</b></tt>
+</dt>
+<dd>The name of the generic model. If the model is not an instance, this attributemust be <tt>null</tt> or an empty string.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new <i>ModelDescriptor</i>
+</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ModelDescriptor::CreateFromFileName">ModelDescriptor_CreateFromFileName</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ModelDescriptor.html">ModelDescriptor</a></tt></td><td class="method-name"><tt>ModelDescriptor_CreateFromFileName</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new model descriptor object, given a file name string.
+<br>
+<br>
+<p>
+<b>Exceptions thrown (but not limited to):</b>
+      
+<p>
+<tt><tt><a class="class" href="c-pfcExceptions-XInvalidFileName.html">XInvalidFileName</a></tt></tt> - Invalid File Name</p>
+</p>
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-ModelDescriptor.html#GetFileName">ModelDescriptor.GetFileName()</a></tt>, <tt><a class="method" href="c-pfcModel-pfcModel.html#ModelDescriptor::Create">pfcModel.ModelDescriptor_Create(ModelType, String, /*optional*/ String)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#GetModelFromFileName">BaseSession.GetModelFromFileName(String)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#RetrieveModel">BaseSession.RetrieveModel(ModelDescriptor)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JModel.html#16">Models: Model Descriptors</a>, <a href="../manual0/JModel.html#24">Models: Model Descriptors</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The file name, of the form "&lt;name&gt;.&lt;extension&gt;".</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new model descriptor object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ModelOId::Create">ModelOId_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ModelOId.html">ModelOId</a></tt></td><td class="method-name"><tt>ModelOId_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-ModelType.html">ModelType</a>&nbsp;Type, String&nbsp;Name)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a model identifier object with the specified model type and model name. 
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Type</b></tt>
+</dt>
+<dd>The model type (MDL_PART, MDL_ASSEMBLY, and so on)</dd>
+<dt>
+<tt><b>Name</b></tt>
+</dt>
+<dd>The model name</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new identifier object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RelationExportInstructions::Create">RelationExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-RelationExportInstructions.html">RelationExportInstructions</a></tt></td><td class="method-name"><tt>RelationExportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a list of the relations and parameters in a part or assembly.
+<br>
+<br>Using this export class is equivalent to using the <b>RELATIONS &gt; Edit Rel</b> option in Creo Parametric. For more information, refer to the Core section of the Creo Parametric help. <br>
+ The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> to produce the output file.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#7">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IGESFileExportInstructions::Create">IGESFileExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IGESFileExportInstructions.html">IGESFileExportInstructions</a></tt></td><td class="method-name"><tt>IGESFileExportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a drawing in IGES format.
+<br>
+<br>Using this export class is equivalent to using the <b>File &gt; Save As &gt; Export &gt; IGES</b> option in Creo Parametric. For more information, refer to the Interface section of the Creo Parametric help.
+<p></p>
+
+The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> to produce the output file. Does not function in graphics mode.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#10">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ModelInfoExportInstructions::Create">ModelInfoExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ModelInfoExportInstructions.html">ModelInfoExportInstructions</a></tt></td><td class="method-name"><tt>ModelInfoExportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export information about a model, including units information, features, and children.
+<br>
+<br>Using this export class is equivalent to using the <b>Info &gt; Model</b> option in Creo Parametric. Note that the exact information written to the file depends on the type of model involved. For more information, refer to the Core section of the Creo Parametric help.
+<p></p>
+
+Use <tt><tt><a class="class" href="c-pfcModel-FeatInfoExportInstructions.html">FeatInfoExportInstructions</a></tt></tt> to export information from a single feature in the model.<p></p>
+
+
+<p></p>
+
+The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> to produce the output file.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#8">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ProgramExportInstructions::Create">ProgramExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ProgramExportInstructions.html">ProgramExportInstructions</a></tt></td><td class="method-name"><tt>ProgramExportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a program file for a part or assembly, which can be edited to change the model.
+<br>
+<br>Using this export class is equivalent to using the <b>Program &gt; Edit Design</b> option in Creo Parametric. For more information, refer to the Core section of the Creo Parametric help. <br>
+The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> to produce the output file. 
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#9">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Export2DOption::Create">Export2DOption_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-Export2DOption.html">Export2DOption</a></tt></td><td class="method-name"><tt>Export2DOption_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Creates a new Export2DOption object used to export to
+        STEP or Medusa OR DXF format.
+      <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#38">Interface: Exporting Drawing Sheets</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created Export2DOption object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DXFExportInstructions::Create">DXFExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-DXFExportInstructions.html">DXFExportInstructions</a></tt></td><td class="method-name"><tt>DXFExportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a drawing in DXF format.
+<br>
+<br>Using this export class is equivalent to using the <b> File &gt; Save As &gt; Export &gt; DXF</b> option in Creo Parametric. For more information, refer to the Interface section of the Creo Parametric help. The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> to export the dxf file. Valid only for 2-D models. Does not function in graphics mode.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#11">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DWGSetupExportInstructions::Create">DWGSetupExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-DWGSetupExportInstructions.html">DWGSetupExportInstructions</a></tt></td><td class="method-name"><tt>DWGSetupExportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a drawing setup file.
+<br>
+<br>Using this export class is equivalent to using the <b>DRAWING &gt; Advanced &gt; Set Up &gt; Draw Setup &gt; Save</b> option in Creo Parametric. For more information, refer to the Drawing section of the Creo Parametric help.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#16">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FeatInfoExportInstructions::Create">FeatInfoExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-FeatInfoExportInstructions.html">FeatInfoExportInstructions</a></tt></td><td class="method-name"><tt>FeatInfoExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (int&nbsp;FeatId)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object to export data about a specific feature.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#17">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FeatId</b></tt>
+</dt>
+<dd>ID of the feature to export.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="MFGFeatCLExportInstructions::Create">MFGFeatCLExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-MFGFeatCLExportInstructions.html">MFGFeatCLExportInstructions</a></tt></td><td class="method-name"><tt>MFGFeatCLExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (int&nbsp;FeatId)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a cutter location (CL) file for one NC sequence in a manufacturing assembly. 
+<br>
+<br>Using this export class is equivalent to using the <b>Manufacture &gt; CL Data &gt; Output &gt; NC Sequence</b> option in Creo Parametric. For more information, refer to the Manufacturing section of the Creo Parametric help.
+<p></p>
+
+The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> to produce the output file.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#18">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FeatId</b></tt>
+</dt>
+<dd>The feature for which the CL file will be created</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="MFGOperCLExportInstructions::Create">MFGOperCLExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-MFGOperCLExportInstructions.html">MFGOperCLExportInstructions</a></tt></td><td class="method-name"><tt>MFGOperCLExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (int&nbsp;FeatId)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export from a manufacturing assembly a cutter location (CL) file for all the NC sequences in an operation. 
+<br>
+<br>Using this export class is equivalent to using the <b>Manufacture &gt; CL Data &gt; Output &gt; Operation</b> option in Creo Parametric. For more information, refer to the Manufacturing section of the Creo Parametric help.
+<p></p>
+
+The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> to produce the output file.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#19">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FeatId</b></tt>
+</dt>
+<dd>The feature for which the CL file will be created</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SliceExportData::Create">SliceExportData_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-SliceExportData.html">SliceExportData</a></tt></td><td class="method-name"><tt>SliceExportData_Create</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-stdcols-intseq.html">intseq</a>&nbsp;CompIds)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new SliceExportData object used for slice export.
+<br>
+<br>Return value is used as a somponent of <tt><tt><a class="class" href="c-pfcModel-GeomExportInstructions.html">GeomExportInstructions</a></tt></tt> .
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#31">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CompIds</b></tt>
+</dt>
+<dd>A sequence of integers that identify the components that form the path from the root assembly down to the component part or assembly being referred to.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new data object. </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CATIAFacetsExportInstructions::Create">CATIAFacetsExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-CATIAFacetsExportInstructions.html">CATIAFacetsExportInstructions</a></tt></td><td class="method-name"><tt>CATIAFacetsExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   String&nbsp;CsysName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a part or assembly in CATIA format (as a faceted model).
+<br>
+<br>Using this export class is equivalent to using the <b>File &gt; Export &gt; Model &gt; CATIA Out &gt; To file</b> option in Creo Parametric. For more information, refer to the Interface section of the Creo Parametric on-line help. This argument must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> to produce an output file. Valid only for solid models.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#26">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CsysName</b></tt>
+</dt>
+<dd>The name of a coordinate-system feature in the 
+   model being exported. It is recommended that you use a coordinate system 
+   that places the part or assembly in its upper-right quadrant, so that all 
+   position/distance values are positive. Allowed to be <tt>null</tt> if 
+   exporting as Slice</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RenderExportInstructions::Create">RenderExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-RenderExportInstructions.html">RenderExportInstructions</a></tt></td><td class="method-name"><tt>RenderExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   String&nbsp;CsysName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a part or assembly in RENDER format.
+<br>
+<br>Using this export class is equivalent to using the <b>File &gt; Export &gt; Model &gt; RENDER&gt;</b> option in Creo Parametric. For more information, refer to the Interface section of the Creo Parametric help. <br>
+ The return value must be passed to
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> to produce the output file.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#12">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CsysName</b></tt>
+</dt>
+<dd>The name of a coordinate-system feature in the 
+   model being exported. It is recommended that you use a coordinate system 
+   that places the part or assembly in its upper-right quadrant, so that 
+   all position/distance values are positive. Allowed to be <tt>null</tt> 
+   in case of export as Slice</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="STLASCIIExportInstructions::Create">STLASCIIExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-STLASCIIExportInstructions.html">STLASCIIExportInstructions</a></tt></td><td class="method-name"><tt>STLASCIIExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   String&nbsp;CsysName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a part or assembly to an ASCII STL file.
+<br>
+<br>Using this export class is equivalent to using the <b>File &gt; Export &gt; STL &gt; ASCII</b> option in Creo Parametric. For more information, refer to the Interface section of the Creo Parametric help.
+<br>
+ The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>
+to produce the output file.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#13">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CsysName</b></tt>
+</dt>
+<dd>The name of a coordinate-system feature in the 
+   model being exported. It is recommended that you use a coordinate system 
+   that places the part or assembly in its upper-right quadrant, so that all 
+   position/distance values are positive. Allowed to be <tt>null</tt> if 
+   exporting as Slice</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="STLBinaryExportInstructions::Create">STLBinaryExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-STLBinaryExportInstructions.html">STLBinaryExportInstructions</a></tt></td><td class="method-name"><tt>STLBinaryExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   String&nbsp;CsysName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a part or assembly in a binary STL file.
+<br>
+<br>Using this export class is equivalent to using the <b>File &gt; Export &gt; STL &gt; Binary</b> option in Creo Parametric. For more information, refer to the Interface section of the Creo Parametric help.
+<br>
+ The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>
+to produce the output file.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#14">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CsysName</b></tt>
+</dt>
+<dd>The name of a coordinate-system feature in the 
+   model being exported. It is recommended that you use a coordinate system 
+   that places the part or assembly in its upper-right quadrant, so that 
+   all position/distance values are positive. Allowed to be <tt>null</tt> 
+   if exporting as Slice</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="InventorExportInstructions::Create">InventorExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-InventorExportInstructions.html">InventorExportInstructions</a></tt></td><td class="method-name"><tt>InventorExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   String&nbsp;CsysName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a part or assembly in Inventor format.
+<br>
+<br>Using this export class is equivalent to using the <b>File &gt; Export &gt; Model &gt; Inventor</b> option in Creo Parametric. For more information, refer to the Interface section of the Creo Parametric help.
+<p></p>
+
+The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> to produce the output file.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#22">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>CsysName</b></tt>
+</dt>
+<dd>The name of a coordinate-system feature in the 
+   model being exported. It is recommended that you use a coordinate system 
+   that places the part or assembly in its upper-right quadrant, so that all 
+   position/distance values are positive. Allowed to be <tt>null</tt> 
+   if exporting as Slice</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IGES3DExportInstructions::Create">IGES3DExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IGES3DExportInstructions.html">IGES3DExportInstructions</a></tt></td><td class="method-name"><tt>IGES3DExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-GeomExportFlags.html">GeomExportFlags</a>&nbsp;Flags)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a part or assembly in IGES format.
+<br>
+<br>This method has been <b>deprecated</b>, use <tt><a class="method" href="c-pfcExport-pfcExport.html#IGES3DNewExportInstructions::Create">pfcExport.IGES3DNewExportInstructions_Create(AssemblyConfiguration, GeometryFlags)</a></tt> for more export options.
+<p></p>
+
+Using this export class is equivalent to using the <b>File &gt; Export &gt; Model &gt; IGES</b> option in Creo Parametric. For more information, refer to the Interface section of the Creo Parametric help.
+<p></p>
+
+The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> to produce the output file.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Flags</b></tt>
+</dt>
+<dd>A <tt><tt><a class="class" href="c-pfcModel-GeomExportFlags.html">GeomExportFlags</a></tt></tt> object that specifies extend-surface and Bezier settings.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="STEPExportInstructions::Create">STEPExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-STEPExportInstructions.html">STEPExportInstructions</a></tt></td><td class="method-name"><tt>STEPExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-GeomExportFlags.html">GeomExportFlags</a>&nbsp;Flags)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a part or assembly in STEP format.
+<br>
+<br>This method has been <b>deprecated</b>, use <tt><a class="method" href="c-pfcExport-pfcExport.html#STEP3DExportInstructions::Create">pfcExport.STEP3DExportInstructions_Create(AssemblyConfiguration, GeometryFlags)</a></tt> for more export options.
+<p></p>
+
+Using this export class is equivalent to using the <b>File &gt; Export &gt; STEP</b> option in Creo Parametric. For more information, refer to the Interface section of the Creo Parametric help.
+<p></p>
+
+The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> to produce the output file.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Flags</b></tt>
+</dt>
+<dd>A <tt><tt><a class="class" href="c-pfcModel-GeomExportFlags.html">GeomExportFlags</a></tt></tt> object that specifies extend-surface and Bezier settings.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="VDAExportInstructions::Create">VDAExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-VDAExportInstructions.html">VDAExportInstructions</a></tt></td><td class="method-name"><tt>VDAExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-GeomExportFlags.html">GeomExportFlags</a>&nbsp;Flags)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a part or assembly in VDA format.
+<br>
+<br>This method has been <b>deprecated</b>, use <tt><a class="method" href="c-pfcExport-pfcExport.html#STEP3DExportInstructions::Create">pfcExport.STEP3DExportInstructions_Create(AssemblyConfiguration, GeometryFlags)</a></tt> for more export options.
+<p></p>
+
+Using this export class is equivalent to using the <b>File &gt; Export &gt; VDA</b> option in Creo Parametric. For more information, refer to the Interface section of the Creo Parametric help.
+<p></p>
+
+The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> 
+to produce the output file.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Flags</b></tt>
+</dt>
+<dd>A <tt><tt><a class="class" href="c-pfcModel-GeomExportFlags.html">GeomExportFlags</a></tt></tt> object that specifies extend-surface and Bezier settings.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FIATExportInstructions::Create">FIATExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-FIATExportInstructions.html">FIATExportInstructions</a></tt></td><td class="method-name"><tt>FIATExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-GeomExportFlags.html">GeomExportFlags</a>&nbsp;Flags)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a part or assembly in FIAT format. 
+<br>
+<br>This export option has no equivalent in the Creo Parametric interface. The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> to produce the output file.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#23">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Flags</b></tt>
+</dt>
+<dd>A <tt><tt><a class="class" href="c-pfcModel-GeomExportFlags.html">GeomExportFlags</a></tt></tt> object that specifies extend-surface and Bezier settings.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="BOMExportInstructions::Create">BOMExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-BOMExportInstructions.html">BOMExportInstructions</a></tt></td><td class="method-name"><tt>BOMExportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>This method creates a new instructions object used to export a BOM for an assembly.
+<br>
+<br>Using this export class is equivalent to using the <b>Info &gt; Creo Parametric Objects</b> option in Creo Parametric. For more information, refer to the Core section of the Creo Parametric on-line help.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#15">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="MaterialExportInstructions::Create">MaterialExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-MaterialExportInstructions.html">MaterialExportInstructions</a></tt></td><td class="method-name"><tt>MaterialExportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a material from a part.
+<br>
+<br>Using this export class is equivalent to using the <b>Setup &gt; Material Write</b> option in Creo Parametric. For more information, refer to the Core section of the Creo Parametric help.
+<p></p>
+
+The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> to produce the output file.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#20">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ConnectorParamExportInstructions::Create">ConnectorParamExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ConnectorParamExportInstructions.html">ConnectorParamExportInstructions</a></tt></td><td class="method-name"><tt>ConnectorParamExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-stdcols-intseq.html">intseq</a>&nbsp;MembIdTab)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to write the parameters of a connector to a file.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#24">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>MembIdTab</b></tt>
+</dt>
+<dd>A <i>member identifier table</i>, a sequence of integers that identify the components that form the path from the root assembly down to the component part or assembly being referred to.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CGMFILEExportInstructions::Create">CGMFILEExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-CGMFILEExportInstructions.html">CGMFILEExportInstructions</a></tt></td><td class="method-name"><tt>CGMFILEExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-CGMExportType.html">CGMExportType</a>&nbsp;ExportType, <a class="type" href="c-pfcModel-CGMScaleType.html">CGMScaleType</a>&nbsp;WhichScale)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a drawing in CGM format.
+<br>
+<br>Using this export class is equivalent to using the <b>File &gt; Save As &gt; Export &gt; CGM</b> option in Creo Parametric. For more information, refer to the Interface section of the Creo Parametric on-line help.  This argument must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> to produce an output file. Valid only for solid models.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#21">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>ExportType</b></tt>
+</dt>
+<dd>A <tt><tt><a class="class" href="c-pfcModel-CGMExportType.html">CGMExportType</a></tt></tt> object that specifies ASCII or binary</dd>
+<dt>
+<tt><b>WhichScale</b></tt>
+</dt>
+<dd>A <tt><tt><a class="class" href="c-pfcModel-CGMScaleType.html">CGMScaleType</a></tt></tt> object that specifies abstract or metric scale</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="VRMLDirectExportInstructions::Create">VRMLDirectExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-VRMLDirectExportInstructions.html">VRMLDirectExportInstructions</a></tt></td><td class="method-name"><tt>VRMLDirectExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;OutputFile, String&nbsp;InputFile)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to direct export VRML data from input to output file.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>OutputFile</b></tt>
+</dt>
+<dd>The output file directory.</dd>
+<dt>
+<tt><b>InputFile</b></tt>
+</dt>
+<dd>The input file: specifies the file to be exported. This can be the name of a file in the current Creo Parametric directory or a fully qualified path.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="VRMLModelExportInstructions::Create">VRMLModelExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-VRMLModelExportInstructions.html">VRMLModelExportInstructions</a></tt></td><td class="method-name"><tt>VRMLModelExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;OutputFile)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export VRML data from a model.  
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#27">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>OutputFile</b></tt>
+</dt>
+<dd>The output file directory.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PlotInstructions::Create">PlotInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-PlotInstructions.html">PlotInstructions</a></tt></td><td class="method-name"><tt>PlotInstructions_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;PlotterName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to plot a part, drawing, or assembly.
+<br>
+<br>The drawing must be displayed in a window to be successfully plotted.
+   The return value must be passed to 
+   <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> to produce the output file. 
+
+ This export-instructions class has been superseeded by 
+ <tt><tt><a class="class" href="c-pfcExport-PrinterInstructions.html">PrinterInstructions</a></tt></tt> objects.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>PlotterName</b></tt>
+</dt>
+<dd>The name of a printer, typed exactly as it would appear in a user's <b>File &gt; Print</b> dialog. </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="STEP2DExportInstructions::Create">STEP2DExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-STEP2DExportInstructions.html">STEP2DExportInstructions</a></tt></td><td class="method-name"><tt>STEP2DExportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a non-solid model to STEP format.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#28">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instruction object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="MedusaExportInstructions::Create">MedusaExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-MedusaExportInstructions.html">MedusaExportInstructions</a></tt></td><td class="method-name"><tt>MedusaExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcModel-Export2DOption.html">Export2DOption</a>&nbsp;inOption)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a Medusa format.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#29">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inOption</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instruction object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="STEPImport2DInstructions::Create">STEPImport2DInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-STEPImport2DInstructions.html">STEPImport2DInstructions</a></tt></td><td class="method-name"><tt>STEPImport2DInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new data object used for importing a 2-D STEP file into Creo Parametric.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcSession-BaseSession.html#Import2DModel">BaseSession.Import2DModel(String, ModelType, String, Import2DInstructions)</a></tt>, <tt><a class="method" href="c-pfcModel-Model.html#Import">Model.Import(String, ImportInstructions)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#146">Interface: Import Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IGESImport2DInstructions::Create">IGESImport2DInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IGESImport2DInstructions.html">IGESImport2DInstructions</a></tt></td><td class="method-name"><tt>IGESImport2DInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new data object used for importing a 2-D IGES file into Creo Parametric.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcSession-BaseSession.html#Import2DModel">BaseSession.Import2DModel(String, ModelType, String, Import2DInstructions)</a></tt>, <tt><a class="method" href="c-pfcModel-Model.html#Import">Model.Import(String, ImportInstructions)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#147">Interface: Import Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DXFImport2DInstructions::Create">DXFImport2DInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-DXFImport2DInstructions.html">DXFImport2DInstructions</a></tt></td><td class="method-name"><tt>DXFImport2DInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new data object used for importing a 2-D DXF file into Creo Parametric.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcSession-BaseSession.html#Import2DModel">BaseSession.Import2DModel(String, ModelType, String, Import2DInstructions)</a></tt>, <tt><a class="method" href="c-pfcModel-Model.html#Import">Model.Import(String, ImportInstructions)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#148">Interface: Import Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DWGImport2DInstructions::Create">DWGImport2DInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-DWGImport2DInstructions.html">DWGImport2DInstructions</a></tt></td><td class="method-name"><tt>DWGImport2DInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new data object used for importing a DWG file into Creo Parametric.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcSession-BaseSession.html#Import2DModel">BaseSession.Import2DModel(String, ModelType, String, Import2DInstructions)</a></tt>, <tt><a class="method" href="c-pfcModel-Model.html#Import">Model.Import(String, ImportInstructions)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#149">Interface: Import Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="RelationImportInstructions::Create">RelationImportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-RelationImportInstructions.html">RelationImportInstructions</a></tt></td><td class="method-name"><tt>RelationImportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to import (read) a list of the relations and parameters of a part or assembly from RELATION type file.
+<br>
+<br>
+<br>
+ The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Import">Model.Import(String, ImportInstructions)</a></tt> 
+to read from the input file.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#136">Interface: Import Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IGESSectionImportInstructions::Create">IGESSectionImportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IGESSectionImportInstructions.html">IGESSectionImportInstructions</a></tt></td><td class="method-name"><tt>IGESSectionImportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to import (read) into a section model from an IGES format file.
+<br>
+<br>The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Import">Model.Import(String, ImportInstructions)</a></tt> to read from the input file.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#137">Interface: Import Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ProgramImportInstructions::Create">ProgramImportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ProgramImportInstructions.html">ProgramImportInstructions</a></tt></td><td class="method-name"><tt>ProgramImportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to import from a program file.
+<br>
+<br>The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Import">Model.Import(String, ImportInstructions)</a></tt> to read the input file.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#138">Interface: Import Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ConfigImportInstructions::Create">ConfigImportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ConfigImportInstructions.html">ConfigImportInstructions</a></tt></td><td class="method-name"><tt>ConfigImportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to import (read) from configuration data (CONFIG) type file. 
+<p></p>
+
+Users are recommended to use <tt><a class="method" href="c-pfcSession-BaseSession.html#LoadConfigFile">BaseSession.LoadConfigFile(String)</a></tt> rather than the return value of this method.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#139">Interface: Import Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DWGSetupImportInstructions::Create">DWGSetupImportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-DWGSetupImportInstructions.html">DWGSetupImportInstructions</a></tt></td><td class="method-name"><tt>DWGSetupImportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to import (read) from a drawing setup (DWG_SETUP) type file.
+<br>
+<br>The return value must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Import">Model.Import(String, ImportInstructions)</a></tt> to read values from the setup file.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#140">Interface: Import Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SpoolImportInstructions::Create">SpoolImportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-SpoolImportInstructions.html">SpoolImportInstructions</a></tt></td><td class="method-name"><tt>SpoolImportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to import (read) from the SPOOL type file.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#141">Interface: Import Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The instructions object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ConnectorParamsImportInstructions::Create">ConnectorParamsImportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ConnectorParamsImportInstructions.html">ConnectorParamsImportInstructions</a></tt></td><td class="method-name"><tt>ConnectorParamsImportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-stdcols-intseq.html">intseq</a>&nbsp;MembIdTab)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to import the parameters of a connector from a file.
+<br>
+<br>This object must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> to read the input file. Valid for cabling assemblies only.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#142">Interface: Import Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>MembIdTab</b></tt>
+</dt>
+<dd>A <i>member identifier table</i>, a sequence of integers that identify the components that form the path from the root assembly down to the component part or assembly being referred to.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CableParamsImportInstructions::Create">CableParamsImportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-CableParamsImportInstructions.html">CableParamsImportInstructions</a></tt></td><td class="method-name"><tt>CableParamsImportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Harness, String&nbsp;CableName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to import from cable parameters (CABLE_PARAMS) type file.
+<br>
+<br>This argument must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Import">Model.Import(String, ImportInstructions)</a></tt> to read in the parameters file. Valid only for cabling assemblies.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#145">Interface: Import Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Harness</b></tt>
+</dt>
+<dd>A harness referenced by the assembly.</dd>
+<dt>
+<tt><b>CableName</b></tt>
+</dt>
+<dd>The name of the imported cable file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ASSEMTreeCFGImportInstructions::Create">ASSEMTreeCFGImportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ASSEMTreeCFGImportInstructions.html">ASSEMTreeCFGImportInstructions</a></tt></td><td class="method-name"><tt>ASSEMTreeCFGImportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to import (read) from the ASSEM_TREE_CFG format file.
+<br>
+<br>This data type must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Import">Model.Import(String, ImportInstructions)</a></tt> to import the file. Valid only for assemblies.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#143">Interface: Import Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="WireListImportInstructions::Create">WireListImportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-WireListImportInstructions.html">WireListImportInstructions</a></tt></td><td class="method-name"><tt>WireListImportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to import (read) from a WIRELIST type file.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#144">Interface: Import Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ImportFeatAttr::Create">ImportFeatAttr_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-ImportFeatAttr.html">ImportFeatAttr</a></tt></td><td class="method-name"><tt>ImportFeatAttr_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new import feature attributes object - the attributes for creation of the new import feature.
+<br>
+<br>The return value must be passed to <tt><a class="method" href="c-pfcSolid-Solid.html#CreateImportFeat">Solid.CreateImportFeat(IntfDataSource, /*optional*/ CoordSystem, /*optional*/ ImportFeatAttr)</a></tt> .
+<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new import feature attributes object</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfNeutral::Create">IntfNeutral_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfNeutral.html">IntfNeutral</a></tt></td><td class="method-name"><tt>IntfNeutral_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new object representing the source of data from which to create an import feature.
+<br>
+<br>This source type is not implemented.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new cIntfNeutral data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfNeutralFile::Create">IntfNeutralFile_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfNeutralFile.html">IntfNeutralFile</a></tt></td><td class="method-name"><tt>IntfNeutralFile_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new object representing a neutral file from which to create an import feature.
+<br>
+<br>The return value must be passed to <tt><a class="method" href="c-pfcSolid-Solid.html#CreateImportFeat">Solid.CreateImportFeat(IntfDataSource, /*optional*/ CoordSystem, /*optional*/ ImportFeatAttr)</a></tt> to read from the file.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfNeutralFile data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfIges::Create">IntfIges_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfIges.html">IntfIges</a></tt></td><td class="method-name"><tt>IntfIges_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new object representing the IGES files from which to create an import feature.
+<br>
+<br>The return value must be passed to <tt><a class="method" href="c-pfcSolid-Solid.html#CreateImportFeat">Solid.CreateImportFeat(IntfDataSource, /*optional*/ CoordSystem, /*optional*/ ImportFeatAttr)</a></tt> to read from the file.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfIges data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfStep::Create">IntfStep_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfStep.html">IntfStep</a></tt></td><td class="method-name"><tt>IntfStep_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new object representing the STEP file from which to create an import feature.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfStep data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfVDA::Create">IntfVDA_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfVDA.html">IntfVDA</a></tt></td><td class="method-name"><tt>IntfVDA_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new object representing the VDA file from which to create an import feature.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfVDA data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfICEM::Create">IntfICEM_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfICEM.html">IntfICEM</a></tt></td><td class="method-name"><tt>IntfICEM_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new object representing the ICEM file from which to create an import feature.
+<br>
+<br>The return value must be passed to <tt><a class="method" href="c-pfcSolid-Solid.html#CreateImportFeat">Solid.CreateImportFeat(IntfDataSource, /*optional*/ CoordSystem, /*optional*/ ImportFeatAttr)</a></tt> to read from the file.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfICEM data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfACIS::Create">IntfACIS_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfACIS.html">IntfACIS</a></tt></td><td class="method-name"><tt>IntfACIS_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new object representing the ACIS file from which to create an import feature.
+<br>
+<br>The return value must be passed to <tt><a class="method" href="c-pfcSolid-Solid.html#CreateImportFeat">Solid.CreateImportFeat(IntfDataSource, /*optional*/ CoordSystem, /*optional*/ ImportFeatAttr)</a></tt> to read from the file.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfACIS data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfDXF::Create">IntfDXF_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfDXF.html">IntfDXF</a></tt></td><td class="method-name"><tt>IntfDXF_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new object representing the DXF file from which to create an import feature.
+<br>
+<br>The return value must be passed to <tt><a class="method" href="c-pfcSolid-Solid.html#CreateImportFeat">Solid.CreateImportFeat(IntfDataSource, /*optional*/ CoordSystem, /*optional*/ ImportFeatAttr)</a></tt> to read from the file.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfDXF data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfCDRS::Create">IntfCDRS_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfCDRS.html">IntfCDRS</a></tt></td><td class="method-name"><tt>IntfCDRS_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new object representing the CDRS file from which to create an import feature.
+<br>
+<br>The return value must be passed to <tt><a class="method" href="c-pfcSolid-Solid.html#CreateImportFeat">Solid.CreateImportFeat(IntfDataSource, /*optional*/ CoordSystem, /*optional*/ ImportFeatAttr)</a></tt> to read from the file.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfCDRS data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfSTL::Create">IntfSTL_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfSTL.html">IntfSTL</a></tt></td><td class="method-name"><tt>IntfSTL_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new object representing the STL file from which to create an import feature.
+<br>
+<br>The return value must be passed to <tt><a class="method" href="c-pfcSolid-Solid.html#CreateImportFeat">Solid.CreateImportFeat(IntfDataSource, /*optional*/ CoordSystem, /*optional*/ ImportFeatAttr)</a></tt> to read from the file.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfSTL data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfVRML::Create">IntfVRML_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfVRML.html">IntfVRML</a></tt></td><td class="method-name"><tt>IntfVRML_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfParaSolid::Create">IntfParaSolid_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfParaSolid.html">IntfParaSolid</a></tt></td><td class="method-name"><tt>IntfParaSolid_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new object representing the ParaSolid file from which to create an import feature.
+<br>
+<br>The return value must be passed to <tt><a class="method" href="c-pfcSolid-Solid.html#CreateImportFeat">Solid.CreateImportFeat(IntfDataSource, /*optional*/ CoordSystem, /*optional*/ ImportFeatAttr)</a></tt> to read from the file.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfParaSolid data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfAI::Create">IntfAI_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfAI.html">IntfAI</a></tt></td><td class="method-name"><tt>IntfAI_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfCatiaPart::Create">IntfCatiaPart_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfCatiaPart.html">IntfCatiaPart</a></tt></td><td class="method-name"><tt>IntfCatiaPart_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new object representing the CatiaPart file from which to create an import feature.
+<br>
+<br>The return value must be passed to <tt><a class="method" href="c-pfcSolid-Solid.html#CreateImportFeat">Solid.CreateImportFeat(IntfDataSource, /*optional*/ CoordSystem, /*optional*/ ImportFeatAttr)</a></tt> to read from the file.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfCatiaPart data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfUG::Create">IntfUG_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfUG.html">IntfUG</a></tt></td><td class="method-name"><tt>IntfUG_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfProductView::Create">IntfProductView_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfProductView.html">IntfProductView</a></tt></td><td class="method-name"><tt>IntfProductView_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfCatiaProduct::Create">IntfCatiaProduct_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfCatiaProduct.html">IntfCatiaProduct</a></tt></td><td class="method-name"><tt>IntfCatiaProduct_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfCatiaCGR::Create">IntfCatiaCGR_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfCatiaCGR.html">IntfCatiaCGR</a></tt></td><td class="method-name"><tt>IntfCatiaCGR_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new object representing the CatiaCGR file from which to create an import feature.
+<br>
+<br>The return value must be passed to <tt><a class="method" href="c-pfcSolid-Solid.html#CreateImportFeat">Solid.CreateImportFeat(IntfDataSource, /*optional*/ CoordSystem, /*optional*/ ImportFeatAttr)</a></tt> to read from the file.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfCatiaCGR data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IntfJT::Create">IntfJT_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-IntfJT.html">IntfJT</a></tt></td><td class="method-name"><tt>IntfJT_Create</tt></td><td class="method-params"><tt>
+ (String&nbsp;FileName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new object representing the JT file from which to create an import feature.
+<br>
+<br>The return value must be passed to <tt><a class="method" href="c-pfcSolid-Solid.html#CreateImportFeat">Solid.CreateImportFeat(IntfDataSource, /*optional*/ CoordSystem, /*optional*/ ImportFeatAttr)</a></tt> to read from the file.
+<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>FileName</b></tt>
+</dt>
+<dd>The name of the imported feature file.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new IntfJT data object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CableParamsFileInstructions::Create">CableParamsFileInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcModel-CableParamsFileInstructions.html">CableParamsFileInstructions</a></tt></td><td class="method-name"><tt>CableParamsFileInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcModel-Model.html">Model</a>&nbsp;Mdl, String&nbsp;CableName)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export cable parameters from an assembly.
+<br>
+<br>This argument must be passed to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt> to produce an output file. Valid only for solid models.
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#25">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>Mdl</b></tt>
+</dt>
+<dd>A harness referenced by the assembly.</dd>
+<dt>
+<tt><b>CableName</b></tt>
+</dt>
+<dd>The name of the cable in the harness whose parameters will be exported.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new instructions object </dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

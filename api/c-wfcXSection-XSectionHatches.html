@@ -1,0 +1,418 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.wfc.wfcXSection.XSectionHatches"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      562
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-wfcXSection.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-wfcXSection-XSectionHatches.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;XSectionHatches</h2>
+<tt>
+     package 
+     <b><a href="p-wfcXSection.html">com.ptc.wfc.wfcXSection</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       class&nbsp;<b>XSectionHatches</b>
+<br>&nbsp;
+       implements&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>An ordered collection of objects of a certain type.<br>
+<br>The user can access elements by their integer index (position) in the list. Sequence provides methods for positional (indexed) access to its elements. Sequences are zero based.<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcXSection-XSectionHatches.html">XSectionHatches</a></tt></td><td class="method-summary"><tt><a class="method" href="#create">create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new empty sequence.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionHatch.html">XSectionHatch</a></tt></td><td class="method-summary"><tt><a class="method" href="#get">get</a>
+ (int&nbsp;idx)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns the value of the sequence element with the specified index. If the index is out of range, this method throws exception <tt>cipXInvalidSeqIndex</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>int</tt></td><td class="method-summary"><tt><a class="method" href="#getarraysize">getarraysize</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Returns current number of elements in the sequence.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#insert">insert</a>
+ (int&nbsp;idx, 
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionHatch.html">XSectionHatch</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Inserts an element with the specified value in front of the sequence element with the specified index. If the index is out of range, the sequence is expanded to include this index.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#insertseq">insertseq</a>
+ (int&nbsp;idx, <a class="type" href="c-wfcXSection-XSectionHatches.html">XSectionHatches</a>&nbsp;seq)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Inserts elements from the list passed as the second argument in front of the sequence element with the specified index. If the index is out of range, the sequence is expanded to include this index.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#removerange">removerange</a>
+ (int&nbsp;frominc, int&nbsp;toexcl)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Removes elements in the specified range from the sequence. The first argument specifies the index of the first element to be removed. The second argument specifies the index of the element immediately after the last in the range to be removed.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#set">set</a>
+ (int&nbsp;idx, 
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionHatch.html">XSectionHatch</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Assigns a value to the sequence element with the specified index. If the index is out of range, the sequence is expanded to include this index.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="getarraysize">getarraysize</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>int</tt></td><td class="method-name"><tt>getarraysize</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns current number of elements in the sequence.<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Current number of elements.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="get">get</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionHatch.html">XSectionHatch</a></tt></td><td class="method-name"><tt>get</tt></td><td class="method-params"><tt>
+ (int&nbsp;idx)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Returns the value of the sequence element with the specified index. If the index is out of range, this method throws exception <tt>cipXInvalidSeqIndex</tt>.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx</b></tt>
+</dt>
+<dd>Index of requested sequence element.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Value of the element at the specified index.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="set">set</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>set</tt></td><td class="method-params"><tt>
+ (int&nbsp;idx, 
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionHatch.html">XSectionHatch</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Assigns a value to the sequence element with the specified index. If the index is out of range, the sequence is expanded to include this index.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx</b></tt>
+</dt>
+<dd>Index of the element to be assigned.</dd>
+<dt>
+<tt><b>value</b></tt>
+</dt>
+<dd>Value to be assigned.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="removerange">removerange</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>removerange</tt></td><td class="method-params"><tt>
+ (int&nbsp;frominc, int&nbsp;toexcl)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Removes elements in the specified range from the sequence. The first argument specifies the index of the first element to be removed. The second argument specifies the index of the element immediately after the last in the range to be removed.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>frominc</b></tt>
+</dt>
+<dd>Index of the first element to be removed.</dd>
+<dt>
+<tt><b>toexcl</b></tt>
+</dt>
+<dd>Index of the element following the last element to be removed.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="insert">insert</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>insert</tt></td><td class="method-params"><tt>
+ (int&nbsp;idx, 
+   /*optional*/
+   <a class="type" href="c-wfcXSection-XSectionHatch.html">XSectionHatch</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Inserts an element with the specified value in front of the sequence element with the specified index. If the index is out of range, the sequence is expanded to include this index.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx</b></tt>
+</dt>
+<dd>Index for an element to be inserted at.</dd>
+<dt>
+<tt><b>value</b></tt>
+</dt>
+<dd>Value to be inserted.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="insertseq">insertseq</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>insertseq</tt></td><td class="method-params"><tt>
+ (int&nbsp;idx, <a class="type" href="c-wfcXSection-XSectionHatches.html">XSectionHatches</a>&nbsp;seq)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Inserts elements from the list passed as the second argument in front of the sequence element with the specified index. If the index is out of range, the sequence is expanded to include this index.<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>idx</b></tt>
+</dt>
+<dd>Index at which the first new element should be inserted.</dd>
+<dt>
+<tt><b>seq</b></tt>
+</dt>
+<dd>Sequence of elements to be inserted.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="create">create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-wfcXSection-XSectionHatches.html">XSectionHatches</a></tt></td><td class="method-name"><tt>create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new empty sequence.<br>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>Created sequence.</dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

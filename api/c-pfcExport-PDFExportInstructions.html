@@ -1,0 +1,280 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcExport.PDFExportInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      506
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcExport.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcExport-PDFExportInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;PDFExportInstructions</h2>
+<tt>
+     package 
+     <b><a href="p-pfcExport.html">com.ptc.pfc.pfcExport</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>PDFExportInstructions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcModel-ExportInstructions.html">com.ptc.pfc.pfcModel.ExportInstructions</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface is used to export a model to a PDF file. The model must be displayed in window
+<br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>String</tt></td><td class="method-summary"><tt><a class="method" href="#FilePath">GetFilePath</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "FilePath"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The name of the output file.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcExport-PDFOptions.html">PDFOptions</a></tt></td><td class="method-summary"><tt><a class="method" href="#Options">GetOptions</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Options"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The PDF export options.  If <tt>null</tt>, the default values are used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-summary"><tt><a class="method" href="#ProfilePath">GetProfilePath</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "ProfilePath"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+       The Profile path. Can be <tt>null</tt> Currently used only for drawings
+       <note>
+         If you specify non <tt>null</tt> Profile path the PDF export options will be ignored on call to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>
+       
+</note>
+     
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#FilePath">SetFilePath</a>
+ (String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "FilePath"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The name of the output file.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Options">SetOptions</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcExport-PDFOptions.html">PDFOptions</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Options"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The PDF export options.  If <tt>null</tt>, the default values are used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#ProfilePath">SetProfilePath</a>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "ProfilePath"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+       The Profile path. Can be <tt>null</tt> Currently used only for drawings
+       <note>
+         If you specify non <tt>null</tt> Profile path the PDF export options will be ignored on call to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>
+       
+</note>
+     
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-inheritance">
+<tr>
+<th class="method-inheritance">Methods Inherited from&nbsp;Interface&nbsp;<a class="class" href="c-pfcModel-ExportInstructions.html"><tt>com.ptc.pfc.pfcModel.ExportInstructions</tt></a></th>
+</tr>
+<tr>
+<td><a class="method" href="c-pfcModel-ExportInstructions.html#GetFileType"><tt>GetFileType</tt></a></td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="FilePath">GetFilePath/SetFilePath</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>String</tt></td><td class="method-name"><tt>GetFilePath</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetFilePath</tt></td><td class="method-params"><tt>
+ (String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The name of the output file.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#69">Interface: Exporting to PDF and U3D</a>, <a href="../manual0/Jinterface.html#70">Interface: Exporting to PDF and U3D</a>, <a href="../manual0/Jinterface.html#77">Interface: Exporting to PDF and U3D</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ProfilePath">GetProfilePath/SetProfilePath</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   String</tt></td><td class="method-name"><tt>GetProfilePath</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetProfilePath</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   String&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+       The Profile path. Can be <tt>null</tt> Currently used only for drawings
+       <note>
+         If you specify non <tt>null</tt> Profile path the PDF export options will be ignored on call to <tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>
+       
+</note>
+     
+<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#73">Interface: Exporting to PDF and U3D</a>, <a href="../manual0/Jinterface.html#74">Interface: Exporting to PDF and U3D</a>, <a href="../manual0/Jinterface.html#77">Interface: Exporting to PDF and U3D</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Options">GetOptions/SetOptions</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcExport-PDFOptions.html">PDFOptions</a></tt></td><td class="method-name"><tt>GetOptions</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetOptions</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcExport-PDFOptions.html">PDFOptions</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The PDF export options.  If <tt>null</tt>, the default values are used.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#71">Interface: Exporting to PDF and U3D</a>, <a href="../manual0/Jinterface.html#72">Interface: Exporting to PDF and U3D</a>, <a href="../manual0/Jinterface.html#77">Interface: Exporting to PDF and U3D</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

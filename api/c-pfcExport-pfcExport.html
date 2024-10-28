@@ -1,0 +1,1884 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcExport.pfcExport"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      2,
+      580
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcExport.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcExport-pfcExport.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Class&nbsp;pfcExport</h2>
+<tt>
+     package <b><a href="p-pfcExport.html">com.ptc.pfc.pfcExport</a></b>;<br>
+<br>
+
+     public&nbsp;class&nbsp;<b>pfcExport</b>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<h4>Description</h4>Contains global CIP definitions for module  "pfcExport"
+    <br>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-ACIS3DExportInstructions.html">ACIS3DExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#ACIS3DExportInstructions::Create">ACIS3DExportInstructions_Create</a>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a model to ACIS format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-CADDSExportInstructions.html">CADDSExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#CADDSExportInstructions::Create">CADDSExportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates an instructions object used to export a model to CADDS format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-CatiaCGR3DExportInstructions.html">CatiaCGR3DExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#CatiaCGR3DExportInstructions::Create">CatiaCGR3DExportInstructions_Create</a>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a solid model to Catia CGR format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-CATIAModel3DExportInstructions.html">CATIAModel3DExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#CATIAModel3DExportInstructions::Create">CATIAModel3DExportInstructions_Create</a>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a model to CATIA direct *.model format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-CatiaPart3DExportInstructions.html">CatiaPart3DExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#CatiaPart3DExportInstructions::Create">CatiaPart3DExportInstructions_Create</a>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a solid model to Catia part format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-CatiaProduct3DExportInstructions.html">CatiaProduct3DExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#CatiaProduct3DExportInstructions::Create">CatiaProduct3DExportInstructions_Create</a>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a solid model to Catia product format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-CATIASession3DExportInstructions.html">CATIASession3DExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#CATIASession3DExportInstructions::Create">CATIASession3DExportInstructions_Create</a>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a solid model to a CATIA sesion.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-DWG3DExportInstructions.html">DWG3DExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#DWG3DExportInstructions::Create">DWG3DExportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Creates a new instructions object used to export a model to DWG format.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-DXF3DExportInstructions.html">DXF3DExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#DXF3DExportInstructions::Create">DXF3DExportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Creates a new instructions object used to export a model to DXF format.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a></tt></td><td class="method-summary"><tt><a class="method" href="#GeometryFlags::Create">GeometryFlags_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new geometry flags object used when exporting a model to a 3D representation.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-IGES3DNewExportInstructions.html">IGES3DNewExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#IGES3DNewExportInstructions::Create">IGES3DNewExportInstructions_Create</a>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a 3D model to IGES format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-InclusionFlags.html">InclusionFlags</a></tt></td><td class="method-summary"><tt><a class="method" href="#InclusionFlags::Create">InclusionFlags_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new  object used to indicate whether geometry should be included during export of a model.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-JT3DExportInstructions.html">JT3DExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#JT3DExportInstructions::Create">JT3DExportInstructions_Create</a>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a solid model to JT format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-LayerExportOptions.html">LayerExportOptions</a></tt></td><td class="method-summary"><tt><a class="method" href="#LayerExportOptions::Create">LayerExportOptions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new  object used to indicate how layers should be treated during export of a model.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-NEUTRALFileExportInstructions.html">NEUTRALFileExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#NEUTRALFileExportInstructions::Create">NEUTRALFileExportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>&nbsp; </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-ParaSolid3DExportInstructions.html">ParaSolid3DExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#ParaSolid3DExportInstructions::Create">ParaSolid3DExportInstructions_Create</a>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a solid model to parasolid format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-PDFExportInstructions.html">PDFExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#PDFExportInstructions::Create">PDFExportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates an instructions object used to export a solid model to a PDF file.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-PDFOption.html">PDFOption</a></tt></td><td class="method-summary"><tt><a class="method" href="#PDFOption::Create">PDFOption_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates an object used to define the PDF file option.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-PrinterInstructions.html">PrinterInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#PrinterInstructions::Create">PrinterInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates an object used to define the printer instructions for printing a file.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-PrinterPCFOptions.html">PrinterPCFOptions</a></tt></td><td class="method-summary"><tt><a class="method" href="#PrinterPCFOptions::Create">PrinterPCFOptions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates an object used to define the printer options for printing a PFC file.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-PrintMdlOption.html">PrintMdlOption</a></tt></td><td class="method-summary"><tt><a class="method" href="#PrintMdlOption::Create">PrintMdlOption_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates an object used to define the model options for printing purpose.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-PrintPlacementOption.html">PrintPlacementOption</a></tt></td><td class="method-summary"><tt><a class="method" href="#PrintPlacementOption::Create">PrintPlacementOption_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates an object used to define the placement options for printing purpose.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-PrintPrinterOption.html">PrintPrinterOption</a></tt></td><td class="method-summary"><tt><a class="method" href="#PrintPrinterOption::Create">PrintPrinterOption_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates an object used to define the printer settings for printing a file.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-PrintSize.html">PrintSize</a></tt></td><td class="method-summary"><tt><a class="method" href="#PrintSize::Create">PrintSize_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates an object used to define the paper parameters for print  option.
+   </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-ProductViewExportInstructions.html">ProductViewExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#ProductViewExportInstructions::Create">ProductViewExportInstructions_Create</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object for exporting a part, assembly
+    or drawing into ProductView format.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-ProductViewExportOptions.html">ProductViewExportOptions</a></tt></td><td class="method-summary"><tt><a class="method" href="#ProductViewExportOptions::Create">ProductViewExportOptions_Create</a>
+ (<a class="type" href="c-pfcExport-ProductViewFormat.html">ProductViewFormat</a>&nbsp;inPVFormat)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt> Set options for ProductView export format</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-STEP3DExportInstructions.html">STEP3DExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#STEP3DExportInstructions::Create">STEP3DExportInstructions_Create</a>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a solid model to STEP format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-SWAsm3DExportInstructions.html">SWAsm3DExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#SWAsm3DExportInstructions::Create">SWAsm3DExportInstructions_Create</a>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Creates a new instructions object used to export a solid model to SolidWorks assembly format.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-SWPart3DExportInstructions.html">SWPart3DExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#SWPart3DExportInstructions::Create">SWPart3DExportInstructions_Create</a>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Creates a new instructions object used to export a solid model to SolidWorks part format.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-TriangulationInstructions.html">TriangulationInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#TriangulationInstructions::Create">TriangulationInstructions_Create</a>
+ (double&nbsp;AngleControl, double&nbsp;ChordHeight)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>
+        Creates a new  object used to indicate the parameters used for faceting.
+      </td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-UG3DExportInstructions.html">UG3DExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#UG3DExportInstructions::Create">UG3DExportInstructions_Create</a>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a solid model to UG format.
+</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-VDA3DExportInstructions.html">VDA3DExportInstructions</a></tt></td><td class="method-summary"><tt><a class="method" href="#VDA3DExportInstructions::Create">VDA3DExportInstructions_Create</a>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Creates a new instructions object used to export a solid model to VDA format.
+</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="GeometryFlags::Create">GeometryFlags_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a></tt></td><td class="method-name"><tt>GeometryFlags_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new geometry flags object used when exporting a model to a 3D representation.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><tt><a class="class" href="c-pfcExport-Export3DInstructions.html">Export3DInstructions</a></tt></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#82">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created geometry flags object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="InclusionFlags::Create">InclusionFlags_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-InclusionFlags.html">InclusionFlags</a></tt></td><td class="method-name"><tt>InclusionFlags_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new  object used to indicate whether geometry should be included during export of a model.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><tt><a class="class" href="c-pfcExport-Export3DInstructions.html">Export3DInstructions</a></tt></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#83">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new inclusion flags object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="LayerExportOptions::Create">LayerExportOptions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-LayerExportOptions.html">LayerExportOptions</a></tt></td><td class="method-name"><tt>LayerExportOptions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new  object used to indicate how layers should be treated during export of a model.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><tt><a class="class" href="c-pfcExport-Export3DInstructions.html">Export3DInstructions</a></tt></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#84">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new layer options object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="TriangulationInstructions::Create">TriangulationInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-TriangulationInstructions.html">TriangulationInstructions</a></tt></td><td class="method-name"><tt>TriangulationInstructions_Create</tt></td><td class="method-params"><tt>
+ (double&nbsp;AngleControl, double&nbsp;ChordHeight)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Creates a new  object used to indicate the parameters used for faceting.
+      <br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><tt><a class="class" href="c-pfcExport-Export3DInstructions.html">Export3DInstructions</a></tt></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#85">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>AngleControl</b></tt>
+</dt>
+<dd></dd>
+<dt>
+<tt><b>ChordHeight</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The new triangulation instructions object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="STEP3DExportInstructions::Create">STEP3DExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-STEP3DExportInstructions.html">STEP3DExportInstructions</a></tt></td><td class="method-name"><tt>STEP3DExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a solid model to STEP format.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsConfigurationSupported">BaseSession.IsConfigurationSupported(ExportType, AssemblyConfiguration)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsGeometryRepSupported">BaseSession.IsGeometryRepSupported(ExportType, GeometryFlags)</a></tt>, <tt><a class="method" href="c-pfcExport-pfcExport.html#GeometryFlags::Create">pfcExport.GeometryFlags_Create()</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inConfiguration</b></tt>
+</dt>
+<dd>The configuration to use when exporting the model.</dd>
+<dt>
+<tt><b>inGeometry</b></tt>
+</dt>
+<dd>The geometry type(s) to export.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instruction object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="VDA3DExportInstructions::Create">VDA3DExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-VDA3DExportInstructions.html">VDA3DExportInstructions</a></tt></td><td class="method-name"><tt>VDA3DExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a solid model to VDA format.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsConfigurationSupported">BaseSession.IsConfigurationSupported(ExportType, AssemblyConfiguration)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsGeometryRepSupported">BaseSession.IsGeometryRepSupported(ExportType, GeometryFlags)</a></tt>, <tt><a class="method" href="c-pfcExport-pfcExport.html#GeometryFlags::Create">pfcExport.GeometryFlags_Create()</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inConfiguration</b></tt>
+</dt>
+<dd>The configuration to use when exporting the model.</dd>
+<dt>
+<tt><b>inGeometry</b></tt>
+</dt>
+<dd>The geometry type(s) to export.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instruction object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IGES3DNewExportInstructions::Create">IGES3DNewExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-IGES3DNewExportInstructions.html">IGES3DNewExportInstructions</a></tt></td><td class="method-name"><tt>IGES3DNewExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a 3D model to IGES format.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsConfigurationSupported">BaseSession.IsConfigurationSupported(ExportType, AssemblyConfiguration)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsGeometryRepSupported">BaseSession.IsGeometryRepSupported(ExportType, GeometryFlags)</a></tt>, <tt><a class="method" href="c-pfcExport-pfcExport.html#GeometryFlags::Create">pfcExport.GeometryFlags_Create()</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inConfiguration</b></tt>
+</dt>
+<dd>The configuration to use when exporting the model.</dd>
+<dt>
+<tt><b>inGeometry</b></tt>
+</dt>
+<dd>The geometry type(s) to export.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instruction object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CATIAModel3DExportInstructions::Create">CATIAModel3DExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-CATIAModel3DExportInstructions.html">CATIAModel3DExportInstructions</a></tt></td><td class="method-name"><tt>CATIAModel3DExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a model to CATIA direct *.model format.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsConfigurationSupported">BaseSession.IsConfigurationSupported(ExportType, AssemblyConfiguration)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsGeometryRepSupported">BaseSession.IsGeometryRepSupported(ExportType, GeometryFlags)</a></tt>, <tt><a class="method" href="c-pfcExport-pfcExport.html#GeometryFlags::Create">pfcExport.GeometryFlags_Create()</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inConfiguration</b></tt>
+</dt>
+<dd>The configuration to use when exporting the model.</dd>
+<dt>
+<tt><b>inGeometry</b></tt>
+</dt>
+<dd>The geometry type(s) to export.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instruction object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ACIS3DExportInstructions::Create">ACIS3DExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-ACIS3DExportInstructions.html">ACIS3DExportInstructions</a></tt></td><td class="method-name"><tt>ACIS3DExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a model to ACIS format.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsConfigurationSupported">BaseSession.IsConfigurationSupported(ExportType, AssemblyConfiguration)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsGeometryRepSupported">BaseSession.IsGeometryRepSupported(ExportType, GeometryFlags)</a></tt>, <tt><a class="method" href="c-pfcExport-pfcExport.html#GeometryFlags::Create">pfcExport.GeometryFlags_Create()</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inConfiguration</b></tt>
+</dt>
+<dd>The configuration to use when exporting the model.</dd>
+<dt>
+<tt><b>inGeometry</b></tt>
+</dt>
+<dd>The geometry type(s) to export.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instruction object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DXF3DExportInstructions::Create">DXF3DExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-DXF3DExportInstructions.html">DXF3DExportInstructions</a></tt></td><td class="method-name"><tt>DXF3DExportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Creates a new instructions object used to export a model to DXF format.
+      <br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instruction object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DWG3DExportInstructions::Create">DWG3DExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-DWG3DExportInstructions.html">DWG3DExportInstructions</a></tt></td><td class="method-name"><tt>DWG3DExportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Creates a new instructions object used to export a model to DWG format.
+      <br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instruction object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CADDSExportInstructions::Create">CADDSExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-CADDSExportInstructions.html">CADDSExportInstructions</a></tt></td><td class="method-name"><tt>CADDSExportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates an instructions object used to export a model to CADDS format.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#30">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instructions object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CATIASession3DExportInstructions::Create">CATIASession3DExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-CATIASession3DExportInstructions.html">CATIASession3DExportInstructions</a></tt></td><td class="method-name"><tt>CATIASession3DExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a solid model to a CATIA sesion.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsConfigurationSupported">BaseSession.IsConfigurationSupported(ExportType, AssemblyConfiguration)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsGeometryRepSupported">BaseSession.IsGeometryRepSupported(ExportType, GeometryFlags)</a></tt>, <tt><a class="method" href="c-pfcExport-pfcExport.html#GeometryFlags::Create">pfcExport.GeometryFlags_Create()</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inConfiguration</b></tt>
+</dt>
+<dd>The configuration to use when exporting the model.</dd>
+<dt>
+<tt><b>inGeometry</b></tt>
+</dt>
+<dd>The geometry type(s) to export.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instruction object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="NEUTRALFileExportInstructions::Create">NEUTRALFileExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-NEUTRALFileExportInstructions.html">NEUTRALFileExportInstructions</a></tt></td><td class="method-name"><tt>NEUTRALFileExportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp; <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#32">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ProductViewExportOptions::Create">ProductViewExportOptions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-ProductViewExportOptions.html">ProductViewExportOptions</a></tt></td><td class="method-name"><tt>ProductViewExportOptions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExport-ProductViewFormat.html">ProductViewFormat</a>&nbsp;inPVFormat)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td> Set options for ProductView export format<br>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inPVFormat</b></tt>
+</dt>
+<dd></dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ProductViewExportInstructions::Create">ProductViewExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-ProductViewExportInstructions.html">ProductViewExportInstructions</a></tt></td><td class="method-name"><tt>ProductViewExportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object for exporting a part, assembly
+    or drawing into ProductView format.<br>
+<br>If mdl is a drawing, it must be displayed in a window. 
+    Depending upon the model type and export options, following output 
+    files are created:
+    For PVS: 
+      Part     : .pvs file, .ol file
+      Assembly : .pvs file, seperate .ol file for each part contained 
+		 in the assembly
+      Drawing  : .pvs file, .plt file 
+    For ED: 
+      Part     : .ed file, .ol file
+      Assembly : .ed file, seperate .ol file for each part contained 
+		 in the assembly
+      Drawing  : .ed file, .plt file 
+    For EDZ:     .edz file 
+    For PVZ:     .pvz file 
+    <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#33">Interface: Export Instructions</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>&nbsp; </dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="JT3DExportInstructions::Create">JT3DExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-JT3DExportInstructions.html">JT3DExportInstructions</a></tt></td><td class="method-name"><tt>JT3DExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a solid model to JT format.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsConfigurationSupported">BaseSession.IsConfigurationSupported(ExportType, AssemblyConfiguration)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsGeometryRepSupported">BaseSession.IsGeometryRepSupported(ExportType, GeometryFlags)</a></tt>, <tt><a class="method" href="c-pfcExport-pfcExport.html#GeometryFlags::Create">pfcExport.GeometryFlags_Create()</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inConfiguration</b></tt>
+</dt>
+<dd>The configuration to use when exporting the model.</dd>
+<dt>
+<tt><b>inGeometry</b></tt>
+</dt>
+<dd>The geometry type(s) to export.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instruction object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="UG3DExportInstructions::Create">UG3DExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-UG3DExportInstructions.html">UG3DExportInstructions</a></tt></td><td class="method-name"><tt>UG3DExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a solid model to UG format.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsConfigurationSupported">BaseSession.IsConfigurationSupported(ExportType, AssemblyConfiguration)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsGeometryRepSupported">BaseSession.IsGeometryRepSupported(ExportType, GeometryFlags)</a></tt>, <tt><a class="method" href="c-pfcExport-pfcExport.html#GeometryFlags::Create">pfcExport.GeometryFlags_Create()</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inConfiguration</b></tt>
+</dt>
+<dd>The configuration to use when exporting the model.</dd>
+<dt>
+<tt><b>inGeometry</b></tt>
+</dt>
+<dd>The geometry type(s) to export.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instruction object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="ParaSolid3DExportInstructions::Create">ParaSolid3DExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-ParaSolid3DExportInstructions.html">ParaSolid3DExportInstructions</a></tt></td><td class="method-name"><tt>ParaSolid3DExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a solid model to parasolid format.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsConfigurationSupported">BaseSession.IsConfigurationSupported(ExportType, AssemblyConfiguration)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsGeometryRepSupported">BaseSession.IsGeometryRepSupported(ExportType, GeometryFlags)</a></tt>, <tt><a class="method" href="c-pfcExport-pfcExport.html#GeometryFlags::Create">pfcExport.GeometryFlags_Create()</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inConfiguration</b></tt>
+</dt>
+<dd>The configuration to use when exporting the model.</dd>
+<dt>
+<tt><b>inGeometry</b></tt>
+</dt>
+<dd>The geometry type(s) to export.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instruction object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CatiaPart3DExportInstructions::Create">CatiaPart3DExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-CatiaPart3DExportInstructions.html">CatiaPart3DExportInstructions</a></tt></td><td class="method-name"><tt>CatiaPart3DExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a solid model to Catia part format.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsConfigurationSupported">BaseSession.IsConfigurationSupported(ExportType, AssemblyConfiguration)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsGeometryRepSupported">BaseSession.IsGeometryRepSupported(ExportType, GeometryFlags)</a></tt>, <tt><a class="method" href="c-pfcExport-pfcExport.html#GeometryFlags::Create">pfcExport.GeometryFlags_Create()</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inConfiguration</b></tt>
+</dt>
+<dd>The configuration to use when exporting the model.</dd>
+<dt>
+<tt><b>inGeometry</b></tt>
+</dt>
+<dd>The geometry type(s) to export.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instruction object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CatiaProduct3DExportInstructions::Create">CatiaProduct3DExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-CatiaProduct3DExportInstructions.html">CatiaProduct3DExportInstructions</a></tt></td><td class="method-name"><tt>CatiaProduct3DExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a solid model to Catia product format.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsConfigurationSupported">BaseSession.IsConfigurationSupported(ExportType, AssemblyConfiguration)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsGeometryRepSupported">BaseSession.IsGeometryRepSupported(ExportType, GeometryFlags)</a></tt>, <tt><a class="method" href="c-pfcExport-pfcExport.html#GeometryFlags::Create">pfcExport.GeometryFlags_Create()</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inConfiguration</b></tt>
+</dt>
+<dd>The configuration to use when exporting the model.</dd>
+<dt>
+<tt><b>inGeometry</b></tt>
+</dt>
+<dd>The geometry type(s) to export.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instruction object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="CatiaCGR3DExportInstructions::Create">CatiaCGR3DExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-CatiaCGR3DExportInstructions.html">CatiaCGR3DExportInstructions</a></tt></td><td class="method-name"><tt>CatiaCGR3DExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates a new instructions object used to export a solid model to Catia CGR format.
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsConfigurationSupported">BaseSession.IsConfigurationSupported(ExportType, AssemblyConfiguration)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsGeometryRepSupported">BaseSession.IsGeometryRepSupported(ExportType, GeometryFlags)</a></tt>, <tt><a class="method" href="c-pfcExport-pfcExport.html#GeometryFlags::Create">pfcExport.GeometryFlags_Create()</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inConfiguration</b></tt>
+</dt>
+<dd>The configuration to use when exporting the model.</dd>
+<dt>
+<tt><b>inGeometry</b></tt>
+</dt>
+<dd>The geometry type(s) to export.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instruction object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SWPart3DExportInstructions::Create">SWPart3DExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-SWPart3DExportInstructions.html">SWPart3DExportInstructions</a></tt></td><td class="method-name"><tt>SWPart3DExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Creates a new instructions object used to export a solid model to SolidWorks part format.
+      <br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsConfigurationSupported">BaseSession.IsConfigurationSupported(ExportType, AssemblyConfiguration)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsGeometryRepSupported">BaseSession.IsGeometryRepSupported(ExportType, GeometryFlags)</a></tt>, <tt><a class="method" href="c-pfcExport-pfcExport.html#GeometryFlags::Create">pfcExport.GeometryFlags_Create()</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inConfiguration</b></tt>
+</dt>
+<dd>The configuration to use when exporting the model.</dd>
+<dt>
+<tt><b>inGeometry</b></tt>
+</dt>
+<dd>The geometry type(s) to export.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instruction object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SWAsm3DExportInstructions::Create">SWAsm3DExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-SWAsm3DExportInstructions.html">SWAsm3DExportInstructions</a></tt></td><td class="method-name"><tt>SWAsm3DExportInstructions_Create</tt></td><td class="method-params"><tt>
+ (<a class="type" href="c-pfcExport-AssemblyConfiguration.html">AssemblyConfiguration</a>&nbsp;inConfiguration, <a class="type" href="c-pfcExport-GeometryFlags.html">GeometryFlags</a>&nbsp;inGeometry)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>
+        Creates a new instructions object used to export a solid model to SolidWorks assembly format.
+      <br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcModel-Model.html#Export">Model.Export(String, ExportInstructions)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsConfigurationSupported">BaseSession.IsConfigurationSupported(ExportType, AssemblyConfiguration)</a></tt>, <tt><a class="method" href="c-pfcSession-BaseSession.html#IsGeometryRepSupported">BaseSession.IsGeometryRepSupported(ExportType, GeometryFlags)</a></tt>, <tt><a class="method" href="c-pfcExport-pfcExport.html#GeometryFlags::Create">pfcExport.GeometryFlags_Create()</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Parameters:</b>
+</dt>
+<dd>
+<dl>
+<dt>
+<tt><b>inConfiguration</b></tt>
+</dt>
+<dd>The configuration to use when exporting the model.</dd>
+<dt>
+<tt><b>inGeometry</b></tt>
+</dt>
+<dd>The geometry type(s) to export.</dd>
+</dl>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd>The created instruction object.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PDFOption::Create">PDFOption_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-PDFOption.html">PDFOption</a></tt></td><td class="method-name"><tt>PDFOption_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates an object used to define the PDF file option.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#75">Interface: Exporting to PDF and U3D</a>, <a href="../manual0/Jinterface.html#77">Interface: Exporting to PDF and U3D</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PDFExportInstructions::Create">PDFExportInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-PDFExportInstructions.html">PDFExportInstructions</a></tt></td><td class="method-name"><tt>PDFExportInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates an instructions object used to export a solid model to a PDF file.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#68">Interface: Exporting to PDF and U3D</a>, <a href="../manual0/Jinterface.html#77">Interface: Exporting to PDF and U3D</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PrintSize::Create">PrintSize_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-PrintSize.html">PrintSize</a></tt></td><td class="method-name"><tt>PrintSize_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates an object used to define the paper parameters for print  option.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#261">Interface: Printer Options</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PrintPlacementOption::Create">PrintPlacementOption_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-PrintPlacementOption.html">PrintPlacementOption</a></tt></td><td class="method-name"><tt>PrintPlacementOption_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates an object used to define the placement options for printing purpose.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#278">Interface: Placement Options</a>, <a href="../manual0/Jinterface.html#291">Interface: Placement Options</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PrintMdlOption::Create">PrintMdlOption_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-PrintMdlOption.html">PrintMdlOption</a></tt></td><td class="method-name"><tt>PrintMdlOption_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates an object used to define the model options for printing purpose.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#293">Interface: Model Options</a>, <a href="../manual0/Jinterface.html#305">Interface: Model Options</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PrintPrinterOption::Create">PrintPrinterOption_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-PrintPrinterOption.html">PrintPrinterOption</a></tt></td><td class="method-name"><tt>PrintPrinterOption_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates an object used to define the printer settings for printing a file.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#256">Interface: Printer Options</a>, <a href="../manual0/Jinterface.html#276">Interface: Printer Options</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PrinterInstructions::Create">PrinterInstructions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-PrinterInstructions.html">PrinterInstructions</a></tt></td><td class="method-name"><tt>PrinterInstructions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates an object used to define the printer instructions for printing a file.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#250">Interface: Printing Files</a>, <a href="../manual0/Jinterface.html#254">Interface: Printing Files</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PrinterPCFOptions::Create">PrinterPCFOptions_Create</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>static&nbsp;<a class="type" href="c-pfcExport-PrinterPCFOptions.html">PrinterPCFOptions</a></tt></td><td class="method-name"><tt>PrinterPCFOptions_Create</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Creates an object used to define the printer options for printing a PFC file.
+   <br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#307">Interface: Plotter Configuration File (PCF) Options</a>, <a href="../manual0/Jinterface.html#310">Interface: Plotter Configuration File (PCF) Options</a>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Returns:</b>
+</dt>
+<dd></dd>
+</dl>
+</td>
+</tr>
+</table>
+</body>
+</html>

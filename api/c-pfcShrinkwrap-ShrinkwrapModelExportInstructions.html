@@ -1,0 +1,638 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcShrinkwrap.ShrinkwrapModelExportInstructions"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      660
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcShrinkwrap.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcShrinkwrap-ShrinkwrapModelExportInstructions.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;ShrinkwrapModelExportInstructions</h2>
+<tt>
+     package 
+     <b><a href="p-pfcShrinkwrap.html">com.ptc.pfc.pfcShrinkwrap</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>ShrinkwrapModelExportInstructions</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-pfcSolid-ShrinkwrapExportInstructions.html">com.ptc.pfc.pfcSolid.ShrinkwrapExportInstructions</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>This interface contains the instructions used for export of a solid model to a shrinkwrap format. 
+<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcSolid-Solid.html#ExportShrinkwrap">Solid.ExportShrinkwrap(ShrinkwrapExportInstructions)</a></tt>
+</dd>
+</dl>
+<dl>
+<dt>
+<b>Direct Known Subclasses:</b>
+</dt>
+<dd>
+<tt><a class="class" href="c-pfcShrinkwrap-ShrinkwrapSurfaceSubsetInstructions.html">ShrinkwrapSurfaceSubsetInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcShrinkwrap-ShrinkwrapFacetedFormatInstructions.html">ShrinkwrapFacetedFormatInstructions</a></tt>, 
+        <tt><a class="class" href="c-pfcShrinkwrap-ShrinkwrapMergedSolidInstructions.html">ShrinkwrapMergedSolidInstructions</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#AssignMassProperties">GetAssignMassProperties</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "AssignMassProperties"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to calculate mass properties for the shrinkwrap model of <tt>SmallSurfPercentage</tt>, <tt>false</tt> or <tt>null</tt> otherwise.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#AutoHoleFilling">GetAutoHoleFilling</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "AutoHoleFilling"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> or <tt>null</tt> to fill voids located entirely inside the outer boundary of the shrinkwrap model, <tt>false</tt> otherwise.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcSelect-Selections.html">Selections</a></tt></td><td class="method-summary"><tt><a class="method" href="#DatumReferences">GetDatumReferences</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "DatumReferences"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sequence of datum references used in the shrinkwrap export.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IgnoreQuilts">GetIgnoreQuilts</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IgnoreQuilts"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> or <tt>null</tt> to ignore quilts, <tt>false</tt> otherwise.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IgnoreSkeleton">GetIgnoreSkeleton</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IgnoreSkeleton"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> or <tt>null</tt> to ignore the contents of the skeleton model (if present), <tt>false</tt> otherwise.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-summary"><tt><a class="method" href="#IgnoreSmallSurfaces">GetIgnoreSmallSurfaces</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "IgnoreSmallSurfaces"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to ignore surfaces smaller than the value of <tt>SmallSurfPercentage</tt>, <tt>false</tt> or <tt>null</tt> otherwise.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt><a class="type" href="c-pfcShrinkwrap-ShrinkwrapMethod.html">ShrinkwrapMethod</a></tt></td><td class="method-summary"><tt><a class="method" href="#Method">GetMethod</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Method"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Indicates the method used to perform the shrinkwrap export.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Integer</tt></td><td class="method-summary"><tt><a class="method" href="#Quality">GetQuality</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Quality"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The export quality.  1 produces the coarsest representation surfaces, while 10 produces the finest.  If <tt>null</tt>, a quality of 1 will be used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-summary"><tt><a class="method" href="#SmallSurfPercentage">GetSmallSurfPercentage</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "SmallSurfPercentage"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Surfaces smaller than this percentage with respect to the model size will not be exported, if <tt>IgnoreSmallSurfaces</tt> is <tt>true</tt>.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AssignMassProperties">SetAssignMassProperties</a>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "AssignMassProperties"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to calculate mass properties for the shrinkwrap model of <tt>SmallSurfPercentage</tt>, <tt>false</tt> or <tt>null</tt> otherwise.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#AutoHoleFilling">SetAutoHoleFilling</a>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "AutoHoleFilling"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> or <tt>null</tt> to fill voids located entirely inside the outer boundary of the shrinkwrap model, <tt>false</tt> otherwise.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#DatumReferences">SetDatumReferences</a>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcSelect-Selections.html">Selections</a>&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "DatumReferences"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Sequence of datum references used in the shrinkwrap export.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#IgnoreQuilts">SetIgnoreQuilts</a>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "IgnoreQuilts"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> or <tt>null</tt> to ignore quilts, <tt>false</tt> otherwise.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#IgnoreSkeleton">SetIgnoreSkeleton</a>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "IgnoreSkeleton"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> or <tt>null</tt> to ignore the contents of the skeleton model (if present), <tt>false</tt> otherwise.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#IgnoreSmallSurfaces">SetIgnoreSmallSurfaces</a>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "IgnoreSmallSurfaces"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt><tt>true</tt> to ignore surfaces smaller than the value of <tt>SmallSurfPercentage</tt>, <tt>false</tt> or <tt>null</tt> otherwise.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Quality">SetQuality</a>
+ (
+   /*optional*/
+   Integer&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Quality"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>The export quality.  1 produces the coarsest representation surfaces, while 10 produces the finest.  If <tt>null</tt>, a quality of 1 will be used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#SmallSurfPercentage">SetSmallSurfPercentage</a>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "SmallSurfPercentage"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Surfaces smaller than this percentage with respect to the model size will not be exported, if <tt>IgnoreSmallSurfaces</tt> is <tt>true</tt>.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Method">GetMethod</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt><a class="type" href="c-pfcShrinkwrap-ShrinkwrapMethod.html">ShrinkwrapMethod</a></tt></td><td class="method-name"><tt>GetMethod</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Indicates the method used to perform the shrinkwrap export.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#92">Interface: Setting Shrinkwrap Options</a>, <a href="../manual0/Jinterface.html#108">Interface: Setting Shrinkwrap Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Quality">GetQuality/SetQuality</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Integer</tt></td><td class="method-name"><tt>GetQuality</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetQuality</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Integer&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>The export quality.  1 produces the coarsest representation surfaces, while 10 produces the finest.  If <tt>null</tt>, a quality of 1 will be used.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#93">Interface: Setting Shrinkwrap Options</a>, <a href="../manual0/Jinterface.html#108">Interface: Setting Shrinkwrap Options</a>, <a href="../manual0/Jinterface.html#94">Interface: Setting Shrinkwrap Options</a>, <a href="../manual0/Jinterface.html#108">Interface: Setting Shrinkwrap Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AutoHoleFilling">GetAutoHoleFilling/SetAutoHoleFilling</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>GetAutoHoleFilling</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetAutoHoleFilling</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> or <tt>null</tt> to fill voids located entirely inside the outer boundary of the shrinkwrap model, <tt>false</tt> otherwise.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#95">Interface: Setting Shrinkwrap Options</a>, <a href="../manual0/Jinterface.html#96">Interface: Setting Shrinkwrap Options</a>, <a href="../manual0/Jinterface.html#108">Interface: Setting Shrinkwrap Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IgnoreSkeleton">GetIgnoreSkeleton/SetIgnoreSkeleton</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>GetIgnoreSkeleton</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetIgnoreSkeleton</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> or <tt>null</tt> to ignore the contents of the skeleton model (if present), <tt>false</tt> otherwise.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#97">Interface: Setting Shrinkwrap Options</a>, <a href="../manual0/Jinterface.html#98">Interface: Setting Shrinkwrap Options</a>, <a href="../manual0/Jinterface.html#108">Interface: Setting Shrinkwrap Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IgnoreQuilts">GetIgnoreQuilts/SetIgnoreQuilts</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>GetIgnoreQuilts</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetIgnoreQuilts</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> or <tt>null</tt> to ignore quilts, <tt>false</tt> otherwise.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#99">Interface: Setting Shrinkwrap Options</a>, <a href="../manual0/Jinterface.html#100">Interface: Setting Shrinkwrap Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="IgnoreSmallSurfaces">GetIgnoreSmallSurfaces/SetIgnoreSmallSurfaces</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>GetIgnoreSmallSurfaces</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetIgnoreSmallSurfaces</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> to ignore surfaces smaller than the value of <tt>SmallSurfPercentage</tt>, <tt>false</tt> or <tt>null</tt> otherwise.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#103">Interface: Setting Shrinkwrap Options</a>, <a href="../manual0/Jinterface.html#104">Interface: Setting Shrinkwrap Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="AssignMassProperties">GetAssignMassProperties/SetAssignMassProperties</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Boolean</tt></td><td class="method-name"><tt>GetAssignMassProperties</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetAssignMassProperties</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Boolean&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td><tt>true</tt> to calculate mass properties for the shrinkwrap model of <tt>SmallSurfPercentage</tt>, <tt>false</tt> or <tt>null</tt> otherwise.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#101">Interface: Setting Shrinkwrap Options</a>, <a href="../manual0/Jinterface.html#102">Interface: Setting Shrinkwrap Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="SmallSurfPercentage">GetSmallSurfPercentage/SetSmallSurfPercentage</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-name"><tt>GetSmallSurfPercentage</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetSmallSurfPercentage</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Surfaces smaller than this percentage with respect to the model size will not be exported, if <tt>IgnoreSmallSurfaces</tt> is <tt>true</tt>.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#105">Interface: Setting Shrinkwrap Options</a>, <a href="../manual0/Jinterface.html#106">Interface: Setting Shrinkwrap Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="DatumReferences">GetDatumReferences/SetDatumReferences</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   <a class="type" href="c-pfcSelect-Selections.html">Selections</a></tt></td><td class="method-name"><tt>GetDatumReferences</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetDatumReferences</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   <a class="type" href="c-pfcSelect-Selections.html">Selections</a>&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>Sequence of datum references used in the shrinkwrap export.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/Jinterface.html#107">Interface: Setting Shrinkwrap Options</a>, <a href="../manual0/Jinterface.html#108">Interface: Setting Shrinkwrap Options</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

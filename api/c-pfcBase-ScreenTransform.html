@@ -1,0 +1,269 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>
+     CIP JAVA documentation for class "com.ptc.pfc.pfcBase.ScreenTransform"
+    </title>
+<link href="cipdoc_default.css" type="text/css" rel="stylesheet">
+<script language="JAVASCRIPT">
+  function findProperNode ()
+  {  
+   
+     top.frames [0].document.apiwizard.api (
+      3,
+      609
+     ); 
+    
+  } 
+ </script>
+</head>
+<body onLoad="findProperNode()" class="frame-class">
+<table cellspacing="0" width="100%" border="0" class="toolbar">
+<tr>
+<td class="toolbar-navigation"><a href="library.html">Library</a>&nbsp;|&nbsp;<a href="p-pfcBase.html">Package</a></td><td class="toolbar-frame-links"><a target="_top" href="index.html">Frames</a>&nbsp;|&nbsp;<a target="_top" href="c-pfcBase-ScreenTransform.html">Expand</a></td><td class="toolbar-lib-name">
+  
+   <font size="+2"><b><i>Java Toolkit</i></b></font>
+  
+ </td>
+</tr>
+</table>
+<hr>
+<h2>Interface&nbsp;ScreenTransform</h2>
+<tt>
+     package 
+     <b><a href="p-pfcBase.html">com.ptc.pfc.pfcBase</a></b>;
+     <br>
+<br>
+ 
+     public
+     
+       interface&nbsp;<b>ScreenTransform</b>
+<br>&nbsp;
+       extends&nbsp;<a class="bold" href="c-cipjava-jxobject.html">jxobject</a>
+<br>
+</tt>
+<br>
+<hr>
+<br>
+<b>Description</b>
+<br>
+<br>Stores pan and zoom values.<br>
+<br>The pan and zoom values are applied to a window by calling the window's <tt>ScreenTransformSet()</tt> method.<br>
+<dl>
+<dt>
+<b>See Also:</b>
+</dt>
+<dd>
+<tt><a class="method" href="c-pfcBase-pfcBase.html#ScreenTransform::Create">pfcBase.ScreenTransform_Create(/*optional*/ Double, /*optional*/ Double, /*optional*/ Double)</a></tt>
+</dd>
+</dl>
+<br>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-summary">
+<tr>
+<th colspan="2" class="method-summary">Method Summary</th>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-summary"><tt><a class="method" href="#PanX">GetPanX</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PanX"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A value between -1.0 and 1.0 that specifies the amount of horizontal panning. -1.0 pans one window width to the left; 1.0 pans one window width to the right. 0 specifies no horizontal panning. This attribute can be <tt>null</tt>, in which case 0 is used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-summary"><tt><a class="method" href="#PanY">GetPanY</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "PanY"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A value between -1.0 and 1.0 that specifies the amount of vertical panning. -1.0 pans up by the height of the window; 1.0 pans down by the height of the window. 0 specifies no vertical panning. This attribute can be <tt>null</tt>, in which case 0 is used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-summary"><tt><a class="method" href="#Zoom">GetZoom</a>
+ ()
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Get method for attribute 
+   "Zoom"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A value greater than 0 and the less than or equal to the value of the Creo Parametric variable <tt>MAX_ZOOM_SCALE</tt> that specifies the zoom factor. The value 0.1, for example, would zoom out by a factor of 10. <p></p>
+This attribute can be <tt>null</tt>, in which case 1 (no zoom) is used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PanX">SetPanX</a>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PanX"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A value between -1.0 and 1.0 that specifies the amount of horizontal panning. -1.0 pans one window width to the left; 1.0 pans one window width to the right. 0 specifies no horizontal panning. This attribute can be <tt>null</tt>, in which case 0 is used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#PanY">SetPanY</a>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "PanY"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A value between -1.0 and 1.0 that specifies the amount of vertical panning. -1.0 pans up by the height of the window; 1.0 pans down by the height of the window. 0 specifies no vertical panning. This attribute can be <tt>null</tt>, in which case 0 is used.</td>
+</tr>
+<tr>
+<td width="1%" class="return-type"><tt>void</tt></td><td class="method-summary"><tt><a class="method" href="#Zoom">SetZoom</a>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt>
+<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>Set method for attribute 
+   "Zoom"<br>
+<tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt>A value greater than 0 and the less than or equal to the value of the Creo Parametric variable <tt>MAX_ZOOM_SCALE</tt> that specifies the zoom factor. The value 0.1, for example, would zoom out by a factor of 10. <p></p>
+This attribute can be <tt>null</tt>, in which case 1 (no zoom) is used.</td>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="1" width="100%" class="method-detail">
+<tr>
+<th colspan="2" class="method-detail">Method Detail</th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PanX">GetPanX/SetPanX</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-name"><tt>GetPanX</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPanX</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>A value between -1.0 and 1.0 that specifies the amount of horizontal panning. -1.0 pans one window width to the left; 1.0 pans one window width to the right. 0 specifies no horizontal panning. This attribute can be <tt>null</tt>, in which case 0 is used.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#120">Windows and Views: Transformations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="PanY">GetPanY/SetPanY</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-name"><tt>GetPanY</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetPanY</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>A value between -1.0 and 1.0 that specifies the amount of vertical panning. -1.0 pans up by the height of the window; 1.0 pans down by the height of the window. 0 specifies no vertical panning. This attribute can be <tt>null</tt>, in which case 0 is used.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#121">Windows and Views: Transformations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+<hr>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method-title">
+<tr>
+<th class="method-title"><a name="Zoom">GetZoom/SetZoom</a></th>
+</tr>
+</table>
+<br>
+<table cellpadding="5" cellspacing="0" border="0" class="method_def">
+<tr>
+<td class="return-type"><tt>
+   /*optional*/
+   Double</tt></td><td class="method-name"><tt>GetZoom</tt></td><td class="method-params"><tt>
+ ()
+</tt></td>
+</tr>
+<tr>
+<td class="return-type"><tt>void</tt></td><td class="method-name"><tt>SetZoom</tt></td><td class="method-params"><tt>
+ (
+   /*optional*/
+   Double&nbsp;value)
+</tt></td>
+</tr>
+</table>
+<br>
+<table border="0" class="method-doc"></table>
+<br>
+<table border="0" class="method-doc">
+<tr>
+<td><tt>&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>A value greater than 0 and the less than or equal to the value of the Creo Parametric variable <tt>MAX_ZOOM_SCALE</tt> that specifies the zoom factor. The value 0.1, for example, would zoom out by a factor of 10. <p></p>
+This attribute can be <tt>null</tt>, in which case 1 (no zoom) is used.<br>
+<dl>
+<dt>
+<b>Manual References:</b>
+</dt>
+<dd>
+<a href="../manual0/JWinView.html#122">Windows and Views: Transformations</a>
+</dd>
+</dl>
+<br>
+</td>
+</tr>
+</table>
+</body>
+</html>

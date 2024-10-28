@@ -1,0 +1,874 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-9">
+      <meta name="ch:resourceid" content="jextobjs" scheme="atiChunkerMeta">
+      
+      
+      
+      
+      
+      
+      <link href="css/styler.css" rel="stylesheet" type="text/css">
+      <title>External Objects</title>
+   
+<SCRIPT LANGUAGE="JAVASCRIPT">
+  function findProperNode() { top.frames[0].document.apiwizard.manual("MANJEXTOBJS0", location.hash); }
+</SCRIPT>
+
+</head>
+   <body onLoad="findProperNode()">
+      
+         
+         <a name="0"> </a><div class=" x-title-65-0 x-title-65-1" combinedFontName="off" id="styler-id1.1.1.26.1" class="ChapterTitle">External Objects</div>
+         <div class=" x-shortdesc-1-0"></div><span class=" x-prolog-1-0">
+            <div class=" x-metadata-1-0"><span class=" x-keywords-2-0"><span class=" x-keyword-1-0">
+                     </span><span class=" x-indexterm-1-0"></span></span></div></span><div class=" x-body-2-0">
+            <div class=" x-p-7-0">This <span class=" x-ph-2-0"><span xmlns="" profilecode="100000000">section</span></span> describes the <span class=" x-ph-2-0" id="jextobjs_pubsTopic-1-4578B678_PTCCreoObjectToolkitJava-E_28_15">Creo Object TOOLKIT Java</span> methods that enable you to create and manipulate external objects.
+            </div>
+         </div>
+         <div class=" x-topic-4-0 x-topic-4-1 x-topic-4-2" combinedFontName="off" id="jextobjs_SummaryOfExternalObjects-B1EE2893_28_16">
+            
+            <a name="1"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.26.5.1" class="Heading1">Summary of External Objects</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="2"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="3"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="4"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="5"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">External objects are objects created by an application that is external to <span class=" x-ph-2-0" id="jextobjs_SummaryOfExternalObjects-B1EE2893_PTCCreoParame_28_28"><span xmlns="" profilecode="1">Creo Parametric</span></span>. Although these objects can be displayed and selected within a <span class=" x-ph-2-0" id="jextobjs_SummaryOfExternalObjects-B1EE2893_PTCCreoParame_28_28"><span xmlns="" profilecode="1">Creo Parametric</span></span> session, they can not be independently created by <span class=" x-ph-2-0" id="jextobjs_SummaryOfExternalObjects-B1EE2893_PTCCreoParame_28_28"><span xmlns="" profilecode="1">Creo Parametric</span></span>. Using <span class=" x-ph-2-0" id="jextobjs_SummaryOfExternalObjects-B1EE2893_PTCCreoObject_28_34">Creo Object TOOLKIT Java</span> methods, you can define and manipulate external objects, which are then stored in a model database.
+               </div>
+               <div class=" x-note-2-0 x-note-2-3">
+                  <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                  <div class=" x-p-7-0">External objects are limited to text and wireframe entities. In addition, external objects can be created for parts and assemblies
+                     only. That is, external objects can be stored in a part or assembly database only.
+                  </div>
+               </div>
+               <div class=" x-p-7-0">In <span class=" x-ph-2-0" id="jextobjs_SummaryOfExternalObjects-B1EE2893_PTCCreoObject_28_34">Creo Object TOOLKIT Java</span> application, an external object is defined by a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject</span></span> object. This DHandle identifies an external object in the <span class=" x-ph-2-0" id="jextobjs_SummaryOfExternalObjects-B1EE2893_PTCCreoParame_28_28"><span xmlns="" profilecode="1">Creo Parametric</span></span> database, which contains the following information for the object:
+               </div>
+               <div class=" x-p-7-0">
+                  <div class=" x-ul-1-0">
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Object class&#8212;A class of external objects is a group that contains objects with similar characteristics. All external objects
+                                    must belong to a class. Object class is contained in the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectClass</span></span> object.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Object data&#8212;The object data contains information about the display and selection of an external object. Object data is contained
+                                    in the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectData</span></span> object.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Object parameters&#8212;External objects can own parameters. You can use the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcModelItem.WParameter</span></span> API to get, set, and modify external object parameters.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Object references&#8212;External objects can reference any <span class=" x-ph-2-0" id="jextobjs_SummaryOfExternalObjects-B1EE2893_PTCCreo-EC6F7_28_55">Creo</span> object. This functionality is useful when changes to <span class=" x-ph-2-0" id="jextobjs_SummaryOfExternalObjects-B1EE2893_PTCCreo-EC6F7_28_55">Creo</span> objects need to instigate changes in the external objects. The changes are communicated back to your <span class=" x-ph-2-0" id="jextobjs_SummaryOfExternalObjects-B1EE2893_PTCCreoObject_28_34">Creo Object TOOLKIT Java</span> application via the callback methods.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                     <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                        <col style="width: 0em">
+                        <col style="width: 18pt">
+                        <col>
+                        <tbody>
+                           <tr valign="baseline">
+                              <td align="right"></td>
+                              <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                              <td><span class=" x-p-4-0">Callback methods&#8212;<span class=" x-ph-2-0" id="jextobjs_SummaryOfExternalObjects-B1EE2893_PTCCreoObject_28_34">Creo Object TOOLKIT Java</span> enables you to specify callback methods for a class of external objects. These methods are called whenever the external object
+                                    owner or reference is deleted, suppressed, or modified. In this manner, the appearance and behavior of your external objects
+                                    can depend on the object owner or reference.</span></td>
+                           </tr>
+                        </tbody>
+                     </table>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="styler-id1.1.1.26.6">
+            
+            <a name="6"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.26.6.1" class="Heading1">External Objects and Object Classes</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">This section describes the <span class=" x-ph-2-0" id="jextobjs_SummaryOfExternalObjects-B1EE2893_PTCCreoObject_28_34">Creo Object TOOLKIT Java</span> methods that relate to the creation and manipulation of external objects and object classes.
+                  <div class=" x-note-1-0 x-note-1-3">
+                     <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                     <div class=" x-p-7-0">This description does not address the display or selection of the external object. For more information see <a href="#jextobjs_ExternalObjectData-9F860FF328_70" class=" x-xref-4-0 x-xref-4-5 x-xref-4-6 x-xref-4-9">External Object Data</a>.
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="jextobjs_CreatingExternalObjects-B1EE2FB8_28_69">
+               
+               <a name="7"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.26.6.3.1" class="Heading2">Creating External Objects</div>
+               <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="8"></a><span class=" x-indexterm-1-0"></span></div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Methods introduced:</div>
+                  <div class=" x-p-7-0">
+                     <div class=" x-ul-1-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="9"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectClass.html#CreateObject">wfcExternalObjectClass.ExternalObjectClass.CreateObject</A></li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="10"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectClass.html#GetName">wfcExternalObjectClass.ExternalObjectClass.GetName</A></li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="11"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectClass.html#GetType">wfcExternalObjectClass.ExternalObjectClass.GetType</A></li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class=" x-p-7-0">After the object class is registered, you can create the external object by calling the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObjectClass.ExternalObjectClass.CreateObject</span></span>. The input arguments to this method is <span class=" x-parmname-3-0">owner</span>. (Currently, the owner of the external object can be a part or an assembly only.) To get the information of the newly created
+                     object, pass the data handle <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObject</span></span> to the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObjectClass.ExternalObjectClass.CreateObject</span></span>.
+                  </div>
+                  <div class=" x-p-7-0">When the external object is created, it is assigned an integer identifier that is persistent from session to session. The
+                     external object is saved as part of the model database and will be available when the model is retrieved next.
+                  </div>
+                  <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObjectClass.ExternalObjectClass.GetName</span></span> to retrieve the name of the external object class.
+                  </div>
+                  <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObjectClass.ExternalObjectClass.GetType</span></span> to retrieve the type of the external object class.
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="styler-id1.1.1.26.6.4">
+               
+               <a name="12"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.26.6.4.1" class="Heading2">External Object Owners</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Methods introduced:</div>
+                  <div class=" x-p-7-0">
+                     <div class=" x-ul-1-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="13"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObject.html#GetOwner">wfcExternalObject.ExternalObject.GetOwner</A></li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class=" x-p-7-0">The owner of an external object is set during the call to <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObjectClass.ExternalObjectClass.CreateObject</span></span>. For example, the &#8220;owner&#8221; would be the part or assembly where the external object resides.
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObject.GetOwner</span></span> retrieves the owner of an existing external object. To get the owner to an external object, pass the data handle <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcModelItem.ModelItem</span></span> to the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObject.GetOwner</span></span>.
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="jextobjs_ExternalObjectData-9F860FF328_70">
+            
+            <a name="14"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.26.7.1" class="Heading1">External Object Data</div>
+            <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="15"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="16"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="17"></a><span class=" x-indexterm-1-0"></span></div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">Simply creating an external object does not allow the object to be displayed or selected in <span class=" x-ph-2-0" id="jextobjs_ExternalObjectData-9F860FF3_PTCCreoParametric-E_28_123"><span xmlns="" profilecode="1">Creo Parametric</span></span>. For this, you must supply external object data that is used, stored, and retrieved by <span class=" x-ph-2-0" id="jextobjs_ExternalObjectData-9F860FF3_PTCCreo-EC6F7D2F_28_125">Creo</span>. The data is removed from the model database when the external object is deleted.
+               </div>
+               <div class=" x-p-7-0">External object data is described by the opaque workspace handle <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectData</span></span>. The methods required to initialize and modify this object are specific to the type of data being created. That is, creating
+                  display data requires one set of methods, whereas creating selection data requires another.
+               </div>
+               <div class=" x-p-7-0">Once you have created a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectData</span></span> object, the manipulation of the external object data is independent of its contents: the methods required to add or remove
+                  data are the same for both display and selection data.
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="styler-id1.1.1.26.7.4">
+               
+               <a name="18"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.26.7.4.1" class="Heading2">Display Data for External Objects</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Display data gives information to <span class=" x-ph-2-0" id="jextobjs_ExternalObjectData-9F860FF3_PTCCreoParametric-E_28_123"><span xmlns="" profilecode="1">Creo Parametric</span></span> about how the external object is to appear in the model window. This data must include the color, scale, line type, and transformation
+                     of the external object. In addition, display data can include settings that override the user&#8217;s ability to zoom and spin the
+                     external object.
+                  </div>
+                  <div class=" x-p-7-0">
+                     <div class=" x-note-1-0 x-note-1-3">
+                        <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                        <div class=" x-p-7-0">Setting the display data does not result in the external object being displayed. To see the object, you must repaint the model
+                           window using the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcWindow.Window.Repaint</span></span>.
+                        </div>
+                     </div>
+                  </div>
+                  <div class=" x-p-7-0">Methods introduced:</div>
+                  <div class=" x-p-7-0">
+                     <div class=" x-ul-1-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="19"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">wfcExternalObject.ExternalObjectDisplayData_Create</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData_Create</span></span> to create a display data information for an external object.  The input arguments are as follows:
+                     <div class=" x-ul-1-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">Ents</span>&#8212;Specify the entities in the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcGeometry.CurveDescriptors</span></span> object in the specified display data.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">EntityColors</span>&#8212;Specify the entities in the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcBase.StdColors</span></span> object in the specified display data.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData_Create</span></span> returns the display properties of the external object in the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData</span></span> object.
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="styler-id1.1.1.26.7.4.3">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.26.7.4.3.1">Creating the External Object Entity</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Methods introduced:</div>
+                     <div class=" x-p-7-0">
+                        <div class=" x-ul-1-0">
+                           <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                              <col style="width: 0em">
+                              <col style="width: 18pt">
+                              <col>
+                              <tbody>
+                                 <tr valign="baseline">
+                                    <td align="right"></td>
+                                    <td align="left" style="word-break: keep-all; "></td>
+                                    <td><span class=" x-p-4-0"><a name="20"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectDisplayData.html#Entities">wfcExternalObject.ExternalObjectDisplayData.GetEntities</A></li></span></span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                              <col style="width: 0em">
+                              <col style="width: 18pt">
+                              <col>
+                              <tbody>
+                                 <tr valign="baseline">
+                                    <td align="right"></td>
+                                    <td align="left" style="word-break: keep-all; "></td>
+                                    <td><span class=" x-p-4-0"><a name="21"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectDisplayData.html#Entities">wfcExternalObject.ExternalObjectDisplayData.SetEntities</A></li></span></span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                              <col style="width: 0em">
+                              <col style="width: 18pt">
+                              <col>
+                              <tbody>
+                                 <tr valign="baseline">
+                                    <td align="right"></td>
+                                    <td align="left" style="word-break: keep-all; "></td>
+                                    <td><span class=" x-p-4-0"><a name="22"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectDisplayData.html#EntityColors">wfcExternalObject.ExternalObjectDisplayData.GetEntityColors</A></li></span></span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                              <col style="width: 0em">
+                              <col style="width: 18pt">
+                              <col>
+                              <tbody>
+                                 <tr valign="baseline">
+                                    <td align="right"></td>
+                                    <td align="left" style="word-break: keep-all; "></td>
+                                    <td><span class=" x-p-4-0"><a name="23"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectDisplayData.html#EntityColors">wfcExternalObject.ExternalObjectDisplayData.SetEntityColors</A></li></span></span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class=" x-p-7-0">External objects are currently limited to text and wireframe entities. You can specify the entities to be displayed by creating
+                        an array of <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcGeometry.CurveDescriptors</span></span> objects that contain that necessary information. <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcGeometry.CurveDescriptors</span></span> is a union of specific entity structures, such as line, arrow, arc, circle, spline, and text. Note that when you specify
+                        the entities in the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcGeometry.CurveDescriptors</span></span> array, the coordinate system used is the default model coordinate system.
+                     </div>
+                     <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData.GetEntities</span></span> to retrieve the entities that make up an external object in a specified display data.
+                     </div>
+                     <div class=" x-p-7-0">After you have created the array of <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcGeometry.CurveDescriptors</span></span> objects, you can add entities to the display data by calling the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData.SetEntities</span></span>. The input argument to the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData.SetEntities</span></span> are the entities in the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcGeometry.CurveDescriptors</span></span> object.
+                        <div class=" x-note-1-0 x-note-1-3">
+                           <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                           <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData.SetEntities</span></span> supports only <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcENTITY_LINE</span></span> and <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcENTITY_ARC</span></span> entities. However, you can draw polygons as multiple lines, and circles as arcs of extent 2 pi.
+                           </div>
+                        </div> 
+                     </div>
+                     <div class=" x-p-7-0">The methods <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData.GetEntityColors</span></span> and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData.SetEntityColors</span></span> retrieve and set the display data for a list of entities and the color for each entity. The input argument to the method
+                        <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData.SetEntityColors</span></span> are the list of entities in the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcBase.StdColors</span></span> object.
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="styler-id1.1.1.26.7.4.4">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.26.7.4.4.1">External Object Display Properties</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Methods introduced:</div>
+                     <div class=" x-p-7-0">
+                        <div class=" x-ul-1-0">
+                           <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                              <col style="width: 0em">
+                              <col style="width: 18pt">
+                              <col>
+                              <tbody>
+                                 <tr valign="baseline">
+                                    <td align="right"></td>
+                                    <td align="left" style="word-break: keep-all; "></td>
+                                    <td><span class=" x-p-4-0"><a name="24"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectData.html#Type">wfcExternalObject.ExternalObjectData.GetType</A></li></span></span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                              <col style="width: 0em">
+                              <col style="width: 18pt">
+                              <col>
+                              <tbody>
+                                 <tr valign="baseline">
+                                    <td align="right"></td>
+                                    <td align="left" style="word-break: keep-all; "></td>
+                                    <td><span class=" x-p-4-0"><a name="25"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectDisplayData.html#Properties">wfcExternalObject.ExternalObjectDisplayData.GetProperties</A></li></span></span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                              <col style="width: 0em">
+                              <col style="width: 18pt">
+                              <col>
+                              <tbody>
+                                 <tr valign="baseline">
+                                    <td align="right"></td>
+                                    <td align="left" style="word-break: keep-all; "></td>
+                                    <td><span class=" x-p-4-0"><a name="26"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectDisplayData.html#Properties">wfcExternalObject.ExternalObjectDisplayData.SetProperties</A></li></span></span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class=" x-p-7-0">By default, when users spin or zoom in on a model, external objects are subjected to the same spin and zoom scale as the model.
+                        In addition, by default external objects are always displayed, even if the owner or reference objects are suppressed. Setting
+                        external object display properties within display data enables you to change these default behaviors.
+                     </div>
+                     <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectData.GetType</span></span> retrieves the type of property in specified external object data.  To specify which type of property you want to retrieve,
+                        pass one of the values in the enumerated type <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDataType</span></span> to this method.
+                     </div>
+                     <div class=" x-p-7-0">The methods <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData.GetProperties</span></span> and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData.SetProperties</span></span> retrieve and set the display properties in the specified display data. The input argument to the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData.SetProperties</span></span> are the display properties in the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayDataProperties</span></span> object.
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="styler-id1.1.1.26.7.4.5">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.26.7.4.5.1">External Object Color</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Methods introduced:</div>
+                     <div class=" x-p-7-0">
+                        <div class=" x-ul-1-0">
+                           <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                              <col style="width: 0em">
+                              <col style="width: 18pt">
+                              <col>
+                              <tbody>
+                                 <tr valign="baseline">
+                                    <td align="right"></td>
+                                    <td align="left" style="word-break: keep-all; "></td>
+                                    <td><span class=" x-p-4-0"><a name="27"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectDisplayData.html#DisplayColor">wfcExternalObject.ExternalObjectDisplayData.GetDisplayColor</A></li></span></span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                              <col style="width: 0em">
+                              <col style="width: 18pt">
+                              <col>
+                              <tbody>
+                                 <tr valign="baseline">
+                                    <td align="right"></td>
+                                    <td align="left" style="word-break: keep-all; "></td>
+                                    <td><span class=" x-p-4-0"><a name="28"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectDisplayData.html#DisplayColor">wfcExternalObject.ExternalObjectDisplayData.SetDisplayColor</A></li></span></span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class=" x-p-7-0">The enumerated type <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcBase.StdColor</span></span> specifies the colors available for external objects.
+                     </div>
+                     <div class=" x-p-7-0">The methods <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData.GetDisplayColor</span></span> and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData.SetDisplayColor</span></span> retrieve and set the object color in the specified display data.
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="styler-id1.1.1.26.7.4.6">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.26.7.4.6.1">Line Styles for External Objects</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Methods introduced:</div>
+                     <div class=" x-p-7-0">
+                        <div class=" x-ul-1-0">
+                           <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                              <col style="width: 0em">
+                              <col style="width: 18pt">
+                              <col>
+                              <tbody>
+                                 <tr valign="baseline">
+                                    <td align="right"></td>
+                                    <td align="left" style="word-break: keep-all; "></td>
+                                    <td><span class=" x-p-4-0"><a name="29"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectDisplayData.html#LineStyle">wfcExternalObject.ExternalObjectDisplayData.GetLineStyle</A></li></span></span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                              <col style="width: 0em">
+                              <col style="width: 18pt">
+                              <col>
+                              <tbody>
+                                 <tr valign="baseline">
+                                    <td align="right"></td>
+                                    <td align="left" style="word-break: keep-all; "></td>
+                                    <td><span class=" x-p-4-0"><a name="30"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectDisplayData.html#LineStyle">wfcExternalObject.ExternalObjectDisplayData.SetLineStyle</A></li></span></span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class=" x-p-7-0">The enumerated type <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcBase.StdLineStyle</span></span> specifies the line styles available for specifies the line styles available for external objects.
+                     </div>
+                     <div class=" x-p-7-0">The methods <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData.GetLineStyle</span></span> and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">v</span></span> retrieve and set the object line style in the specified display data. 
+                     </div>
+                     <div class=" x-p-7-0"></div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="styler-id1.1.1.26.7.4.7">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.26.7.4.7.1">External Object Scale</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Methods introduced:</div>
+                     <div class=" x-p-7-0">
+                        <div class=" x-ul-1-0">
+                           <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                              <col style="width: 0em">
+                              <col style="width: 18pt">
+                              <col>
+                              <tbody>
+                                 <tr valign="baseline">
+                                    <td align="right"></td>
+                                    <td align="left" style="word-break: keep-all; "></td>
+                                    <td><span class=" x-p-4-0"><a name="31"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectDisplayData.html#Scale">wfcExternalObject.ExternalObjectDisplayData.GetScale</A></li></span></span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                              <col style="width: 0em">
+                              <col style="width: 18pt">
+                              <col>
+                              <tbody>
+                                 <tr valign="baseline">
+                                    <td align="right"></td>
+                                    <td align="left" style="word-break: keep-all; "></td>
+                                    <td><span class=" x-p-4-0"><a name="32"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectDisplayData.html#Scale">wfcExternalObject.ExternalObjectDisplayData.SetScale</A></li></span></span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class=" x-p-7-0">To vary the size of your external object without altering the entities themselves, you must specify an object scale factor
+                        as part of the display data.
+                     </div>
+                     <div class=" x-p-7-0">The methods <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData.GetScale</span></span> and <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData.SetScale</span></span> retrieve and set the scale factor in the specified display data.
+                     </div>
+                  </div>
+               </div>
+               <div class=" x-topic-11-0 x-topic-11-1" id="styler-id1.1.1.26.7.4.8">
+                  
+                  <div class=" x-title-22-0 x-title-22-1" combinedFontName="off" id="styler-id1.1.1.26.7.4.8.1">Transformation of the External Object</div>
+                  <div class=" x-body-3-0">
+                     <div class=" x-p-7-0">Methods introduced:</div>
+                     <div class=" x-p-7-0">
+                        <div class=" x-ul-1-0">
+                           <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                              <col style="width: 0em">
+                              <col style="width: 18pt">
+                              <col>
+                              <tbody>
+                                 <tr valign="baseline">
+                                    <td align="right"></td>
+                                    <td align="left" style="word-break: keep-all; "></td>
+                                    <td><span class=" x-p-4-0"><a name="33"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectDisplayData.html#TransormationMatrix">wfcExternalObject.ExternalObjectDisplayData.GetTransormationMatrix</A></li></span></span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                           <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                              <col style="width: 0em">
+                              <col style="width: 18pt">
+                              <col>
+                              <tbody>
+                                 <tr valign="baseline">
+                                    <td align="right"></td>
+                                    <td align="left" style="word-break: keep-all; "></td>
+                                    <td><span class=" x-p-4-0"><a name="34"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectDisplayData.html#TransormationMatrix">wfcExternalObject.ExternalObjectDisplayData.SetTransormationMatrix</A></li></span></span></td>
+                                 </tr>
+                              </tbody>
+                           </table>
+                        </div>
+                     </div>
+                     <div class=" x-p-7-0">You can transform the local coordinates from model coordinates using the three-dimensional transformational matrix. </div>
+                     <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData.GetTransormationMatrix</span></span> retrieve the transformation matrix contained in a particular set of display data.
+                     </div>
+                     <div class=" x-p-7-0">To a perform a coordinate transformation on an external object, use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData.SetTransormationMatrix</span></span> to set the transformation matrix within the associated display data. The input argument to the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDisplayData.SetTransormationMatrix</span></span> is the transformation matrix in the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">pfcBase.Matrix3D</span></span> object.
+                     </div>
+                     <div class=" x-p-7-0"> </div>
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="styler-id1.1.1.26.7.5">
+               
+               <a name="35"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.26.7.5.1" class="Heading2">Selection Data for External Objects</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Methods introduced:</div>
+                  <div class=" x-p-7-0">
+                     <div class=" x-ul-1-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="36"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">wfcExternalObject.ExternalObjectSelectionBoxData_Create</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="37"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectSelectionBoxData.html#Boxes">wfcExternalObject.ExternalObjectSelectionBoxData.GetBoxes</A></li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="38"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObjectSelectionBoxData.html#Boxes">wfcExternalObject.ExternalObjectSelectionBoxData.SetBoxes</A></li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectSelectionBoxData_Create</span></span> to create a selection data information for the specified external object. This method returns the selection data for the
+                     external object as a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectSelectionBoxData</span></span> object.
+                  </div>
+                  <div class=" x-p-7-0"> Selection boxes are specified as part of the external object selection data. These selection boxes indicate locations in
+                     which mouse selections will cause the external object to be selected. For the selection to be possible, you must designate
+                     a set of &#8220;hot spots,&#8221; or selection boxes for the object. 
+                  </div>
+                  <div class=" x-p-7-0">A selection box is defined by the pair of points contained in a <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.SelectionBoxes</span></span> object. The coordinates of the points are specified in the external object's coordinate system (the default coordinates).
+                     The line between the points forms the diagonal of the selection box; the edges of the box lie parallel to the coordinate axes
+                     of the external object.
+                  </div>
+                  <div class=" x-p-7-0">
+                     <div class=" x-note-1-0 x-note-1-3">
+                        <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                        <div class=" x-p-7-0">PTC recommends that the size and arrangement of the selection boxes be dependent on the size and shape of the external object.
+                           If the external object is compact and uniformly distributed in all coordinate directions, one selection box will probably
+                           suffice.
+                        </div>
+                        <div class=" x-p-7-0">However, if the external object is distributed nonuniformly, or is interfering with other objects, you must designate more
+                           specific locations at which selection should occur.
+                        </div>
+                     </div>
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectSelectionBoxData.GetBoxes</span></span> retrieves the list of selection boxes in a given selection data.
+                  </div>
+                  <div class=" x-p-7-0">To set the selection boxes within the selection data, call the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectSelectionBoxData.SetBoxes</span></span> and pass as input a pointer to a list of <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.SelectionBoxes</span></span> objects. This enables your external object to have more than one associated selection box.
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="styler-id1.1.1.26.7.6">
+               
+               <a name="39"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.26.7.6.1" class="Heading2">Manipulating External Object Data</div>
+               <div class=" x-abstract-1-0"><a xmlns="" class="indexterm" name="40"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="41"></a><span class=" x-indexterm-1-0"></span><a xmlns="" class="indexterm" name="42"></a><span class=" x-indexterm-1-0"></span></div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Methods introduced:</div>
+                  <div class=" x-p-7-0">
+                     <div class=" x-ul-1-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="43"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObject.html#AddData">wfcExternalObject.ExternalObject.AddData</A></li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="44"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObject.html#ModifyData">wfcExternalObject.ExternalObject.ModifyData</A></li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="45"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObject.html#GetData">wfcExternalObject.ExternalObject.GetData</A></li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="46"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObject.html#RemoveData">wfcExternalObject.ExternalObject.RemoveData</A></li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="47"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalObject.html#GetClass">wfcExternalObject.ExternalObject.GetClass</A></li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class=" x-p-7-0">The methods in this section enable you to manipulate how the external object data relates to the object itself.</div>
+                  <div class=" x-p-7-0">To add new data to an external object, pass the data handle <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectData</span></span> to the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObject.AddData</span></span>.
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObject.ModifyData</span></span> sets the contents of existing object data.
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObject.GetData</span></span> retrieve the handle for the display or selection data associated with an external object. To specify which type of data you
+                     want to retrieve, pass one of the values in the enumerated type <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObjectDataType</span></span> to this method.
+                  </div>
+                  <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObject.RemoveData</span></span> to remove data from an external object.
+                  </div>
+                  <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalObject.GetClass</span></span> to retrieve the class of an external object.
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class=" x-topic-8-0 x-topic-8-1 x-topic-8-2" id="styler-id1.1.1.26.8">
+            
+            <a name="48"> </a><div class=" x-title-33-0 x-title-33-2" combinedFontName="off" id="styler-id1.1.1.26.8.1" class="Heading1">External Object References</div>
+            <div class=" x-body-3-0">
+               <div class=" x-p-7-0">You can use external object references to make external objects dependent on model geometry. For example, consider an external
+                  object that is modeled as the outward-pointing normal of a surface. Defining the surface as a reference enables the external
+                  object to behave appropriately when the surface is modified, deleted, or suppressed.
+               </div>
+               <div class=" x-p-7-0">In general, an external object can reference any of the geometry that belongs to its owner. In addition, if the owner belongs
+                  to an assembly, the external object can also reference the geometry of other assembly components, provided that you supply
+                  a valid component path. In general, an external object can reference any of the geometry that belongs to its owner. In addition,
+                  if the owner belongs to an assembly, the external object can also reference the geometry of other assembly components, provided
+                  that you supply a valid component path.
+                  <div class=" x-note-1-0 x-note-1-3">
+                     <div class=" x--ufe-note-1-0 x--ufe-note-1-1" combinedFontName="off">Note</div>
+                     <div class=" x-p-7-0">Setting up the references for an external object does not fully define the dependency between the object and the reference.
+                        You must also specify the callback method to be called when some action is taken on the reference.
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class=" x-topic-11-0 x-topic-11-1" id="styler-id1.1.1.26.8.3">
+               
+               <a name="49"> </a><div class=" x-title-27-0 x-title-27-2" combinedFontName="off" id="styler-id1.1.1.26.8.3.1" class="Heading2">Creating External Object References</div>
+               <div class=" x-body-3-0">
+                  <div class=" x-p-7-0">Methods introduced:</div>
+                  <div class=" x-p-7-0">
+                     <div class=" x-ul-1-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="50"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList">wfcExternalObject.ExternalReferenceInfo_Create</li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="51"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalReferenceInfo.html#Type">wfcExternalObject.ExternalReferenceInfo.GetType</A></li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="52"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalReferenceInfo.html#Type">wfcExternalObject.ExternalReferenceInfo.SetType</A></li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-16-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="53"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalReferenceInfo.html#ExtRefs">wfcExternalObject.ExternalReferenceInfo.GetExtRefs</A></li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; "></td>
+                                 <td><span class=" x-p-4-0"><a name="54"> </a><span class=" x-apiname-3-0" mcad="FunctionList"><li class="FunctionList"><A HREF="../api/c-wfcExternalObject-ExternalReferenceInfo.html#ExtRefs">wfcExternalObject.ExternalReferenceInfo.SetExtRefs</A></li></span></span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalReferenceInfo_Create</span></span> creates an external reference information object. The input arguments are as follows:
+                     <div class=" x-ul-1-0">
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-13-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">type</span>&#8212;Specify the type of the external reference.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                        <table border="0" cellpadding="0" cellspacing="0" class=" x-li-14-0" style="table-layout: fixed; " width="100%">
+                           <col style="width: 0em">
+                           <col style="width: 18pt">
+                           <col>
+                           <tbody>
+                              <tr valign="baseline">
+                                 <td align="right"></td>
+                                 <td align="left" style="word-break: keep-all; ">&#8226;&nbsp;</td>
+                                 <td><span class=" x-p-4-0"><span class=" x-parmname-3-0">extRefs</span>&#8212;Specify the sequence of external feature references.</span></td>
+                              </tr>
+                           </tbody>
+                        </table>
+                     </div>
+                  </div>
+                  <div class=" x-p-7-0">You might need to use &#8220;reference types&#8221; to differentiate among the references of an external object.</div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalReferenceInfo.GetType</span></span> retrieve the reference type of the specified reference in an external reference information object. To specify which type
+                     of external reference to want to retrieve, pass one of the values in the enumerated type <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalReferenceType</span></span> to this method.
+                  </div>
+                  <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalReferenceInfo.GetType</span></span> to set a reference type.
+                  </div>
+                  <div class=" x-p-7-0">The method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalReferenceInfo.GetExtRefs</span></span> retrieves the sequence of external feature references in an external reference information object.
+                  </div>
+                  <div class=" x-p-7-0">Use the method <span class=" x-cmdname-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.ExternalReferenceInfo.SetExtRefs</span></span> to set the external feature reference. The input argument are the external feature references in the <span class=" x-codeph-2-0" combinedFontName="Monospace-combined"><span xmlns="" class="cf-Monospace-combined-European_Alphabets">wfcExternalObject.WExternalFeatureReferences</span></span> object.
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
